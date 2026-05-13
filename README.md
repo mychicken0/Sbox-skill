@@ -1,12 +1,15 @@
 # s&box Agent Skill
 
-This repository contains an **Agent Skill** for s&box development, following the [agentskills.io](https://agentskills.io) specification.
+This repository contains a comprehensive **Agent Skill** for s&box development. It is designed to provide AI agents with expert-level knowledge of the engine and its API.
 
-## Structure
-- **`sbox-skill/`**: The core skill folder.
-  - `SKILL.md`: Metadata and instructions for the AI.
-  - `references/`: Cleaned documentation and API reference.
-  - `scripts/`: Utility scripts for maintenance.
+## Project Structure
+- **`SKILL.md`**: Core metadata and instructions that define the agent's behavior and knowledge mapping.
+- **`references/docs/`**: Cleaned and distilled Markdown documentation covering conceptual topics (Networking, UI, Physics, etc.).
+- **`references/api/`**: Full API reference organized by namespace for precise technical lookup.
+- **`references/sbox_full_docs.md`**: A single-file combined documentation for global context searching.
 
 ## Usage
-Simply point your AI agent to the `sbox-skill/` folder or copy its contents into your project's skills directory.
+To use this skill with your AI agent (like Cursor, Windsurf, or Claude Code):
+1. Add this repository folder to your project or AI workspace.
+2. Point your agent to `SKILL.md` for specific instructions.
+3. The agent will automatically use the `references/` folder to gain s&box expertise.
