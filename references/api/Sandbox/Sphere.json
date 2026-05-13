@@ -1,0 +1,1648 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "ray",
+              "Type": "Ray"
+            },
+            {
+              "Name": "maxDistance",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "distance",
+              "Out": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Sphere.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere.Trace",
+          "Name": "Trace",
+          "DeclaringType": "Sandbox.Sphere",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Performs an intersection test between this sphere and given ray."
+          },
+          "DocId": "M:Sandbox.Sphere.Trace(Ray,System.Single,System.Single@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "ray",
+              "Type": "Ray"
+            },
+            {
+              "Name": "maxDistance",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Sphere.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere.Trace",
+          "Name": "Trace",
+          "DeclaringType": "Sandbox.Sphere",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Performs an intersection test between this sphere and given ray."
+          },
+          "DocId": "M:Sandbox.Sphere.Trace(Ray,System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Sphere.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere.Contains",
+          "Name": "Contains",
+          "DeclaringType": "Sandbox.Sphere",
+          "Documentation": {
+            "Summary": "Returns true if sphere contains point. False if the point falls outside the sphere."
+          },
+          "DocId": "M:Sandbox.Sphere.Contains(Vector3@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [],
+          "l": {
+            "File": "Math/Sphere.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere.GetVolume",
+          "Name": "GetVolume",
+          "DeclaringType": "Sandbox.Sphere",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use Sphere.Volume instead."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the volume of this sphere"
+          },
+          "DocId": "M:Sandbox.Sphere.GetVolume"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "localPos",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Sphere.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere.GetEdgeDistance",
+          "Name": "GetEdgeDistance",
+          "DeclaringType": "Sandbox.Sphere",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Calculates the shortest distance from the specified local position to the nearest edge of the object."
+          },
+          "DocId": "M:Sandbox.Sphere.GetEdgeDistance(Vector3)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "center",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Sphere.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Sphere",
+          "DocId": "M:Sandbox.Sphere.#ctor(Vector3,System.Single)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Sphere",
+          "Loc": {
+            "File": "Math/Sphere.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sphere.Unit",
+          "Name": "Unit",
+          "Documentation": {
+            "Summary": "A sphere centered at the origin, with radius 1."
+          },
+          "DocId": "P:Sandbox.Sphere.Unit"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Sphere.cs",
+            "Line": 95
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere.Volume",
+          "Name": "Volume",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Volume of this sphere"
+          },
+          "DocId": "P:Sandbox.Sphere.Volume"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Math/Sphere.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere.RandomPointInside",
+          "Name": "RandomPointInside",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a random point within this sphere."
+          },
+          "DocId": "P:Sandbox.Sphere.RandomPointInside"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Math/Sphere.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere.RandomPointOnEdge",
+          "Name": "RandomPointOnEdge",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a random point on the edge of this sphere."
+          },
+          "DocId": "P:Sandbox.Sphere.RandomPointOnEdge"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere.Center",
+          "Name": "Center",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Center of the sphere."
+          },
+          "DocId": "F:Sandbox.Sphere.Center"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Sphere.Radius",
+          "Name": "Radius",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Radius of the sphere."
+          },
+          "DocId": "F:Sandbox.Sphere.Radius"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Sphere",
+      "Name": "Sphere",
+      "Documentation": {
+        "Summary": "Represents a sphere."
+      },
+      "DocId": "T:Sandbox.Sphere"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Spline.Sample",
+          "Parameters": [
+            {
+              "Name": "distance",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 191
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.SampleAtDistance",
+          "Name": "SampleAtDistance",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Calculates a bunch of information about the spline at a specific distance."
+          },
+          "DocId": "M:Sandbox.Spline.SampleAtDistance(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.Spline.Sample",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 216
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.SampleAtClosestPosition",
+          "Name": "SampleAtClosestPosition",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Calculates a bunch of information about the spline at the position closest to the specified position."
+          },
+          "DocId": "M:Sandbox.Spline.SampleAtClosestPosition(Vector3)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "pointIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 251
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.GetDistanceAtPoint",
+          "Name": "GetDistanceAtPoint",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Fetches how far along the spline a point is."
+          },
+          "DocId": "M:Sandbox.Spline.GetDistanceAtPoint(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "segmentIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 266
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.GetSegmentLength",
+          "Name": "GetSegmentLength",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Fetches the length of an individual spline segment."
+          },
+          "DocId": "M:Sandbox.Spline.GetSegmentLength(System.Int32)"
+        },
+        {
+          "ReturnType": "BBox",
+          "Parameters": [
+            {
+              "Name": "segmentIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 277
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.GetSegmentBounds",
+          "Name": "GetSegmentBounds",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Bounds of an individual spline segment."
+          },
+          "DocId": "M:Sandbox.Spline.GetSegmentBounds(System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Spline.Point",
+          "Parameters": [
+            {
+              "Name": "pointIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 288
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.GetPoint",
+          "Name": "GetPoint",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Access the information about a spline point."
+          },
+          "DocId": "M:Sandbox.Spline.GetPoint(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pointIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "updatedPoint",
+              "Type": "Sandbox.Spline.Point"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 310
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.UpdatePoint",
+          "Name": "UpdatePoint",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Update the information stored at a spline point."
+          },
+          "DocId": "M:Sandbox.Spline.UpdatePoint(System.Int32,Sandbox.Spline.Point)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pointIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "newPoint",
+              "Type": "Sandbox.Spline.Point"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 324
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.InsertPoint",
+          "Name": "InsertPoint",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Adds a point at an index"
+          },
+          "DocId": "M:Sandbox.Spline.InsertPoint(System.Int32,Sandbox.Spline.Point)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "newPoint",
+              "Type": "Sandbox.Spline.Point"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 338
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.AddPoint",
+          "Name": "AddPoint",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Adds a point to the end of the spline."
+          },
+          "DocId": "M:Sandbox.Spline.AddPoint(Sandbox.Spline.Point)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "distance",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "inferTangentModes",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 351
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.AddPointAtDistance",
+          "Name": "AddPointAtDistance",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Adds a point at a specific distance along the spline.\nReturns the index of the added spline point.\nTangents of the new point and adjacent points will be calculated so the spline shape remains the same.\nUnless inferTangentModes is set to true, in which case the tangent modes will be inferred from the adjacent points."
+          },
+          "DocId": "M:Sandbox.Spline.AddPointAtDistance(System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pointIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 379
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.RemovePoint",
+          "Name": "RemovePoint",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Removes the point at the specified index."
+          },
+          "DocId": "M:Sandbox.Spline.RemovePoint(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 401
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Removes all points from the spline."
+          },
+          "DocId": "M:Sandbox.Spline.Clear"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "outPolyLine",
+              "Ref": true,
+              "Type": "System.Collections.Generic.List`1<Vector3>"
+            }
+          ],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 423
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.ConvertToPolyline",
+          "Name": "ConvertToPolyline",
+          "DeclaringType": "Sandbox.Spline",
+          "DocId": "M:Sandbox.Spline.ConvertToPolyline(System.Collections.Generic.List`1{Vector3}@)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.List`1<Vector3>",
+          "Parameters": [],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 435
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.ConvertToPolyline",
+          "Name": "ConvertToPolyline",
+          "DeclaringType": "Sandbox.Spline",
+          "Documentation": {
+            "Summary": "Converts the spline to a polyline."
+          },
+          "DocId": "M:Sandbox.Spline.ConvertToPolyline"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 114
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Spline",
+          "DocId": "M:Sandbox.Spline.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Math/Spline.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.IsLoop",
+          "Name": "IsLoop",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the spline forms a loop."
+          },
+          "DocId": "P:Sandbox.Spline.IsLoop"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Spline.cs",
+            "Line": 228
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Length",
+          "Name": "Length",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Total length of the spline."
+          },
+          "DocId": "P:Sandbox.Spline.Length"
+        },
+        {
+          "PropertyType": "BBox",
+          "Loc": {
+            "File": "Math/Spline.cs",
+            "Line": 241
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Bounds",
+          "Name": "Bounds",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Total bounds of the spline."
+          },
+          "DocId": "P:Sandbox.Spline.Bounds"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Math/Spline.cs",
+            "Line": 297
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.PointCount",
+          "Name": "PointCount",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of points in the spline."
+          },
+          "DocId": "P:Sandbox.Spline.PointCount"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Math/Spline.cs",
+            "Line": 303
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.SegmentCount",
+          "Name": "SegmentCount",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of segments in the spline, a spline contains one less segment than points."
+          },
+          "DocId": "P:Sandbox.Spline.SegmentCount"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.SplineChanged",
+          "Name": "SplineChanged",
+          "Documentation": {
+            "Summary": "Invoked everytime the spline shape or the properties of the spline change."
+          },
+          "DocId": "F:Sandbox.Spline.SplineChanged"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Spline",
+      "Name": "Spline",
+      "Documentation": {
+        "Summary": "Collection of curves in 3D space.\nShape and behavior of the curves are controled through points <see cref=\"T:Sandbox.Spline.Point\" />, each with customizable handles, roll, scale, and up vectors.\nTwo consecutive points define a segment/curve of the spline.\n<br /><br />\nBy adjusting the handles both smooth and sharp corners can be created.\nThe spline can also be turned into a loop, combined with linear tangents this can be used to create polygons.\nSplines can also be used used for animations, camera movements, marking areas, or procedural geometry generation."
+      },
+      "DocId": "T:Sandbox.Spline"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Math/Spline.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Point..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Spline.Point",
+          "DocId": "M:Sandbox.Spline.Point.#ctor"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Point.Position",
+          "Name": "Position",
+          "Documentation": {
+            "Summary": "The position of the spline point."
+          },
+          "DocId": "F:Sandbox.Spline.Point.Position"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Point.In",
+          "Name": "In",
+          "Documentation": {
+            "Summary": "Position of the In handle relative to the point position."
+          },
+          "DocId": "F:Sandbox.Spline.Point.In"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Point.Out",
+          "Name": "Out",
+          "Documentation": {
+            "Summary": "Position of the Out handle relative to the point position."
+          },
+          "DocId": "F:Sandbox.Spline.Point.Out"
+        },
+        {
+          "FieldType": "Sandbox.Spline.HandleMode",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Point.Mode",
+          "Name": "Mode",
+          "Documentation": {
+            "Summary": "Describes how the spline should behave when entering/leaving a point.\nThe mmode and the handles In and Out position will determine the transition between segments."
+          },
+          "DocId": "F:Sandbox.Spline.Point.Mode"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Point.Roll",
+          "Name": "Roll",
+          "Documentation": {
+            "Summary": "Roll/Twist around the tangent axis."
+          },
+          "DocId": "F:Sandbox.Spline.Point.Roll"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Point.Scale",
+          "Name": "Scale",
+          "Documentation": {
+            "Summary": "X = Scale Length, Y = Scale Width, Z = Scale Height"
+          },
+          "DocId": "F:Sandbox.Spline.Point.Scale"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Point.Up",
+          "Name": "Up",
+          "Documentation": {
+            "Summary": "Custom up vector at a spline point, can be used to calculate tangent frames (transforms) along the spline.\nThis allows fine grained control over the orientation of objects following the spline."
+          },
+          "DocId": "F:Sandbox.Spline.Point.Up"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Spline.Point",
+      "Name": "Point",
+      "DeclaringType": "Sandbox.Spline",
+      "Attributes": [
+        {
+          "FullName": "System.Text.Json.Serialization.JsonConverterAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Internal.JsonConvert.SplinePointConverter"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Point that defines part of the spline.\nTwo consecutive points define a segment of the spline.\nThe <see cref=\"F:Sandbox.Spline.Point.Position\" />,  <see cref=\"F:Sandbox.Spline.Point.In\" />/<see cref=\"F:Sandbox.Spline.Point.Out\" /> Handles and <see cref=\"F:Sandbox.Spline.Point.Mode\"></see> / properties are used to define the shape of the spline.\n<code>\n                 P1 (Position)                         \n      P1 (In)           ▼           P1 (Out)                      \n              o──────═══X═══──────o                    \n                 ───/       \\───                      \n              ──/               \\──                   \n            -/                     \\-                  \n           /                         \\                 \n          |                           |\n      P0  X                           X  P2\n</code>"
+      },
+      "DocId": "T:Sandbox.Spline.Point"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Spline.HandleMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Spline.HandleMode.Auto",
+          "Name": "Auto",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "auto_fix_high"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Handle positions are calculated automatically\nbased on the location of adjacent points."
+          },
+          "DocId": "F:Sandbox.Spline.HandleMode.Auto"
+        },
+        {
+          "FieldType": "Sandbox.Spline.HandleMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Spline.HandleMode.Linear",
+          "Name": "Linear",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "show_chart"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Handle positions are set to zero, leading to a sharp corner."
+          },
+          "DocId": "F:Sandbox.Spline.HandleMode.Linear"
+        },
+        {
+          "FieldType": "Sandbox.Spline.HandleMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Spline.HandleMode.Mirrored",
+          "Name": "Mirrored",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "open_in_full"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The In and Out handles are user set, but are linked (mirrored)."
+          },
+          "DocId": "F:Sandbox.Spline.HandleMode.Mirrored"
+        },
+        {
+          "FieldType": "Sandbox.Spline.HandleMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Spline.HandleMode.Split",
+          "Name": "Split",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "call_split"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The In and Out handle are user set and operate independently."
+          },
+          "DocId": "F:Sandbox.Spline.HandleMode.Split"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Spline.HandleMode",
+      "Name": "HandleMode",
+      "DeclaringType": "Sandbox.Spline",
+      "Documentation": {
+        "Summary": "Describes how the spline should behave when entering/leaving a point."
+      },
+      "DocId": "T:Sandbox.Spline.HandleMode"
+    },
+    {
+      "Namespace": "",
+      "Fields": [
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Sample.Position",
+          "Name": "Position",
+          "DocId": "F:Sandbox.Spline.Sample.Position"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Sample.Tangent",
+          "Name": "Tangent",
+          "DocId": "F:Sandbox.Spline.Sample.Tangent"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Sample.Roll",
+          "Name": "Roll",
+          "DocId": "F:Sandbox.Spline.Sample.Roll"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Sample.Scale",
+          "Name": "Scale",
+          "DocId": "F:Sandbox.Spline.Sample.Scale"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Sample.Up",
+          "Name": "Up",
+          "DocId": "F:Sandbox.Spline.Sample.Up"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Spline.Sample.Distance",
+          "Name": "Distance",
+          "DocId": "F:Sandbox.Spline.Sample.Distance"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Spline.Sample",
+      "Name": "Sample",
+      "DeclaringType": "Sandbox.Spline",
+      "Documentation": {
+        "Summary": "Information about the spline at a specific distance."
+      },
+      "DocId": "T:Sandbox.Spline.Sample"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "P",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Triangle.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Triangle.ClosestPoint",
+          "Name": "ClosestPoint",
+          "DeclaringType": "Sandbox.Triangle",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Triangle.ClosestPoint(Vector3@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "c",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Triangle.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Triangle..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Triangle",
+          "DocId": "M:Sandbox.Triangle.#ctor(Vector3,Vector3,Vector3)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Triangle.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Triangle.Perimeter",
+          "Name": "Perimeter",
+          "DocId": "P:Sandbox.Triangle.Perimeter"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Triangle.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Triangle.Area",
+          "Name": "Area",
+          "DocId": "P:Sandbox.Triangle.Area"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Math/Triangle.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Triangle.IsRight",
+          "Name": "IsRight",
+          "DocId": "P:Sandbox.Triangle.IsRight"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Math/Triangle.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Triangle.Normal",
+          "Name": "Normal",
+          "DocId": "P:Sandbox.Triangle.Normal"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Triangle.A",
+          "Name": "A",
+          "DocId": "F:Sandbox.Triangle.A"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Triangle.B",
+          "Name": "B",
+          "DocId": "F:Sandbox.Triangle.B"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Triangle.C",
+          "Name": "C",
+          "DocId": "F:Sandbox.Triangle.C"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Triangle",
+      "Name": "Triangle",
+      "DocId": "T:Sandbox.Triangle"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "targetType",
+              "Type": "System.Type",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "SerializedObject/CustomEditorAttribute.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CustomEmbeddedEditorAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.CustomEmbeddedEditorAttribute",
+          "DocId": "M:Sandbox.CustomEmbeddedEditorAttribute.#ctor(System.Type)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "SerializedObject/CustomEditorAttribute.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CustomEmbeddedEditorAttribute.TargetType",
+          "Name": "TargetType",
+          "DocId": "P:Sandbox.CustomEmbeddedEditorAttribute.TargetType"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.CustomEmbeddedEditorAttribute",
+      "Name": "CustomEmbeddedEditorAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.CustomEmbeddedEditorAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Methods": [
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "property",
+              "Type": "Sandbox.SerializedProperty"
+            }
+          ],
+          "l": {
+            "File": "SerializedObject/CustomEditorAttribute.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CustomEditorAttribute.GetEditorScore",
+          "Name": "GetEditorScore",
+          "DeclaringType": "Sandbox.CustomEditorAttribute",
+          "DocId": "M:Sandbox.CustomEditorAttribute.GetEditorScore(Sandbox.SerializedProperty)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "targetType",
+              "Type": "System.Type",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "SerializedObject/CustomEditorAttribute.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CustomEditorAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.CustomEditorAttribute",
+          "DocId": "M:Sandbox.CustomEditorAttribute.#ctor(System.Type)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "SerializedObject/CustomEditorAttribute.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CustomEditorAttribute.TargetType",
+          "Name": "TargetType",
+          "DocId": "P:Sandbox.CustomEditorAttribute.TargetType"
+        },
+        {
+          "PropertyType": "System.Type[]",
+          "Loc": {
+            "File": "SerializedObject/CustomEditorAttribute.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CustomEditorAttribute.WithAllAttributes",
+          "Name": "WithAllAttributes",
+          "DocId": "P:Sandbox.CustomEditorAttribute.WithAllAttributes"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "SerializedObject/CustomEditorAttribute.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CustomEditorAttribute.ForMethod",
+          "Name": "ForMethod",
+          "DocId": "P:Sandbox.CustomEditorAttribute.ForMethod"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "SerializedObject/CustomEditorAttribute.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CustomEditorAttribute.NamedEditor",
+          "Name": "NamedEditor",
+          "DocId": "P:Sandbox.CustomEditorAttribute.NamedEditor"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "SerializedObject/CustomEditorAttribute.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CustomEditorAttribute.ForInterface",
+          "Name": "ForInterface",
+          "DocId": "P:Sandbox.CustomEditorAttribute.ForInterface"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.CustomEditorAttribute",
+      "Name": "CustomEditorAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.CustomEditorAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.SerializedObject",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.SerializedObject"
+            }
+          ],
+          "l": {
+            "File": "SerializedObject/MultiSerializedObject.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MultiSerializedObject.Add",
+          "Name": "Add",
+          "DeclaringType": "Sandbox.MultiSerializedObject",
+          "Documentation": {
+            "Summary": "Add an object. Don't forget to rebuild after editing!"
+          },
+          "DocId": "M:Sandbox.MultiSerializedObject.Add(Sandbox.SerializedObject)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "SerializedObject/MultiSerializedObject.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MultiSerializedObject.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.MultiSerializedObject",
+          "Documentation": {
+            "Summary": "Rebuild the object after modifying. This updates PropertyList."
+          },
+          "DocId": "M:Sandbox.MultiSerializedObject.Rebuild"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "SerializedObject/MultiSerializedObject.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MultiSerializedObject..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.MultiSerializedObject",
+          "DocId": "M:Sandbox.MultiSerializedObject.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "SerializedObject/MultiSerializedObject.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MultiSerializedObject.TypeIcon",
+          "Name": "TypeIcon",
+          "DocId": "P:Sandbox.MultiSerializedObject.TypeIcon"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "SerializedObject/MultiSerializedObject.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MultiSerializedObject.TypeName",
+          "Name": "TypeName",
+          "DocId": "P:Sandbox.MultiSerializedObject.TypeName"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "SerializedObject/MultiSerializedObject.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MultiSerializedObject.TypeTitle",
+          "Name": "TypeTitle",
+          "DocId": "P:Sandbox.MultiSerializedObject.TypeTitle"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "SerializedObject/MultiSerializedObject.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MultiSerializedObject.IsValid",
+          "Name": "IsValid",
+          "DocId": "P:Sandbox.MultiSerializedObject.IsValid"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "SerializedObject/MultiSerializedObject.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MultiSerializedObject.IsMultipleTargets",
+          "Name": "IsMultipleTargets",
+          "Documentation": {
+            "Summary": "True if the target is multiple objects"
+          },
+          "DocId": "P:Sandbox.MultiSerializedObject.IsMultipleTargets"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<System.Object>",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "SerializedObject/MultiSerializedObject.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MultiSerializedObject.Targets",
+          "Name": "Targets",
+          "Documentation": {
+            "Summary": "A list of actual target objects - if applicable"
+          },
+          "DocId": "P:Sandbox.MultiSerializedObject.Targets"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.MultiSerializedObject",
+      "Name": "MultiSerializedObject",
+      "Documentation": {
+        "Summary": "An object (or data) that can be accessed as an object"
+      },
+      "DocId": "T:Sandbox.MultiSerializedObject"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.SerializedObject",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "property",
+              "Type": "Sandbox.SerializedProperty"
+            }
+          ],
+          "l": {
+            "File": "SerializedObject/SerializedCollection.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.SetTargetObject",
+          "Name": "SetTargetObject",
+          "DeclaringType": "Sandbox.SerializedCollection",
+          "DocId": "M:Sandbox.SerializedCollection.SetTargetObject(System.Object,Sandbox.SerializedProperty)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "property",
+              "Type": "Sandbox.SerializedProperty"
+            }
+          ],
+          "l": {
+            "File": "SerializedObject/SerializedCollection.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.Remove",
+          "Name": "Remove",
+          "DeclaringType": "Sandbox.SerializedCollection",
+          "DocId": "M:Sandbox.SerializedCollection.Remove(Sandbox.SerializedProperty)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "SerializedObject/SerializedCollection.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.RemoveAt",
+          "Name": "RemoveAt",
+          "DeclaringType": "Sandbox.SerializedCollection",
+          "DocId": "M:Sandbox.SerializedCollection.RemoveAt(System.Object)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "SerializedObject/SerializedCollection.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.Add",
+          "Name": "Add",
+          "DeclaringType": "Sandbox.SerializedCollection",
+          "DocId": "M:Sandbox.SerializedCollection.Add(System.Object)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "SerializedObject/SerializedCollection.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.Add",
+          "Name": "Add",
+          "DeclaringType": "Sandbox.SerializedCollection",
+          "DocId": "M:Sandbox.SerializedCollection.Add(System.Object,System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.SerializedProperty",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "SerializedObject/SerializedCollection.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.NewKeyProperty",
+          "Name": "NewKeyProperty",
+          "DeclaringType": "Sandbox.SerializedCollection",
+          "DocId": "M:Sandbox.SerializedCollection.NewKeyProperty"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.SerializedCollection..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SerializedCollection",
+          "DocId": "M:Sandbox.SerializedCollection.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "SerializedObject/SerializedCollection.cs",
+            "Line": 6
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.KeyType",
+          "Name": "KeyType",
+          "DocId": "P:Sandbox.SerializedCollection.KeyType"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "SerializedObject/SerializedCollection.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.ValueType",
+          "Name": "ValueType",
+          "DocId": "P:Sandbox.SerializedCollection.ValueType"
+        },
+        {
+          "PropertyType": "System.Object",
+          "Loc": {
+            "File": "SerializedObject/SerializedCollection.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.TargetObject",
+          "Name": "TargetObject",
+          "DocId": "P:Sandbox.SerializedCollection.TargetObject"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.OnEntryAdded",
+          "Name": "OnEntryAdded",
+          "DocId": "F:Sandbox.SerializedCollection.OnEntryAdded"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.OnEntryRemoved",
+          "Name": "OnEntryRemoved",
+          "DocId": "F:Sandbox.SerializedCollection.OnEntryRemoved"
+        },
+        {
+          "FieldType": "System.Func`2<Sandbox.SerializedProperty,Sandbox.SerializedObject>",
+          "IsPublic": true,
+          "FullName": "Sandbox.SerializedCollection.PropertyToObject",
+          "Name": "PropertyToObject",
+          "DocId": "F:Sandbox.SerializedCollection.PropertyToObject"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.SerializedCollection",
+      "Name": "SerializedCollection",
+      "DocId": "T:Sandbox.SerializedCollection"
+    }
+  ],
+  "_metadata": {
+    "chunk": 19,
+    "items_count": 10
+  }
+}

@@ -1,0 +1,1747 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.GameObjectSystem<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "capsule",
+              "Type": "Capsule"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "segments",
+              "Type": "System.Int32",
+              "Default": "12"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.Capsule.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Capsule",
+          "Name": "Capsule",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a wireframe capsule, simple cylinder with 2 hemispheres."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Capsule.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a wireframe capsule, simple cylinder with 2 hemispheres."
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Capsule(Capsule,Color,System.Single,Transform,System.Boolean,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "capsule",
+              "Type": "Capsule"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "segments",
+              "Type": "System.Int32",
+              "Default": "12"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.Cylinder.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Cylinder",
+          "Name": "Cylinder",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a wireframe cylinder, like a capsule without the hemispheres, showing all sides."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Cylinder.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a wireframe cylinder, like a capsule without the hemispheres, showing all sides."
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Cylinder(Capsule,Color,System.Single,Transform,System.Boolean,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "startCenter",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "endCenter",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "startRadius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "endRadius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "segments",
+              "Type": "System.Int32",
+              "Default": "12"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.Cylinder.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.TaperedCylinder",
+          "Name": "TaperedCylinder",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a wireframe tapered cylinder, like a capsule without the hemispheres with start and end radius, showing all sides."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Cylinder.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a wireframe tapered cylinder, like a capsule without the hemispheres with start and end radius, showing all sides."
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.TaperedCylinder(Vector3,Vector3,System.Single,System.Single,Color,System.Single,Transform,System.Boolean,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "size",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawBox.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Box",
+          "Name": "Box",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a box"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawBox.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a box"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Box(Vector3,Vector3,Color,System.Single,Transform,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "box",
+              "Type": "BBox"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawBox.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Box",
+          "Name": "Box",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a box"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawBox.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a box"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Box(BBox,Color,System.Single,Transform,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "go",
+              "Type": "Sandbox.GameObject"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "castShadows",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "materialOveride",
+              "Type": "Sandbox.Material",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawGameObject.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.GameObject",
+          "Name": "GameObject",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a GameObject in the world"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawGameObject.cs",
+                "9"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a GameObject in the world"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.GameObject(Sandbox.GameObject,Color,System.Single,Transform,System.Boolean,System.Boolean,Sandbox.Material)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "direction",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawLine.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Normal",
+          "Name": "Normal",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a line"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawLine.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a line"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Normal(Vector3,Vector3,Color,System.Single,Transform,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "line",
+              "Type": "Line"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawLine.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Line",
+          "Name": "Line",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a line"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawLine.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a line"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Line(Line,Color,System.Single,Transform,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "from",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawLine.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Line",
+          "Name": "Line",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a line"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawLine.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a line"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Line(Vector3,Vector3,Color,System.Single,Transform,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "points",
+              "Type": "System.Collections.Generic.IEnumerable`1<Vector3>"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawLine.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Line",
+          "Name": "Line",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a line"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawLine.cs",
+                "47"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.DebugOverlaySystem.Line(System.Collections.Generic.IEnumerable`1{Vector3},Color,System.Single,Transform,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "castShadows",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "materialOveride",
+              "Type": "Sandbox.Material",
+              "Default": "null"
+            },
+            {
+              "Name": "localBoneTransforms",
+              "Type": "Transform[]",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawModel.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Model",
+          "Name": "Model",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw model in the world"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawModel.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw model in the world"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Model(Sandbox.Model,Color,System.Single,Transform,System.Boolean,System.Boolean,Sandbox.Material,Transform[])"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sphere",
+              "Type": "Sandbox.Sphere"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawSphere.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Sphere",
+          "Name": "Sphere",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a sphere"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawSphere.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a sphere"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Sphere(Sandbox.Sphere,Color,System.Single,Transform,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "size",
+              "Type": "System.Single",
+              "Default": "32"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "132"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawText.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Text",
+          "Name": "Text",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw text in the world"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawText.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw text in the world"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Text(Vector3,System.String,System.Single,Sandbox.TextFlag,Color,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "scope",
+              "Type": "Sandbox.TextRendering.Scope"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "132"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawText.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Text",
+          "Name": "Text",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw text in the world"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawText.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw text in the world"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Text(Vector3,Sandbox.TextRendering.Scope,Sandbox.TextFlag,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pixelPosition",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "size",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.DrawTexture.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Texture",
+          "Name": "Texture",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawTexture.cs",
+                "5"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.DebugOverlaySystem.Texture(Vector2,Sandbox.Texture,Vector2,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "frustum",
+              "Type": "Sandbox.Frustum"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform",
+              "Default": "null"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.Frustum.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Frustum",
+          "Name": "Frustum",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a frustum"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Frustum.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a frustum"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Frustum(Sandbox.Frustum,Color,System.Single,Transform,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pixelPosition",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "size",
+              "Type": "System.Single",
+              "Default": "14"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "132"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.ScreenText.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.ScreenText",
+          "Name": "ScreenText",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw text on the screen"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.ScreenText.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw text on the screen"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.ScreenText(Vector2,System.String,System.Single,Sandbox.TextFlag,Color,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pixelPosition",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "textBlock",
+              "Type": "Sandbox.TextRendering.Scope"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "132"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.ScreenText.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.ScreenText",
+          "Name": "ScreenText",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw text on the screen"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.ScreenText.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw text on the screen"
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.ScreenText(Vector2,Sandbox.TextRendering.Scope,Sandbox.TextFlag,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "position",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "color",
+              "Type": "System.Nullable`1<Color>",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.Texture.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Texture",
+          "Name": "Texture",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a texture on the screen"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Texture.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.DebugOverlaySystem.Texture(Sandbox.Texture,Vector2,System.Nullable`1{Color},System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "screenRect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "color",
+              "Type": "System.Nullable`1<Color>",
+              "Default": "null"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.Texture.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Texture",
+          "Name": "Texture",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a texture on the screen"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Texture.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.DebugOverlaySystem.Texture(Sandbox.Texture,Sandbox.Rect,System.Nullable`1{Color},System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "worldPos",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "size",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.Texture.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.ScreenTexture",
+          "Name": "ScreenTexture",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Texture.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.DebugOverlaySystem.ScreenTexture(Vector3,Sandbox.Texture,Vector2,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "trace",
+              "Type": "Sandbox.SceneTraceResult"
+            },
+            {
+              "Name": "duration",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "overlay",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.Trace.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem.Trace",
+          "Name": "Trace",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws the result of a physics trace, showing the start and end points, the hit location and normal (if any), and the traced shape (ray, sphere, box, capsule, cylinder) at both the start and end positions."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Trace.cs",
+                "9"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws the result of a physics trace, showing the start and end points, the hit location and normal (if any),\nand the traced shape (ray, sphere, box, capsule, cylinder) at both the start and end positions."
+          },
+          "DocId": "M:Sandbox.DebugOverlaySystem.Trace(Sandbox.SceneTraceResult,System.Single,System.Boolean)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DebugOverlay/DebugOverlaySystem.List.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DebugOverlaySystem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.DebugOverlaySystem",
+          "DocId": "M:Sandbox.DebugOverlaySystem.#ctor(Sandbox.Scene)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.DebugOverlaySystem",
+      "Name": "DebugOverlaySystem",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Capsule.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Cylinder.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawBox.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawGameObject.cs",
+            "4"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawLine.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawModel.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawPoint.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawSphere.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawText.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.DrawTexture.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Frustum.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.List.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.ScreenText.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Texture.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DebugOverlay\\DebugOverlaySystem.Trace.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.DebugOverlaySystem"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.GameObjectSystem<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystems/DecalGameSystem.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalGameSystem.ClearDecals",
+          "Name": "ClearDecals",
+          "DeclaringType": "Sandbox.DecalGameSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DecalGameSystem.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.DecalGameSystem.ClearDecals"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/DecalGameSystem.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalGameSystem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.DecalGameSystem",
+          "DocId": "M:Sandbox.DecalGameSystem.#ctor(Sandbox.Scene)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/DecalGameSystem.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.DecalGameSystem.MaxDecals",
+          "Name": "MaxDecals",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ConVarAttribute",
+              "ConstructorArguments": [
+                "maxdecals",
+                "65"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\DecalGameSystem.cs",
+                "5"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalGameSystem.MaxDecals"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.DecalGameSystem",
+      "Name": "DecalGameSystem",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\DecalGameSystem.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.DecalGameSystem"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.GameObjectSystem<T>",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/SceneAnimationSystem.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneAnimationSystem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SceneAnimationSystem",
+          "DocId": "M:Sandbox.SceneAnimationSystem.#ctor(Sandbox.Scene)"
+        }
+      ],
+      "Properties": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneAnimationSystem",
+      "Name": "SceneAnimationSystem",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\SceneAnimationSystem.cs",
+            "6"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.SceneAnimationSystem"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.GameObjectSystem<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystems/SceneSpriteSystem.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSpriteSystem.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.SceneSpriteSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\SceneSpriteSystem.cs",
+                "24"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SceneSpriteSystem.Dispose"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/SceneSpriteSystem.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSpriteSystem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SceneSpriteSystem",
+          "DocId": "M:Sandbox.SceneSpriteSystem.#ctor(Sandbox.Scene)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneSpriteSystem",
+      "Name": "SceneSpriteSystem",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\SceneSpriteSystem.cs",
+            "10"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.SceneSpriteSystem"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.GameObjectSystem",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/SelectionSetsSystem.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SelectionSetsSystem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SelectionSetsSystem",
+          "DocId": "M:Sandbox.SelectionSetsSystem.#ctor(Sandbox.Scene)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.SelectionSetsSystem.SelectionSetsData",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/SelectionSetsSystem.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SelectionSetsSystem.Data",
+          "Name": "Data",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\SelectionSetsSystem.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SelectionSetsSystem.Data"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SelectionSetsSystem",
+      "Name": "SelectionSetsSystem",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Stores editor selection sets on the scene so they serialize into SceneProperties/GameObjectSystems."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\SelectionSetsSystem.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Stores editor selection sets on the scene so they serialize into SceneProperties/GameObjectSystems."
+      },
+      "DocId": "T:Sandbox.SelectionSetsSystem"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystems/SelectionSetsSystem.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SelectionSetsSystem.SelectionSetsData..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SelectionSetsSystem.SelectionSetsData",
+          "DocId": "M:Sandbox.SelectionSetsSystem.SelectionSetsData.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.SelectionSetsSystem.SelectionSetEntry>",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/SelectionSetsSystem.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SelectionSetsSystem.SelectionSetsData.SelectionSets",
+          "Name": "SelectionSets",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\SelectionSetsSystem.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SelectionSetsSystem.SelectionSetsData.SelectionSets"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SelectionSetsSystem.SelectionSetsData",
+      "Name": "SelectionSetsData",
+      "DeclaringType": "Sandbox.SelectionSetsSystem",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\SelectionSetsSystem.cs",
+            "16"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.SelectionSetsSystem.SelectionSetsData"
+    }
+  ],
+  "_metadata": {
+    "chunk": 118,
+    "items_count": 6
+  }
+}

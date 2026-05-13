@@ -1,0 +1,1597 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Rendering",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Render/CommandList/RenderTargetHandle.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RenderTargetHandle.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\RenderTargetHandle.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Rendering.RenderTargetHandle.Name"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.RenderTargetHandle.ColorTextureRef",
+          "Loc": {
+            "File": "Systems/Render/CommandList/RenderTargetHandle.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RenderTargetHandle.ColorTexture",
+          "Name": "ColorTexture",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reference to the color texture of this target"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\RenderTargetHandle.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reference to the color texture of this target"
+          },
+          "DocId": "P:Sandbox.Rendering.RenderTargetHandle.ColorTexture"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.RenderTargetHandle.DepthTextureRef",
+          "Loc": {
+            "File": "Systems/Render/CommandList/RenderTargetHandle.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RenderTargetHandle.DepthTexture",
+          "Name": "DepthTexture",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reference to the depth texture of this target"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\RenderTargetHandle.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reference to the depth texture of this target"
+          },
+          "DocId": "P:Sandbox.Rendering.RenderTargetHandle.DepthTexture"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.RenderTargetHandle.ColorIndexRef",
+          "Loc": {
+            "File": "Systems/Render/CommandList/RenderTargetHandle.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RenderTargetHandle.ColorIndex",
+          "Name": "ColorIndex",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reference to the index of the color texture of this target"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\RenderTargetHandle.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reference to the index of the color texture of this target"
+          },
+          "DocId": "P:Sandbox.Rendering.RenderTargetHandle.ColorIndex"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.RenderTargetHandle.SizeHandle",
+          "Loc": {
+            "File": "Systems/Render/CommandList/RenderTargetHandle.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RenderTargetHandle.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reference to the size of the texture"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\RenderTargetHandle.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reference to the size of the texture"
+          },
+          "DocId": "P:Sandbox.Rendering.RenderTargetHandle.Size"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.RenderTargetHandle",
+      "Name": "RenderTargetHandle",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "A render target handle used with CommandLists"
+      },
+      "DocId": "T:Sandbox.Rendering.RenderTargetHandle"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Render/CommandList/RenderTargetHandle.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RenderTargetHandle.ColorTextureRef.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\RenderTargetHandle.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Rendering.RenderTargetHandle.ColorTextureRef.Name"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.RenderTargetHandle.ColorTextureRef",
+      "Name": "ColorTextureRef",
+      "DeclaringType": "Sandbox.Rendering.RenderTargetHandle",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Rendering.RenderTargetHandle.ColorTextureRef"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Render/CommandList/RenderTargetHandle.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RenderTargetHandle.DepthTextureRef.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\RenderTargetHandle.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Rendering.RenderTargetHandle.DepthTextureRef.Name"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.RenderTargetHandle.DepthTextureRef",
+      "Name": "DepthTextureRef",
+      "DeclaringType": "Sandbox.Rendering.RenderTargetHandle",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Rendering.RenderTargetHandle.DepthTextureRef"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Render/CommandList/RenderTargetHandle.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RenderTargetHandle.ColorIndexRef.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\RenderTargetHandle.cs",
+                "42"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Rendering.RenderTargetHandle.ColorIndexRef.Name"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.RenderTargetHandle.ColorIndexRef",
+      "Name": "ColorIndexRef",
+      "DeclaringType": "Sandbox.Rendering.RenderTargetHandle",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Rendering.RenderTargetHandle.ColorIndexRef"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Render/CommandList/RenderTargetHandle.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RenderTargetHandle.SizeHandle.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\RenderTargetHandle.cs",
+                "47"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Rendering.RenderTargetHandle.SizeHandle.Name"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/CommandList/RenderTargetHandle.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RenderTargetHandle.SizeHandle.Divisor",
+          "Name": "Divisor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\RenderTargetHandle.cs",
+                "49"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Rendering.RenderTargetHandle.SizeHandle.Divisor"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.RenderTargetHandle.SizeHandle",
+      "Name": "SizeHandle",
+      "DeclaringType": "Sandbox.Rendering.RenderTargetHandle",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Rendering.RenderTargetHandle.SizeHandle"
+    },
+    {
+      "Namespace": "Sandbox.Rendering",
+      "Fields": [
+        {
+          "FieldType": "System.Nullable`1<Transform>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.Transform",
+          "Name": "Transform",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides the camera's position and rotation"
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.Transform"
+        },
+        {
+          "FieldType": "System.Nullable`1<System.Single>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.FieldOfView",
+          "Name": "FieldOfView",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides the camera's field of view"
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.FieldOfView"
+        },
+        {
+          "FieldType": "System.Nullable`1<System.Single>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.ZNear",
+          "Name": "ZNear",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides the camera's znear"
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.ZNear"
+        },
+        {
+          "FieldType": "System.Nullable`1<System.Single>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.ZFar",
+          "Name": "ZFar",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides the camera's zfar"
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.ZFar"
+        },
+        {
+          "FieldType": "System.Nullable`1<Color>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.ClearColor",
+          "Name": "ClearColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "33"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides the camera's clear color"
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.ClearColor"
+        },
+        {
+          "FieldType": "System.Nullable`1<Matrix>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.ProjectionMatrix",
+          "Name": "ProjectionMatrix",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides the camera's projection matrix"
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.ProjectionMatrix"
+        },
+        {
+          "FieldType": "System.Nullable`1<Sandbox.Rendering.GradientFogSetup>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.GradientFog",
+          "Name": "GradientFog",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "43"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows overriding gradient fog for this view"
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.GradientFog"
+        },
+        {
+          "FieldType": "System.Nullable`1<Color>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.AmbientLightTint",
+          "Name": "AmbientLightTint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "48"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If set then the regular scene's ambient light will be multiplied by this"
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.AmbientLightTint"
+        },
+        {
+          "FieldType": "System.Nullable`1<Color>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.AmbientLightAdd",
+          "Name": "AmbientLightAdd",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "53"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If set then this will be added to the ambient light color"
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.AmbientLightAdd"
+        },
+        {
+          "FieldType": "System.Nullable`1<Vector4>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.ClipSpaceBounds",
+          "Name": "ClipSpaceBounds",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "60"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clipspace is usually used for rendering posters, or center-offsetting the view. You're basically zooming\ninto a subrect of the clipspace. So imagine you draw a smaller rect inside the first rect of the frustum.. \nthat's what you're gonna render - that rect."
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.ClipSpaceBounds"
+        },
+        {
+          "FieldType": "System.Nullable`1<System.Boolean>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.FlipX",
+          "Name": "FlipX",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "65"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When rendering to a texture, this allows you to flip the view horizontally."
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.FlipX"
+        },
+        {
+          "FieldType": "System.Nullable`1<System.Boolean>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.FlipY",
+          "Name": "FlipY",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "70"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When rendering to a texture, this allows you to flip the view vertically."
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.FlipY"
+        },
+        {
+          "FieldType": "System.Nullable`1<System.Boolean>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.EnablePostprocessing",
+          "Name": "EnablePostprocessing",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "75"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether post processing should be enabled for this view. If null it will use the camera's setting."
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.EnablePostprocessing"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ViewSetup.ViewHash",
+          "Name": "ViewHash",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "80"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If you're rendering a subview this will allow the renderer to find the same view again next frame"
+          },
+          "DocId": "F:Sandbox.Rendering.ViewSetup.ViewHash"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.ViewSetup",
+      "Name": "ViewSetup",
+      "Documentation": {
+        "Summary": "When manually rendering a camera this will let you override specific\nelements of that render. This means you can use most of the camera's\nproperties, but override some without disturbing the camera itself."
+      },
+      "DocId": "T:Sandbox.Rendering.ViewSetup"
+    },
+    {
+      "Namespace": "Sandbox.Rendering",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Rendering.GradientFogSetup",
+          "Parameters": [
+            {
+              "Name": "desired",
+              "Type": "Sandbox.Rendering.GradientFogSetup"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 154
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.GradientFogSetup.LerpTo",
+          "Name": "LerpTo",
+          "DeclaringType": "Sandbox.Rendering.GradientFogSetup",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Lerp this GradientFogSetup to a another, allowing transition states."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "151"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Lerp this GradientFogSetup to a another, allowing transition states."
+          },
+          "DocId": "M:Sandbox.Rendering.GradientFogSetup.LerpTo(Sandbox.Rendering.GradientFogSetup,System.Single,System.Boolean)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.GradientFogSetup.Enabled",
+          "Name": "Enabled",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the fog is enabled."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "91"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the fog is enabled."
+          },
+          "DocId": "P:Sandbox.Rendering.GradientFogSetup.Enabled"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.GradientFogSetup.StartDistance",
+          "Name": "StartDistance",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Start distance of the fog."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "96"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Start distance of the fog."
+          },
+          "DocId": "P:Sandbox.Rendering.GradientFogSetup.StartDistance"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.GradientFogSetup.EndDistance",
+          "Name": "EndDistance",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "End distance of the fog."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "101"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "End distance of the fog."
+          },
+          "DocId": "P:Sandbox.Rendering.GradientFogSetup.EndDistance"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.GradientFogSetup.StartHeight",
+          "Name": "StartHeight",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The starting height of the gradient fog."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "106"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The starting height of the gradient fog."
+          },
+          "DocId": "P:Sandbox.Rendering.GradientFogSetup.StartHeight"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 112
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.GradientFogSetup.EndHeight",
+          "Name": "EndHeight",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The ending height of the gradient fog."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "111"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The ending height of the gradient fog."
+          },
+          "DocId": "P:Sandbox.Rendering.GradientFogSetup.EndHeight"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 117
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.GradientFogSetup.MaximumOpacity",
+          "Name": "MaximumOpacity",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The maximum opacity of the gradient fog."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "116"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The maximum opacity of the gradient fog."
+          },
+          "DocId": "P:Sandbox.Rendering.GradientFogSetup.MaximumOpacity"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 122
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.GradientFogSetup.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The color of the gradient fog."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "121"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The color of the gradient fog."
+          },
+          "DocId": "P:Sandbox.Rendering.GradientFogSetup.Color"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.GradientFogSetup.DistanceFalloffExponent",
+          "Name": "DistanceFalloffExponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The exponent controlling the distance-based falloff of the fog."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "126"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The exponent controlling the distance-based falloff of the fog."
+          },
+          "DocId": "P:Sandbox.Rendering.GradientFogSetup.DistanceFalloffExponent"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 132
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.GradientFogSetup.VerticalFalloffExponent",
+          "Name": "VerticalFalloffExponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The exponent controlling the vertical falloff of the fog."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "131"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The exponent controlling the vertical falloff of the fog."
+          },
+          "DocId": "P:Sandbox.Rendering.GradientFogSetup.VerticalFalloffExponent"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.GradientFogSetup",
+      "Name": "GradientFogSetup",
+      "Documentation": {
+        "Summary": "Setup for defining gradient fog in a view"
+      },
+      "DocId": "T:Sandbox.Rendering.GradientFogSetup"
+    },
+    {
+      "Namespace": "Sandbox.Rendering",
+      "Properties": [
+        {
+          "PropertyType": "System.Nullable`1<Color>",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 196
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ReflectionSetup.FallbackColor",
+          "Name": "FallbackColor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If we can't render the reflection and this is set, we'll clear the render target to this color"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "195"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If we can't render the reflection and this is set, we'll clear the render target to this color"
+          },
+          "DocId": "P:Sandbox.Rendering.ReflectionSetup.FallbackColor"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Rendering.ViewSetup",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ReflectionSetup.ViewSetup",
+          "Name": "ViewSetup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "180"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows overriding everything you normally can"
+          },
+          "DocId": "F:Sandbox.Rendering.ReflectionSetup.ViewSetup"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ReflectionSetup.ClipOffset",
+          "Name": "ClipOffset",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "185"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Offset the reflection plane's clip plane by this much"
+          },
+          "DocId": "F:Sandbox.Rendering.ReflectionSetup.ClipOffset"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.ReflectionSetup.RenderBehind",
+          "Name": "RenderBehind",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "190"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true we'll render the reflection even if we're behind the plane"
+          },
+          "DocId": "F:Sandbox.Rendering.ReflectionSetup.RenderBehind"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.ReflectionSetup",
+      "Name": "ReflectionSetup",
+      "Documentation": {
+        "Summary": "Allows special setup for reflections, such as offsetting the reflection plane"
+      },
+      "DocId": "T:Sandbox.Rendering.ReflectionSetup"
+    },
+    {
+      "Namespace": "Sandbox.Rendering",
+      "Properties": [
+        {
+          "PropertyType": "System.Nullable`1<Color>",
+          "Loc": {
+            "File": "Systems/Render/CommandList/ViewSetup.cs",
+            "Line": 225
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RefractionSetup.FallbackColor",
+          "Name": "FallbackColor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If we can't render the reflection and this is set, we'll clear the render target to this color"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "224"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If we can't render the reflection and this is set, we'll clear the render target to this color"
+          },
+          "DocId": "P:Sandbox.Rendering.RefractionSetup.FallbackColor"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Rendering.ViewSetup",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RefractionSetup.ViewSetup",
+          "Name": "ViewSetup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "209"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows overriding everything you normally can"
+          },
+          "DocId": "F:Sandbox.Rendering.RefractionSetup.ViewSetup"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RefractionSetup.ClipOffset",
+          "Name": "ClipOffset",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "214"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Offset the reflection plane's clip plane by this much"
+          },
+          "DocId": "F:Sandbox.Rendering.RefractionSetup.ClipOffset"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RefractionSetup.RenderBehind",
+          "Name": "RenderBehind",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "219"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true we'll render the reflection even if we're behind the plane"
+          },
+          "DocId": "F:Sandbox.Rendering.RefractionSetup.RenderBehind"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.RefractionSetup",
+      "Name": "RefractionSetup",
+      "Documentation": {
+        "Summary": "Allows special setup for refraction, such as offsetting the clip plane"
+      },
+      "DocId": "T:Sandbox.Rendering.RefractionSetup"
+    },
+    {
+      "Namespace": "Sandbox.Rendering",
+      "Fields": [
+        {
+          "FieldType": "System.Nullable`1<Transform>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RendererSetup.Transform",
+          "Name": "Transform",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "240"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides the transform used for rendering"
+          },
+          "DocId": "F:Sandbox.Rendering.RendererSetup.Transform"
+        },
+        {
+          "FieldType": "System.Nullable`1<Color>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RendererSetup.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "245"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides the color used for rendering"
+          },
+          "DocId": "F:Sandbox.Rendering.RendererSetup.Color"
+        },
+        {
+          "FieldType": "Sandbox.Material",
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.RendererSetup.Material",
+          "Name": "Material",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\ViewSetup.cs",
+                "250"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides the material used for rendering"
+          },
+          "DocId": "F:Sandbox.Rendering.RendererSetup.Material"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.RendererSetup",
+      "Name": "RendererSetup",
+      "Documentation": {
+        "Summary": "When manually rendering a Renderer this will let you override specific\nelements of that render. This means you can use most of the Renderer's\nproperties, but override some without disturbing the Renderer itself."
+      },
+      "DocId": "T:Sandbox.Rendering.RendererSetup"
+    },
+    {
+      "Namespace": "Sandbox.Rendering",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.Common",
+          "Name": "Common",
+          "DocId": "F:Sandbox.Rendering.ResourceState.Common"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.Present",
+          "Name": "Present",
+          "DocId": "F:Sandbox.Rendering.ResourceState.Present"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.VertexOrIndexBuffer",
+          "Name": "VertexOrIndexBuffer",
+          "DocId": "F:Sandbox.Rendering.ResourceState.VertexOrIndexBuffer"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.RenderTarget",
+          "Name": "RenderTarget",
+          "DocId": "F:Sandbox.Rendering.ResourceState.RenderTarget"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.UnorderedAccess",
+          "Name": "UnorderedAccess",
+          "DocId": "F:Sandbox.Rendering.ResourceState.UnorderedAccess"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.DepthWrite",
+          "Name": "DepthWrite",
+          "DocId": "F:Sandbox.Rendering.ResourceState.DepthWrite"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.DepthRead",
+          "Name": "DepthRead",
+          "DocId": "F:Sandbox.Rendering.ResourceState.DepthRead"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.NonPixelShaderResource",
+          "Name": "NonPixelShaderResource",
+          "DocId": "F:Sandbox.Rendering.ResourceState.NonPixelShaderResource"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.PixelShaderResource",
+          "Name": "PixelShaderResource",
+          "DocId": "F:Sandbox.Rendering.ResourceState.PixelShaderResource"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.StreamOut",
+          "Name": "StreamOut",
+          "DocId": "F:Sandbox.Rendering.ResourceState.StreamOut"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.IndirectArgument",
+          "Name": "IndirectArgument",
+          "DocId": "F:Sandbox.Rendering.ResourceState.IndirectArgument"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.Predication",
+          "Name": "Predication",
+          "DocId": "F:Sandbox.Rendering.ResourceState.Predication"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.CopyDestination",
+          "Name": "CopyDestination",
+          "DocId": "F:Sandbox.Rendering.ResourceState.CopyDestination"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.CopySource",
+          "Name": "CopySource",
+          "DocId": "F:Sandbox.Rendering.ResourceState.CopySource"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.ResolveDestination",
+          "Name": "ResolveDestination",
+          "DocId": "F:Sandbox.Rendering.ResourceState.ResolveDestination"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.ResolveSource",
+          "Name": "ResolveSource",
+          "DocId": "F:Sandbox.Rendering.ResourceState.ResolveSource"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.GenericRead",
+          "Name": "GenericRead",
+          "DocId": "F:Sandbox.Rendering.ResourceState.GenericRead"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.AllShaderResource",
+          "Name": "AllShaderResource",
+          "DocId": "F:Sandbox.Rendering.ResourceState.AllShaderResource"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.VertexAndConstantBuffer",
+          "Name": "VertexAndConstantBuffer",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use VertexOrIndexBuffer - or for constant buffer use NonPixelShaderResource"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Rendering.ResourceState.VertexAndConstantBuffer"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.ResourceState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.ResourceState.IndexBuffer",
+          "Name": "IndexBuffer",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use VertexOrIndexBuffer"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Rendering.ResourceState.IndexBuffer"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.ResourceState",
+      "Name": "ResourceState",
+      "Attributes": [
+        {
+          "FullName": "System.FlagsAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Used to describe a GPU resources state for barrier transitions.",
+        "Remarks": "There are intended to be a high level generic of resource states that can be translated\nto any lower level graphics APIs. (VK/D3D12/Metal)"
+      },
+      "DocId": "T:Sandbox.Rendering.ResourceState"
+    },
+    {
+      "Namespace": "Sandbox.Rendering",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Rendering.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.Stage.AfterDepthPrepass",
+          "Name": "AfterDepthPrepass",
+          "DocId": "F:Sandbox.Rendering.Stage.AfterDepthPrepass"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.Stage.AfterOpaque",
+          "Name": "AfterOpaque",
+          "DocId": "F:Sandbox.Rendering.Stage.AfterOpaque"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.Stage.AfterSkybox",
+          "Name": "AfterSkybox",
+          "DocId": "F:Sandbox.Rendering.Stage.AfterSkybox"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.Stage.AfterTransparent",
+          "Name": "AfterTransparent",
+          "DocId": "F:Sandbox.Rendering.Stage.AfterTransparent"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.Stage.AfterViewmodel",
+          "Name": "AfterViewmodel",
+          "DocId": "F:Sandbox.Rendering.Stage.AfterViewmodel"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.Stage.BeforePostProcess",
+          "Name": "BeforePostProcess",
+          "DocId": "F:Sandbox.Rendering.Stage.BeforePostProcess"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.Stage.Tonemapping",
+          "Name": "Tonemapping",
+          "DocId": "F:Sandbox.Rendering.Stage.Tonemapping"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.Stage.AfterPostProcess",
+          "Name": "AfterPostProcess",
+          "DocId": "F:Sandbox.Rendering.Stage.AfterPostProcess"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.Stage.AfterUI",
+          "Name": "AfterUI",
+          "DocId": "F:Sandbox.Rendering.Stage.AfterUI"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.Stage",
+      "Name": "Stage",
+      "DocId": "T:Sandbox.Rendering.Stage"
+    },
+    {
+      "Namespace": "Sandbox.Rendering",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "action",
+              "Type": "System.Action"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/TextureStreaming.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Rendering.TextureStreaming.ExecuteWithDisabled",
+          "Name": "ExecuteWithDisabled",
+          "DeclaringType": "Sandbox.Rendering.TextureStreaming",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Run a block of code with texture streaming disabled"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextureStreaming.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Run a block of code with texture streaming disabled"
+          },
+          "DocId": "M:Sandbox.Rendering.TextureStreaming.ExecuteWithDisabled(System.Action)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Rendering.TextureStreaming",
+      "Name": "TextureStreaming",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Gives global access to the texture streaming system."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\TextureStreaming.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Gives global access to the texture streaming system."
+      },
+      "DocId": "T:Sandbox.Rendering.TextureStreaming"
+    }
+  ],
+  "_metadata": {
+    "chunk": 231,
+    "items_count": 13
+  }
+}

@@ -1,0 +1,1857 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.Bake",
+          "Name": "Bake",
+          "DeclaringType": "Sandbox.EnvmapProbe",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.EnvmapProbe/<Bake>d__0"
+              ]
+            },
+            {
+              "FullName": "OrderAttribute",
+              "ConstructorArguments": [
+                "10000"
+              ]
+            },
+            {
+              "FullName": "Sandbox.ButtonAttribute",
+              "ConstructorArguments": [
+                "Bake Texture",
+                "panorama_photosphere"
+              ]
+            },
+            {
+              "FullName": "Sandbox.WideModeAttribute"
+            },
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "Mode",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Bake this envmap now. This will stop it being dynamic if it was."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.Baking.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Bake this envmap now. This will stop it being dynamic if it was."
+          },
+          "DocId": "M:Sandbox.EnvmapProbe.Bake(System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.BakeAll",
+          "Name": "BakeAll",
+          "DeclaringType": "Sandbox.EnvmapProbe",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.EnvmapProbe/<BakeAll>d__1"
+              ]
+            },
+            {
+              "FullName": "Editor.MenuAttribute",
+              "ConstructorArguments": [
+                "Editor",
+                "Scene/Bake Envmaps",
+                "panorama_photosphere"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.Baking.cs",
+                "58"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.EnvmapProbe.BakeAll"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.EnvmapProbe",
+          "DocId": "M:Sandbox.EnvmapProbe.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.EnvmapProbe.EnvmapProbeMode",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.Mode",
+          "Name": "Mode",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.EnumButtonGroupAttribute"
+            },
+            {
+              "FullName": "Sandbox.WideModeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "76"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.Mode"
+        },
+        {
+          "PropertyType": "Sandbox.SceneCubemap.ProjectionMode",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 96
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.Projection",
+          "Name": "Projection",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.SpaceAttribute",
+              "ConstructorArguments": [
+                "22"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "89"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.Projection"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 109
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.TintColor",
+          "Name": "TintColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "102"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.TintColor"
+        },
+        {
+          "PropertyType": "BBox",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 122
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.Bounds",
+          "Name": "Bounds",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "115"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.Bounds"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 135
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.Feathering",
+          "Name": "Feathering",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "-32",
+                "32"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "128"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.Feathering"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 151
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.Priority",
+          "Name": "Priority",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "100"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets or sets the priority level for the object."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "144"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets or sets the priority level for the object."
+          },
+          "DocId": "P:Sandbox.EnvmapProbe.Priority"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 172
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.Texture",
+          "Name": "Texture",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Mode",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If this is set, the EnvmapProbe will use a custom cubemap texture instead of rendering dynamically"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "164"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If this is set, the EnvmapProbe will use a custom cubemap texture instead of rendering dynamically"
+          },
+          "DocId": "P:Sandbox.EnvmapProbe.Texture"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 183
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.BakedTexture",
+          "Name": "BakedTexture",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The texture that was baked for this envmap probe"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "181"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The texture that was baked for this envmap probe"
+          },
+          "DocId": "P:Sandbox.EnvmapProbe.BakedTexture"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 189
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.RenderDynamically",
+          "Name": "RenderDynamically",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use Mode to select the update mode"
+              ]
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "184"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.RenderDynamically"
+        },
+        {
+          "PropertyType": "Sandbox.EnvmapProbe.CubemapResolution",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 204
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.Resolution",
+          "Name": "Resolution",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "Mode",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.EnumButtonGroupAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Resolution of the cubemap texture"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "194"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Resolution of the cubemap texture"
+          },
+          "DocId": "P:Sandbox.EnvmapProbe.Resolution"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 218
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.ZNear",
+          "Name": "ZNear",
+          "Attributes": [
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "Mode",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "210"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.ZNear"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 232
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.ZFar",
+          "Name": "ZFar",
+          "Attributes": [
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "Mode",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "224"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.ZFar"
+        },
+        {
+          "PropertyType": "Sandbox.EnvmapProbe.CubemapDynamicUpdate",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 247
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.UpdateStrategy",
+          "Name": "UpdateStrategy",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Realtime Updates"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Mode",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "238"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.UpdateStrategy"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 259
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.MaxDistance",
+          "Name": "MaxDistance",
+          "Attributes": [
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Mode",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only update dynamically if we're this close to it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "256"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only update dynamically if we're this close to it"
+          },
+          "DocId": "P:Sandbox.EnvmapProbe.MaxDistance"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 264
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.DelayBetweenUpdates",
+          "Name": "DelayBetweenUpdates",
+          "Attributes": [
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Mode",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "UpdateStrategy",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "10"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "260"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.DelayBetweenUpdates"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 269
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.FrameInterval",
+          "Name": "FrameInterval",
+          "Attributes": [
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Mode",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "UpdateStrategy",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "16"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "265"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.FrameInterval"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.cs",
+            "Line": 283
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.MultiBounce",
+          "Name": "MultiBounce",
+          "Attributes": [
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "Mode",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "UpdateStrategy",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Minimum amount of reflection bounces to render when first enabled before settling, at cost of extra performance on load Often times you don't need this"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "274"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Minimum amount of reflection bounces to render when first enabled before settling, at cost of extra performance on load\nOften times you don't need this"
+          },
+          "DocId": "P:Sandbox.EnvmapProbe.MultiBounce"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Scene/Components/Light/EnvmapProbe.Upgrade.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.ComponentVersion",
+          "Name": "ComponentVersion",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.Upgrade.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.EnvmapProbe.ComponentVersion"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.EnvmapProbe.Dirty",
+          "Name": "Dirty",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\EnvmapProbe.cs",
+                "74"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.EnvmapProbe.Dirty"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.EnvmapProbe",
+      "Name": "EnvmapProbe",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A cubemap probe that captures the environment around it."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Light\\EnvmapProbe.Baking.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Envmap Probe"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Light"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "radio_button_unchecked"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A cubemap probe that captures the environment around it."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Light\\EnvmapProbe.cs",
+            "8"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A cubemap probe that captures the environment around it."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Light\\EnvmapProbe.Gizmo.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A cubemap probe that captures the environment around it."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Light\\EnvmapProbe.Upgrade.cs",
+            "5"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A cubemap probe that captures the environment around it."
+      },
+      "DocId": "T:Sandbox.EnvmapProbe"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.EnvmapProbe.EnvmapProbeMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.EnvmapProbeMode.Baked",
+          "Name": "Baked",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "🥖"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.EnvmapProbe.EnvmapProbeMode.Baked"
+        },
+        {
+          "FieldType": "Sandbox.EnvmapProbe.EnvmapProbeMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.EnvmapProbeMode.Realtime",
+          "Name": "Realtime",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "📹"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.EnvmapProbe.EnvmapProbeMode.Realtime"
+        },
+        {
+          "FieldType": "Sandbox.EnvmapProbe.EnvmapProbeMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.EnvmapProbeMode.CustomTexture",
+          "Name": "CustomTexture",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "📄"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.EnvmapProbe.EnvmapProbeMode.CustomTexture"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.EnvmapProbe.EnvmapProbeMode",
+      "Name": "EnvmapProbeMode",
+      "DeclaringType": "Sandbox.EnvmapProbe",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.EnvmapProbe.EnvmapProbeMode"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.EnvmapProbe.CubemapResolution",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.CubemapResolution.Small",
+          "Name": "Small",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "128x128"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.EnvmapProbe.CubemapResolution.Small"
+        },
+        {
+          "FieldType": "Sandbox.EnvmapProbe.CubemapResolution",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.CubemapResolution.Medium",
+          "Name": "Medium",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "256x256"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.EnvmapProbe.CubemapResolution.Medium"
+        },
+        {
+          "FieldType": "Sandbox.EnvmapProbe.CubemapResolution",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.CubemapResolution.Large",
+          "Name": "Large",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "512x512"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.EnvmapProbe.CubemapResolution.Large"
+        },
+        {
+          "FieldType": "Sandbox.EnvmapProbe.CubemapResolution",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.CubemapResolution.Huge",
+          "Name": "Huge",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "1024x1024"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.EnvmapProbe.CubemapResolution.Huge"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.EnvmapProbe.CubemapResolution",
+      "Name": "CubemapResolution",
+      "DeclaringType": "Sandbox.EnvmapProbe",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.EnvmapProbe.CubemapResolution"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.EnvmapProbe.CubemapDynamicUpdate",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.CubemapDynamicUpdate.OnEnabled",
+          "Name": "OnEnabled",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Update once, when the cubemap is enabled"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update once, when the cubemap is enabled"
+          },
+          "DocId": "F:Sandbox.EnvmapProbe.CubemapDynamicUpdate.OnEnabled"
+        },
+        {
+          "FieldType": "Sandbox.EnvmapProbe.CubemapDynamicUpdate",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.CubemapDynamicUpdate.EveryFrame",
+          "Name": "EveryFrame",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Update every frame (slow, not recommended)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update every frame (slow, not recommended)"
+          },
+          "DocId": "F:Sandbox.EnvmapProbe.CubemapDynamicUpdate.EveryFrame"
+        },
+        {
+          "FieldType": "Sandbox.EnvmapProbe.CubemapDynamicUpdate",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.CubemapDynamicUpdate.FrameInterval",
+          "Name": "FrameInterval",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Update every x frames"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update every x frames"
+          },
+          "DocId": "F:Sandbox.EnvmapProbe.CubemapDynamicUpdate.FrameInterval"
+        },
+        {
+          "FieldType": "Sandbox.EnvmapProbe.CubemapDynamicUpdate",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EnvmapProbe.CubemapDynamicUpdate.TimeInterval",
+          "Name": "TimeInterval",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Update on a time based interval"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update on a time based interval"
+          },
+          "DocId": "F:Sandbox.EnvmapProbe.CubemapDynamicUpdate.TimeInterval"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.EnvmapProbe.CubemapDynamicUpdate",
+      "Name": "CubemapDynamicUpdate",
+      "DeclaringType": "Sandbox.EnvmapProbe",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.EnvmapProbe.CubemapDynamicUpdate"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 116
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Light.OnAwake",
+          "Name": "OnAwake",
+          "DeclaringType": "Sandbox.Light",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "114"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Light.OnAwake"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 123
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Light.OnEnabled",
+          "Name": "OnEnabled",
+          "DeclaringType": "Sandbox.Light",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "121"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Light.OnEnabled"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 147
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Light.OnDisabled",
+          "Name": "OnDisabled",
+          "DeclaringType": "Sandbox.Light",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "145"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Light.OnDisabled"
+        },
+        {
+          "ReturnType": "Sandbox.SceneLight",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Light.CreateSceneObject",
+          "Name": "CreateSceneObject",
+          "DeclaringType": "Sandbox.Light",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "153"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Light.CreateSceneObject"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 169
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Light.OnTagsChanged",
+          "Name": "OnTagsChanged",
+          "DeclaringType": "Sandbox.Light",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tags have been updated - lets update our light's tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "166"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tags have been updated - lets update our light's tags"
+          },
+          "DocId": "M:Sandbox.Light.OnTagsChanged"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 25
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Light..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Light",
+          "DocId": "M:Sandbox.Light.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Light.LightColor",
+          "Name": "LightColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The main color of the light"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The main color of the light"
+          },
+          "DocId": "P:Sandbox.Light.LightColor"
+        },
+        {
+          "PropertyType": "Sandbox.Light.FogInfluence",
+          "Loc": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Light.FogMode",
+          "Name": "FogMode",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Fog Settings"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "27"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Light.FogMode"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Light.FogStrength",
+          "Name": "FogStrength",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Fog Settings"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "41"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Light.FogStrength"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Light.Shadows",
+          "Name": "Shadows",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Shadows"
+              ]
+            },
+            {
+              "FullName": "OrderAttribute",
+              "ConstructorArguments": [
+                "-10"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should this light cast shadows?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "58"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should this light cast shadows?"
+          },
+          "DocId": "P:Sandbox.Light.Shadows"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Light.ShadowBias",
+          "Name": "ShadowBias",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Shadows"
+              ]
+            },
+            {
+              "FullName": "Sandbox.AdvancedAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "72"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Light.ShadowBias"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Light/Light.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Light.ShadowHardness",
+          "Name": "ShadowHardness",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Shadows"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\Light.cs",
+                "86"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Light.ShadowHardness"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Light",
+      "Name": "Light",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Light\\Light.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Light"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Light.FogInfluence",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Light.FogInfluence.Disabled",
+          "Name": "Disabled",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "blur_off"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Light.FogInfluence.Disabled"
+        },
+        {
+          "FieldType": "Sandbox.Light.FogInfluence",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Light.FogInfluence.Enabled",
+          "Name": "Enabled",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "blur_linear"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Light.FogInfluence.Enabled"
+        },
+        {
+          "FieldType": "Sandbox.Light.FogInfluence",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Light.FogInfluence.WithoutShadows",
+          "Name": "WithoutShadows",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "blur_on"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Light.FogInfluence.WithoutShadows"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Light.FogInfluence",
+      "Name": "FogInfluence",
+      "DeclaringType": "Sandbox.Light",
+      "DocId": "T:Sandbox.Light.FogInfluence"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Light",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.ScenePointLight",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Light/PointLight.cs",
+            "Line": 49
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.PointLight.CreateSceneObject",
+          "Name": "CreateSceneObject",
+          "DeclaringType": "Sandbox.PointLight",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.PreserveBaseOverridesAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\PointLight.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PointLight.CreateSceneObject"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Light/PointLight.cs",
+            "Line": 57
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.PointLight.OnAwake",
+          "Name": "OnAwake",
+          "DeclaringType": "Sandbox.PointLight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\PointLight.cs",
+                "55"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PointLight.OnAwake"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Light/PointLight.cs",
+            "Line": 65
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.PointLight.DrawGizmos",
+          "Name": "DrawGizmos",
+          "DeclaringType": "Sandbox.PointLight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\PointLight.cs",
+                "62"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PointLight.DrawGizmos"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Light/PointLight.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PointLight..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.PointLight",
+          "DocId": "M:Sandbox.PointLight.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Light/PointLight.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PointLight.Radius",
+          "Name": "Radius",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\PointLight.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PointLight.Radius"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Light/PointLight.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PointLight.Attenuation",
+          "Name": "Attenuation",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "10"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Light\\PointLight.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PointLight.Attenuation"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PointLight",
+      "Name": "PointLight",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Point Light"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Light"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "light_mode"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/pointlight.png"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Emits light in all directions from a point in space."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Light\\PointLight.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Emits light in all directions from a point in space."
+      },
+      "DocId": "T:Sandbox.PointLight"
+    }
+  ],
+  "_metadata": {
+    "chunk": 91,
+    "items_count": 7
+  }
+}

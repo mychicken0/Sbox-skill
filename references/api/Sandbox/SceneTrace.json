@@ -1,0 +1,2479 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 225
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Sphere",
+          "Name": "Sphere",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a sphere from point A to point B."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "224"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a sphere from point A to point B."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Sphere(System.Single,Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "ray",
+              "In": true,
+              "Type": "Ray"
+            },
+            {
+              "Name": "distance",
+              "In": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 230
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Sphere",
+          "Name": "Sphere",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a sphere from a given position and direction, up to a given distance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "229"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a sphere from a given position and direction, up to a given distance."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Sphere(System.Single,Ray@,System.Single@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "extents",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 237
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Box",
+          "Name": "Box",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a box from point A to point B."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "234"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a box from point A to point B."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Box(Vector3,Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "extents",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "ray",
+              "In": true,
+              "Type": "Ray"
+            },
+            {
+              "Name": "distance",
+              "In": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 245
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Box",
+          "Name": "Box",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a box from a given position and direction, up to a given distance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "242"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a box from a given position and direction, up to a given distance."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Box(Vector3,Ray@,System.Single@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "bbox",
+              "Type": "BBox"
+            },
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 253
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Box",
+          "Name": "Box",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a box from point A to point B."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "250"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a box from point A to point B."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Box(BBox,Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "bbox",
+              "Type": "BBox"
+            },
+            {
+              "Name": "ray",
+              "In": true,
+              "Type": "Ray"
+            },
+            {
+              "Name": "distance",
+              "In": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 261
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Box",
+          "Name": "Box",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a box from a given position and direction, up to a given distance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "258"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a box from a given position and direction, up to a given distance."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Box(BBox,Ray@,System.Single@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "capsule",
+              "Type": "Capsule"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 270
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Capsule",
+          "Name": "Capsule",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Shapes"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a capsule"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "266"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a capsule"
+          },
+          "DocId": "M:Sandbox.SceneTrace.Capsule(Capsule)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "capsule",
+              "Type": "Capsule"
+            },
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 280
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Capsule",
+          "Name": "Capsule",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a capsule from point A to point B."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "277"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a capsule from point A to point B."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Capsule(Capsule,Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "capsule",
+              "Type": "Capsule"
+            },
+            {
+              "Name": "ray",
+              "In": true,
+              "Type": "Ray"
+            },
+            {
+              "Name": "distance",
+              "In": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 290
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Capsule",
+          "Name": "Capsule",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a capsule from a given position and direction, up to a given distance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "287"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a capsule from a given position and direction, up to a given distance."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Capsule(Capsule,Ray@,System.Single@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "height",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 301
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Cylinder",
+          "Name": "Cylinder",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Shapes"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a cylinder"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "297"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a cylinder"
+          },
+          "DocId": "M:Sandbox.SceneTrace.Cylinder(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "height",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 311
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Cylinder",
+          "Name": "Cylinder",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a cylinder from point A to point B."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "308"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a cylinder from point A to point B."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Cylinder(System.Single,System.Single,Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "height",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "ray",
+              "In": true,
+              "Type": "Ray"
+            },
+            {
+              "Name": "distance",
+              "In": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 321
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Cylinder",
+          "Name": "Cylinder",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a cylinder from a given position and direction, up to a given distance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "318"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a cylinder from a given position and direction, up to a given distance."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Cylinder(System.Single,System.Single,Ray@,System.Single@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "height",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "baseRadius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 331
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Cone",
+          "Name": "Cone",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a cone (base at bottom, apex at top)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "328"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a cone (base at bottom, apex at top)."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Cone(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "height",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "baseRadius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 341
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Cone",
+          "Name": "Cone",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a cone from point A to point B."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "338"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a cone from point A to point B."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Cone(System.Single,System.Single,Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "height",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "baseRadius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "ray",
+              "In": true,
+              "Type": "Ray"
+            },
+            {
+              "Name": "distance",
+              "In": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 351
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Cone",
+          "Name": "Cone",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a cone from a given position and direction, up to a given distance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "348"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a cone from a given position and direction, up to a given distance."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Cone(System.Single,System.Single,Ray@,System.Single@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 361
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Ray",
+          "Name": "Ray",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a ray from point A to point B."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "358"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a ray from point A to point B."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Ray(Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "ray",
+              "In": true,
+              "Type": "Ray"
+            },
+            {
+              "Name": "distance",
+              "In": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 371
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Ray",
+          "Name": "Ray",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a ray from a given position and direction, up to a given distance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "368"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a ray from a given position and direction, up to a given distance."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Ray(Ray@,System.Single@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "body",
+              "Type": "Sandbox.PhysicsBody"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 393
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Body",
+          "Name": "Body",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a PhysicsBody from its current position and rotation to desired end point."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "390"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a PhysicsBody from its current position and rotation to desired end point."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Body(Sandbox.PhysicsBody,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "body",
+              "Type": "Sandbox.Rigidbody"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 403
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Body",
+          "Name": "Body",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a PhysicsBody from its current position and rotation to desired end point."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "400"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a PhysicsBody from its current position and rotation to desired end point."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Body(Sandbox.Rigidbody,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "body",
+              "Type": "Sandbox.PhysicsBody"
+            },
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Transform"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 413
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Body",
+          "Name": "Body",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a PhysicsBody from a position and rotation to desired end point."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "410"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a PhysicsBody from a position and rotation to desired end point."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Body(Sandbox.PhysicsBody,Transform@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "body",
+              "In": true,
+              "Type": "Sandbox.PhysicsBody"
+            },
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Transform"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 425
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Sweep",
+          "Name": "Sweep",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sweeps each <span style=\"color: #4EC9B0;\">PhysicsShape</span> of given PhysicsBody and returns the closest collision. Does not support Mesh PhysicsShapes. Basically 'hull traces' but with physics shapes. Same as tracing a body but allows rotation to change during the sweep."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "422"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sweeps each <see cref=\"T:Sandbox.PhysicsShape\">PhysicsShape</see> of given PhysicsBody and returns the closest collision. Does not support Mesh PhysicsShapes.\nBasically 'hull traces' but with physics shapes.\nSame as tracing a body but allows rotation to change during the sweep."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Sweep(Sandbox.PhysicsBody@,Transform@,Transform@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "body",
+              "In": true,
+              "Type": "Sandbox.Rigidbody"
+            },
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Transform"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 437
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Sweep",
+          "Name": "Sweep",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sweeps each <span style=\"color: #4EC9B0;\">PhysicsShape</span> of given PhysicsBody and returns the closest collision. Does not support Mesh PhysicsShapes. Basically 'hull traces' but with physics shapes. Same as tracing a body but allows rotation to change during the sweep."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "434"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sweeps each <see cref=\"T:Sandbox.PhysicsShape\">PhysicsShape</see> of given PhysicsBody and returns the closest collision. Does not support Mesh PhysicsShapes.\nBasically 'hull traces' but with physics shapes.\nSame as tracing a body but allows rotation to change during the sweep."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Sweep(Sandbox.Rigidbody@,Transform@,Transform@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "body",
+              "In": true,
+              "Type": "Sandbox.PhysicsBody"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 447
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Sweep",
+          "Name": "Sweep",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Creates a Trace.Sweep using the <span style=\"color: #4EC9B0;\">PhysicsBody</span>'s position as the starting position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "444"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Creates a Trace.Sweep using the <see cref=\"T:Sandbox.PhysicsBody\">PhysicsBody</see>'s position as the starting position."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Sweep(Sandbox.PhysicsBody@,Transform@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 456
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.FromTo",
+          "Name": "FromTo",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "#Path"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the start and end positions of the trace request"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "452"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the start and end positions of the trace request"
+          },
+          "DocId": "M:Sandbox.SceneTrace.FromTo(Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Transform"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 467
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.FromTo",
+          "Name": "FromTo",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "#Path"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the start transform and end position of the trace request"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "463"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the start transform and end position of the trace request"
+          },
+          "DocId": "M:Sandbox.SceneTrace.FromTo(Transform@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "hull",
+              "In": true,
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 478
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Size",
+          "Name": "Size",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Box"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Shapes"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Makes this trace an axis aligned box of given size. Extracts mins and maxs from the Bounding Box."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "474"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Makes this trace an axis aligned box of given size. Extracts mins and maxs from the Bounding Box."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Size(BBox@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "size",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 486
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Size",
+          "Name": "Size",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Makes this trace an axis aligned box of given size. Calculates mins and maxs by assuming given size is (maxs-mins) and the center is in the middle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "483"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Makes this trace an axis aligned box of given size. Calculates mins and maxs by assuming given size is (maxs-mins) and the center is in the middle."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Size(Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "mins",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "maxs",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 494
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Size",
+          "Name": "Size",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Makes this trace an axis aligned box of given size."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "491"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Makes this trace an axis aligned box of given size."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Size(Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "rotation",
+              "In": true,
+              "Type": "Rotation"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 504
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Rotated",
+          "Name": "Rotated",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Makes this a rotated trace, for tracing rotated boxes and capsules."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "501"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Makes this a rotated trace, for tracing rotated boxes and capsules."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Rotated(Rotation@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 516
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Radius",
+          "Name": "Radius",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Sphere"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Shapes"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Makes this trace a sphere of given radius."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "512"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Makes this trace a sphere of given radius."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Radius(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "enabled",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 526
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.UseHitPosition",
+          "Name": "UseHitPosition",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should we compute hit position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "523"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should we compute hit position."
+          },
+          "DocId": "M:Sandbox.SceneTrace.UseHitPosition(System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "hit",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 537
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.UseHitboxes",
+          "Name": "UseHitboxes",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should we hit hitboxes"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "533"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should we hit hitboxes"
+          },
+          "DocId": "M:Sandbox.SceneTrace.UseHitboxes(System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "hit",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 548
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.UseRenderMeshes",
+          "Name": "UseRenderMeshes",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should we hit meshes too? This can be slow and only works for the editor."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "544"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should we hit meshes too? This can be slow and only works for the editor."
+          },
+          "DocId": "M:Sandbox.SceneTrace.UseRenderMeshes(System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "hitFront",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "hitBack",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 565
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.UseRenderMeshes",
+          "Name": "UseRenderMeshes",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should we hit meshes too? This can be slow and only works for the editor."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "561"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should we hit meshes too? This can be slow and only works for the editor."
+          },
+          "DocId": "M:Sandbox.SceneTrace.UseRenderMeshes(System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "hit",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 582
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.UsePhysicsWorld",
+          "Name": "UsePhysicsWorld",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should we hit physics objects?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "578"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should we hit physics objects?"
+          },
+          "DocId": "M:Sandbox.SceneTrace.UsePhysicsWorld(System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 592
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.WithTag",
+          "Name": "WithTag",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters/#Tags"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return entities with this tag. Subsequent calls to this will add multiple requirements and they'll all have to be met (ie, the entity will need all tags)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "590"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return entities with this tag. Subsequent calls to this will add multiple requirements\nand they'll all have to be met (ie, the entity will need all tags)."
+          },
+          "DocId": "M:Sandbox.SceneTrace.WithTag(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 598
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.WithAllTags",
+          "Name": "WithAllTags",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters/#Tags"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return entities with all of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "596"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return entities with all of these tags"
+          },
+          "DocId": "M:Sandbox.SceneTrace.WithAllTags(System.String[])"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "Sandbox.ITagSet"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 603
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.WithAllTags",
+          "Name": "WithAllTags",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return entities with all of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "602"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return entities with all of these tags"
+          },
+          "DocId": "M:Sandbox.SceneTrace.WithAllTags(Sandbox.ITagSet)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 609
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.WithAnyTags",
+          "Name": "WithAnyTags",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters/#Tags"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return entities with any of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "607"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return entities with any of these tags"
+          },
+          "DocId": "M:Sandbox.SceneTrace.WithAnyTags(System.String[])"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "Sandbox.ITagSet"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 614
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.WithAnyTags",
+          "Name": "WithAnyTags",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return entities with any of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "613"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return entities with any of these tags"
+          },
+          "DocId": "M:Sandbox.SceneTrace.WithAnyTags(Sandbox.ITagSet)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 620
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.WithoutTags",
+          "Name": "WithoutTags",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters/#Tags"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return entities without any of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "618"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return entities without any of these tags"
+          },
+          "DocId": "M:Sandbox.SceneTrace.WithoutTags(System.String[])"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "Sandbox.ITagSet"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 625
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.WithoutTags",
+          "Name": "WithoutTags",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return entities without any of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "624"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return entities without any of these tags"
+          },
+          "DocId": "M:Sandbox.SceneTrace.WithoutTags(Sandbox.ITagSet)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String"
+            },
+            {
+              "Name": "asTrigger",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 632
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.WithCollisionRules",
+          "Name": "WithCollisionRules",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Use the collision rules of an object with the given tags."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "631"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Use the collision rules of an object with the given tags.",
+            "Params": {
+              "tag": "Which tag this trace will adopt the collision rules of.",
+              "asTrigger": "If true, trace against triggers only. Otherwise, trace for collisions (default)."
+            }
+          },
+          "DocId": "M:Sandbox.SceneTrace.WithCollisionRules(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.String>"
+            },
+            {
+              "Name": "asTrigger",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 639
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.WithCollisionRules",
+          "Name": "WithCollisionRules",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Use the collision rules for the given set of tags."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "638"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SceneTrace.WithCollisionRules(System.Collections.Generic.IEnumerable`1{System.String},System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.GameObject"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 645
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.IgnoreGameObject",
+          "Name": "IgnoreGameObject",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Do not hit this object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "643"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Do not hit this object"
+          },
+          "DocId": "M:Sandbox.SceneTrace.IgnoreGameObject(Sandbox.GameObject)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.GameObject"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 651
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.IgnoreGameObjectHierarchy",
+          "Name": "IgnoreGameObjectHierarchy",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Do not hit this object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "649"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Do not hit this object"
+          },
+          "DocId": "M:Sandbox.SceneTrace.IgnoreGameObjectHierarchy(Sandbox.GameObject)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 660
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.HitTriggers",
+          "Name": "HitTriggers",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Hit Triggers"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "658"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Hit Triggers"
+          },
+          "DocId": "M:Sandbox.SceneTrace.HitTriggers"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 666
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.HitTriggersOnly",
+          "Name": "HitTriggersOnly",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Hit Only Triggers"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "664"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Hit Only Triggers"
+          },
+          "DocId": "M:Sandbox.SceneTrace.HitTriggersOnly"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 672
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.IgnoreStatic",
+          "Name": "IgnoreStatic",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Do not hit static objects"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "670"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Do not hit static objects"
+          },
+          "DocId": "M:Sandbox.SceneTrace.IgnoreStatic"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 678
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.IgnoreDynamic",
+          "Name": "IgnoreDynamic",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Do not hit dynamic objects"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "676"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Do not hit dynamic objects"
+          },
+          "DocId": "M:Sandbox.SceneTrace.IgnoreDynamic"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTrace",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 684
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.IgnoreKeyframed",
+          "Name": "IgnoreKeyframed",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Filters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Do not hit keyframed objects"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "682"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Do not hit keyframed objects"
+          },
+          "DocId": "M:Sandbox.SceneTrace.IgnoreKeyframed"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTraceResult",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 692
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.Run",
+          "Name": "Run",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ImpureAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Run the trace and return the result. The result will return the first hit."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "688"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Run the trace and return the result. The result will return the first hit."
+          },
+          "DocId": "M:Sandbox.SceneTrace.Run"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.SceneTraceResult>",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 701
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.RunAll",
+          "Name": "RunAll",
+          "DeclaringType": "Sandbox.SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ImpureAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Run the trace and record everything we hit along the way. The result will be an array of hits."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "697"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Run the trace and record everything we hit along the way. The result will be an array of hits."
+          },
+          "DocId": "M:Sandbox.SceneTrace.RunAll"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.PhysicsTraceBuilder",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTrace.PhysicsTrace",
+          "Name": "PhysicsTrace",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "191"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.SceneTrace.PhysicsTrace"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneTrace",
+      "Name": "SceneTrace",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.ActionGraphIgnoreAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.SceneTrace"
+    }
+  ],
+  "_metadata": {
+    "chunk": 130,
+    "items_count": 1
+  }
+}

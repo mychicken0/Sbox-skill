@@ -1,0 +1,1420 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 202
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.SetAgentPosition",
+          "Name": "SetAgentPosition",
+          "DeclaringType": "Sandbox.NavMeshAgent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If you want to move the agent from one position to another"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "199"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If you want to move the agent from one position to another"
+          },
+          "DocId": "M:Sandbox.NavMeshAgent.SetAgentPosition(Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "targetPosition",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 215
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.MoveTo",
+          "Name": "MoveTo",
+          "DeclaringType": "Sandbox.NavMeshAgent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Navigate to the position"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "212"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Navigate to the position"
+          },
+          "DocId": "M:Sandbox.NavMeshAgent.MoveTo(Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "path",
+              "Type": "Sandbox.Navigation.NavMeshPath"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 244
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.SetPath",
+          "Name": "SetPath",
+          "DeclaringType": "Sandbox.NavMeshAgent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Assigns a precalculated path for the agent to follow. The agent will attempt to follow the path, but may adjust its movement to avoid obstacles or other agents. If the path becomes invalid during navigation, it may be recalculated completely."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "241"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Assigns a precalculated path for the agent to follow.\nThe agent will attempt to follow the path, but may adjust its movement to avoid obstacles or other agents.\nIf the path becomes invalid during navigation, it may be recalculated completely."
+          },
+          "DocId": "M:Sandbox.NavMeshAgent.SetPath(Sandbox.Navigation.NavMeshPath)"
+        },
+        {
+          "ReturnType": "Sandbox.Navigation.NavMeshPath",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 273
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.GetPath",
+          "Name": "GetPath",
+          "DeclaringType": "Sandbox.NavMeshAgent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the agent's current path as a NavMeshPath. This is not free, so avoid calling it every frame."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "270"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the agent's current path as a NavMeshPath. This is not free, so avoid calling it every frame.",
+            "Return": "A NavMeshPath containing the agent's current path information."
+          },
+          "DocId": "M:Sandbox.NavMeshAgent.GetPath"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 342
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.Stop",
+          "Name": "Stop",
+          "DeclaringType": "Sandbox.NavMeshAgent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Stop moving, or whatever we're doing"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "339"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Stop moving, or whatever we're doing"
+          },
+          "DocId": "M:Sandbox.NavMeshAgent.Stop"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 355
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.CompleteLinkTraversal",
+          "Name": "CompleteLinkTraversal",
+          "DeclaringType": "Sandbox.NavMeshAgent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Finish link traversal, must be called after traversing a link if AutoTraverseLinks is false."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "352"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Finish link traversal, must be called after traversing a link if AutoTraverseLinks is false."
+          },
+          "DocId": "M:Sandbox.NavMeshAgent.CompleteLinkTraversal"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "distance",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 626
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.GetLookAhead",
+          "Name": "GetLookAhead",
+          "DeclaringType": "Sandbox.NavMeshAgent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a point on the current path, distance away from here. This is a simplified path so only includes the first few corners."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "623"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a point on the current path, distance away from here. This is a simplified path so \nonly includes the first few corners."
+          },
+          "DocId": "M:Sandbox.NavMeshAgent.GetLookAhead(System.Single)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.NavMeshAgent",
+          "DocId": "M:Sandbox.NavMeshAgent.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Physical Properties"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.NavMeshAgent.Height"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.Radius",
+          "Name": "Radius",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Physical Properties"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.NavMeshAgent.Radius"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.MaxSpeed",
+          "Name": "MaxSpeed",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Movement"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "48"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.NavMeshAgent.MaxSpeed"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.Acceleration",
+          "Name": "Acceleration",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Movement"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The maximum acceleration a agent can have. This is how fast the agent can change its velocity. If you want snappy movement this should be as high or higher than <span style=\"color: #4EC9B0;\">NavMeshAgent</span>.<span style=\"color: #DCDCDC;\">MaxSpeed</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "66"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The maximum acceleration a agent can have. This is how fast the agent can change its velocity.\nIf you want snappy movement this should be as high or higher than <see cref=\"P:Sandbox.NavMeshAgent.MaxSpeed\" />."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.Acceleration"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.UpdatePosition",
+          "Name": "UpdatePosition",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Movement"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Update GameObject Position"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the Position of the GameObject to the agent position every frame. You can turn this off and handle it yourself by using the AgentPosition property."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "83"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the Position of the GameObject to the agent position every frame. You can turn this off and handle it yourself by using the AgentPosition property."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.UpdatePosition"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.UpdateRotation",
+          "Name": "UpdateRotation",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Movement"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Update GameObject Rotation"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This will simply face the direction it is moving. It is not configurable on purpose, so you should really turn this off and be doing this yourself if you need it to do anything specific."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "90"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This will simply face the direction it is moving. It is not configurable on purpose, so you should really turn this off and be doing this yourself if you need it to do anything specific."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.UpdateRotation"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.HashSet`1<Sandbox.Engine.Resources.NavMeshAreaDefinition>",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.AllowedAreas",
+          "Name": "AllowedAreas",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Constraints"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "What areas the agent is allowed to travel on. If empty, all areas are allowed."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "97"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "What areas the agent is allowed to travel on. If empty, all areas are allowed."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.AllowedAreas"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.HashSet`1<Sandbox.Engine.Resources.NavMeshAreaDefinition>",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.ForbiddenAreas",
+          "Name": "ForbiddenAreas",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Constraints"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "What areas the agent is not allowed to travel on. If empty, no areas are forbidden."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "104"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "What areas the agent is not allowed to travel on. If empty, no areas are forbidden."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.ForbiddenAreas"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 114
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.AllowDefaultArea",
+          "Name": "AllowDefaultArea",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Constraints"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is the agent allowed to travel on the default area?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "111"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is the agent allowed to travel on the default area?"
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.AllowDefaultArea"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.AutoTraverseLinks",
+          "Name": "AutoTraverseLinks",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Constraints"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should the agent automatically traverse links when it reaches them? Or do you want to implement your own link traversal logic?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "118"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should the agent automatically traverse links when it reaches them? Or do you want to implement your own link traversal logic?"
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.AutoTraverseLinks"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 143
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.Separation",
+          "Name": "Separation",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Avoidance"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets or sets the separation factor used to control how strongly agents avoid crowding each other."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "135"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets or sets the separation factor used to control how strongly agents avoid crowding each other."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.Separation"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 153
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.AgentPosition",
+          "Name": "AgentPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Updated with the agent's position, even if UpdatePosition is false"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "152"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Updated  with the agent's position, even if UpdatePosition is false"
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.AgentPosition"
+        },
+        {
+          "PropertyType": "System.Nullable`1<Vector3>",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 158
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.TargetPosition",
+          "Name": "TargetPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the current target position for the agent, if one is set."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "157"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the current target position for the agent, if one is set."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.TargetPosition"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 165
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.Velocity",
+          "Name": "Velocity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "159"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.NavMeshAgent.Velocity"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 176
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.WishVelocity",
+          "Name": "WishVelocity",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The velocity the agent would like to move at, you can pass this into a PlayerController."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "173"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The velocity the agent would like to move at, you can pass this into a PlayerController."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.WishVelocity"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 182
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.IsNavigating",
+          "Name": "IsNavigating",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if the agent is currently navigating to a target."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "181"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if the agent is currently navigating to a target."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.IsNavigating"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 433
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.SyncAgentPosition",
+          "Name": "SyncAgentPosition",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "431"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.NavMeshAgent.SyncAgentPosition"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 438
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.LinkEnter",
+          "Name": "LinkEnter",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Emitted when the agent enters a link."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "437"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Emitted when the agent enters a link."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.LinkEnter"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 443
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.LinkExit",
+          "Name": "LinkExit",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Emitted when the agent exits a link."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "442"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Emitted when the agent exits a link."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.LinkExit"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 448
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.IsTraversingLink",
+          "Name": "IsTraversingLink",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if the agent is currently traversing a link."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "447"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if the agent is currently traversing a link."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.IsTraversingLink"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Nullable`1<Sandbox.NavMeshAgent.LinkTraversalData>",
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.CurrentLinkTraversal",
+          "Name": "CurrentLinkTraversal",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "483"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Information about the current link traversal."
+          },
+          "DocId": "F:Sandbox.NavMeshAgent.CurrentLinkTraversal"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.NavMeshAgent",
+      "Name": "NavMeshAgent",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "NavMesh - Agent"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Navigation"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "smart_toy"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/navmeshagent.png"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An agent that can navigate the navmesh defined in the scene."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+            "12"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "An agent that can navigate the navmesh defined in the scene."
+      },
+      "DocId": "T:Sandbox.NavMeshAgent"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 460
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.LinkTraversalData.LinkEnterPosition",
+          "Name": "LinkEnterPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The start position of the traversal. Depending on the direction traversing, this is either LinkComponent.WorldStartPositionOnNavMesh or LinkComponent.WorldEndPositionOnNavMesh."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "459"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The start position of the traversal.\nDepending on the direction traversing,\nthis is either LinkComponent.WorldStartPositionOnNavMesh or LinkComponent.WorldEndPositionOnNavMesh."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.LinkTraversalData.LinkEnterPosition"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 467
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.LinkTraversalData.LinkExitPosition",
+          "Name": "LinkExitPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The end position of the traversal. Where the agent should exit. Depending on the direction traversing, this is either LinkComponent.WorldStartPositionOnNavMesh or LinkComponent.WorldEndPositionOnNavMesh."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "466"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The end position of the traversal. Where the agent should exit.\nDepending on the direction traversing,\nthis is either LinkComponent.WorldStartPositionOnNavMesh or LinkComponent.WorldEndPositionOnNavMesh."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.LinkTraversalData.LinkExitPosition"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 472
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.LinkTraversalData.AgentInitialPosition",
+          "Name": "AgentInitialPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The position at which the agent entered the link."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "471"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The position at which the agent entered the link."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.LinkTraversalData.AgentInitialPosition"
+        },
+        {
+          "PropertyType": "Sandbox.NavMeshLink",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshAgent.cs",
+            "Line": 478
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshAgent.LinkTraversalData.LinkComponent",
+          "Name": "LinkComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The Link component that the agent is traversing. May be null if the agent is traversing a link created without a NavMeshLink component."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshAgent.cs",
+                "477"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The Link component that the agent is traversing.\nMay be null if the agent is traversing a link created without a NavMeshLink component."
+          },
+          "DocId": "P:Sandbox.NavMeshAgent.LinkTraversalData.LinkComponent"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.NavMeshAgent.LinkTraversalData",
+      "Name": "LinkTraversalData",
+      "DeclaringType": "Sandbox.NavMeshAgent",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Holds information about the current link the agent is traversing."
+      },
+      "DocId": "T:Sandbox.NavMeshAgent.LinkTraversalData"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Volumes.VolumeComponent",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "context",
+              "Type": "Sandbox.LoadingContext"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.NavMeshArea.OnLoad",
+          "Name": "OnLoad",
+          "DeclaringType": "Sandbox.NavMeshArea",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.NavMeshArea/<OnLoad>d__9"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshArea.cs",
+                "64"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.NavMeshArea.OnLoad(Sandbox.LoadingContext)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshArea.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshArea..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.NavMeshArea",
+          "DocId": "M:Sandbox.NavMeshArea.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshArea.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshArea.IsBlocker",
+          "Name": "IsBlocker",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether navmesh generation in this area will be completely disabled."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshArea.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether navmesh generation in this area will be completely disabled."
+          },
+          "DocId": "P:Sandbox.NavMeshArea.IsBlocker"
+        },
+        {
+          "PropertyType": "Sandbox.Engine.Resources.NavMeshAreaDefinition",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshArea.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshArea.Area",
+          "Name": "Area",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The NavMesh area definition to apply to this area."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshArea.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The NavMesh area definition to apply to this area."
+          },
+          "DocId": "P:Sandbox.NavMeshArea.Area"
+        },
+        {
+          "PropertyType": "Sandbox.Collider",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshArea.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshArea.LinkedCollider",
+          "Name": "LinkedCollider",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use the SceneVolume property inherited from VolumeComponent instead"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The collider this area's shape is based on. In almost every case, you will want to use a trigger collider for this."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshArea.cs",
+                "53"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The collider this area's shape is based on.\nIn almost every case, you will want to use a trigger collider for this."
+          },
+          "DocId": "P:Sandbox.NavMeshArea.LinkedCollider"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.NavMeshArea",
+      "Name": "NavMeshArea",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "NavMesh - Area"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Navigation"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "crop"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/navmeshagent.png"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An area that influences the NavMesh generation. Areas can be used to block off parts of the NavMesh. Static areas have almost no performance overhead. Moving areas at runtime will have an impact on performance if done excessively."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Navigation\\NavMeshArea.cs",
+            "13"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "An area that influences the NavMesh generation.\nAreas can be used to block off parts of the NavMesh.\nStatic areas have almost no performance overhead.\nMoving areas at runtime will have an impact on performance if done excessively."
+      },
+      "DocId": "T:Sandbox.NavMeshArea"
+    }
+  ],
+  "_metadata": {
+    "chunk": 96,
+    "items_count": 3
+  }
+}

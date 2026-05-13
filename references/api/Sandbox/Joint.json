@@ -1,0 +1,1708 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 208
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Joint.OnStart",
+          "Name": "OnStart",
+          "DeclaringType": "Sandbox.Joint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "206"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Joint.OnStart"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 219
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Joint.OnDestroy",
+          "Name": "OnDestroy",
+          "DeclaringType": "Sandbox.Joint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "217"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Joint.OnDestroy"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 228
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Joint.OnEnabled",
+          "Name": "OnEnabled",
+          "DeclaringType": "Sandbox.Joint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "226"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Joint.OnEnabled"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 235
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Joint.OnDisabled",
+          "Name": "OnDisabled",
+          "DeclaringType": "Sandbox.Joint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "233"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Joint.OnDisabled"
+        },
+        {
+          "ReturnType": "Sandbox.Physics.PhysicsJoint",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "point1",
+              "Type": "Sandbox.Physics.PhysicsPoint"
+            },
+            {
+              "Name": "point2",
+              "Type": "Sandbox.Physics.PhysicsPoint"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.Joint.CreateJoint",
+          "Name": "CreateJoint",
+          "DeclaringType": "Sandbox.Joint",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Joint type implementation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "243"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Joint type implementation."
+          },
+          "DocId": "M:Sandbox.Joint.CreateJoint(Sandbox.Physics.PhysicsPoint,Sandbox.Physics.PhysicsPoint)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 319
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Joint.DestroyJoint",
+          "Name": "DestroyJoint",
+          "DeclaringType": "Sandbox.Joint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "317"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Joint.DestroyJoint"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 333
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.Break",
+          "Name": "Break",
+          "DeclaringType": "Sandbox.Joint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ButtonAttribute",
+              "ConstructorArguments": [
+                "",
+                ""
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Breaking"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "IsBroken",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "329"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Joint.Break"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 352
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.Unbreak",
+          "Name": "Unbreak",
+          "DeclaringType": "Sandbox.Joint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ButtonAttribute",
+              "ConstructorArguments": [
+                "",
+                ""
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Breaking"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "IsBroken",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "348"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Joint.Unbreak"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 365
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Joint.DrawGizmos",
+          "Name": "DrawGizmos",
+          "DeclaringType": "Sandbox.Joint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "362"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Joint.DrawGizmos"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Joint..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Joint",
+          "DocId": "M:Sandbox.Joint.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Joint.AttachmentMode",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.Attachment",
+          "Name": "Attachment",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Are local frames calculated automatically or set manually. See <span style=\"color: #4EC9B0;\">Joint</span>.<span style=\"color: #DCDCDC;\">LocalFrame1</span>, <span style=\"color: #4EC9B0;\">Joint</span>.<span style=\"color: #DCDCDC;\">LocalFrame2</span>"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Are local frames calculated automatically or set manually. See <see cref=\"P:Sandbox.Joint.LocalFrame1\" />, <see cref=\"P:Sandbox.Joint.LocalFrame2\" />"
+          },
+          "DocId": "P:Sandbox.Joint.Attachment"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.LocalFrame1",
+          "Name": "LocalFrame1",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only used on joint creation. See Sandbox.Joint.AttachmentMode.LocalFrames"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only used on joint creation. See <see cref=\"F:Sandbox.Joint.AttachmentMode.LocalFrames\" />"
+          },
+          "DocId": "P:Sandbox.Joint.LocalFrame1"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.LocalFrame2",
+          "Name": "LocalFrame2",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only used on joint creation. See Sandbox.Joint.AttachmentMode.LocalFrames"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only used on joint creation. See <see cref=\"F:Sandbox.Joint.AttachmentMode.LocalFrames\" />"
+          },
+          "DocId": "P:Sandbox.Joint.LocalFrame2"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.AnchorBody",
+          "Name": "AnchorBody",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.AdvancedAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The body this joint is anchored to. If this is null then it will use the current GameObject as the anchor."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The body this joint is anchored to. If this is null then it will use the current GameObject as the anchor."
+          },
+          "DocId": "P:Sandbox.Joint.AnchorBody"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.Body",
+          "Name": "Body",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Game object to find the body to attach this joint to."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "68"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Game object to find the body to attach this joint to."
+          },
+          "DocId": "P:Sandbox.Joint.Body"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.EnableCollision",
+          "Name": "EnableCollision",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enable or disable collision between the two bodies."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "86"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enable or disable collision between the two bodies."
+          },
+          "DocId": "P:Sandbox.Joint.EnableCollision"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 103
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.StartBroken",
+          "Name": "StartBroken",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Breaking"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is the joint broken on start."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "101"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is the joint broken on start."
+          },
+          "DocId": "P:Sandbox.Joint.StartBroken"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.BreakForce",
+          "Name": "BreakForce",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Breaking"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Strength of the linear constraint. If it takes any more energy than this, it'll break."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "107"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Strength of the linear constraint. If it takes any more energy than this, it'll break."
+          },
+          "DocId": "P:Sandbox.Joint.BreakForce"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 128
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.BreakTorque",
+          "Name": "BreakTorque",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Breaking"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Strength of the angular constraint. If it takes any more energy than this, it'll break."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "122"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Strength of the angular constraint. If it takes any more energy than this, it'll break."
+          },
+          "DocId": "P:Sandbox.Joint.BreakTorque"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.OnBreak",
+          "Name": "OnBreak",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Breaking"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when the joint breaks."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "137"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when the joint breaks."
+          },
+          "DocId": "P:Sandbox.Joint.OnBreak"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 145
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.LinearStress",
+          "Name": "LinearStress",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Breaking"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Current linear stress applied to the joint."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "142"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Current linear stress applied to the joint."
+          },
+          "DocId": "P:Sandbox.Joint.LinearStress"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 152
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.AngularStress",
+          "Name": "AngularStress",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Breaking"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Current angular stress applied to the joint."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "149"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Current angular stress applied to the joint."
+          },
+          "DocId": "P:Sandbox.Joint.AngularStress"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 159
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.IsBroken",
+          "Name": "IsBroken",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Breaking"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is the joint currently broken and inactive."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "156"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is the joint currently broken and inactive."
+          },
+          "DocId": "P:Sandbox.Joint.IsBroken"
+        },
+        {
+          "PropertyType": "Sandbox.PhysicsBody",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 164
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.Body1",
+          "Name": "Body1",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The source physics body this joint is attached to."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "163"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The source physics body this joint is attached to."
+          },
+          "DocId": "P:Sandbox.Joint.Body1"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 169
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.Object1",
+          "Name": "Object1",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The source GameObject we're connected to"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "168"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The source GameObject we're connected to"
+          },
+          "DocId": "P:Sandbox.Joint.Object1"
+        },
+        {
+          "PropertyType": "Sandbox.PhysicsBody",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 174
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.Body2",
+          "Name": "Body2",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The target physics body this joint is constraining."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "173"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The target physics body this joint is constraining."
+          },
+          "DocId": "P:Sandbox.Joint.Body2"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 179
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.Object2",
+          "Name": "Object2",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The target GameObject we're connected to"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "178"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The target GameObject we're connected to"
+          },
+          "DocId": "P:Sandbox.Joint.Object2"
+        },
+        {
+          "PropertyType": "Sandbox.Physics.PhysicsPoint",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 189
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.Point1",
+          "Name": "Point1",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A specific point this joint is attached at on <span style=\"color: #4EC9B0;\">Joint</span>.<span style=\"color: #DCDCDC;\">Body1</span>"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "183"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A specific point this joint is attached at on <see cref=\"P:Sandbox.Joint.Body1\" />"
+          },
+          "DocId": "P:Sandbox.Joint.Point1"
+        },
+        {
+          "PropertyType": "Sandbox.Physics.PhysicsPoint",
+          "Loc": {
+            "File": "Scene/Components/Joint/Joint.cs",
+            "Line": 202
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Joint.Point2",
+          "Name": "Point2",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A specific point this joint is attached at on <span style=\"color: #4EC9B0;\">Joint</span>.<span style=\"color: #DCDCDC;\">Body2</span>"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\Joint.cs",
+                "196"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A specific point this joint is attached at on <see cref=\"P:Sandbox.Joint.Body2\" />"
+          },
+          "DocId": "P:Sandbox.Joint.Point2"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Joint",
+      "Name": "Joint",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Joint\\Joint.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Joint"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Joint.AttachmentMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Joint.AttachmentMode.Auto",
+          "Name": "Auto",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Local frames are calculated automatically using this component transform and connected body transform."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Local frames are calculated automatically using this component transform and connected body transform."
+          },
+          "DocId": "F:Sandbox.Joint.AttachmentMode.Auto"
+        },
+        {
+          "FieldType": "Sandbox.Joint.AttachmentMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Joint.AttachmentMode.LocalFrames",
+          "Name": "LocalFrames",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Local frames are set manually. See <span style=\"color: #4EC9B0;\">Joint</span>.<span style=\"color: #DCDCDC;\">LocalFrame1</span>, <span style=\"color: #4EC9B0;\">Joint</span>.<span style=\"color: #DCDCDC;\">LocalFrame2</span>"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Local frames are set manually. See <see cref=\"P:Sandbox.Joint.LocalFrame1\" />, <see cref=\"P:Sandbox.Joint.LocalFrame2\" />"
+          },
+          "DocId": "F:Sandbox.Joint.AttachmentMode.LocalFrames"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Joint.AttachmentMode",
+      "Name": "AttachmentMode",
+      "DeclaringType": "Sandbox.Joint",
+      "DocId": "T:Sandbox.Joint.AttachmentMode"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Joint",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.SliderJoint..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SliderJoint",
+          "DocId": "M:Sandbox.SliderJoint.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/SliderJoint.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SliderJoint.MaxLength",
+          "Name": "MaxLength",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Maximum length it should be allowed to go"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\SliderJoint.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum length it should be allowed to go"
+          },
+          "DocId": "P:Sandbox.SliderJoint.MaxLength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/SliderJoint.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SliderJoint.MinLength",
+          "Name": "MinLength",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Minimum length it should be allowed to go"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\SliderJoint.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Minimum length it should be allowed to go"
+          },
+          "DocId": "P:Sandbox.SliderJoint.MinLength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/SliderJoint.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SliderJoint.Friction",
+          "Name": "Friction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Slider friction"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\SliderJoint.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Slider friction"
+          },
+          "DocId": "P:Sandbox.SliderJoint.Friction"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SliderJoint",
+      "Name": "SliderJoint",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Slider Joint"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Physics"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "open_in_full"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/slider.png"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Restrict an object to one axis, relative to another object. Like a drawer opening."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Joint\\SliderJoint.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Restrict an object to one axis, relative to another object. Like a drawer opening."
+      },
+      "DocId": "T:Sandbox.SliderJoint"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Joint",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Joint/SpringJoint.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SpringJoint..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SpringJoint",
+          "DocId": "M:Sandbox.SpringJoint.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/SpringJoint.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SpringJoint.Frequency",
+          "Name": "Frequency",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The stiffness of the spring"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\SpringJoint.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The stiffness of the spring"
+          },
+          "DocId": "P:Sandbox.SpringJoint.Frequency"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/SpringJoint.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SpringJoint.Damping",
+          "Name": "Damping",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The damping ratio of the spring, usually between 0 and 1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\SpringJoint.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The damping ratio of the spring, usually between 0 and 1"
+          },
+          "DocId": "P:Sandbox.SpringJoint.Damping"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/SpringJoint.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SpringJoint.MinLength",
+          "Name": "MinLength",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Minimum length it should be allowed to go"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\SpringJoint.cs",
+                "60"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Minimum length it should be allowed to go"
+          },
+          "DocId": "P:Sandbox.SpringJoint.MinLength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/SpringJoint.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SpringJoint.MaxLength",
+          "Name": "MaxLength",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Maximum length it should be allowed to go"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\SpringJoint.cs",
+                "82"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum length it should be allowed to go"
+          },
+          "DocId": "P:Sandbox.SpringJoint.MaxLength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/SpringJoint.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SpringJoint.RestLength",
+          "Name": "RestLength",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Length of the spring at rest."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\SpringJoint.cs",
+                "104"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Length of the spring at rest."
+          },
+          "DocId": "P:Sandbox.SpringJoint.RestLength"
+        },
+        {
+          "PropertyType": "Sandbox.SpringJoint.SpringForceMode",
+          "Loc": {
+            "File": "Scene/Components/Joint/SpringJoint.cs",
+            "Line": 145
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SpringJoint.ForceMode",
+          "Name": "ForceMode",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Determines which way the spring applies force. Pull = only when stretched, Push = only when compressed, Both = acts in both directions."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\SpringJoint.cs",
+                "138"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Determines which way the spring applies force.\nPull = only when stretched,\nPush = only when compressed,\nBoth = acts in both directions."
+          },
+          "DocId": "P:Sandbox.SpringJoint.ForceMode"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SpringJoint",
+      "Name": "SpringJoint",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Spring Joint"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Physics"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "waves"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/spring.png"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Try to keep an object a set distance away from another object. Like a spring connecting two objects."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Joint\\SpringJoint.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Try to keep an object a set distance away from another object. Like a spring connecting two objects."
+      },
+      "DocId": "T:Sandbox.SpringJoint"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.SpringJoint.SpringForceMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SpringJoint.SpringForceMode.Pull",
+          "Name": "Pull",
+          "DocId": "F:Sandbox.SpringJoint.SpringForceMode.Pull"
+        },
+        {
+          "FieldType": "Sandbox.SpringJoint.SpringForceMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SpringJoint.SpringForceMode.Push",
+          "Name": "Push",
+          "DocId": "F:Sandbox.SpringJoint.SpringForceMode.Push"
+        },
+        {
+          "FieldType": "Sandbox.SpringJoint.SpringForceMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SpringJoint.SpringForceMode.Both",
+          "Name": "Both",
+          "DocId": "F:Sandbox.SpringJoint.SpringForceMode.Both"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SpringJoint.SpringForceMode",
+      "Name": "SpringForceMode",
+      "DeclaringType": "Sandbox.SpringJoint",
+      "DocId": "T:Sandbox.SpringJoint.SpringForceMode"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Joint",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Joint/UprightJoint.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UprightJoint..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UprightJoint",
+          "DocId": "M:Sandbox.UprightJoint.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/UprightJoint.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UprightJoint.Hertz",
+          "Name": "Hertz",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Spring stiffness in cycles per second (Hertz). Higher values make the joint stiffer and snap back faster."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\UprightJoint.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Spring stiffness in cycles per second (Hertz).\nHigher values make the joint stiffer and snap back faster."
+          },
+          "DocId": "P:Sandbox.UprightJoint.Hertz"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/UprightJoint.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UprightJoint.DampingRatio",
+          "Name": "DampingRatio",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Spring damping ratio (non-dimensional). A value of 1 is critically damped; values below 1 are springy, values above 1 are over-damped."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\UprightJoint.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Spring damping ratio (non-dimensional). A value of 1 is critically damped;\nvalues below 1 are springy, values above 1 are over-damped."
+          },
+          "DocId": "P:Sandbox.UprightJoint.DampingRatio"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Joint/UprightJoint.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UprightJoint.MaxTorque",
+          "Name": "MaxTorque",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Maximum torque the joint can apply in newton-meters. Set to 0 for unlimited torque."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Joint\\UprightJoint.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum torque the joint can apply in newton-meters.\nSet to 0 for unlimited torque."
+          },
+          "DocId": "P:Sandbox.UprightJoint.MaxTorque"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UprightJoint",
+      "Name": "UprightJoint",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Upright Joint"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Physics"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "vertical_align_center"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/spring.png"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Constrains a physics body to stay upright relative to another body or the world. Uses a spring to keep the Z-axes of both bodies parallel."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Joint\\UprightJoint.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Constrains a physics body to stay upright relative to another body or the world.\nUses a spring to keep the Z-axes of both bodies parallel."
+      },
+      "DocId": "T:Sandbox.UprightJoint"
+    }
+  ],
+  "_metadata": {
+    "chunk": 89,
+    "items_count": 6
+  }
+}

@@ -1,0 +1,1613 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.TypeDescription",
+          "Parameters": [
+            {
+              "Name": "extension",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.AssetTypeAttribute.FindTypeByExtension",
+          "Name": "FindTypeByExtension",
+          "DeclaringType": "Sandbox.AssetTypeAttribute",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find a resource type by its extension. The extension should have no period."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find a resource type by its extension. The extension should have no period."
+          },
+          "DocId": "M:Sandbox.AssetTypeAttribute.FindTypeByExtension(System.String)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AssetTypeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.AssetTypeAttribute",
+          "DocId": "M:Sandbox.AssetTypeAttribute.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AssetTypeAttribute.TargetType",
+          "Name": "TargetType",
+          "Attributes": [
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This gets filled in by the TypeLibrary when the class is registered, it shouldn't be changed manually."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "15"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This gets filled in by the TypeLibrary when the class is registered, it shouldn't be changed manually."
+          },
+          "DocId": "P:Sandbox.AssetTypeAttribute.TargetType"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AssetTypeAttribute.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The title of this game resource."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The title of this game resource."
+          },
+          "DocId": "P:Sandbox.AssetTypeAttribute.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AssetTypeAttribute.Extension",
+          "Name": "Extension",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "File extension for this game resource."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "File extension for this game resource."
+          },
+          "DocId": "P:Sandbox.AssetTypeAttribute.Extension"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AssetTypeAttribute.Category",
+          "Name": "Category",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Category of this game resource, for grouping in UI."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Category of this game resource, for grouping in UI."
+          },
+          "DocId": "P:Sandbox.AssetTypeAttribute.Category"
+        },
+        {
+          "PropertyType": "Sandbox.AssetTypeFlags",
+          "Loc": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AssetTypeAttribute.Flags",
+          "Name": "Flags",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Flags for this asset type."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "36"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Flags for this asset type."
+          },
+          "DocId": "P:Sandbox.AssetTypeAttribute.Flags"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.AssetTypeAttribute",
+      "Name": "AssetTypeAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Should be applied to a class that inherits from <span style=\"color: #4EC9B0;\">GameResource</span>. Makes the class able to be stored as an asset on disk."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\GameResourceAttribute.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Should be applied to a class that inherits from <see cref=\"T:Sandbox.GameResource\" />.\nMakes the class able to be stored as an asset on disk."
+      },
+      "DocId": "T:Sandbox.AssetTypeAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.AssetTypeFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.AssetTypeFlags.None",
+          "Name": "None",
+          "DocId": "F:Sandbox.AssetTypeFlags.None"
+        },
+        {
+          "FieldType": "Sandbox.AssetTypeFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.AssetTypeFlags.NoEmbedding",
+          "Name": "NoEmbedding",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If set then this resource cannot be embedded. This means that in the editor it can only really exist as an asset file on disk, not inside another asset."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If set then this resource cannot be embedded. This means that in the editor\nit can only really exist as an asset file on disk, not inside another asset."
+          },
+          "DocId": "F:Sandbox.AssetTypeFlags.NoEmbedding"
+        },
+        {
+          "FieldType": "Sandbox.AssetTypeFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.AssetTypeFlags.IncludeThumbnails",
+          "Name": "IncludeThumbnails",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Include thumbnails when publishing as part of another package"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Include thumbnails when publishing as part of another package"
+          },
+          "DocId": "F:Sandbox.AssetTypeFlags.IncludeThumbnails"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.AssetTypeFlags",
+      "Name": "AssetTypeFlags",
+      "Documentation": {
+        "Summary": "Flags for <see cref=\"T:Sandbox.AssetTypeAttribute\" />"
+      },
+      "DocId": "T:Sandbox.AssetTypeFlags"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.AssetTypeAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "extension",
+              "Type": "System.String"
+            },
+            {
+              "Name": "description",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResourceAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.GameResourceAttribute",
+          "DocId": "M:Sandbox.GameResourceAttribute.#ctor(System.String,System.String,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResourceAttribute.Icon",
+          "Name": "Icon",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Icon to be used for this asset Can be an absolute path of a PNG Or a <a>material icon</a> for this game resource's thumbnail."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "85"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Icon to be used for this asset\nCan be an absolute path of a PNG\nOr a <a href=\"https://fonts.google.com/icons\">material icon</a> for this game resource's thumbnail."
+          },
+          "DocId": "P:Sandbox.GameResourceAttribute.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResourceAttribute.IconBgColor",
+          "Name": "IconBgColor",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Background color for this resource's thumbnail."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "90"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Background color for this resource's thumbnail."
+          },
+          "DocId": "P:Sandbox.GameResourceAttribute.IconBgColor"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 96
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResourceAttribute.IconFgColor",
+          "Name": "IconFgColor",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Foreground color (icon color) for this resource's thumbnail."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "95"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Foreground color (icon color) for this resource's thumbnail."
+          },
+          "DocId": "P:Sandbox.GameResourceAttribute.IconFgColor"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResourceAttribute.CanEmbed",
+          "Name": "CanEmbed",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Can this GameResource be an embedded resource? Allows the ability to edit a resource inline instead of saving it to a specific file."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "101"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Can this GameResource be an embedded resource?\nAllows the ability to edit a resource inline instead of saving it to a specific file."
+          },
+          "DocId": "P:Sandbox.GameResourceAttribute.CanEmbed"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/GameResourceAttribute.cs",
+            "Line": 112
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResourceAttribute.Description",
+          "Name": "Description",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Description of this game resource. This is obsolete, we'll use the xml summary description."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResourceAttribute.cs",
+                "110"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Description of this game resource. This is obsolete, we'll use the xml summary description."
+          },
+          "DocId": "P:Sandbox.GameResourceAttribute.Description"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.GameResourceAttribute",
+      "Name": "GameResourceAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute",
+          "ConstructorArguments": [
+            "Use AssetType instead"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\GameResourceAttribute.cs",
+            "77"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.GameResourceAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Resource",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Material",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.CreateCopy",
+          "Name": "CreateCopy",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a copy of this material"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a copy of this material"
+          },
+          "DocId": "M:Sandbox.Material.CreateCopy(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Features.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.SetFeature",
+          "Name": "SetFeature",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set a feature flag on the material. This is usually used to enable/disable shader permutations. This is kind of a define, also known as a combo."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Features.cs",
+                "9"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set a feature flag on the material. This is usually used to enable/disable shader permutations.\nThis is kind of a define, also known as a combo."
+          },
+          "DocId": "M:Sandbox.Material.SetFeature(System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Features.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.GetFeature",
+          "Name": "GetFeature",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a feature flag on the material. This is usually used to enable/disable shader permutations."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Features.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a feature flag on the material. This is usually used to enable/disable shader permutations."
+          },
+          "DocId": "M:Sandbox.Material.GetFeature(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Material",
+          "Parameters": [
+            {
+              "Name": "filename",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Load.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Material.Load",
+          "Name": "Load",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Load a material from disk. Has internal cache."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Load.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Load a material from disk. Has internal cache.",
+            "Return": "The loaded material, or null",
+            "Params": {
+              "filename": "The filepath to load the material from."
+            }
+          },
+          "DocId": "M:Sandbox.Material.Load(System.String)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<Sandbox.Material>",
+          "Parameters": [
+            {
+              "Name": "filename",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Material.LoadAsync",
+          "Name": "LoadAsync",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Material/<LoadAsync>d__20"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Load a material from disk. Has internal cache."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Load.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Load a material from disk. Has internal cache.",
+            "Return": "The loaded material, or null",
+            "Params": {
+              "filename": "The filepath to load the material from."
+            }
+          },
+          "DocId": "M:Sandbox.Material.LoadAsync(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Texture",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.GetTexture",
+          "Name": "GetTexture",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get texture parameter, by name"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "34"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get texture parameter, by name"
+          },
+          "DocId": "M:Sandbox.Material.GetTexture(System.String)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.GetVector4",
+          "Name": "GetVector4",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get Vector4 parameter, by name"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "39"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get Vector4 parameter, by name"
+          },
+          "DocId": "M:Sandbox.Material.GetVector4(System.String)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.GetColor",
+          "Name": "GetColor",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get Color parameter, by name"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get Color parameter, by name"
+          },
+          "DocId": "M:Sandbox.Material.GetColor(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "param",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Overrides/Sets an Vector4 within the material"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides/Sets an Vector4 within the material"
+          },
+          "DocId": "M:Sandbox.Material.Set(System.String,Vector4)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "param",
+              "Type": "System.String"
+            },
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Override/Sets texture parameter (Color, Normal, etc)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Override/Sets texture parameter (Color, Normal, etc)"
+          },
+          "DocId": "M:Sandbox.Material.Set(System.String,Sandbox.Texture)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "param",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Overrides/Sets an color within the material as a color value within the material"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "81"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides/Sets an color within the material as a color value within the material"
+          },
+          "DocId": "M:Sandbox.Material.Set(System.String,Color)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "param",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Overrides/Sets an Vector3 within the material"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "86"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides/Sets an Vector3 within the material"
+          },
+          "DocId": "M:Sandbox.Material.Set(System.String,Vector3)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "param",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Overrides/Sets an Vector2 within the material"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "91"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides/Sets an Vector2 within the material"
+          },
+          "DocId": "M:Sandbox.Material.Set(System.String,Vector2)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "param",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Overrides/Sets an float within the material"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "96"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides/Sets an float within the material"
+          },
+          "DocId": "M:Sandbox.Material.Set(System.String,System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "param",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Overrides/Sets an int within the material"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "101"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides/Sets an int within the material"
+          },
+          "DocId": "M:Sandbox.Material.Set(System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "param",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Overrides/Sets an bool within the material"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "106"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overrides/Sets an bool within the material"
+          },
+          "DocId": "M:Sandbox.Material.Set(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.Material",
+          "Parameters": [
+            {
+              "Name": "materialName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "shader",
+              "Type": "System.String"
+            },
+            {
+              "Name": "anonymous",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Static.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Material.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a new empty material at runtime."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Static.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a new empty material at runtime.",
+            "Return": "The new material.",
+            "Params": {
+              "materialName": "Name of the new material.",
+              "shader": "Shader that the new material will use.",
+              "anonymous": "If false, material can be found by name."
+            }
+          },
+          "DocId": "M:Sandbox.Material.Create(System.String,System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.Material",
+          "Parameters": [
+            {
+              "Name": "shader",
+              "Type": "Sandbox.Shader"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Static.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Material.FromShader",
+          "Name": "FromShader",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get an empty material based on the specified shader. This will cache the material so that subsequent calls will return the same material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Static.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get an empty material based on the specified shader. This will cache the material so that subsequent calls\nwill return the same material."
+          },
+          "DocId": "M:Sandbox.Material.FromShader(Sandbox.Shader)"
+        },
+        {
+          "ReturnType": "Sandbox.Material",
+          "Parameters": [
+            {
+              "Name": "path",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Static.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Material.FromShader",
+          "Name": "FromShader",
+          "DeclaringType": "Sandbox.Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get an empty material based on the specified shader. This will cache the material so that subsequent calls will return the same material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Static.cs",
+                "55"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get an empty material based on the specified shader. This will cache the material so that subsequent calls\nwill return the same material."
+          },
+          "DocId": "M:Sandbox.Material.FromShader(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/Material/Material.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Material.IsValid"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/Material/Material.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Name (or path) of the material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.cs",
+                "17"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Name (or path) of the material."
+          },
+          "DocId": "P:Sandbox.Material.Name"
+        },
+        {
+          "PropertyType": "Sandbox.RenderAttributes",
+          "Loc": {
+            "File": "Resources/Material/Material.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Attributes",
+          "Name": "Attributes",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access to all of the attributes of this material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access to all of the attributes of this material."
+          },
+          "DocId": "P:Sandbox.Material.Attributes"
+        },
+        {
+          "PropertyType": "Sandbox.Material.FlagsAccessor",
+          "Loc": {
+            "File": "Resources/Material/Material.Flags.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Flags",
+          "Name": "Flags",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access flags on this material, which usually hint about the contents. These are generally added by the shader procedurally - but developers can add these in material editor too."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Flags.cs",
+                "9"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access flags on this material, which usually hint about the contents. These are generally added by \nthe shader procedurally - but developers can add these in material editor too."
+          },
+          "DocId": "P:Sandbox.Material.Flags"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.ShaderName",
+          "Name": "ShaderName",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the underlying shader name for this material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the underlying shader name for this material."
+          },
+          "DocId": "P:Sandbox.Material.ShaderName"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.FirstTexture",
+          "Name": "FirstTexture",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get thje first texture assigned to this material, if any."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get thje first texture assigned to this material, if any."
+          },
+          "DocId": "P:Sandbox.Material.FirstTexture"
+        },
+        {
+          "PropertyType": "Sandbox.Shader",
+          "Loc": {
+            "File": "Resources/Material/Material.Parameters.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.Shader",
+          "Name": "Shader",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the material's shader"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Parameters.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the material's shader"
+          },
+          "DocId": "P:Sandbox.Material.Shader"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Material",
+      "Name": "Material",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A material. Uses several <span style=\"color: #4EC9B0;\">Texture</span>s and a <span style=\"color: #4EC9B0;\">Material</span>.<span style=\"color: #DCDCDC;\">Shader</span> with specific settings for more interesting visual effects."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Material\\Material.cs",
+            "8"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A material. Uses several <span style=\"color: #4EC9B0;\">Texture</span>s and a <span style=\"color: #4EC9B0;\">Material</span>.<span style=\"color: #DCDCDC;\">Shader</span> with specific settings for more interesting visual effects."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Material\\Material.Features.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A material. Uses several <span style=\"color: #4EC9B0;\">Texture</span>s and a <span style=\"color: #4EC9B0;\">Material</span>.<span style=\"color: #DCDCDC;\">Shader</span> with specific settings for more interesting visual effects."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Material\\Material.Flags.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A material. Uses several <span style=\"color: #4EC9B0;\">Texture</span>s and a <span style=\"color: #4EC9B0;\">Material</span>.<span style=\"color: #DCDCDC;\">Shader</span> with specific settings for more interesting visual effects."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Material\\Material.Load.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A material. Uses several <span style=\"color: #4EC9B0;\">Texture</span>s and a <span style=\"color: #4EC9B0;\">Material</span>.<span style=\"color: #DCDCDC;\">Shader</span> with specific settings for more interesting visual effects."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Material\\Material.Parameters.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A material. Uses several <span style=\"color: #4EC9B0;\">Texture</span>s and a <span style=\"color: #4EC9B0;\">Material</span>.<span style=\"color: #DCDCDC;\">Shader</span> with specific settings for more interesting visual effects."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Material\\Material.Static.cs",
+            "9"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A material. Uses several <span style=\"color: #4EC9B0;\">Texture</span>s and a <span style=\"color: #4EC9B0;\">Material</span>.<span style=\"color: #DCDCDC;\">Shader</span> with specific settings for more interesting visual effects."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Material\\Material.Surface.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A material. Uses several <span style=\"color: #4EC9B0;\">Texture</span>s and a <span style=\"color: #4EC9B0;\">Material</span>.<span style=\"color: #DCDCDC;\">Shader</span> with specific settings for more interesting visual effects."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Material\\Material.UI.cs",
+            "3"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A material. Uses several <see cref=\"T:Sandbox.Texture\" />s and a <see cref=\"P:Sandbox.Material.Shader\" /> with specific settings for more interesting visual effects."
+      },
+      "DocId": "T:Sandbox.Material"
+    }
+  ],
+  "_metadata": {
+    "chunk": 48,
+    "items_count": 4
+  }
+}

@@ -1,0 +1,1843 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Span`1<System.Int16>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream.WriteData",
+          "Name": "WriteData",
+          "DeclaringType": "Sandbox.SoundStream",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundStream.cs",
+                "67"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SoundStream.WriteData(System.Span`1{System.Int16})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream.Close",
+          "Name": "Close",
+          "DeclaringType": "Sandbox.SoundStream",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Close the stream: signals that no more data will be written. Once the internal buffer drains, <span style=\"color: #4EC9B0;\">SoundHandle</span>.<span style=\"color: #DCDCDC;\">IsPlaying</span> will become <code style=\"color: #DCDCDC; background-color: #111111; padding: 4px;\">false</code>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundStream.cs",
+                "85"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Close the stream: signals that no more data will be written.\nOnce the internal buffer drains, <see cref=\"P:Sandbox.SoundHandle.IsPlaying\" /> will become <c>false</c>."
+          },
+          "DocId": "M:Sandbox.SoundStream.Close"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.SoundStream",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundStream.cs",
+                "90"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SoundStream.Dispose"
+        },
+        {
+          "ReturnType": "Sandbox.SoundHandle",
+          "Parameters": [
+            {
+              "Name": "volume",
+              "Type": "System.Single",
+              "Default": "1"
+            },
+            {
+              "Name": "pitch",
+              "Type": "System.Single",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.SoundStream",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Play sound of the stream."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundStream.cs",
+                "102"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Play sound of the stream."
+          },
+          "DocId": "M:Sandbox.SoundStream.Play(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.SoundHandle",
+          "Parameters": [
+            {
+              "Name": "volume",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "pitch",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "decibels",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.SoundStream",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Decibels are obsolete"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Play sound of the stream."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundStream.cs",
+                "117"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Play sound of the stream."
+          },
+          "DocId": "M:Sandbox.SoundStream.Play(System.Single,System.Single,System.Single)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sampleRate",
+              "Type": "System.Int32",
+              "Default": "44100"
+            },
+            {
+              "Name": "channels",
+              "Type": "System.Int32",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SoundStream",
+          "DocId": "M:Sandbox.SoundStream.#ctor(System.Int32,System.Int32)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream.SampleRate",
+          "Name": "SampleRate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Number of samples per second, as set during its creation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundStream.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of samples per second, as set during its creation."
+          },
+          "DocId": "P:Sandbox.SoundStream.SampleRate"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream.Channels",
+          "Name": "Channels",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Number of audio channels, as set during its creation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundStream.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of audio channels, as set during its creation."
+          },
+          "DocId": "P:Sandbox.SoundStream.Channels"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream.QueuedSampleCount",
+          "Name": "QueuedSampleCount",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundStream.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SoundStream.QueuedSampleCount"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream.MaxWriteSampleCount",
+          "Name": "MaxWriteSampleCount",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundStream.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SoundStream.MaxWriteSampleCount"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Audio/SoundStream.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundStream.LatencySamplesCount",
+          "Name": "LatencySamplesCount",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundStream.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SoundStream.LatencySamplesCount"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SoundStream",
+      "Name": "SoundStream",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\SoundStream.cs",
+            "4"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.SoundStream"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Systems/Console/ConsoleSystem.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ConsoleSystem.SetValue",
+          "Name": "SetValue",
+          "DeclaringType": "Sandbox.ConsoleSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Try to set a console variable. You will only be able to set variables that you have permission to set."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Console\\ConsoleSystem.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Try to set a console variable. You will only be able to set variables that you have permission to set."
+          },
+          "DocId": "M:Sandbox.ConsoleSystem.SetValue(System.String,System.Object)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Console/ConsoleSystem.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ConsoleSystem.GetValue",
+          "Name": "GetValue",
+          "DeclaringType": "Sandbox.ConsoleSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a console variable's value as a string."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Console\\ConsoleSystem.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a console variable's value as a string."
+          },
+          "DocId": "M:Sandbox.ConsoleSystem.GetValue(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "p",
+              "In": true,
+              "Type": "Sandbox.WrappedPropertySet`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Console/ConsoleSystem.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ConsoleSystem.OnChangePropertySet",
+          "Name": "OnChangePropertySet",
+          "DeclaringType": "Sandbox.ConsoleSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Invoke a method when a property with [Change] is changed."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Console\\ConsoleSystem.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ConsoleSystem.OnChangePropertySet``1(Sandbox.WrappedPropertySet`1{``0}@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "p",
+              "In": true,
+              "Type": "Sandbox.WrappedPropertySet`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Console/ConsoleSystem.cs",
+            "Line": 101
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ConsoleSystem.OnWrappedSet",
+          "Name": "OnWrappedSet",
+          "DeclaringType": "Sandbox.ConsoleSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When we update a ConVar in code, call the ConsoleSystem."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Console\\ConsoleSystem.cs",
+                "98"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ConsoleSystem.OnWrappedSet``1(Sandbox.WrappedPropertySet`1{``0}@)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "p",
+              "In": true,
+              "Type": "Sandbox.WrappedPropertyGet`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Console/ConsoleSystem.cs",
+            "Line": 120
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ConsoleSystem.OnWrappedGet",
+          "Name": "OnWrappedGet",
+          "DeclaringType": "Sandbox.ConsoleSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When we query a convar property"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Console\\ConsoleSystem.cs",
+                "117"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ConsoleSystem.OnWrappedGet``1(Sandbox.WrappedPropertyGet`1{``0}@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "command",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Console/ConsoleSystem.Run.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ConsoleSystem.Run",
+          "Name": "Run",
+          "DeclaringType": "Sandbox.ConsoleSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Run this command. This should be a single command."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Console\\ConsoleSystem.Run.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Run this command. This should be a single command."
+          },
+          "DocId": "M:Sandbox.ConsoleSystem.Run(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "command",
+              "Type": "System.String"
+            },
+            {
+              "Name": "arguments",
+              "Type": "System.Object[]"
+            }
+          ],
+          "l": {
+            "File": "Systems/Console/ConsoleSystem.Run.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ConsoleSystem.Run",
+          "Name": "Run",
+          "DeclaringType": "Sandbox.ConsoleSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Run this command, along with the arguments. We'll automatically convert them to strings and handle quoting."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Console\\ConsoleSystem.Run.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Run this command, along with the arguments. We'll automatically convert them to strings and handle quoting."
+          },
+          "DocId": "M:Sandbox.ConsoleSystem.Run(System.String,System.Object[])"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.ConsoleSystem",
+      "Name": "ConsoleSystem",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A library to interact with the Console System."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Console\\ConsoleSystem.cs",
+            "8"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A library to interact with the Console System."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Console\\ConsoleSystem.Run.cs",
+            "3"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A library to interact with the Console System."
+      },
+      "DocId": "T:Sandbox.ConsoleSystem"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Cookies/Cookie.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CookieContainer.SetString",
+          "Name": "SetString",
+          "DeclaringType": "Sandbox.CookieContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set a cookie to be stored between sessions. The cookie will expire one month from when it was set."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Cookies\\Cookie.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set a cookie to be stored between sessions. The cookie will expire one month\nfrom when it was set."
+          },
+          "DocId": "M:Sandbox.CookieContainer.SetString(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "fallback",
+              "Type": "System.String",
+              "Default": ""
+            }
+          ],
+          "l": {
+            "File": "Systems/Cookies/Cookie.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CookieContainer.GetString",
+          "Name": "GetString",
+          "DeclaringType": "Sandbox.CookieContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a stored session cookie."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Cookies\\Cookie.cs",
+                "65"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a stored session cookie."
+          },
+          "DocId": "M:Sandbox.CookieContainer.GetString(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "val",
+              "Out": true,
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Cookies/Cookie.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CookieContainer.TryGetString",
+          "Name": "TryGetString",
+          "DeclaringType": "Sandbox.CookieContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a stored session cookie."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Cookies\\Cookie.cs",
+                "84"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a stored session cookie."
+          },
+          "DocId": "M:Sandbox.CookieContainer.TryGetString(System.String,System.String@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "val",
+              "Out": true,
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Cookies/Cookie.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CookieContainer.TryGet",
+          "Name": "TryGet",
+          "DeclaringType": "Sandbox.CookieContainer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Cookies\\Cookie.cs",
+                "100"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CookieContainer.TryGet``1(System.String,``0@)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "fallback",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Cookies/Cookie.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CookieContainer.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.CookieContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Load JSON encodable data from cookies"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Cookies\\Cookie.cs",
+                "122"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Load JSON encodable data from cookies"
+          },
+          "DocId": "M:Sandbox.CookieContainer.Get``1(System.String,``0)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Cookies/Cookie.cs",
+            "Line": 145
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CookieContainer.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.CookieContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set JSON encodable object to data"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Cookies\\Cookie.cs",
+                "142"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set JSON encodable object to data"
+          },
+          "DocId": "M:Sandbox.CookieContainer.Set``1(System.String,``0)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Cookies/Cookie.cs",
+            "Line": 154
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CookieContainer.Remove",
+          "Name": "Remove",
+          "DeclaringType": "Sandbox.CookieContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Removes a cookie from the cache entirely"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Cookies\\Cookie.cs",
+                "152"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Removes a cookie from the cache entirely",
+            "Params": {
+              "key": ""
+            }
+          },
+          "DocId": "M:Sandbox.CookieContainer.Remove(System.String)"
+        }
+      ],
+      "Constructors": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.CookieContainer",
+      "Name": "CookieContainer",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Cookies\\Cookie.cs",
+            "21"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.CookieContainer"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.GetLabel",
+          "Name": "GetLabel",
+          "DeclaringType": "Sandbox.Doo",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns a short display label describing this Doo's contents."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a short display label describing this Doo's contents."
+          },
+          "DocId": "M:Sandbox.Doo.GetLabel"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.IsEmpty",
+          "Name": "IsEmpty",
+          "DeclaringType": "Sandbox.Doo",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if this Doo has no blocks."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if this Doo has no blocks."
+          },
+          "DocId": "M:Sandbox.Doo.IsEmpty"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Sandbox.Doo.Block"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Edit.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.DeleteBlock",
+          "Name": "DeleteBlock",
+          "DeclaringType": "Sandbox.Doo",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find and delete this block from the Doo tree."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Edit.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find and delete this block from the Doo tree."
+          },
+          "DocId": "M:Sandbox.Doo.DeleteBlock(Sandbox.Doo.Block)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.Doo.Block"
+            },
+            {
+              "Name": "blockToInsert",
+              "Type": "Sandbox.Doo.Block"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Edit.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.InsertBefore",
+          "Name": "InsertBefore",
+          "DeclaringType": "Sandbox.Doo",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Insert a block before the target block."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Edit.cs",
+                "39"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Insert a block before the target block."
+          },
+          "DocId": "M:Sandbox.Doo.InsertBefore(Sandbox.Doo.Block,Sandbox.Doo.Block)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.Doo.Block"
+            },
+            {
+              "Name": "blockToInsert",
+              "Type": "Sandbox.Doo.Block"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Edit.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.InsertAfter",
+          "Name": "InsertAfter",
+          "DeclaringType": "Sandbox.Doo",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Insert a block after the target block."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Edit.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Insert a block after the target block."
+          },
+          "DocId": "M:Sandbox.Doo.InsertAfter(Sandbox.Doo.Block,Sandbox.Doo.Block)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Sandbox.Doo.Block"
+            },
+            {
+              "Name": "blockToInsert",
+              "Type": "Sandbox.Doo.Block"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Edit.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.AddChild",
+          "Name": "AddChild",
+          "DeclaringType": "Sandbox.Doo",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a block as a child of the target block's body."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Edit.cs",
+                "84"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a block as a child of the target block's body."
+          },
+          "DocId": "M:Sandbox.Doo.AddChild(Sandbox.Doo.Block,Sandbox.Doo.Block)"
+        },
+        {
+          "ReturnType": "System.Object",
+          "IsOverride": true,
+          "Parameters": [
+            {
+              "Name": "reader",
+              "Ref": true,
+              "Type": "System.Text.Json.Utf8JsonReader"
+            },
+            {
+              "Name": "typeToConvert",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Serialize.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Doo.JsonRead",
+          "Name": "JsonRead",
+          "DeclaringType": "Sandbox.Doo",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Deserializes a Doo from JSON."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Serialize.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Deserializes a Doo from JSON."
+          },
+          "DocId": "M:Sandbox.Doo.JsonRead(System.Text.Json.Utf8JsonReader@,System.Type)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsOverride": true,
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "writer",
+              "Type": "System.Text.Json.Utf8JsonWriter"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Serialize.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Doo.JsonWrite",
+          "Name": "JsonWrite",
+          "DeclaringType": "Sandbox.Doo",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Serializes a Doo to JSON."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Serialize.cs",
+                "46"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Serializes a Doo to JSON."
+          },
+          "DocId": "M:Sandbox.Doo.JsonWrite(System.Object,System.Text.Json.Utf8JsonWriter)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo",
+          "DocId": "M:Sandbox.Doo.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Doo.Block>",
+          "Loc": {
+            "File": "Systems/Doo/Doo.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Body",
+          "Name": "Body",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The top-level list of blocks that make up this task."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The top-level list of blocks that make up this task."
+          },
+          "DocId": "P:Sandbox.Doo.Body"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo",
+      "Name": "Doo",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Attributes.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.Delay.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.For.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.Invoke.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.Return.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.Set.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Configure.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Edit.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Expression.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Helpers.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.RunContext.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Serialize.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.StaticMethods.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A visual scripting task composed of executable blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.TargetComponent.cs",
+            "5"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A visual scripting task composed of executable blocks."
+      },
+      "DocId": "T:Sandbox.Doo"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "path",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Attributes.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.MethodAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.MethodAttribute",
+          "Documentation": {
+            "Summary": "Creates a new <see cref=\"T:Sandbox.Doo.MethodAttribute\" /> with the given method path."
+          },
+          "DocId": "M:Sandbox.Doo.MethodAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Attributes.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.MethodAttribute.Path",
+          "Name": "Path",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The fully qualified method path (e.g. \"Log.Info\")."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Attributes.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The fully qualified method path (e.g. \"Log.Info\")."
+          },
+          "DocId": "P:Sandbox.Doo.MethodAttribute.Path"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Attributes.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.MethodAttribute.CategoryName",
+          "Name": "CategoryName",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The category portion of the path, derived from the text before the first dot."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Attributes.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The category portion of the path, derived from the text before the first dot."
+          },
+          "DocId": "P:Sandbox.Doo.MethodAttribute.CategoryName"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.MethodAttribute",
+      "Name": "MethodAttribute",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Marks a static method as callable from within a Doo script."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Attributes.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Marks a static method as callable from within a Doo script."
+      },
+      "DocId": "T:Sandbox.Doo.MethodAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ArgumentHintAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.ArgumentHintAttribute",
+          "DocId": "M:Sandbox.Doo.ArgumentHintAttribute.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Attributes.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ArgumentHintAttribute.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The argument name shown in the editor."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Attributes.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The argument name shown in the editor."
+          },
+          "DocId": "P:Sandbox.Doo.ArgumentHintAttribute.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Attributes.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ArgumentHintAttribute.Help",
+          "Name": "Help",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A help string describing what this argument is for."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Attributes.cs",
+                "47"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A help string describing what this argument is for."
+          },
+          "DocId": "P:Sandbox.Doo.ArgumentHintAttribute.Help"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Attributes.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ArgumentHintAttribute.Hint",
+          "Name": "Hint",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The expected type of this argument."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Attributes.cs",
+                "52"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The expected type of this argument."
+          },
+          "DocId": "P:Sandbox.Doo.ArgumentHintAttribute.Hint"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.ArgumentHintAttribute",
+      "Name": "ArgumentHintAttribute",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Specify a hint on a Doo explaining that we're going to be passing in an expected argument when calling it."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Attributes.cs",
+            "36"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Specify a hint on a Doo explaining that we're going to be passing in an expected argument when calling it."
+      },
+      "DocId": "T:Sandbox.Doo.ArgumentHintAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Doo.ArgumentHintAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Attributes.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ArgumentHintAttribute<T>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.ArgumentHintAttribute<T>",
+          "Documentation": {
+            "Summary": "Creates a new <see cref=\"T:Sandbox.Doo.ArgumentHintAttribute`1\" /> with the given name and type hint."
+          },
+          "DocId": "M:Sandbox.Doo.ArgumentHintAttribute`1.#ctor(System.String)"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.ArgumentHintAttribute<T>",
+      "Name": "ArgumentHintAttribute<T>",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Specify a hint on a Doo explaining that we're going to be passing in an expected argument when calling it."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Attributes.cs",
+            "58"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Specify a hint on a Doo explaining that we're going to be passing in an expected argument when calling it."
+      },
+      "DocId": "T:Sandbox.Doo.ArgumentHintAttribute`1"
+    }
+  ],
+  "_metadata": {
+    "chunk": 138,
+    "items_count": 7
+  }
+}

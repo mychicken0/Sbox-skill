@@ -1,0 +1,755 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "tolerance",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 348
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.IsNearlyZero",
+          "Name": "IsNearlyZero",
+          "DeclaringType": "Vector2Int",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if value on every axis is less than or equal to tolerance"
+          },
+          "DocId": "M:Vector2Int.IsNearlyZero(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "writer",
+              "Type": "System.IO.BinaryWriter"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 353
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.Write",
+          "Name": "Write",
+          "DeclaringType": "Vector2Int",
+          "DocId": "M:Vector2Int.Write(System.IO.BinaryWriter)"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "Parameters": [
+            {
+              "Name": "reader",
+              "Type": "System.IO.BinaryReader"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 359
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.Read",
+          "Name": "Read",
+          "DeclaringType": "Vector2Int",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "DocId": "M:Vector2Int.Read(System.IO.BinaryReader)"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Vector2Int"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 367
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.ComponentMin",
+          "Name": "ComponentMin",
+          "DeclaringType": "Vector2Int",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns an integer vector that has the minimum values on each axis of the two input vectors."
+          },
+          "DocId": "M:Vector2Int.ComponentMin(Vector2Int)"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Vector2Int"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 375
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.ComponentMax",
+          "Name": "ComponentMax",
+          "DeclaringType": "Vector2Int",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns an integer vector that has the maximum values on each axis of the two input vectors."
+          },
+          "DocId": "M:Vector2Int.ComponentMax(Vector2Int)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Vector2Int"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 383
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.Distance",
+          "Name": "Distance",
+          "DeclaringType": "Vector2Int",
+          "Documentation": {
+            "Summary": "Returns the distance between this vector and another."
+          },
+          "DocId": "M:Vector2Int.Distance(Vector2Int)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 393
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.Distance",
+          "Name": "Distance",
+          "DeclaringType": "Vector2Int",
+          "Documentation": {
+            "Summary": "Returns the distance between this vector and another."
+          },
+          "DocId": "M:Vector2Int.Distance(Vector2)"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "Parameters": [
+            {
+              "Name": "gridSize",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "sx",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "sy",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 403
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.SnapToGrid",
+          "Name": "SnapToGrid",
+          "DeclaringType": "Vector2Int",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Snap to grid along any of the 2 axes."
+          },
+          "DocId": "M:Vector2Int.SnapToGrid(System.Int32,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector2Int"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector2Int"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 412
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.Min",
+          "Name": "Min",
+          "DeclaringType": "Vector2Int",
+          "Documentation": {
+            "Summary": "Returns an integer vector that has the minimum values on each axis between 2 given vectors."
+          },
+          "DocId": "M:Vector2Int.Min(Vector2Int,Vector2Int)"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector2Int"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector2Int"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 417
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.Max",
+          "Name": "Max",
+          "DeclaringType": "Vector2Int",
+          "Documentation": {
+            "Summary": "Returns an integer vector that has the maximum values on each axis between 2 given vectors."
+          },
+          "DocId": "M:Vector2Int.Max(Vector2Int,Vector2Int)"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "Parameters": [],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 424
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.Abs",
+          "Name": "Abs",
+          "DeclaringType": "Vector2Int",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a new integer vector with all values positive. -5 becomes 5, ect."
+          },
+          "DocId": "M:Vector2Int.Abs"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 430
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.WithX",
+          "Name": "WithX",
+          "DeclaringType": "Vector2Int",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns this integer vector with given X component."
+          },
+          "DocId": "M:Vector2Int.WithX(System.Int32)"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "Parameters": [
+            {
+              "Name": "y",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 435
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.WithY",
+          "Name": "WithY",
+          "DeclaringType": "Vector2Int",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns this integer vector with given Y component."
+          },
+          "DocId": "M:Vector2Int.WithY(System.Int32)"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 450
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.Parse",
+          "Name": "Parse",
+          "DeclaringType": "Vector2Int",
+          "Documentation": {
+            "Summary": "Given a string, try to convert this into a Vector2Int. Example formatting is \"x,y\", \"[x,y]\", \"x y\", etc."
+          },
+          "DocId": "M:Vector2Int.Parse(System.String)"
+        },
+        {
+          "ReturnType": "Vector2Int",
+          "IsOverride": true,
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            },
+            {
+              "Name": "provider",
+              "Type": "System.IFormatProvider"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 459
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.Parse",
+          "Name": "Parse",
+          "DeclaringType": "Vector2Int",
+          "Documentation": {},
+          "DocId": "M:Vector2Int.Parse(System.String,System.IFormatProvider)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsOverride": true,
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            },
+            {
+              "Name": "info",
+              "Type": "System.IFormatProvider"
+            },
+            {
+              "Name": "result",
+              "Out": true,
+              "Type": "Vector2Int"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 465
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.TryParse",
+          "Name": "TryParse",
+          "DeclaringType": "Vector2Int",
+          "Documentation": {},
+          "DocId": "M:Vector2Int.TryParse(System.String,System.IFormatProvider,Vector2Int@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "y",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector2Int",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "vec2int.new"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Vector2Int"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry/Vector2Int"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Initializes an integer vector with given components.",
+            "Params": {
+              "x": "The X component.",
+              "y": "The Y component."
+            }
+          },
+          "DocId": "M:Vector2Int.#ctor(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "all",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector2Int",
+          "Documentation": {
+            "Summary": "Initializes an integer vector with all components set to the same value.",
+            "Params": {
+              "all": "The value of the X and Y components."
+            }
+          },
+          "DocId": "M:Vector2Int.#ctor(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vector2Int",
+              "Type": "Vector2Int"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector2Int",
+          "Documentation": {
+            "Summary": "Initializes an integer vector with given components from another integer vector."
+          },
+          "DocId": "M:Vector2Int.#ctor(Vector2Int)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vector3Int",
+              "Type": "Vector3Int"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector2Int",
+          "Documentation": {
+            "Summary": "Initializes an integer vector with given components from another integer vector, discarding the Z component."
+          },
+          "DocId": "M:Vector2Int.#ctor(Vector3Int)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 110
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.Normal",
+          "Name": "Normal",
+          "Documentation": {
+            "Summary": "Returns a unit version of this vector. Keep in mind this returns a Vector2 and not a Vector2Int."
+          },
+          "DocId": "P:Vector2Int.Normal"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.Degrees",
+          "Name": "Degrees",
+          "Documentation": {
+            "Summary": "Return the angle of this vector in degrees, always between 0 and 360."
+          },
+          "DocId": "P:Vector2Int.Degrees"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.Item",
+          "Name": "Item",
+          "DocId": "P:Vector2Int.Item"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 326
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.Length",
+          "Name": "Length",
+          "Documentation": {
+            "Summary": "Length (or magnitude) of the integer vector (Distance from 0,0)"
+          },
+          "DocId": "P:Vector2Int.Length"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 331
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.LengthSquared",
+          "Name": "LengthSquared",
+          "Documentation": {
+            "Summary": "Squared length of the integer vector. This is faster than <see cref=\"P:Vector2Int.Length\">Length</see>, and can be used for things like comparing distances, as long as only squared values are used.\"/&gt;"
+          },
+          "DocId": "P:Vector2Int.LengthSquared"
+        },
+        {
+          "PropertyType": "Vector2Int",
+          "Loc": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 336
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.Perpendicular",
+          "Name": "Perpendicular",
+          "Documentation": {
+            "Summary": "Returns an integer vector that runs perpendicular to this one."
+          },
+          "DocId": "P:Vector2Int.Perpendicular"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Math/Vector2Int.cs",
+            "Line": 341
+          },
+          "IsPublic": true,
+          "FullName": "Vector2Int.IsZeroLength",
+          "Name": "IsZeroLength",
+          "Documentation": {
+            "Summary": "Whether the length of this vector is zero or not."
+          },
+          "DocId": "P:Vector2Int.IsZeroLength"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Vector2Int.x",
+          "Name": "x",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The X component of this integer vector."
+          },
+          "DocId": "F:Vector2Int.x"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Vector2Int.y",
+          "Name": "y",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The Y component of this integer vector."
+          },
+          "DocId": "F:Vector2Int.y"
+        },
+        {
+          "FieldType": "Vector2Int",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.One",
+          "Name": "One",
+          "Documentation": {
+            "Summary": "An integer vector with all components set to 1."
+          },
+          "DocId": "F:Vector2Int.One"
+        },
+        {
+          "FieldType": "Vector2Int",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.Zero",
+          "Name": "Zero",
+          "Documentation": {
+            "Summary": "An integer vector with all components set to 0."
+          },
+          "DocId": "F:Vector2Int.Zero"
+        },
+        {
+          "FieldType": "Vector2Int",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.Right",
+          "Name": "Right",
+          "Documentation": {
+            "Summary": "An integer vector with X set to 1. This represents the right direction."
+          },
+          "DocId": "F:Vector2Int.Right"
+        },
+        {
+          "FieldType": "Vector2Int",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.Left",
+          "Name": "Left",
+          "Documentation": {
+            "Summary": "An integer vector with X set to -1. This represents the left direction."
+          },
+          "DocId": "F:Vector2Int.Left"
+        },
+        {
+          "FieldType": "Vector2Int",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.Up",
+          "Name": "Up",
+          "Documentation": {
+            "Summary": "An integer vector with Y set to 1. This represents the up direction."
+          },
+          "DocId": "F:Vector2Int.Up"
+        },
+        {
+          "FieldType": "Vector2Int",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2Int.Down",
+          "Name": "Down",
+          "Documentation": {
+            "Summary": "An integer vector with Y set to -1. This represents the down direction."
+          },
+          "DocId": "F:Vector2Int.Down"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Vector2Int",
+      "Name": "Vector2Int",
+      "Attributes": [
+        {
+          "FullName": "System.Reflection.DefaultMemberAttribute",
+          "ConstructorArguments": [
+            "Item"
+          ]
+        },
+        {
+          "FullName": "System.Text.Json.Serialization.JsonConverterAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Internal.JsonConvert.Vector2IntConverter"
+          ]
+        }
+      ],
+      "DocId": "T:Vector2Int"
+    }
+  ],
+  "_metadata": {
+    "chunk": 8,
+    "items_count": 1
+  }
+}

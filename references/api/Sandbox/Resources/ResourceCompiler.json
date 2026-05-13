@@ -1,0 +1,1523 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Resources",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "json",
+              "Ref": true,
+              "Type": "Sandbox.Resources.EmbeddedResource"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceCompiler.cs",
+            "Line": 39
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ResourceCompiler.CompileEmbedded",
+          "Name": "CompileEmbedded",
+          "DeclaringType": "Sandbox.Resources.ResourceCompiler",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceCompiler.cs",
+                "36"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.ResourceCompiler.CompileEmbedded(Sandbox.Resources.EmbeddedResource@)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Boolean>",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ResourceCompiler.Compile",
+          "Name": "Compile",
+          "DeclaringType": "Sandbox.Resources.ResourceCompiler",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceCompiler.cs",
+                "61"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.ResourceCompiler.Compile"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Boolean>",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ResourceCompiler.WriteToJson",
+          "Name": "WriteToJson",
+          "DeclaringType": "Sandbox.Resources.ResourceCompiler",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Resources.ResourceCompiler/<WriteToJson>d__11`1"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Writes resource to a JSON file, using the ResourceGenerator to create the resource."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceCompiler.Helpers.cs",
+                "15"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Writes resource to a JSON file, using the ResourceGenerator to create the resource.",
+            "Return": "",
+            "TypeParams": {
+              "T": ""
+            }
+          },
+          "DocId": "M:Sandbox.Resources.ResourceCompiler.WriteToJson``1"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "resource",
+              "Out": true,
+              "Type": "System.Nullable`1<Sandbox.Resources.EmbeddedResource>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceCompiler.Helpers.cs",
+            "Line": 37
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ResourceCompiler.TryParseEmbeddedResource",
+          "Name": "TryParseEmbeddedResource",
+          "DeclaringType": "Sandbox.Resources.ResourceCompiler",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Try to parse the source as an EmbeddedResource Returns false if the source is not valid JSON or doesn't contain a ResourceGenerator."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceCompiler.Helpers.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.ResourceCompiler.TryParseEmbeddedResource(System.Nullable`1{Sandbox.Resources.EmbeddedResource}@)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "embed",
+              "Type": "Sandbox.Resources.EmbeddedResource"
+            },
+            {
+              "Name": "subfolder",
+              "Type": "System.String"
+            },
+            {
+              "Name": "extension",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceCompiler.Helpers.cs",
+            "Line": 64
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ResourceCompiler.CreateGeneratedResourcePath",
+          "Name": "CreateGeneratedResourcePath",
+          "DeclaringType": "Sandbox.Resources.ResourceCompiler",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a deterministic path for a generated resource based on the embedded resource data."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceCompiler.Helpers.cs",
+                "61"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a deterministic path for a generated resource based on the embedded resource data."
+          },
+          "DocId": "M:Sandbox.Resources.ResourceCompiler.CreateGeneratedResourcePath``1(Sandbox.Resources.EmbeddedResource,System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "embed",
+              "Ref": true,
+              "Type": "Sandbox.Resources.EmbeddedResource"
+            },
+            {
+              "Name": "subfolder",
+              "Type": "System.String"
+            },
+            {
+              "Name": "extension",
+              "Type": "System.String"
+            },
+            {
+              "Name": "fs",
+              "Type": "Sandbox.BaseFileSystem"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceCompiler.Helpers.cs",
+            "Line": 82
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ResourceCompiler.CompileEmbeddedResource",
+          "Name": "CompileEmbeddedResource",
+          "DeclaringType": "Sandbox.Resources.ResourceCompiler",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Generic method to compile an embedded resource by creating a child context. This handles the common pattern of creating a generator, generating a path, creating a child context, and setting the compiled path."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceCompiler.Helpers.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Generic method to compile an embedded resource by creating a child context.\nThis handles the common pattern of creating a generator, generating a path,\ncreating a child context, and setting the compiled path."
+          },
+          "DocId": "M:Sandbox.Resources.ResourceCompiler.CompileEmbeddedResource``1(Sandbox.Resources.EmbeddedResource@,System.String,System.String,Sandbox.BaseFileSystem)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Compiling/ResourceCompiler.cs",
+            "Line": 17
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ResourceCompiler..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Resources.ResourceCompiler",
+          "DocId": "M:Sandbox.Resources.ResourceCompiler.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Resources.ResourceCompileContext",
+          "Loc": {
+            "File": "Resources/Compiling/ResourceCompiler.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceCompiler.Context",
+          "Name": "Context",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceCompiler.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.ResourceCompiler.Context"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Resources.ResourceCompiler",
+      "Name": "ResourceCompiler",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Takes the \"source\" of a resource and creates a compiled version. The compiled version can create a number of child resources and store binary data."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Compiling\\ResourceCompiler.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Takes the \"source\" of a resource and creates a compiled version. The compiled version can create a number of child resources and store binary data."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Compiling\\ResourceCompiler.Helpers.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Takes the \"source\" of a resource and creates a compiled version. The compiled version\ncan create a number of child resources and store binary data."
+      },
+      "DocId": "T:Sandbox.Resources.ResourceCompiler"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceCompiler.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceCompiler.ResourceIdentityAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Resources.ResourceCompiler.ResourceIdentityAttribute",
+          "DocId": "M:Sandbox.Resources.ResourceCompiler.ResourceIdentityAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/Compiling/ResourceCompiler.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceCompiler.ResourceIdentityAttribute.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceCompiler.cs",
+                "69"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.ResourceCompiler.ResourceIdentityAttribute.Name"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Resources.ResourceCompiler.ResourceIdentityAttribute",
+      "Name": "ResourceIdentityAttribute",
+      "DeclaringType": "Sandbox.Resources.ResourceCompiler",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Mark a ResourceCompiler. This is used to identify the compiler for a specific file extension, or compiler."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Compiling\\ResourceCompiler.cs",
+            "66"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Mark a ResourceCompiler. This is used to identify the compiler for a specific file extension, or compiler."
+      },
+      "DocId": "T:Sandbox.Resources.ResourceCompiler.ResourceIdentityAttribute"
+    },
+    {
+      "Namespace": "Sandbox.Resources",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Resources.ResourceGenerator`1<T>",
+          "Parameters": [
+            {
+              "Name": "generatorName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a ResourceGenerator by name"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a ResourceGenerator by name"
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator.Create``1(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Resources.ResourceGenerator`1<T>",
+          "Parameters": [
+            {
+              "Name": "serialized",
+              "Type": "Sandbox.Resources.EmbeddedResource"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a ResourceGenerator by name and deserialize it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a ResourceGenerator by name and deserialize it"
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator.Create``1(Sandbox.Resources.EmbeddedResource)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.Resources.EmbeddedResource"
+            },
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.CreateResource",
+          "Name": "CreateResource",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "71"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.ResourceGenerator.CreateResource``1(Sandbox.Resources.EmbeddedResource,Sandbox.Resources.ResourceGenerator.Options)"
+        },
+        {
+          "ReturnType": "Sandbox.Resource",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.Resources.EmbeddedResource"
+            },
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.CreateResource",
+          "Name": "CreateResource",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a resource from an embedded resource with a given <span style=\"color: #4EC9B0;\">Type</span>"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "88"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a resource from an embedded resource with a given <see cref=\"T:System.Type\" />",
+            "Return": "",
+            "Params": {
+              "obj": "",
+              "options": "",
+              "type": ""
+            }
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator.CreateResource(Sandbox.Resources.EmbeddedResource,Sandbox.Resources.ResourceGenerator.Options,System.Type)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Text.Json.Nodes.JsonObject"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.Deserialize",
+          "Name": "Deserialize",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Copy properties from obj to us"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "108"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Copy properties from obj to us"
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator.Deserialize(System.Text.Json.Nodes.JsonObject)"
+        },
+        {
+          "ReturnType": "System.UInt64",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 123
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.GetHash",
+          "Name": "GetHash",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns a hash to be used when loading/saving. We use this to determine if the resource has changed. By default we serialize the generator to a json string and return the CRC64 of that value. You can override this in your generator if you need to make it faster, or ignore some stuff."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "120"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a hash to be used when loading/saving. We use this to determine if the resource has changed.\nBy default we serialize the generator to a json string and return the CRC64 of that value. You can\noverride this in your generator if you need to make it faster, or ignore some stuff."
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator.GetHash"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.ValueTask`1<Sandbox.Resource>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.FindOrCreateObjectAsync",
+          "Name": "FindOrCreateObjectAsync",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If we generated this before, then find the current cache'd value. If not, then generate a new one."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "130"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If we generated this before, then find the current cache'd value.\nIf not, then generate a new one."
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator.FindOrCreateObjectAsync(Sandbox.Resources.ResourceGenerator.Options,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "Sandbox.Resource",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.FindOrCreateObject",
+          "Name": "FindOrCreateObject",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find or create the resource (blocking)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "137"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find or create the resource (blocking)",
+            "Return": "",
+            "Params": {
+              "options": ""
+            }
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator.FindOrCreateObject(Sandbox.Resources.ResourceGenerator.Options)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator",
+          "DocId": "M:Sandbox.Resources.ResourceGenerator.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.CacheToDisk",
+          "Name": "CacheToDisk",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true then the generation will create a real resource and store it on disk. Use this if creating the resource takes a while, or you won't be shipping the generator with the game, or if it relies on data that won't be available in the shipped game."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "36"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true then the generation will create a real resource and store it on disk.\nUse this if creating the resource takes a while, or you won't be shipping the generator\nwith the game, or if it relies on data that won't be available in the shipped game."
+          },
+          "DocId": "P:Sandbox.Resources.ResourceGenerator.CacheToDisk"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Resources.ResourceGenerator",
+      "Name": "ResourceGenerator",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Creates a resource from a json definition"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Compiling\\ResourceGenerator.cs",
+            "13"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Creates a resource from a json definition"
+      },
+      "DocId": "T:Sandbox.Resources.ResourceGenerator"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.Options.ForDisk",
+          "Name": "ForDisk",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if we're compiling this resource to write to disk"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if we're compiling this resource to write to disk"
+          },
+          "DocId": "P:Sandbox.Resources.ResourceGenerator.Options.ForDisk"
+        },
+        {
+          "PropertyType": "Sandbox.Resources.ResourceCompiler",
+          "Loc": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.Options.Compiler",
+          "Name": "Compiler",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Will be set to the compiler that is currently compiling this resource. Or null, if we're generating in another method."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Will be set to the compiler that is currently compiling this resource. Or null, if we're generating in another method."
+          },
+          "DocId": "P:Sandbox.Resources.ResourceGenerator.Options.Compiler"
+        },
+        {
+          "PropertyType": "Sandbox.Resources.ResourceGenerator.Options",
+          "Loc": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator.Options.Default",
+          "Name": "Default",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "28"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.ResourceGenerator.Options.Default"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Resources.ResourceGenerator.Options",
+      "Name": "Options",
+      "DeclaringType": "Sandbox.Resources.ResourceGenerator",
+      "DocId": "T:Sandbox.Resources.ResourceGenerator.Options"
+    },
+    {
+      "Namespace": "Sandbox.Resources",
+      "BaseType": "Sandbox.Resources.ResourceGenerator",
+      "Methods": [
+        {
+          "ReturnType": "T",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 160
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator<T>.FindCached",
+          "Name": "FindCached",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator<T>",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find a previously created of this resource"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "157"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find a previously created of this resource"
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator`1.FindCached"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "val",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 178
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator<T>.AddToCache",
+          "Name": "AddToCache",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator<T>",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add this resource to the cache for our current hash"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "175"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.ResourceGenerator`1.AddToCache(``0)"
+        },
+        {
+          "ReturnType": "T",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 190
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator<T>.FindOrCreate",
+          "Name": "FindOrCreate",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator<T>",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If we generated this before, then find the current cache'd value. If not, then generate a new one."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "187"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If we generated this before, then find the current cache'd value.\nIf not, then generate a new one."
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator`1.FindOrCreate(Sandbox.Resources.ResourceGenerator.Options)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.ValueTask`1<Sandbox.Resource>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator<T>.FindOrCreateObjectAsync",
+          "Name": "FindOrCreateObjectAsync",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator<T>",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Resources.ResourceGenerator`1/<FindOrCreateObjectAsync>d__6"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "197"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.ResourceGenerator`1.FindOrCreateObjectAsync(Sandbox.Resources.ResourceGenerator.Options,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "Sandbox.Resource",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 201
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator<T>.FindOrCreateObject",
+          "Name": "FindOrCreateObject",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator<T>",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "200"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.ResourceGenerator`1.FindOrCreateObject(Sandbox.Resources.ResourceGenerator.Options)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.ValueTask`1<T>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator<T>.FindOrCreateAsync",
+          "Name": "FindOrCreateAsync",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator<T>",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Resources.ResourceGenerator`1/<FindOrCreateAsync>d__8"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If we generated this before, then find the current cache'd value. If not, then generate a new one."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "206"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If we generated this before, then find the current cache'd value.\nIf not, then generate a new one."
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator`1.FindOrCreateAsync(Sandbox.Resources.ResourceGenerator.Options,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "T",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator<T>.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator<T>",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create the resource blocking"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "227"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create the resource blocking"
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator`1.Create(Sandbox.Resources.ResourceGenerator.Options)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.ValueTask`1<T>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator<T>.CreateAsync",
+          "Name": "CreateAsync",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator<T>",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create the resource asyncronously"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "232"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create the resource asyncronously"
+          },
+          "DocId": "M:Sandbox.Resources.ResourceGenerator`1.CreateAsync(Sandbox.Resources.ResourceGenerator.Options,System.Threading.CancellationToken)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator<T>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Resources.ResourceGenerator<T>",
+          "DocId": "M:Sandbox.Resources.ResourceGenerator`1.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/Compiling/ResourceGenerator.cs",
+            "Line": 153
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ResourceGenerator<T>.UseMemoryCache",
+          "Name": "UseMemoryCache",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true then the generation will avoid creating duplicate resources by checking hash codes of previously generated resources and re-using them if possible."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\ResourceGenerator.cs",
+                "151"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true then the generation will avoid creating duplicate resources by checking\nhash codes of previously generated resources and re-using them if possible."
+          },
+          "DocId": "P:Sandbox.Resources.ResourceGenerator`1.UseMemoryCache"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Resources.ResourceGenerator<T>",
+      "Name": "ResourceGenerator<T>",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A resource generator targetting a specific type"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Compiling\\ResourceGenerator.cs",
+            "143"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A resource generator targetting a specific type"
+      },
+      "DocId": "T:Sandbox.Resources.ResourceGenerator`1"
+    },
+    {
+      "Namespace": "Sandbox.Resources",
+      "BaseType": "Sandbox.Resources.ResourceGenerator<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.ValueTask`1<Sandbox.Texture>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/TextureGenerator.cs",
+            "Line": 13
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.TextureGenerator.CreateTexture",
+          "Name": "CreateTexture",
+          "DeclaringType": "Sandbox.Resources.TextureGenerator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find an existing texture for this"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\TextureGenerator.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find an existing texture for this"
+          },
+          "DocId": "M:Sandbox.Resources.TextureGenerator.CreateTexture(Sandbox.Resources.ResourceGenerator.Options,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "Sandbox.Texture",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            }
+          ],
+          "l": {
+            "File": "Resources/Compiling/TextureGenerator.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.TextureGenerator.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Resources.TextureGenerator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a texture. Will replace a placeholder texture, which will turn into the generated texture later, if it's not immediately available."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\TextureGenerator.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a texture. Will replace a placeholder texture, which will turn into the generated texture later, if it's not immediately available."
+          },
+          "DocId": "M:Sandbox.Resources.TextureGenerator.Create(Sandbox.Resources.ResourceGenerator.Options)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.ValueTask`1<Sandbox.Texture>",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.TextureGenerator.CreateAsync",
+          "Name": "CreateAsync",
+          "DeclaringType": "Sandbox.Resources.TextureGenerator",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Resources.TextureGenerator/<CreateAsync>d__2"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a texture. Will wait until the texture is fully loaded and return when done."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\TextureGenerator.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a texture. Will wait until the texture is fully loaded and return when done."
+          },
+          "DocId": "M:Sandbox.Resources.TextureGenerator.CreateAsync(Sandbox.Resources.ResourceGenerator.Options,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.Resources.EmbeddedResource>",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Compiling/TextureGenerator.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.TextureGenerator.CreateEmbeddedResource",
+          "Name": "CreateEmbeddedResource",
+          "DeclaringType": "Sandbox.Resources.TextureGenerator",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Compiling\\TextureGenerator.cs",
+                "56"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.TextureGenerator.CreateEmbeddedResource"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.TextureGenerator..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Resources.TextureGenerator",
+          "DocId": "M:Sandbox.Resources.TextureGenerator.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Resources.TextureGenerator",
+      "Name": "TextureGenerator",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Compiling\\TextureGenerator.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Resources.TextureGenerator"
+    },
+    {
+      "Namespace": "Sandbox.Resources",
+      "BaseType": "Sandbox.Resources.TextureGenerator",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.ValueTask`1<Sandbox.Texture>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Generators/ColorTextureGenerator.cs",
+            "Line": 21
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ColorTextureGenerator.CreateTexture",
+          "Name": "CreateTexture",
+          "DeclaringType": "Sandbox.Resources.ColorTextureGenerator",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ColorTextureGenerator.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.ColorTextureGenerator.CreateTexture(Sandbox.Resources.ResourceGenerator.Options,System.Threading.CancellationToken)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Generators/ColorTextureGenerator.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ColorTextureGenerator..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Resources.ColorTextureGenerator",
+          "DocId": "M:Sandbox.Resources.ColorTextureGenerator.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ColorTextureGenerator.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ColorTextureGenerator.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ColorTextureGenerator.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.ColorTextureGenerator.Color"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Resources.ColorTextureGenerator",
+      "Name": "ColorTextureGenerator",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Color"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "palette"
+          ]
+        },
+        {
+          "FullName": "ClassNameAttribute",
+          "ConstructorArguments": [
+            "color"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Generate a texture which is just a single color"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Generators\\ColorTextureGenerator.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Generate a texture which is just a single color"
+      },
+      "DocId": "T:Sandbox.Resources.ColorTextureGenerator"
+    }
+  ],
+  "_metadata": {
+    "chunk": 210,
+    "items_count": 7
+  }
+}

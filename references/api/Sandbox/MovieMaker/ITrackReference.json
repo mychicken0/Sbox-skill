@@ -1,0 +1,1415 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Sandbox.IValid"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackReference.Bind",
+          "Name": "Bind",
+          "DeclaringType": "Sandbox.MovieMaker.ITrackReference",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Explicitly bind this reference to a particular object in the scene, or null to force it to stay unbound."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "89"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Explicitly bind this reference to a particular object in the scene, or null to force it to stay unbound."
+          },
+          "DocId": "M:Sandbox.MovieMaker.ITrackReference.Bind(Sandbox.IValid)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackReference.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.MovieMaker.ITrackReference",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clear any explicit binding, so this reference will auto-bind based on its name, type, and parent."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "94"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clear any explicit binding, so this reference will auto-bind based on its name, type, and parent."
+          },
+          "DocId": "M:Sandbox.MovieMaker.ITrackReference.Reset"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Guid",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackReference.Id",
+          "Name": "Id",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The <span style=\"color: #4EC9B0;\">IReferenceTrack</span>.<span style=\"color: #DCDCDC;\">Id</span> of the reference track this target was created from."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The <see cref=\"P:Sandbox.MovieMaker.IReferenceTrack.Id\" /> of the reference track this target was created from."
+          },
+          "DocId": "P:Sandbox.MovieMaker.ITrackReference.Id"
+        },
+        {
+          "PropertyType": "Sandbox.MovieMaker.ITrackReference`1<Sandbox.GameObject>",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackReference.Parent",
+          "Name": "Parent",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument[]"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Optional game object target that contains this one, if from a nested track."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "84"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Optional game object target that contains this one, if from a nested track."
+          },
+          "DocId": "P:Sandbox.MovieMaker.ITrackReference.Parent"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.ITrackReference",
+      "Name": "ITrackReference",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A target referencing a <see cref=\"T:Sandbox.GameObject\" /> or <see cref=\"T:Sandbox.Component\" /> in the scene."
+      },
+      "DocId": "T:Sandbox.MovieMaker.ITrackReference"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "T"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackReference<T>.Bind",
+          "Name": "Bind",
+          "DeclaringType": "Sandbox.MovieMaker.ITrackReference<T>",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "105"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.MovieMaker.ITrackReference`1.Bind(``0)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.ITrackReference<T>",
+      "Name": "ITrackReference<T>",
+      "Documentation": {
+        "TypeParams": {
+          "T": "Reference value type."
+        }
+      },
+      "DocId": "T:Sandbox.MovieMaker.ITrackReference`1"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "track",
+              "Type": "Sandbox.MovieMaker.IPropertyTrack"
+            },
+            {
+              "Name": "time",
+              "Type": "Sandbox.MovieMaker.MovieTime"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackProperty.Update",
+          "Name": "Update",
+          "DeclaringType": "Sandbox.MovieMaker.ITrackProperty",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If bound and writable, update this property's value from the given <span style=\"color: #9CDCFE;\">track</span> at the given <span style=\"color: #9CDCFE;\">time</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "139"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If bound and writable, update this property's value from the\ngiven <paramref name=\"track\" /> at the given <paramref name=\"time\" />."
+          },
+          "DocId": "M:Sandbox.MovieMaker.ITrackProperty.Update(Sandbox.MovieMaker.IPropertyTrack,Sandbox.MovieMaker.MovieTime)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.MovieMaker.ITrackTarget",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackProperty.Parent",
+          "Name": "Parent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Target that this member belongs to."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "118"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Target that this member belongs to."
+          },
+          "DocId": "P:Sandbox.MovieMaker.ITrackProperty.Parent"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Systems/Movies/Binder/Target.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackProperty.CanRead",
+          "Name": "CanRead",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "False if this member is write-only."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "123"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "False if this member is write-only."
+          },
+          "DocId": "P:Sandbox.MovieMaker.ITrackProperty.CanRead"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Systems/Movies/Binder/Target.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackProperty.CanWrite",
+          "Name": "CanWrite",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "False if this member is read-only."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "128"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "False if this member is read-only."
+          },
+          "DocId": "P:Sandbox.MovieMaker.ITrackProperty.CanWrite"
+        },
+        {
+          "PropertyType": "System.Object",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackProperty.Value",
+          "Name": "Value",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If bound, gets or sets the current value of this member."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "133"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If bound, gets or sets the current value of this member."
+          },
+          "DocId": "P:Sandbox.MovieMaker.ITrackProperty.Value"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.ITrackProperty",
+      "Name": "ITrackProperty",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A target referencing a member property or field of another target."
+      },
+      "DocId": "T:Sandbox.MovieMaker.ITrackProperty"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "track",
+              "Type": "Sandbox.MovieMaker.IPropertyTrack`1<T>"
+            },
+            {
+              "Name": "time",
+              "Type": "Sandbox.MovieMaker.MovieTime"
+            }
+          ],
+          "l": {
+            "File": "Systems/Movies/Binder/Target.cs",
+            "Line": 161
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackProperty<T>.Update",
+          "Name": "Update",
+          "DeclaringType": "Sandbox.MovieMaker.ITrackProperty<T>",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "158"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.MovieMaker.ITrackProperty`1.Update(Sandbox.MovieMaker.IPropertyTrack`1{``0},Sandbox.MovieMaker.MovieTime)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "T",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackProperty<T>.Value",
+          "Name": "Value",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Binder\\Target.cs",
+                "153"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.MovieMaker.ITrackProperty`1.Value"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.ITrackProperty<T>",
+      "Name": "ITrackProperty<T>",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "TypeParams": {
+          "T": "Property value type."
+        }
+      },
+      "DocId": "T:Sandbox.MovieMaker.ITrackProperty`1"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.MovieMaker.IReferenceTrack",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "trackId",
+              "Type": "System.Guid"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IMovieClip.GetTrack",
+          "Name": "GetTrack",
+          "DeclaringType": "Sandbox.MovieMaker.IMovieClip",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Attempts to get a reference track with the given <span style=\"color: #9CDCFE;\">trackId</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Attempts to get a reference track with the given <paramref name=\"trackId\" />.",
+            "Return": "The matching track, or <see langword=\"null\" /> if not found."
+          },
+          "DocId": "M:Sandbox.MovieMaker.IMovieClip.GetTrack(System.Guid)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.MovieMaker.ITrack>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "time",
+              "Type": "Sandbox.MovieMaker.MovieTime"
+            }
+          ],
+          "l": {
+            "File": "Systems/Movies/Clips/Clip.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IMovieClip.GetTracks",
+          "Name": "GetTracks",
+          "DeclaringType": "Sandbox.MovieMaker.IMovieClip",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get tracks that are active at the given <span style=\"color: #9CDCFE;\">time</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get tracks that are active at the given <paramref name=\"time\" />."
+          },
+          "DocId": "M:Sandbox.MovieMaker.IMovieClip.GetTracks(Sandbox.MovieMaker.MovieTime)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Sandbox.MovieMaker.ITrack>",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IMovieClip.Tracks",
+          "Name": "Tracks",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "All tracks within the clip."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "All tracks within the clip."
+          },
+          "DocId": "P:Sandbox.MovieMaker.IMovieClip.Tracks"
+        },
+        {
+          "PropertyType": "Sandbox.MovieMaker.MovieTime",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IMovieClip.Duration",
+          "Name": "Duration",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How long this clip takes to fully play."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How long this clip takes to fully play."
+          },
+          "DocId": "P:Sandbox.MovieMaker.IMovieClip.Duration"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IMovieClip",
+      "Name": "IMovieClip",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A collection of <see cref=\"T:Sandbox.MovieMaker.ITrack\" />s describing properties changing over time and actions being invoked."
+      },
+      "DocId": "T:Sandbox.MovieMaker.IMovieClip"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrack.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Property or object name, used when auto-binding this track in a scene."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "43"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Property or object name, used when auto-binding this track in a scene."
+          },
+          "DocId": "P:Sandbox.MovieMaker.ITrack.Name"
+        },
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrack.TargetType",
+          "Name": "TargetType",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "What type of object or property is this track targeting."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "48"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "What type of object or property is this track targeting."
+          },
+          "DocId": "P:Sandbox.MovieMaker.ITrack.TargetType"
+        },
+        {
+          "PropertyType": "Sandbox.MovieMaker.ITrack",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrack.Parent",
+          "Name": "Parent",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tracks can be nested, which means child tracks can auto-bind to targets in the scene if their parent is bound."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tracks can be nested, which means child tracks can auto-bind to targets in the scene\nif their parent is bound."
+          },
+          "DocId": "P:Sandbox.MovieMaker.ITrack.Parent"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.ITrack",
+      "Name": "ITrack",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Maps to a <see cref=\"T:Sandbox.MovieMaker.ITrackTarget\" /> in a scene, and describes how it changes over time."
+      },
+      "DocId": "T:Sandbox.MovieMaker.ITrack"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.MovieMaker.TrackMetadata",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.TrackMetadata.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Sandbox.MovieMaker.TrackMetadata",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.MovieMaker.TrackMetadata.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "ReferenceId",
+              "Out": true,
+              "Type": "System.Nullable`1<System.Guid>"
+            },
+            {
+              "Name": "PrefabSource",
+              "Out": true,
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.TrackMetadata.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.MovieMaker.TrackMetadata",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.MovieMaker.TrackMetadata.Deconstruct(System.Nullable`1{System.Guid}@,System.String@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "ReferenceId",
+              "Type": "System.Nullable`1<System.Guid>",
+              "Default": "null"
+            },
+            {
+              "Name": "PrefabSource",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Movies/Clips/Clip.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.TrackMetadata..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.MovieMaker.TrackMetadata",
+          "DocId": "M:Sandbox.MovieMaker.TrackMetadata.#ctor(System.Nullable`1{System.Guid},System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Nullable`1<System.Guid>",
+          "Loc": {
+            "File": "Systems/Movies/Clips/Clip.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.TrackMetadata.ReferenceId",
+          "Name": "ReferenceId",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "ID of the <see cref=\"T:Sandbox.Component\" /> or <see cref=\"T:Sandbox.GameObject\" /> this track was created to target."
+          },
+          "DocId": "P:Sandbox.MovieMaker.TrackMetadata.ReferenceId"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Movies/Clips/Clip.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.TrackMetadata.PrefabSource",
+          "Name": "PrefabSource",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "For <see cref=\"T:Sandbox.GameObject\" /> tracks, the prefab path that the original target object was instantiated from."
+          },
+          "DocId": "P:Sandbox.MovieMaker.TrackMetadata.PrefabSource"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.TrackMetadata",
+      "Name": "TrackMetadata",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Additional information used when editing or animating reference tracks.",
+        "Params": {
+          "ReferenceId": "ID of the <see cref=\"T:Sandbox.Component\" /> or <see cref=\"T:Sandbox.GameObject\" /> this track was created to target.",
+          "PrefabSource": "For <see cref=\"T:Sandbox.GameObject\" /> tracks, the prefab path that the original target object was instantiated from."
+        }
+      },
+      "DocId": "T:Sandbox.MovieMaker.TrackMetadata"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Properties": [
+        {
+          "PropertyType": "System.Guid",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IReferenceTrack.Id",
+          "Name": "Id",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Identifier for this track. Must be unique in the containing <span style=\"color: #4EC9B0;\">IMovieClip</span>, but different clips can share tracks as long as they have identical names, types, and parent tracks."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Identifier for this track. Must be unique in the containing <see cref=\"T:Sandbox.MovieMaker.IMovieClip\" />,\nbut different clips can share tracks as long as they have identical names, types,\nand parent tracks."
+          },
+          "DocId": "P:Sandbox.MovieMaker.IReferenceTrack.Id"
+        },
+        {
+          "PropertyType": "Sandbox.MovieMaker.IReferenceTrack`1<Sandbox.GameObject>",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IReferenceTrack.Parent",
+          "Name": "Parent",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument[]"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "82"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.MovieMaker.IReferenceTrack.Parent"
+        },
+        {
+          "PropertyType": "Sandbox.MovieMaker.TrackMetadata",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IReferenceTrack.Metadata",
+          "Name": "Metadata",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Additional information used when editing or animating this track."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Additional information used when editing or animating this track."
+          },
+          "DocId": "P:Sandbox.MovieMaker.IReferenceTrack.Metadata"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IReferenceTrack",
+      "Name": "IReferenceTrack",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Maps to an <see cref=\"T:Sandbox.MovieMaker.ITrackReference\" /> in a scene, which binds to a <see cref=\"T:Sandbox.GameObject\" />\nor <see cref=\"T:Sandbox.Component\" />."
+      },
+      "DocId": "T:Sandbox.MovieMaker.IReferenceTrack"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Properties": [],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IReferenceTrack<T>",
+      "Name": "IReferenceTrack<T>",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "TypeParams": {
+          "T": "Reference value type, must match <see cref=\"P:Sandbox.MovieMaker.ITrack.TargetType\" />."
+        }
+      },
+      "DocId": "T:Sandbox.MovieMaker.IReferenceTrack`1"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.MovieMaker.ITrack",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IActionTrack.Parent",
+          "Name": "Parent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "105"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.MovieMaker.IActionTrack.Parent"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IActionTrack",
+      "Name": "IActionTrack",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Unused, will describe running actions in the scene."
+      },
+      "DocId": "T:Sandbox.MovieMaker.IActionTrack"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "time",
+              "Type": "Sandbox.MovieMaker.MovieTime"
+            },
+            {
+              "Name": "value",
+              "Out": true,
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IPropertyTrack.TryGetValue",
+          "Name": "TryGetValue",
+          "DeclaringType": "Sandbox.MovieMaker.IPropertyTrack",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "For a given <span style=\"color: #9CDCFE;\">time</span>, does this track want to control its mapped property. If so, also outputs the desired property value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "120"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "For a given <paramref name=\"time\" />, does this track want to control its mapped property.\nIf so, also outputs the desired property value."
+          },
+          "DocId": "M:Sandbox.MovieMaker.IPropertyTrack.TryGetValue(Sandbox.MovieMaker.MovieTime,System.Object@)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.MovieMaker.ITrack",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IPropertyTrack.Parent",
+          "Name": "Parent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "123"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.MovieMaker.IPropertyTrack.Parent"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IPropertyTrack",
+      "Name": "IPropertyTrack",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Controls an <see cref=\"T:Sandbox.MovieMaker.ITrackProperty\" /> in the scene. Defines what value that property should have\nat each moment of time."
+      },
+      "DocId": "T:Sandbox.MovieMaker.IPropertyTrack"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "time",
+              "Type": "Sandbox.MovieMaker.MovieTime"
+            },
+            {
+              "Name": "value",
+              "Out": true,
+              "Type": "T"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IPropertyTrack<T>.TryGetValue",
+          "Name": "TryGetValue",
+          "DeclaringType": "Sandbox.MovieMaker.IPropertyTrack<T>",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "For a given <span style=\"color: #9CDCFE;\">time</span>, does this track want to control its mapped property. If so, also outputs the desired property value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "136"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.MovieMaker.IPropertyTrack`1.TryGetValue(Sandbox.MovieMaker.MovieTime,``0@)"
+        }
+      ],
+      "Properties": [],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IPropertyTrack<T>",
+      "Name": "IPropertyTrack<T>",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "TypeParams": {
+          "T": "Property value type."
+        }
+      },
+      "DocId": "T:Sandbox.MovieMaker.IPropertyTrack`1"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.MovieMaker.MovieTimeRange",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.ITrackBlock.TimeRange",
+          "Name": "TimeRange",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Start and end time of this block."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "161"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Start and end time of this block."
+          },
+          "DocId": "P:Sandbox.MovieMaker.ITrackBlock.TimeRange"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.ITrackBlock",
+      "Name": "ITrackBlock",
+      "Documentation": {
+        "Summary": "A time region where something happens in a movie track."
+      },
+      "DocId": "T:Sandbox.MovieMaker.ITrackBlock"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Methods": [
+        {
+          "ReturnType": "System.Object",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "time",
+              "Type": "Sandbox.MovieMaker.MovieTime"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IPropertySignal.GetValue",
+          "Name": "GetValue",
+          "DeclaringType": "Sandbox.MovieMaker.IPropertySignal",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "What value does this signal have at the given time?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "177"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "What value does this signal have at the given time?"
+          },
+          "DocId": "M:Sandbox.MovieMaker.IPropertySignal.GetValue(Sandbox.MovieMaker.MovieTime)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IPropertySignal.PropertyType",
+          "Name": "PropertyType",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "What type of value does this signal describe?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "172"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "What type of value does this signal describe?"
+          },
+          "DocId": "P:Sandbox.MovieMaker.IPropertySignal.PropertyType"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IPropertySignal",
+      "Name": "IPropertySignal",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Describes a value that changes over time."
+      },
+      "DocId": "T:Sandbox.MovieMaker.IPropertySignal"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "Methods": [
+        {
+          "ReturnType": "T",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "time",
+              "Type": "Sandbox.MovieMaker.MovieTime"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MovieMaker.IPropertySignal<T>.GetValue",
+          "Name": "GetValue",
+          "DeclaringType": "Sandbox.MovieMaker.IPropertySignal<T>",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Movies\\Clips\\Clip.cs",
+                "185"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.MovieMaker.IPropertySignal`1.GetValue(Sandbox.MovieMaker.MovieTime)"
+        }
+      ],
+      "Properties": [],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IPropertySignal<T>",
+      "Name": "IPropertySignal<T>",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Sandbox.MovieMaker.IPropertySignal`1"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IPropertyBlock",
+      "Name": "IPropertyBlock",
+      "Documentation": {
+        "Summary": "A <see cref=\"T:Sandbox.MovieMaker.IPropertySignal\" /> with a defined start and end time."
+      },
+      "DocId": "T:Sandbox.MovieMaker.IPropertyBlock"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IPropertyBlock<T>",
+      "Name": "IPropertyBlock<T>",
+      "Documentation": {
+        "Summary": "A <see cref=\"T:Sandbox.MovieMaker.IPropertySignal`1\" /> with a defined start and end time."
+      },
+      "DocId": "T:Sandbox.MovieMaker.IPropertyBlock`1"
+    },
+    {
+      "Namespace": "Sandbox.MovieMaker",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MovieMaker.IDynamicBlock",
+      "Name": "IDynamicBlock",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A <see cref=\"T:Sandbox.MovieMaker.ITrackBlock\" /> that can change dynamically, usually for previewing edits / live recordings."
+      },
+      "DocId": "T:Sandbox.MovieMaker.IDynamicBlock"
+    }
+  ],
+  "_metadata": {
+    "chunk": 191,
+    "items_count": 18
+  }
+}

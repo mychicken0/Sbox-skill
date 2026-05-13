@@ -1,0 +1,1693 @@
+{
+  "Types": [
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/ToolButton.cs",
+            "Line": 49
+          },
+          "IsProtected": true,
+          "FullName": "Editor.ToolButton.OnMousePress",
+          "Name": "OnMousePress",
+          "DeclaringType": "Editor.ToolButton",
+          "DocId": "M:Editor.ToolButton.OnMousePress(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/ToolButton.cs",
+            "Line": 62
+          },
+          "IsProtected": true,
+          "FullName": "Editor.ToolButton.DoLayout",
+          "Name": "DoLayout",
+          "DeclaringType": "Editor.ToolButton",
+          "DocId": "M:Editor.ToolButton.DoLayout"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/ToolButton.cs",
+            "Line": 69
+          },
+          "IsProtected": true,
+          "FullName": "Editor.ToolButton.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.ToolButton",
+          "DocId": "M:Editor.ToolButton.OnPaint"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/ToolButton.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ToolButton..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.ToolButton",
+          "DocId": "M:Editor.ToolButton.#ctor(System.String,System.String,Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/ToolButton.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ToolButton.IconChecked",
+          "Name": "IconChecked",
+          "Documentation": {
+            "Summary": "Icon to display when the <see cref=\"P:Editor.ToolButton.Checked\" /> is <see langword=\"true\" />."
+          },
+          "DocId": "P:Editor.ToolButton.IconChecked"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/ToolButton.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ToolButton.Icon",
+          "Name": "Icon",
+          "Documentation": {
+            "Summary": "Icon for the tool button."
+          },
+          "DocId": "P:Editor.ToolButton.Icon"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Widgets/ToolButton.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ToolButton.IsToggle",
+          "Name": "IsToggle",
+          "Documentation": {
+            "Summary": "Whether the button is toggle-able or not."
+          },
+          "DocId": "P:Editor.ToolButton.IsToggle"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Widgets/ToolButton.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ToolButton.Checked",
+          "Name": "Checked",
+          "Documentation": {
+            "Summary": "Whether the tool button is currently checked or not."
+          },
+          "DocId": "P:Editor.ToolButton.Checked"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ToolButton",
+      "Name": "ToolButton",
+      "Documentation": {
+        "Summary": "A button that shows as an icon and tries to keep itself square."
+      },
+      "DocId": "T:Editor.ToolButton"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "background",
+              "Type": "Color"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Widgets/VirtualWidget.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.PaintBackground",
+          "Name": "PaintBackground",
+          "DeclaringType": "Editor.VirtualWidget",
+          "Documentation": {
+            "Summary": "Generically paint a background for this item"
+          },
+          "DocId": "M:Editor.VirtualWidget.PaintBackground(Color,System.Single)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/VirtualWidget.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.GetForegroundColor",
+          "Name": "GetForegroundColor",
+          "DeclaringType": "Editor.VirtualWidget",
+          "Documentation": {
+            "Summary": ""
+          },
+          "DocId": "M:Editor.VirtualWidget.GetForegroundColor"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.VirtualWidget",
+          "DocId": "M:Editor.VirtualWidget.#ctor"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Rect",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.Rect",
+          "Name": "Rect",
+          "DocId": "F:Editor.VirtualWidget.Rect"
+        },
+        {
+          "FieldType": "System.Object",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.Object",
+          "Name": "Object",
+          "DocId": "F:Editor.VirtualWidget.Object"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.Hovered",
+          "Name": "Hovered",
+          "DocId": "F:Editor.VirtualWidget.Hovered"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.Selected",
+          "Name": "Selected",
+          "DocId": "F:Editor.VirtualWidget.Selected"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.Pressed",
+          "Name": "Pressed",
+          "DocId": "F:Editor.VirtualWidget.Pressed"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.Dropping",
+          "Name": "Dropping",
+          "DocId": "F:Editor.VirtualWidget.Dropping"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.Dragging",
+          "Name": "Dragging",
+          "DocId": "F:Editor.VirtualWidget.Dragging"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.Row",
+          "Name": "Row",
+          "DocId": "F:Editor.VirtualWidget.Row"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.Column",
+          "Name": "Column",
+          "DocId": "F:Editor.VirtualWidget.Column"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.Indent",
+          "Name": "Indent",
+          "DocId": "F:Editor.VirtualWidget.Indent"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.HasChildren",
+          "Name": "HasChildren",
+          "DocId": "F:Editor.VirtualWidget.HasChildren"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.IsOpen",
+          "Name": "IsOpen",
+          "DocId": "F:Editor.VirtualWidget.IsOpen"
+        },
+        {
+          "FieldType": "Sandbox.Rect",
+          "IsPublic": true,
+          "FullName": "Editor.VirtualWidget.ChildrenRect",
+          "Name": "ChildrenRect",
+          "DocId": "F:Editor.VirtualWidget.ChildrenRect"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.VirtualWidget",
+      "Name": "VirtualWidget",
+      "DocId": "T:Editor.VirtualWidget"
+    },
+    {
+      "Namespace": "Editor.Graphic",
+      "BaseType": "Editor.GraphicsItem",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.GraphicsItem",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Graphic/SimpleText.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Graphic.SimpleText..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Graphic.SimpleText",
+          "DocId": "M:Editor.Graphic.SimpleText.#ctor(System.String,Editor.GraphicsItem)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Graphic/SimpleText.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Graphic.SimpleText.Text",
+          "Name": "Text",
+          "DocId": "P:Editor.Graphic.SimpleText.Text"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Graphic.SimpleText",
+      "Name": "SimpleText",
+      "DocId": "T:Editor.Graphic.SimpleText"
+    },
+    {
+      "Namespace": "Editor.ModelEditor",
+      "Methods": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "ModelEditor/ModelDoc.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ModelEditor.ModelDoc.Open",
+          "Name": "Open",
+          "DocId": "P:Editor.ModelEditor.ModelDoc.Open"
+        },
+        {
+          "PropertyType": "Editor.Asset",
+          "Loc": {
+            "File": "ModelEditor/ModelDoc.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ModelEditor.ModelDoc.ModelAsset",
+          "Name": "ModelAsset",
+          "DocId": "P:Editor.ModelEditor.ModelDoc.ModelAsset"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Editor.ModelEditor.ModelDoc",
+      "Name": "ModelDoc",
+      "DocId": "T:Editor.ModelEditor.ModelDoc"
+    },
+    {
+      "Namespace": "Editor.MeshEditor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "mesh",
+              "Type": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.Build",
+          "Name": "Build",
+          "DeclaringType": "Editor.MeshEditor.PrimitiveBuilder",
+          "Documentation": {
+            "Summary": "Create the primitive in the mesh."
+          },
+          "DocId": "M:Editor.MeshEditor.PrimitiveBuilder.Build(Editor.MeshEditor.PrimitiveBuilder.PolygonMesh)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "box",
+              "Type": "BBox"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.SetFromBox",
+          "Name": "SetFromBox",
+          "DeclaringType": "Editor.MeshEditor.PrimitiveBuilder",
+          "Documentation": {
+            "Summary": "Setup properties from box."
+          },
+          "DocId": "M:Editor.MeshEditor.PrimitiveBuilder.SetFromBox(BBox)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 95
+          },
+          "IsProtected": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MeshEditor.PrimitiveBuilder",
+          "DocId": "M:Editor.MeshEditor.PrimitiveBuilder.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.Is2D",
+          "Name": "Is2D",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "If this primitive is 2D the bounds box will be limited to have no depth."
+          },
+          "DocId": "P:Editor.MeshEditor.PrimitiveBuilder.Is2D"
+        },
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 95
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.Material",
+          "Name": "Material",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The material to use for this whole primitive."
+          },
+          "DocId": "P:Editor.MeshEditor.PrimitiveBuilder.Material"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MeshEditor.PrimitiveBuilder",
+      "Name": "PrimitiveBuilder",
+      "Documentation": {
+        "Summary": "Build primitives out of polygons."
+      },
+      "DocId": "T:Editor.MeshEditor.PrimitiveBuilder"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.AddVertex",
+          "Name": "AddVertex",
+          "DeclaringType": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh",
+          "Documentation": {
+            "Summary": "Adds a new vertex to the end of the <see cref=\"P:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Vertices\" /> list.",
+            "Return": "The index of the newly added vertex.",
+            "Params": {
+              "position": "Position of the vertex to add."
+            }
+          },
+          "DocId": "M:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.AddVertex(Vector3)"
+        },
+        {
+          "ReturnType": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Face",
+          "Parameters": [
+            {
+              "Name": "indices",
+              "Type": "System.Int32[]"
+            }
+          ],
+          "l": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.AddFace",
+          "Name": "AddFace",
+          "DeclaringType": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh",
+          "Documentation": {
+            "Summary": "Adds a new face to the end of the <see cref=\"P:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Faces\" /> list.",
+            "Return": "The newly added face.",
+            "Params": {
+              "indices": "The vertex indices which define the face, ordered anticlockwise."
+            }
+          },
+          "DocId": "M:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.AddFace(System.Int32[])"
+        },
+        {
+          "ReturnType": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Face",
+          "Parameters": [
+            {
+              "Name": "positions",
+              "Type": "Vector3[]"
+            }
+          ],
+          "l": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.AddFace",
+          "Name": "AddFace",
+          "DeclaringType": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh",
+          "Documentation": {
+            "Summary": "Adds a new face to the end of the <see cref=\"P:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Faces\" /> list and it's vertices to the end of the <see cref=\"P:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Vertices\" /> list.",
+            "Return": "The newly added face.",
+            "Params": {
+              "positions": "The vertex positions which define the face, ordered anticlockwise."
+            }
+          },
+          "DocId": "M:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.AddFace(Vector3[])"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh",
+          "DocId": "M:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Vector3>",
+          "Loc": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Vertices",
+          "Name": "Vertices",
+          "DocId": "P:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Vertices"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Face>",
+          "Loc": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Faces",
+          "Name": "Faces",
+          "DocId": "P:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Faces"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh",
+      "Name": "PolygonMesh",
+      "DeclaringType": "Editor.MeshEditor.PrimitiveBuilder",
+      "Documentation": {
+        "Summary": "A list of vertices and faces."
+      },
+      "DocId": "T:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<System.Int32>",
+          "Loc": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Face.Indices",
+          "Name": "Indices",
+          "DocId": "P:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Face.Indices"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "MeshEditor/PrimitiveBuilder.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Face.Material",
+          "Name": "Material",
+          "DocId": "P:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Face.Material"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Face",
+      "Name": "Face",
+      "DeclaringType": "Editor.MeshEditor.PrimitiveBuilder/PolygonMesh",
+      "Documentation": {
+        "Summary": "A list of indices indexing into the <see cref=\"P:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Vertices\" /> list."
+      },
+      "DocId": "T:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh.Face"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "node",
+              "Type": "Editor.MapDoc.MapNode"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/MapDocument.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapDocument.DeleteNode",
+          "Name": "DeleteNode",
+          "DeclaringType": "Editor.MapDoc.MapDocument",
+          "Documentation": {
+            "Summary": "Removes the node from the world, deletes all children too."
+          },
+          "DocId": "M:Editor.MapDoc.MapDocument.DeleteNode(Editor.MapDoc.MapNode)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "MapEditor/MapDoc/MapDocument.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapDocument.PathName",
+          "Name": "PathName",
+          "Documentation": {
+            "Summary": "The map file name"
+          },
+          "DocId": "P:Editor.MapDoc.MapDocument.PathName"
+        },
+        {
+          "PropertyType": "Editor.MapDoc.MapWorld",
+          "Loc": {
+            "File": "MapEditor/MapDoc/MapDocument.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapDocument.World",
+          "Name": "World",
+          "Documentation": {
+            "Summary": "The world"
+          },
+          "DocId": "P:Editor.MapDoc.MapDocument.World"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapDocument",
+      "Name": "MapDocument",
+      "Documentation": {
+        "Summary": "Represents an open map document. A document has a tree of <see cref=\"T:Editor.MapDoc.MapNode\" /> that represent the world."
+      },
+      "DocId": "T:Editor.MapDoc.MapDocument"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "BaseType": "Editor.MapDoc.MapNode",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapEntity.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapEntity.GetKeyValue",
+          "Name": "GetKeyValue",
+          "DeclaringType": "Editor.MapDoc.MapEntity",
+          "Documentation": {
+            "Summary": "Gets the value for the key, e.g \"model\" could return \"models/props_c17/oildrum001_explosive.mdl\""
+          },
+          "DocId": "M:Editor.MapDoc.MapEntity.GetKeyValue(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapEntity.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapEntity.SetKeyValue",
+          "Name": "SetKeyValue",
+          "DeclaringType": "Editor.MapDoc.MapEntity",
+          "Documentation": {
+            "Summary": "Sets the value for the key, e.g \"model\" could be set to \"models/props_c17/oildrum001_explosive.mdl\""
+          },
+          "DocId": "M:Editor.MapDoc.MapEntity.SetKeyValue(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "max",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapEntity.cs",
+            "Line": 150
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapEntity.SetDefaultBounds",
+          "Name": "SetDefaultBounds",
+          "DeclaringType": "Editor.MapDoc.MapEntity",
+          "Documentation": {
+            "Summary": "Sets the default bounds of the entity if it doesn't have a model. By default this is 16x16x16.",
+            "Remarks": "Refactor out once we have managed helpers I think."
+          },
+          "DocId": "M:Editor.MapDoc.MapEntity.SetDefaultBounds(Vector3,Vector3)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "mapDocument",
+              "Type": "Editor.MapDoc.MapDocument",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapEntity.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapEntity..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MapDoc.MapEntity",
+          "DocId": "M:Editor.MapDoc.MapEntity.#ctor(Editor.MapDoc.MapDocument)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.SerializedObject",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapEntity.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapEntity.SerializedObject",
+          "Name": "SerializedObject",
+          "DocId": "P:Editor.MapDoc.MapEntity.SerializedObject"
+        },
+        {
+          "PropertyType": "Editor.MapClass",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapEntity.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapEntity.MapClass",
+          "Name": "MapClass",
+          "DocId": "P:Editor.MapDoc.MapEntity.MapClass"
+        },
+        {
+          "PropertyType": "Sandbox.TypeDescription",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapEntity.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapEntity.TypeDescription",
+          "Name": "TypeDescription",
+          "DocId": "P:Editor.MapDoc.MapEntity.TypeDescription"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapEntity.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapEntity.ClassName",
+          "Name": "ClassName",
+          "Documentation": {
+            "Summary": "Entity class name like prop_physics"
+          },
+          "DocId": "P:Editor.MapDoc.MapEntity.ClassName"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapEntity",
+      "Name": "MapEntity",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "view_in_ar"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "MapEntity in Hammer is a type of <see cref=\"T:Editor.MapDoc.MapNode\" /> that has a set of key/value pairs.\nThe keyvalues represent the authoritative state of the entity. \n\nEntities may have helpers that enhance the presentation and sometimes modification of those keyvalues.\nThe helpers may come and go; it should always be possible to recreate the helpers from\nthe parent entity's keyvalues.\n\nEntities may also have zero or more <see cref=\"T:Editor.MapDoc.MapMesh\" /> children."
+      },
+      "DocId": "T:Editor.MapDoc.MapEntity"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "BaseType": "Editor.MapDoc.MapNode",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "mapDocument",
+              "Type": "Editor.MapDoc.MapDocument",
+              "Default": "null"
+            },
+            {
+              "Name": "gameObject",
+              "Type": "Sandbox.GameObject",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapGameObject.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapGameObject..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MapDoc.MapGameObject",
+          "DocId": "M:Editor.MapDoc.MapGameObject.#ctor(Editor.MapDoc.MapDocument,Sandbox.GameObject)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapGameObject.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapGameObject.GameObject",
+          "Name": "GameObject",
+          "DocId": "P:Editor.MapDoc.MapGameObject.GameObject"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapGameObject",
+      "Name": "MapGameObject",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "view_in_ar"
+          ]
+        }
+      ],
+      "DocId": "T:Editor.MapDoc.MapGameObject"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "BaseType": "Editor.MapDoc.MapNode",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "mapDocument",
+              "Type": "Editor.MapDoc.MapDocument",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapGroup.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapGroup..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MapDoc.MapGroup",
+          "DocId": "M:Editor.MapDoc.MapGroup.#ctor(Editor.MapDoc.MapDocument)"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapGroup",
+      "Name": "MapGroup",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "group"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A map node which has the sole purpose of grouping other map nodes together."
+      },
+      "DocId": "T:Editor.MapDoc.MapGroup"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "BaseType": "Editor.MapDoc.MapNode",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "mapDocument",
+              "Type": "Editor.MapDoc.MapDocument",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapInstance.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapInstance..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MapDoc.MapInstance",
+          "DocId": "M:Editor.MapDoc.MapInstance.#ctor(Editor.MapDoc.MapDocument)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Editor.MapDoc.MapNode",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapInstance.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapInstance.Target",
+          "Name": "Target",
+          "Documentation": {
+            "Summary": "The target map node this MapInstance references to copy."
+          },
+          "DocId": "P:Editor.MapDoc.MapInstance.Target"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapInstance",
+      "Name": "MapInstance",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "content_copy"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A map node which allows a target group and its children to be placed with a new position\nand orientation in the world without creating a new copy.\n\nMultiple MapInstance classes may reference the same target allowing it to be placed in\nmultiple locations, but allowing any edits to be applied to all instances."
+      },
+      "DocId": "T:Editor.MapDoc.MapInstance"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "BaseType": "Editor.MapDoc.MapNode",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapMesh.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapMesh.SetMaterial",
+          "Name": "SetMaterial",
+          "DeclaringType": "Editor.MapDoc.MapMesh",
+          "Documentation": {
+            "Summary": "Assigns the specified material to the entire mesh"
+          },
+          "DocId": "M:Editor.MapDoc.MapMesh.SetMaterial(Sandbox.Material)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "mesh",
+              "Type": "Editor.MeshEditor.PrimitiveBuilder.PolygonMesh"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapMesh.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapMesh.ConstructFromPolygons",
+          "Name": "ConstructFromPolygons",
+          "DeclaringType": "Editor.MapDoc.MapMesh",
+          "Documentation": {
+            "Summary": "Constructs the mesh from the given <see cref=\"T:Editor.MeshEditor.PrimitiveBuilder.PolygonMesh\" /> builder."
+          },
+          "DocId": "M:Editor.MapDoc.MapMesh.ConstructFromPolygons(Editor.MeshEditor.PrimitiveBuilder.PolygonMesh)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Editor.Asset>",
+          "Parameters": [],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapMesh.cs",
+            "Line": 117
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapMesh.GetFaceMaterialAssets",
+          "Name": "GetFaceMaterialAssets",
+          "DeclaringType": "Editor.MapDoc.MapMesh",
+          "Documentation": {
+            "Summary": "Get all material assets used on this mesh"
+          },
+          "DocId": "M:Editor.MapDoc.MapMesh.GetFaceMaterialAssets"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "mapDocument",
+              "Type": "Editor.MapDoc.MapDocument",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapMesh.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapMesh..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MapDoc.MapMesh",
+          "DocId": "M:Editor.MapDoc.MapMesh.#ctor(Editor.MapDoc.MapDocument)"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapMesh",
+      "Name": "MapMesh",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "foundation"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "MapMesh is the Hammer map node which represents editable mesh geometry in a Hammer map.\nThis is the map node that is created when using the hammer geometry editing tools."
+      },
+      "DocId": "T:Editor.MapDoc.MapMesh"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "Methods": [
+        {
+          "ReturnType": "Editor.MapDoc.MapNode",
+          "Parameters": [],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 205
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.Copy",
+          "Name": "Copy",
+          "DeclaringType": "Editor.MapDoc.MapNode",
+          "Documentation": {
+            "Summary": "Creates a copy of this map node."
+          },
+          "DocId": "M:Editor.MapDoc.MapNode.Copy"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 216
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.Remove",
+          "Name": "Remove",
+          "DeclaringType": "Editor.MapDoc.MapNode",
+          "DocId": "M:Editor.MapDoc.MapNode.Remove"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "User specified name of this node"
+          },
+          "DocId": "P:Editor.MapDoc.MapNode.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.TypeString",
+          "Name": "TypeString",
+          "Documentation": {
+            "Summary": "Native C++ type name for this map node (nice for debug, might disappear at some point)"
+          },
+          "DocId": "P:Editor.MapDoc.MapNode.TypeString"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.Position",
+          "Name": "Position",
+          "Documentation": {
+            "Summary": "World position of this map node."
+          },
+          "DocId": "P:Editor.MapDoc.MapNode.Position"
+        },
+        {
+          "PropertyType": "Angles",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.Angles",
+          "Name": "Angles",
+          "Documentation": {
+            "Summary": "Euler angles of this map node."
+          },
+          "DocId": "P:Editor.MapDoc.MapNode.Angles"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 147
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.Scale",
+          "Name": "Scale",
+          "Documentation": {
+            "Summary": "Non-uniform scalar for this map node."
+          },
+          "DocId": "P:Editor.MapDoc.MapNode.Scale"
+        },
+        {
+          "PropertyType": "Editor.MapDoc.MapNode",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 156
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.Parent",
+          "Name": "Parent",
+          "Documentation": {
+            "Summary": "The parent node, at the top level this will be the <see cref=\"T:Editor.MapDoc.MapWorld\" />"
+          },
+          "DocId": "P:Editor.MapDoc.MapNode.Parent"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Editor.MapDoc.MapNode>",
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.Children",
+          "Name": "Children",
+          "Documentation": {
+            "Summary": "Each MapNode can have many children. Children usually transform with their parents, etc."
+          },
+          "DocId": "P:Editor.MapDoc.MapNode.Children"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 180
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.Visible",
+          "Name": "Visible",
+          "Documentation": {
+            "Summary": "Visibility of this MapNode, e.g if it's been hidden by the user"
+          },
+          "DocId": "P:Editor.MapDoc.MapNode.Visible"
+        },
+        {
+          "PropertyType": "Editor.MapDoc.MapWorld",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 188
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.World",
+          "Name": "World",
+          "Documentation": {
+            "Summary": "The world this map node belongs to."
+          },
+          "DocId": "P:Editor.MapDoc.MapNode.World"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapNode.cs",
+            "Line": 223
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapNode.GeneratesEntityModelGeometry",
+          "Name": "GeneratesEntityModelGeometry",
+          "Documentation": {
+            "Summary": "Does this map node generate models to use?"
+          },
+          "DocId": "P:Editor.MapDoc.MapNode.GeneratesEntityModelGeometry"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapNode",
+      "Name": "MapNode",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "help_outline"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A common class used for all objects in the world object tree."
+      },
+      "DocId": "T:Editor.MapDoc.MapNode"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "BaseType": "Editor.MapDoc.MapNode",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "mapDocument",
+              "Type": "Editor.MapDoc.MapDocument",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapPath.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapPath..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MapDoc.MapPath",
+          "DocId": "M:Editor.MapDoc.MapPath.#ctor(Editor.MapDoc.MapDocument)"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapPath",
+      "Name": "MapPath",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "conversion_path"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Path containing a bunch of <see cref=\"T:Editor.MapDoc.MapPathNode\" />"
+      },
+      "DocId": "T:Editor.MapDoc.MapPath"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "BaseType": "Editor.MapDoc.MapNode",
+      "Methods": [],
+      "Constructors": [],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapPathNode",
+      "Name": "MapPathNode",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "adjust"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Nodes along a <see cref=\"T:Editor.MapDoc.MapPath\" />"
+      },
+      "DocId": "T:Editor.MapDoc.MapPathNode"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "BaseType": "Editor.MapDoc.MapMesh",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "size",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapStaticOverlay.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapStaticOverlay.CreateCenteredQuad",
+          "Name": "CreateCenteredQuad",
+          "DeclaringType": "Editor.MapDoc.MapStaticOverlay",
+          "DocId": "M:Editor.MapDoc.MapStaticOverlay.CreateCenteredQuad(Vector2,Sandbox.Material)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "mapDocument",
+              "Type": "Editor.MapDoc.MapDocument",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/MapDoc/Nodes/MapStaticOverlay.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapStaticOverlay..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MapDoc.MapStaticOverlay",
+          "DocId": "M:Editor.MapDoc.MapStaticOverlay.#ctor(Editor.MapDoc.MapDocument)"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapStaticOverlay",
+      "Name": "MapStaticOverlay",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "layers"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "An overlay which is rendered using a mesh generated by projecting faces onto\nsurrounding geometry. Baked during map compile so that there is no runtime component.\nAlso supports being limited to specific targets."
+      },
+      "DocId": "T:Editor.MapDoc.MapStaticOverlay"
+    },
+    {
+      "Namespace": "Editor.MapDoc",
+      "BaseType": "Editor.MapDoc.MapNode",
+      "Methods": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Scene",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapWorld.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapWorld.Scene",
+          "Name": "Scene",
+          "DocId": "P:Editor.MapDoc.MapWorld.Scene"
+        },
+        {
+          "PropertyType": "Editor.MapEditor.HammerSceneEditorSession",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapWorld.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapWorld.EditorSession",
+          "Name": "EditorSession",
+          "DocId": "P:Editor.MapDoc.MapWorld.EditorSession"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "MapEditor/MapDoc/Nodes/MapWorld.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapWorld.MapPathName",
+          "Name": "MapPathName",
+          "DocId": "P:Editor.MapDoc.MapWorld.MapPathName"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Editor.MapDoc.MapNode>",
+          "IsPublic": true,
+          "FullName": "Editor.MapDoc.MapWorld.Children",
+          "Name": "Children",
+          "Documentation": {
+            "Summary": "All children nodes of this world.",
+            "Remarks": "This returns nested descendants currently, that might change?"
+          },
+          "DocId": "P:Editor.MapDoc.MapWorld.Children"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapDoc.MapWorld",
+      "Name": "MapWorld",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "view_in_ar"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "MapWorld is the root node of a <see cref=\"T:Editor.MapDoc.MapDocument\" />, however it can have multiple sub <see cref=\"T:Editor.MapDoc.MapWorld\" /> of prefabs."
+      },
+      "DocId": "T:Editor.MapDoc.MapWorld"
+    },
+    {
+      "Namespace": "Editor.MapEditor",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "packageType",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/DragDrop/IMapViewDropTarget.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapEditor.CanDropAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MapEditor.CanDropAttribute",
+          "Documentation": {
+            "Summary": "Can drop a package or asset extension of this type."
+          },
+          "DocId": "M:Editor.MapEditor.CanDropAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "MapEditor/DragDrop/IMapViewDropTarget.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapEditor.CanDropAttribute.TargetType",
+          "Name": "TargetType",
+          "DocId": "P:Editor.MapEditor.CanDropAttribute.TargetType"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "MapEditor/DragDrop/IMapViewDropTarget.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapEditor.CanDropAttribute.PackageTypeOrExtension",
+          "Name": "PackageTypeOrExtension",
+          "DocId": "P:Editor.MapEditor.CanDropAttribute.PackageTypeOrExtension"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapEditor.CanDropAttribute",
+      "Name": "CanDropAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Editor.MapEditor.CanDropAttribute"
+    }
+  ],
+  "_metadata": {
+    "chunk": 269,
+    "items_count": 19
+  }
+}

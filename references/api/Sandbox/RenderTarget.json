@@ -1,0 +1,1770 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.RenderTarget",
+          "Parameters": [
+            {
+              "Name": "width",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "height",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "colorFormat",
+              "Type": "Sandbox.ImageFormat",
+              "Default": "-2"
+            },
+            {
+              "Name": "depthFormat",
+              "Type": "Sandbox.ImageFormat",
+              "Default": "-2"
+            },
+            {
+              "Name": "msaa",
+              "Type": "Sandbox.MultisampleAmount",
+              "Default": "6"
+            },
+            {
+              "Name": "numMips",
+              "Type": "System.Int32",
+              "Default": "1"
+            },
+            {
+              "Name": "targetName",
+              "Type": "System.String",
+              "Default": ""
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/RenderTarget.Cache.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.RenderTarget.GetTemporary",
+          "Name": "GetTemporary",
+          "DeclaringType": "Sandbox.RenderTarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a temporary render target. You should dispose the returned handle when you're done to return the textures to the pool."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RenderTarget.Cache.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a temporary render target. You should dispose the returned handle when you're done to return the textures to the pool.",
+            "Return": "A RenderTarget that is ready to render to.",
+            "Params": {
+              "width": "Width of the render target you want.",
+              "height": "Height of the render target you want.",
+              "colorFormat": "The format for the color buffer. If set to default we'll use whatever the current pipeline is using.",
+              "depthFormat": "The format for the depth buffer.",
+              "msaa": "The number of msaa samples you'd like. Msaa render textures are a pain in the ass so you're probably gonna regret trying to use this.",
+              "numMips": "Number of mips you want in this texture. You probably don't want this unless you want to generate mips in a second pass.",
+              "targetName": "The optional name of the render target"
+            }
+          },
+          "DocId": "M:Sandbox.RenderTarget.GetTemporary(System.Int32,System.Int32,Sandbox.ImageFormat,Sandbox.ImageFormat,Sandbox.MultisampleAmount,System.Int32,System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.RenderTarget",
+          "Parameters": [
+            {
+              "Name": "sizeFactor",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "colorFormat",
+              "Type": "Sandbox.ImageFormat",
+              "Default": "-2"
+            },
+            {
+              "Name": "depthFormat",
+              "Type": "Sandbox.ImageFormat",
+              "Default": "-2"
+            },
+            {
+              "Name": "msaa",
+              "Type": "Sandbox.MultisampleAmount",
+              "Default": "6"
+            },
+            {
+              "Name": "numMips",
+              "Type": "System.Int32",
+              "Default": "1"
+            },
+            {
+              "Name": "targetName",
+              "Type": "System.String",
+              "Default": ""
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/RenderTarget.Cache.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.RenderTarget.GetTemporary",
+          "Name": "GetTemporary",
+          "DeclaringType": "Sandbox.RenderTarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a temporary render target. You should dispose the returned handle when you're done to return the textures to the pool."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RenderTarget.Cache.cs",
+                "90"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a temporary render target. You should dispose the returned handle when you're done to return the textures to the pool.",
+            "Return": "A RenderTarget that is ready to render to.",
+            "Params": {
+              "sizeFactor": "Divide the screen size by this factor. 2 would be half screen sized. 1 for full screen sized.",
+              "colorFormat": "The format for the color buffer. If null we'll choose the most appropriate for where you are in the pipeline.",
+              "depthFormat": "The format for the depth buffer.",
+              "msaa": "The number of msaa samples you'd like. Msaa render textures are a pain in the ass so you're probably gonna regret trying to use this.",
+              "numMips": "Number of mips you want in this texture. You probably don't want this unless you want to generate mips in a second pass.",
+              "targetName": "The optional name of the render target"
+            }
+          },
+          "DocId": "M:Sandbox.RenderTarget.GetTemporary(System.Int32,Sandbox.ImageFormat,Sandbox.ImageFormat,Sandbox.MultisampleAmount,System.Int32,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/RenderTarget.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RenderTarget.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.RenderTarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Stop using this texture, return it to the pool"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RenderTarget.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Stop using this texture, return it to the pool"
+          },
+          "DocId": "M:Sandbox.RenderTarget.Dispose"
+        },
+        {
+          "ReturnType": "Sandbox.RenderTarget",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "depth",
+              "Type": "Sandbox.Texture",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/RenderTarget.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.RenderTarget.From",
+          "Name": "From",
+          "DeclaringType": "Sandbox.RenderTarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a render target from these textures"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RenderTarget.cs",
+                "83"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a render target from these textures"
+          },
+          "DocId": "M:Sandbox.RenderTarget.From(Sandbox.Texture,Sandbox.Texture)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/RenderTarget.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RenderTarget.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Width of the render target"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RenderTarget.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Width of the render target"
+          },
+          "DocId": "P:Sandbox.RenderTarget.Width"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/RenderTarget.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RenderTarget.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Height of the render target"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RenderTarget.cs",
+                "33"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Height of the render target"
+          },
+          "DocId": "P:Sandbox.RenderTarget.Height"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Systems/Render/RenderTarget.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RenderTarget.ColorTarget",
+          "Name": "ColorTarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The target colour texture"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RenderTarget.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The target colour texture"
+          },
+          "DocId": "P:Sandbox.RenderTarget.ColorTarget"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Systems/Render/RenderTarget.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RenderTarget.DepthTarget",
+          "Name": "DepthTarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The target depth texture"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RenderTarget.cs",
+                "43"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The target depth texture"
+          },
+          "DocId": "P:Sandbox.RenderTarget.DepthTarget"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.RenderTarget",
+      "Name": "RenderTarget",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Essentially wraps a couple of textures that we're going to render to. The color texture and the depth texture."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\RenderTarget.Cache.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Essentially wraps a couple of textures that we're going to render to. The color texture and the depth texture."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\RenderTarget.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Essentially wraps a couple of textures that we're going to render to. The color texture and the depth texture."
+      },
+      "DocId": "T:Sandbox.RenderTarget"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.SceneLayerType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneLayerType.Unknown",
+          "Name": "Unknown",
+          "DocId": "F:Sandbox.SceneLayerType.Unknown"
+        },
+        {
+          "FieldType": "Sandbox.SceneLayerType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneLayerType.Translucent",
+          "Name": "Translucent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Translucent pass. We're rendering translucent objects in depth sorted order, from back to front."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Translucent pass. We're rendering translucent objects in depth sorted order, from back to front."
+          },
+          "DocId": "F:Sandbox.SceneLayerType.Translucent"
+        },
+        {
+          "FieldType": "Sandbox.SceneLayerType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneLayerType.Shadow",
+          "Name": "Shadow",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Rendering dynamic shadows"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Rendering dynamic shadows"
+          },
+          "DocId": "F:Sandbox.SceneLayerType.Shadow"
+        },
+        {
+          "FieldType": "Sandbox.SceneLayerType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneLayerType.EffectsTranslucent",
+          "Name": "EffectsTranslucent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Translucent effects on the 1/4 texture"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Translucent effects on the 1/4 texture"
+          },
+          "DocId": "F:Sandbox.SceneLayerType.EffectsTranslucent"
+        },
+        {
+          "FieldType": "Sandbox.SceneLayerType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneLayerType.EffectsOpaque",
+          "Name": "EffectsOpaque",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Opaque effects on the 1/4 texture"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Opaque effects on the 1/4 texture"
+          },
+          "DocId": "F:Sandbox.SceneLayerType.EffectsOpaque"
+        },
+        {
+          "FieldType": "Sandbox.SceneLayerType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneLayerType.DepthPrepass",
+          "Name": "DepthPrepass",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Depth prepass to reduce overdraw"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Depth prepass to reduce overdraw"
+          },
+          "DocId": "F:Sandbox.SceneLayerType.DepthPrepass"
+        },
+        {
+          "FieldType": "Sandbox.SceneLayerType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneLayerType.Opaque",
+          "Name": "Opaque",
+          "DocId": "F:Sandbox.SceneLayerType.Opaque"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneLayerType",
+      "Name": "SceneLayerType",
+      "DocId": "T:Sandbox.SceneLayerType"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Texture",
+          "Parameters": [
+            {
+              "Name": "scope",
+              "In": true,
+              "Type": "Sandbox.TextRendering.Scope"
+            },
+            {
+              "Name": "clip",
+              "Type": "Vector2",
+              "Default": "null"
+            },
+            {
+              "Name": "flag",
+              "Type": "Sandbox.TextFlag",
+              "Default": "33"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/TextRendering/TextRendering.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.TextRendering.GetOrCreateTexture",
+          "Name": "GetOrCreateTexture",
+          "DeclaringType": "Sandbox.TextRendering",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a texture from the scope. The texture will either be a cached version or will be rendered immediately"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a texture from the scope. The texture will either be a cached version or will be rendered immediately"
+          },
+          "DocId": "M:Sandbox.TextRendering.GetOrCreateTexture(Sandbox.TextRendering.Scope@,Vector2,Sandbox.TextFlag)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.TextRendering",
+      "Name": "TextRendering",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\TextRendering\\TextRendering.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\TextRendering\\TextRendering.TextBlock.cs",
+            "6"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.TextRendering"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/TextRendering/TextRendering.Scope.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.Measure",
+          "Name": "Measure",
+          "DeclaringType": "Sandbox.TextRendering.Scope",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Measures the rendered size of the text in this Sandbox.TextRendering.Scope using its current style settings. This is non trivial but the underlying style is cached, so if you end up drawing it, it'll re-use the cached data anyway."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "121"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Measures the rendered size of the text in this <see cref=\"T:Sandbox.TextRendering.Scope\" /> using its current style settings. This is non trivial\nbut the underlying style is cached, so if you end up drawing it, it'll re-use the cached data anyway.",
+            "Return": "A <see cref=\"T:Vector2\" /> representing the width and height, in pixels, of the rendered text."
+          },
+          "DocId": "M:Sandbox.TextRendering.Scope.Measure"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "color",
+              "In": true,
+              "Type": "Color"
+            },
+            {
+              "Name": "size",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "font",
+              "Type": "System.String",
+              "Default": "Roboto"
+            },
+            {
+              "Name": "weight",
+              "Type": "System.Int32",
+              "Default": "400"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/TextRendering/TextRendering.Scope.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.TextRendering.Scope",
+          "DocId": "M:Sandbox.TextRendering.Scope.#ctor(System.String,Color@,System.Single,System.String,System.Int32)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.TextRendering.Scope",
+          "Loc": {
+            "File": "Systems/Render/TextRendering/TextRendering.Scope.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.TextRendering.Scope.Default",
+          "Name": "Default",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "81"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.TextRendering.Scope.Default"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.Text",
+          "Name": "Text",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.TextAreaAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.Text"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.TextColor",
+          "Name": "TextColor",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.TextColor"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.FontName",
+          "Name": "FontName",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.FontNameAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.FontName"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.FontSize",
+          "Name": "FontSize",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "6",
+                "256"
+              ]
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.FontSize"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.FontWeight",
+          "Name": "FontWeight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "800"
+              ]
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.FontWeight"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.FontItalic",
+          "Name": "FontItalic",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "28"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.FontItalic"
+        },
+        {
+          "FieldType": "Sandbox.UI.FontVariantNumeric",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.FontVariantNumeric",
+          "Name": "FontVariantNumeric",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.FontVariantNumeric"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.LineHeight",
+          "Name": "LineHeight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "5"
+              ]
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.LineHeight"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.LetterSpacing",
+          "Name": "LetterSpacing",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.LetterSpacing"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.WordSpacing",
+          "Name": "WordSpacing",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.WordSpacing"
+        },
+        {
+          "FieldType": "Sandbox.Rendering.FilterMode",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.FilterMode",
+          "Name": "FilterMode",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.FilterMode"
+        },
+        {
+          "FieldType": "Sandbox.UI.FontSmooth",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.FontSmooth",
+          "Name": "FontSmooth",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "38"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.FontSmooth"
+        },
+        {
+          "FieldType": "Sandbox.TextRendering.Outline",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.Outline",
+          "Name": "Outline",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Effects"
+              ]
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "43"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.Outline"
+        },
+        {
+          "FieldType": "Sandbox.TextRendering.Shadow",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.Shadow",
+          "Name": "Shadow",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Effects"
+              ]
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.Shadow"
+        },
+        {
+          "FieldType": "Sandbox.TextRendering.Outline",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.OutlineUnder",
+          "Name": "OutlineUnder",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Effects"
+              ]
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "49"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.OutlineUnder"
+        },
+        {
+          "FieldType": "Sandbox.TextRendering.Shadow",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Scope.ShadowUnder",
+          "Name": "ShadowUnder",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Effects"
+              ]
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "52"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Scope.ShadowUnder"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.TextRendering.Scope",
+      "Name": "Scope",
+      "DeclaringType": "Sandbox.TextRendering",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Defines a scope of text, all using the same style."
+      },
+      "DocId": "T:Sandbox.TextRendering.Scope"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/TextRendering/TextRendering.Scope.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Outline..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.TextRendering.Outline",
+          "DocId": "M:Sandbox.TextRendering.Outline.#ctor"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Outline.Enabled",
+          "Name": "Enabled",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "171"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Outline.Enabled"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Outline.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "172"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Outline.Size"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Outline.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "173"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Outline.Color"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.TextRendering.Outline",
+      "Name": "Outline",
+      "DeclaringType": "Sandbox.TextRendering",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.TextRendering.Outline"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/TextRendering/TextRendering.Scope.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Shadow..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.TextRendering.Shadow",
+          "DocId": "M:Sandbox.TextRendering.Shadow.#ctor"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Shadow.Enabled",
+          "Name": "Enabled",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "185"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Shadow.Enabled"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Shadow.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "186"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Shadow.Size"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Shadow.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "187"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Shadow.Color"
+        },
+        {
+          "FieldType": "Vector2",
+          "IsPublic": true,
+          "FullName": "Sandbox.TextRendering.Shadow.Offset",
+          "Name": "Offset",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\TextRendering\\TextRendering.Scope.cs",
+                "188"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.TextRendering.Shadow.Offset"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.TextRendering.Shadow",
+      "Name": "Shadow",
+      "DeclaringType": "Sandbox.TextRendering",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.TextRendering.Shadow"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.VertexLayout",
+      "Name": "VertexLayout",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Allows for the definition of custom vertex layouts"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\VertexLayout.cs",
+            "12"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Allows for the definition of custom vertex layouts"
+      },
+      "DocId": "T:Sandbox.VertexLayout"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 116
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.VertexLayout.BaseAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.BaseAttribute",
+          "DocId": "M:Sandbox.VertexLayout.BaseAttribute.#ctor"
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VertexLayout.BaseAttribute",
+      "Name": "BaseAttribute",
+      "DeclaringType": "Sandbox.VertexLayout",
+      "Attributes": [
+        {
+          "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\VertexLayout.cs",
+            "111"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.VertexLayout.BaseAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.VertexLayout.BaseAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 122
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.Position..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.Position",
+          "DocId": "M:Sandbox.VertexLayout.Position.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 123
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.Position..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.Position",
+          "DocId": "M:Sandbox.VertexLayout.Position.#ctor(System.Int32)"
+        }
+      ],
+      "Properties": [],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VertexLayout.Position",
+      "Name": "Position",
+      "DeclaringType": "Sandbox.VertexLayout",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\VertexLayout.cs",
+            "119"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.VertexLayout.Position"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.VertexLayout.BaseAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.Normal..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.Normal",
+          "DocId": "M:Sandbox.VertexLayout.Normal.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.Normal..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.Normal",
+          "DocId": "M:Sandbox.VertexLayout.Normal.#ctor(System.Int32)"
+        }
+      ],
+      "Properties": [],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VertexLayout.Normal",
+      "Name": "Normal",
+      "DeclaringType": "Sandbox.VertexLayout",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\VertexLayout.cs",
+            "126"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.VertexLayout.Normal"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.VertexLayout.BaseAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 136
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.Color..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.Color",
+          "DocId": "M:Sandbox.VertexLayout.Color.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.Color..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.Color",
+          "DocId": "M:Sandbox.VertexLayout.Color.#ctor(System.Int32)"
+        }
+      ],
+      "Properties": [],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VertexLayout.Color",
+      "Name": "Color",
+      "DeclaringType": "Sandbox.VertexLayout",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\VertexLayout.cs",
+            "133"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.VertexLayout.Color"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.VertexLayout.BaseAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 143
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.TexCoord..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.TexCoord",
+          "DocId": "M:Sandbox.VertexLayout.TexCoord.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 144
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.TexCoord..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.TexCoord",
+          "DocId": "M:Sandbox.VertexLayout.TexCoord.#ctor(System.Int32)"
+        }
+      ],
+      "Properties": [],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VertexLayout.TexCoord",
+      "Name": "TexCoord",
+      "DeclaringType": "Sandbox.VertexLayout",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\VertexLayout.cs",
+            "140"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.VertexLayout.TexCoord"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.VertexLayout.BaseAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 150
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.Tangent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.Tangent",
+          "DocId": "M:Sandbox.VertexLayout.Tangent.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 151
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.Tangent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.Tangent",
+          "DocId": "M:Sandbox.VertexLayout.Tangent.#ctor(System.Int32)"
+        }
+      ],
+      "Properties": [],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VertexLayout.Tangent",
+      "Name": "Tangent",
+      "DeclaringType": "Sandbox.VertexLayout",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\VertexLayout.cs",
+            "147"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.VertexLayout.Tangent"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.VertexLayout.BaseAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 157
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.BlendWeight..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.BlendWeight",
+          "DocId": "M:Sandbox.VertexLayout.BlendWeight.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 158
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.BlendWeight..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.BlendWeight",
+          "DocId": "M:Sandbox.VertexLayout.BlendWeight.#ctor(System.Int32)"
+        }
+      ],
+      "Properties": [],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VertexLayout.BlendWeight",
+      "Name": "BlendWeight",
+      "DeclaringType": "Sandbox.VertexLayout",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\VertexLayout.cs",
+            "154"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.VertexLayout.BlendWeight"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.VertexLayout.BaseAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 164
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.BlendIndices..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.BlendIndices",
+          "DocId": "M:Sandbox.VertexLayout.BlendIndices.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/VertexLayout.cs",
+            "Line": 165
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VertexLayout.BlendIndices..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VertexLayout.BlendIndices",
+          "DocId": "M:Sandbox.VertexLayout.BlendIndices.#ctor(System.Int32)"
+        }
+      ],
+      "Properties": [],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VertexLayout.BlendIndices",
+      "Name": "BlendIndices",
+      "DeclaringType": "Sandbox.VertexLayout",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\VertexLayout.cs",
+            "161"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.VertexLayout.BlendIndices"
+    }
+  ],
+  "_metadata": {
+    "chunk": 160,
+    "items_count": 15
+  }
+}

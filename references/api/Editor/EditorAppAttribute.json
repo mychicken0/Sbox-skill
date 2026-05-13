@@ -1,0 +1,1632 @@
+{
+  "Types": [
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Attribute",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Editor/EditorAppAttribute.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorAppAttribute.Open",
+          "Name": "Open",
+          "DeclaringType": "Editor.EditorAppAttribute",
+          "DocId": "M:Editor.EditorAppAttribute.Open"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "description",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Editor/EditorAppAttribute.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorAppAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.EditorAppAttribute",
+          "DocId": "M:Editor.EditorAppAttribute.#ctor(System.String,System.String,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Editor/EditorAppAttribute.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorAppAttribute.Title",
+          "Name": "Title",
+          "DocId": "P:Editor.EditorAppAttribute.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Editor/EditorAppAttribute.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorAppAttribute.Icon",
+          "Name": "Icon",
+          "DocId": "P:Editor.EditorAppAttribute.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Editor/EditorAppAttribute.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorAppAttribute.Description",
+          "Name": "Description",
+          "DocId": "P:Editor.EditorAppAttribute.Description"
+        },
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Editor/EditorAppAttribute.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorAppAttribute.TargetType",
+          "Name": "TargetType",
+          "DocId": "P:Editor.EditorAppAttribute.TargetType"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.EditorAppAttribute",
+      "Name": "EditorAppAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Editor.EditorAppAttribute"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.DockWindow",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 21
+          },
+          "IsProtected": true,
+          "FullName": "Editor.EditorMainWindow.OnClose",
+          "Name": "OnClose",
+          "DeclaringType": "Editor.EditorMainWindow",
+          "DocId": "M:Editor.EditorMainWindow.OnClose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorMainWindow.ShowCloseDialog",
+          "Name": "ShowCloseDialog",
+          "DeclaringType": "Editor.EditorMainWindow",
+          "DocId": "M:Editor.EditorMainWindow.ShowCloseDialog"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 297
+          },
+          "IsProtected": true,
+          "FullName": "Editor.EditorMainWindow.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.EditorMainWindow",
+          "DocId": "M:Editor.EditorMainWindow.OnPaint"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 349
+          },
+          "IsProtected": true,
+          "FullName": "Editor.EditorMainWindow.RestoreDefaultDockLayout",
+          "Name": "RestoreDefaultDockLayout",
+          "DeclaringType": "Editor.EditorMainWindow",
+          "DocId": "M:Editor.EditorMainWindow.RestoreDefaultDockLayout"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 396
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorMainWindow.OnDestroyed",
+          "Name": "OnDestroyed",
+          "DeclaringType": "Editor.EditorMainWindow",
+          "DocId": "M:Editor.EditorMainWindow.OnDestroyed"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "widget",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 455
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorMainWindow.IsFullscreen",
+          "Name": "IsFullscreen",
+          "DeclaringType": "Editor.EditorMainWindow",
+          "Documentation": {
+            "Summary": "Is a widget currently the fullscreen widget"
+          },
+          "DocId": "M:Editor.EditorMainWindow.IsFullscreen(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "widget",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 465
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorMainWindow.SetFullscreen",
+          "Name": "SetFullscreen",
+          "DeclaringType": "Editor.EditorMainWindow",
+          "Documentation": {
+            "Summary": "Sets a widget as the fullscreen widget",
+            "Return": "whether or not the widget is now fullscreen",
+            "Params": {
+              "widget": ""
+            }
+          },
+          "DocId": "M:Editor.EditorMainWindow.SetFullscreen(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "asset",
+              "Type": "Editor.Asset"
+            }
+          ],
+          "l": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 480
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorMainWindow.OnAssetSelected",
+          "Name": "OnAssetSelected",
+          "DeclaringType": "Editor.EditorMainWindow",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.EventAttribute",
+              "ConstructorArguments": [
+                "asset.selected"
+              ]
+            }
+          ],
+          "DocId": "M:Editor.EditorMainWindow.OnAssetSelected(Editor.Asset)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "visible",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 485
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorMainWindow.SetVisible",
+          "Name": "SetVisible",
+          "DeclaringType": "Editor.EditorMainWindow",
+          "DocId": "M:Editor.EditorMainWindow.SetVisible(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 520
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorMainWindow.UpdateEditorTitle",
+          "Name": "UpdateEditorTitle",
+          "DeclaringType": "Editor.EditorMainWindow",
+          "DocId": "M:Editor.EditorMainWindow.UpdateEditorTitle(System.String)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Editor.Menu",
+          "Loc": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorMainWindow.AppsMenu",
+          "Name": "AppsMenu",
+          "DocId": "P:Editor.EditorMainWindow.AppsMenu"
+        },
+        {
+          "PropertyType": "Editor.Menu",
+          "Loc": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorMainWindow.ViewsMenu",
+          "Name": "ViewsMenu",
+          "DocId": "P:Editor.EditorMainWindow.ViewsMenu"
+        },
+        {
+          "PropertyType": "Editor.Menu",
+          "Loc": {
+            "File": "Editor/EditorMainWindow.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorMainWindow.GameMenu",
+          "Name": "GameMenu",
+          "DocId": "P:Editor.EditorMainWindow.GameMenu"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.EditorMainWindow",
+      "Name": "EditorMainWindow",
+      "DocId": "T:Editor.EditorMainWindow"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Editor/GameScenePicker.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GameScenePicker.OnDestroyed",
+          "Name": "OnDestroyed",
+          "DeclaringType": "Editor.GameScenePicker",
+          "DocId": "M:Editor.GameScenePicker.OnDestroyed"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Editor/GameScenePicker.cs",
+            "Line": 34
+          },
+          "IsProtected": true,
+          "FullName": "Editor.GameScenePicker.DoLayout",
+          "Name": "DoLayout",
+          "DeclaringType": "Editor.GameScenePicker",
+          "DocId": "M:Editor.GameScenePicker.DoLayout"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Editor/GameScenePicker.cs",
+            "Line": 57
+          },
+          "IsProtected": true,
+          "FullName": "Editor.GameScenePicker.OnMouseMove",
+          "Name": "OnMouseMove",
+          "DeclaringType": "Editor.GameScenePicker",
+          "DocId": "M:Editor.GameScenePicker.OnMouseMove(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Editor/GameScenePicker.cs",
+            "Line": 65
+          },
+          "IsProtected": true,
+          "FullName": "Editor.GameScenePicker.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.GameScenePicker",
+          "DocId": "M:Editor.GameScenePicker.OnPaint"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Editor/GameScenePicker.cs",
+            "Line": 77
+          },
+          "IsProtected": true,
+          "FullName": "Editor.GameScenePicker.OnMouseReleased",
+          "Name": "OnMouseReleased",
+          "DeclaringType": "Editor.GameScenePicker",
+          "DocId": "M:Editor.GameScenePicker.OnMouseReleased(Editor.MouseEvent)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Editor/GameScenePicker.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GameScenePicker..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.GameScenePicker",
+          "DocId": "M:Editor.GameScenePicker.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Editor/GameScenePicker.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GameScenePicker.Destroyed",
+          "Name": "Destroyed",
+          "DocId": "P:Editor.GameScenePicker.Destroyed"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.GameScenePicker",
+      "Name": "GameScenePicker",
+      "Documentation": {
+        "Summary": "Opens an invisible popup above the game screen which allows you to left click once on the scene.\nThis is great for things like selecting something from the game scene."
+      },
+      "DocId": "T:Editor.GameScenePicker"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "folderName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.LibrarySystem.Add",
+          "Name": "Add",
+          "DeclaringType": "Editor.LibrarySystem",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Editor.LibrarySystem/<Add>d__9"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a library from this folder"
+          },
+          "DocId": "M:Editor.LibrarySystem.Add(System.String,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Boolean>",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.String"
+            },
+            {
+              "Name": "versionId",
+              "Type": "System.Int64",
+              "Default": "-1"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.LibrarySystem.Install",
+          "Name": "Install",
+          "DeclaringType": "Editor.LibrarySystem",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Editor.LibrarySystem/<Install>d__13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Install a library from a package. This will download the package and install it in the project's Library folder."
+          },
+          "DocId": "M:Editor.LibrarySystem.Install(System.String,System.Int64,System.Threading.CancellationToken)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Editor.LibraryProject>",
+          "Loc": {
+            "File": "Editor/LibrarySystem/LibrarySystem.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.LibrarySystem.All",
+          "Name": "All",
+          "Documentation": {
+            "Summary": "Get all active libraries"
+          },
+          "DocId": "P:Editor.LibrarySystem.All"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Editor.LibrarySystem",
+      "Name": "LibrarySystem",
+      "DocId": "T:Editor.LibrarySystem"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Editor/LibrarySystem/LibrarySystem.cs",
+            "Line": 338
+          },
+          "IsPublic": true,
+          "FullName": "Editor.LibraryProject.RemoveAndDelete",
+          "Name": "RemoveAndDelete",
+          "DeclaringType": "Editor.LibraryProject",
+          "Documentation": {
+            "Summary": "Remove and delete this library, and folder"
+          },
+          "DocId": "M:Editor.LibraryProject.RemoveAndDelete"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Version",
+          "Loc": {
+            "File": "Editor/LibrarySystem/LibrarySystem.cs",
+            "Line": 283
+          },
+          "IsPublic": true,
+          "FullName": "Editor.LibraryProject.Version",
+          "Name": "Version",
+          "DocId": "P:Editor.LibraryProject.Version"
+        },
+        {
+          "PropertyType": "Sandbox.Project",
+          "Loc": {
+            "File": "Editor/LibrarySystem/LibrarySystem.cs",
+            "Line": 285
+          },
+          "IsPublic": true,
+          "FullName": "Editor.LibraryProject.Project",
+          "Name": "Project",
+          "DocId": "P:Editor.LibraryProject.Project"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.LibraryProject",
+      "Name": "LibraryProject",
+      "DocId": "T:Editor.LibraryProject"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "identifier",
+              "Type": "System.String"
+            },
+            {
+              "Name": "keyBind",
+              "Type": "System.String"
+            },
+            {
+              "Name": "type",
+              "Type": "Editor.ShortcutType",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Editor/ShortcutAttribute.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ShortcutAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.ShortcutAttribute",
+          "DocId": "M:Editor.ShortcutAttribute.#ctor(System.String,System.String,Editor.ShortcutType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "identifier",
+              "Type": "System.String"
+            },
+            {
+              "Name": "keyBind",
+              "Type": "System.String"
+            },
+            {
+              "Name": "targetOverride",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "type",
+              "Type": "Editor.ShortcutType",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Editor/ShortcutAttribute.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ShortcutAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.ShortcutAttribute",
+          "DocId": "M:Editor.ShortcutAttribute.#ctor(System.String,System.String,System.Type,Editor.ShortcutType)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Editor/ShortcutAttribute.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ShortcutAttribute.Identifier",
+          "Name": "Identifier",
+          "DocId": "P:Editor.ShortcutAttribute.Identifier"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Editor/ShortcutAttribute.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ShortcutAttribute.Keys",
+          "Name": "Keys",
+          "DocId": "P:Editor.ShortcutAttribute.Keys"
+        },
+        {
+          "PropertyType": "Editor.ShortcutType",
+          "Loc": {
+            "File": "Editor/ShortcutAttribute.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ShortcutAttribute.Type",
+          "Name": "Type",
+          "DocId": "P:Editor.ShortcutAttribute.Type"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "Editor/ShortcutAttribute.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ShortcutAttribute.TargetOverride",
+          "Name": "TargetOverride",
+          "DocId": "P:Editor.ShortcutAttribute.TargetOverride"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ShortcutAttribute",
+      "Name": "ShortcutAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Editor.ShortcutAttribute"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.ShortcutType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ShortcutType.Widget",
+          "Name": "Widget",
+          "DocId": "F:Editor.ShortcutType.Widget"
+        },
+        {
+          "FieldType": "Editor.ShortcutType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ShortcutType.Window",
+          "Name": "Window",
+          "DocId": "F:Editor.ShortcutType.Window"
+        },
+        {
+          "FieldType": "Editor.ShortcutType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ShortcutType.Application",
+          "Name": "Application",
+          "DocId": "F:Editor.ShortcutType.Application"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ShortcutType",
+      "Name": "ShortcutType",
+      "DocId": "T:Editor.ShortcutType"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "regex",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Editor/StackTraceProperty.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Editor.StackLineHandlerAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.StackLineHandlerAttribute",
+          "DocId": "M:Editor.StackLineHandlerAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Editor/StackTraceProperty.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Editor.StackLineHandlerAttribute.Regex",
+          "Name": "Regex",
+          "DocId": "P:Editor.StackLineHandlerAttribute.Regex"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Editor/StackTraceProperty.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Editor.StackLineHandlerAttribute.Order",
+          "Name": "Order",
+          "DocId": "P:Editor.StackLineHandlerAttribute.Order"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.StackLineHandlerAttribute",
+      "Name": "StackLineHandlerAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Marks a method as a custom handler for stack trace lines matching a certain pattern.\nThe method must take in a <see cref=\"T:System.Text.RegularExpressions.Match\" /> parameter, and return\na <see cref=\"T:Editor.StackRow\" /> (or null)."
+      },
+      "DocId": "T:Editor.StackLineHandlerAttribute"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Frame",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Editor/StackTraceProperty.cs",
+            "Line": 203
+          },
+          "IsProtected": true,
+          "FullName": "Editor.StackRow.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.StackRow",
+          "DocId": "M:Editor.StackRow.OnPaint"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "functionName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "fileName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Editor/StackTraceProperty.cs",
+            "Line": 192
+          },
+          "IsPublic": true,
+          "FullName": "Editor.StackRow..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.StackRow",
+          "DocId": "M:Editor.StackRow.#ctor(System.String,System.String)"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Editor.StackRow.IsFromEngine",
+          "Name": "IsFromEngine",
+          "DocId": "F:Editor.StackRow.IsFromEngine"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Editor.StackRow.IsFromAction",
+          "Name": "IsFromAction",
+          "DocId": "F:Editor.StackRow.IsFromAction"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Editor.StackRow.Index",
+          "Name": "Index",
+          "DocId": "F:Editor.StackRow.Index"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.StackRow",
+      "Name": "StackRow",
+      "DocId": "T:Editor.StackRow"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.EditorEvent.Register",
+          "Name": "Register",
+          "DeclaringType": "Editor.EditorEvent",
+          "Documentation": {
+            "Summary": "Register an object, start receiving events"
+          },
+          "DocId": "M:Editor.EditorEvent.Register(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.EditorEvent.Unregister",
+          "Name": "Unregister",
+          "DeclaringType": "Editor.EditorEvent",
+          "Documentation": {
+            "Summary": "Unregister an object, stop receiving events"
+          },
+          "DocId": "M:Editor.EditorEvent.Unregister(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.EditorEvent.Run",
+          "Name": "Run",
+          "DeclaringType": "Editor.EditorEvent",
+          "Documentation": {
+            "Summary": "Run an event."
+          },
+          "DocId": "M:Editor.EditorEvent.Run(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "arg0",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.EditorEvent.Run",
+          "Name": "Run",
+          "DeclaringType": "Editor.EditorEvent",
+          "Documentation": {
+            "Summary": "Run an event with an argument of arbitrary type.",
+            "Params": {
+              "name": "Name of the event to run.",
+              "arg0": "Argument to pass down to event handlers."
+            },
+            "TypeParams": {
+              "T": "Arbitrary type for the argument."
+            }
+          },
+          "DocId": "M:Editor.EditorEvent.Run``1(System.String,``0)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "arg0",
+              "Type": "T"
+            },
+            {
+              "Name": "arg1",
+              "Type": "U"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.EditorEvent.Run",
+          "Name": "Run",
+          "DeclaringType": "Editor.EditorEvent",
+          "Documentation": {
+            "Summary": "Run an event with 2 arguments of arbitrary type.",
+            "Params": {
+              "name": "Name of the event to run.",
+              "arg0": "First argument to pass down to event handlers.",
+              "arg1": "Second argument to pass down to event handlers."
+            },
+            "TypeParams": {
+              "T": "Arbitrary type for the first argument.",
+              "U": "Arbitrary type for the second argument."
+            }
+          },
+          "DocId": "M:Editor.EditorEvent.Run``2(System.String,``0,``1)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "action",
+              "Type": "System.Action`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.EditorEvent.RunInterface",
+          "Name": "RunInterface",
+          "DeclaringType": "Editor.EditorEvent",
+          "DocId": "M:Editor.EditorEvent.RunInterface``1(System.Action`1{``0})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "arg0",
+              "Type": "T"
+            },
+            {
+              "Name": "arg1",
+              "Type": "U"
+            },
+            {
+              "Name": "arg2",
+              "Type": "V"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.EditorEvent.Run",
+          "Name": "Run",
+          "DeclaringType": "Editor.EditorEvent",
+          "Documentation": {
+            "Summary": "Run an event with 3 arguments of arbitrary type.",
+            "Params": {
+              "name": "Name of the event to run.",
+              "arg0": "First argument to pass down to event handlers.",
+              "arg1": "Second argument to pass down to event handlers.",
+              "arg2": "Third argument to pass down to event handlers."
+            },
+            "TypeParams": {
+              "T": "Arbitrary type for the first argument.",
+              "U": "Arbitrary type for the second argument.",
+              "V": "Arbitrary type for the third argument."
+            }
+          },
+          "DocId": "M:Editor.EditorEvent.Run``3(System.String,``0,``1,``2)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Editor.EditorEvent",
+      "Name": "EditorEvent",
+      "DocId": "T:Editor.EditorEvent"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.EventAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.FrameAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.EditorEvent.FrameAttribute",
+          "DocId": "M:Editor.EditorEvent.FrameAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.EditorEvent.FrameAttribute",
+      "Name": "FrameAttribute",
+      "DeclaringType": "Editor.EditorEvent",
+      "Documentation": {
+        "Summary": "Called every frame for tools"
+      },
+      "DocId": "T:Editor.EditorEvent.FrameAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.EventAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.HotloadAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.EditorEvent.HotloadAttribute",
+          "DocId": "M:Editor.EditorEvent.HotloadAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.EditorEvent.HotloadAttribute",
+      "Name": "HotloadAttribute",
+      "DeclaringType": "Editor.EditorEvent",
+      "DocId": "T:Editor.EditorEvent.HotloadAttribute"
+    },
+    {
+      "Namespace": "",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.EditorEvent.IEventListener",
+      "Name": "IEventListener",
+      "DeclaringType": "Editor.EditorEvent",
+      "DocId": "T:Editor.EditorEvent.IEventListener"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "go",
+              "Type": "Sandbox.GameObject"
+            },
+            {
+              "Name": "propertyName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 112
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ISceneEdited.GameObjectPreEdited",
+          "Name": "GameObjectPreEdited",
+          "DeclaringType": "Editor.EditorEvent.ISceneEdited",
+          "Documentation": {
+            "Summary": "Called when a property on a <see cref=\"T:Sandbox.GameObject\" /> is about to be edited, so the old value can be inspected."
+          },
+          "DocId": "M:Editor.EditorEvent.ISceneEdited.GameObjectPreEdited(Sandbox.GameObject,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "go",
+              "Type": "Sandbox.GameObject"
+            },
+            {
+              "Name": "propertyName",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ISceneEdited.GameObjectEdited",
+          "Name": "GameObjectEdited",
+          "DeclaringType": "Editor.EditorEvent.ISceneEdited",
+          "Documentation": {
+            "Summary": "Called when a <see cref=\"T:Sandbox.GameObject\" /> has been edited, so the new value can be inspected."
+          },
+          "DocId": "M:Editor.EditorEvent.ISceneEdited.GameObjectEdited(Sandbox.GameObject,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "cmp",
+              "Type": "Sandbox.Component"
+            },
+            {
+              "Name": "propertyName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 122
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ISceneEdited.ComponentPreEdited",
+          "Name": "ComponentPreEdited",
+          "DeclaringType": "Editor.EditorEvent.ISceneEdited",
+          "Documentation": {
+            "Summary": "Called when a property on a <see cref=\"T:Sandbox.Component\" /> is about to be edited, so the old value can be inspected."
+          },
+          "DocId": "M:Editor.EditorEvent.ISceneEdited.ComponentPreEdited(Sandbox.Component,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "cmp",
+              "Type": "Sandbox.Component"
+            },
+            {
+              "Name": "propertyName",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ISceneEdited.ComponentEdited",
+          "Name": "ComponentEdited",
+          "DeclaringType": "Editor.EditorEvent.ISceneEdited",
+          "Documentation": {
+            "Summary": "Called when a <see cref=\"T:Sandbox.Component\" /> has been edited, so the new value can be inspected."
+          },
+          "DocId": "M:Editor.EditorEvent.ISceneEdited.ComponentEdited(Sandbox.Component,System.String)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.EditorEvent.ISceneEdited",
+      "Name": "ISceneEdited",
+      "DeclaringType": "Editor.EditorEvent",
+      "DocId": "T:Editor.EditorEvent.ISceneEdited"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Editor.EditorEvent.ShowContextMenuEvent",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ShowContextMenuEvent.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Editor.EditorEvent.ShowContextMenuEvent",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Editor.EditorEvent.ShowContextMenuEvent.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Session",
+              "Out": true,
+              "Type": "Editor.SceneEditorSession"
+            },
+            {
+              "Name": "Menu",
+              "Out": true,
+              "Type": "Editor.Menu"
+            },
+            {
+              "Name": "CursorRay",
+              "Out": true,
+              "Type": "Ray"
+            },
+            {
+              "Name": "Trace",
+              "Out": true,
+              "Type": "System.Nullable`1<Sandbox.SceneTraceResult>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ShowContextMenuEvent.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Editor.EditorEvent.ShowContextMenuEvent",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Editor.EditorEvent.ShowContextMenuEvent.Deconstruct(Editor.SceneEditorSession@,Editor.Menu@,Ray@,System.Nullable`1{Sandbox.SceneTraceResult}@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Session",
+              "Type": "Editor.SceneEditorSession"
+            },
+            {
+              "Name": "Menu",
+              "Type": "Editor.Menu"
+            },
+            {
+              "Name": "CursorRay",
+              "Type": "Ray"
+            },
+            {
+              "Name": "Trace",
+              "Type": "System.Nullable`1<Sandbox.SceneTraceResult>"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ShowContextMenuEvent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.EditorEvent.ShowContextMenuEvent",
+          "DocId": "M:Editor.EditorEvent.ShowContextMenuEvent.#ctor(Editor.SceneEditorSession,Editor.Menu,Ray,System.Nullable`1{Sandbox.SceneTraceResult})"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Editor.SceneEditorSession",
+          "Loc": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ShowContextMenuEvent.Session",
+          "Name": "Session",
+          "Documentation": {
+            "Summary": "Scene editor session that the context menu is being opened for."
+          },
+          "DocId": "P:Editor.EditorEvent.ShowContextMenuEvent.Session"
+        },
+        {
+          "PropertyType": "Editor.Menu",
+          "Loc": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ShowContextMenuEvent.Menu",
+          "Name": "Menu",
+          "Documentation": {
+            "Summary": "Context menu being opened. Feel free to add options to it in your handler."
+          },
+          "DocId": "P:Editor.EditorEvent.ShowContextMenuEvent.Menu"
+        },
+        {
+          "PropertyType": "Ray",
+          "Loc": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ShowContextMenuEvent.CursorRay",
+          "Name": "CursorRay",
+          "Documentation": {
+            "Summary": "Cursor ray when right-click was pressed."
+          },
+          "DocId": "P:Editor.EditorEvent.ShowContextMenuEvent.CursorRay"
+        },
+        {
+          "PropertyType": "System.Nullable`1<Sandbox.SceneTraceResult>",
+          "Loc": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ShowContextMenuEvent.Trace",
+          "Name": "Trace",
+          "Documentation": {
+            "Summary": "Trace result if we hit an object in the scene when right-clicking."
+          },
+          "DocId": "P:Editor.EditorEvent.ShowContextMenuEvent.Trace"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.EditorEvent.ShowContextMenuEvent",
+      "Name": "ShowContextMenuEvent",
+      "DeclaringType": "Editor.EditorEvent",
+      "Documentation": {
+        "Summary": "Event args for <see cref=\"M:Editor.EditorEvent.ISceneView.ShowContextMenu(Editor.EditorEvent.ShowContextMenuEvent)\" /> events.",
+        "Params": {
+          "Session": "Scene editor session that the context menu is being opened for.",
+          "Menu": "Context menu being opened. Feel free to add options to it in your handler.",
+          "CursorRay": "Cursor ray when right-click was pressed.",
+          "Trace": "Trace result if we hit an object in the scene when right-clicking."
+        }
+      },
+      "DocId": "T:Editor.EditorEvent.ShowContextMenuEvent"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 148
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ISceneView.DrawGizmos",
+          "Name": "DrawGizmos",
+          "DeclaringType": "Editor.EditorEvent.ISceneView",
+          "Documentation": {
+            "Summary": "Called when a scene editor viewport is drawing gizmos.",
+            "Params": {
+              "scene": "Scene that gizmos are being drawn for."
+            }
+          },
+          "DocId": "M:Editor.EditorEvent.ISceneView.DrawGizmos(Sandbox.Scene)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "ev",
+              "Type": "Editor.EditorEvent.ShowContextMenuEvent"
+            }
+          ],
+          "l": {
+            "File": "Events/EditorEvent.cs",
+            "Line": 154
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.ISceneView.ShowContextMenu",
+          "Name": "ShowContextMenu",
+          "DeclaringType": "Editor.EditorEvent.ISceneView",
+          "Documentation": {
+            "Summary": "Called when a scene editor viewport wants to show a context menu.",
+            "Params": {
+              "ev": "Event arguments describing what the context menu was opened on."
+            }
+          },
+          "DocId": "M:Editor.EditorEvent.ISceneView.ShowContextMenu(Editor.EditorEvent.ShowContextMenuEvent)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.EditorEvent.ISceneView",
+      "Name": "ISceneView",
+      "DeclaringType": "Editor.EditorEvent",
+      "Documentation": {
+        "Summary": "Allows tools to inject behaviour in the scene editor."
+      },
+      "DocId": "T:Editor.EditorEvent.ISceneView"
+    },
+    {
+      "Namespace": "",
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Editor.EditorEvent.MapEditor",
+      "Name": "MapEditor",
+      "DeclaringType": "Editor.EditorEvent",
+      "Documentation": {
+        "Summary": "Events that happen within the map editor."
+      },
+      "DocId": "T:Editor.EditorEvent.MapEditor"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.EventAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Events/EditorEvent.MapEditor.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.MapEditor.SelectionChanged..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.EditorEvent.MapEditor.SelectionChanged",
+          "DocId": "M:Editor.EditorEvent.MapEditor.SelectionChanged.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.EditorEvent.MapEditor.SelectionChanged",
+      "Name": "SelectionChanged",
+      "DeclaringType": "Editor.EditorEvent/MapEditor",
+      "Documentation": {
+        "Summary": "Called when the user selects / deselects any object in the map and <see cref=\"P:Editor.MapEditor.Selection.All\"></see> is changed."
+      },
+      "DocId": "T:Editor.EditorEvent.MapEditor.SelectionChanged"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.EventAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Events/EditorEvent.MapEditor.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EditorEvent.MapEditor.MapViewContextMenu..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.EditorEvent.MapEditor.MapViewContextMenu",
+          "DocId": "M:Editor.EditorEvent.MapEditor.MapViewContextMenu.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.EditorEvent.MapEditor.MapViewContextMenu",
+      "Name": "MapViewContextMenu",
+      "DeclaringType": "Editor.EditorEvent/MapEditor",
+      "Documentation": {
+        "Summary": "Called when the map view is right clicked, <see cref=\"T:Editor.Menu\" /> is passed."
+      },
+      "DocId": "T:Editor.EditorEvent.MapEditor.MapViewContextMenu"
+    }
+  ],
+  "_metadata": {
+    "chunk": 247,
+    "items_count": 19
+  }
+}

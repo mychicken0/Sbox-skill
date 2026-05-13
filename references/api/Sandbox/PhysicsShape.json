@@ -1,0 +1,1046 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.EnableAllCollision",
+          "Name": "EnableAllCollision",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enable contact, trace and touch"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "83"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enable contact, trace and touch"
+          },
+          "DocId": "M:Sandbox.PhysicsShape.EnableAllCollision"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 95
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.DisableAllCollision",
+          "Name": "DisableAllCollision",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Disable contact, trace and touch"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "92"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Disable contact, trace and touch"
+          },
+          "DocId": "M:Sandbox.PhysicsShape.DisableAllCollision"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Collections.Generic.List`1<Vector3>"
+            },
+            {
+              "Name": "indices",
+              "Type": "System.Collections.Generic.List`1<System.Int32>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 212
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.UpdateMesh",
+          "Name": "UpdateMesh",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Recreate the collision mesh (Only if this physics shape is type Mesh)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "210"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PhysicsShape.UpdateMesh(System.Collections.Generic.List`1{Vector3},System.Collections.Generic.List`1{System.Int32})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Span`1<Vector3>"
+            },
+            {
+              "Name": "indices",
+              "Type": "System.Span`1<System.Int32>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 221
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.UpdateMesh",
+          "Name": "UpdateMesh",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Recreate the mesh of the shape (Only if this physics shape is type Mesh)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "218"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PhysicsShape.UpdateMesh(System.Span`1{Vector3},System.Span`1{System.Int32})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "rotation",
+              "Type": "Rotation"
+            },
+            {
+              "Name": "points",
+              "Type": "System.Span`1<Vector3>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 252
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.UpdateHull",
+          "Name": "UpdateHull",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Recreate the hull of the shape (Only if this physics shape is type Hull)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "249"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PhysicsShape.UpdateHull(Vector3,Rotation,System.Span`1{Vector3})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 335
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Remove",
+          "Name": "Remove",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove this shape. After calling this the shape should be considered released and not used again."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "332"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Remove this shape. After calling this the shape should be considered released and not used again."
+          },
+          "DocId": "M:Sandbox.PhysicsShape.Remove"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "positions",
+              "Out": true,
+              "Type": "Vector3[]"
+            },
+            {
+              "Name": "indices",
+              "Out": true,
+              "Type": "System.UInt32[]"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 346
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Triangulate",
+          "Name": "Triangulate",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Triangulate this shape."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "343"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Triangulate this shape."
+          },
+          "DocId": "M:Sandbox.PhysicsShape.Triangulate(Vector3[]@,System.UInt32[]@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.Tags.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.HasTag",
+          "Name": "HasTag",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use Tags"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Does this shape have a specific tag?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.Tags.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Does this shape have a specific tag?"
+          },
+          "DocId": "M:Sandbox.PhysicsShape.HasTag(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.Tags.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.AddTag",
+          "Name": "AddTag",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use Tags"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a tag to this shape."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.Tags.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a tag to this shape."
+          },
+          "DocId": "M:Sandbox.PhysicsShape.AddTag(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.Tags.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.RemoveTag",
+          "Name": "RemoveTag",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use Tags"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove a tag from this shape."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.Tags.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Remove a tag from this shape."
+          },
+          "DocId": "M:Sandbox.PhysicsShape.RemoveTag(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Physics/PhysicsShape.Tags.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.ClearTags",
+          "Name": "ClearTags",
+          "DeclaringType": "Sandbox.PhysicsShape",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use Tags"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clear all tags from this shape."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.Tags.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clear all tags from this shape."
+          },
+          "DocId": "M:Sandbox.PhysicsShape.ClearTags"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.PhysicsBody",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Body",
+          "Name": "Body",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The physics body we belong to."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "39"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The physics body we belong to."
+          },
+          "DocId": "P:Sandbox.PhysicsShape.Body"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Scale",
+          "Name": "Scale",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "42"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PhysicsShape.Scale"
+        },
+        {
+          "PropertyType": "Sandbox.Collider",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Collider",
+          "Name": "Collider",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The collider object that created / owns this shape"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "58"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The collider object that created / owns this shape"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.Collider"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.IsTrigger",
+          "Name": "IsTrigger",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This is a trigger (!)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This is a trigger (!)"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.IsTrigger"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.SurfaceVelocity",
+          "Name": "SurfaceVelocity",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the local velocity of the surface so things can slide along it, like a conveyor belt"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "74"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the local velocity of the surface so things can slide along it, like a conveyor belt"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.SurfaceVelocity"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.EnableSolidCollisions",
+          "Name": "EnableSolidCollisions",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controls whether this shape has solid collisions."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "104"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controls whether this shape has solid collisions."
+          },
+          "DocId": "P:Sandbox.PhysicsShape.EnableSolidCollisions"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 116
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.EnableTouch",
+          "Name": "EnableTouch",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controls whether this shape can fire touch events for its owning entity. (Entity.StartTouch, Touch and EndTouch)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "113"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controls whether this shape can fire touch events for its owning entity. (Entity.StartTouch, Touch and EndTouch)"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.EnableTouch"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.EnableTouchPersists",
+          "Name": "EnableTouchPersists",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controls whether this shape can fire continuous touch events for its owning entity (i.e. calling Entity.Touch every frame)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "122"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controls whether this shape can fire continuous touch events for its owning entity (i.e. calling Entity.Touch every frame)"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.EnableTouchPersists"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 132
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.IsMeshShape",
+          "Name": "IsMeshShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is this a MeshShape"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "131"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is this a MeshShape"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.IsMeshShape"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.IsHullShape",
+          "Name": "IsHullShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is this a HullShape"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "136"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is this a HullShape"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.IsHullShape"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.IsSphereShape",
+          "Name": "IsSphereShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is this a SphereShape"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "141"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is this a SphereShape"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.IsSphereShape"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 147
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.IsCapsuleShape",
+          "Name": "IsCapsuleShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is this a CapsuleShape"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "146"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is this a CapsuleShape"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.IsCapsuleShape"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 152
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.IsHeightfieldShape",
+          "Name": "IsHeightfieldShape",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is this a HeightfieldShape"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "151"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is this a HeightfieldShape"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.IsHeightfieldShape"
+        },
+        {
+          "PropertyType": "Sandbox.Sphere",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 161
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Sphere",
+          "Name": "Sphere",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get sphere properties if we're a sphere type"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "156"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get sphere properties if we're a sphere type"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.Sphere"
+        },
+        {
+          "PropertyType": "Capsule",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 175
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Capsule",
+          "Name": "Capsule",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get capsule properties if we're a capsule type"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "170"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get capsule properties if we're a capsule type"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.Capsule"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 273
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.SurfaceMaterial",
+          "Name": "SurfaceMaterial",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controls physical properties of this shape."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "268"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controls physical properties of this shape."
+          },
+          "DocId": "P:Sandbox.PhysicsShape.SurfaceMaterial"
+        },
+        {
+          "PropertyType": "Sandbox.Surface",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 297
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Surface",
+          "Name": "Surface",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "283"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PhysicsShape.Surface"
+        },
+        {
+          "PropertyType": "Sandbox.Surface[]",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 315
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Surfaces",
+          "Name": "Surfaces",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Multiple surfaces referenced by mesh or heightfield collision."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "311"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Multiple surfaces referenced by mesh or heightfield collision."
+          },
+          "DocId": "P:Sandbox.PhysicsShape.Surfaces"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.cs",
+            "Line": 383
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Friction",
+          "Name": "Friction",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The friction value"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.cs",
+                "379"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The friction value"
+          },
+          "DocId": "P:Sandbox.PhysicsShape.Friction"
+        },
+        {
+          "PropertyType": "Sandbox.ITagSet",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsShape.Tags.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsShape.Tags",
+          "Name": "Tags",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsShape.Tags.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PhysicsShape.Tags"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PhysicsShape",
+      "Name": "PhysicsShape",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.ActionGraphIgnoreAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents a basic, convex shape. A <span style=\"color: #4EC9B0;\">PhysicsBody</span> consists of one or more of these."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\PhysicsShape.cs",
+            "9"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents a basic, convex shape. A <span style=\"color: #4EC9B0;\">PhysicsBody</span> consists of one or more of these."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\PhysicsShape.Tags.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents a basic, convex shape. A <see cref=\"T:Sandbox.PhysicsBody\">PhysicsBody</see> consists of one or more of these."
+      },
+      "DocId": "T:Sandbox.PhysicsShape"
+    }
+  ],
+  "_metadata": {
+    "chunk": 149,
+    "items_count": 1
+  }
+}

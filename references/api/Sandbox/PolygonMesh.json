@@ -1,0 +1,5478 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "edgeRemoveMode",
+              "Type": "Sandbox.PolygonMesh.BevelEdgesMode"
+            },
+            {
+              "Name": "numSegments",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "distance",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "shape",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "outNewOuterEdges",
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>",
+              "Default": "null"
+            },
+            {
+              "Name": "outNewInnerEdges",
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>",
+              "Default": "null"
+            },
+            {
+              "Name": "outNewFaces",
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>",
+              "Default": "null"
+            },
+            {
+              "Name": "outFacesNeedingUVs",
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.Bevel.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BevelEdges",
+          "Name": "BevelEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.Bevel.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.BevelEdges(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},Sandbox.PolygonMesh.BevelEdgesMode,System.Int32,System.Single,System.Single,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle},System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Sandbox.PolygonMesh"
+            },
+            {
+              "Name": "relativeTransform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "operation",
+              "Type": "Sandbox.PolygonMesh.BooleanOperation"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.Boolean.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.PerformBoolean",
+          "Name": "PerformBoolean",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Perform a boolean operation between this mesh (A) and another mesh (B). The result replaces this mesh. The other mesh is not modified."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.Boolean.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Perform a boolean operation between this mesh (A) and another mesh (B).\nThe result replaces this mesh. The other mesh is not modified."
+          },
+          "DocId": "M:Sandbox.PolygonMesh.PerformBoolean(Sandbox.PolygonMesh,Transform,Sandbox.PolygonMesh.BooleanOperation)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "planeInMeshSpace",
+              "Type": "Sandbox.Plane"
+            },
+            {
+              "Name": "removeFacesBehindPlane",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "attemptToCap",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "outNewEdges",
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>",
+              "Default": "null"
+            },
+            {
+              "Name": "outCapFaces",
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.Clip.cs",
+            "Line": 299
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ClipFacesByPlaneAndCap",
+          "Name": "ClipFacesByPlaneAndCap",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.Clip.cs",
+                "296"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ClipFacesByPlaneAndCap(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.FaceHandle},Sandbox.Plane,System.Boolean,System.Boolean,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle})"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.VertexHandle",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.VertexHandleFromIndex",
+          "Name": "VertexHandleFromIndex",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "80"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.VertexHandleFromIndex(System.Int32)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.HalfEdgeHandle",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.HalfEdgeHandleFromIndex",
+          "Name": "HalfEdgeHandleFromIndex",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "81"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.HalfEdgeHandleFromIndex(System.Int32)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.FaceHandle",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FaceHandleFromIndex",
+          "Name": "FaceHandleFromIndex",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "82"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FaceHandleFromIndex(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sourceMesh",
+              "Type": "Sandbox.PolygonMesh"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "newVertices",
+              "Out": true,
+              "Type": "System.Collections.Generic.Dictionary`2<HalfEdgeMesh.VertexHandle,HalfEdgeMesh.VertexHandle>"
+            },
+            {
+              "Name": "newHalfEdges",
+              "Out": true,
+              "Type": "System.Collections.Generic.Dictionary`2<HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "newFaces",
+              "Out": true,
+              "Type": "System.Collections.Generic.Dictionary`2<HalfEdgeMesh.FaceHandle,HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.MergeMesh",
+          "Name": "MergeMesh",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "84"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.MergeMesh(Sandbox.PolygonMesh,Transform,System.Collections.Generic.Dictionary`2{HalfEdgeMesh.VertexHandle,HalfEdgeMesh.VertexHandle}@,System.Collections.Generic.Dictionary`2{HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle}@,System.Collections.Generic.Dictionary`2{HalfEdgeMesh.FaceHandle,HalfEdgeMesh.FaceHandle}@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 188
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetTransform",
+          "Name": "SetTransform",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set transform without computing texture parameters from coordinates."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "186"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set transform without computing texture parameters from coordinates."
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetTransform(Transform)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.VertexHandle",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 292
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.AddVertex",
+          "Name": "AddVertex",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a vertex to the topology"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "289"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a vertex to the topology"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.AddVertex(Vector3)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.VertexHandle[]",
+          "Parameters": [
+            {
+              "Name": "positions",
+              "Type": "Vector3[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 305
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.AddVertices",
+          "Name": "AddVertices",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add multiple vertices to the topology"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "302"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add multiple vertices to the topology"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.AddVertices(Vector3[])"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.FaceHandle",
+          "Parameters": [
+            {
+              "Name": "hVertices",
+              "Type": "HalfEdgeMesh.VertexHandle[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 322
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.AddFace",
+          "Name": "AddFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Connect these vertices to make a face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "319"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Connect these vertices to make a face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.AddFace(HalfEdgeMesh.VertexHandle[])"
+        },
+        {
+          "ReturnType": "BBox",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 338
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CalculateBounds",
+          "Name": "CalculateBounds",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Calculate bounds of all vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "335"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Calculate bounds of all vertices"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.CalculateBounds"
+        },
+        {
+          "ReturnType": "BBox",
+          "Parameters": [
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CalculateBounds",
+          "Name": "CalculateBounds",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Calculate bounds of all transformed vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "343"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Calculate bounds of all transformed vertices"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.CalculateBounds(Transform)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scale",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 354
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.Scale",
+          "Name": "Scale",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Scale all vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "351"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Scale all vertices"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.Scale(Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 367
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetFaceMaterial",
+          "Name": "SetFaceMaterial",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Assign a material to a face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "364"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Assign a material to a face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetFaceMaterial(HalfEdgeMesh.FaceHandle,Sandbox.Material)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "material",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 380
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetFaceMaterial",
+          "Name": "SetFaceMaterial",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Assign a material to a face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "378"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Assign a material to a face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetFaceMaterial(HalfEdgeMesh.FaceHandle,System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Material",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 389
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFaceMaterial",
+          "Name": "GetFaceMaterial",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a material a face is using"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "386"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a material a face is using"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetFaceMaterial(HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "Sandbox.PolygonMesh.EdgeSmoothMode",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 397
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetEdgeSmoothing",
+          "Name": "GetEdgeSmoothing",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the smoothing of this edge"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "394"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the smoothing of this edge"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetEdgeSmoothing(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "mode",
+              "Type": "Sandbox.PolygonMesh.EdgeSmoothMode"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 404
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetEdgeSmoothing",
+          "Name": "SetEdgeSmoothing",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the smoothing of this edge"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "402"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the smoothing of this edge"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetEdgeSmoothing(HalfEdgeMesh.HalfEdgeHandle,Sandbox.PolygonMesh.EdgeSmoothMode)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "smoothingAngle",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 411
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetSmoothingAngle",
+          "Name": "SetSmoothingAngle",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "408"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.SetSmoothingAngle(System.Single)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.FaceHandle",
+          "Parameters": [
+            {
+              "Name": "triangle",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 424
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.TriangleToFace",
+          "Name": "TriangleToFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Convert a triangle index to a face handle"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "421"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Convert a triangle index to a face handle"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.TriangleToFace(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "HalfEdgeMesh.FaceHandle[]"
+            },
+            {
+              "Name": "newFaces",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "connectingFaces",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "offset",
+              "Type": "Vector3",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 438
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ExtrudeFaces",
+          "Name": "ExtrudeFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Extrude multiple faces along an offset"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "436"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ExtrudeFaces(HalfEdgeMesh.FaceHandle[],System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}@,System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}@,Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "HalfEdgeMesh.FaceHandle[]"
+            },
+            {
+              "Name": "newFaces",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 446
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.DetachFaces",
+          "Name": "DetachFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Detatch multiple faces"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "444"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.DetachFaces(HalfEdgeMesh.FaceHandle[],System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "amount",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "newEdges",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "newFaces",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 635
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ExtendEdges",
+          "Name": "ExtendEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "633"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ExtendEdges(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},System.Single,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@,System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hEdgeA",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hEdgeB",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "flAngleToleranceInDegrees",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 749
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.AreEdgesCoLinear",
+          "Name": "AreEdgesCoLinear",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "746"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.AreEdgesCoLinear(HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CombineFaces",
+          "Name": "CombineFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "766"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.CombineFaces(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.FaceHandle})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "edge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 781
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.DissolveEdge",
+          "Name": "DissolveEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "779"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.DissolveEdge(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "bFaceMustBePlanar",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "removeCondition",
+              "Type": "Sandbox.PolygonMesh.DissolveRemoveVertexCondition"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 792
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.DissolveEdges",
+          "Name": "DissolveEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "786"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.DissolveEdges(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},System.Boolean,Sandbox.PolygonMesh.DissolveRemoveVertexCondition)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hVertexA",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "hVertexB",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "vTargetPoint",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "pOutBaseEdgeParam",
+              "Out": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 862
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeClosestPointOnEdge",
+          "Name": "ComputeClosestPointOnEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "860"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeClosestPointOnEdge(HalfEdgeMesh.VertexHandle,HalfEdgeMesh.VertexHandle,Vector3,System.Single@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hVertex",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "edgeTable",
+              "Type": "System.Collections.Generic.SortedSet`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "flColinearAngleTolerance",
+              "Type": "System.Single",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 945
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.RemoveColinearVertexAndUpdateTable",
+          "Name": "RemoveColinearVertexAndUpdateTable",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "943"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.RemoveColinearVertexAndUpdateTable(HalfEdgeMesh.VertexHandle,System.Collections.Generic.SortedSet`1{HalfEdgeMesh.HalfEdgeHandle},System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hVertex",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "edges",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 995
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetEdgesConnectedToVertex",
+          "Name": "GetEdgesConnectedToVertex",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "992"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetEdgesConnectedToVertex(HalfEdgeMesh.VertexHandle,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.VertexHandle",
+          "Parameters": [
+            {
+              "Name": "hStartVertex",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "vTargetPosition",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "pOutEdgeList",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "pOutIsLastEdgeConnector",
+              "Out": true,
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "pEdgeTable",
+              "Type": "System.Collections.Generic.SortedSet`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1014
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CreateEdgesConnectingVertexToPoint",
+          "Name": "CreateEdgesConnectingVertexToPoint",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1010"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.CreateEdgesConnectingVertexToPoint(HalfEdgeMesh.VertexHandle,Vector3,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@,System.Boolean@,System.Collections.Generic.SortedSet`1{HalfEdgeMesh.HalfEdgeHandle})"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.HalfEdgeHandle",
+          "Parameters": [
+            {
+              "Name": "hVertexA",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "hVertexB",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1190
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindEdgeConnectingVertices",
+          "Name": "FindEdgeConnectingVertices",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1187"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindEdgeConnectingVertices(HalfEdgeMesh.VertexHandle,HalfEdgeMesh.VertexHandle)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hEdgeA",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hEdgeB",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hOutNewEdge",
+              "Out": true,
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1194
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.MergeEdges",
+          "Name": "MergeEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1192"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.MergeEdges(HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1279
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FlipAllFaces",
+          "Name": "FlipAllFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1277"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FlipAllFaces"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "originalVertices",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.VertexHandle>"
+            },
+            {
+              "Name": "flMaxDistance",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "bPreConnect",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "bAveragePositions",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "pOutFinalVertices",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.VertexHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1288
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.MergeVerticesWithinDistance",
+          "Name": "MergeVerticesWithinDistance",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1286"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.MergeVerticesWithinDistance(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.VertexHandle},System.Single,System.Boolean,System.Boolean,System.Collections.Generic.List`1{HalfEdgeMesh.VertexHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hOpenEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hNewFace",
+              "Out": true,
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1585
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CreateFaceInEdgeLoop",
+          "Name": "CreateFaceInEdgeLoop",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a face filling in the open edge loop specified by the provided edge"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1583"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a face filling in the open edge loop specified by the provided edge"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.CreateFaceInEdgeLoop(HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.FaceHandle@)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.FaceHandle",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1612
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetHalfEdgeFace",
+          "Name": "GetHalfEdgeFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the face connected to this half edge"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1609"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the face connected to this half edge"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetHalfEdgeFace(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1620
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.IsEdgeOpen",
+          "Name": "IsEdgeOpen",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Determine if the specified edge is open (only has one connected face)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1617"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Determine if the specified edge is open (only has one connected face)"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.IsEdgeOpen(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "outEdgeList",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1628
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindEdgeRing",
+          "Name": "FindEdgeRing",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find all of the edges in the ring with the specified edge. An edge ring is the set of edges that are connected by a loop of faces."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1626"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindEdgeRing(HalfEdgeMesh.HalfEdgeHandle,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hEdgeA",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hEdgeB",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hOutNewFace",
+              "Out": true,
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1637
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeEdges",
+          "Name": "BridgeEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Bridge two edges (create a face connecting them). The edges must both be open and belong to different faces."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1635"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Bridge two edges (create a face connecting them). The edges must both be open and belong to\ndifferent faces."
+          },
+          "DocId": "M:Sandbox.PolygonMesh.BridgeEdges(HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.FaceHandle@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "fromEdges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "toEdges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "parameters",
+              "Type": "Sandbox.PolygonMesh.BridgeInterpolationParameters"
+            },
+            {
+              "Name": "outEdgesCreated",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 1724
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeEdgesInterpolated",
+          "Name": "BridgeEdgesInterpolated",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Bridges two matching edge loops with interpolation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1722"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.BridgeEdgesInterpolated(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},Sandbox.PolygonMesh.BridgeInterpolationParameters,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "edge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2343
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeOpenEdgeExtendDirection",
+          "Name": "ComputeOpenEdgeExtendDirection",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2340"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeOpenEdgeExtendDirection(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "outNormal",
+              "Out": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "outMidPoint",
+              "Out": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2360
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeNormalForOpenEdgeLoop",
+          "Name": "ComputeNormalForOpenEdgeLoop",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2357"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeNormalForOpenEdgeLoop(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "outNormal",
+              "Out": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "outMidPoint",
+              "Out": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2364
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeNormalForOpenEdgeLoop",
+          "Name": "ComputeNormalForOpenEdgeLoop",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2362"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeNormalForOpenEdgeLoop(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},Transform,Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "edgesA",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "edgesB",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2421
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeEdges",
+          "Name": "BridgeEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2418"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.BridgeEdges(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "newEdges",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2442
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ConnectEdges",
+          "Name": "ConnectEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Connect the specified edges by adding a vertex to their mid point of each edge and then connecting the vertices."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2440"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ConnectEdges(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hVertexA",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "hVertexB",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "flParam",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "pOutNewVertex",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2486
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.AddVertexToEdge",
+          "Name": "AddVertexToEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2484"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.AddVertexToEdge(HalfEdgeMesh.VertexHandle,HalfEdgeMesh.VertexHandle,System.Single,HalfEdgeMesh.VertexHandle@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hVertexA",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "hVertexB",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "flParam",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "pNewVertex",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "pEdgeTable",
+              "Type": "System.Collections.Generic.SortedSet`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2520
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.AddVertexToEdgeAndUpdateTable",
+          "Name": "AddVertexToEdgeAndUpdateTable",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2518"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.AddVertexToEdgeAndUpdateTable(HalfEdgeMesh.VertexHandle,HalfEdgeMesh.VertexHandle,System.Single,HalfEdgeMesh.VertexHandle@,System.Collections.Generic.SortedSet`1{HalfEdgeMesh.HalfEdgeHandle})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hVertex",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "removeFreeVerts",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2558
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.RemoveVertex",
+          "Name": "RemoveVertex",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2555"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.RemoveVertex(HalfEdgeMesh.VertexHandle,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.VertexHandle>"
+            },
+            {
+              "Name": "distance",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "newVertices",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.VertexHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2621
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BevelVertices",
+          "Name": "BevelVertices",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2618"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.BevelVertices(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.VertexHandle},System.Single,System.Collections.Generic.List`1{HalfEdgeMesh.VertexHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.VertexHandle>"
+            },
+            {
+              "Name": "offset",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "baseWidth",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "modifiedVertices",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.VertexHandle>"
+            },
+            {
+              "Name": "originalVertices",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.VertexHandle>"
+            },
+            {
+              "Name": "newFaces",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2680
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ExtendOrExtrudeVertices",
+          "Name": "ExtendOrExtrudeVertices",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2677"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ExtendOrExtrudeVertices(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.VertexHandle},System.Single,System.Single,System.Collections.Generic.List`1{HalfEdgeMesh.VertexHandle}@,System.Collections.Generic.List`1{HalfEdgeMesh.VertexHandle}@,System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hVertex",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "faces",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2757
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFacesConnectedToVertex",
+          "Name": "GetFacesConnectedToVertex",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2754"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetFacesConnectedToVertex(HalfEdgeMesh.VertexHandle,System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "faces",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2762
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFacesConnectedToFace",
+          "Name": "GetFacesConnectedToFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2759"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetFacesConnectedToFace(HalfEdgeMesh.FaceHandle,System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}@)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.HalfEdgeHandle",
+          "Parameters": [
+            {
+              "Name": "hVertex",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2767
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindFaceVertexConnectedToVertex",
+          "Name": "FindFaceVertexConnectedToVertex",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2764"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindFaceVertexConnectedToVertex(HalfEdgeMesh.VertexHandle,HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.HalfEdgeHandle",
+          "Parameters": [
+            {
+              "Name": "hFaceVertex",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2772
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetNextVertexInFace",
+          "Name": "GetNextVertexInFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2769"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetNextVertexInFace(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hVertexA",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "hVertexB",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "hNewEdge",
+              "Out": true,
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 2776
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ConnectVertices",
+          "Name": "ConnectVertices",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2774"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ConnectVertices(HalfEdgeMesh.VertexHandle,HalfEdgeMesh.VertexHandle,HalfEdgeMesh.HalfEdgeHandle@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "originalEdges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "pOutEdgeLoopEdges",
+              "Out": true,
+              "Type": "HalfEdgeMesh.HalfEdgeHandle[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3002
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindEdgeLoopForEdges",
+          "Name": "FindEdgeLoopForEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "2999"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindEdgeLoopForEdges(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},HalfEdgeMesh.HalfEdgeHandle[]@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "edgeList",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "outEdgeList",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3171
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindEdgeIslands",
+          "Name": "FindEdgeIslands",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3169"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindEdgeIslands(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.List`1{System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}}@)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "outLeftRibs",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>>"
+            },
+            {
+              "Name": "outRightRibs",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3177
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindEdgeRibs",
+          "Name": "FindEdgeRibs",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3174"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindEdgeRibs(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.List`1{System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}}@,System.Collections.Generic.List`1{System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}}@)"
+        },
+        {
+          "ReturnType": "Line",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3358
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetEdgeLine",
+          "Name": "GetEdgeLine",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get start and end points of an edge"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3355"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get start and end points of an edge"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetEdgeLine(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hVertexA",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "hVertexB",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3372
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetEdgeVertices",
+          "Name": "GetEdgeVertices",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the two vertices of this half edge"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3370"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the two vertices of this half edge"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetEdgeVertices(HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.VertexHandle@,HalfEdgeMesh.VertexHandle@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hVertex",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3381
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetVertexPosition",
+          "Name": "SetVertexPosition",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the position of a vertex"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3378"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the position of a vertex"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetVertexPosition(HalfEdgeMesh.VertexHandle,Vector3)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "hVertex",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3394
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetVertexPosition",
+          "Name": "GetVertexPosition",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the position of a vertex"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3391"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the position of a vertex"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetVertexPosition(HalfEdgeMesh.VertexHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hVertex",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "outPosition",
+              "Out": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3401
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetVertexPosition",
+          "Name": "GetVertexPosition",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the position of a vertex"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3399"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the position of a vertex"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetVertexPosition(HalfEdgeMesh.VertexHandle,Transform,Vector3@)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Vector3>",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetVertexPositions",
+          "Name": "GetVertexPositions",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.PolygonMesh/<GetVertexPositions>d__258"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the positions of all vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3407"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the positions of all vertices"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetVertexPositions"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFaceVertex",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "blend",
+              "Type": "Color32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3419
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetVertexBlend",
+          "Name": "SetVertexBlend",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the blend of a vertex"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3416"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the blend of a vertex"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetVertexBlend(HalfEdgeMesh.HalfEdgeHandle,Color32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFaceVertex",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "color",
+              "Type": "Color32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3432
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetVertexColor",
+          "Name": "SetVertexColor",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the color of a vertex"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3429"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the color of a vertex"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetVertexColor(HalfEdgeMesh.HalfEdgeHandle,Color32)"
+        },
+        {
+          "ReturnType": "Color32",
+          "Parameters": [
+            {
+              "Name": "hFaceVertex",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3445
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetVertexColor",
+          "Name": "GetVertexColor",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the color of a vertex"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3442"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the color of a vertex"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetVertexColor(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "Color32",
+          "Parameters": [
+            {
+              "Name": "hFaceVertex",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3456
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetVertexBlend",
+          "Name": "GetVertexBlend",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the blend of a vertex"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3453"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the blend of a vertex"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetVertexBlend(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "pOutNormal",
+              "Out": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3464
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeFaceNormal",
+          "Name": "ComputeFaceNormal",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3461"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeFaceNormal(HalfEdgeMesh.FaceHandle,Vector3@)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3475
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFaceCenter",
+          "Name": "GetFaceCenter",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Calculate the center point of a face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3472"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Calculate the center point of a face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetFaceCenter(HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Line>",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetEdges",
+          "Name": "GetEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.PolygonMesh/<GetEdges>d__265"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the start and end points of all edges"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3488"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the start and end points of all edges"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetEdges"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Vector3>",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFaceVertexPositions",
+          "Name": "GetFaceVertexPositions",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.PolygonMesh/<GetFaceVertexPositions>d__266"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3499"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetFaceVertexPositions(HalfEdgeMesh.FaceHandle,Transform)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "hEdges",
+              "Out": true,
+              "Type": "HalfEdgeMesh.HalfEdgeHandle[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3516
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFaceVerticesConnectedToFace",
+          "Name": "GetFaceVerticesConnectedToFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3513"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetFaceVerticesConnectedToFace(HalfEdgeMesh.FaceHandle,HalfEdgeMesh.HalfEdgeHandle[]@)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.VertexHandle",
+          "Parameters": [
+            {
+              "Name": "hFaceVertex",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3521
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetVertexConnectedToFaceVertex",
+          "Name": "GetVertexConnectedToFaceVertex",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3518"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetVertexConnectedToFaceVertex(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3525
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeFaceTextureParametersFromCoordinates",
+          "Name": "ComputeFaceTextureParametersFromCoordinates",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3523"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeFaceTextureParametersFromCoordinates"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3531
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeFaceTextureParametersFromCoordinates",
+          "Name": "ComputeFaceTextureParametersFromCoordinates",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3528"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeFaceTextureParametersFromCoordinates(System.Collections.Generic.IEnumerable`1{HalfEdgeMesh.FaceHandle})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3536
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeFaceTextureCoordinatesFromParameters",
+          "Name": "ComputeFaceTextureCoordinatesFromParameters",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3534"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeFaceTextureCoordinatesFromParameters"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3542
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeFaceTextureCoordinatesFromParameters",
+          "Name": "ComputeFaceTextureCoordinatesFromParameters",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3539"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeFaceTextureCoordinatesFromParameters(Transform)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3548
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeFaceTextureCoordinatesFromParameters",
+          "Name": "ComputeFaceTextureCoordinatesFromParameters",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3545"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeFaceTextureCoordinatesFromParameters(System.Collections.Generic.IEnumerable`1{HalfEdgeMesh.FaceHandle})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "textureSizes",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<Vector2>"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3554
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeFaceTextureParametersFromCoordinates",
+          "Name": "ComputeFaceTextureParametersFromCoordinates",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3551"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeFaceTextureParametersFromCoordinates(System.Collections.Generic.IEnumerable`1{HalfEdgeMesh.FaceHandle},System.Collections.Generic.IReadOnlyList`1{Vector2},Transform)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "textureSizes",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<Vector2>"
+            },
+            {
+              "Name": "defaultScale",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3604
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ComputeFaceTextureCoordinatesFromParameters",
+          "Name": "ComputeFaceTextureCoordinatesFromParameters",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3601"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ComputeFaceTextureCoordinatesFromParameters(System.Collections.Generic.IEnumerable`1{HalfEdgeMesh.FaceHandle},Transform,System.Collections.Generic.IReadOnlyList`1{Vector2},System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3769
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ApplyTransform",
+          "Name": "ApplyTransform",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Transform all the vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3766"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Transform all the vertices"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.ApplyTransform(Transform)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.HalfEdgeHandle[]",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3779
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFaceEdges",
+          "Name": "GetFaceEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get all edge handles of a face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3777"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get all edge handles of a face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetFaceEdges(HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.VertexHandle[]",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3789
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFaceVertices",
+          "Name": "GetFaceVertices",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get all vertex handles of a face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3786"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get all vertex handles of a face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetFaceVertices(HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3797
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetTextureOffset",
+          "Name": "GetTextureOffset",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get texture offset of a face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3794"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get texture offset of a face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetTextureOffset(HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "offset",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3804
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetTextureOffset",
+          "Name": "SetTextureOffset",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set texture offset of a face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3802"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set texture offset of a face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetTextureOffset(HalfEdgeMesh.FaceHandle,Vector2)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3817
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetTextureScale",
+          "Name": "GetTextureScale",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get texture scale of a face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3814"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get texture scale of a face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetTextureScale(HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "scale",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3824
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetTextureScale",
+          "Name": "SetTextureScale",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set texture scale of a face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3822"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set texture scale of a face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetTextureScale(HalfEdgeMesh.FaceHandle,Vector2)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3836
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureAlignToGrid",
+          "Name": "TextureAlignToGrid",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Align face texture properties to grid"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3834"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Align face texture properties to grid"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.TextureAlignToGrid(Transform,HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3857
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureAlignToFace",
+          "Name": "TextureAlignToFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Align face texture properties to face"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3855"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Align face texture properties to face"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.TextureAlignToFace(Transform,HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faceVertex",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "texcoord",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3881
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetTextureCoord",
+          "Name": "SetTextureCoord",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set face vertex texture coord"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3879"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set face vertex texture coord"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetTextureCoord(HalfEdgeMesh.HalfEdgeHandle,Vector2)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "faceVertex",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3892
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetTextureCoord",
+          "Name": "GetTextureCoord",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get face vertex texture coord"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3889"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get face vertex texture coord"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.GetTextureCoord(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "texcoords",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<Vector2>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3900
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetFaceTextureCoords",
+          "Name": "SetFaceTextureCoords",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set face texture coords"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3897"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.SetFaceTextureCoords(HalfEdgeMesh.FaceHandle,System.Collections.Generic.IReadOnlyList`1{Vector2})"
+        },
+        {
+          "ReturnType": "Vector2[]",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3926
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFaceTextureCoords",
+          "Name": "GetFaceTextureCoords",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3923"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetFaceTextureCoords(HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "offset",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "uAxis",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "vAxis",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3941
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetFaceTextureParameters",
+          "Name": "SetFaceTextureParameters",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set face texture properties"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3939"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set face texture properties"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.SetFaceTextureParameters(HalfEdgeMesh.FaceHandle,Vector2,Vector3,Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "outAxisU",
+              "Out": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "outAxisV",
+              "Out": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "outScale",
+              "Out": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3954
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFaceTextureParameters",
+          "Name": "GetFaceTextureParameters",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3951"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetFaceTextureParameters(HalfEdgeMesh.FaceHandle,Vector4@,Vector4@,Vector2@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "axisU",
+              "Type": "Vector4"
+            },
+            {
+              "Name": "axisV",
+              "Type": "Vector4"
+            },
+            {
+              "Name": "scale",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3961
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SetFaceTextureParameters",
+          "Name": "SetFaceTextureParameters",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3959"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.SetFaceTextureParameters(HalfEdgeMesh.FaceHandle,Vector4,Vector4,Vector2)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3977
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureAlignToGrid",
+          "Name": "TextureAlignToGrid",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Align all face texture properties to grid"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3974"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Align all face texture properties to grid"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.TextureAlignToGrid(Transform)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFaces",
+              "Type": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 3990
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.RemoveFaces",
+          "Name": "RemoveFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove these faces"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "3987"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.RemoveFaces(System.Collections.Generic.IEnumerable`1{HalfEdgeMesh.FaceHandle})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hVertices",
+              "Type": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.VertexHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4003
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.RemoveVertices",
+          "Name": "RemoveVertices",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove these vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4000"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.RemoveVertices(System.Collections.Generic.IEnumerable`1{HalfEdgeMesh.VertexHandle})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hEdges",
+              "Type": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4016
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.RemoveEdges",
+          "Name": "RemoveEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove these edges"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4013"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.RemoveEdges(System.Collections.Generic.IEnumerable`1{HalfEdgeMesh.HalfEdgeHandle})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "pOutNewVertex",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "pOutReplacedEdges",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<System.ValueTuple`2<HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle>>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4025
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CollapseEdge",
+          "Name": "CollapseEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4023"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.CollapseEdge(HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.VertexHandle@,System.Collections.Generic.List`1{System.ValueTuple`2{HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle}}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hHalfEdgeA",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "flParam",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "pOutNewVertex",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "pOutReplacedEdges",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<System.ValueTuple`2<HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle>>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4032
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CollapseEdge",
+          "Name": "CollapseEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4029"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.CollapseEdge(HalfEdgeMesh.HalfEdgeHandle,System.Single,HalfEdgeMesh.VertexHandle@,System.Collections.Generic.List`1{System.ValueTuple`2{HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle}}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "hOutVertex",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4050
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CollapseFace",
+          "Name": "CollapseFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4048"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.CollapseFace(HalfEdgeMesh.FaceHandle,HalfEdgeMesh.VertexHandle@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "newEdgesA",
+              "Out": true,
+              "Type": "HalfEdgeMesh.HalfEdgeHandle[]"
+            },
+            {
+              "Name": "pOutNewEdgesB",
+              "Out": true,
+              "Type": "HalfEdgeMesh.HalfEdgeHandle[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4087
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SplitEdges",
+          "Name": "SplitEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4084"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.SplitEdges(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},HalfEdgeMesh.HalfEdgeHandle[]@,HalfEdgeMesh.HalfEdgeHandle[]@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4091
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CollapseEdges",
+          "Name": "CollapseEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4089"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.CollapseEdges(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle})"
+        },
+        {
+          "ReturnType": "Sandbox.Model",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4208
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Triangulate the polygons into a model"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4205"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Triangulate the polygons into a model"
+          },
+          "DocId": "M:Sandbox.PolygonMesh.Rebuild"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4345
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.IsEdgeSmooth",
+          "Name": "IsEdgeSmooth",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4342"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.IsEdgeSmooth(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "edges",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4385
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetEdgesConnectedToFace",
+          "Name": "GetEdgesConnectedToFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4382"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetEdgesConnectedToFace(HalfEdgeMesh.FaceHandle,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "hOutVertexA",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "hOutVertexB",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4389
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetVerticesConnectedToEdge",
+          "Name": "GetVerticesConnectedToEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4387"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetVerticesConnectedToEdge(HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.FaceHandle,HalfEdgeMesh.VertexHandle@,HalfEdgeMesh.VertexHandle@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hOutVertexA",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "hOutVertexB",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4411
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetVerticesConnectedToEdge",
+          "Name": "GetVerticesConnectedToEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4409"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetVerticesConnectedToEdge(HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.VertexHandle@,HalfEdgeMesh.VertexHandle@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "outVertexA",
+              "Out": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "outVertexB",
+              "Out": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4416
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetEdgeVertexPositions",
+          "Name": "GetEdgeVertexPositions",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4414"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetEdgeVertexPositions(HalfEdgeMesh.HalfEdgeHandle,Transform,Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.FaceHandle",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4429
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetOppositeFaceConnectedToEdge",
+          "Name": "GetOppositeFaceConnectedToEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4426"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetOppositeFaceConnectedToEdge(HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.FaceHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "edgeList",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "outVertices",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4433
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindVerticesConnectedToEdges",
+          "Name": "FindVerticesConnectedToEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4431"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindVerticesConnectedToEdges(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},HalfEdgeMesh.VertexHandle[]@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "vertices",
+              "Out": true,
+              "Type": "HalfEdgeMesh.VertexHandle[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4465
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetVerticesConnectedToFace",
+          "Name": "GetVerticesConnectedToFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4462"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetVerticesConnectedToFace(HalfEdgeMesh.FaceHandle,HalfEdgeMesh.VertexHandle[]@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "minCornerAngle",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "outCornerVertices",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.VertexHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4479
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindCornerVerticesForFace",
+          "Name": "FindCornerVerticesForFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4477"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindCornerVerticesForFace(HalfEdgeMesh.FaceHandle,System.Single,System.Collections.Generic.List`1{HalfEdgeMesh.VertexHandle}@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "cutsX",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "cutsY",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "minCornerAngleDegrees",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "outNewFaceList",
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4517
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.QuadSliceFaces",
+          "Name": "QuadSliceFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4514"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.QuadSliceFaces(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.FaceHandle},System.Int32,System.Int32,System.Single,System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4685
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.RemoveBadFaces",
+          "Name": "RemoveBadFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4682"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.RemoveBadFaces"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4821
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.AverageEdgeUVs",
+          "Name": "AverageEdgeUVs",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4818"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.AverageEdgeUVs(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.VertexHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4878
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.AverageVertexUVs",
+          "Name": "AverageVertexUVs",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4875"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.AverageVertexUVs(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.VertexHandle})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pMesh1",
+              "Type": "Sandbox.PolygonMesh"
+            },
+            {
+              "Name": "hFace1",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "mLocalToWorld1",
+              "Type": "Transform"
+            },
+            {
+              "Name": "pMesh2",
+              "Type": "Sandbox.PolygonMesh"
+            },
+            {
+              "Name": "hFace2",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "mLocalToWorld2",
+              "Type": "Transform"
+            },
+            {
+              "Name": "pOutPlane1",
+              "Out": true,
+              "Type": "Sandbox.Plane"
+            },
+            {
+              "Name": "pOutPlane2",
+              "Out": true,
+              "Type": "Sandbox.Plane"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4943
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.GetBestPlanesForEdgeBetweenFaces",
+          "Name": "GetBestPlanesForEdgeBetweenFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4938"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetBestPlanesForEdgeBetweenFaces(Sandbox.PolygonMesh,HalfEdgeMesh.FaceHandle,Transform,Sandbox.PolygonMesh,HalfEdgeMesh.FaceHandle,Transform,Sandbox.Plane@,Sandbox.Plane@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "pMesh1",
+              "Type": "Sandbox.PolygonMesh"
+            },
+            {
+              "Name": "hFace1",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "mLocalToWorld1",
+              "Type": "Transform"
+            },
+            {
+              "Name": "pMesh2",
+              "Type": "Sandbox.PolygonMesh"
+            },
+            {
+              "Name": "hFace2",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "mLocalToWorld2",
+              "Type": "Transform"
+            },
+            {
+              "Name": "pOutEdge1",
+              "Out": true,
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "pOutEdge2",
+              "Out": true,
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 4973
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.GetNearestEdgesBetweenFaces",
+          "Name": "GetNearestEdgesBetweenFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "4969"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetNearestEdgesBetweenFaces(Sandbox.PolygonMesh,HalfEdgeMesh.FaceHandle,Transform,Sandbox.PolygonMesh,HalfEdgeMesh.FaceHandle,Transform,HalfEdgeMesh.HalfEdgeHandle@,HalfEdgeMesh.HalfEdgeHandle@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "outPlane",
+              "Out": true,
+              "Type": "Sandbox.Plane"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5069
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFacePlaneUsingEdge",
+          "Name": "GetFacePlaneUsingEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5067"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetFacePlaneUsingEdge(HalfEdgeMesh.FaceHandle,HalfEdgeMesh.HalfEdgeHandle,Transform,Sandbox.Plane@)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.HalfEdgeHandle",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5325
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetOppositeHalfEdge",
+          "Name": "GetOppositeHalfEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5322"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetOppositeHalfEdge(HalfEdgeMesh.HalfEdgeHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vAxisU",
+              "Type": "Vector4"
+            },
+            {
+              "Name": "vAxisV",
+              "Type": "Vector4"
+            },
+            {
+              "Name": "vScale",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "extents",
+              "Type": "Sandbox.PolygonMesh.FaceExtents"
+            },
+            {
+              "Name": "topLeft",
+              "Out": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "bottomRight",
+              "Out": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5390
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.GetTextureExtents",
+          "Name": "GetTextureExtents",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5387"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetTextureExtents(Vector4,Vector4,Vector2,Sandbox.PolygonMesh.FaceExtents,Vector2@,Vector2@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFaces",
+              "Type": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "justification",
+              "Type": "Sandbox.PolygonMesh.TextureJustification"
+            },
+            {
+              "Name": "extents",
+              "Type": "Sandbox.PolygonMesh.FaceExtents"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5515
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.JustifyFaceTextureParameters",
+          "Name": "JustifyFaceTextureParameters",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5512"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.JustifyFaceTextureParameters(System.Collections.Generic.IEnumerable`1{HalfEdgeMesh.FaceHandle},Sandbox.PolygonMesh.TextureJustification,Sandbox.PolygonMesh.FaceExtents)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hFaces",
+              "Type": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "extents",
+              "Type": "Sandbox.PolygonMesh.FaceExtents"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5544
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.UnionExtentsForFaces",
+          "Name": "UnionExtentsForFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5541"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.UnionExtentsForFaces(System.Collections.Generic.IEnumerable`1{HalfEdgeMesh.FaceHandle},Transform,Sandbox.PolygonMesh.FaceExtents)"
+        },
+        {
+          "ReturnType": "Sandbox.Vertex[]",
+          "Parameters": [
+            {
+              "Name": "hFace",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CreateFace",
+          "Name": "CreateFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5718"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.CreateFace(HalfEdgeMesh.FaceHandle,Transform,Color)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hEdge",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "hOutFaceA",
+              "Out": true,
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "hOutFaceB",
+              "Out": true,
+              "Type": "HalfEdgeMesh.FaceHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5834
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFacesConnectedToEdge",
+          "Name": "GetFacesConnectedToEdge",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5832"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetFacesConnectedToEdge(HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.FaceHandle@,HalfEdgeMesh.FaceHandle@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "outBoundaryEdges",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5839
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindBoundaryEdgesConnectedToFaces",
+          "Name": "FindBoundaryEdgesConnectedToFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5837"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindBoundaryEdgesConnectedToFaces(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.FaceHandle},System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "amount",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "outFaces",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5845
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ThickenFaces",
+          "Name": "ThickenFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5842"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ThickenFaces(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.FaceHandle},System.Single,System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "outFaces",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5926
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindFaceIslands",
+          "Name": "FindFaceIslands",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5924"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindFaceIslands(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.FaceHandle},System.Collections.Generic.List`1{System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hVertex",
+              "Type": "HalfEdgeMesh.VertexHandle"
+            },
+            {
+              "Name": "faceVertices",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5964
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GetFaceVerticesConnectedToVertex",
+          "Name": "GetFaceVerticesConnectedToVertex",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5961"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GetFaceVerticesConnectedToVertex(HalfEdgeMesh.VertexHandle,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "face",
+              "Type": "HalfEdgeMesh.FaceHandle"
+            },
+            {
+              "Name": "halfEdges",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5968
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindHalfEdgesConnectedToFace",
+          "Name": "FindHalfEdgesConnectedToFace",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5966"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindHalfEdgesConnectedToFace(HalfEdgeMesh.FaceHandle,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "edgeSetA",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "edgeSetB",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "outA",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "outB",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5995
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.CorrelateOpenEdges",
+          "Name": "CorrelateOpenEdges",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5993"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.CorrelateOpenEdges(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "edgeList",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "outEdgeIslands",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 6122
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindOpenEdgeIslands",
+          "Name": "FindOpenEdgeIslands",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "6120"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindOpenEdgeIslands(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.List`1{System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}}@)"
+        },
+        {
+          "ReturnType": "HalfEdgeMesh.ComponentConnectivityType",
+          "Parameters": [
+            {
+              "Name": "edgeList",
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "outSortedEdges",
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 6128
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.ClassifyEdgeListConnectivity",
+          "Name": "ClassifyEdgeListConnectivity",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "6125"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.ClassifyEdgeListConnectivity(System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle},System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faceList",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "outClosedFaces",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 6147
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FindClosedFaces",
+          "Name": "FindClosedFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "6145"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FindClosedFaces(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.FaceHandle},System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}@)"
+        },
+        {
+          "ReturnType": "System.Object",
+          "IsOverride": true,
+          "Parameters": [
+            {
+              "Name": "reader",
+              "Ref": true,
+              "Type": "System.Text.Json.Utf8JsonReader"
+            },
+            {
+              "Name": "typeToConvert",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.Serialize.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.JsonRead",
+          "Name": "JsonRead",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.Serialize.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.JsonRead(System.Text.Json.Utf8JsonReader@,System.Type)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsOverride": true,
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "writer",
+              "Type": "System.Text.Json.Utf8JsonWriter"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.Serialize.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.JsonWrite",
+          "Name": "JsonWrite",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.Serialize.cs",
+                "146"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.JsonWrite(System.Object,System.Text.Json.Utf8JsonWriter)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.ReadOnlySpan`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "generationMode",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "edgeAlignMode",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "alignEdgeVertexA",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "alignEdgeVertexB",
+              "Type": "HalfEdgeMesh.HalfEdgeHandle"
+            },
+            {
+              "Name": "outFaceVertices",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<HalfEdgeMesh.HalfEdgeHandle>"
+            },
+            {
+              "Name": "outFaceVertexUVs",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<Vector2>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.UV.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.GenerateUVsForFaces",
+          "Name": "GenerateUVsForFaces",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.UV.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.GenerateUVsForFaces(System.ReadOnlySpan`1{HalfEdgeMesh.FaceHandle},System.Int32,System.Int32,HalfEdgeMesh.HalfEdgeHandle,HalfEdgeMesh.HalfEdgeHandle,System.Collections.Generic.List`1{HalfEdgeMesh.HalfEdgeHandle}@,System.Collections.Generic.List`1{Vector2}@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "faces",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<HalfEdgeMesh.FaceHandle>"
+            },
+            {
+              "Name": "faceIslands",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<System.Collections.Generic.List`1<HalfEdgeMesh.FaceHandle>>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.UV.cs",
+            "Line": 317
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.SplitFacesIntoIslandsForUVMapping",
+          "Name": "SplitFacesIntoIslandsForUVMapping",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.UV.cs",
+                "315"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.SplitFacesIntoIslandsForUVMapping(System.Collections.Generic.IReadOnlyList`1{HalfEdgeMesh.FaceHandle},System.Collections.Generic.List`1{System.Collections.Generic.List`1{HalfEdgeMesh.FaceHandle}}@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.PolygonMesh",
+          "DocId": "M:Sandbox.PolygonMesh.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 156
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.IsDirty",
+          "Name": "IsDirty",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Has there been changes to the mesh that need rebuilding?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "155"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Has there been changes to the mesh that need rebuilding?"
+          },
+          "DocId": "P:Sandbox.PolygonMesh.IsDirty"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 173
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.Transform",
+          "Name": "Transform",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Where is the mesh in worldspace."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "167"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Where is the mesh in worldspace."
+          },
+          "DocId": "P:Sandbox.PolygonMesh.Transform"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.VertexHandle>",
+          "Loc": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 275
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.VertexHandles",
+          "Name": "VertexHandles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "All of the vertex handles being used"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "274"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "All of the vertex handles being used"
+          },
+          "DocId": "P:Sandbox.PolygonMesh.VertexHandles"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.FaceHandle>",
+          "Loc": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 280
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FaceHandles",
+          "Name": "FaceHandles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "All of the face handles being used"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "279"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "All of the face handles being used"
+          },
+          "DocId": "P:Sandbox.PolygonMesh.FaceHandles"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<HalfEdgeMesh.HalfEdgeHandle>",
+          "Loc": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 285
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.HalfEdgeHandles",
+          "Name": "HalfEdgeHandles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "All of the half edge handles being used"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "284"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "All of the half edge handles being used"
+          },
+          "DocId": "P:Sandbox.PolygonMesh.HalfEdgeHandles"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PolygonMesh",
+      "Name": "PolygonMesh",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An editable mesh made up of polygons, triangulated into a model"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Mesh\\PolygonMesh.Bevel.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An editable mesh made up of polygons, triangulated into a model"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Mesh\\PolygonMesh.Boolean.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An editable mesh made up of polygons, triangulated into a model"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Mesh\\PolygonMesh.Clip.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An editable mesh made up of polygons, triangulated into a model"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Mesh\\PolygonMesh.cs",
+            "9"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An editable mesh made up of polygons, triangulated into a model"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Mesh\\PolygonMesh.EdgeSpan.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An editable mesh made up of polygons, triangulated into a model"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Mesh\\PolygonMesh.Serialize.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An editable mesh made up of polygons, triangulated into a model"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Mesh\\PolygonMesh.Subdivision.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An editable mesh made up of polygons, triangulated into a model"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Mesh\\PolygonMesh.UV.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "An editable mesh made up of polygons, triangulated into a model"
+      },
+      "DocId": "T:Sandbox.PolygonMesh"
+    }
+  ],
+  "_metadata": {
+    "chunk": 94,
+    "items_count": 1
+  }
+}

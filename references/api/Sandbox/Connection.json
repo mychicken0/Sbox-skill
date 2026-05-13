@@ -1,0 +1,1574 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "permission",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.HasPermission",
+          "Name": "HasPermission",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get whether this connection has a specific permission."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get whether this connection has a specific permission."
+          },
+          "DocId": "M:Sandbox.Connection.HasPermission(System.String)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.DistanceSquared",
+          "Name": "DistanceSquared",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Calculate the closest distance (squared) to a position based on the Pvs sources from this <span style=\"color: #4EC9B0;\">Connection</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "78"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Calculate the closest distance (squared) to a position based on the Pvs sources from\nthis <see cref=\"T:Sandbox.Connection\" />."
+          },
+          "DocId": "M:Sandbox.Connection.DistanceSquared(Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "reason",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 225
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Kick",
+          "Name": "Kick",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Kick this <span style=\"color: #4EC9B0;\">Connection</span> from the server. Only the host can kick clients."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "223"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Kick this <see cref=\"T:Sandbox.Connection\" /> from the server. Only the host can kick clients.",
+            "Params": {
+              "reason": "The reason to display to this client."
+            }
+          },
+          "DocId": "M:Sandbox.Connection.Kick(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "level",
+              "Type": "Sandbox.LogLevel"
+            },
+            {
+              "Name": "message",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 248
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.SendLog",
+          "Name": "SendLog",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Log a message to the console for this connection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "245"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Log a message to the console for this connection."
+          },
+          "DocId": "M:Sandbox.Connection.SendLog(Sandbox.LogLevel,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "t",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 298
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.SendMessage",
+          "Name": "SendMessage",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Send a message to this connection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "296"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Send a message to this connection."
+          },
+          "DocId": "M:Sandbox.Connection.SendMessage``1(``0)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 480
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.GetUserData",
+          "Name": "GetUserData",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "478"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Connection.GetUserData(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "definitionId",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 489
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.HasInventoryItem",
+          "Name": "HasInventoryItem",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Check if this connection has a specific inventory item in their Steam Inventory"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "486"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Check if this connection has a specific inventory item in their Steam Inventory"
+          },
+          "DocId": "M:Sandbox.Connection.HasInventoryItem(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "action",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.Input.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Down",
+          "Name": "Down",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Action is currently pressed down for this <span style=\"color: #4EC9B0;\">Connection</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.Input.cs",
+                "114"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Action is currently pressed down for this <see cref=\"T:Sandbox.Connection\" />."
+          },
+          "DocId": "M:Sandbox.Connection.Down(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "action",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.Input.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Pressed",
+          "Name": "Pressed",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Action was pressed for this <span style=\"color: #4EC9B0;\">Connection</span> within the current update context."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.Input.cs",
+                "134"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Action was pressed for this <see cref=\"T:Sandbox.Connection\" /> within the current update context."
+          },
+          "DocId": "M:Sandbox.Connection.Pressed(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "action",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.Input.cs",
+            "Line": 160
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Released",
+          "Name": "Released",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Action was released for this <span style=\"color: #4EC9B0;\">Connection</span> within the current update context."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.Input.cs",
+                "156"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Action was released for this <see cref=\"T:Sandbox.Connection\" /> within the current update context."
+          },
+          "DocId": "M:Sandbox.Connection.Released(System.String)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Object>",
+          "Parameters": [
+            {
+              "Name": "t",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.Response.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.SendRequest",
+          "Name": "SendRequest",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Send a message to this connection, wait for a response"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.Response.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Send a message to this connection, wait for a response"
+          },
+          "DocId": "M:Sandbox.Connection.SendRequest``1(``0)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "requestId",
+              "Type": "System.Guid"
+            },
+            {
+              "Name": "t",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.Response.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.SendResponse",
+          "Name": "SendResponse",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Send a response message to this connection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.Response.cs",
+                "37"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Send a response message to this connection."
+          },
+          "DocId": "M:Sandbox.Connection.SendResponse``1(System.Guid,``0)"
+        },
+        {
+          "ReturnType": "Sandbox.Connection",
+          "Parameters": [
+            {
+              "Name": "id",
+              "Type": "System.Guid"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.Static.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Connection.Find",
+          "Name": "Find",
+          "DeclaringType": "Sandbox.Connection",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find a <span style=\"color: #4EC9B0;\">Connection</span> for a Connection Id."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.Static.cs",
+                "69"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find a <see cref=\"T:Sandbox.Connection\" /> for a Connection Id."
+          },
+          "DocId": "M:Sandbox.Connection.Find(System.Guid)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 74
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Connection..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Connection",
+          "DocId": "M:Sandbox.Connection.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Guid",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Id",
+          "Name": "Id",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This connection's unique identifier."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This connection's unique identifier."
+          },
+          "DocId": "P:Sandbox.Connection.Id"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 123
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.CanSpawnObjects",
+          "Name": "CanSpawnObjects",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Can this connection spawn networked objects?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "118"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Can this connection spawn networked objects?"
+          },
+          "DocId": "P:Sandbox.Connection.CanSpawnObjects"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.CanRefreshObjects",
+          "Name": "CanRefreshObjects",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Can this connection refresh networked objects that they own?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "137"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Can this connection refresh networked objects that they own?"
+          },
+          "DocId": "P:Sandbox.Connection.CanRefreshObjects"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 161
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.CanDestroyObjects",
+          "Name": "CanDestroyObjects",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Can this connection destroy networked objects they own?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "156"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Can this connection destroy networked objects they own?"
+          },
+          "DocId": "P:Sandbox.Connection.CanDestroyObjects"
+        },
+        {
+          "PropertyType": "System.Single",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 173
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Latency",
+          "Name": "Latency",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "172"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Connection.Latency"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 176
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "174"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Connection.Name"
+        },
+        {
+          "PropertyType": "System.Single",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 179
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Time",
+          "Name": "Time",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "177"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Connection.Time"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 182
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Address",
+          "Name": "Address",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "180"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Connection.Address"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 185
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.IsHost",
+          "Name": "IsHost",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "183"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Connection.IsHost"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 191
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.IsConnecting",
+          "Name": "IsConnecting",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this channel is still currently connecting."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "189"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this channel is still currently connecting."
+          },
+          "DocId": "P:Sandbox.Connection.IsConnecting"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 197
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.IsActive",
+          "Name": "IsActive",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this channel is fully connnected and fully logged on."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "195"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this channel is fully connnected and fully logged on."
+          },
+          "DocId": "P:Sandbox.Connection.IsActive"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 208
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.MessagesSent",
+          "Name": "MessagesSent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many messages have been sent to this connection?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "204"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many messages have been sent to this connection?"
+          },
+          "DocId": "P:Sandbox.Connection.MessagesSent"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 217
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.MessagesRecieved",
+          "Name": "MessagesRecieved",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many messages have been received from this connection?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "213"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many messages have been received from this connection?"
+          },
+          "DocId": "P:Sandbox.Connection.MessagesRecieved"
+        },
+        {
+          "PropertyType": "Sandbox.Network.ConnectionStats",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 292
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Stats",
+          "Name": "Stats",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get stats about this connection such as bandwidth usage and how many packets are being sent and received."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "291"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get stats about this connection such as bandwidth usage and how many packets are being\nsent and received."
+          },
+          "DocId": "P:Sandbox.Connection.Stats"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 437
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Ping",
+          "Name": "Ping",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The ping of this connection (in milliseconds.)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "435"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The ping of this connection (in milliseconds.)"
+          },
+          "DocId": "P:Sandbox.Connection.Ping"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 456
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.DisplayName",
+          "Name": "DisplayName",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "454"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Connection.DisplayName"
+        },
+        {
+          "PropertyType": "Sandbox.SteamId",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 459
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.SteamId",
+          "Name": "SteamId",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "457"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Connection.SteamId"
+        },
+        {
+          "PropertyType": "Sandbox.SteamId",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 468
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.OwnerSteamId",
+          "Name": "OwnerSteamId",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The SteamID of the account that actually owns the game in a Steam Family. If not in a Steam Family this is the same as <span style=\"color: #4EC9B0;\">Connection</span>.<span style=\"color: #DCDCDC;\">SteamId</span>"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "467"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The SteamID of the account that actually owns the game in a Steam Family.\nIf not in a Steam Family this is the same as <see cref=\"P:Sandbox.Connection.SteamId\" />",
+            "Remarks": "This is only valid on the host."
+          },
+          "DocId": "P:Sandbox.Connection.OwnerSteamId"
+        },
+        {
+          "PropertyType": "Sandbox.SteamId",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 475
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.PartyId",
+          "Name": "PartyId",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The Id of the party that this user is a part of. This can be used to compare to other users to group them into parties."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "473"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The Id of the party that this user is a part of. This can be used to compare to other users to \ngroup them into parties."
+          },
+          "DocId": "P:Sandbox.Connection.PartyId"
+        },
+        {
+          "PropertyType": "System.DateTimeOffset",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.cs",
+            "Line": 477
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.ConnectionTime",
+          "Name": "ConnectionTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.cs",
+                "476"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Connection.ConnectionTime"
+        },
+        {
+          "PropertyType": "Sandbox.Connection",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.Static.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Connection.Local",
+          "Name": "Local",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This is a \"fake\" connection for the local player. It is passed to RPCs when calling them locally etc."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.Static.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This is a \"fake\" connection for the local player. It is passed to RPCs when calling them\nlocally etc."
+          },
+          "DocId": "P:Sandbox.Connection.Local"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<Sandbox.Connection>",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.Static.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Connection.All",
+          "Name": "All",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of connections that are currently on this server. If you're not on a server this will return only one connection (Connection.Local). Some games restrict the connection list - in which case you will get an empty list."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.Static.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of connections that are currently on this server. If you're not on a server\nthis will return only one connection (Connection.Local). Some games restrict the \nconnection list - in which case you will get an empty list."
+          },
+          "DocId": "P:Sandbox.Connection.All"
+        },
+        {
+          "PropertyType": "Sandbox.Connection",
+          "Loc": {
+            "File": "Systems/Networking/System/Channel/Connection.Static.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Connection.Host",
+          "Name": "Host",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The connection of the current network host."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.Static.cs",
+                "48"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The connection of the current network host."
+          },
+          "DocId": "P:Sandbox.Connection.Host"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Connection",
+      "Name": "Connection",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.ActionGraphIgnoreAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A connection, usually to a server or a client."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Networking\\System\\Channel\\Connection.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A connection, usually to a server or a client."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Networking\\System\\Channel\\Connection.Filter.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A connection, usually to a server or a client."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Networking\\System\\Channel\\Connection.Input.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A connection, usually to a server or a client."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Networking\\System\\Channel\\Connection.Receive.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A connection, usually to a server or a client."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Networking\\System\\Channel\\Connection.Response.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A connection, usually to a server or a client."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Networking\\System\\Channel\\Connection.Static.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A connection, usually to a server or a client."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Networking\\System\\Channel\\Connection.Wire.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A connection, usually to a server or a client."
+      },
+      "DocId": "T:Sandbox.Connection"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "connection",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.Filter.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Filter.IsRecipient",
+          "Name": "IsRecipient",
+          "DeclaringType": "Sandbox.Connection.Filter",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is the specified <span style=\"color: #4EC9B0;\">Connection</span> a valid recipient?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\Channel\\Connection.Filter.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is the specified <see cref=\"T:Sandbox.Connection\" /> a valid recipient?"
+          },
+          "DocId": "M:Sandbox.Connection.Filter.IsRecipient(Sandbox.Connection)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Sandbox.Connection.Filter.FilterType"
+            },
+            {
+              "Name": "predicate",
+              "Type": "System.Predicate`1<Sandbox.Connection>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.Filter.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Filter..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Connection.Filter",
+          "DocId": "M:Sandbox.Connection.Filter.#ctor(Sandbox.Connection.Filter.FilterType,System.Predicate`1{Sandbox.Connection})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Sandbox.Connection.Filter.FilterType"
+            },
+            {
+              "Name": "connections",
+              "Type": "System.Collections.Generic.IEnumerable`1<Sandbox.Connection>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/Channel/Connection.Filter.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Connection.Filter..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Connection.Filter",
+          "DocId": "M:Sandbox.Connection.Filter.#ctor(Sandbox.Connection.Filter.FilterType,System.Collections.Generic.IEnumerable`1{Sandbox.Connection})"
+        }
+      ],
+      "Properties": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Connection.Filter",
+      "Name": "Filter",
+      "DeclaringType": "Sandbox.Connection",
+      "DocId": "T:Sandbox.Connection.Filter"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Connection.Filter.FilterType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Connection.Filter.FilterType.Include",
+          "Name": "Include",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only include the connections in the filter when sending a message."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only include the connections in the filter when sending a message."
+          },
+          "DocId": "F:Sandbox.Connection.Filter.FilterType.Include"
+        },
+        {
+          "FieldType": "Sandbox.Connection.Filter.FilterType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Connection.Filter.FilterType.Exclude",
+          "Name": "Exclude",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Exclude the connections in the filter when sending a message."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Exclude the connections in the filter when sending a message."
+          },
+          "DocId": "F:Sandbox.Connection.Filter.FilterType.Exclude"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Connection.Filter.FilterType",
+      "Name": "FilterType",
+      "DeclaringType": "Sandbox.Connection/Filter",
+      "DocId": "T:Sandbox.Connection.Filter.FilterType"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.NetFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.NetFlags.Unreliable",
+          "Name": "Unreliable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Message will be sent unreliably. It may not arrive and it may be received out of order. But chances are that it will arrive on time and everything will be fine. This is good for sending position updates, or spawning effects. This is the fastest way to send a message. It is also the cheapest."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Message will be sent unreliably. It may not arrive and it may be received out of order. But chances\nare that it will arrive on time and everything will be fine. This is good for sending position updates,\nor spawning effects. This is the fastest way to send a message. It is also the cheapest."
+          },
+          "DocId": "F:Sandbox.NetFlags.Unreliable"
+        },
+        {
+          "FieldType": "Sandbox.NetFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.NetFlags.Reliable",
+          "Name": "Reliable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Message will be sent reliably. Multiple attempts will be made until the recipient has received it. Use this for things like chat messages, or important events. This is the slowest way to send a message. It is also the most expensive."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Message will be sent reliably. Multiple attempts will be made until the recipient has received it. Use this for things\nlike chat messages, or important events. This is the slowest way to send a message. It is also the most expensive."
+          },
+          "DocId": "F:Sandbox.NetFlags.Reliable"
+        },
+        {
+          "FieldType": "Sandbox.NetFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.NetFlags.SendImmediate",
+          "Name": "SendImmediate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Message will not be grouped up with other messages, and will be sent immediately. This is most useful for things like streaming voice data, where packets need to stream in real-time, rather than arriving with a bunch of other packets."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Message will not be grouped up with other messages, and will be sent immediately. This is most useful for things like \nstreaming voice data, where packets need to stream in real-time, rather than arriving with a bunch of other packets."
+          },
+          "DocId": "F:Sandbox.NetFlags.SendImmediate"
+        },
+        {
+          "FieldType": "Sandbox.NetFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.NetFlags.DiscardOnDelay",
+          "Name": "DiscardOnDelay",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Message will be dropped if it can't be sent quickly. Only applicable to unreliable messages."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Message will be dropped if it can't be sent quickly. Only applicable to unreliable messages."
+          },
+          "DocId": "F:Sandbox.NetFlags.DiscardOnDelay"
+        },
+        {
+          "FieldType": "Sandbox.NetFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.NetFlags.HostOnly",
+          "Name": "HostOnly",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only the host may call this action"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only the host may call this action"
+          },
+          "DocId": "F:Sandbox.NetFlags.HostOnly"
+        },
+        {
+          "FieldType": "Sandbox.NetFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.NetFlags.OwnerOnly",
+          "Name": "OwnerOnly",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only the owner may call this action"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only the owner may call this action"
+          },
+          "DocId": "F:Sandbox.NetFlags.OwnerOnly"
+        },
+        {
+          "FieldType": "Sandbox.NetFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.NetFlags.UnreliableNoDelay",
+          "Name": "UnreliableNoDelay",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Message will be sent unreliably, not grouped up with other messages and will be dropped if it can't be sent quickly."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Message will be sent unreliably, not grouped up with other messages and will be dropped if it can't be sent quickly."
+          },
+          "DocId": "F:Sandbox.NetFlags.UnreliableNoDelay"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.NetFlags",
+      "Name": "NetFlags",
+      "Attributes": [
+        {
+          "FullName": "System.FlagsAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.NetFlags"
+    }
+  ],
+  "_metadata": {
+    "chunk": 146,
+    "items_count": 4
+  }
+}

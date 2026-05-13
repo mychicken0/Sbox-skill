@@ -1,0 +1,1511 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Graphics.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.PrimitiveType.Points",
+          "Name": "Points",
+          "DocId": "F:Sandbox.Graphics.PrimitiveType.Points"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.PrimitiveType.Lines",
+          "Name": "Lines",
+          "DocId": "F:Sandbox.Graphics.PrimitiveType.Lines"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.PrimitiveType.LinesWithAdjacency",
+          "Name": "LinesWithAdjacency",
+          "DocId": "F:Sandbox.Graphics.PrimitiveType.LinesWithAdjacency"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.PrimitiveType.LineStrip",
+          "Name": "LineStrip",
+          "DocId": "F:Sandbox.Graphics.PrimitiveType.LineStrip"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.PrimitiveType.LineStripWithAdjacency",
+          "Name": "LineStripWithAdjacency",
+          "DocId": "F:Sandbox.Graphics.PrimitiveType.LineStripWithAdjacency"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.PrimitiveType.Triangles",
+          "Name": "Triangles",
+          "DocId": "F:Sandbox.Graphics.PrimitiveType.Triangles"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.PrimitiveType.TrianglesWithAdjacency",
+          "Name": "TrianglesWithAdjacency",
+          "DocId": "F:Sandbox.Graphics.PrimitiveType.TrianglesWithAdjacency"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.PrimitiveType.TriangleStrip",
+          "Name": "TriangleStrip",
+          "DocId": "F:Sandbox.Graphics.PrimitiveType.TriangleStrip"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.PrimitiveType.TriangleStripWithAdjacency",
+          "Name": "TriangleStripWithAdjacency",
+          "DocId": "F:Sandbox.Graphics.PrimitiveType.TriangleStripWithAdjacency"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Graphics.PrimitiveType",
+      "Name": "PrimitiveType",
+      "DeclaringType": "Sandbox.Graphics",
+      "DocId": "T:Sandbox.Graphics.PrimitiveType"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Graphics.DownsampleMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DownsampleMethod.Box",
+          "Name": "Box",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Uses a box filter to downsample the texture"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Uses a box filter to downsample the texture"
+          },
+          "DocId": "F:Sandbox.Graphics.DownsampleMethod.Box"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.DownsampleMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DownsampleMethod.GaussianBlur",
+          "Name": "GaussianBlur",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Uses a gaussian filter to downsample the texture"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Uses a gaussian filter to downsample the texture"
+          },
+          "DocId": "F:Sandbox.Graphics.DownsampleMethod.GaussianBlur"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.DownsampleMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DownsampleMethod.GaussianBorder",
+          "Name": "GaussianBorder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Uses a gaussian filter to downsample the texture, applies border to not oversample edges"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Uses a gaussian filter to downsample the texture, applies border to not oversample edges"
+          },
+          "DocId": "F:Sandbox.Graphics.DownsampleMethod.GaussianBorder"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.DownsampleMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DownsampleMethod.Max",
+          "Name": "Max",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Downsamples the texture using a max operator filter ( brightest pixel )"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Downsamples the texture using a max operator filter ( brightest pixel )"
+          },
+          "DocId": "F:Sandbox.Graphics.DownsampleMethod.Max"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.DownsampleMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DownsampleMethod.Min",
+          "Name": "Min",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Downsamples the texture using a min operator filter ( darkest pixel )"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Downsamples the texture using a min operator filter ( darkest pixel )"
+          },
+          "DocId": "F:Sandbox.Graphics.DownsampleMethod.Min"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.DownsampleMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DownsampleMethod.MinMax",
+          "Name": "MinMax",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Downsamples the texture in red and green channels using a Min/Max filter ( darkest and brightest pixel )"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Downsamples the texture in red and green channels using a Min/Max filter ( darkest and brightest pixel )"
+          },
+          "DocId": "F:Sandbox.Graphics.DownsampleMethod.MinMax"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.DownsampleMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DownsampleMethod.Default",
+          "Name": "Default",
+          "DocId": "F:Sandbox.Graphics.DownsampleMethod.Default"
+        },
+        {
+          "FieldType": "Sandbox.Graphics.DownsampleMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DownsampleMethod.None",
+          "Name": "None",
+          "DocId": "F:Sandbox.Graphics.DownsampleMethod.None"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Graphics.DownsampleMethod",
+      "Name": "DownsampleMethod",
+      "DeclaringType": "Sandbox.Graphics",
+      "Documentation": {
+        "Summary": "Which method to use when downsampling a texture"
+      },
+      "DocId": "T:Sandbox.Graphics.DownsampleMethod"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.ResetAll",
+          "Name": "ResetAll",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reset all morphs to their default values."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reset all morphs to their default values."
+          },
+          "DocId": "M:Sandbox.MorphCollection.ResetAll"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "fadeTime",
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.ResetAll",
+          "Name": "ResetAll",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reset all morphs to their default values."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reset all morphs to their default values."
+          },
+          "DocId": "M:Sandbox.MorphCollection.ResetAll(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reset morph number i to its default value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reset morph number i to its default value."
+          },
+          "DocId": "M:Sandbox.MorphCollection.Reset(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "fadeTime",
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reset morph number i to its default value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reset morph number i to its default value."
+          },
+          "DocId": "M:Sandbox.MorphCollection.Reset(System.Int32,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reset named morph to its default value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reset named morph to its default value."
+          },
+          "DocId": "M:Sandbox.MorphCollection.Reset(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "fadeTime",
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reset named morph to its default value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "36"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reset named morph to its default value."
+          },
+          "DocId": "M:Sandbox.MorphCollection.Reset(System.String,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "weight",
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set indexed morph to this value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set indexed morph to this value."
+          },
+          "DocId": "M:Sandbox.MorphCollection.Set(System.Int32,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "weight",
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set named morph to this value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "46"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set named morph to this value."
+          },
+          "DocId": "M:Sandbox.MorphCollection.Set(System.String,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "weight",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "fadeTime",
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set indexed morph to this value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "51"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set indexed morph to this value."
+          },
+          "DocId": "M:Sandbox.MorphCollection.Set(System.Int32,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "weight",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "fadeTime",
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set named morph to this value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set named morph to this value."
+          },
+          "DocId": "M:Sandbox.MorphCollection.Set(System.String,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get indexed morph value (Note: Currently, this only gets the override morph value)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "61"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get indexed morph value (Note: Currently, this only gets the override morph value)"
+          },
+          "DocId": "M:Sandbox.MorphCollection.Get(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get named morph value (Note: Currently, this only gets the override morph value)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "66"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get named morph value (Note: Currently, this only gets the override morph value)"
+          },
+          "DocId": "M:Sandbox.MorphCollection.Get(System.String)"
+        },
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.GetName",
+          "Name": "GetName",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Retrieve name of a morph at given index."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "71"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Retrieve name of a morph at given index."
+          },
+          "DocId": "M:Sandbox.MorphCollection.GetName(System.Int32)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.MorphCollection..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.MorphCollection",
+          "DocId": "M:Sandbox.MorphCollection.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.MorphCollection.Count",
+          "Name": "Count",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Amount of morphs."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\MorphCollection.cs",
+                "76"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Amount of morphs."
+          },
+          "DocId": "P:Sandbox.MorphCollection.Count"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MorphCollection",
+      "Name": "MorphCollection",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Used to access and manipulate morphs."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\MorphCollection.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Used to access and manipulate morphs."
+      },
+      "DocId": "T:Sandbox.MorphCollection"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 187
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.MusicPlayer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "184"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.MusicPlayer.Dispose"
+        },
+        {
+          "ReturnType": "Sandbox.MusicPlayer",
+          "Parameters": [
+            {
+              "Name": "url",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 203
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.MusicPlayer.PlayUrl",
+          "Name": "PlayUrl",
+          "DeclaringType": "Sandbox.MusicPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Plays a music stream from a URL."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "200"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Plays a music stream from a URL."
+          },
+          "DocId": "M:Sandbox.MusicPlayer.PlayUrl(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.MusicPlayer",
+          "Parameters": [
+            {
+              "Name": "filesystem",
+              "Type": "Sandbox.BaseFileSystem"
+            },
+            {
+              "Name": "path",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 213
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.MusicPlayer.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.MusicPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Plays a music file from a relative path."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "210"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Plays a music file from a relative path."
+          },
+          "DocId": "M:Sandbox.MusicPlayer.Play(Sandbox.BaseFileSystem,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 222
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Stop",
+          "Name": "Stop",
+          "DeclaringType": "Sandbox.MusicPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Stops audio playback."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "220"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Stops audio playback."
+          },
+          "DocId": "M:Sandbox.MusicPlayer.Stop"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "time",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 230
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Seek",
+          "Name": "Seek",
+          "DeclaringType": "Sandbox.MusicPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the playback position to a specified time in the audio, given in seconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "228"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the playback position to a specified time in the audio, given in seconds."
+          },
+          "DocId": "M:Sandbox.MusicPlayer.Seek(System.Single)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.SampleRate",
+          "Name": "SampleRate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sample rate of the audio being played."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sample rate of the audio being played."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.SampleRate"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Channels",
+          "Name": "Channels",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Number of channels of the audio being played."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of channels of the audio being played."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.Channels"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Duration",
+          "Name": "Duration",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the total duration of the video in seconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the total duration of the video in seconds."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.Duration"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.PlaybackTime",
+          "Name": "PlaybackTime",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the current playback time in seconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the current playback time in seconds."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.PlaybackTime"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.OnFinished",
+          "Name": "OnFinished",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Invoked when the audio has finished playing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Invoked when the audio has finished playing."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.OnFinished"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.OnRepeated",
+          "Name": "OnRepeated",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Invoked when the audio has repeated."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Invoked when the audio has repeated."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.OnRepeated"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.ListenLocal",
+          "Name": "ListenLocal",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Place the listener at 0,0,0 facing 1,0,0."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Place the listener at 0,0,0 facing 1,0,0."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.ListenLocal"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Position",
+          "Name": "Position",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Position of the sound."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position of the sound."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.Position"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Paused",
+          "Name": "Paused",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Pause playback of audio."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "68"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Pause playback of audio."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.Paused"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Repeat",
+          "Name": "Repeat",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Audio will repeat when reaching the end."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Audio will repeat when reaching the end."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.Repeat"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Volume",
+          "Name": "Volume",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Change the volume of this music."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "96"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Change the volume of this music."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.Volume"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 109
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.LipSync",
+          "Name": "LipSync",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables lipsync processing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "105"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables lipsync processing."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.LipSync"
+        },
+        {
+          "PropertyType": "Sandbox.Audio.Mixer",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.TargetMixer",
+          "Name": "TargetMixer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Which mixer do we want to write to"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "114"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Which mixer do we want to write to"
+          },
+          "DocId": "P:Sandbox.MusicPlayer.TargetMixer"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Distance",
+          "Name": "Distance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "121"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.MusicPlayer.Distance"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 132
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Falloff",
+          "Name": "Falloff",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "128"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.MusicPlayer.Falloff"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<System.Single>",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Visemes",
+          "Name": "Visemes",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of 15 lipsync viseme weights. Requires <span style=\"color: #4EC9B0;\">MusicPlayer</span>.<span style=\"color: #DCDCDC;\">LipSync</span> to be enabled."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "137"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of 15 lipsync viseme weights. Requires <see cref=\"P:Sandbox.MusicPlayer.LipSync\" /> to be enabled."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.Visemes"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 147
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Title",
+          "Name": "Title",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get title of the track."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "142"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get title of the track."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.Title"
+        },
+        {
+          "PropertyType": "System.ReadOnlySpan`1<System.Single>",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Spectrum",
+          "Name": "Spectrum",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "512 FFT magnitudes used for audio visualization."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "154"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "512 FFT magnitudes used for audio visualization."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.Spectrum"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/MusicPlayer.cs",
+            "Line": 160
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MusicPlayer.Amplitude",
+          "Name": "Amplitude",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Approximate measure of audio loudness."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+                "159"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Approximate measure of audio loudness."
+          },
+          "DocId": "P:Sandbox.MusicPlayer.Amplitude"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MusicPlayer",
+      "Name": "MusicPlayer",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Enables music playback. Use this for music, not for playing game sounds."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Multimedia\\MusicPlayer.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Enables music playback. Use this for music, not for playing game sounds."
+      },
+      "DocId": "T:Sandbox.MusicPlayer"
+    }
+  ],
+  "_metadata": {
+    "chunk": 156,
+    "items_count": 4
+  }
+}

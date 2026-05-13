@@ -1,0 +1,1513 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "fadeTime",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 251
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Stop",
+          "Name": "Stop",
+          "DeclaringType": "Sandbox.SoundHandle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "248"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SoundHandle.Stop(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 320
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.SoundHandle.Finalize",
+          "Name": "Finalize",
+          "DeclaringType": "Sandbox.SoundHandle",
+          "DocId": "M:Sandbox.SoundHandle.Finalize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 391
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.SoundHandle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "388"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SoundHandle.Dispose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 448
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Update",
+          "Name": "Update",
+          "DeclaringType": "Sandbox.SoundHandle",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "This no longer needs to exist"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called to push changes to a sound immediately, rather than waiting for the next tick. You should call this if you make changes to a sound."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "443"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called to push changes to a sound immediately, rather than waiting for the next tick.\nYou should call this if you make changes to a sound."
+          },
+          "DocId": "M:Sandbox.SoundHandle.Update"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handles",
+              "Type": "System.Collections.Generic.List`1<Sandbox.SoundHandle>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 563
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SoundHandle.GetActive",
+          "Name": "GetActive",
+          "DeclaringType": "Sandbox.SoundHandle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "560"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SoundHandle.GetActive(System.Collections.Generic.List`1{Sandbox.SoundHandle})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/SoundHandle.Follow.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.ClearParent",
+          "Name": "ClearParent",
+          "DeclaringType": "Sandbox.SoundHandle",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Just use Parent property directly"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clear our parent - stop following"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.Follow.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clear our parent - stop following"
+          },
+          "DocId": "M:Sandbox.SoundHandle.ClearParent"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.GameObject"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/SoundHandle.Follow.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.SetParent",
+          "Name": "SetParent",
+          "DeclaringType": "Sandbox.SoundHandle",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Just use Parent property directly"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tell the SoundHandle to follow this GameObject's position"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.Follow.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tell the SoundHandle to follow this GameObject's position"
+          },
+          "DocId": "M:Sandbox.SoundHandle.SetParent(Sandbox.GameObject)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Position",
+          "Name": "Position",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Position of the sound."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position of the sound."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Position"
+        },
+        {
+          "PropertyType": "Rotation",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Rotation",
+          "Name": "Rotation",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The direction the sound is facing"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "65"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The direction the sound is facing"
+          },
+          "DocId": "P:Sandbox.SoundHandle.Rotation"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Transform",
+          "Name": "Transform",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This sound's transform"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "74"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This sound's transform"
+          },
+          "DocId": "P:Sandbox.SoundHandle.Transform"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Volume",
+          "Name": "Volume",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Volume of the sound."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "83"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Volume of the sound."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Volume"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A debug name to help identify the sound"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "88"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A debug name to help identify the sound"
+          },
+          "DocId": "P:Sandbox.SoundHandle.Name"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 95
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.SpacialBlend",
+          "Name": "SpacialBlend",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How 3d the sound should be. 0 means no 3d, 1 means fully"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "93"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How 3d the sound should be. 0 means no 3d, 1 means fully"
+          },
+          "DocId": "P:Sandbox.SoundHandle.SpacialBlend"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Distance",
+          "Name": "Distance",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many units the sound can be heard from."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "99"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many units the sound can be heard from."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Distance"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Falloff",
+          "Name": "Falloff",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The falloff curve for the sound."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "104"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The falloff curve for the sound."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Falloff"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 110
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Fadeout",
+          "Name": "Fadeout",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The fadeout curve for when the sound stops."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "109"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The fadeout curve for when the sound stops."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Fadeout"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Fadein",
+          "Name": "Fadein",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The fadein curve for when the sound starts."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "114"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The fadein curve for when the sound starts."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Fadein"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Decibels",
+          "Name": "Decibels",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "This is not used anymore"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "117"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SoundHandle.Decibels"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Pitch",
+          "Name": "Pitch",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Pitch of the sound."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "123"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Pitch of the sound."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Pitch"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.IsPlaying",
+          "Name": "IsPlaying",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the sound is currently playing or not."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "128"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the sound is currently playing or not."
+          },
+          "DocId": "P:Sandbox.SoundHandle.IsPlaying"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 134
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Paused",
+          "Name": "Paused",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the sound is currently paused or not."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "133"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the sound is currently paused or not."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Paused"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 139
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Finished",
+          "Name": "Finished",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sound is done"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "138"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sound is done"
+          },
+          "DocId": "P:Sandbox.SoundHandle.Finished"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 145
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Reflections",
+          "Name": "Reflections",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enable the sound reflecting off surfaces"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "143"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enable the sound reflecting off surfaces"
+          },
+          "DocId": "P:Sandbox.SoundHandle.Reflections"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 150
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Occlusion",
+          "Name": "Occlusion",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allow this sound to be occluded by geometry etc"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "149"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allow this sound to be occluded by geometry etc"
+          },
+          "DocId": "P:Sandbox.SoundHandle.Occlusion"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.OcclusionRadius",
+          "Name": "OcclusionRadius",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The radius of this sound's occlusion, allow for partial occlusion"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "154"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The radius of this sound's occlusion, allow for partial occlusion"
+          },
+          "DocId": "P:Sandbox.SoundHandle.OcclusionRadius"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 160
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.DistanceAttenuation",
+          "Name": "DistanceAttenuation",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should the sound fade out over distance"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "159"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should the sound fade out over distance"
+          },
+          "DocId": "P:Sandbox.SoundHandle.DistanceAttenuation"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 165
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.AirAbsorption",
+          "Name": "AirAbsorption",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should the sound get absorbed by air, so it sounds different at distance"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "164"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should the sound get absorbed by air, so it sounds different at distance"
+          },
+          "DocId": "P:Sandbox.SoundHandle.AirAbsorption"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 170
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Transmission",
+          "Name": "Transmission",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should the sound transmit through walls, doors etc"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "169"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should the sound transmit through walls, doors etc"
+          },
+          "DocId": "P:Sandbox.SoundHandle.Transmission"
+        },
+        {
+          "PropertyType": "Sandbox.Audio.Mixer",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 175
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.TargetMixer",
+          "Name": "TargetMixer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Which mixer do we want to write to"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "174"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Which mixer do we want to write to"
+          },
+          "DocId": "P:Sandbox.SoundHandle.TargetMixer"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 186
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.SampleRate",
+          "Name": "SampleRate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many samples per second?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "185"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many samples per second?"
+          },
+          "DocId": "P:Sandbox.SoundHandle.SampleRate"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 220
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.IsStopped",
+          "Name": "IsStopped",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if the sound has been stopped"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "215"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if the sound has been stopped"
+          },
+          "DocId": "P:Sandbox.SoundHandle.IsStopped"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 226
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.ElapsedTime",
+          "Name": "ElapsedTime",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use Time instead"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "224"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SoundHandle.ElapsedTime"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 243
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Time",
+          "Name": "Time",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The current time of the playing sound in seconds. Note: for some formats seeking may be expensive, and some may not support it at all."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "231"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The current time of the playing sound in seconds.\nNote: for some formats seeking may be expensive, and some may not support it at all."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Time"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 267
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.ListenLocal",
+          "Name": "ListenLocal",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Place the listener at 0,0,0 facing 1,0,0."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "266"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Place the listener at 0,0,0 facing 1,0,0."
+          },
+          "DocId": "P:Sandbox.SoundHandle.ListenLocal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 273
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Loopback",
+          "Name": "Loopback",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true, then this sound won't be played unless voice_loopback is 1. The assumption is that it's the local user's voice. Amplitude and visme data will still be available!"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "272"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true, then this sound won't be played unless voice_loopback is 1. The assumption is that it's the \nlocal user's voice. Amplitude and visme data will still be available!"
+          },
+          "DocId": "P:Sandbox.SoundHandle.Loopback"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 278
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Amplitude",
+          "Name": "Amplitude",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Measure of audio loudness."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "277"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Measure of audio loudness."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Amplitude"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.cs",
+            "Line": 367
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.cs",
+                "366"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SoundHandle.IsValid"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.Follow.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.FollowParent",
+          "Name": "FollowParent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Update our position every frame relative to our parent"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.Follow.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update our position every frame relative to our parent"
+          },
+          "DocId": "P:Sandbox.SoundHandle.FollowParent"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.Follow.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.LocalTransform",
+          "Name": "LocalTransform",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If we're following a parent, our position will be this relative to them."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.Follow.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If we're following a parent, our position will be this relative to them."
+          },
+          "DocId": "P:Sandbox.SoundHandle.LocalTransform"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.Follow.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.Parent",
+          "Name": "Parent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If set with a parent and <cref></cref> is true, we will update our position to match the parent's world position. You can use <cref></cref> to set an offset from the parent's position. Setting a parent also allows you to use GameObject.StopAllSounds on the parent to stop all sounds that are following it. This is set automatically when calling <cref></cref> on a GameObject, but you can set it manually if you want to change the parent of an existing sound handle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.Follow.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If set with a parent and <cref name=\"FollowParent\" /> is true, we will update our position to match the parent's world position. You can use <cref name=\"LocalTransform\" /> to set an offset from the parent's position.\nSetting a parent also allows you to use GameObject.StopAllSounds on the parent to stop all sounds that are following it.\nThis is set automatically when calling <cref name=\"GameObject.PlaySound\" /> on a GameObject, but you can set it manually if you want to change the parent of an existing sound handle."
+          },
+          "DocId": "P:Sandbox.SoundHandle.Parent"
+        },
+        {
+          "PropertyType": "Sandbox.SoundHandle.LipSyncAccessor",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.LipSync.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.LipSync",
+          "Name": "LipSync",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access lipsync processing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.LipSync.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access lipsync processing."
+          },
+          "DocId": "P:Sandbox.SoundHandle.LipSync"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SoundHandle",
+      "Name": "SoundHandle",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A handle to a sound that is currently playing. You can use this to control the sound's position, volume, pitch etc."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\SoundHandle.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A handle to a sound that is currently playing. You can use this to control the sound's position, volume, pitch etc."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\SoundHandle.Follow.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A handle to a sound that is currently playing. You can use this to control the sound's position, volume, pitch etc."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\SoundHandle.LipSync.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A handle to a sound that is currently playing. You can use this to control the sound's position, volume, pitch etc."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\SoundHandle.Source.cs",
+            "5"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A handle to a sound that is currently playing. You can use this to control the sound's position, volume, pitch etc."
+      },
+      "DocId": "T:Sandbox.SoundHandle"
+    },
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<System.Single>",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.LipSync.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.LipSyncAccessor.Visemes",
+          "Name": "Visemes",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of 15 lipsync viseme weights. Requires Sandbox.SoundHandle.LipSyncAccessor.Enabled to be true."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.LipSync.cs",
+                "17"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of 15 lipsync viseme weights. Requires <see cref=\"P:Sandbox.SoundHandle.LipSyncAccessor.Enabled\" /> to be true."
+          },
+          "DocId": "P:Sandbox.SoundHandle.LipSyncAccessor.Visemes"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.LipSync.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.LipSyncAccessor.FrameNumber",
+          "Name": "FrameNumber",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Count from start of recognition."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.LipSync.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Count from start of recognition."
+          },
+          "DocId": "P:Sandbox.SoundHandle.LipSyncAccessor.FrameNumber"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.LipSync.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.LipSyncAccessor.FrameDelay",
+          "Name": "FrameDelay",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Frame delay in milliseconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.LipSync.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Frame delay in milliseconds."
+          },
+          "DocId": "P:Sandbox.SoundHandle.LipSyncAccessor.FrameDelay"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.LipSync.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.LipSyncAccessor.LaughterScore",
+          "Name": "LaughterScore",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Laughter score for the current audio frame."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.LipSync.cs",
+                "33"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Laughter score for the current audio frame."
+          },
+          "DocId": "P:Sandbox.SoundHandle.LipSyncAccessor.LaughterScore"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/SoundHandle.LipSync.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundHandle.LipSyncAccessor.Enabled",
+          "Name": "Enabled",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables lipsync processing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\SoundHandle.LipSync.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables lipsync processing."
+          },
+          "DocId": "P:Sandbox.SoundHandle.LipSyncAccessor.Enabled"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SoundHandle.LipSyncAccessor",
+      "Name": "LipSyncAccessor",
+      "DeclaringType": "Sandbox.SoundHandle",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\SoundHandle.LipSync.cs",
+            "12"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.SoundHandle.LipSyncAccessor"
+    }
+  ],
+  "_metadata": {
+    "chunk": 137,
+    "items_count": 2
+  }
+}

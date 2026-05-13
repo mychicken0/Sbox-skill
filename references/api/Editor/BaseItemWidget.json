@@ -1,0 +1,1723 @@
+{
+  "Types": [
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.BaseScrollWidget",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "items",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.Object>"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 156
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.SetItems",
+          "Name": "SetItems",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.SetItems(System.Collections.Generic.IEnumerable`1{System.Object})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "items",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.Object>"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 171
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.AddItems",
+          "Name": "AddItems",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.AddItems(System.Collections.Generic.IEnumerable`1{System.Object})"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 184
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.AddItem",
+          "Name": "AddItem",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Add given item to this widget."
+          },
+          "DocId": "M:Editor.BaseItemWidget.AddItem``1(``0)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 196
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.RemoveItem",
+          "Name": "RemoveItem",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Remove given item from this widget."
+          },
+          "DocId": "M:Editor.BaseItemWidget.RemoveItem(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 209
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Remove all items."
+          },
+          "DocId": "M:Editor.BaseItemWidget.Clear"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "dirtyObject",
+              "Type": "System.Object",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 221
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.Dirty",
+          "Name": "Dirty",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.Dirty(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 226
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnLayoutChanged",
+          "Name": "OnLayoutChanged",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnLayoutChanged"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 231
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnScrollChanged",
+          "Name": "OnScrollChanged",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnScrollChanged"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 238
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnResize",
+          "Name": "OnResize",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnResize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 247
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnPaint"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "Editor.VirtualWidget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 277
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.PaintItemDebug",
+          "Name": "PaintItemDebug",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.PaintItemDebug(Editor.VirtualWidget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "Editor.VirtualWidget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 284
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.PaintItem",
+          "Name": "PaintItem",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.PaintItem(Editor.VirtualWidget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 308
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnMouseMove",
+          "Name": "OnMouseMove",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnMouseMove(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "Editor.VirtualWidget",
+          "Parameters": [
+            {
+              "Name": "localPosition",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 317
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.GetItemAt",
+          "Name": "GetItemAt",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Get the virtual item at this local position."
+          },
+          "DocId": "M:Editor.BaseItemWidget.GetItemAt(Vector2)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "oldHover",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "newHover",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 375
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnHoverChanged",
+          "Name": "OnHoverChanged",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Hover has changed, neither of these objects are guaranteed to be non null."
+          },
+          "DocId": "M:Editor.BaseItemWidget.OnHoverChanged(System.Object,System.Object)"
+        },
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 390
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.GetTooltip",
+          "Name": "GetTooltip",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Called to retrieve a tooltip for given item."
+          },
+          "DocId": "M:Editor.BaseItemWidget.GetTooltip(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 397
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnMousePress",
+          "Name": "OnMousePress",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnMousePress(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "pressedItem",
+              "Type": "Editor.VirtualWidget"
+            },
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 451
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnItemPressed",
+          "Name": "OnItemPressed",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Allows over-riding mouse press on an item, without click or selection.\nReturn true to allow default behavior."
+          },
+          "DocId": "M:Editor.BaseItemWidget.OnItemPressed(Editor.VirtualWidget,Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "pressedItem",
+              "Type": "Editor.VirtualWidget"
+            },
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 459
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnItemContextMenu",
+          "Name": "OnItemContextMenu",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "The item has been right clicked"
+          },
+          "DocId": "M:Editor.BaseItemWidget.OnItemContextMenu(Editor.VirtualWidget,Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 464
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.OnDragLeave",
+          "Name": "OnDragLeave",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnDragLeave"
+        },
+        {
+          "ReturnType": "Editor.VirtualWidget",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "ev",
+              "Type": "Editor.Widget.DragEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 476
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.GetDragItem",
+          "Name": "GetDragItem",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Get the virtual item to use as a drop target for a given drag event"
+          },
+          "DocId": "M:Editor.BaseItemWidget.GetDragItem(Editor.Widget.DragEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "ev",
+              "Type": "Editor.Widget.DragEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 516
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.OnDragHover",
+          "Name": "OnDragHover",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnDragHover(Editor.Widget.DragEvent)"
+        },
+        {
+          "ReturnType": "Editor.DropAction",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "ev",
+              "Type": "Editor.BaseItemWidget.ItemDragEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 541
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnBodyDragDrop",
+          "Name": "OnBodyDragDrop",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Called when a drag drop is being dropped onto the canvas"
+          },
+          "DocId": "M:Editor.BaseItemWidget.OnBodyDragDrop(Editor.BaseItemWidget.ItemDragEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "ev",
+              "Type": "Editor.Widget.DragEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 546
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.OnDragDrop",
+          "Name": "OnDragDrop",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnDragDrop(Editor.Widget.DragEvent)"
+        },
+        {
+          "ReturnType": "Editor.VirtualWidget",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 580
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.FindVirtualWidget",
+          "Name": "FindVirtualWidget",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Given an object, try to find the virtual widget. This can of course return null if the item isn't visible"
+          },
+          "DocId": "M:Editor.BaseItemWidget.FindVirtualWidget(System.Object)"
+        },
+        {
+          "ReturnType": "Editor.DropAction",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.BaseItemWidget.ItemDragEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 598
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnItemDrag",
+          "Name": "OnItemDrag",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Called when a dragged item is being hovered over this widget.\nThis is the place to make drag and drop previews."
+          },
+          "DocId": "M:Editor.BaseItemWidget.OnItemDrag(Editor.BaseItemWidget.ItemDragEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "ev",
+              "Type": "Editor.Widget.DragEvent"
+            },
+            {
+              "Name": "item",
+              "Type": "Editor.VirtualWidget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 620
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnDragHoverItem",
+          "Name": "OnDragHoverItem",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Called when a dragged item is being hovered over this widget.\nThis is the place to make drag and drop previews."
+          },
+          "DocId": "M:Editor.BaseItemWidget.OnDragHoverItem(Editor.Widget.DragEvent,Editor.VirtualWidget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "ev",
+              "Type": "Editor.Widget.DragEvent"
+            },
+            {
+              "Name": "item",
+              "Type": "Editor.VirtualWidget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 628
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnDropOnItem",
+          "Name": "OnDropOnItem",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Called when an item is drag and dropped onto this widget."
+          },
+          "DocId": "M:Editor.BaseItemWidget.OnDropOnItem(Editor.Widget.DragEvent,Editor.VirtualWidget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 632
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnDragStart",
+          "Name": "OnDragStart",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnDragStart"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "Editor.VirtualWidget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 665
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnDragItem",
+          "Name": "OnDragItem",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Called when we start to drag an item."
+          },
+          "DocId": "M:Editor.BaseItemWidget.OnDragItem(Editor.VirtualWidget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 670
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnMouseReleased",
+          "Name": "OnMouseReleased",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnMouseReleased(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 718
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnItemActivated",
+          "Name": "OnItemActivated",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnItemActivated(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 723
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnDoubleClick",
+          "Name": "OnDoubleClick",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnDoubleClick(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "positions",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 735
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.SelectMoveColumn",
+          "Name": "SelectMoveColumn",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.SelectMoveColumn(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "positions",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 740
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.SelectMoveRow",
+          "Name": "SelectMoveRow",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.SelectMoveRow(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.KeyEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 746
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnKeyPress",
+          "Name": "OnKeyPress",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnKeyPress(Editor.KeyEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.KeyEvent"
+            },
+            {
+              "Name": "item",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 799
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnKeyPressOnItem",
+          "Name": "OnKeyPressOnItem",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "A key has been pressed on this selected item."
+          },
+          "DocId": "M:Editor.BaseItemWidget.OnKeyPressOnItem(Editor.KeyEvent,System.Object)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 806
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.ItemIndex",
+          "Name": "ItemIndex",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Returns the index of given item."
+          },
+          "DocId": "M:Editor.BaseItemWidget.ItemIndex(System.Object)"
+        },
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 814
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.GetAtIndex",
+          "Name": "GetAtIndex",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Returns the item at given index, or null."
+          },
+          "DocId": "M:Editor.BaseItemWidget.GetAtIndex(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 824
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ScrollTo",
+          "Name": "ScrollTo",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Ensure that given item is in view, scrolling to it if necessary."
+          },
+          "DocId": "M:Editor.BaseItemWidget.ScrollTo(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "targetPosition",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "height",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 833
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ScrollTo",
+          "Name": "ScrollTo",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Ensure that given position is in view, scrolling to it if necessary.",
+            "Params": {
+              "targetPosition": "Target vertical position to make sure is in view.",
+              "height": "Height of a potential item/element we want to make sure is in view."
+            }
+          },
+          "DocId": "M:Editor.BaseItemWidget.ScrollTo(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 864
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.UpdateIfDirty",
+          "Name": "UpdateIfDirty",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Attributes": [
+            {
+              "FullName": "Editor.EditorEvent.FrameAttribute"
+            }
+          ],
+          "DocId": "M:Editor.BaseItemWidget.UpdateIfDirty"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 929
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Rebuild the panel layout."
+          },
+          "DocId": "M:Editor.BaseItemWidget.Rebuild"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 934
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.OnDestroyed",
+          "Name": "OnDestroyed",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnDestroyed"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 966
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnSelectionAdded",
+          "Name": "OnSelectionAdded",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnSelectionAdded(System.Object)"
+        },
+        {
+          "ReturnType": "System.Object",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 978
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.ResolveObject",
+          "Name": "ResolveObject",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "For derived classes where the object is wrapped in another class (i.e. TreeView)"
+          },
+          "DocId": "M:Editor.BaseItemWidget.ResolveObject(System.Object)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 987
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.IsSelected",
+          "Name": "IsSelected",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Return true if this item is selected."
+          },
+          "DocId": "M:Editor.BaseItemWidget.IsSelected(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "add",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "skipEvents",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 998
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.SelectItem",
+          "Name": "SelectItem",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Select given item.",
+            "Params": {
+              "obj": "Item to select.",
+              "add": "Whether to add the item to selection, or replace current selection.",
+              "skipEvents": "Do not invoke events."
+            }
+          },
+          "DocId": "M:Editor.BaseItemWidget.SelectItem(System.Object,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "items",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.Object>"
+            },
+            {
+              "Name": "add",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "skipEvents",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 1022
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.SelectItems",
+          "Name": "SelectItems",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.SelectItems(System.Collections.Generic.IEnumerable`1{System.Object},System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "skipEvents",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 1052
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.UnselectItem",
+          "Name": "UnselectItem",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Unselect given item.",
+            "Params": {
+              "obj": "Item to deselect.",
+              "skipEvents": "Do not invoke events."
+            }
+          },
+          "DocId": "M:Editor.BaseItemWidget.UnselectItem(System.Object,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "skipEvents",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 1066
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.UnselectAll",
+          "Name": "UnselectAll",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Unselects all items that are currently selected (if any)",
+            "Params": {
+              "skipEvents": "Do not invoke events."
+            }
+          },
+          "DocId": "M:Editor.BaseItemWidget.UnselectAll(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "state",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "skipEvents",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.SetSelected",
+          "Name": "SetSelected",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Set the selection state of an item.",
+            "Params": {
+              "obj": "Item to set selection state of.",
+              "state": "Whether the item should be selected or not.",
+              "skipEvents": "Do not invoke <see cref=\"P:Editor.BaseItemWidget.ItemSelected\" /> and <see cref=\"P:Editor.BaseItemWidget.ItemDeselected\" />."
+            }
+          },
+          "DocId": "M:Editor.BaseItemWidget.SetSelected(System.Object,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 1118
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.SelectMove",
+          "Name": "SelectMove",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Move the selection pointer by this many positions."
+          },
+          "DocId": "M:Editor.BaseItemWidget.SelectMove(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "skipEvents",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 1146
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.SelectTo",
+          "Name": "SelectTo",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "Documentation": {
+            "Summary": "Select everything between the current selection pointer and this one."
+          },
+          "DocId": "M:Editor.BaseItemWidget.SelectTo(System.Object,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "skipEvents",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 1195
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.SelectAll",
+          "Name": "SelectAll",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.SelectAll(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 1283
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.SelectItemStartingWith",
+          "Name": "SelectItemStartingWith",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.SelectItemStartingWith(System.String)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<System.Object>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.FindItemsThatStartWith",
+          "Name": "FindItemsThatStartWith",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.FindItemsThatStartWith(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.KeyEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 1297
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.OnShortcutPressed",
+          "Name": "OnShortcutPressed",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.OnShortcutPressed(Editor.KeyEvent)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.BaseItemWidget",
+          "DocId": "M:Editor.BaseItemWidget.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Action`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemClicked",
+          "Name": "ItemClicked",
+          "Documentation": {
+            "Summary": "Called when an item is clicked."
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemClicked"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemSelected",
+          "Name": "ItemSelected",
+          "Documentation": {
+            "Summary": "Called when an item is selected."
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemSelected"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemDeselected",
+          "Name": "ItemDeselected",
+          "Documentation": {
+            "Summary": "Called when an item is no longer selected."
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemDeselected"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemHoverEnter",
+          "Name": "ItemHoverEnter",
+          "Documentation": {
+            "Summary": "Called when an item is hovered by the user's cursor."
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemHoverEnter"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemHoverLeave",
+          "Name": "ItemHoverLeave",
+          "Documentation": {
+            "Summary": "Called when an item is no longer hovered by the user's cursor."
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemHoverLeave"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemContextMenu",
+          "Name": "ItemContextMenu",
+          "Documentation": {
+            "Summary": "Called when an item is right clicked."
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemContextMenu"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemActivated",
+          "Name": "ItemActivated",
+          "Documentation": {
+            "Summary": "Called when an item is double left clicked."
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemActivated"
+        },
+        {
+          "PropertyType": "System.Action`1<Editor.VirtualWidget>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemPaint",
+          "Name": "ItemPaint",
+          "Documentation": {
+            "Summary": "Used to overwrite an item's style"
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemPaint"
+        },
+        {
+          "PropertyType": "System.Func`2<System.Object,System.Boolean>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemDrag",
+          "Name": "ItemDrag",
+          "Documentation": {
+            "Summary": "Called to see whether or not we can drag a specific item."
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemDrag"
+        },
+        {
+          "PropertyType": "System.Func`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.SelectionOverride",
+          "Name": "SelectionOverride",
+          "Documentation": {
+            "Summary": "Can override an item's selection here."
+          },
+          "DocId": "P:Editor.BaseItemWidget.SelectionOverride"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.BodyContextMenu",
+          "Name": "BodyContextMenu",
+          "Documentation": {
+            "Summary": "Called when right clicking on the item's parent."
+          },
+          "DocId": "P:Editor.BaseItemWidget.BodyContextMenu"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object[]>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.OnBeforeSelection",
+          "Name": "OnBeforeSelection",
+          "Documentation": {
+            "Summary": "Called before selection is changed on selection. When multiple items are affected this will only be called once."
+          },
+          "DocId": "P:Editor.BaseItemWidget.OnBeforeSelection"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object[]>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.OnBeforeDeselection",
+          "Name": "OnBeforeDeselection",
+          "Documentation": {
+            "Summary": "Called before selection is changed on deselection. When multiple items are affected this will only be called once."
+          },
+          "DocId": "P:Editor.BaseItemWidget.OnBeforeDeselection"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object[]>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemsSelected",
+          "Name": "ItemsSelected",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use OnSelectionChanged or ItemSelected instead"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Multiple items have been selected"
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemsSelected"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object[]>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 90
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ItemsDeselected",
+          "Name": "ItemsDeselected",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use OnSelectionChanged or ItemSelected instead"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Multiple items have been deselected"
+          },
+          "DocId": "P:Editor.BaseItemWidget.ItemsDeselected"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object[]>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 96
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.OnSelectionChanged",
+          "Name": "OnSelectionChanged",
+          "Documentation": {
+            "Summary": "Called when selection has changed. When multiple items are affected this will only be called once."
+          },
+          "DocId": "P:Editor.BaseItemWidget.OnSelectionChanged"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 101
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ToggleSelect",
+          "Name": "ToggleSelect",
+          "Documentation": {
+            "Summary": "If set, selecting an item will not deselect all already selected items, clicking a selected item will deselect it."
+          },
+          "DocId": "P:Editor.BaseItemWidget.ToggleSelect"
+        },
+        {
+          "PropertyType": "Editor.BaseItemWidget.DragDropTarget",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.BodyDropTarget",
+          "Name": "BodyDropTarget",
+          "Documentation": {
+            "Summary": "What shall we do if they drag something in and it's not over an item?"
+          },
+          "DocId": "P:Editor.BaseItemWidget.BodyDropTarget"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.DragDropTargetClosestThreshold",
+          "Name": "DragDropTargetClosestThreshold",
+          "Documentation": {
+            "Summary": "Gets or sets the maximum distance, in pixels, at which a target is considered close enough for drag-and-drop when in BodyDropTarget.Closest mode.\noperations."
+          },
+          "DocId": "P:Editor.BaseItemWidget.DragDropTargetClosestThreshold"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.ProvidesDebugMode",
+          "Name": "ProvidesDebugMode",
+          "DocId": "P:Editor.BaseItemWidget.ProvidesDebugMode"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Margin",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.Margin",
+          "Name": "Margin",
+          "DocId": "P:Editor.BaseItemWidget.Margin"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.CanvasRect",
+          "Name": "CanvasRect",
+          "Documentation": {
+            "Summary": "The inner of LocalRect with Margin"
+          },
+          "DocId": "P:Editor.BaseItemWidget.CanvasRect"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 136
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.Items",
+          "Name": "Items",
+          "DocId": "P:Editor.BaseItemWidget.Items"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 243
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.TimeMsPaint",
+          "Name": "TimeMsPaint",
+          "DocId": "P:Editor.BaseItemWidget.TimeMsPaint"
+        },
+        {
+          "PropertyType": "Editor.BaseItemWidget.ItemDragEvent",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 469
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.CurrentItemDragEvent",
+          "Name": "CurrentItemDragEvent",
+          "DocId": "P:Editor.BaseItemWidget.CurrentItemDragEvent"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 857
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.timeMsRebuild",
+          "Name": "timeMsRebuild",
+          "DocId": "P:Editor.BaseItemWidget.timeMsRebuild"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 943
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.MultiSelect",
+          "Name": "MultiSelect",
+          "Documentation": {
+            "Summary": "Whether to allow selecting multiple items at once."
+          },
+          "DocId": "P:Editor.BaseItemWidget.MultiSelect"
+        },
+        {
+          "PropertyType": "Sandbox.SelectionSystem",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 953
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.Selection",
+          "Name": "Selection",
+          "DocId": "P:Editor.BaseItemWidget.Selection"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/BaseItemWidget.cs",
+            "Line": 971
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseItemWidget.SelectedItems",
+          "Name": "SelectedItems",
+          "Documentation": {
+            "Summary": "Selected items."
+          },
+          "DocId": "P:Editor.BaseItemWidget.SelectedItems"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Collections.Generic.List`1<System.Object>",
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget._items",
+          "Name": "_items",
+          "DocId": "F:Editor.BaseItemWidget._items"
+        },
+        {
+          "FieldType": "System.Collections.Generic.HashSet`1<Editor.VirtualWidget>",
+          "IsProtected": true,
+          "FullName": "Editor.BaseItemWidget.ItemLayouts",
+          "Name": "ItemLayouts",
+          "DocId": "F:Editor.BaseItemWidget.ItemLayouts"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.BaseItemWidget",
+      "Name": "BaseItemWidget",
+      "DocId": "T:Editor.BaseItemWidget"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.BaseItemWidget.DragDropTarget",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.BaseItemWidget.DragDropTarget.None",
+          "Name": "None",
+          "DocId": "F:Editor.BaseItemWidget.DragDropTarget.None"
+        },
+        {
+          "FieldType": "Editor.BaseItemWidget.DragDropTarget",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.BaseItemWidget.DragDropTarget.LastRoot",
+          "Name": "LastRoot",
+          "DocId": "F:Editor.BaseItemWidget.DragDropTarget.LastRoot"
+        },
+        {
+          "FieldType": "Editor.BaseItemWidget.DragDropTarget",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.BaseItemWidget.DragDropTarget.Closest",
+          "Name": "Closest",
+          "DocId": "F:Editor.BaseItemWidget.DragDropTarget.Closest"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.BaseItemWidget.DragDropTarget",
+      "Name": "DragDropTarget",
+      "DeclaringType": "Editor.BaseItemWidget",
+      "DocId": "T:Editor.BaseItemWidget.DragDropTarget"
+    }
+  ],
+  "_metadata": {
+    "chunk": 267,
+    "items_count": 2
+  }
+}

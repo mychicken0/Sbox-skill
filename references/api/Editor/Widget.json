@@ -1,0 +1,2487 @@
+{
+  "Types": [
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.QObject",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Context.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SetContext",
+          "Name": "SetContext",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Set a context value on this widget. This context will be available to its children via FindContext."
+          },
+          "DocId": "M:Editor.Widget.SetContext(System.String,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Context.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ClearContext",
+          "Name": "ClearContext",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Remove a context on this widget. This will NOT remove contexts set from parent objects.",
+            "Params": {
+              "key": ""
+            }
+          },
+          "DocId": "M:Editor.Widget.ClearContext(System.String)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "defaultIfMissing",
+              "Type": "T",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Context.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.GetContext",
+          "Name": "GetContext",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Find a context on this widget. If not found, look at the parent. If not found, look at the parent.\nThis is useful for passing information down to child widgets without any effort."
+          },
+          "DocId": "M:Editor.Widget.GetContext``1(System.String,``0)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.GetAncestor",
+          "Name": "GetAncestor",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Find the closest ancestor widget of type"
+          },
+          "DocId": "M:Editor.Widget.GetAncestor``1"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<T>",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Editor.Widget.GetDescendants",
+          "Name": "GetDescendants",
+          "DeclaringType": "Editor.Widget",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "Editor.Widget/<GetDescendants>d__22`1"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get all descendants of type T"
+          },
+          "DocId": "M:Editor.Widget.GetDescendants``1"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 149
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsDescendantOf",
+          "Name": "IsDescendantOf",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Returns whether or not the specified Widget is a descendent of this Widget."
+          },
+          "DocId": "M:Editor.Widget.IsDescendantOf(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "child",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 159
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsAncestorOf",
+          "Name": "IsAncestorOf",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Returns whether or not the specified Widget is an ancestor of this Widget."
+          },
+          "DocId": "M:Editor.Widget.IsAncestorOf(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "activateWindow",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 495
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Focus",
+          "Name": "Focus",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.Focus(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 506
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Blur",
+          "Name": "Blur",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Clear keyboard focus from this widget."
+          },
+          "DocId": "M:Editor.Widget.Blur"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sheet",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 704
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SetStyles",
+          "Name": "SetStyles",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Directly set CSS style sheet(s) for this widget. Same format as a .css file.",
+            "Params": {
+              "sheet": ""
+            }
+          },
+          "DocId": "M:Editor.Widget.SetStyles(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "filename",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SetStylesheetFile",
+          "Name": "SetStylesheetFile",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Set a file to load CSS for this widget from."
+          },
+          "DocId": "M:Editor.Widget.SetStylesheetFile(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 756
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.DestroyChildren",
+          "Name": "DestroyChildren",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Destroys all child widgets of this widget."
+          },
+          "DocId": "M:Editor.Widget.DestroyChildren"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 825
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Update",
+          "Name": "Update",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Tell this widget that shit changed and it needs to redraw"
+          },
+          "DocId": "M:Editor.Widget.Update"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "p",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 852
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ToScreen",
+          "Name": "ToScreen",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Transform coordinates relative to the panel's top left corner, to coordinates relative to monitors's top left corner.",
+            "Return": "The same position relative to the monitors top left corner.",
+            "Params": {
+              "p": "Position on the panel, relative it its top left corner."
+            }
+          },
+          "DocId": "M:Editor.Widget.ToScreen(Vector2)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "p",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 861
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.FromScreen",
+          "Name": "FromScreen",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Transform coordinates relative to the monitors's top left corner, to coordinates relative to panel's top left corner.",
+            "Return": "The same position on the panel, relative it its top left corner.",
+            "Params": {
+              "p": "Position relative to the monitors top left corner."
+            }
+          },
+          "DocId": "M:Editor.Widget.FromScreen(Vector2)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "Editor.KeyCode"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 865
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.PostKeyEvent",
+          "Name": "PostKeyEvent",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.PostKeyEvent(Editor.KeyCode)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "horizontal",
+              "Type": "Editor.SizeMode"
+            },
+            {
+              "Name": "vertical",
+              "Type": "Editor.SizeMode"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 883
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SetSizeMode",
+          "Name": "SetSizeMode",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.SetSizeMode(Editor.SizeMode,Editor.SizeMode)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 902
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SaveGeometry",
+          "Name": "SaveGeometry",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Serialize position and size of this widget to a string, which can then be passed to <see cref=\"M:Editor.Widget.RestoreGeometry(System.String)\" />.",
+            "Return": ""
+          },
+          "DocId": "M:Editor.Widget.SaveGeometry"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "state",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 910
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.RestoreGeometry",
+          "Name": "RestoreGeometry",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Restore position and size previously stored via <see cref=\"M:Editor.Widget.SaveGeometry\" />.",
+            "Params": {
+              "state": ""
+            }
+          },
+          "DocId": "M:Editor.Widget.RestoreGeometry(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "signal",
+              "Type": "Editor.WidgetSignal"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 938
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.Signal",
+          "Name": "Signal",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.Signal(Editor.WidgetSignal)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 951
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ChildValuesChanged",
+          "Name": "ChildValuesChanged",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.ChildValuesChanged(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 956
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MakeSignal",
+          "Name": "MakeSignal",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.MakeSignal(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 965
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.SignalValuesChanged",
+          "Name": "SignalValuesChanged",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "When a value on this widget changed due to user input (ie, checking a box, editing a form)\nthis is called, which sends a signal up the parent widgets."
+          },
+          "DocId": "M:Editor.Widget.SignalValuesChanged"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 974
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.AdjustSize",
+          "Name": "AdjustSize",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Adjusts the size of the widget to fit its contents."
+          },
+          "DocId": "M:Editor.Widget.AdjustSize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 990
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ConstrainToScreen",
+          "Name": "ConstrainToScreen",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Constrain this widget to the screen it's currently on."
+          },
+          "DocId": "M:Editor.Widget.ConstrainToScreen"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parentRect",
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1001
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ConstrainTo",
+          "Name": "ConstrainTo",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Reposition this widget to ensure it is within the given rectangle.",
+            "Params": {
+              "parentRect": "Rectangle to constraint to, relative to the parent widget."
+            }
+          },
+          "DocId": "M:Editor.Widget.ConstrainTo(Sandbox.Rect)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1017
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SetWindowIcon",
+          "Name": "SetWindowIcon",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.SetWindowIcon(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "icon",
+              "Type": "Editor.Pixmap"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1022
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SetWindowIcon",
+          "Name": "SetWindowIcon",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.SetWindowIcon(Editor.Pixmap)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1036
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Show",
+          "Name": "Show",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Make this widget visible."
+          },
+          "DocId": "M:Editor.Widget.Show"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1044
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Hide",
+          "Name": "Hide",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Make this widget not visible."
+          },
+          "DocId": "M:Editor.Widget.Hide"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1052
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Close",
+          "Name": "Close",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "If a window - will close"
+          },
+          "DocId": "M:Editor.Widget.Close"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1058
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MakeMinimized",
+          "Name": "MakeMinimized",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.MakeMinimized"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1065
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MakeMaximized",
+          "Name": "MakeMaximized",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.MakeMaximized"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1072
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MakeWindowed",
+          "Name": "MakeWindowed",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.MakeWindowed"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "on",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "application",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1080
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SetModal",
+          "Name": "SetModal",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Set this window to be modal. This means it will appear on top of everything and block input to everything else."
+          },
+          "DocId": "M:Editor.Widget.SetModal(System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1093
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsModal",
+          "Name": "IsModal",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Returns true if this is a modal window. This means it will appear on top of everything and block input to everything else."
+          },
+          "DocId": "M:Editor.Widget.IsModal"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1102
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.DisableWindowActivation",
+          "Name": "DisableWindowActivation",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Calling this will set the WS_EX_NOACTIVATE flag on the window internally, which will stop\nit taking focus away from other windows."
+          },
+          "DocId": "M:Editor.Widget.DisableWindowActivation"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1108
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SetEffectOpacity",
+          "Name": "SetEffectOpacity",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.SetEffectOpacity(System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "hash",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "secondsDebounce",
+              "Type": "System.Single",
+              "Default": "0.1"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1125
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SetContentHash",
+          "Name": "SetContentHash",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Call every frame/tick to redraw this Widget on content change"
+          },
+          "DocId": "M:Editor.Widget.SetContentHash(System.Int32,System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "getHash",
+              "Type": "System.Func`1<System.Int32>"
+            },
+            {
+              "Name": "secondsDebounce",
+              "Type": "System.Single",
+              "Default": "0.1"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1142
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.SetContentHash",
+          "Name": "SetContentHash",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.SetContentHash(System.Func`1{System.Int32},System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "alignment",
+              "Type": "Sandbox.TextFlag"
+            },
+            {
+              "Name": "offset",
+              "Type": "Vector2",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1170
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.AlignToParent",
+          "Name": "AlignToParent",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Align this widget to its parents edge, with an offset."
+          },
+          "DocId": "M:Editor.Widget.AlignToParent(Sandbox.TextFlag,Vector2)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1186
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.UpdateGeometry",
+          "Name": "UpdateGeometry",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Tell everything that the geometry of this has changed"
+          },
+          "DocId": "M:Editor.Widget.UpdateGeometry"
+        },
+        {
+          "ReturnType": "Editor.Widget",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 1194
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.GetWindow",
+          "Name": "GetWindow",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Get the top level window widget"
+          },
+          "DocId": "M:Editor.Widget.GetWindow"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.WheelEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 37
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnMouseWheel",
+          "Name": "OnMouseWheel",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Mouse wheel was scrolled while the mouse cursor was over this widget."
+          },
+          "DocId": "M:Editor.Widget.OnMouseWheel(Editor.WheelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.WheelEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 48
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnWheel",
+          "Name": "OnWheel",
+          "DeclaringType": "Editor.Widget",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use OnMouseWheel"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Mouse wheel was scrolled while the mouse cursor was over this widget."
+          },
+          "DocId": "M:Editor.Widget.OnWheel(Editor.WheelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 71
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnMouseReleased",
+          "Name": "OnMouseReleased",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when mouse is released over this widget."
+          },
+          "DocId": "M:Editor.Widget.OnMouseReleased(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 124
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnMouseClick",
+          "Name": "OnMouseClick",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when this widget is left clicked (on mouse release)."
+          },
+          "DocId": "M:Editor.Widget.OnMouseClick(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 135
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnMouseRightClick",
+          "Name": "OnMouseRightClick",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when this widget is right clicked (on mouse release)."
+          },
+          "DocId": "M:Editor.Widget.OnMouseRightClick(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 185
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnMousePress",
+          "Name": "OnMousePress",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when mouse is pressed over this widget."
+          },
+          "DocId": "M:Editor.Widget.OnMousePress(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 230
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnMouseMove",
+          "Name": "OnMouseMove",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when the mouse cursor is moved while being over this widget."
+          },
+          "DocId": "M:Editor.Widget.OnMouseMove(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 244
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnMouseEnter",
+          "Name": "OnMouseEnter",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Mouse cursor entered the bounds of this widget."
+          },
+          "DocId": "M:Editor.Widget.OnMouseEnter"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 253
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnMouseLeave",
+          "Name": "OnMouseLeave",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Mouse cursor exited the bounds of this widget."
+          },
+          "DocId": "M:Editor.Widget.OnMouseLeave"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.ContextMenuEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 262
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnContextMenu",
+          "Name": "OnContextMenu",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called after <see cref=\"M:Editor.Widget.OnMouseRightClick(Editor.MouseEvent)\" />, for the purposes of opening a context menu."
+          },
+          "DocId": "M:Editor.Widget.OnContextMenu(Editor.ContextMenuEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.MouseEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 271
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnDoubleClick",
+          "Name": "OnDoubleClick",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when the widget was double clicked with any mouse button.",
+            "Params": {
+              "e": ""
+            }
+          },
+          "DocId": "M:Editor.Widget.OnDoubleClick(Editor.MouseEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.KeyEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 285
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnKeyPress",
+          "Name": "OnKeyPress",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "A key has been pressed. Your widget needs keyboard focus for this to be called - see FocusMode."
+          },
+          "DocId": "M:Editor.Widget.OnKeyPress(Editor.KeyEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.KeyEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 298
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnKeyRelease",
+          "Name": "OnKeyRelease",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "A key has been released."
+          },
+          "DocId": "M:Editor.Widget.OnKeyRelease(Editor.KeyEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.KeyEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 307
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnShortcutPressed",
+          "Name": "OnShortcutPressed",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "A shortcut has been activated. This is called on the focused control so they can override it."
+          },
+          "DocId": "M:Editor.Widget.OnShortcutPressed(Editor.KeyEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "reason",
+              "Type": "Editor.FocusChangeReason"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 320
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnFocus",
+          "Name": "OnFocus",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when the widget gains keyboard focus."
+          },
+          "DocId": "M:Editor.Widget.OnFocus(Editor.FocusChangeReason)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "reason",
+              "Type": "Editor.FocusChangeReason"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 334
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnBlur",
+          "Name": "OnBlur",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when the widget loses keyboard focus."
+          },
+          "DocId": "M:Editor.Widget.OnBlur(Editor.FocusChangeReason)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 346
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnResize",
+          "Name": "OnResize",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when the widgets' size was changed."
+          },
+          "DocId": "M:Editor.Widget.OnResize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 359
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnMoved",
+          "Name": "OnMoved",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when the widget was moved to a new position relative to it's parent."
+          },
+          "DocId": "M:Editor.Widget.OnMoved"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 410
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Override to custom paint your widget, for example using <see cref=\"T:Editor.Paint\" />. Can be overwritten by <see cref=\"F:Editor.Widget.OnPaintOverride\" />."
+          },
+          "DocId": "M:Editor.Widget.OnPaint"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 431
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnClose",
+          "Name": "OnClose",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when a window is about to be closed."
+          },
+          "DocId": "M:Editor.Widget.OnClose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 440
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnClosed",
+          "Name": "OnClosed",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when a window is closed."
+          },
+          "DocId": "M:Editor.Widget.OnClosed"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "visible",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 491
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnVisibilityChanged",
+          "Name": "OnVisibilityChanged",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when the visibility of this widget changes."
+          },
+          "DocId": "M:Editor.Widget.OnVisibilityChanged(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 500
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.FocusNext",
+          "Name": "FocusNext",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when Tab is pressed to find the next widget to focus.\nReturn true to prevent focusing."
+          },
+          "DocId": "M:Editor.Widget.FocusNext"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 509
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.FocusPrevious",
+          "Name": "FocusPrevious",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when Shift + Tab is pressed to find the next widget to focus.\nReturn true to prevent focusing."
+          },
+          "DocId": "M:Editor.Widget.FocusPrevious"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 519
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.DoLayout",
+          "Name": "DoLayout",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called to make sure all child panels are in correct positions and have correct sizes.\nThis is typically called when the size of this widget changes, but there are other cases as well."
+          },
+          "DocId": "M:Editor.Widget.DoLayout"
+        },
+        {
+          "ReturnType": "Vector2",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 552
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.MinimumSizeHint",
+          "Name": "MinimumSizeHint",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Return the minimum size this widget wants to be"
+          },
+          "DocId": "M:Editor.Widget.MinimumSizeHint"
+        },
+        {
+          "ReturnType": "Vector2",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 563
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.SizeHint",
+          "Name": "SizeHint",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Should return the size this widget really wants to be if it can its way. The default\nis that you don't care - and just to return whatever the base value is."
+          },
+          "DocId": "M:Editor.Widget.SizeHint"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 733
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Widget.OnDragStart",
+          "Name": "OnDragStart",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Called when dragging. <see cref=\"P:Editor.Widget.IsDraggable\" /> should be true."
+          },
+          "DocId": "M:Editor.Widget.OnDragStart"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 742
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.OnDragLeave",
+          "Name": "OnDragLeave",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Cursor with drag and drop data left the bounds of this widget.\n<para>Requires <see cref=\"P:Editor.Widget.AcceptDrops\" /> to function.</para>"
+          },
+          "DocId": "M:Editor.Widget.OnDragLeave"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "ev",
+              "Type": "Editor.Widget.DragEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 752
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.OnDragHover",
+          "Name": "OnDragHover",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Cursor with drag and drop data moved on this widget.\n<para>Requires <see cref=\"P:Editor.Widget.AcceptDrops\" /> to function.</para>",
+            "Params": {
+              "ev": "The drag event info."
+            }
+          },
+          "DocId": "M:Editor.Widget.OnDragHover(Editor.Widget.DragEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "ev",
+              "Type": "Editor.Widget.DragEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 762
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.OnDragDrop",
+          "Name": "OnDragDrop",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Something was dragged and dropped on this widget. Apply the data here, if its valid.\n<para>Requires <see cref=\"P:Editor.Widget.AcceptDrops\" /> to function.</para>",
+            "Params": {
+              "ev": "The drag event info."
+            }
+          },
+          "DocId": "M:Editor.Widget.OnDragDrop(Editor.Widget.DragEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Layout.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Raise",
+          "Name": "Raise",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Raises this widget to the top of the parent widget's stack.\nAfter this call the widget will be visually in front of any overlapping sibling widgets."
+          },
+          "DocId": "M:Editor.Widget.Raise"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.Layout.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Lower",
+          "Name": "Lower",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "Lowers the widget to the bottom of the parent widget's stack.\nAfter this call the widget will be visually behind (and therefore obscured by) any overlapping sibling widgets."
+          },
+          "DocId": "M:Editor.Widget.Lower"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Widget",
+          "DocId": "M:Editor.Widget.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            },
+            {
+              "Name": "isDarkWindow",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.cs",
+            "Line": 769
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Widget",
+          "Documentation": {
+            "Summary": "The default widget constructor",
+            "Params": {
+              "parent": "The parent to attach this to. This can be null while you're sorting stuff out, before you add it to a layout or something - but generally a null parent is something a window has.",
+              "isDarkWindow": "If true we'll run a function on startup to force this to be a darkmode window. Basically pass true if this is going to be a window and we'll all be friends."
+            }
+          },
+          "DocId": "M:Editor.Widget.#ctor(Editor.Widget,System.Boolean)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Enabled",
+          "Name": "Enabled",
+          "Documentation": {
+            "Summary": "Makes the widget not interactable. This is also usually be reflected visually by the widget.\nThe widget will not process any keyboard or mouse inputs. Applies retroactively to all children."
+          },
+          "DocId": "P:Editor.Widget.Enabled"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ReadOnly",
+          "Name": "ReadOnly",
+          "Documentation": {
+            "Summary": "Makes the widget read only. I.e. You can copy text of a text entry, but can't edit it.\nApplies retroactively to all children."
+          },
+          "DocId": "P:Editor.Widget.ReadOnly"
+        },
+        {
+          "PropertyType": "Editor.Widget",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Parent",
+          "Name": "Parent",
+          "Documentation": {
+            "Summary": "Parent widget. If non null, position of this widget will be relative to the parent widget. Certain events will also propagate to the parent widget if unhandled."
+          },
+          "DocId": "P:Editor.Widget.Parent"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Margin",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 167
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ContentMargins",
+          "Name": "ContentMargins",
+          "DocId": "P:Editor.Widget.ContentMargins"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 172
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ContentRect",
+          "Name": "ContentRect",
+          "DocId": "P:Editor.Widget.ContentRect"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 181
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Size",
+          "Name": "Size",
+          "Documentation": {
+            "Summary": "Size of this widget."
+          },
+          "DocId": "P:Editor.Widget.Size"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 188
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.LocalRect",
+          "Name": "LocalRect",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "This panel's rect at 0,0"
+          },
+          "DocId": "P:Editor.Widget.LocalRect"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 194
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ScreenRect",
+          "Name": "ScreenRect",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "This panel's rect in screen coordinates"
+          },
+          "DocId": "P:Editor.Widget.ScreenRect"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 203
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Utility to interact with a widget's width - use Size where possible"
+          },
+          "DocId": "P:Editor.Widget.Width"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 213
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Utility to interact with a widget's width - use Size where possible"
+          },
+          "DocId": "P:Editor.Widget.Height"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 224
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MinimumSize",
+          "Name": "MinimumSize",
+          "Documentation": {
+            "Summary": "Sets <see cref=\"P:Editor.Widget.MinimumWidth\" /> and <see cref=\"P:Editor.Widget.MinimumHeight\" /> simultaneously."
+          },
+          "DocId": "P:Editor.Widget.MinimumSize"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 232
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MinimumWidth",
+          "Name": "MinimumWidth",
+          "Documentation": {
+            "Summary": "This widgets width should never be smaller than the given value."
+          },
+          "DocId": "P:Editor.Widget.MinimumWidth"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 237
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MinimumHeight",
+          "Name": "MinimumHeight",
+          "Documentation": {
+            "Summary": "This widgets height should never be smaller than the given value."
+          },
+          "DocId": "P:Editor.Widget.MinimumHeight"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 249
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.FixedHeight",
+          "Name": "FixedHeight",
+          "Documentation": {
+            "Summary": "Sets the fixed height for this widget"
+          },
+          "DocId": "P:Editor.Widget.FixedHeight"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 262
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.FixedWidth",
+          "Name": "FixedWidth",
+          "Documentation": {
+            "Summary": "Sets the fixed width for this widget"
+          },
+          "DocId": "P:Editor.Widget.FixedWidth"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 273
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.FixedSize",
+          "Name": "FixedSize",
+          "DocId": "P:Editor.Widget.FixedSize"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 284
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MaximumWidth",
+          "Name": "MaximumWidth",
+          "Documentation": {
+            "Summary": "This widgets width should never be larger than the given value."
+          },
+          "DocId": "P:Editor.Widget.MaximumWidth"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 293
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MaximumHeight",
+          "Name": "MaximumHeight",
+          "Documentation": {
+            "Summary": "This widgets height should never be larger than the given value."
+          },
+          "DocId": "P:Editor.Widget.MaximumHeight"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 315
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MaximumSize",
+          "Name": "MaximumSize",
+          "Documentation": {
+            "Summary": "Sets <see cref=\"P:Editor.Widget.MaximumWidth\" /> and <see cref=\"P:Editor.Widget.MaximumHeight\" /> simultaneously."
+          },
+          "DocId": "P:Editor.Widget.MaximumSize"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 330
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Position",
+          "Name": "Position",
+          "Documentation": {
+            "Summary": "Position of this widget, relative to its parent if it has one."
+          },
+          "DocId": "P:Editor.Widget.Position"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 345
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Visible",
+          "Name": "Visible",
+          "Documentation": {
+            "Summary": "Whether this widget is visible or not, in the tree. This will return false if a parent is hidden. You \nmight want to set Hidden if you're looking to check local visible status on a widget."
+          },
+          "DocId": "P:Editor.Widget.Visible"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 360
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Hidden",
+          "Name": "Hidden",
+          "Documentation": {
+            "Summary": "Whether this widget is hidden. This differs from Visible because this will return the state for\nthis particular widget, where as Visible returns false if a parent is hidden etc."
+          },
+          "DocId": "P:Editor.Widget.Hidden"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 371
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "Name of the widget, usually for debugging purposes."
+          },
+          "DocId": "P:Editor.Widget.Name"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 377
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.TranslucentBackground",
+          "Name": "TranslucentBackground",
+          "DocId": "P:Editor.Widget.TranslucentBackground"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 383
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.NoSystemBackground",
+          "Name": "NoSystemBackground",
+          "DocId": "P:Editor.Widget.NoSystemBackground"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 389
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.TransparentForMouseEvents",
+          "Name": "TransparentForMouseEvents",
+          "DocId": "P:Editor.Widget.TransparentForMouseEvents"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 395
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ShowWithoutActivating",
+          "Name": "ShowWithoutActivating",
+          "DocId": "P:Editor.Widget.ShowWithoutActivating"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 401
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MouseTracking",
+          "Name": "MouseTracking",
+          "DocId": "P:Editor.Widget.MouseTracking"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 410
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.AcceptDrops",
+          "Name": "AcceptDrops",
+          "Documentation": {
+            "Summary": "Accept drag and dropping shit on us"
+          },
+          "DocId": "P:Editor.Widget.AcceptDrops"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 418
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsFramelessWindow",
+          "Name": "IsFramelessWindow",
+          "DocId": "P:Editor.Widget.IsFramelessWindow"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 434
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsTooltip",
+          "Name": "IsTooltip",
+          "DocId": "P:Editor.Widget.IsTooltip"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 450
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsPopup",
+          "Name": "IsPopup",
+          "DocId": "P:Editor.Widget.IsPopup"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 464
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsWindow",
+          "Name": "IsWindow",
+          "DocId": "P:Editor.Widget.IsWindow"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 471
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.HasMaximizeButton",
+          "Name": "HasMaximizeButton",
+          "DocId": "P:Editor.Widget.HasMaximizeButton"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 484
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.DeleteOnClose",
+          "Name": "DeleteOnClose",
+          "Documentation": {
+            "Summary": "Delete this widget when close is pressed"
+          },
+          "DocId": "P:Editor.Widget.DeleteOnClose"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 491
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.DpiScale",
+          "Name": "DpiScale",
+          "Documentation": {
+            "Summary": "The scale this widget is using (multiplying Size by this value gives the actual native size)"
+          },
+          "DocId": "P:Editor.Widget.DpiScale"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 514
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsFocused",
+          "Name": "IsFocused",
+          "Documentation": {
+            "Summary": "Whether this widget has keyboard focus."
+          },
+          "DocId": "P:Editor.Widget.IsFocused"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 519
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsActiveWindow",
+          "Name": "IsActiveWindow",
+          "DocId": "P:Editor.Widget.IsActiveWindow"
+        },
+        {
+          "PropertyType": "Editor.FocusMode",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 528
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.FocusMode",
+          "Name": "FocusMode",
+          "Documentation": {
+            "Summary": "Sets the focus mode for this widget. This determines both how it will get focus and whether it will receive keyboard input."
+          },
+          "DocId": "P:Editor.Widget.FocusMode"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 537
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ContextMenuEnabled",
+          "Name": "ContextMenuEnabled",
+          "Documentation": {
+            "Summary": "Enables or disables the context menu on this widget."
+          },
+          "DocId": "P:Editor.Widget.ContextMenuEnabled"
+        },
+        {
+          "PropertyType": "Editor.WindowFlags",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 692
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.WindowFlags",
+          "Name": "WindowFlags",
+          "DocId": "P:Editor.Widget.WindowFlags"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Editor.Widget>",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 735
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Children",
+          "Name": "Children",
+          "Documentation": {
+            "Summary": "Child widgets of this widget."
+          },
+          "DocId": "P:Editor.Widget.Children"
+        },
+        {
+          "PropertyType": "Editor.CursorShape",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 779
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Cursor",
+          "Name": "Cursor",
+          "Documentation": {
+            "Summary": "Cursor override for this widget."
+          },
+          "DocId": "P:Editor.Widget.Cursor"
+        },
+        {
+          "PropertyType": "Editor.Pixmap",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 803
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.PixmapCursor",
+          "Name": "PixmapCursor",
+          "Documentation": {
+            "Summary": "Custom cursor override for this widget.\nWill override <see cref=\"P:Editor.Widget.Cursor\" /> with <see cref=\"F:Editor.CursorShape.CustomCursor\" />."
+          },
+          "DocId": "P:Editor.Widget.PixmapCursor"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 842
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ScreenPosition",
+          "Name": "ScreenPosition",
+          "Documentation": {
+            "Summary": "Position of the widget relative to the monitor's top left corner."
+          },
+          "DocId": "P:Editor.Widget.ScreenPosition"
+        },
+        {
+          "PropertyType": "Editor.Widget",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 874
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.FocusProxy",
+          "Name": "FocusProxy",
+          "DocId": "P:Editor.Widget.FocusProxy"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 879
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsUnderMouse",
+          "Name": "IsUnderMouse",
+          "DocId": "P:Editor.Widget.IsUnderMouse"
+        },
+        {
+          "PropertyType": "Editor.SizeMode",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 889
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.HorizontalSizeMode",
+          "Name": "HorizontalSizeMode",
+          "DocId": "P:Editor.Widget.HorizontalSizeMode"
+        },
+        {
+          "PropertyType": "Editor.SizeMode",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 895
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.VerticalSizeMode",
+          "Name": "VerticalSizeMode",
+          "DocId": "P:Editor.Widget.VerticalSizeMode"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 922
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ToolTip",
+          "Name": "ToolTip",
+          "Documentation": {
+            "Summary": "If set, this text will be displayed after a certain delay of hovering this widget with the mouse cursor."
+          },
+          "DocId": "P:Editor.Widget.ToolTip"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 931
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.StatusTip",
+          "Name": "StatusTip",
+          "Documentation": {
+            "Summary": "If set, hovering over this widget will set the text of a <see cref=\"T:Editor.StatusBar\" /> of the window the widget belongs to."
+          },
+          "DocId": "P:Editor.Widget.StatusTip"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 983
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ScreenGeometry",
+          "Name": "ScreenGeometry",
+          "Documentation": {
+            "Summary": "Returns the geometry of the screen this widget is currently on."
+          },
+          "DocId": "P:Editor.Widget.ScreenGeometry"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 1028
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.WindowTitle",
+          "Name": "WindowTitle",
+          "DocId": "P:Editor.Widget.WindowTitle"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 1061
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsMinimized",
+          "Name": "IsMinimized",
+          "DocId": "P:Editor.Widget.IsMinimized"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 1068
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsMaximized",
+          "Name": "IsMaximized",
+          "DocId": "P:Editor.Widget.IsMaximized"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 1114
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.WindowOpacity",
+          "Name": "WindowOpacity",
+          "DocId": "P:Editor.Widget.WindowOpacity"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.cs",
+            "Line": 1162
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.UpdatesEnabled",
+          "Name": "UpdatesEnabled",
+          "Documentation": {
+            "Summary": "If true, Update will call"
+          },
+          "DocId": "P:Editor.Widget.UpdatesEnabled"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.DebugMode.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.DebugModeEnabled",
+          "Name": "DebugModeEnabled",
+          "Documentation": {
+            "Summary": "Enable debug mode on this widget."
+          },
+          "DocId": "P:Editor.Widget.DebugModeEnabled"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Qt/Widget.DebugMode.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.ProvidesDebugMode",
+          "Name": "ProvidesDebugMode",
+          "Documentation": {
+            "Summary": "If true then this widget has a debug mode that can be activated"
+          },
+          "DocId": "P:Editor.Widget.ProvidesDebugMode"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsPressed",
+          "Name": "IsPressed",
+          "Documentation": {
+            "Summary": "Whether this widget is currently being pressed down or not."
+          },
+          "DocId": "P:Editor.Widget.IsPressed"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 209
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsDraggable",
+          "Name": "IsDraggable",
+          "Documentation": {
+            "Summary": "Whether this widget can be drag and dropped onto other widgets."
+          },
+          "DocId": "P:Editor.Widget.IsDraggable"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Widget.Events.cs",
+            "Line": 579
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.IsBeingDroppedOn",
+          "Name": "IsBeingDroppedOn",
+          "Documentation": {
+            "Summary": "Whether something is being dragged over this widget."
+          },
+          "DocId": "P:Editor.Widget.IsBeingDroppedOn"
+        },
+        {
+          "PropertyType": "Editor.Layout",
+          "Loc": {
+            "File": "Qt/Widget.Layout.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Widget.Layout",
+          "Name": "Layout",
+          "Documentation": {
+            "Summary": "The widget's internal layout, if any"
+          },
+          "DocId": "P:Editor.Widget.Layout"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MouseRelease",
+          "Name": "MouseRelease",
+          "Documentation": {},
+          "DocId": "F:Editor.Widget.MouseRelease"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MouseClick",
+          "Name": "MouseClick",
+          "Documentation": {},
+          "DocId": "F:Editor.Widget.MouseClick"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MouseRightClick",
+          "Name": "MouseRightClick",
+          "Documentation": {},
+          "DocId": "F:Editor.Widget.MouseRightClick"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MouseLeftPress",
+          "Name": "MouseLeftPress",
+          "Documentation": {
+            "Summary": "Called when this widget is left clicked (on mouse press)."
+          },
+          "DocId": "F:Editor.Widget.MouseLeftPress"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MouseRightPress",
+          "Name": "MouseRightPress",
+          "Documentation": {
+            "Summary": "Called when this widget is right clicked (on mouse press)."
+          },
+          "DocId": "F:Editor.Widget.MouseRightPress"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MouseMiddlePress",
+          "Name": "MouseMiddlePress",
+          "Documentation": {
+            "Summary": "Called when this widget is clicked with the mouse wheel (on mouse press)."
+          },
+          "DocId": "F:Editor.Widget.MouseMiddlePress"
+        },
+        {
+          "FieldType": "System.Action`1<Vector2>",
+          "IsPublic": true,
+          "FullName": "Editor.Widget.MouseMove",
+          "Name": "MouseMove",
+          "Documentation": {},
+          "DocId": "F:Editor.Widget.MouseMove"
+        },
+        {
+          "FieldType": "System.Func`1<System.Boolean>",
+          "IsPublic": true,
+          "FullName": "Editor.Widget.OnPaintOverride",
+          "Name": "OnPaintOverride",
+          "Documentation": {
+            "Summary": "Override the widget's paint process.\n            \nReturn <see langword=\"true\" /> to prevent the default paint action, which is to call <see cref=\"M:Editor.Widget.OnPaint\" />."
+          },
+          "DocId": "F:Editor.Widget.OnPaintOverride"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Widget",
+      "Name": "Widget",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "A generic widget."
+      },
+      "DocId": "T:Editor.Widget"
+    }
+  ],
+  "_metadata": {
+    "chunk": 260,
+    "items_count": 1
+  }
+}

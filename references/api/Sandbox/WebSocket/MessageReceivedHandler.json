@@ -1,0 +1,1582 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "message",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.MessageReceivedHandler.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.WebSocket.MessageReceivedHandler",
+          "DocId": "M:Sandbox.WebSocket.MessageReceivedHandler.Invoke(System.String)"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "message",
+              "Type": "System.String"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.MessageReceivedHandler.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Sandbox.WebSocket.MessageReceivedHandler",
+          "DocId": "M:Sandbox.WebSocket.MessageReceivedHandler.BeginInvoke(System.String,System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.MessageReceivedHandler.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Sandbox.WebSocket.MessageReceivedHandler",
+          "DocId": "M:Sandbox.WebSocket.MessageReceivedHandler.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.MessageReceivedHandler..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.WebSocket.MessageReceivedHandler",
+          "DocId": "M:Sandbox.WebSocket.MessageReceivedHandler.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.WebSocket.MessageReceivedHandler",
+      "Name": "MessageReceivedHandler",
+      "DeclaringType": "Sandbox.WebSocket",
+      "Documentation": {
+        "Summary": "Event handler which processes text messages from the WebSocket service.",
+        "Params": {
+          "message": "The message text that was received."
+        }
+      },
+      "DocId": "T:Sandbox.WebSocket.MessageReceivedHandler"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Span`1<System.Byte>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.DataReceivedHandler.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.WebSocket.DataReceivedHandler",
+          "DocId": "M:Sandbox.WebSocket.DataReceivedHandler.Invoke(System.Span`1{System.Byte})"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Span`1<System.Byte>"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.DataReceivedHandler.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Sandbox.WebSocket.DataReceivedHandler",
+          "DocId": "M:Sandbox.WebSocket.DataReceivedHandler.BeginInvoke(System.Span`1{System.Byte},System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.DataReceivedHandler.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Sandbox.WebSocket.DataReceivedHandler",
+          "DocId": "M:Sandbox.WebSocket.DataReceivedHandler.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.DataReceivedHandler..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.WebSocket.DataReceivedHandler",
+          "DocId": "M:Sandbox.WebSocket.DataReceivedHandler.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.WebSocket.DataReceivedHandler",
+      "Name": "DataReceivedHandler",
+      "DeclaringType": "Sandbox.WebSocket",
+      "Documentation": {
+        "Summary": "Event handler which processes binary messages from the WebSocket service.",
+        "Params": {
+          "data": "The binary message data that was received."
+        }
+      },
+      "DocId": "T:Sandbox.WebSocket.DataReceivedHandler"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "status",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "reason",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.DisconnectedHandler.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.WebSocket.DisconnectedHandler",
+          "DocId": "M:Sandbox.WebSocket.DisconnectedHandler.Invoke(System.Int32,System.String)"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "status",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "reason",
+              "Type": "System.String"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.DisconnectedHandler.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Sandbox.WebSocket.DisconnectedHandler",
+          "DocId": "M:Sandbox.WebSocket.DisconnectedHandler.BeginInvoke(System.Int32,System.String,System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.DisconnectedHandler.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Sandbox.WebSocket.DisconnectedHandler",
+          "DocId": "M:Sandbox.WebSocket.DisconnectedHandler.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSocket.DisconnectedHandler..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.WebSocket.DisconnectedHandler",
+          "DocId": "M:Sandbox.WebSocket.DisconnectedHandler.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.WebSocket.DisconnectedHandler",
+      "Name": "DisconnectedHandler",
+      "DeclaringType": "Sandbox.WebSocket",
+      "Documentation": {
+        "Summary": "Event handler which fires when the WebSocket disconnects from the server.",
+        "Params": {
+          "status": "The close status code from the server, or 0 if there was none. See known values here: https://developer.mozilla.org/en-US/docs/Web/API/CloseEvent",
+          "reason": "The reason string for closing the connection. This may not be populated, may be from the server, or may be a client exception message."
+        }
+      },
+      "DocId": "T:Sandbox.WebSocket.DisconnectedHandler"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.WebSurface",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "108"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.WebSurface.Dispose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 366
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.TellMouseMove",
+          "Name": "TellMouseMove",
+          "DeclaringType": "Sandbox.WebSurface",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tell the browser the mouse has moved"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "364"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tell the browser the mouse has moved"
+          },
+          "DocId": "M:Sandbox.WebSurface.TellMouseMove(Vector2)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "delta",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 375
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.TellMouseWheel",
+          "Name": "TellMouseWheel",
+          "DeclaringType": "Sandbox.WebSurface",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tell the browser the mouse wheel has moved"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "373"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tell the browser the mouse wheel has moved",
+            "Params": {
+              "delta": ""
+            }
+          },
+          "DocId": "M:Sandbox.WebSurface.TellMouseWheel(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "button",
+              "Type": "Sandbox.MouseButtons"
+            },
+            {
+              "Name": "state",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 384
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.TellMouseButton",
+          "Name": "TellMouseButton",
+          "DeclaringType": "Sandbox.WebSurface",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tell the browser a mouse button has been pressed"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "381"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tell the browser a mouse button has been pressed"
+          },
+          "DocId": "M:Sandbox.WebSurface.TellMouseButton(Sandbox.MouseButtons,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "unicodeKey",
+              "Type": "System.UInt32"
+            },
+            {
+              "Name": "modifiers",
+              "Type": "Sandbox.KeyboardModifiers"
+            }
+          ],
+          "l": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 409
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.TellChar",
+          "Name": "TellChar",
+          "DeclaringType": "Sandbox.WebSurface",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tell the browser a unicode key has been pressed"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "405"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tell the browser a unicode key has been pressed"
+          },
+          "DocId": "M:Sandbox.WebSurface.TellChar(System.UInt32,Sandbox.KeyboardModifiers)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "virtualKeyCode",
+              "Type": "System.UInt32"
+            },
+            {
+              "Name": "modifiers",
+              "Type": "Sandbox.KeyboardModifiers"
+            },
+            {
+              "Name": "state",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 436
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.TellKey",
+          "Name": "TellKey",
+          "DeclaringType": "Sandbox.WebSurface",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tell the browser a key has been pressed or released"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "421"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tell the browser a key has been pressed or released"
+          },
+          "DocId": "M:Sandbox.WebSurface.TellKey(System.UInt32,Sandbox.KeyboardModifiers,System.Boolean)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.IsLimited",
+          "Name": "IsLimited",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.WebSurface.IsLimited"
+        },
+        {
+          "PropertyType": "Sandbox.WebSurface.TextureChangedDelegate",
+          "Loc": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.OnTexture",
+          "Name": "OnTexture",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when the texture has changed and should be updated"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "65"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when the texture has changed and should be updated"
+          },
+          "DocId": "P:Sandbox.WebSurface.OnTexture"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.PageTitle",
+          "Name": "PageTitle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "129"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.WebSurface.PageTitle"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.Url",
+          "Name": "Url",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The current Url"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "134"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The current Url"
+          },
+          "DocId": "P:Sandbox.WebSurface.Url"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The size of the browser"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "227"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The size of the browser"
+          },
+          "DocId": "P:Sandbox.WebSurface.Size"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 301
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.Cursor",
+          "Name": "Cursor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "300"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.WebSurface.Cursor"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.HasKeyFocus",
+          "Name": "HasKeyFocus",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tell the html control if it has key focus currently, controls showing the I-beam cursor in text controls amongst other things"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "451"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tell the html control if it has key focus currently, controls showing the I-beam cursor in text controls amongst other things"
+          },
+          "DocId": "P:Sandbox.WebSurface.HasKeyFocus"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.ScaleFactor",
+          "Name": "ScaleFactor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "DPI Scaling factor"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "473"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "DPI Scaling factor"
+          },
+          "DocId": "P:Sandbox.WebSurface.ScaleFactor"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Utility/WebSurface.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.InBackgroundMode",
+          "Name": "InBackgroundMode",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enable/disable low-resource background mode, where javascript and repaint timers are throttled, resources are more aggressively purged from memory, and audio/video elements are paused. When background mode is enabled, all HTML5 video and audio objects will execute \".pause()\" and gain the property \"._steam_background_paused = 1\". When background mode is disabled, any video or audio objects with that property will resume with \".play()\"."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\WebSurface.cs",
+                "498"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enable/disable low-resource background mode, where javascript and repaint timers are throttled, resources are\nmore aggressively purged from memory, and audio/video elements are paused. When background mode is enabled,\nall HTML5 video and audio objects will execute \".pause()\" and gain the property \"._steam_background_paused = 1\".\nWhen background mode is disabled, any video or audio objects with that property will resume with \".play()\"."
+          },
+          "DocId": "P:Sandbox.WebSurface.InBackgroundMode"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.WebSurface",
+      "Name": "WebSurface",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Enables rendering and interacting with a webpage"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\WebSurface.cs",
+            "11"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Enables rendering and interacting with a webpage"
+      },
+      "DocId": "T:Sandbox.WebSurface"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "span",
+              "Type": "System.ReadOnlySpan`1<System.Byte>"
+            },
+            {
+              "Name": "size",
+              "Type": "Vector2"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.TextureChangedDelegate.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.WebSurface.TextureChangedDelegate",
+          "DocId": "M:Sandbox.WebSurface.TextureChangedDelegate.Invoke(System.ReadOnlySpan`1{System.Byte},Vector2)"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "span",
+              "Type": "System.ReadOnlySpan`1<System.Byte>"
+            },
+            {
+              "Name": "size",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.TextureChangedDelegate.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Sandbox.WebSurface.TextureChangedDelegate",
+          "DocId": "M:Sandbox.WebSurface.TextureChangedDelegate.BeginInvoke(System.ReadOnlySpan`1{System.Byte},Vector2,System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.TextureChangedDelegate.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Sandbox.WebSurface.TextureChangedDelegate",
+          "DocId": "M:Sandbox.WebSurface.TextureChangedDelegate.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.WebSurface.TextureChangedDelegate..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.WebSurface.TextureChangedDelegate",
+          "DocId": "M:Sandbox.WebSurface.TextureChangedDelegate.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.WebSurface.TextureChangedDelegate",
+      "Name": "TextureChangedDelegate",
+      "DeclaringType": "Sandbox.WebSurface",
+      "DocId": "T:Sandbox.WebSurface.TextureChangedDelegate"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "uri",
+              "Type": "System.Uri"
+            }
+          ],
+          "l": {
+            "File": "Utility/Web/Http.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Http.IsAllowed",
+          "Name": "IsAllowed",
+          "DeclaringType": "Sandbox.Http",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Check if the given Uri matches the following requirements: 1. Scheme is https/http or wss/ws 2. If it's localhost, only allow ports 80/443/8080/8443 3. Not an ip address"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Web\\Http.cs",
+                "68"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Check if the given Uri matches the following requirements:\n1. Scheme is https/http or wss/ws\n2. If it's localhost, only allow ports 80/443/8080/8443\n3. Not an ip address",
+            "Return": "True if the Uri can be accessed, false if the Uri will be blocked.",
+            "Params": {
+              "uri": "The Uri to check."
+            }
+          },
+          "DocId": "M:Sandbox.Http.IsAllowed(System.Uri)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "header",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Utility/Web/Http.cs",
+            "Line": 141
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Http.IsHeaderAllowed",
+          "Name": "IsHeaderAllowed",
+          "DeclaringType": "Sandbox.Http",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Checks if a given header is allowed to be set."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Web\\Http.cs",
+                "138"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Checks if a given header is allowed to be set.",
+            "Return": "True if the header is allowed to be set.",
+            "Params": {
+              "header": "The header name to check."
+            }
+          },
+          "DocId": "M:Sandbox.Http.IsHeaderAllowed(System.String)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.String>",
+          "Parameters": [
+            {
+              "Name": "requestUri",
+              "Type": "System.String"
+            },
+            {
+              "Name": "method",
+              "Type": "System.String",
+              "Default": "GET"
+            },
+            {
+              "Name": "content",
+              "Type": "System.Net.Http.HttpContent",
+              "Default": "null"
+            },
+            {
+              "Name": "headers",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.String>",
+              "Default": "null"
+            },
+            {
+              "Name": "cancellationToken",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Http.RequestStringAsync",
+          "Name": "RequestStringAsync",
+          "DeclaringType": "Sandbox.Http",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Http/<RequestStringAsync>d__13"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Send a HTTP request to the specified URI and return the response body as a string in an asynchronous operation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Web\\Http.Requests.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Http.RequestStringAsync(System.String,System.String,System.Net.Http.HttpContent,System.Collections.Generic.Dictionary`2{System.String,System.String},System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Byte[]>",
+          "Parameters": [
+            {
+              "Name": "requestUri",
+              "Type": "System.String"
+            },
+            {
+              "Name": "method",
+              "Type": "System.String",
+              "Default": "GET"
+            },
+            {
+              "Name": "content",
+              "Type": "System.Net.Http.HttpContent",
+              "Default": "null"
+            },
+            {
+              "Name": "headers",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.String>",
+              "Default": "null"
+            },
+            {
+              "Name": "cancellationToken",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Http.RequestBytesAsync",
+          "Name": "RequestBytesAsync",
+          "DeclaringType": "Sandbox.Http",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Http/<RequestBytesAsync>d__14"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Send a HTTP request to the specified URI and return the response body as a byte array in an asynchronous operation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Web\\Http.Requests.cs",
+                "41"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Http.RequestBytesAsync(System.String,System.String,System.Net.Http.HttpContent,System.Collections.Generic.Dictionary`2{System.String,System.String},System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.IO.Stream>",
+          "Parameters": [
+            {
+              "Name": "requestUri",
+              "Type": "System.String"
+            },
+            {
+              "Name": "method",
+              "Type": "System.String",
+              "Default": "GET"
+            },
+            {
+              "Name": "content",
+              "Type": "System.Net.Http.HttpContent",
+              "Default": "null"
+            },
+            {
+              "Name": "headers",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.String>",
+              "Default": "null"
+            },
+            {
+              "Name": "cancellationToken",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Http.RequestStreamAsync",
+          "Name": "RequestStreamAsync",
+          "DeclaringType": "Sandbox.Http",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Http/<RequestStreamAsync>d__15"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Send a HTTP request to the specified URI and return the response body as a stream in an asynchronous operation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Web\\Http.Requests.cs",
+                "59"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Http.RequestStreamAsync(System.String,System.String,System.Net.Http.HttpContent,System.Collections.Generic.Dictionary`2{System.String,System.String},System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<T>",
+          "Parameters": [
+            {
+              "Name": "requestUri",
+              "Type": "System.String"
+            },
+            {
+              "Name": "method",
+              "Type": "System.String",
+              "Default": "GET"
+            },
+            {
+              "Name": "content",
+              "Type": "System.Net.Http.HttpContent",
+              "Default": "null"
+            },
+            {
+              "Name": "headers",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.String>",
+              "Default": "null"
+            },
+            {
+              "Name": "cancellationToken",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Http.RequestJsonAsync",
+          "Name": "RequestJsonAsync",
+          "DeclaringType": "Sandbox.Http",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Http/<RequestJsonAsync>d__16`1"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sends a HTTP request to the specified URI and return the response body as a JSON deserialized object in an asynchronous operation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Web\\Http.Requests.cs",
+                "77"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Http.RequestJsonAsync``1(System.String,System.String,System.Net.Http.HttpContent,System.Collections.Generic.Dictionary`2{System.String,System.String},System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Net.Http.HttpResponseMessage>",
+          "Parameters": [
+            {
+              "Name": "requestUri",
+              "Type": "System.String"
+            },
+            {
+              "Name": "method",
+              "Type": "System.String",
+              "Default": "GET"
+            },
+            {
+              "Name": "content",
+              "Type": "System.Net.Http.HttpContent",
+              "Default": "null"
+            },
+            {
+              "Name": "headers",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.String>",
+              "Default": "null"
+            },
+            {
+              "Name": "cancellationToken",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Http.RequestAsync",
+          "Name": "RequestAsync",
+          "DeclaringType": "Sandbox.Http",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Http/<RequestAsync>d__17"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sends a HTTP request to the specified URI and returns the response in an asynchronous operation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Web\\Http.Requests.cs",
+                "95"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Http.RequestAsync(System.String,System.String,System.Net.Http.HttpContent,System.Collections.Generic.Dictionary`2{System.String,System.String},System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Net.Http.HttpContent",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Utility/Web/Http.Requests.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Http.CreateJsonContent",
+          "Name": "CreateJsonContent",
+          "DeclaringType": "Sandbox.Http",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Creates a new HttpContent instance containing the specified object serialized to JSON."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Web\\Http.Requests.cs",
+                "110"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Creates a new <see cref=\"T:System.Net.Http.HttpContent\" /> instance containing the specified object serialized to JSON."
+          },
+          "DocId": "M:Sandbox.Http.CreateJsonContent``1(``0)"
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Http",
+      "Name": "Http",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Lets your game make async HTTP requests."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\Web\\Http.cs",
+            "14"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Lets your game make async HTTP requests."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\Web\\Http.Requests.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Lets your game make async HTTP requests."
+      },
+      "DocId": "T:Sandbox.Http"
+    },
+    {
+      "Namespace": "Sandbox.Utility",
+      "Properties": [
+        {
+          "PropertyType": "System.Object",
+          "Loc": {
+            "File": "Utility/EditorTools.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.EditorTools.InspectorObject",
+          "Name": "InspectorObject",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the object to be inspected by the inspector in the editor"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\EditorTools.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the object to be inspected by the inspector in the editor"
+          },
+          "DocId": "P:Sandbox.Utility.EditorTools.InspectorObject"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Utility.EditorTools",
+      "Name": "EditorTools",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Functions to interact with the tools system. Does nothing if tools aren't enabled."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\EditorTools.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Functions to interact with the tools system. Does nothing if tools aren't enabled."
+      },
+      "DocId": "T:Sandbox.Utility.EditorTools"
+    },
+    {
+      "Namespace": "Sandbox.Utility",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "l": {
+            "File": "Utility/FloatBitmap.cs",
+            "Line": 26
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.FloatBitmap.Finalize",
+          "Name": "Finalize",
+          "DeclaringType": "Sandbox.Utility.FloatBitmap",
+          "DocId": "M:Sandbox.Utility.FloatBitmap.Finalize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Utility/FloatBitmap.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.FloatBitmap.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.Utility.FloatBitmap",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\FloatBitmap.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.FloatBitmap.Dispose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "width",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "height",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Utility/FloatBitmap.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.FloatBitmap.Resize",
+          "Name": "Resize",
+          "DeclaringType": "Sandbox.Utility.FloatBitmap",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\FloatBitmap.cs",
+                "45"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.FloatBitmap.Resize(System.Int32,System.Int32,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Byte[]",
+          "Parameters": [
+            {
+              "Name": "format",
+              "Type": "Sandbox.ImageFormat"
+            }
+          ],
+          "l": {
+            "File": "Utility/FloatBitmap.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.FloatBitmap.EncodeTo",
+          "Name": "EncodeTo",
+          "DeclaringType": "Sandbox.Utility.FloatBitmap",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\FloatBitmap.cs",
+                "53"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.FloatBitmap.EncodeTo(Sandbox.ImageFormat)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Utility/FloatBitmap.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.FloatBitmap.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\FloatBitmap.cs",
+                "41"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Utility.FloatBitmap.Width"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Utility/FloatBitmap.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.FloatBitmap.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\FloatBitmap.cs",
+                "42"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Utility.FloatBitmap.Height"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Utility/FloatBitmap.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.FloatBitmap.Depth",
+          "Name": "Depth",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\FloatBitmap.cs",
+                "43"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Utility.FloatBitmap.Depth"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.FloatBitmap",
+      "Name": "FloatBitmap",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\FloatBitmap.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Utility.FloatBitmap"
+    }
+  ],
+  "_metadata": {
+    "chunk": 173,
+    "items_count": 8
+  }
+}

@@ -1,0 +1,625 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Network",
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.List`1<System.String>",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.MountedVPKsResponse.MountedVPKs",
+          "Name": "MountedVPKs",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "123"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.MountedVPKsResponse.MountedVPKs"
+        },
+        {
+          "PropertyType": "System.Guid",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.MountedVPKsResponse.HandshakeId",
+          "Name": "HandshakeId",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "124"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.MountedVPKsResponse.HandshakeId"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Network.MountedVPKsResponse",
+      "Name": "MountedVPKsResponse",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Network.MountedVPKsResponse"
+    },
+    {
+      "Namespace": "Sandbox.Network",
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Network.SnapshotMsg",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.InitialSnapshotResponse.Snapshot",
+          "Name": "Snapshot",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "137"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.InitialSnapshotResponse.Snapshot"
+        },
+        {
+          "PropertyType": "System.Guid",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 139
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.InitialSnapshotResponse.HandshakeId",
+          "Name": "HandshakeId",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "138"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.InitialSnapshotResponse.HandshakeId"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Network.InitialSnapshotResponse",
+      "Name": "InitialSnapshotResponse",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Network.InitialSnapshotResponse"
+    },
+    {
+      "Namespace": "Sandbox.Network",
+      "Properties": [
+        {
+          "PropertyType": "System.Double",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 145
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.SnapshotMsg.Time",
+          "Name": "Time",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "144"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.SnapshotMsg.Time"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 146
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.SnapshotMsg.SceneData",
+          "Name": "SceneData",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "145"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.SnapshotMsg.SceneData"
+        },
+        {
+          "PropertyType": "System.Byte[]",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 147
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.SnapshotMsg.BlobData",
+          "Name": "BlobData",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "146"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.SnapshotMsg.BlobData"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<System.Object>",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 148
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.SnapshotMsg.NetworkObjects",
+          "Name": "NetworkObjects",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "147"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.SnapshotMsg.NetworkObjects"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Network.SnapshotMsg.GameObjectSystemData>",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 149
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.SnapshotMsg.GameObjectSystems",
+          "Name": "GameObjectSystems",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "148"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.SnapshotMsg.GameObjectSystems"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Network.SnapshotMsg",
+      "Name": "SnapshotMsg",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Network.SnapshotMsg"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "System.Byte[]",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 154
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.SnapshotMsg.GameObjectSystemData.SnapshotData",
+          "Name": "SnapshotData",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "153"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.SnapshotMsg.GameObjectSystemData.SnapshotData"
+        },
+        {
+          "PropertyType": "System.Byte[]",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.SnapshotMsg.GameObjectSystemData.TableData",
+          "Name": "TableData",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "154"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.SnapshotMsg.GameObjectSystemData.TableData"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 156
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.SnapshotMsg.GameObjectSystemData.Type",
+          "Name": "Type",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "155"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.SnapshotMsg.GameObjectSystemData.Type"
+        },
+        {
+          "PropertyType": "System.Guid",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 157
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.SnapshotMsg.GameObjectSystemData.Id",
+          "Name": "Id",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "156"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.SnapshotMsg.GameObjectSystemData.Id"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Network.SnapshotMsg.GameObjectSystemData",
+      "Name": "GameObjectSystemData",
+      "DeclaringType": "Sandbox.Network.SnapshotMsg",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Network.SnapshotMsg.GameObjectSystemData"
+    },
+    {
+      "Namespace": "Sandbox.Network",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 183
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.ReconnectMsg.Game",
+          "Name": "Game",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "182"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.ReconnectMsg.Game"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Networking/Messages/NetworkMessages.cs",
+            "Line": 184
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.ReconnectMsg.Map",
+          "Name": "Map",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\Messages\\NetworkMessages.cs",
+                "183"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Network.ReconnectMsg.Map"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Network.ReconnectMsg",
+      "Name": "ReconnectMsg",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Sent to the server to tell clients to reconnect. This is sent when\nthe server is changing games, or maps, and wants the current players\nto follow them to the new game, or map.\nWe send the Game and Map to the best of our knowledge, so the client\ncan maybe preload them, while we are."
+      },
+      "DocId": "T:Sandbox.Network.ReconnectMsg"
+    },
+    {
+      "Namespace": "Sandbox.Network",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Networking/System/ConnectionStats.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.ConnectionStats.Ping",
+          "Name": "Ping",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Current ping for this connection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\ConnectionStats.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Current ping for this connection."
+          },
+          "DocId": "P:Sandbox.Network.ConnectionStats.Ping"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Networking/System/ConnectionStats.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.ConnectionStats.OutPacketsPerSecond",
+          "Name": "OutPacketsPerSecond",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many packets per second we're sending to this connection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\ConnectionStats.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many packets per second we're sending to this connection."
+          },
+          "DocId": "P:Sandbox.Network.ConnectionStats.OutPacketsPerSecond"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Networking/System/ConnectionStats.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.ConnectionStats.OutBytesPerSecond",
+          "Name": "OutBytesPerSecond",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many bytes per second we're sending to this connection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\ConnectionStats.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many bytes per second we're sending to this connection."
+          },
+          "DocId": "P:Sandbox.Network.ConnectionStats.OutBytesPerSecond"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Networking/System/ConnectionStats.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.ConnectionStats.InPacketsPerSecond",
+          "Name": "InPacketsPerSecond",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many packets per second we're receiving from this connection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\ConnectionStats.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many packets per second we're receiving from this connection."
+          },
+          "DocId": "P:Sandbox.Network.ConnectionStats.InPacketsPerSecond"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Networking/System/ConnectionStats.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.ConnectionStats.InBytesPerSecond",
+          "Name": "InBytesPerSecond",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many bytes per second we're receiving from this connection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\ConnectionStats.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many bytes per second we're receiving from this connection."
+          },
+          "DocId": "P:Sandbox.Network.ConnectionStats.InBytesPerSecond"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Networking/System/ConnectionStats.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.ConnectionStats.SendRateBytesPerSecond",
+          "Name": "SendRateBytesPerSecond",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Estimate rate that we believe we can send data to this connection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\ConnectionStats.cs",
+                "33"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Estimate rate that we believe we can send data to this connection."
+          },
+          "DocId": "P:Sandbox.Network.ConnectionStats.SendRateBytesPerSecond"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Networking/System/ConnectionStats.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.ConnectionStats.ConnectionQuality",
+          "Name": "ConnectionQuality",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "From 0 to 1 how good is our connection to this?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\ConnectionStats.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "From 0 to 1 how good is our connection to this?"
+          },
+          "DocId": "P:Sandbox.Network.ConnectionStats.ConnectionQuality"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Network.ConnectionStats",
+      "Name": "ConnectionStats",
+      "DocId": "T:Sandbox.Network.ConnectionStats"
+    }
+  ],
+  "_metadata": {
+    "chunk": 203,
+    "items_count": 6
+  }
+}

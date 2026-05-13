@@ -1,0 +1,1198 @@
+{
+  "Types": [
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Editor.IProgressSection.Cancel",
+          "Name": "Cancel",
+          "DeclaringType": "Editor.IProgressSection",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "EditorSystem.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "M:Editor.IProgressSection.Cancel"
+        },
+        {
+          "ReturnType": "System.Threading.CancellationToken",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Editor.IProgressSection.GetCancel",
+          "Name": "GetCancel",
+          "DeclaringType": "Editor.IProgressSection",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "EditorSystem.cs",
+                "38"
+              ]
+            }
+          ],
+          "DocId": "M:Editor.IProgressSection.GetCancel"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Editor.IProgressSection.Icon",
+          "Name": "Icon",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "EditorSystem.cs",
+                "30"
+              ]
+            }
+          ],
+          "DocId": "P:Editor.IProgressSection.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Editor.IProgressSection.Title",
+          "Name": "Title",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "EditorSystem.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "P:Editor.IProgressSection.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Editor.IProgressSection.Subtitle",
+          "Name": "Subtitle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "EditorSystem.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "P:Editor.IProgressSection.Subtitle"
+        },
+        {
+          "PropertyType": "System.Double",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Editor.IProgressSection.Current",
+          "Name": "Current",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "EditorSystem.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "P:Editor.IProgressSection.Current"
+        },
+        {
+          "PropertyType": "System.Double",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Editor.IProgressSection.TotalCount",
+          "Name": "TotalCount",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "EditorSystem.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "P:Editor.IProgressSection.TotalCount"
+        },
+        {
+          "PropertyType": "System.Double",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "EditorSystem.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Editor.IProgressSection.ProgressDelta",
+          "Name": "ProgressDelta",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "EditorSystem.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "P:Editor.IProgressSection.ProgressDelta"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Editor.IProgressSection",
+      "Name": "IProgressSection",
+      "DocId": "T:Editor.IProgressSection"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Attribute",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "System.Collections.Generic.List`1<System.String>"
+            }
+          ],
+          "l": {
+            "File": "Editor/Hammer/EditorAttributes.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MetaDataAttribute.AddTags",
+          "Name": "AddTags",
+          "DeclaringType": "Editor.MetaDataAttribute",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Hammer\\EditorAttributes.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "M:Editor.MetaDataAttribute.AddTags(System.Collections.Generic.List`1{System.String})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "meta_data",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.Object>"
+            }
+          ],
+          "l": {
+            "File": "Editor/Hammer/EditorAttributes.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MetaDataAttribute.AddMetaData",
+          "Name": "AddMetaData",
+          "DeclaringType": "Editor.MetaDataAttribute",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Hammer\\EditorAttributes.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "M:Editor.MetaDataAttribute.AddMetaData(System.Collections.Generic.Dictionary`2{System.String,System.Object})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "helpers",
+              "Type": "System.Collections.Generic.List`1<System.Tuple`2<System.String,System.String[]>>"
+            }
+          ],
+          "l": {
+            "File": "Editor/Hammer/EditorAttributes.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MetaDataAttribute.AddHelpers",
+          "Name": "AddHelpers",
+          "DeclaringType": "Editor.MetaDataAttribute",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Hammer\\EditorAttributes.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "M:Editor.MetaDataAttribute.AddHelpers(System.Collections.Generic.List`1{System.Tuple`2{System.String,System.String[]}})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Editor.MetaDataAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MetaDataAttribute",
+          "DocId": "M:Editor.MetaDataAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Editor.MetaDataAttribute",
+      "Name": "MetaDataAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Base attribute which allows adding FGD metadata to classes."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Editor\\Hammer\\EditorAttributes.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Base attribute which allows adding FGD metadata to classes."
+      },
+      "DocId": "T:Editor.MetaDataAttribute"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Attribute",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "meta_data",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.String>"
+            }
+          ],
+          "l": {
+            "File": "Editor/Hammer/EditorAttributes.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FieldMetaDataAttribute.AddMetaData",
+          "Name": "AddMetaData",
+          "DeclaringType": "Editor.FieldMetaDataAttribute",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Hammer\\EditorAttributes.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "M:Editor.FieldMetaDataAttribute.AddMetaData(System.Collections.Generic.Dictionary`2{System.String,System.String})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Editor.FieldMetaDataAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.FieldMetaDataAttribute",
+          "DocId": "M:Editor.FieldMetaDataAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Editor.FieldMetaDataAttribute",
+      "Name": "FieldMetaDataAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Base attribute which allows adding metadata to properties."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Editor\\Hammer\\EditorAttributes.cs",
+            "19"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Base attribute which allows adding metadata to properties."
+      },
+      "DocId": "T:Editor.FieldMetaDataAttribute"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "internal_name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Editor/Hammer/EditorAttributes.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Editor.HidePropertyAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.HidePropertyAttribute",
+          "Documentation": {
+            "Params": {
+              "internal_name": "The internal/fgd name to skip. Usually all lowercase and with underscores (_) instead of spaces."
+            }
+          },
+          "DocId": "M:Editor.HidePropertyAttribute.#ctor(System.String)"
+        }
+      ],
+      "Fields": [],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Editor.HidePropertyAttribute",
+      "Name": "HidePropertyAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A way to hide properties from parent classes in tools."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Editor\\Hammer\\EditorAttributes.cs",
+            "28"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A way to hide properties from parent classes in tools."
+      },
+      "DocId": "T:Editor.HidePropertyAttribute"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.FieldMetaDataAttribute",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "meta_data",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.String>"
+            }
+          ],
+          "l": {
+            "File": "Editor/Hammer/EditorAttributes.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Editor.EnableColorAlphaAttribute.AddMetaData",
+          "Name": "AddMetaData",
+          "DeclaringType": "Editor.EnableColorAlphaAttribute",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Hammer\\EditorAttributes.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "M:Editor.EnableColorAlphaAttribute.AddMetaData(System.Collections.Generic.Dictionary`2{System.String,System.String})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Editor.EnableColorAlphaAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.EnableColorAlphaAttribute",
+          "DocId": "M:Editor.EnableColorAlphaAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Editor.EnableColorAlphaAttribute",
+      "Name": "EnableColorAlphaAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "If used on a Color or Color32 property, enables alpha modification in editors."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Editor\\Hammer\\EditorAttributes.cs",
+            "43"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "If used on a Color or Color32 property, enables alpha modification in editors."
+      },
+      "DocId": "T:Editor.EnableColorAlphaAttribute"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "filename",
+              "Type": "System.String"
+            },
+            {
+              "Name": "data",
+              "Type": "System.Byte[]"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Editor.SceneFolder.WriteFile",
+          "Name": "WriteFile",
+          "DeclaringType": "Editor.SceneFolder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Write a file to the path relative to the scene folder, return the path relative to the root."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Editor.cs",
+                "117"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Write a file to the path relative to the scene folder, return the path relative to the root."
+          },
+          "DocId": "M:Editor.SceneFolder.WriteFile(System.String,System.Byte[])"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Editor.SceneFolder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.SceneFolder",
+          "DocId": "M:Editor.SceneFolder.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Editor.SceneFolder",
+      "Name": "SceneFolder",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Editor.cs",
+            "112"
+          ]
+        }
+      ],
+      "DocId": "T:Editor.SceneFolder"
+    },
+    {
+      "Namespace": "NativeEngine",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "NativeEngine.VfxCompileTarget_t",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "NativeEngine.VfxCompileTarget_t.COMPILE_TARGET_UNSUPPORTED",
+          "Name": "COMPILE_TARGET_UNSUPPORTED",
+          "DocId": "F:NativeEngine.VfxCompileTarget_t.COMPILE_TARGET_UNSUPPORTED"
+        },
+        {
+          "FieldType": "NativeEngine.VfxCompileTarget_t",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "NativeEngine.VfxCompileTarget_t.SM_5_0",
+          "Name": "SM_5_0",
+          "DocId": "F:NativeEngine.VfxCompileTarget_t.SM_5_0"
+        },
+        {
+          "FieldType": "NativeEngine.VfxCompileTarget_t",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "NativeEngine.VfxCompileTarget_t.SM_6_0",
+          "Name": "SM_6_0",
+          "DocId": "F:NativeEngine.VfxCompileTarget_t.SM_6_0"
+        },
+        {
+          "FieldType": "NativeEngine.VfxCompileTarget_t",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "NativeEngine.VfxCompileTarget_t.SM_6_0_VULKAN",
+          "Name": "SM_6_0_VULKAN",
+          "DocId": "F:NativeEngine.VfxCompileTarget_t.SM_6_0_VULKAN"
+        },
+        {
+          "FieldType": "NativeEngine.VfxCompileTarget_t",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "NativeEngine.VfxCompileTarget_t.COMPILE_TARGET_MAX",
+          "Name": "COMPILE_TARGET_MAX",
+          "DocId": "F:NativeEngine.VfxCompileTarget_t.COMPILE_TARGET_MAX"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "NativeEngine.VfxCompileTarget_t",
+      "Name": "VfxCompileTarget_t",
+      "DocId": "T:NativeEngine.VfxCompileTarget_t"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [],
+      "Properties": [
+        {
+          "PropertyType": "System.UInt64",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.AppId",
+          "Name": "AppId",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Steam AppId of S&box."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Steam AppId of S&amp;box."
+          },
+          "DocId": "P:Sandbox.Application.AppId"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsUnitTest",
+          "Name": "IsUnitTest",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if we're running the engine as part of a unit test"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if we're running the engine as part of a unit test"
+          },
+          "DocId": "P:Sandbox.Application.IsUnitTest"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsHeadless",
+          "Name": "IsHeadless",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if running without a graphics window, such as in a terminal."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if running without a graphics window, such as in a terminal."
+          },
+          "DocId": "P:Sandbox.Application.IsHeadless"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsConsoleApp",
+          "Name": "IsConsoleApp",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if running in a terminal like console, instead of a game window or editor."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if running in a terminal like console, instead of a game window or editor."
+          },
+          "DocId": "P:Sandbox.Application.IsConsoleApp"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsDedicatedServer",
+          "Name": "IsDedicatedServer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this is a dedicated server"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this is a dedicated server"
+          },
+          "DocId": "P:Sandbox.Application.IsDedicatedServer"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsEditor",
+          "Name": "IsEditor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if running with the tools or editor attached"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if running with the tools or editor attached"
+          },
+          "DocId": "P:Sandbox.Application.IsEditor"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.Version",
+          "Name": "Version",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The engine's version string"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "67"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The engine's version string"
+          },
+          "DocId": "P:Sandbox.Application.Version"
+        },
+        {
+          "PropertyType": "System.DateTime",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.VersionDate",
+          "Name": "VersionDate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The date of this version, as a UTC datetime."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "77"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The date of this version, as a UTC datetime."
+          },
+          "DocId": "P:Sandbox.Application.VersionDate"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsStandalone",
+          "Name": "IsStandalone",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if the game is running in standalone mode"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if the game is running in standalone mode"
+          },
+          "DocId": "P:Sandbox.Application.IsStandalone"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 99
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.LanguageCode",
+          "Name": "LanguageCode",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ConVarAttribute",
+              "ConstructorArguments": [
+                "language",
+                "65"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The language code for the current language"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "92"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The language code for the current language"
+          },
+          "DocId": "P:Sandbox.Application.LanguageCode"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 99
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsVR",
+          "Name": "IsVR",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if the game is running in VR mode"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "98"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if the game is running in VR mode"
+          },
+          "DocId": "P:Sandbox.Application.IsVR"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 162
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsDebug",
+          "Name": "IsDebug",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "161"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Application.IsDebug"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 168
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsMicrophoneListening",
+          "Name": "IsMicrophoneListening",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if the microphone is currently listening"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "167"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if the microphone is currently listening"
+          },
+          "DocId": "P:Sandbox.Application.IsMicrophoneListening"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 173
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsMicrophoneRecording",
+          "Name": "IsMicrophoneRecording",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if the microphone is currently listening and actually hearing/capturing sounds"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "172"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if the microphone is currently listening and actually hearing/capturing sounds"
+          },
+          "DocId": "P:Sandbox.Application.IsMicrophoneRecording"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 178
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.IsFocused",
+          "Name": "IsFocused",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is the game window in focus?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "177"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is the game window in focus?"
+          },
+          "DocId": "P:Sandbox.Application.IsFocused"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 200
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.CheatsEnabled",
+          "Name": "CheatsEnabled",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "197"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Application.CheatsEnabled"
+        },
+        {
+          "PropertyType": "Sandbox.Engine.Settings.RenderSettings",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 211
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.RenderSettings",
+          "Name": "RenderSettings",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows access to the RenderSettings singleton, which contains settings related to rendering in the game. You're only able to access this when in standalone mode. When accessing in the editor, or in sbox it will return null."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "206"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows access to the RenderSettings singleton, which contains settings related to rendering in the game.\nYou're only able to access this when in standalone mode. When accessing in the editor, or in sbox it will return null."
+          },
+          "DocId": "P:Sandbox.Application.RenderSettings"
+        },
+        {
+          "PropertyType": "Editor.EditorSystem",
+          "Loc": {
+            "File": "Application.cs",
+            "Line": 238
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Application.Editor",
+          "Name": "Editor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the current editor if any. Will return null if we're not in the editor, or there is no active editor session."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Application.cs",
+                "237"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the current editor if any. Will return null if we're not in the editor, or there is no active editor session."
+          },
+          "DocId": "P:Sandbox.Application.Editor"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Application",
+      "Name": "Application",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Application.cs",
+            "10"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Application"
+    }
+  ],
+  "_metadata": {
+    "chunk": 32,
+    "items_count": 8
+  }
+}

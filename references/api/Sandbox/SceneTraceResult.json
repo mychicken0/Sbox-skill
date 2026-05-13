@@ -1,0 +1,1778 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.SceneTraceResult",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "In": true,
+              "Type": "Sandbox.Scene"
+            },
+            {
+              "Name": "r",
+              "In": true,
+              "Type": "Sandbox.PhysicsTraceResult"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 907
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneTraceResult.From",
+          "Name": "From",
+          "DeclaringType": "Sandbox.SceneTraceResult",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "904"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SceneTraceResult.From(Sandbox.Scene@,Sandbox.PhysicsTraceResult@)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTraceResult",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "In": true,
+              "Type": "Sandbox.Scene"
+            },
+            {
+              "Name": "r",
+              "In": true,
+              "Type": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 935
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneTraceResult.From",
+          "Name": "From",
+          "DeclaringType": "Sandbox.SceneTraceResult",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "932"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SceneTraceResult.From(Sandbox.Scene@,Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result@)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 901
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Distance",
+          "Name": "Distance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "#Result"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The distance between start and end positions."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "899"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The distance between start and end positions."
+          },
+          "DocId": "P:Sandbox.SceneTraceResult.Distance"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Scene",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Scene",
+          "Name": "Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "786"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.SceneTraceResult.Scene"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Hit",
+          "Name": "Hit",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "#Result"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "791"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the trace hit something or not"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Hit"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.StartedSolid",
+          "Name": "StartedSolid",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "#Result"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "797"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the trace started in a solid"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.StartedSolid"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.StartPosition",
+          "Name": "StartPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Trace"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "803"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The start position of the trace"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.StartPosition"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.EndPosition",
+          "Name": "EndPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Trace"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "809"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The end or hit position of the trace"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.EndPosition"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.HitPosition",
+          "Name": "HitPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "#Result"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "815"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The hit position of the trace. Requires <see cref=\"M:Sandbox.SceneTrace.UseHitPosition(System.Boolean)\" />."
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.HitPosition"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Normal",
+          "Name": "Normal",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "#Result"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "821"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The hit surface normal (direction vector)"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Normal"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Fraction",
+          "Name": "Fraction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "#Result"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "827"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A fraction [0..1] of where the trace hit between the start and the original end positions"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Fraction"
+        },
+        {
+          "FieldType": "Sandbox.GameObject",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.GameObject",
+          "Name": "GameObject",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hit Object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "833"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The GameObject that was hit"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.GameObject"
+        },
+        {
+          "FieldType": "Sandbox.Component",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Component",
+          "Name": "Component",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hit Object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "839"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The Component that was hit"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Component"
+        },
+        {
+          "FieldType": "Sandbox.Collider",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Collider",
+          "Name": "Collider",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hit Object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "845"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The Collider that was hit"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Collider"
+        },
+        {
+          "FieldType": "Sandbox.PhysicsBody",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Body",
+          "Name": "Body",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hit Object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "851"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The physics object that was hit, if any"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Body"
+        },
+        {
+          "FieldType": "Sandbox.PhysicsShape",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Shape",
+          "Name": "Shape",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hit Object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "857"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The physics shape that was hit, if any"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Shape"
+        },
+        {
+          "FieldType": "Sandbox.Surface",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Surface",
+          "Name": "Surface",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hit Object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "863"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The physical properties of the hit surface"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Surface"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Bone",
+          "Name": "Bone",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hit Object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "869"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The id of the hit bone (either from hitbox or physics shape)"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Bone"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Direction",
+          "Name": "Direction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Trace"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "875"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The direction of the trace ray"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Direction"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Triangle",
+          "Name": "Triangle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hit Object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "881"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The triangle index hit, if we hit a mesh <see cref=\"T:Sandbox.PhysicsShape\">physics shape</see>"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Triangle"
+        },
+        {
+          "FieldType": "System.String[]",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Tags",
+          "Name": "Tags",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hit Object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "887"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The tags that the hit shape had"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Tags"
+        },
+        {
+          "FieldType": "Sandbox.Hitbox",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneTraceResult.Hitbox",
+          "Name": "Hitbox",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.ReadOnlyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hit Object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "893"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The hitbox that we hit"
+          },
+          "DocId": "F:Sandbox.SceneTraceResult.Hitbox"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneTraceResult",
+      "Name": "SceneTraceResult",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.ActionGraphIgnoreAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.SceneTraceResult"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Net.Http.DelegatingHandler",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Net.Http.HttpResponseMessage>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "System.Net.Http.HttpRequestMessage"
+            },
+            {
+              "Name": "cancellationToken",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.CachingHandler.SendAsync",
+          "Name": "SendAsync",
+          "DeclaringType": "Sandbox.CachingHandler",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.CachingHandler/<SendAsync>d__2"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Api\\Api.cs",
+                "71"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CachingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Services/Api/Api.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CachingHandler..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.CachingHandler",
+          "DocId": "M:Sandbox.CachingHandler.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.CachingHandler",
+      "Name": "CachingHandler",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Services\\Api\\Api.cs",
+            "59"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.CachingHandler"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.Title",
+          "Name": "Title",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.Description",
+          "Name": "Description",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.Description"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.Icon",
+          "Name": "Icon",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.Icon"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.IsUnlocked",
+          "Name": "IsUnlocked",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.IsUnlocked"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.DateTimeOffset>",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.UnlockTimestamp",
+          "Name": "UnlockTimestamp",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.UnlockTimestamp"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.Score",
+          "Name": "Score",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.Score"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.Range",
+          "Name": "Range",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.Range"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.CurrentValue",
+          "Name": "CurrentValue",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.CurrentValue"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.IsVisible",
+          "Name": "IsVisible",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns whether this achievement should be visible to the player"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns whether this achievement should be visible to the player"
+          },
+          "DocId": "P:Sandbox.Achievement.IsVisible"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.HasProgression",
+          "Name": "HasProgression",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.HasProgression"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.GlobalUnlocked",
+          "Name": "GlobalUnlocked",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.GlobalUnlocked"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.GlobalFraction",
+          "Name": "GlobalFraction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "38"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Achievement.GlobalFraction"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Services/Packages/Achievement.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Achievement.ProgressionFraction",
+          "Name": "ProgressionFraction",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A float, representing the progression of this stat. 0 is 0%, 1 is 100%. Not clamped."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Achievement.cs",
+                "43"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A float, representing the progression of this stat. 0 is 0%, 1 is 100%. Not clamped."
+          },
+          "DocId": "P:Sandbox.Achievement.ProgressionFraction"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Achievement",
+      "Name": "Achievement",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Services\\Packages\\Achievement.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Achievement"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Achievement",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/AchievementCollection.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AchievementCollection.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.AchievementCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get achievement by name, or null of it doesn't exist"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\AchievementCollection.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get achievement by name, or null of it doesn't exist"
+          },
+          "DocId": "M:Sandbox.AchievementCollection.Get(System.String)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.AchievementCollection.RecountProgression",
+          "Name": "RecountProgression",
+          "DeclaringType": "Sandbox.AchievementCollection",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.AchievementCollection/<RecountProgression>d__7"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Use the current stats to recount the progression on stats with progression. This is purely for UI, you can't force an achivement to unlock early by calling this."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\AchievementCollection.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Use the current stats to recount the progression on stats with progression. This is purely for UI,\nyou can't force an achivement to unlock early by calling this."
+          },
+          "DocId": "M:Sandbox.AchievementCollection.RecountProgression"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "packageIdent",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/AchievementCollection.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AchievementCollection..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.AchievementCollection",
+          "DocId": "M:Sandbox.AchievementCollection.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyCollection`1<Sandbox.Achievement>",
+          "Loc": {
+            "File": "Services/Packages/AchievementCollection.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AchievementCollection.All",
+          "Name": "All",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\AchievementCollection.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.AchievementCollection.All"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.AchievementCollection",
+      "Name": "AchievementCollection",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Holds achievements for a package"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Services\\Packages\\AchievementCollection.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Holds achievements for a package"
+      },
+      "DocId": "T:Sandbox.AchievementCollection"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.Asset",
+          "Name": "Asset",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Cloud.CloudAssetProviderAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the path of the asset referenced by this package"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the path of the asset referenced by this package"
+          },
+          "DocId": "M:Sandbox.Cloud.Asset(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Model",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.Model",
+          "Name": "Model",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Cloud.CloudAssetProviderAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Loads a model from the cloud by its identifier. The asset is downloaded during code compilation, so it's treated like a local model since it's shipped along with your package. <br></br> If you wish to load a model at runtime, use Sandbox.Cloud.Load``1(System.String,System.Boolean) instead."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Loads a model from the cloud by its identifier. The asset is downloaded during code compilation, so it's treated like a local model since it's shipped along with your package.\n<br></br>\nIf you wish to load a model at runtime, use <see cref=\"M:Sandbox.Cloud.Load``1(System.String,System.Boolean)\" /> instead.",
+            "Params": {
+              "ident": "The cloud ident/url of the model"
+            }
+          },
+          "DocId": "M:Sandbox.Cloud.Model(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Material",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.Material",
+          "Name": "Material",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Cloud.CloudAssetProviderAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Loads a material from the cloud by its identifier. The asset is downloaded during code compilation, so it's treated like a local material since it's shipped along with your package. <br></br> If you wish to load a material at runtime, use Sandbox.Cloud.Load``1(System.String,System.Boolean) instead."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "60"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Loads a material from the cloud by its identifier. The asset is downloaded during code compilation, so it's treated like a local material since it's shipped along with your package.\n<br></br>\nIf you wish to load a material at runtime, use <see cref=\"M:Sandbox.Cloud.Load``1(System.String,System.Boolean)\" /> instead.",
+            "Params": {
+              "ident": "The cloud ident/url of the material"
+            }
+          },
+          "DocId": "M:Sandbox.Cloud.Material(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.ParticleSystem",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.ParticleSystem",
+          "Name": "ParticleSystem",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Cloud.CloudAssetProviderAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "64"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Cloud.ParticleSystem(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.SoundEvent",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.SoundEvent",
+          "Name": "SoundEvent",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Cloud.CloudAssetProviderAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Loads a sound event from the cloud by its identifier. The asset is downloaded during code compilation, so it's treated like a local particle system since it's shipped along with your package. <br></br> If you wish to load a sound event at runtime, use Sandbox.Cloud.Load``1(System.String,System.Boolean) instead."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "75"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Loads a sound event from the cloud by its identifier. The asset is downloaded during code compilation, so it's treated like a local particle system since it's shipped along with your package.\n<br></br>\nIf you wish to load a sound event at runtime, use <see cref=\"M:Sandbox.Cloud.Load``1(System.String,System.Boolean)\" /> instead.",
+            "Params": {
+              "ident": "The cloud ident/url of the particle system"
+            }
+          },
+          "DocId": "M:Sandbox.Cloud.SoundEvent(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Shader",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.Shader",
+          "Name": "Shader",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Cloud.CloudAssetProviderAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Loads a shader from the cloud by its identifier. The asset is downloaded during code compilation, so it's treated like a local shader since it's shipped along with your package. <br></br> If you wish to load a shader at runtime, use Sandbox.Cloud.Load``1(System.String,System.Boolean) instead."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "85"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Loads a shader from the cloud by its identifier. The asset is downloaded during code compilation, so it's treated like a local shader since it's shipped along with your package.\n<br></br>\nIf you wish to load a shader at runtime, use <see cref=\"M:Sandbox.Cloud.Load``1(System.String,System.Boolean)\" /> instead.",
+            "Params": {
+              "ident": "The cloud ident/url of the shader"
+            }
+          },
+          "DocId": "M:Sandbox.Cloud.Shader(System.String)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<T>",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.String"
+            },
+            {
+              "Name": "withCode",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.Load",
+          "Name": "Load",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Cloud/<Load>d__8`1"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Loads a resource asynchronously from the cloud by its identifier, downloading the package if the client doesn't have it locally."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "92"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Loads a resource asynchronously from the cloud by its identifier, downloading the package if the client doesn't have it locally."
+          },
+          "DocId": "M:Sandbox.Cloud.Load``1(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.IsInstalled",
+          "Name": "IsInstalled",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Checks if a cloud package is installed."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "122"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Checks if a cloud package is installed."
+          },
+          "DocId": "M:Sandbox.Cloud.IsInstalled(System.String)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.Load",
+          "Name": "Load",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Cloud/<Load>d__10"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Loads a cloud package asynchronously from the cloud by its identifier"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "130"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Loads a cloud package asynchronously from the cloud by its identifier"
+          },
+          "DocId": "M:Sandbox.Cloud.Load(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Package",
+          "Parameters": [
+            {
+              "Name": "assetPath",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.Resolve.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.ResolvePrimaryAsset",
+          "Name": "ResolvePrimaryAsset",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Resolve a primary asset to a loaded package"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.Resolve.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Resolve a primary asset to a loaded package"
+          },
+          "DocId": "M:Sandbox.Cloud.ResolvePrimaryAsset(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Package[]",
+          "Parameters": [
+            {
+              "Name": "jso",
+              "Type": "System.Text.Json.Nodes.JsonNode"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.Resolve.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.ResolvePrimaryAssetsFromJson",
+          "Name": "ResolvePrimaryAssetsFromJson",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Given a json value, walk it and find paths, resolve them to packages"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.Resolve.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Given a json value, walk it and find paths, resolve them to packages"
+          },
+          "DocId": "M:Sandbox.Cloud.ResolvePrimaryAssetsFromJson(System.Text.Json.Nodes.JsonNode)"
+        },
+        {
+          "ReturnType": "Sandbox.Package[]",
+          "Parameters": [
+            {
+              "Name": "json",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.Resolve.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Cloud.ResolvePrimaryAssetsFromJson",
+          "Name": "ResolvePrimaryAssetsFromJson",
+          "DeclaringType": "Sandbox.Cloud",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Given a json string, walk it and find paths, resolve them to packages"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.Resolve.cs",
+                "63"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Given a json string, walk it and find paths, resolve them to packages"
+          },
+          "DocId": "M:Sandbox.Cloud.ResolvePrimaryAssetsFromJson(System.String)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Cloud",
+      "Name": "Cloud",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "For accessing assets from the cloud - from code"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Services\\Packages\\Cloud\\Cloud.cs",
+            "9"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "For accessing assets from the cloud - from code"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Services\\Packages\\Cloud\\Cloud.Resolve.cs",
+            "5"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "For accessing assets from the cloud - from code"
+      },
+      "DocId": "T:Sandbox.Cloud"
+    }
+  ],
+  "_metadata": {
+    "chunk": 131,
+    "items_count": 5
+  }
+}

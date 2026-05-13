@@ -1,0 +1,1659 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Internal",
+      "Methods": [
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "capacity",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.EnsureCapacity",
+          "Name": "EnsureCapacity",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.EnsureCapacity(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sourceIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "destination",
+              "Type": "System.Char[]"
+            },
+            {
+              "Name": "destinationIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.CopyTo",
+          "Name": "CopyTo",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sourceIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "destination",
+              "Type": "System.Span`1<System.Char>"
+            },
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.CopyTo",
+          "Name": "CopyTo",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.CopyTo(System.Int32,System.Span`1{System.Char},System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Clear"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "startIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "length",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Remove",
+          "Name": "Remove",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Remove(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Byte"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Byte)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Char"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Char)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Char"
+            },
+            {
+              "Name": "repeatCount",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Char,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Char[]"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Char[])"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Char[]"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "charCount",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Char[],System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Decimal"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Decimal)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Double"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 76
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Double)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Int64"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Int64)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.ReadOnlyMemory`1<System.Char>"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.ReadOnlyMemory`1{System.Char})"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.ReadOnlySpan`1<System.Char>"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.ReadOnlySpan`1{System.Char})"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.SByte"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.SByte)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Int16"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.Int16)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.String,System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.UInt32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.UInt32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.UInt64"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.UInt64)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.UInt16"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(System.UInt16)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "Sandbox.Internal.SafeStringBuilder"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Append(Sandbox.Internal.SafeStringBuilder)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 103
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendLine",
+          "Name": "AppendLine",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendLine"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 104
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendLine",
+          "Name": "AppendLine",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendLine(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.ReadOnlySpan`1<System.Char>"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendLine",
+          "Name": "AppendLine",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendLine(System.ReadOnlySpan`1{System.Char})"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "format",
+              "Type": "System.String"
+            },
+            {
+              "Name": "arg0",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendFormat",
+          "Name": "AppendFormat",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendFormat(System.String,System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "format",
+              "Type": "System.String"
+            },
+            {
+              "Name": "arg0",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "arg1",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 108
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendFormat",
+          "Name": "AppendFormat",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendFormat(System.String,System.Object,System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "format",
+              "Type": "System.String"
+            },
+            {
+              "Name": "arg0",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "arg1",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "arg2",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 109
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendFormat",
+          "Name": "AppendFormat",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendFormat(System.String,System.Object,System.Object,System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "format",
+              "Type": "System.String"
+            },
+            {
+              "Name": "args",
+              "Type": "System.Object[]"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 110
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendFormat",
+          "Name": "AppendFormat",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendFormat(System.String,System.Object[])"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "provider",
+              "Type": "System.IFormatProvider"
+            },
+            {
+              "Name": "format",
+              "Type": "System.String"
+            },
+            {
+              "Name": "arg0",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendFormat",
+          "Name": "AppendFormat",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "provider",
+              "Type": "System.IFormatProvider"
+            },
+            {
+              "Name": "format",
+              "Type": "System.String"
+            },
+            {
+              "Name": "arg0",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "arg1",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 112
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendFormat",
+          "Name": "AppendFormat",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "provider",
+              "Type": "System.IFormatProvider"
+            },
+            {
+              "Name": "format",
+              "Type": "System.String"
+            },
+            {
+              "Name": "arg0",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "arg1",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "arg2",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendFormat",
+          "Name": "AppendFormat",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object,System.Object,System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "provider",
+              "Type": "System.IFormatProvider"
+            },
+            {
+              "Name": "format",
+              "Type": "System.String"
+            },
+            {
+              "Name": "args",
+              "Type": "System.Object[]"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 114
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendFormat",
+          "Name": "AppendFormat",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object[])"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "separator",
+              "Type": "System.Char"
+            },
+            {
+              "Name": "values",
+              "Type": "System.Collections.Generic.IEnumerable`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 116
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendJoin",
+          "Name": "AppendJoin",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendJoin``1(System.Char,System.Collections.Generic.IEnumerable`1{``0})"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "separator",
+              "Type": "System.String"
+            },
+            {
+              "Name": "values",
+              "Type": "System.Collections.Generic.IEnumerable`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 117
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendJoin",
+          "Name": "AppendJoin",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendJoin``1(System.String,System.Collections.Generic.IEnumerable`1{``0})"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "separator",
+              "Type": "System.Char"
+            },
+            {
+              "Name": "values",
+              "Type": "System.Object[]"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendJoin",
+          "Name": "AppendJoin",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendJoin(System.Char,System.Object[])"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "separator",
+              "Type": "System.Char"
+            },
+            {
+              "Name": "values",
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendJoin",
+          "Name": "AppendJoin",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendJoin(System.Char,System.String[])"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "separator",
+              "Type": "System.String"
+            },
+            {
+              "Name": "values",
+              "Type": "System.Object[]"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 120
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendJoin",
+          "Name": "AppendJoin",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendJoin(System.String,System.Object[])"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "separator",
+              "Type": "System.String"
+            },
+            {
+              "Name": "values",
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.AppendJoin",
+          "Name": "AppendJoin",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.AppendJoin(System.String,System.String[])"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 123
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Byte"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Byte)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Char"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Char)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Char[]"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Char[])"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Char[]"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "charCount",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Char[],System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Decimal"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 128
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Decimal)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Double"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Double)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 131
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int64"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 132
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Int64)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 133
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.ReadOnlySpan`1<System.Char>"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 134
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.ReadOnlySpan`1{System.Char})"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.SByte"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 135
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.SByte)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int16"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 136
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.Int16)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.UInt32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 139
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.UInt32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.UInt64"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 140
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.UInt64)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.UInt16"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 141
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Insert(System.Int32,System.UInt16)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "oldChar",
+              "Type": "System.Char"
+            },
+            {
+              "Name": "newChar",
+              "Type": "System.Char"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 143
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Replace",
+          "Name": "Replace",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Replace(System.Char,System.Char)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "oldChar",
+              "Type": "System.Char"
+            },
+            {
+              "Name": "newChar",
+              "Type": "System.Char"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 144
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Replace",
+          "Name": "Replace",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Replace(System.Char,System.Char,System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "oldValue",
+              "Type": "System.String"
+            },
+            {
+              "Name": "newValue",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 145
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Replace",
+          "Name": "Replace",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Replace(System.String,System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Internal.SafeStringBuilder",
+          "Parameters": [
+            {
+              "Name": "oldValue",
+              "Type": "System.String"
+            },
+            {
+              "Name": "newValue",
+              "Type": "System.String"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 146
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Replace",
+          "Name": "Replace",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.Replace(System.String,System.String,System.Int32,System.Int32)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "capacity",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.#ctor(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "capacity",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "maxCapacity",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.#ctor(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.#ctor(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "capacity",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.#ctor(System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "length",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "capacity",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.SafeStringBuilder",
+          "DocId": "M:Sandbox.Internal.SafeStringBuilder.#ctor(System.String,System.Int32,System.Int32,System.Int32)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Length",
+          "Name": "Length",
+          "DocId": "P:Sandbox.Internal.SafeStringBuilder.Length"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Capacity",
+          "Name": "Capacity",
+          "DocId": "P:Sandbox.Internal.SafeStringBuilder.Capacity"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.MaxCapacity",
+          "Name": "MaxCapacity",
+          "DocId": "P:Sandbox.Internal.SafeStringBuilder.MaxCapacity"
+        },
+        {
+          "PropertyType": "System.Char",
+          "Loc": {
+            "File": "Text/SafeStringBuilder.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SafeStringBuilder.Item",
+          "Name": "Item",
+          "DocId": "P:Sandbox.Internal.SafeStringBuilder.Item"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.SafeStringBuilder",
+      "Name": "SafeStringBuilder",
+      "Attributes": [
+        {
+          "FullName": "System.Reflection.DefaultMemberAttribute",
+          "ConstructorArguments": [
+            "Item"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Calls to <c>new StringBuilder()</c> in addon code will map to this class.\nYou can use it directly but you probably shouldn't."
+      },
+      "DocId": "T:Sandbox.Internal.SafeStringBuilder"
+    }
+  ],
+  "_metadata": {
+    "chunk": 29,
+    "items_count": 1
+  }
+}

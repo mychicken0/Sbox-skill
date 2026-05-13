@@ -1,0 +1,1495 @@
+{
+  "Types": [
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Context",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.IMessageContext"
+            },
+            {
+              "Name": "Level",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.MessageLevel"
+            },
+            {
+              "Name": "Value",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "UserData",
+              "Out": true,
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationMessage.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Facepunch.ActionGraphs.ValidationMessage",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.ValidationMessage.Deconstruct(Facepunch.ActionGraphs.IMessageContext@,Facepunch.ActionGraphs.MessageLevel@,System.String@,System.Object@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Context",
+              "Type": "Facepunch.ActionGraphs.IMessageContext"
+            },
+            {
+              "Name": "Level",
+              "Type": "Facepunch.ActionGraphs.MessageLevel"
+            },
+            {
+              "Name": "Value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "UserData",
+              "Type": "System.Object",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationMessage..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.ValidationMessage",
+          "Documentation": {
+            "Summary": "A message generated during validation with a context, level, and value.",
+            "Params": {
+              "Context": "Action graph element most relevant to this message.",
+              "Level": "Severity of the message.",
+              "Value": "Message content."
+            }
+          },
+          "DocId": "M:Facepunch.ActionGraphs.ValidationMessage.#ctor(Facepunch.ActionGraphs.IMessageContext,Facepunch.ActionGraphs.MessageLevel,System.String,System.Object)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Facepunch.ActionGraphs.IMessageContext",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Validation.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationMessage.Context",
+          "Name": "Context",
+          "Documentation": {
+            "Summary": "Action graph element most relevant to this message."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.ValidationMessage.Context"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.MessageLevel",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Validation.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationMessage.Level",
+          "Name": "Level",
+          "Documentation": {
+            "Summary": "Severity of the message."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.ValidationMessage.Level"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Validation.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationMessage.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "Message content."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.ValidationMessage.Value"
+        },
+        {
+          "PropertyType": "System.Object",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Validation.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationMessage.UserData",
+          "Name": "UserData",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            }
+          ],
+          "DocId": "P:Facepunch.ActionGraphs.ValidationMessage.UserData"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Validation.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationMessage.IsError",
+          "Name": "IsError",
+          "Documentation": {
+            "Summary": "If true, this message was a cause for the action graph to fail validation."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.ValidationMessage.IsError"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.ValidationMessage",
+      "Name": "ValidationMessage",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A message generated during validation with a context, level, and value.",
+        "Params": {
+          "Context": "Action graph element most relevant to this message.",
+          "Level": "Severity of the message.",
+          "Value": "Message content."
+        }
+      },
+      "DocId": "T:Facepunch.ActionGraphs.ValidationMessage"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Exception",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "context",
+              "Type": "Facepunch.ActionGraphs.IMessageContext"
+            },
+            {
+              "Name": "message",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Validation.cs",
+            "Line": 216
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationException..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.ValidationException",
+          "Documentation": {
+            "Summary": "Exception thrown when an invalid action graph is invoked."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.ValidationException.#ctor(Facepunch.ActionGraphs.IMessageContext,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Facepunch.ActionGraphs.IMessageContext",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Validation.cs",
+            "Line": 224
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationException.Context",
+          "Name": "Context",
+          "Documentation": {
+            "Summary": "Action graph element most relevant to this exception."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.ValidationException.Context"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.ValidationException",
+      "Name": "ValidationException",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Exception thrown when an invalid action graph is invoked."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.ValidationException"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "guid",
+              "Type": "System.Guid"
+            },
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.IActionGraphCache.Add",
+          "Name": "Add",
+          "DeclaringType": "Facepunch.ActionGraphs.IActionGraphCache",
+          "DocId": "M:Facepunch.ActionGraphs.IActionGraphCache.Add(System.Guid,Facepunch.ActionGraphs.ActionGraph)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "guid",
+              "Type": "System.Guid"
+            },
+            {
+              "Name": "graph",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.IActionGraphCache.TryGetValue",
+          "Name": "TryGetValue",
+          "DeclaringType": "Facepunch.ActionGraphs.IActionGraphCache",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.IActionGraphCache.TryGetValue(System.Guid,Facepunch.ActionGraphs.ActionGraph@)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<System.Guid>",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.IActionGraphCache.Guids",
+          "Name": "Guids",
+          "DocId": "P:Facepunch.ActionGraphs.IActionGraphCache.Guids"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.IActionGraphCache",
+      "Name": "IActionGraphCache",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "DocId": "T:Facepunch.ActionGraphs.IActionGraphCache"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "guid",
+              "Type": "System.Guid"
+            },
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraphCache.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphCache.Add",
+          "Name": "Add",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphCache",
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphCache.Add(System.Guid,Facepunch.ActionGraphs.ActionGraph)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "guid",
+              "Type": "System.Guid"
+            },
+            {
+              "Name": "graph",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraphCache.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphCache.TryGetValue",
+          "Name": "TryGetValue",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphCache",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphCache.TryGetValue(System.Guid,Facepunch.ActionGraphs.ActionGraph@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "guid",
+              "Type": "System.Guid"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraphCache.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphCache.Remove",
+          "Name": "Remove",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphCache",
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphCache.Remove(System.Guid)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraphCache.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphCache.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphCache",
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphCache.Clear"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraphCache.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphCache..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphCache",
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphCache.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<System.Guid>",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraphCache.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphCache.Guids",
+          "Name": "Guids",
+          "DocId": "P:Facepunch.ActionGraphs.ActionGraphCache.Guids"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.ActionGraphCache",
+      "Name": "ActionGraphCache",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Used to re-use <see cref=\"T:Facepunch.ActionGraphs.ActionGraph\" /> instances when deserializing."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.ActionGraphCache"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.INodeAttribute.Identifier",
+          "Name": "Identifier",
+          "Documentation": {
+            "Summary": "A unique name to identify this node type."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.INodeAttribute.Identifier"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.INodeAttribute",
+      "Name": "INodeAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Used to define ActionGraph nodes using static methods, properties, or constructors."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.INodeAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "identifier",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Attributes.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.NodeAttribute",
+          "Documentation": {
+            "Summary": "Used to define ActionGraph nodes using static methods, properties, or constructors.",
+            "Params": {
+              "identifier": "A unique name to identify this node type."
+            }
+          },
+          "DocId": "M:Facepunch.ActionGraphs.NodeAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Attributes.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeAttribute.Identifier",
+          "Name": "Identifier",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.NodeAttribute.Identifier"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Attributes.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeAttribute.DefaultInputSignal",
+          "Name": "DefaultInputSignal",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.NodeAttribute.DefaultInputSignal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Attributes.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeAttribute.DefaultOutputSignal",
+          "Name": "DefaultOutputSignal",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.NodeAttribute.DefaultOutputSignal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Attributes.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeAttribute.InheritAsync",
+          "Name": "InheritAsync",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.NodeAttribute.InheritAsync"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.NodeAttribute",
+      "Name": "NodeAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        },
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Facepunch.ActionGraphs.NodeAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.IPureAttribute",
+      "Name": "IPureAttribute",
+      "Documentation": {
+        "Summary": "Declares a method to not have any side effects, it only performs a calculation\nusing its inputs and outputs a result."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.IPureAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.IImpureAttribute",
+      "Name": "IImpureAttribute",
+      "Documentation": {
+        "Summary": "Declares a method to have side effects, even if it's declared as\nreadonly."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.IImpureAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.PureAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.PureAttribute",
+          "DocId": "M:Facepunch.ActionGraphs.PureAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.PureAttribute",
+      "Name": "PureAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Facepunch.ActionGraphs.PureAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ImpureAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.ImpureAttribute",
+          "DocId": "M:Facepunch.ActionGraphs.ImpureAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.ImpureAttribute",
+      "Name": "ImpureAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Facepunch.ActionGraphs.ImpureAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.IPropertyAttribute",
+      "Name": "IPropertyAttribute",
+      "Documentation": {
+        "Summary": "For binding in methods marked with a <see cref=\"T:Facepunch.ActionGraphs.NodeAttribute\" />, this parameter should only\nbe configurable in the inspector as a property and not have a dedicated input."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.IPropertyAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.PropertyAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.PropertyAttribute",
+          "DocId": "M:Facepunch.ActionGraphs.PropertyAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.PropertyAttribute",
+      "Name": "PropertyAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Facepunch.ActionGraphs.PropertyAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.ITargetAttribute",
+      "Name": "ITargetAttribute",
+      "Documentation": {
+        "Summary": "For binding in methods marked with a <see cref=\"T:Facepunch.ActionGraphs.NodeAttribute\" />, this parameter represents\nthe target instance object the method is executed on."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.ITargetAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.TargetAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.TargetAttribute",
+          "DocId": "M:Facepunch.ActionGraphs.TargetAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.TargetAttribute",
+      "Name": "TargetAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Facepunch.ActionGraphs.TargetAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.IExposeWhenCachedAttribute",
+      "Name": "IExposeWhenCachedAttribute",
+      "Documentation": {
+        "Summary": "Declares that instances of the marked type can't be cached in a <see cref=\"T:Facepunch.ActionGraphs.ActionGraphCache\" />.\nFor example, if they might contain an ID that needs to get fixed up post serialization."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.IExposeWhenCachedAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ExposeWhenCachedAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.ExposeWhenCachedAttribute",
+          "DocId": "M:Facepunch.ActionGraphs.ExposeWhenCachedAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.ExposeWhenCachedAttribute",
+      "Name": "ExposeWhenCachedAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Facepunch.ActionGraphs.ExposeWhenCachedAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.IAlwaysInvokedAttribute",
+      "Name": "IAlwaysInvokedAttribute",
+      "Documentation": {
+        "Summary": "Marks an output signal that will always be dispatched before the default output\nsignal. Used on a parameter of a method marked with <see cref=\"T:Facepunch.ActionGraphs.NodeAttribute\" />."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.IAlwaysInvokedAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.AlwaysInvokedAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.AlwaysInvokedAttribute",
+          "DocId": "M:Facepunch.ActionGraphs.AlwaysInvokedAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.AlwaysInvokedAttribute",
+      "Name": "AlwaysInvokedAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Facepunch.ActionGraphs.AlwaysInvokedAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.INodeDefinitionAttribute",
+      "Name": "INodeDefinitionAttribute",
+      "Documentation": {
+        "Summary": "Marks a class extending <see cref=\"T:Facepunch.ActionGraphs.NodeDefinition\" /> that should be automatically\nadded to a <see cref=\"T:Facepunch.ActionGraphs.NodeLibrary\" /> when <see cref=\"M:Facepunch.ActionGraphs.NodeLibrary.AddAssembly(System.Reflection.Assembly)\" /> is called."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.INodeDefinitionAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeDefinitionAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.NodeDefinitionAttribute",
+          "DocId": "M:Facepunch.ActionGraphs.NodeDefinitionAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.NodeDefinitionAttribute",
+      "Name": "NodeDefinitionAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Facepunch.ActionGraphs.NodeDefinitionAttribute"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "Facepunch.ActionGraphs.BindingSurface",
+          "Parameters": [
+            {
+              "Name": "node",
+              "Type": "Facepunch.ActionGraphs.Node"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.FromNode",
+          "Name": "FromNode",
+          "DeclaringType": "Facepunch.ActionGraphs.BindingSurface",
+          "DocId": "M:Facepunch.ActionGraphs.BindingSurface.FromNode(Facepunch.ActionGraphs.Node)"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.BindingSurface",
+          "Parameters": [
+            {
+              "Name": "node",
+              "Type": "Facepunch.ActionGraphs.Node"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.FromNodeDeserializationSafe",
+          "Name": "FromNodeDeserializationSafe",
+          "DeclaringType": "Facepunch.ActionGraphs.BindingSurface",
+          "DocId": "M:Facepunch.ActionGraphs.BindingSurface.FromNodeDeserializationSafe(Facepunch.ActionGraphs.Node)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Facepunch.ActionGraphs.BindingSurface",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.BindingSurface.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.BindingSurface",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Facepunch.ActionGraphs.BindingSurface",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.BindingSurface.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Properties",
+              "Out": true,
+              "Type": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Object>"
+            },
+            {
+              "Name": "InputTypes",
+              "Out": true,
+              "Type": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Type>"
+            },
+            {
+              "Name": "OutputTypes",
+              "Out": true,
+              "Type": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Type>"
+            },
+            {
+              "Name": "ActionGraph",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            },
+            {
+              "Name": "Node",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.Node"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Facepunch.ActionGraphs.BindingSurface",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.BindingSurface.Deconstruct(System.Collections.Generic.IReadOnlyDictionary`2{System.String,System.Object}@,System.Collections.Generic.IReadOnlyDictionary`2{System.String,System.Type}@,System.Collections.Generic.IReadOnlyDictionary`2{System.String,System.Type}@,Facepunch.ActionGraphs.ActionGraph@,Facepunch.ActionGraphs.Node@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Properties",
+              "Type": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Object>"
+            },
+            {
+              "Name": "InputTypes",
+              "Type": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Type>"
+            },
+            {
+              "Name": "OutputTypes",
+              "Type": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Type>"
+            },
+            {
+              "Name": "ActionGraph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            },
+            {
+              "Name": "Node",
+              "Type": "Facepunch.ActionGraphs.Node"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.BindingSurface",
+          "DocId": "M:Facepunch.ActionGraphs.BindingSurface.#ctor(System.Collections.Generic.IReadOnlyDictionary`2{System.String,System.Object},System.Collections.Generic.IReadOnlyDictionary`2{System.String,System.Type},System.Collections.Generic.IReadOnlyDictionary`2{System.String,System.Type},Facepunch.ActionGraphs.ActionGraph,Facepunch.ActionGraphs.Node)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Facepunch.ActionGraphs.BindingSurface"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.BindingSurface",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.BindingSurface.#ctor(Facepunch.ActionGraphs.BindingSurface)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Facepunch.ActionGraphs.BindingSurface.EqualityContract"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Object>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 6
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.Properties",
+          "Name": "Properties",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument[]"
+              ]
+            }
+          ],
+          "DocId": "P:Facepunch.ActionGraphs.BindingSurface.Properties"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Type>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.InputTypes",
+          "Name": "InputTypes",
+          "DocId": "P:Facepunch.ActionGraphs.BindingSurface.InputTypes"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Type>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.OutputTypes",
+          "Name": "OutputTypes",
+          "DocId": "P:Facepunch.ActionGraphs.BindingSurface.OutputTypes"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.ActionGraph",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.ActionGraph",
+          "Name": "ActionGraph",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            }
+          ],
+          "DocId": "P:Facepunch.ActionGraphs.BindingSurface.ActionGraph"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.Node",
+          "Name": "Node",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            }
+          ],
+          "DocId": "P:Facepunch.ActionGraphs.BindingSurface.Node"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.BindingSurface",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.Empty",
+          "Name": "Empty",
+          "DocId": "P:Facepunch.ActionGraphs.BindingSurface.Empty"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/BindingSurface.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.BindingSurface.IsNested",
+          "Name": "IsNested",
+          "DocId": "P:Facepunch.ActionGraphs.BindingSurface.IsNested"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.BindingSurface",
+      "Name": "BindingSurface",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "DocId": "T:Facepunch.ActionGraphs.BindingSurface"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Facepunch.ActionGraphs.AssignmentKind",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.AssignmentKind.Set",
+          "Name": "Set",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.GroupAttribute",
+              "ConstructorArguments": [
+                "Simple"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.IconAttribute",
+              "ConstructorArguments": [
+                "="
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Replace the old value with the new value."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Replace the old value with the new value."
+          },
+          "DocId": "F:Facepunch.ActionGraphs.AssignmentKind.Set"
+        },
+        {
+          "FieldType": "Facepunch.ActionGraphs.AssignmentKind",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.AssignmentKind.Add",
+          "Name": "Add",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.GroupAttribute",
+              "ConstructorArguments": [
+                "Arithmetic"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.IconAttribute",
+              "ConstructorArguments": [
+                "+="
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Replace the old value with old + new."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Replace the old value with old + new."
+          },
+          "DocId": "F:Facepunch.ActionGraphs.AssignmentKind.Add"
+        },
+        {
+          "FieldType": "Facepunch.ActionGraphs.AssignmentKind",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.AssignmentKind.Subtract",
+          "Name": "Subtract",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.GroupAttribute",
+              "ConstructorArguments": [
+                "Arithmetic"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.IconAttribute",
+              "ConstructorArguments": [
+                "-="
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Replace the old value with old - new."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Replace the old value with old - new."
+          },
+          "DocId": "F:Facepunch.ActionGraphs.AssignmentKind.Subtract"
+        },
+        {
+          "FieldType": "Facepunch.ActionGraphs.AssignmentKind",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.AssignmentKind.Multiply",
+          "Name": "Multiply",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.GroupAttribute",
+              "ConstructorArguments": [
+                "Arithmetic"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.IconAttribute",
+              "ConstructorArguments": [
+                "*="
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Replace the old value with old * new."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Replace the old value with old * new."
+          },
+          "DocId": "F:Facepunch.ActionGraphs.AssignmentKind.Multiply"
+        },
+        {
+          "FieldType": "Facepunch.ActionGraphs.AssignmentKind",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.AssignmentKind.Divide",
+          "Name": "Divide",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.GroupAttribute",
+              "ConstructorArguments": [
+                "Arithmetic"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.IconAttribute",
+              "ConstructorArguments": [
+                "/="
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Replace the old value with old / new."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Replace the old value with old / new."
+          },
+          "DocId": "F:Facepunch.ActionGraphs.AssignmentKind.Divide"
+        },
+        {
+          "FieldType": "Facepunch.ActionGraphs.AssignmentKind",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.AssignmentKind.Increment",
+          "Name": "Increment",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.GroupAttribute",
+              "ConstructorArguments": [
+                "Unary"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.IconAttribute",
+              "ConstructorArguments": [
+                "++"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Replace the old value with old + 1."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Replace the old value with old + 1."
+          },
+          "DocId": "F:Facepunch.ActionGraphs.AssignmentKind.Increment"
+        },
+        {
+          "FieldType": "Facepunch.ActionGraphs.AssignmentKind",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.AssignmentKind.Decrement",
+          "Name": "Decrement",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.GroupAttribute",
+              "ConstructorArguments": [
+                "Unary"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.IconAttribute",
+              "ConstructorArguments": [
+                "--"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Replace the old value with old - 1."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Replace the old value with old - 1."
+          },
+          "DocId": "F:Facepunch.ActionGraphs.AssignmentKind.Decrement"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.AssignmentKind",
+      "Name": "AssignmentKind",
+      "Documentation": {
+        "Summary": "Operations accessor nodes can perform."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.AssignmentKind"
+    }
+  ],
+  "_metadata": {
+    "chunk": 275,
+    "items_count": 22
+  }
+}

@@ -1,0 +1,1843 @@
+{
+  "Types": [
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "FileSystem.cs",
+            "Line": 141
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.SuppressNextHotload",
+          "Name": "SuppressNextHotload",
+          "DeclaringType": "Editor.FileSystem",
+          "Documentation": {
+            "Summary": "Stop the game from triggering a hotload for this file - because presumably you have\nalready reloaded it."
+          },
+          "DocId": "M:Editor.FileSystem.SuppressNextHotload"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.Mounted",
+          "Name": "Mounted",
+          "Documentation": {
+            "Summary": "Paths from tool addons which are mounted."
+          },
+          "DocId": "P:Editor.FileSystem.Mounted"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.Root",
+          "Name": "Root",
+          "Documentation": {
+            "Summary": "Root of the game's folder."
+          },
+          "DocId": "P:Editor.FileSystem.Root"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.Temporary",
+          "Name": "Temporary",
+          "Documentation": {
+            "Summary": "The engine /game/.source2/ folder for temporary files and caches."
+          },
+          "DocId": "P:Editor.FileSystem.Temporary"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.Config",
+          "Name": "Config",
+          "Documentation": {
+            "Summary": "The engine /game/config/ folder"
+          },
+          "DocId": "P:Editor.FileSystem.Config"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.WebCache",
+          "Name": "WebCache",
+          "Documentation": {
+            "Summary": "The engine /game/.source2/http/ folder."
+          },
+          "DocId": "P:Editor.FileSystem.WebCache"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.ProjectTemporary",
+          "Name": "ProjectTemporary",
+          "Documentation": {
+            "Summary": "The current project's .sbox/ folder for temporary files and caches."
+          },
+          "DocId": "P:Editor.FileSystem.ProjectTemporary"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.Cloud",
+          "Name": "Cloud",
+          "Documentation": {
+            "Summary": "The current project's .sbox/cloud/ folder. We download files from sbox.game right into this filesystem."
+          },
+          "DocId": "P:Editor.FileSystem.Cloud"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.Transient",
+          "Name": "Transient",
+          "Documentation": {
+            "Summary": "The current project's .sbox/transient/ folder. This is where assets are created at runtime. These are assets\nthat are created by another asset,that don't need to be stored in source control or anything - because they\ncan get re-created at will."
+          },
+          "DocId": "P:Editor.FileSystem.Transient"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.Content",
+          "Name": "Content",
+          "Documentation": {
+            "Summary": "Content from active addons (and content paths)"
+          },
+          "DocId": "P:Editor.FileSystem.Content"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.ProjectSettings",
+          "Name": "ProjectSettings",
+          "Documentation": {
+            "Summary": "The current project's ProjectSettings folder"
+          },
+          "DocId": "P:Editor.FileSystem.ProjectSettings"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.Libraries",
+          "Name": "Libraries",
+          "Documentation": {
+            "Summary": "The current project's Libraries folder"
+          },
+          "DocId": "P:Editor.FileSystem.Libraries"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "FileSystem.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.FileSystem.Localization",
+          "Name": "Localization",
+          "Documentation": {
+            "Summary": "The current project's Localization folder"
+          },
+          "DocId": "P:Editor.FileSystem.Localization"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Editor.FileSystem",
+      "Name": "FileSystem",
+      "Documentation": {
+        "Summary": "A filesystem that can be accessed by the game."
+      },
+      "DocId": "T:Editor.FileSystem"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "package",
+              "Type": "Sandbox.Package"
+            }
+          ],
+          "l": {
+            "File": "GameData/GameData.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.GameData.LoadEntitiesFromPackage",
+          "Name": "LoadEntitiesFromPackage",
+          "DeclaringType": "Editor.GameData",
+          "Documentation": {
+            "Summary": "Loads the entity classes from a remote sbox.game game or addon into Hammer."
+          },
+          "DocId": "M:Editor.GameData.LoadEntitiesFromPackage(Sandbox.Package)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<Editor.MapClass>",
+          "Loc": {
+            "File": "GameData/GameData.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.GameData.EntityClasses",
+          "Name": "EntityClasses",
+          "Documentation": {
+            "Summary": "A list of all entity classes exposed to tools."
+          },
+          "DocId": "P:Editor.GameData.EntityClasses"
+        },
+        {
+          "PropertyType": "Sandbox.Package[]",
+          "Loc": {
+            "File": "GameData/GameData.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.GameData.LoadedPackages",
+          "Name": "LoadedPackages",
+          "Documentation": {
+            "Summary": "All loaded sbox.game packages for this session to load entities for tools from."
+          },
+          "DocId": "P:Editor.GameData.LoadedPackages"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Editor.GameData",
+      "Name": "GameData",
+      "Documentation": {
+        "Summary": "Lets all native and managed tools know about any engine / game entities."
+      },
+      "DocId": "T:Editor.GameData"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.InputOutputType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputOutputType.Invalid",
+          "Name": "Invalid",
+          "DocId": "F:Editor.InputOutputType.Invalid"
+        },
+        {
+          "FieldType": "Editor.InputOutputType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputOutputType.Void",
+          "Name": "Void",
+          "DocId": "F:Editor.InputOutputType.Void"
+        },
+        {
+          "FieldType": "Editor.InputOutputType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputOutputType.Int",
+          "Name": "Int",
+          "DocId": "F:Editor.InputOutputType.Int"
+        },
+        {
+          "FieldType": "Editor.InputOutputType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputOutputType.Bool",
+          "Name": "Bool",
+          "DocId": "F:Editor.InputOutputType.Bool"
+        },
+        {
+          "FieldType": "Editor.InputOutputType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputOutputType.String",
+          "Name": "String",
+          "DocId": "F:Editor.InputOutputType.String"
+        },
+        {
+          "FieldType": "Editor.InputOutputType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputOutputType.Float",
+          "Name": "Float",
+          "DocId": "F:Editor.InputOutputType.Float"
+        },
+        {
+          "FieldType": "Editor.InputOutputType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputOutputType.Vector",
+          "Name": "Vector",
+          "DocId": "F:Editor.InputOutputType.Vector"
+        },
+        {
+          "FieldType": "Editor.InputOutputType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputOutputType.EHandle",
+          "Name": "EHandle",
+          "DocId": "F:Editor.InputOutputType.EHandle"
+        },
+        {
+          "FieldType": "Editor.InputOutputType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputOutputType.Color",
+          "Name": "Color",
+          "DocId": "F:Editor.InputOutputType.Color"
+        },
+        {
+          "FieldType": "Editor.InputOutputType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputOutputType.Script",
+          "Name": "Script",
+          "DocId": "F:Editor.InputOutputType.Script"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.InputOutputType",
+      "Name": "InputOutputType",
+      "DocId": "T:Editor.InputOutputType"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Editor.InputOutputBase..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.InputOutputBase",
+          "DocId": "M:Editor.InputOutputBase.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/InputOutput.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Editor.InputOutputBase.Name",
+          "Name": "Name",
+          "DocId": "P:Editor.InputOutputBase.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/InputOutput.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Editor.InputOutputBase.Description",
+          "Name": "Description",
+          "DocId": "P:Editor.InputOutputBase.Description"
+        },
+        {
+          "PropertyType": "Editor.InputOutputType",
+          "Loc": {
+            "File": "GameData/InputOutput.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Editor.InputOutputBase.Type",
+          "Name": "Type",
+          "DocId": "P:Editor.InputOutputBase.Type"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.InputOutputBase",
+      "Name": "InputOutputBase",
+      "Documentation": {
+        "Summary": "Represents a variable"
+      },
+      "DocId": "T:Editor.InputOutputBase"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.InputOutputBase",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Editor.Input..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Input",
+          "DocId": "M:Editor.Input.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Input",
+      "Name": "Input",
+      "DocId": "T:Editor.Input"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.InputOutputBase",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Editor.Output..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Output",
+          "DocId": "M:Editor.Output.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Output",
+      "Name": "Output",
+      "DocId": "T:Editor.Output"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "GameData/MapClass.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MapClass",
+          "DocId": "M:Editor.MapClass.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "Class name e.g prop_physics"
+          },
+          "DocId": "P:Editor.MapClass.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.DisplayName",
+          "Name": "DisplayName",
+          "Documentation": {
+            "Summary": "Display name e.g Physics Prop"
+          },
+          "DocId": "P:Editor.MapClass.DisplayName"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Description",
+          "Name": "Description",
+          "Documentation": {
+            "Summary": "Human readable name e.g Physics Prop"
+          },
+          "DocId": "P:Editor.MapClass.Description"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Icon",
+          "Name": "Icon",
+          "Documentation": {
+            "Summary": "Icon ( Material )"
+          },
+          "DocId": "P:Editor.MapClass.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Category",
+          "Name": "Category",
+          "Documentation": {
+            "Summary": "Category"
+          },
+          "DocId": "P:Editor.MapClass.Category"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Type",
+          "Name": "Type",
+          "Documentation": {
+            "Summary": "C# Type of this class"
+          },
+          "DocId": "P:Editor.MapClass.Type"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.IsPointClass",
+          "Name": "IsPointClass",
+          "Documentation": {
+            "Summary": "A point entity, i.e. a model entity, etc."
+          },
+          "DocId": "P:Editor.MapClass.IsPointClass"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.IsSolidClass",
+          "Name": "IsSolidClass",
+          "Documentation": {
+            "Summary": "A solid class entity, triggers, etc., entities that are tied to from a mesh in Hammer"
+          },
+          "DocId": "P:Editor.MapClass.IsSolidClass"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.IsPathClass",
+          "Name": "IsPathClass",
+          "Documentation": {
+            "Summary": "A path entity, will appear in the Path Tool."
+          },
+          "DocId": "P:Editor.MapClass.IsPathClass"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.IsCableClass",
+          "Name": "IsCableClass",
+          "Documentation": {
+            "Summary": "A cable entity, will appear in the Path Tool."
+          },
+          "DocId": "P:Editor.MapClass.IsCableClass"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Editor.MapClassVariable>",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Variables",
+          "Name": "Variables",
+          "Documentation": {
+            "Summary": "List of properties exposed to tools for this class."
+          },
+          "DocId": "P:Editor.MapClass.Variables"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Editor.Input>",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Inputs",
+          "Name": "Inputs",
+          "Documentation": {
+            "Summary": "List of inputs for this class."
+          },
+          "DocId": "P:Editor.MapClass.Inputs"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Editor.Output>",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Outputs",
+          "Name": "Outputs",
+          "Documentation": {
+            "Summary": "List of outputs for this class."
+          },
+          "DocId": "P:Editor.MapClass.Outputs"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<System.String>",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 94
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Tags",
+          "Name": "Tags",
+          "Documentation": {
+            "Summary": "General purpose tags, some with special meanings within Hammer and map compilers."
+          },
+          "DocId": "P:Editor.MapClass.Tags"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<System.Tuple`2<System.String,System.String[]>>",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 99
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.EditorHelpers",
+          "Name": "EditorHelpers",
+          "Documentation": {
+            "Summary": "In-editor helpers for this class, such as box visualizers for certain properties, etc."
+          },
+          "DocId": "P:Editor.MapClass.EditorHelpers"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.Dictionary`2<System.String,System.Object>",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 104
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Metadata",
+          "Name": "Metadata",
+          "Documentation": {
+            "Summary": "General purpose key-value store to alter functionality of UI, map compilation, editor helpers, etc."
+          },
+          "DocId": "P:Editor.MapClass.Metadata"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 109
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.GameIdent",
+          "Name": "GameIdent",
+          "Documentation": {
+            "Summary": "What game does this belong to? ( TODO: Might not be best place for this? )"
+          },
+          "DocId": "P:Editor.MapClass.GameIdent"
+        },
+        {
+          "PropertyType": "Sandbox.Package",
+          "Loc": {
+            "File": "GameData/MapClass.cs",
+            "Line": 114
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClass.Package",
+          "Name": "Package",
+          "Documentation": {
+            "Summary": "What package did this entity come from?"
+          },
+          "DocId": "P:Editor.MapClass.Package"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapClass",
+      "Name": "MapClass",
+      "Documentation": {
+        "Summary": "Represents an entity class used by the map editor"
+      },
+      "DocId": "T:Editor.MapClass"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "GameData/MapClassVariable.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClassVariable..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MapClassVariable",
+          "DocId": "M:Editor.MapClassVariable.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClassVariable.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClassVariable.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "The internal name."
+          },
+          "DocId": "P:Editor.MapClassVariable.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClassVariable.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClassVariable.LongName",
+          "Name": "LongName",
+          "Documentation": {
+            "Summary": "The user friendly name for UI."
+          },
+          "DocId": "P:Editor.MapClassVariable.LongName"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClassVariable.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClassVariable.Description",
+          "Name": "Description",
+          "Documentation": {
+            "Summary": "Description for this variable."
+          },
+          "DocId": "P:Editor.MapClassVariable.Description"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClassVariable.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClassVariable.GroupName",
+          "Name": "GroupName",
+          "Documentation": {
+            "Summary": "Category or group for this variable."
+          },
+          "DocId": "P:Editor.MapClassVariable.GroupName"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "GameData/MapClassVariable.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClassVariable.PropertyType",
+          "Name": "PropertyType",
+          "Documentation": {
+            "Summary": "Data type for this variable."
+          },
+          "DocId": "P:Editor.MapClassVariable.PropertyType"
+        },
+        {
+          "PropertyType": "System.Object",
+          "Loc": {
+            "File": "GameData/MapClassVariable.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClassVariable.DefaultValue",
+          "Name": "DefaultValue",
+          "Documentation": {
+            "Summary": "Default value for this variable."
+          },
+          "DocId": "P:Editor.MapClassVariable.DefaultValue"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "GameData/MapClassVariable.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClassVariable.PropertyTypeOverride",
+          "Name": "PropertyTypeOverride",
+          "Documentation": {
+            "Summary": "Internal, used to override the type to one the tools understand."
+          },
+          "DocId": "P:Editor.MapClassVariable.PropertyTypeOverride"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.Dictionary`2<System.String,System.String>",
+          "Loc": {
+            "File": "GameData/MapClassVariable.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MapClassVariable.Metadata",
+          "Name": "Metadata",
+          "Documentation": {
+            "Summary": "General purpose key-value store to alter functionality of UI, map compilation, editor helpers, etc."
+          },
+          "DocId": "P:Editor.MapClassVariable.Metadata"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MapClassVariable",
+      "Name": "MapClassVariable",
+      "Documentation": {
+        "Summary": "Represents a variable."
+      },
+      "DocId": "T:Editor.MapClassVariable"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "widget",
+              "Type": "Editor.SceneRenderingWidget"
+            }
+          ],
+          "l": {
+            "File": "GameMode.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.GameMode.SetPlayWidget",
+          "Name": "SetPlayWidget",
+          "DeclaringType": "Editor.GameMode",
+          "Documentation": {
+            "Summary": "Given a widget, register it for SDL input, and tell the engine this is the swapchain we have",
+            "Params": {
+              "widget": ""
+            }
+          },
+          "DocId": "M:Editor.GameMode.SetPlayWidget(Editor.SceneRenderingWidget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "GameMode.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.GameMode.ClearPlayMode",
+          "Name": "ClearPlayMode",
+          "DeclaringType": "Editor.GameMode",
+          "DocId": "M:Editor.GameMode.ClearPlayMode"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Editor.GameMode",
+      "Name": "GameMode",
+      "Documentation": {
+        "Summary": "Registers a widget with the input system to use SDL and manages\ninputs and focus as it relates to the editor's game widget."
+      },
+      "DocId": "T:Editor.GameMode"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<Sandbox.InputAction>",
+          "Parameters": [],
+          "l": {
+            "File": "Input/InputSystem.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InputSystem.GetCommonInputs",
+          "Name": "GetCommonInputs",
+          "DeclaringType": "Editor.InputSystem",
+          "DocId": "M:Editor.InputSystem.GetCommonInputs"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Editor.InputSystem",
+      "Name": "InputSystem",
+      "DocId": "T:Editor.InputSystem"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "extension",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Inspector/AssetPreviewAttribute.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AssetPreviewAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.AssetPreviewAttribute",
+          "DocId": "M:Editor.AssetPreviewAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Inspector/AssetPreviewAttribute.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AssetPreviewAttribute.Extension",
+          "Name": "Extension",
+          "DocId": "P:Editor.AssetPreviewAttribute.Extension"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.AssetPreviewAttribute",
+      "Name": "AssetPreviewAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Editor.AssetPreviewAttribute"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Attribute",
+      "Methods": [
+        {
+          "ReturnType": "Editor.Widget",
+          "Parameters": [
+            {
+              "Name": "property",
+              "Type": "System.Reflection.PropertyInfo"
+            }
+          ],
+          "l": {
+            "File": "Inspector/CanEditAttribute.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.CanEditAttribute.CreateEditorFor",
+          "Name": "CreateEditorFor",
+          "DeclaringType": "Editor.CanEditAttribute",
+          "DocId": "M:Editor.CanEditAttribute.CreateEditorFor(System.Reflection.PropertyInfo)"
+        },
+        {
+          "ReturnType": "Editor.Widget",
+          "Parameters": [
+            {
+              "Name": "t",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "attributes",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.Attribute>",
+              "Default": "null"
+            },
+            {
+              "Name": "generics",
+              "Type": "System.Type[]",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Inspector/CanEditAttribute.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.CanEditAttribute.CreateEditorFor",
+          "Name": "CreateEditorFor",
+          "DeclaringType": "Editor.CanEditAttribute",
+          "DocId": "M:Editor.CanEditAttribute.CreateEditorFor(System.Type,System.Collections.Generic.IEnumerable`1{System.Attribute},System.Type[])"
+        },
+        {
+          "ReturnType": "Editor.Widget",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Inspector/CanEditAttribute.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.CanEditAttribute.CreateEditorFor",
+          "Name": "CreateEditorFor",
+          "DeclaringType": "Editor.CanEditAttribute",
+          "DocId": "M:Editor.CanEditAttribute.CreateEditorFor(System.String)"
+        },
+        {
+          "ReturnType": "Editor.Widget",
+          "Parameters": [
+            {
+              "Name": "array",
+              "Type": "System.Array"
+            }
+          ],
+          "l": {
+            "File": "Inspector/CanEditAttribute.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.CanEditAttribute.CreateEditorFor",
+          "Name": "CreateEditorFor",
+          "DeclaringType": "Editor.CanEditAttribute",
+          "DocId": "M:Editor.CanEditAttribute.CreateEditorFor(System.Array)"
+        },
+        {
+          "ReturnType": "Editor.Widget",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Inspector/CanEditAttribute.cs",
+            "Line": 184
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.CanEditAttribute.CreateEditorForObject",
+          "Name": "CreateEditorForObject",
+          "DeclaringType": "Editor.CanEditAttribute",
+          "DocId": "M:Editor.CanEditAttribute.CreateEditorForObject(System.Object)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "typeName",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Inspector/CanEditAttribute.cs",
+            "Line": 214
+          },
+          "IsPublic": true,
+          "FullName": "Editor.CanEditAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.CanEditAttribute",
+          "DocId": "M:Editor.CanEditAttribute.#ctor(System.Type,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "typeName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Inspector/CanEditAttribute.cs",
+            "Line": 227
+          },
+          "IsPublic": true,
+          "FullName": "Editor.CanEditAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.CanEditAttribute",
+          "DocId": "M:Editor.CanEditAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Inspector/CanEditAttribute.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Editor.CanEditAttribute.TargetType",
+          "Name": "TargetType",
+          "DocId": "P:Editor.CanEditAttribute.TargetType"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "Inspector/CanEditAttribute.cs",
+            "Line": 208
+          },
+          "IsPublic": true,
+          "FullName": "Editor.CanEditAttribute.Type",
+          "Name": "Type",
+          "DocId": "P:Editor.CanEditAttribute.Type"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Inspector/CanEditAttribute.cs",
+            "Line": 209
+          },
+          "IsPublic": true,
+          "FullName": "Editor.CanEditAttribute.TypeName",
+          "Name": "TypeName",
+          "DocId": "P:Editor.CanEditAttribute.TypeName"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.CanEditAttribute",
+      "Name": "CanEditAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Editor.CanEditAttribute"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "Editor.ComponentEditorWidget",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.SerializedObject"
+            }
+          ],
+          "l": {
+            "File": "Inspector/ComponentEditorWidget.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ComponentEditorWidget.Create",
+          "Name": "Create",
+          "DeclaringType": "Editor.ComponentEditorWidget",
+          "DocId": "M:Editor.ComponentEditorWidget.Create(Sandbox.SerializedObject)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "menu",
+              "Type": "Editor.Menu"
+            }
+          ],
+          "l": {
+            "File": "Inspector/ComponentEditorWidget.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ComponentEditorWidget.OnHeaderContextMenu",
+          "Name": "OnHeaderContextMenu",
+          "DeclaringType": "Editor.ComponentEditorWidget",
+          "DocId": "M:Editor.ComponentEditorWidget.OnHeaderContextMenu(Editor.Menu)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.SerializedObject"
+            }
+          ],
+          "l": {
+            "File": "Inspector/ComponentEditorWidget.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ComponentEditorWidget..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.ComponentEditorWidget",
+          "DocId": "M:Editor.ComponentEditorWidget.#ctor(Sandbox.SerializedObject)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.SerializedObject",
+          "Loc": {
+            "File": "Inspector/ComponentEditorWidget.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ComponentEditorWidget.SerializedObject",
+          "Name": "SerializedObject",
+          "DocId": "P:Editor.ComponentEditorWidget.SerializedObject"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ComponentEditorWidget",
+      "Name": "ComponentEditorWidget",
+      "Documentation": {
+        "Summary": "A control widget is used to edit the value of a single SerializedProperty."
+      },
+      "DocId": "T:Editor.ComponentEditorWidget"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "attribute",
+              "Type": "T"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Editor.IEditorAttribute<T>.SetEditorAttribute",
+          "Name": "SetEditorAttribute",
+          "DeclaringType": "Editor.IEditorAttribute<T>",
+          "DocId": "M:Editor.IEditorAttribute`1.SetEditorAttribute(``0)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.IEditorAttribute<T>",
+      "Name": "IEditorAttribute<T>",
+      "Documentation": {
+        "Summary": "Allows an editor widget to provide an attribute that it can use. Editors with attributes are chosen\nover editors without when the target property has the provided attribute."
+      },
+      "DocId": "T:Editor.IEditorAttribute`1"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "Inspector/InspectorAttribute.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.InspectorAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.InspectorAttribute",
+          "DocId": "M:Editor.InspectorAttribute.#ctor(System.Type)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Inspector/InspectorAttribute.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Editor.InspectorAttribute.TargetType",
+          "Name": "TargetType",
+          "DocId": "P:Editor.InspectorAttribute.TargetType"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "Inspector/InspectorAttribute.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Editor.InspectorAttribute.Type",
+          "Name": "Type",
+          "DocId": "P:Editor.InspectorAttribute.Type"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.InspectorAttribute",
+      "Name": "InspectorAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Editor.InspectorAttribute"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "newObj",
+              "Type": "System.Object",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Inspector/InspectorWidget.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Editor.InspectorWidget.CloseInspector",
+          "Name": "CloseInspector",
+          "DeclaringType": "Editor.InspectorWidget",
+          "Documentation": {
+            "Summary": "Closes the inspector",
+            "Return": "",
+            "Params": {
+              "newObj": ""
+            }
+          },
+          "DocId": "M:Editor.InspectorWidget.CloseInspector(System.Object)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "newObj",
+              "Type": "System.Object",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Inspector/InspectorWidget.cs",
+            "Line": 35
+          },
+          "IsProtected": true,
+          "FullName": "Editor.InspectorWidget.OnInspectorClose",
+          "Name": "OnInspectorClose",
+          "DeclaringType": "Editor.InspectorWidget",
+          "Documentation": {
+            "Summary": "Called when the inspector is about to be closed.\nCan return false to prevent closing."
+          },
+          "DocId": "M:Editor.InspectorWidget.OnInspectorClose(System.Object)"
+        },
+        {
+          "ReturnType": "Editor.InspectorWidget",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.SerializedObject"
+            },
+            {
+              "Name": "ignore",
+              "Type": "System.Type",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Inspector/InspectorWidget.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.InspectorWidget.Create",
+          "Name": "Create",
+          "DeclaringType": "Editor.InspectorWidget",
+          "Documentation": {
+            "Summary": "Creates an inspector widget for the given serialized object.",
+            "Return": "",
+            "Params": {
+              "obj": "",
+              "ignore": ""
+            }
+          },
+          "DocId": "M:Editor.InspectorWidget.Create(Sandbox.SerializedObject,System.Type)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "so",
+              "Type": "Sandbox.SerializedObject"
+            }
+          ],
+          "l": {
+            "File": "Inspector/InspectorWidget.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Editor.InspectorWidget..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.InspectorWidget",
+          "DocId": "M:Editor.InspectorWidget.#ctor(Sandbox.SerializedObject)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.SerializedObject",
+          "Loc": {
+            "File": "Inspector/InspectorWidget.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.InspectorWidget.SerializedObject",
+          "Name": "SerializedObject",
+          "DocId": "P:Editor.InspectorWidget.SerializedObject"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.InspectorWidget",
+      "Name": "InspectorWidget",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "When using <see cref=\"T:Editor.InspectorAttribute\" /> with a type that inherits from InspectorWidget, when you inspect an object of that class, it will create an instance of the widget and display it in the inspector."
+      },
+      "DocId": "T:Editor.InspectorWidget"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "l": {
+            "File": "Interop.Tools.cs",
+            "Line": 13905
+          },
+          "IsProtected": true,
+          "FullName": "Editor.QStringList.Finalize",
+          "Name": "Finalize",
+          "DeclaringType": "Editor.QStringList",
+          "DocId": "M:Editor.QStringList.Finalize"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.List`1<System.String>",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/QStringList.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Editor.QStringList.ToList",
+          "Name": "ToList",
+          "DeclaringType": "Editor.QStringList",
+          "DocId": "M:Editor.QStringList.ToList"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.QStringList",
+      "Name": "QStringList",
+      "DocId": "T:Editor.QStringList"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "l": {
+            "File": "Interop.Tools.cs",
+            "Line": 14292
+          },
+          "IsProtected": true,
+          "FullName": "Editor.QTextBlock.Finalize",
+          "Name": "Finalize",
+          "DeclaringType": "Editor.QTextBlock",
+          "DocId": "M:Editor.QTextBlock.Finalize"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.QTextBlock",
+      "Name": "QTextBlock",
+      "DocId": "T:Editor.QTextBlock"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "l": {
+            "File": "Interop.Tools.cs",
+            "Line": 14352
+          },
+          "IsProtected": true,
+          "FullName": "Editor.TextCursor.Finalize",
+          "Name": "Finalize",
+          "DeclaringType": "Editor.TextCursor",
+          "DocId": "M:Editor.TextCursor.Finalize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.InsertHtml",
+          "Name": "InsertHtml",
+          "DeclaringType": "Editor.TextCursor",
+          "DocId": "M:Editor.TextCursor.InsertHtml(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.InsertText",
+          "Name": "InsertText",
+          "DeclaringType": "Editor.TextCursor",
+          "DocId": "M:Editor.TextCursor.InsertText(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.RemoveSelectedText",
+          "Name": "RemoveSelectedText",
+          "DeclaringType": "Editor.TextCursor",
+          "DocId": "M:Editor.TextCursor.RemoveSelectedText"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.ClearSelection",
+          "Name": "ClearSelection",
+          "DeclaringType": "Editor.TextCursor",
+          "DocId": "M:Editor.TextCursor.ClearSelection"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.SelectBlockUnderCursor",
+          "Name": "SelectBlockUnderCursor",
+          "DeclaringType": "Editor.TextCursor",
+          "DocId": "M:Editor.TextCursor.SelectBlockUnderCursor"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.Position",
+          "Name": "Position",
+          "DocId": "P:Editor.TextCursor.Position"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.BlockNumber",
+          "Name": "BlockNumber",
+          "DocId": "P:Editor.TextCursor.BlockNumber"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.ColumnNumber",
+          "Name": "ColumnNumber",
+          "DocId": "P:Editor.TextCursor.ColumnNumber"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.SelectedText",
+          "Name": "SelectedText",
+          "DocId": "P:Editor.TextCursor.SelectedText"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.HasSelection",
+          "Name": "HasSelection",
+          "DocId": "P:Editor.TextCursor.HasSelection"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.SelectionStart",
+          "Name": "SelectionStart",
+          "DocId": "P:Editor.TextCursor.SelectionStart"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/TextCursor.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Editor.TextCursor.SelectionEnd",
+          "Name": "SelectionEnd",
+          "DocId": "P:Editor.TextCursor.SelectionEnd"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.TextCursor",
+      "Name": "TextCursor",
+      "DocId": "T:Editor.TextCursor"
+    }
+  ],
+  "_metadata": {
+    "chunk": 248,
+    "items_count": 19
+  }
+}

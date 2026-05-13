@@ -1,0 +1,1333 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.UI.Construct",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.UI.Panel",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/Utility/PanelCreator.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Construct.PanelCreator.Panel",
+          "Name": "Panel",
+          "DeclaringType": "Sandbox.UI.Construct.PanelCreator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a new blank panel as a child."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Utility\\PanelCreator.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a new blank panel as a child.",
+            "Return": "The crated panel."
+          },
+          "DocId": "M:Sandbox.UI.Construct.PanelCreator.Panel"
+        },
+        {
+          "ReturnType": "Sandbox.UI.Panel",
+          "Parameters": [
+            {
+              "Name": "classname",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Utility/PanelCreator.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Construct.PanelCreator.Panel",
+          "Name": "Panel",
+          "DeclaringType": "Sandbox.UI.Construct.PanelCreator",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a new blank panel with given CSS classes as a child."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Utility\\PanelCreator.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a new blank panel with given CSS classes as a child.",
+            "Return": "The crated panel."
+          },
+          "DocId": "M:Sandbox.UI.Construct.PanelCreator.Panel(System.String)"
+        }
+      ],
+      "Constructors": [],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.UI.Panel",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Construct.PanelCreator.panel",
+          "Name": "panel",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Utility\\PanelCreator.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The panel to add children to."
+          },
+          "DocId": "F:Sandbox.UI.Construct.PanelCreator.panel"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Construct.PanelCreator",
+      "Name": "PanelCreator",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Used for <see cref=\"P:Sandbox.UI.Panel.Add\" /> for quick panel creation with certain settings. Other panels types are added via extension methods."
+      },
+      "DocId": "T:Sandbox.UI.Construct.PanelCreator"
+    },
+    {
+      "Namespace": "Sandbox.Tasks",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "continuation",
+              "Type": "System.Action"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/SyncTask.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Tasks.SyncTask.OnCompleted",
+          "Name": "OnCompleted",
+          "DeclaringType": "Sandbox.Tasks.SyncTask",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\SyncTask.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Tasks.SyncTask.OnCompleted(System.Action)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Threads/SyncTask.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Tasks.SyncTask.GetResult",
+          "Name": "GetResult",
+          "DeclaringType": "Sandbox.Tasks.SyncTask",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\SyncTask.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Tasks.SyncTask.GetResult"
+        },
+        {
+          "ReturnType": "Sandbox.Tasks.SyncTask",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Threads/SyncTask.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Tasks.SyncTask.GetAwaiter",
+          "Name": "GetAwaiter",
+          "DeclaringType": "Sandbox.Tasks.SyncTask",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\SyncTask.cs",
+                "42"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Tasks.SyncTask.GetAwaiter"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Threads/SyncTask.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Tasks.SyncTask.IsCompleted",
+          "Name": "IsCompleted",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\SyncTask.cs",
+                "24"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Tasks.SyncTask.IsCompleted"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Tasks.SyncTask",
+      "Name": "SyncTask",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Tasks.SyncTask"
+    },
+    {
+      "Namespace": "Sandbox.Physics",
+      "BaseType": "Sandbox.Physics.PhysicsJoint",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/BallSocketJoint.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.BallSocketJoint.Friction",
+          "Name": "Friction",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Constraint friction."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\BallSocketJoint.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Constraint friction."
+          },
+          "DocId": "P:Sandbox.Physics.BallSocketJoint.Friction"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Systems/Physics/Joints/BallSocketJoint.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.BallSocketJoint.SwingLimit",
+          "Name": "SwingLimit",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Maximum angle it should be allowed to swing to"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\BallSocketJoint.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum angle it should be allowed to swing to"
+          },
+          "DocId": "P:Sandbox.Physics.BallSocketJoint.SwingLimit"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/Joints/BallSocketJoint.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.BallSocketJoint.SwingLimitEnabled",
+          "Name": "SwingLimitEnabled",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\BallSocketJoint.cs",
+                "38"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Physics.BallSocketJoint.SwingLimitEnabled"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Systems/Physics/Joints/BallSocketJoint.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.BallSocketJoint.TwistLimit",
+          "Name": "TwistLimit",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\BallSocketJoint.cs",
+                "49"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Physics.BallSocketJoint.TwistLimit"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/Joints/BallSocketJoint.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.BallSocketJoint.TwistLimitEnabled",
+          "Name": "TwistLimitEnabled",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\BallSocketJoint.cs",
+                "60"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Physics.BallSocketJoint.TwistLimitEnabled"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Physics.BallSocketJoint",
+      "Name": "BallSocketJoint",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A ballsocket constraint."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\Joints\\BallSocketJoint.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A ballsocket constraint."
+      },
+      "DocId": "T:Sandbox.Physics.BallSocketJoint"
+    },
+    {
+      "Namespace": "Sandbox.Physics",
+      "BaseType": "Sandbox.Physics.PhysicsJoint",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Physics/Joints/ControlJoint.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.ControlJoint.LinearVelocity",
+          "Name": "LinearVelocity",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The desired relative linear velocity."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\ControlJoint.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The desired relative linear velocity."
+          },
+          "DocId": "P:Sandbox.Physics.ControlJoint.LinearVelocity"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Physics/Joints/ControlJoint.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.ControlJoint.AngularVelocity",
+          "Name": "AngularVelocity",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The desired relative angular velocity in radians per second."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\ControlJoint.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The desired relative angular velocity in radians per second."
+          },
+          "DocId": "P:Sandbox.Physics.ControlJoint.AngularVelocity"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/ControlJoint.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.ControlJoint.MaxVelocityForce",
+          "Name": "MaxVelocityForce",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The joint maximum force."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\ControlJoint.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The joint maximum force."
+          },
+          "DocId": "P:Sandbox.Physics.ControlJoint.MaxVelocityForce"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/ControlJoint.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.ControlJoint.MaxVelocityTorque",
+          "Name": "MaxVelocityTorque",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The joint maximum torque."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\ControlJoint.cs",
+                "55"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The joint maximum torque."
+          },
+          "DocId": "P:Sandbox.Physics.ControlJoint.MaxVelocityTorque"
+        },
+        {
+          "PropertyType": "Sandbox.Physics.PhysicsSpring",
+          "Loc": {
+            "File": "Systems/Physics/Joints/ControlJoint.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.ControlJoint.LinearSpring",
+          "Name": "LinearSpring",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The spring linear hertz stiffness and damping ratio."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\ControlJoint.cs",
+                "68"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The spring linear hertz stiffness and damping ratio."
+          },
+          "DocId": "P:Sandbox.Physics.ControlJoint.LinearSpring"
+        },
+        {
+          "PropertyType": "Sandbox.Physics.PhysicsSpring",
+          "Loc": {
+            "File": "Systems/Physics/Joints/ControlJoint.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.ControlJoint.AngularSpring",
+          "Name": "AngularSpring",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The spring angular hertz stiffness and damping ratio."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\ControlJoint.cs",
+                "92"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The spring angular hertz stiffness and damping ratio."
+          },
+          "DocId": "P:Sandbox.Physics.ControlJoint.AngularSpring"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Physics.ControlJoint",
+      "Name": "ControlJoint",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "The control joint is designed to control the movement of a body while remaining responsive to collisions. A spring can be used to control position and rotation, while a velocity motor can control velocity and simulate friction in top-down games. Both methods can be combined — for example, a spring with friction. Position and velocity control each have configurable force and torque limits."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\Joints\\ControlJoint.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "The control joint is designed to control the movement of a body while remaining responsive to collisions.  \nA spring can be used to control position and rotation, while a velocity motor can control velocity and  \nsimulate friction in top-down games. Both methods can be combined — for example, a spring with friction.  \nPosition and velocity control each have configurable force and torque limits."
+      },
+      "DocId": "T:Sandbox.Physics.ControlJoint"
+    },
+    {
+      "Namespace": "Sandbox.Physics",
+      "BaseType": "Sandbox.Physics.PhysicsJoint",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Physics.PhysicsSpring",
+          "Loc": {
+            "File": "Systems/Physics/Joints/FixedJoint.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.FixedJoint.SpringLinear",
+          "Name": "SpringLinear",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How springy and tight the joint will be in its movement."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\FixedJoint.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How springy and tight the joint will be in its movement."
+          },
+          "DocId": "P:Sandbox.Physics.FixedJoint.SpringLinear"
+        },
+        {
+          "PropertyType": "Sandbox.Physics.PhysicsSpring",
+          "Loc": {
+            "File": "Systems/Physics/Joints/FixedJoint.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.FixedJoint.SpringAngular",
+          "Name": "SpringAngular",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How springy and tight the joint will be in its rotation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\FixedJoint.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How springy and tight the joint will be in its rotation."
+          },
+          "DocId": "P:Sandbox.Physics.FixedJoint.SpringAngular"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Physics.FixedJoint",
+      "Name": "FixedJoint",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A generic \"rope\" type constraint."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\Joints\\FixedJoint.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A generic \"rope\" type constraint.",
+        "Remarks": "TODO: How is this different from <see cref=\"T:Sandbox.Physics.SpringJoint\" />? Should they be merged?"
+      },
+      "DocId": "T:Sandbox.Physics.FixedJoint"
+    },
+    {
+      "Namespace": "Sandbox.Physics",
+      "BaseType": "Sandbox.Physics.PhysicsJoint",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/HingeJoint.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.HingeJoint.MaxAngle",
+          "Name": "MaxAngle",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Maximum angle it should be allowed to go"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\HingeJoint.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum angle it should be allowed to go"
+          },
+          "DocId": "P:Sandbox.Physics.HingeJoint.MaxAngle"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/HingeJoint.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.HingeJoint.MinAngle",
+          "Name": "MinAngle",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Minimum angle it should be allowed to go"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\HingeJoint.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Minimum angle it should be allowed to go"
+          },
+          "DocId": "P:Sandbox.Physics.HingeJoint.MinAngle"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/HingeJoint.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.HingeJoint.Angle",
+          "Name": "Angle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\HingeJoint.cs",
+                "28"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Physics.HingeJoint.Angle"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Physics/Joints/HingeJoint.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.HingeJoint.Axis",
+          "Name": "Axis",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\HingeJoint.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Physics.HingeJoint.Axis"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/HingeJoint.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.HingeJoint.Speed",
+          "Name": "Speed",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\HingeJoint.cs",
+                "42"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Physics.HingeJoint.Speed"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/HingeJoint.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.HingeJoint.Friction",
+          "Name": "Friction",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Hinge friction."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\HingeJoint.cs",
+                "47"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Hinge friction."
+          },
+          "DocId": "P:Sandbox.Physics.HingeJoint.Friction"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Physics.HingeJoint",
+      "Name": "HingeJoint",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A hinge-like constraint."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\Joints\\HingeJoint.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A hinge-like constraint."
+      },
+      "DocId": "T:Sandbox.Physics.HingeJoint"
+    },
+    {
+      "Namespace": "Sandbox.Physics",
+      "BaseType": "Sandbox.Physics.PhysicsJoint",
+      "Constructors": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Physics.PulleyJoint",
+      "Name": "PulleyJoint",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A pulley constraint. Consists of 2 ropes which share same length, and the ratio changes via physics interactions. Typical setup looks like this: <pre style=\"color: #DCDCDC; background-color: #111111;\"><code>\n        @-----------------@\n        |                 |\n        |                 |\n     Object A          Object B\n     </code></pre>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\Joints\\PulleyJoint.cs",
+            "14"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A pulley constraint. Consists of 2 ropes which share same length, and the ratio changes via physics interactions.\n            \nTypical setup looks like this:\n<code>\n   @-----------------@\n   |                 |\n   |                 |\nObject A          Object B\n</code>"
+      },
+      "DocId": "T:Sandbox.Physics.PulleyJoint"
+    },
+    {
+      "Namespace": "Sandbox.Physics",
+      "BaseType": "Sandbox.Physics.PhysicsJoint",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/SliderJoint.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.SliderJoint.MaxLength",
+          "Name": "MaxLength",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Maximum length it should be allowed to go"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\SliderJoint.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum length it should be allowed to go"
+          },
+          "DocId": "P:Sandbox.Physics.SliderJoint.MaxLength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/SliderJoint.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.SliderJoint.MinLength",
+          "Name": "MinLength",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Minimum length it should be allowed to go"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\SliderJoint.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Minimum length it should be allowed to go"
+          },
+          "DocId": "P:Sandbox.Physics.SliderJoint.MinLength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/SliderJoint.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.SliderJoint.Friction",
+          "Name": "Friction",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Slider friction."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\SliderJoint.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Slider friction."
+          },
+          "DocId": "P:Sandbox.Physics.SliderJoint.Friction"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Physics.SliderJoint",
+      "Name": "SliderJoint",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A slider constraint, basically allows movement only on the arbitrary axis between the 2 constrained objects on creation."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\Joints\\SliderJoint.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A slider constraint, basically allows movement only on the arbitrary axis between the 2 constrained objects on creation."
+      },
+      "DocId": "T:Sandbox.Physics.SliderJoint"
+    },
+    {
+      "Namespace": "Sandbox.Physics",
+      "BaseType": "Sandbox.Physics.PhysicsJoint",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Physics.PhysicsSpring",
+          "Loc": {
+            "File": "Systems/Physics/Joints/SpringJoint.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.SpringJoint.SpringLinear",
+          "Name": "SpringLinear",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How springy and tight the joint will be"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\SpringJoint.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How springy and tight the joint will be"
+          },
+          "DocId": "P:Sandbox.Physics.SpringJoint.SpringLinear"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/SpringJoint.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.SpringJoint.MaxLength",
+          "Name": "MaxLength",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Maximum length it should be allowed to go"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\SpringJoint.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum length it should be allowed to go"
+          },
+          "DocId": "P:Sandbox.Physics.SpringJoint.MaxLength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/SpringJoint.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.SpringJoint.MinLength",
+          "Name": "MinLength",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Minimum length it should be allowed to go. At which point it acts a bit like a rod."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\SpringJoint.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Minimum length it should be allowed to go. At which point it acts a bit like a rod."
+          },
+          "DocId": "P:Sandbox.Physics.SpringJoint.MinLength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/SpringJoint.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.SpringJoint.MaxForce",
+          "Name": "MaxForce",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Maximum force it should be allowed to go. Set to zero to only allow stretching."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\SpringJoint.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum force it should be allowed to go. Set to zero to only allow stretching."
+          },
+          "DocId": "P:Sandbox.Physics.SpringJoint.MaxForce"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/SpringJoint.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.SpringJoint.MinForce",
+          "Name": "MinForce",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Minimum force it should be allowed to go."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\SpringJoint.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Minimum force it should be allowed to go."
+          },
+          "DocId": "P:Sandbox.Physics.SpringJoint.MinForce"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/SpringJoint.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.SpringJoint.ReferenceMass",
+          "Name": "ReferenceMass",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "doesn't exist, not used"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\SpringJoint.cs",
+                "55"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Physics.SpringJoint.ReferenceMass"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Physics.SpringJoint",
+      "Name": "SpringJoint",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A rope-like constraint that is has springy/bouncy."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\Joints\\SpringJoint.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A rope-like constraint that is has springy/bouncy."
+      },
+      "DocId": "T:Sandbox.Physics.SpringJoint"
+    },
+    {
+      "Namespace": "Sandbox.Physics",
+      "BaseType": "Sandbox.Physics.PhysicsJoint",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/UprightJoint.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.UprightJoint.Hertz",
+          "Name": "Hertz",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The spring stiffness in cycles per second (Hertz). Higher values make the constraint stiffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\UprightJoint.cs",
+                "15"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The spring stiffness in cycles per second (Hertz).\nHigher values make the constraint stiffer."
+          },
+          "DocId": "P:Sandbox.Physics.UprightJoint.Hertz"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/UprightJoint.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.UprightJoint.DampingRatio",
+          "Name": "DampingRatio",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The spring damping ratio (non-dimensional). A value of 1 is critically damped; values below 1 are under-damped (springy)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\UprightJoint.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The spring damping ratio (non-dimensional).\nA value of 1 is critically damped; values below 1 are under-damped (springy)."
+          },
+          "DocId": "P:Sandbox.Physics.UprightJoint.DampingRatio"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/Joints/UprightJoint.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Physics.UprightJoint.MaxTorque",
+          "Name": "MaxTorque",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The maximum torque the joint can apply."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\Joints\\UprightJoint.cs",
+                "34"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The maximum torque the joint can apply."
+          },
+          "DocId": "P:Sandbox.Physics.UprightJoint.MaxTorque"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Physics.UprightJoint",
+      "Name": "UprightJoint",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A parallel joint that constrains the Z-axes of two bodies to be parallel using a spring. Useful for keeping a physics body upright relative to another body or a static anchor."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\Joints\\UprightJoint.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A parallel joint that constrains the Z-axes of two bodies to be parallel using a spring.\nUseful for keeping a physics body upright relative to another body or a static anchor."
+      },
+      "DocId": "T:Sandbox.Physics.UprightJoint"
+    }
+  ],
+  "_metadata": {
+    "chunk": 188,
+    "items_count": 10
+  }
+}

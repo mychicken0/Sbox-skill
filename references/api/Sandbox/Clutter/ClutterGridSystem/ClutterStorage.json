@@ -1,0 +1,1354 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.BlobData",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance>",
+          "Parameters": [
+            {
+              "Name": "modelPath",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.GetInstances",
+          "Name": "GetInstances",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets instances for a specific model path."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets instances for a specific model path."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.GetInstances(System.String)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Collections.Generic.List`1<Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance>>",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.GetAllInstances",
+          "Name": "GetAllInstances",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets all instances grouped by model path."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "55"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets all instances grouped by model path."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.GetAllInstances"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "modelPath",
+              "Type": "System.String"
+            },
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "rotation",
+              "Type": "Rotation"
+            },
+            {
+              "Name": "scale",
+              "Type": "System.Single",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.AddInstance",
+          "Name": "AddInstance",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds a single instance for a model."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "60"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adds a single instance for a model."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.AddInstance(System.String,Vector3,Rotation,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "modelPath",
+              "Type": "System.String"
+            },
+            {
+              "Name": "instances",
+              "Type": "System.Collections.Generic.IEnumerable`1<Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance>"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.AddInstances",
+          "Name": "AddInstances",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds multiple instances for a model."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "76"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.AddInstances(System.String,System.Collections.Generic.IEnumerable`1{Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance})"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Erase",
+          "Name": "Erase",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Erases all instances within a radius of a position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "92"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Erases all instances within a radius of a position."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Erase(Vector3,System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "modelPath",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 114
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.ClearModel",
+          "Name": "ClearModel",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears all instances for a specific model."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "111"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears all instances for a specific model."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.ClearModel(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.ClearAll",
+          "Name": "ClearAll",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears all instances."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "119"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears all instances."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.ClearAll"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "writer",
+              "Ref": true,
+              "Type": "Sandbox.BlobData.Writer"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Serialize",
+          "Name": "Serialize",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Serialize to binary format."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "127"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Serialize to binary format."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Serialize(Sandbox.BlobData.Writer@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "reader",
+              "Ref": true,
+              "Type": "Sandbox.BlobData.Reader"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Deserialize",
+          "Name": "Deserialize",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Deserialize from binary format."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "153"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Deserialize from binary format."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Deserialize(Sandbox.BlobData.Reader@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Version",
+          "Name": "Version",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Version"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.TotalCount",
+          "Name": "TotalCount",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the total number of instances across all models."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the total number of instances across all models."
+          },
+          "DocId": "P:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.TotalCount"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<System.String>",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.ModelPaths",
+          "Name": "ModelPaths",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets all model paths that have instances."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+                "39"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets all model paths that have instances."
+          },
+          "DocId": "P:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.ModelPaths"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+      "Name": "ClutterStorage",
+      "DeclaringType": "Sandbox.Clutter.ClutterGridSystem",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Manages storage and serialization of painted clutter instances. Uses binary serialization via BlobData for efficient storage."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+            "12"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Manages storage and serialization of painted clutter instances.\nUses binary serialization via BlobData for efficient storage."
+      },
+      "DocId": "T:Sandbox.Clutter.ClutterGridSystem.ClutterStorage"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Position",
+              "Out": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "Rotation",
+              "Out": true,
+              "Type": "Rotation"
+            },
+            {
+              "Name": "Scale",
+              "Out": true,
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance.Deconstruct(Vector3@,Rotation@,System.Single@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "Rotation",
+              "Type": "Rotation"
+            },
+            {
+              "Name": "Scale",
+              "Type": "System.Single",
+              "Default": "1"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance",
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance.#ctor(Vector3,Rotation,System.Single)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance.Position",
+          "Name": "Position",
+          "DocId": "P:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance.Position"
+        },
+        {
+          "PropertyType": "Rotation",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance.Rotation",
+          "Name": "Rotation",
+          "DocId": "P:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance.Rotation"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.Storage.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance.Scale",
+          "Name": "Scale",
+          "DocId": "P:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance.Scale"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance",
+      "Name": "Instance",
+      "DeclaringType": "Sandbox.Clutter.ClutterGridSystem/ClutterStorage",
+      "DocId": "T:Sandbox.Clutter.ClutterGridSystem.ClutterStorage.Instance"
+    },
+    {
+      "Namespace": "Sandbox.VR",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.VR.FingerValue",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.FingerValue.ThumbCurl",
+          "Name": "ThumbCurl",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the curling motion of the thumb."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the curling motion of the thumb."
+          },
+          "DocId": "F:Sandbox.VR.FingerValue.ThumbCurl"
+        },
+        {
+          "FieldType": "Sandbox.VR.FingerValue",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.FingerValue.IndexCurl",
+          "Name": "IndexCurl",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the curling motion of the index finger."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the curling motion of the index finger."
+          },
+          "DocId": "F:Sandbox.VR.FingerValue.IndexCurl"
+        },
+        {
+          "FieldType": "Sandbox.VR.FingerValue",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.FingerValue.MiddleCurl",
+          "Name": "MiddleCurl",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the curling motion of the middle finger."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the curling motion of the middle finger."
+          },
+          "DocId": "F:Sandbox.VR.FingerValue.MiddleCurl"
+        },
+        {
+          "FieldType": "Sandbox.VR.FingerValue",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.FingerValue.RingCurl",
+          "Name": "RingCurl",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the curling motion of the ring finger."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the curling motion of the ring finger."
+          },
+          "DocId": "F:Sandbox.VR.FingerValue.RingCurl"
+        },
+        {
+          "FieldType": "Sandbox.VR.FingerValue",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.FingerValue.PinkyCurl",
+          "Name": "PinkyCurl",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the curling motion of the pinky finger."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the curling motion of the pinky finger."
+          },
+          "DocId": "F:Sandbox.VR.FingerValue.PinkyCurl"
+        },
+        {
+          "FieldType": "Sandbox.VR.FingerValue",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.FingerValue.ThumbIndexSplay",
+          "Name": "ThumbIndexSplay",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the splaying motion between the thumb and index finger."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the splaying motion between the thumb and index finger."
+          },
+          "DocId": "F:Sandbox.VR.FingerValue.ThumbIndexSplay"
+        },
+        {
+          "FieldType": "Sandbox.VR.FingerValue",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.FingerValue.IndexMiddleSplay",
+          "Name": "IndexMiddleSplay",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the splaying motion between the index and middle fingers."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the splaying motion between the index and middle fingers."
+          },
+          "DocId": "F:Sandbox.VR.FingerValue.IndexMiddleSplay"
+        },
+        {
+          "FieldType": "Sandbox.VR.FingerValue",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.FingerValue.MiddleRingSplay",
+          "Name": "MiddleRingSplay",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the splaying motion between the middle and ring fingers."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the splaying motion between the middle and ring fingers."
+          },
+          "DocId": "F:Sandbox.VR.FingerValue.MiddleRingSplay"
+        },
+        {
+          "FieldType": "Sandbox.VR.FingerValue",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.FingerValue.RingPinkySplay",
+          "Name": "RingPinkySplay",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the splaying motion between the ring and pinky fingers."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the splaying motion between the ring and pinky fingers."
+          },
+          "DocId": "F:Sandbox.VR.FingerValue.RingPinkySplay"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VR.FingerValue",
+      "Name": "FingerValue",
+      "Documentation": {
+        "Summary": "Accessors for <see cref=\"M:Sandbox.VR.VRController.GetFingerValue(Sandbox.VR.FingerValue)\" />"
+      },
+      "DocId": "T:Sandbox.VR.FingerValue"
+    },
+    {
+      "Namespace": "Sandbox.VR",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.Unknown",
+          "Name": "Unknown",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Unknown device role"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Unknown device role"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.Unknown"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.LeftHand",
+          "Name": "LeftHand",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the left hand"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the left hand"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.LeftHand"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.RightHand",
+          "Name": "RightHand",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the right hand"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the right hand"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.RightHand"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.Head",
+          "Name": "Head",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the head"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the head"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.Head"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.Gamepad",
+          "Name": "Gamepad",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents a gamepad"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents a gamepad"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.Gamepad"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.Treadmill",
+          "Name": "Treadmill",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents a treadmill"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents a treadmill"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.Treadmill"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.Stylus",
+          "Name": "Stylus",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents a stylus"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents a stylus"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.Stylus"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.LeftFoot",
+          "Name": "LeftFoot",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the left foot"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the left foot"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.LeftFoot"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.RightFoot",
+          "Name": "RightFoot",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the right foot"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the right foot"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.RightFoot"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.LeftShoulder",
+          "Name": "LeftShoulder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the left shoulder"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the left shoulder"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.LeftShoulder"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.RightShoulder",
+          "Name": "RightShoulder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the right shoulder"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the right shoulder"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.RightShoulder"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.LeftElbow",
+          "Name": "LeftElbow",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the left elbow"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the left elbow"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.LeftElbow"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.RightElbow",
+          "Name": "RightElbow",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the right elbow"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the right elbow"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.RightElbow"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.LeftKnee",
+          "Name": "LeftKnee",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the left knee"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the left knee"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.LeftKnee"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.RightKnee",
+          "Name": "RightKnee",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the right knee"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the right knee"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.RightKnee"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.LeftWrist",
+          "Name": "LeftWrist",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the left wrist"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the left wrist"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.LeftWrist"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.RightWrist",
+          "Name": "RightWrist",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the right wrist"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the right wrist"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.RightWrist"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.LeftAnkle",
+          "Name": "LeftAnkle",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the left ankle"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the left ankle"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.LeftAnkle"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.RightAnkle",
+          "Name": "RightAnkle",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the right ankle"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the right ankle"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.RightAnkle"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.Waist",
+          "Name": "Waist",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the waist"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the waist"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.Waist"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.Chest",
+          "Name": "Chest",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents the chest"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents the chest"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.Chest"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.Camera",
+          "Name": "Camera",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents a camera - such as a base station"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents a camera - such as a base station"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.Camera"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceRole",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceRole.Keyboard",
+          "Name": "Keyboard",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Represents a keyboard"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Represents a keyboard"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceRole.Keyboard"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VR.TrackedDeviceRole",
+      "Name": "TrackedDeviceRole",
+      "DocId": "T:Sandbox.VR.TrackedDeviceRole"
+    },
+    {
+      "Namespace": "Sandbox.VR",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceType.Invalid",
+          "Name": "Invalid",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The ID was not valid."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The ID was not valid."
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceType.Invalid"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceType.Hmd",
+          "Name": "Hmd",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Head-mounted display (your headset)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Head-mounted display (your headset)"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceType.Hmd"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceType.Controller",
+          "Name": "Controller",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tracked controllers"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tracked controllers"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceType.Controller"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceType.Tracker",
+          "Name": "Tracker",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Generic trackers"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Generic trackers"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceType.Tracker"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceType.BaseStation",
+          "Name": "BaseStation",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Camera and base stations that serve as tracking reference points"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Camera and base stations that serve as tracking reference points"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceType.BaseStation"
+        },
+        {
+          "FieldType": "Sandbox.VR.TrackedDeviceType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VR.TrackedDeviceType.Redirect",
+          "Name": "Redirect",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Accessories that aren't necessarily tracked themselves, but may redirect video output from other tracked devices"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Accessories that aren't necessarily tracked themselves, but may redirect video output from other tracked devices"
+          },
+          "DocId": "F:Sandbox.VR.TrackedDeviceType.Redirect"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VR.TrackedDeviceType",
+      "Name": "TrackedDeviceType",
+      "DocId": "T:Sandbox.VR.TrackedDeviceType"
+    }
+  ],
+  "_metadata": {
+    "chunk": 215,
+    "items_count": 5
+  }
+}

@@ -1,0 +1,1629 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.TaskSource",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.TaskSource.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "152"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.Create(System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.CancellationTokenSource",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 163
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.TaskSource.CreateLinkedTokenSource",
+          "Name": "CreateLinkedTokenSource",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a token source, which will also be cancelled when sessions end"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "160"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a token source, which will also be cancelled when sessions end"
+          },
+          "DocId": "M:Sandbox.TaskSource.CreateLinkedTokenSource"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "ms",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 194
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.Delay",
+          "Name": "Delay",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A task that does nothing for given amount of time in milliseconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "191"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A task that does nothing for given amount of time in milliseconds.",
+            "Params": {
+              "ms": "Time to wait in milliseconds."
+            }
+          },
+          "DocId": "M:Sandbox.TaskSource.Delay(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "ms",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.Delay",
+          "Name": "Delay",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<Delay>d__17"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A task that does nothing for given amount of time in milliseconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "201"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A task that does nothing for given amount of time in milliseconds.",
+            "Params": {
+              "ms": "Time to wait in milliseconds.",
+              "ct": "Token to cancel the delay early."
+            }
+          },
+          "DocId": "M:Sandbox.TaskSource.Delay(System.Int32,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "seconds",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 266
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.DelaySeconds",
+          "Name": "DelaySeconds",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A task that does nothing for given amount of time in seconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "265"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A task that does nothing for given amount of time in seconds.",
+            "Params": {
+              "seconds": "&gt;Time to wait in seconds."
+            }
+          },
+          "DocId": "M:Sandbox.TaskSource.DelaySeconds(System.Single)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "seconds",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 273
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.DelaySeconds",
+          "Name": "DelaySeconds",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A task that does nothing for given amount of time in seconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "272"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A task that does nothing for given amount of time in seconds.",
+            "Params": {
+              "seconds": "&gt;Time to wait in seconds.",
+              "ct": "Token to cancel the delay early."
+            }
+          },
+          "DocId": "M:Sandbox.TaskSource.DelaySeconds(System.Single,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "action",
+              "Type": "System.Action"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.RunInThreadAsync",
+          "Name": "RunInThreadAsync",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<RunInThreadAsync>d__25"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "302"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.RunInThreadAsync(System.Action)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<T>",
+          "Parameters": [
+            {
+              "Name": "func",
+              "Type": "System.Func`1<T>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.RunInThreadAsync",
+          "Name": "RunInThreadAsync",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<RunInThreadAsync>d__27`1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "336"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.RunInThreadAsync``1(System.Func`1{``0})"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "task",
+              "Type": "System.Func`1<System.Threading.Tasks.Task>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.RunInThreadAsync",
+          "Name": "RunInThreadAsync",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<RunInThreadAsync>d__29"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "390"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.RunInThreadAsync(System.Func`1{System.Threading.Tasks.Task})"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<T>",
+          "Parameters": [
+            {
+              "Name": "task",
+              "Type": "System.Func`1<System.Threading.Tasks.Task`1<T>>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.RunInThreadAsync",
+          "Name": "RunInThreadAsync",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<RunInThreadAsync>d__31`1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "443"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.RunInThreadAsync``1(System.Func`1{System.Threading.Tasks.Task`1{``0}})"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "ms",
+              "Type": "System.Int32"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.DelayRealtime",
+          "Name": "DelayRealtime",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<DelayRealtime>d__32"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "455"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.DelayRealtime(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "ms",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.DelayRealtime",
+          "Name": "DelayRealtime",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<DelayRealtime>d__33"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "461"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.DelayRealtime(System.Int32,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "seconds",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 469
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.DelayRealtimeSeconds",
+          "Name": "DelayRealtimeSeconds",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "468"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.DelayRealtimeSeconds(System.Single)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "seconds",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 471
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.DelayRealtimeSeconds",
+          "Name": "DelayRealtimeSeconds",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "470"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.DelayRealtimeSeconds(System.Single,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "Sandbox.Tasks.SyncTask",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 478
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.MainThread",
+          "Name": "MainThread",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Continues on the main thread."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "475"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Continues on the main thread."
+          },
+          "DocId": "M:Sandbox.TaskSource.MainThread"
+        },
+        {
+          "ReturnType": "Sandbox.Tasks.SyncTask",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 486
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WorkerThread",
+          "Name": "WorkerThread",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Continues on a worker thread."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "483"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Continues on a worker thread."
+          },
+          "DocId": "M:Sandbox.TaskSource.WorkerThread"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<T>",
+          "Parameters": [
+            {
+              "Name": "t",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 493
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.FromResult",
+          "Name": "FromResult",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "492"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.TaskSource.FromResult``1(``0)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 496
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.FromCanceled",
+          "Name": "FromCanceled",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "495"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.TaskSource.FromCanceled(System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "System.Exception"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 499
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.FromException",
+          "Name": "FromException",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "498"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.TaskSource.FromException(System.Exception)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "tasks",
+              "Type": "System.Threading.Tasks.Task[]"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WhenAll",
+          "Name": "WhenAll",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<WhenAll>d__43"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "501"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.TaskSource.WhenAll(System.Threading.Tasks.Task[])"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "tasks",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.Threading.Tasks.Task>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WhenAll",
+          "Name": "WhenAll",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<WhenAll>d__44"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "508"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.WhenAll(System.Collections.Generic.IEnumerable`1{System.Threading.Tasks.Task})"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<T[]>",
+          "Parameters": [
+            {
+              "Name": "tasks",
+              "Type": "System.Threading.Tasks.Task`1<T>[]"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WhenAll",
+          "Name": "WhenAll",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<WhenAll>d__45`1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "515"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.WhenAll``1(System.Threading.Tasks.Task`1{``0}[])"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<T[]>",
+          "Parameters": [
+            {
+              "Name": "tasks",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.Threading.Tasks.Task`1<T>>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WhenAll",
+          "Name": "WhenAll",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<WhenAll>d__46`1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "523"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.WhenAll``1(System.Collections.Generic.IEnumerable`1{System.Threading.Tasks.Task`1{``0}})"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Threading.Tasks.Task>",
+          "Parameters": [
+            {
+              "Name": "tasks",
+              "Type": "System.Threading.Tasks.Task[]"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WhenAny",
+          "Name": "WhenAny",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<WhenAny>d__47"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "531"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.TaskSource.WhenAny(System.Threading.Tasks.Task[])"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Threading.Tasks.Task>",
+          "Parameters": [
+            {
+              "Name": "tasks",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.Threading.Tasks.Task>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WhenAny",
+          "Name": "WhenAny",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<WhenAny>d__48"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "539"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.WhenAny(System.Collections.Generic.IEnumerable`1{System.Threading.Tasks.Task})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "tasks",
+              "Type": "System.Threading.Tasks.Task[]"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 549
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WaitAny",
+          "Name": "WaitAny",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "547"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.TaskSource.WaitAny(System.Threading.Tasks.Task[])"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "tasks",
+              "Type": "System.Threading.Tasks.Task[]"
+            }
+          ],
+          "l": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 555
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WaitAll",
+          "Name": "WaitAll",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "553"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.TaskSource.WaitAll(System.Threading.Tasks.Task[])"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Threading.Tasks.Task`1<T>>",
+          "Parameters": [
+            {
+              "Name": "tasks",
+              "Type": "System.Threading.Tasks.Task`1<T>[]"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WhenAny",
+          "Name": "WhenAny",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<WhenAny>d__51`1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "559"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.WhenAny``1(System.Threading.Tasks.Task`1{``0}[])"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Threading.Tasks.Task`1<T>>",
+          "Parameters": [
+            {
+              "Name": "tasks",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.Threading.Tasks.Task`1<T>>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.WhenAny",
+          "Name": "WhenAny",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<WhenAny>d__52`1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "567"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TaskSource.WhenAny``1(System.Collections.Generic.IEnumerable`1{System.Threading.Tasks.Task`1{``0}})"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.Yield",
+          "Name": "Yield",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<Yield>d__53"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "575"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.TaskSource.Yield"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.Frame",
+          "Name": "Frame",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<Frame>d__54"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Wait until the start of the next frame"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "584"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Wait until the start of the next frame"
+          },
+          "DocId": "M:Sandbox.TaskSource.Frame"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.FrameEnd",
+          "Name": "FrameEnd",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<FrameEnd>d__55"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Wait until the end of the frame"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "593"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Wait until the end of the frame"
+          },
+          "DocId": "M:Sandbox.TaskSource.FrameEnd"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.FixedUpdate",
+          "Name": "FixedUpdate",
+          "DeclaringType": "Sandbox.TaskSource",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.TaskSource/<FixedUpdate>d__56"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Wait until the next fixed update"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "602"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Wait until the next fixed update"
+          },
+          "DocId": "M:Sandbox.TaskSource.FixedUpdate"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 170
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "169"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.TaskSource.IsValid"
+        },
+        {
+          "PropertyType": "System.Threading.Tasks.Task",
+          "Loc": {
+            "File": "Systems/Threads/TaskSource.cs",
+            "Line": 490
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TaskSource.CompletedTask",
+          "Name": "CompletedTask",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Threads\\TaskSource.cs",
+                "489"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.TaskSource.CompletedTask"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.TaskSource",
+      "Name": "TaskSource",
+      "Documentation": {
+        "Summary": "Provides a way for us to cancel tasks after common async shit is executed."
+      },
+      "DocId": "T:Sandbox.TaskSource"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "writer",
+              "Ref": true,
+              "Type": "Sandbox.BlobData.Writer"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.BlobData.Serialize",
+          "Name": "Serialize",
+          "DeclaringType": "Sandbox.BlobData",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Serialize this object to binary format."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\BlobData.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Serialize this object to binary format."
+          },
+          "DocId": "M:Sandbox.BlobData.Serialize(Sandbox.BlobData.Writer@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "reader",
+              "Ref": true,
+              "Type": "Sandbox.BlobData.Reader"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.BlobData.Deserialize",
+          "Name": "Deserialize",
+          "DeclaringType": "Sandbox.BlobData",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Deserialize this object from binary format."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\BlobData.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Deserialize this object from binary format."
+          },
+          "DocId": "M:Sandbox.BlobData.Deserialize(Sandbox.BlobData.Reader@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "reader",
+              "Ref": true,
+              "Type": "Sandbox.BlobData.Reader"
+            },
+            {
+              "Name": "fromVersion",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Utility/BlobData.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BlobData.Upgrade",
+          "Name": "Upgrade",
+          "DeclaringType": "Sandbox.BlobData",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Optional upgrade path for old data versions. Called if the data version is older than current Version."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\BlobData.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Optional upgrade path for old data versions. Called if the data version is older than current Version."
+          },
+          "DocId": "M:Sandbox.BlobData.Upgrade(Sandbox.BlobData.Reader@,System.Int32)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.BlobData..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.BlobData",
+          "DocId": "M:Sandbox.BlobData.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Utility/BlobData.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BlobData.Version",
+          "Name": "Version",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The version of this binary data format. Used for upgrade paths."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\BlobData.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The version of this binary data format. Used for upgrade paths."
+          },
+          "DocId": "P:Sandbox.BlobData.Version"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.BlobData",
+      "Name": "BlobData",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Base class for properties that should be serialized to binary format instead of JSON. Used for large data structures that would be inefficient as JSON."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\BlobData.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Base class for properties that should be serialized to binary format instead of JSON.\nUsed for large data structures that would be inefficient as JSON."
+      },
+      "DocId": "T:Sandbox.BlobData"
+    },
+    {
+      "Namespace": "",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.ByteStream",
+          "IsPublic": true,
+          "FullName": "Sandbox.BlobData.Writer.Stream",
+          "Name": "Stream",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\BlobData.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The underlying byte stream."
+          },
+          "DocId": "F:Sandbox.BlobData.Writer.Stream"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.BlobData.Writer",
+      "Name": "Writer",
+      "DeclaringType": "Sandbox.BlobData",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Context for writing binary blob data. Wraps ByteStream for allocation-free serialization."
+      },
+      "DocId": "T:Sandbox.BlobData.Writer"
+    },
+    {
+      "Namespace": "",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.ByteStream",
+          "IsPublic": true,
+          "FullName": "Sandbox.BlobData.Reader.Stream",
+          "Name": "Stream",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\BlobData.cs",
+                "53"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The underlying byte stream."
+          },
+          "DocId": "F:Sandbox.BlobData.Reader.Stream"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.BlobData.Reader.DataVersion",
+          "Name": "DataVersion",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\BlobData.cs",
+                "58"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The version of the data being read."
+          },
+          "DocId": "F:Sandbox.BlobData.Reader.DataVersion"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.BlobData.Reader",
+      "Name": "Reader",
+      "DeclaringType": "Sandbox.BlobData",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Context for reading binary blob data. Wraps ByteStream for allocation-free deserialization."
+      },
+      "DocId": "T:Sandbox.BlobData.Reader"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "compiler",
+              "Type": "Sandbox.Compiler"
+            }
+          ],
+          "l": {
+            "File": "Utility/CompilerExtensions.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.CompilerExtensions.AddBaseReference",
+          "Name": "AddBaseReference",
+          "DeclaringType": "Sandbox.CompilerExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a reference to the \"<code style=\"color: #DCDCDC; background-color: #111111; padding: 4px;\">base</code>\" package."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\CompilerExtensions.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a reference to the \"<c>base</c>\" package."
+          },
+          "DocId": "M:Sandbox.CompilerExtensions.AddBaseReference(Sandbox.Compiler)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "compiler",
+              "Type": "Sandbox.Compiler"
+            }
+          ],
+          "l": {
+            "File": "Utility/CompilerExtensions.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.CompilerExtensions.AddToolBaseReference",
+          "Name": "AddToolBaseReference",
+          "DeclaringType": "Sandbox.CompilerExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a reference to the \"<code style=\"color: #DCDCDC; background-color: #111111; padding: 4px;\">toolbase</code>\" package."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\CompilerExtensions.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a reference to the \"<c>toolbase</c>\" package."
+          },
+          "DocId": "M:Sandbox.CompilerExtensions.AddToolBaseReference(Sandbox.Compiler)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "compiler",
+              "Type": "Sandbox.Compiler"
+            },
+            {
+              "Name": "reference",
+              "Type": "Sandbox.Compiler"
+            }
+          ],
+          "l": {
+            "File": "Utility/CompilerExtensions.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.CompilerExtensions.AddReference",
+          "Name": "AddReference",
+          "DeclaringType": "Sandbox.CompilerExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a reference to the given compiler."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\CompilerExtensions.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a reference to the given compiler."
+          },
+          "DocId": "M:Sandbox.CompilerExtensions.AddReference(Sandbox.Compiler,Sandbox.Compiler)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "compiler",
+              "Type": "Sandbox.Compiler"
+            },
+            {
+              "Name": "reference",
+              "Type": "Sandbox.Package"
+            }
+          ],
+          "l": {
+            "File": "Utility/CompilerExtensions.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.CompilerExtensions.AddReference",
+          "Name": "AddReference",
+          "DeclaringType": "Sandbox.CompilerExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a reference to the given package's assembly."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\CompilerExtensions.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a reference to the given package's assembly."
+          },
+          "DocId": "M:Sandbox.CompilerExtensions.AddReference(Sandbox.Compiler,Sandbox.Package)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "compiler",
+              "Type": "Sandbox.Compiler"
+            },
+            {
+              "Name": "reference",
+              "Type": "Sandbox.Package"
+            }
+          ],
+          "l": {
+            "File": "Utility/CompilerExtensions.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.CompilerExtensions.AddEditorReference",
+          "Name": "AddEditorReference",
+          "DeclaringType": "Sandbox.CompilerExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a reference to the given package's editor assembly."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\CompilerExtensions.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a reference to the given package's editor assembly."
+          },
+          "DocId": "M:Sandbox.CompilerExtensions.AddEditorReference(Sandbox.Compiler,Sandbox.Package)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "IsExtension": true,
+      "FullName": "Sandbox.CompilerExtensions",
+      "Name": "CompilerExtensions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\CompilerExtensions.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.CompilerExtensions"
+    }
+  ],
+  "_metadata": {
+    "chunk": 169,
+    "items_count": 5
+  }
+}

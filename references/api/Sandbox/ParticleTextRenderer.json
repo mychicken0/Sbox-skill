@@ -1,0 +1,1782 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.ParticleRenderer",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ParticleTextRenderer",
+          "DocId": "M:Sandbox.ParticleTextRenderer.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.TextRendering.Scope",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.Text",
+          "Name": "Text",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Text"
+              ]
+            },
+            {
+              "FullName": "OrderAttribute",
+              "ConstructorArguments": [
+                "0"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTextRenderer.Text"
+        },
+        {
+          "PropertyType": "Vector2",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.Pivot",
+          "Name": "Pivot",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Sprite"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTextRenderer.Pivot"
+        },
+        {
+          "PropertyType": "System.Single",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.Scale",
+          "Name": "Scale",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Sprite"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTextRenderer.Scale"
+        },
+        {
+          "PropertyType": "System.Single",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.DepthFeather",
+          "Name": "DepthFeather",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "OrderAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "50"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTextRenderer.DepthFeather"
+        },
+        {
+          "PropertyType": "System.Single",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.FogStrength",
+          "Name": "FogStrength",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "28"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTextRenderer.FogStrength"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.Additive",
+          "Name": "Additive",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTextRenderer.Additive"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.Shadows",
+          "Name": "Shadows",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTextRenderer.Shadows"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.Lighting",
+          "Name": "Lighting",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTextRenderer.Lighting"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.Opaque",
+          "Name": "Opaque",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Indicates whether the sprite is opaque, optimizing rendering by skipping sorting."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "43"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Indicates whether the sprite is opaque, optimizing rendering by skipping sorting."
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.Opaque"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.FilterMode",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.TextureFilter",
+          "Name": "TextureFilter",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTextRenderer.TextureFilter"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.FaceVelocity",
+          "Name": "FaceVelocity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "FaceVelocity"
+              ]
+            },
+            {
+              "FullName": "OrderAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Aligns the sprite to face its velocity direction."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "52"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Aligns the sprite to face its velocity direction."
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.FaceVelocity"
+        },
+        {
+          "PropertyType": "System.Single",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.RotationOffset",
+          "Name": "RotationOffset",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "FaceVelocity"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "360"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Offset applied to the rotation when facing velocity."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "58"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Offset applied to the rotation when facing velocity."
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.RotationOffset"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.MotionBlur",
+          "Name": "MotionBlur",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "MotionBlur"
+              ]
+            },
+            {
+              "FullName": "OrderAttribute",
+              "ConstructorArguments": [
+                "3"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables motion blur effects for the sprite."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables motion blur effects for the sprite."
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.MotionBlur"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.LeadingTrail",
+          "Name": "LeadingTrail",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "MotionBlur"
+              ]
+            },
+            {
+              "FullName": "Sandbox.InfoBoxAttribute",
+              "ConstructorArguments": [
+                "Creates a blur of sprites along the velocity of the particle, giving the impression of motion blur",
+                "info",
+                "4"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Determines whether the motion blur effect includes a leading trail."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "70"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Determines whether the motion blur effect includes a leading trail."
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.LeadingTrail"
+        },
+        {
+          "PropertyType": "System.Single",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.BlurAmount",
+          "Name": "BlurAmount",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "MotionBlur"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Amount of blur applied to the sprite during motion blur."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "77"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Amount of blur applied to the sprite during motion blur."
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.BlurAmount"
+        },
+        {
+          "PropertyType": "System.Single",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.BlurSpacing",
+          "Name": "BlurSpacing",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "MotionBlur"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Spacing between blur samples in the motion blur effect."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "83"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Spacing between blur samples in the motion blur effect."
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.BlurSpacing"
+        },
+        {
+          "PropertyType": "System.Single",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.BlurOpacity",
+          "Name": "BlurOpacity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "MotionBlur"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Opacity of the blur effect applied to the sprite."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "89"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Opacity of the blur effect applied to the sprite."
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.BlurOpacity"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleSpriteRenderer.BillboardAlignment",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.Alignment",
+          "Name": "Alignment",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Sprite"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Alignment mode for the sprite's billboard behavior."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "95"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Alignment mode for the sprite's billboard behavior."
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.Alignment"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleTextRenderer.ParticleSortMode",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 110
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.SortMode",
+          "Name": "SortMode",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Sprite"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sorting mode used for rendering particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "108"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sorting mode used for rendering particles."
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.SortMode"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.IsSorted",
+          "Name": "IsSorted",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Interface property to determine if particles should be sorted"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "114"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Interface property to determine if particles should be sorted"
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.IsSorted"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTextRenderer.cs",
+            "Line": 120
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.RenderTexture",
+          "Name": "RenderTexture",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Provides texture for rendering the sprite"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+                "119"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Provides texture for rendering the sprite"
+          },
+          "DocId": "P:Sandbox.ParticleTextRenderer.RenderTexture"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ParticleTextRenderer",
+      "Name": "ParticleTextRenderer",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Particle Text Renderer"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Effects"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "text_fields"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Renders particles as 2D sprites"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\Renderers\\ParticleTextRenderer.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Renders particles as 2D sprites"
+      },
+      "DocId": "T:Sandbox.ParticleTextRenderer"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.ParticleTextRenderer.ParticleSortMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.ParticleSortMode.Unsorted",
+          "Name": "Unsorted",
+          "DocId": "F:Sandbox.ParticleTextRenderer.ParticleSortMode.Unsorted"
+        },
+        {
+          "FieldType": "Sandbox.ParticleTextRenderer.ParticleSortMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ParticleTextRenderer.ParticleSortMode.ByDistance",
+          "Name": "ByDistance",
+          "DocId": "F:Sandbox.ParticleTextRenderer.ParticleSortMode.ByDistance"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ParticleTextRenderer.ParticleSortMode",
+      "Name": "ParticleSortMode",
+      "DeclaringType": "Sandbox.ParticleTextRenderer",
+      "DocId": "T:Sandbox.ParticleTextRenderer.ParticleSortMode"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.ParticleController",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ParticleTrailRenderer",
+          "DocId": "M:Sandbox.ParticleTrailRenderer.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.RenderOptions",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.RenderOptions",
+          "Name": "RenderOptions",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "OrderAttribute",
+              "ConstructorArguments": [
+                "-100"
+              ]
+            },
+            {
+              "FullName": "Sandbox.InlineEditorAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Advanced Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.RenderOptions"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.MaxPoints",
+          "Name": "MaxPoints",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Trail"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.MaxPoints"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.PointDistance",
+          "Name": "PointDistance",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Trail"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.PointDistance"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.LifeTime",
+          "Name": "LifeTime",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Trail"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.LifeTime"
+        },
+        {
+          "PropertyType": "Sandbox.TrailTextureConfig",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.Texturing",
+          "Name": "Texturing",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Appearance"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.InlineEditorAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.Texturing"
+        },
+        {
+          "PropertyType": "Sandbox.Gradient",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Appearance"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.Color"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Appearance"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.Width"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.TintFromParticle",
+          "Name": "TintFromParticle",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Particles"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.TintFromParticle"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.ScaleFromParticle",
+          "Name": "ScaleFromParticle",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Particles"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.ScaleFromParticle"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.Wireframe",
+          "Name": "Wireframe",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "38"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.Wireframe"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.Opaque",
+          "Name": "Opaque",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "41"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.Opaque"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.CastShadows",
+          "Name": "CastShadows",
+          "Attributes": [
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Opaque",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "44"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.CastShadows"
+        },
+        {
+          "PropertyType": "Sandbox.BlendMode",
+          "Loc": {
+            "File": "Scene/Components/Particles/Renderers/ParticleTrailRenderer.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleTrailRenderer.BlendMode",
+          "Name": "BlendMode",
+          "Attributes": [
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Opaque",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+                "48"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleTrailRenderer.BlendMode"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ParticleTrailRenderer",
+      "Name": "ParticleTrailRenderer",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Particle Trail Renderer"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Effects"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "category"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Renders a trail for each particle in the effect."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\Renderers\\ParticleTrailRenderer.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Renders a trail for each particle in the effect."
+      },
+      "DocId": "T:Sandbox.ParticleTrailRenderer"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.BasePostProcess.Render",
+          "Name": "Render",
+          "DeclaringType": "Sandbox.BasePostProcess",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Override in your implementation to do your rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\BasePostProcess.cs",
+                "51"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Override in your implementation to do your rendering"
+          },
+          "DocId": "M:Sandbox.BasePostProcess.Render"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "blit",
+              "Type": "Sandbox.BasePostProcess.BlitMode"
+            },
+            {
+              "Name": "debugName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/PostProcessing/BasePostProcess.cs",
+            "Line": 103
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.BasePostProcess.Blit",
+          "Name": "Blit",
+          "DeclaringType": "Sandbox.BasePostProcess",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Helper to do a blit with the current camera's post process"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\BasePostProcess.cs",
+                "100"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Helper to do a blit with the current camera's post process"
+          },
+          "DocId": "M:Sandbox.BasePostProcess.Blit(Sandbox.BasePostProcess.BlitMode,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "shader",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "stage",
+              "Type": "Sandbox.Rendering.Stage"
+            },
+            {
+              "Name": "order",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "debugName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/PostProcessing/BasePostProcess.cs",
+            "Line": 122
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.BasePostProcess.BlitSimple",
+          "Name": "BlitSimple",
+          "DeclaringType": "Sandbox.BasePostProcess",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Helper to do a blit with the current camera's post process"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\BasePostProcess.cs",
+                "120"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Helper to do a blit with the current camera's post process"
+          },
+          "DocId": "M:Sandbox.BasePostProcess.BlitSimple(Sandbox.Material,Sandbox.Rendering.Stage,System.Int32,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "cl",
+              "Type": "Sandbox.Rendering.CommandList"
+            },
+            {
+              "Name": "stage",
+              "Type": "Sandbox.Rendering.Stage"
+            },
+            {
+              "Name": "order",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "debugName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/PostProcessing/BasePostProcess.cs",
+            "Line": 131
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.BasePostProcess.InsertCommandList",
+          "Name": "InsertCommandList",
+          "DeclaringType": "Sandbox.BasePostProcess",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Helper to add a command list to the current camera's post process"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\BasePostProcess.cs",
+                "128"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Helper to add a command list to the current camera's post process"
+          },
+          "DocId": "M:Sandbox.BasePostProcess.InsertCommandList(Sandbox.Rendering.CommandList,Sandbox.Rendering.Stage,System.Int32,System.String)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/BasePostProcess.cs",
+            "Line": 32
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.BasePostProcess..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.BasePostProcess",
+          "DocId": "M:Sandbox.BasePostProcess.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.CameraComponent",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/BasePostProcess.cs",
+            "Line": 26
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.BasePostProcess.Camera",
+          "Name": "Camera",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The camera we're being applied to. This is only valid during the Render call."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\BasePostProcess.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The camera we're being applied to. This is only valid during the Render call."
+          },
+          "DocId": "P:Sandbox.BasePostProcess.Camera"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.RenderAttributes",
+          "IsProtected": true,
+          "FullName": "Sandbox.BasePostProcess.Attributes",
+          "Name": "Attributes",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\BasePostProcess.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The default attributes for this post process. This will be used by helper functions like Blit."
+          },
+          "DocId": "F:Sandbox.BasePostProcess.Attributes"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.BasePostProcess",
+      "Name": "BasePostProcess",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "The base class for all post process effects."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\PostProcessing\\BasePostProcess.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "The base class for all post process effects."
+      },
+      "DocId": "T:Sandbox.BasePostProcess"
+    }
+  ],
+  "_metadata": {
+    "chunk": 104,
+    "items_count": 4
+  }
+}

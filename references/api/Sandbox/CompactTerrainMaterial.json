@@ -1,0 +1,807 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "packed",
+              "Type": "System.UInt32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompactTerrainMaterial..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.CompactTerrainMaterial",
+          "DocId": "M:Sandbox.CompactTerrainMaterial.#ctor(System.UInt32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "baseTextureId",
+              "Type": "System.Byte"
+            },
+            {
+              "Name": "overlayTextureId",
+              "Type": "System.Byte",
+              "Default": "0"
+            },
+            {
+              "Name": "blendFactor",
+              "Type": "System.Byte",
+              "Default": "0"
+            },
+            {
+              "Name": "isHole",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompactTerrainMaterial..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.CompactTerrainMaterial",
+          "DocId": "M:Sandbox.CompactTerrainMaterial.#ctor(System.Byte,System.Byte,System.Byte,System.Boolean)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Byte",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompactTerrainMaterial.BaseTextureId",
+          "Name": "BaseTextureId",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Base texture ID (0-31)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "69"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Base texture ID (0-31)"
+          },
+          "DocId": "P:Sandbox.CompactTerrainMaterial.BaseTextureId"
+        },
+        {
+          "PropertyType": "System.Byte",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompactTerrainMaterial.OverlayTextureId",
+          "Name": "OverlayTextureId",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Overlay texture ID (0-31)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "78"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overlay texture ID (0-31)"
+          },
+          "DocId": "P:Sandbox.CompactTerrainMaterial.OverlayTextureId"
+        },
+        {
+          "PropertyType": "System.Byte",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompactTerrainMaterial.BlendFactor",
+          "Name": "BlendFactor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Blend factor between base and overlay (0-255)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Blend factor between base and overlay (0-255)."
+          },
+          "DocId": "P:Sandbox.CompactTerrainMaterial.BlendFactor"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompactTerrainMaterial.IsHole",
+          "Name": "IsHole",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether this pixel is marked as a hole"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "96"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether this pixel is marked as a hole"
+          },
+          "DocId": "P:Sandbox.CompactTerrainMaterial.IsHole"
+        },
+        {
+          "PropertyType": "System.UInt32",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompactTerrainMaterial.Packed",
+          "Name": "Packed",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Raw packed value"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "114"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Raw packed value"
+          },
+          "DocId": "P:Sandbox.CompactTerrainMaterial.Packed"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.CompactTerrainMaterial",
+      "Name": "CompactTerrainMaterial",
+      "Documentation": {
+        "Summary": "Compact terrain material encoding with base/overlay texture blending.\nPacked format (32-bit uint)"
+      },
+      "DocId": "T:Sandbox.CompactTerrainMaterial"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.GameResource",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "resolution",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 183
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.SetResolution",
+          "Name": "SetResolution",
+          "DeclaringType": "Sandbox.TerrainStorage",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "181"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.TerrainStorage.SetResolution(System.Int32)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.TerrainStorage",
+          "DocId": "M:Sandbox.TerrainStorage.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.UInt16[]",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.HeightMap",
+          "Name": "HeightMap",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "126"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.TerrainStorage.HeightMap"
+        },
+        {
+          "PropertyType": "System.UInt32[]",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 128
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.ControlMap",
+          "Name": "ControlMap",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "127"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.TerrainStorage.ControlMap"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.Resolution",
+          "Name": "Resolution",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "129"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.TerrainStorage.Resolution"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 135
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.TerrainSize",
+          "Name": "TerrainSize",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Uniform world size of the width and length of the terrain."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "134"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Uniform world size of the width and length of the terrain."
+          },
+          "DocId": "P:Sandbox.TerrainStorage.TerrainSize"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 140
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.TerrainHeight",
+          "Name": "TerrainHeight",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "World size of the maximum height of the terrain."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "139"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "World size of the maximum height of the terrain."
+          },
+          "DocId": "P:Sandbox.TerrainStorage.TerrainHeight"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.TerrainMaterial>",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.Materials",
+          "Name": "Materials",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "141"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.TerrainStorage.Materials"
+        },
+        {
+          "PropertyType": "Sandbox.TerrainStorage.TerrainMaterialSettings",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 173
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.MaterialSettings",
+          "Name": "MaterialSettings",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "172"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.TerrainStorage.MaterialSettings"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.Upgrade.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.ResourceVersion",
+          "Name": "ResourceVersion",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.Upgrade.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.TerrainStorage.ResourceVersion"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.TerrainStorage",
+      "Name": "TerrainStorage",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.AssetTypeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Stores heightmaps, control maps and materials."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Terrain\\TerrainStorage.cs",
+            "120"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Stores heightmaps, control maps and materials."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Terrain\\TerrainStorage.Upgrade.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Stores heightmaps, control maps and materials."
+      },
+      "DocId": "T:Sandbox.TerrainStorage"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 157
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.TerrainMaterialSettings..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.TerrainStorage.TerrainMaterialSettings",
+          "DocId": "M:Sandbox.TerrainStorage.TerrainMaterialSettings.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 154
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.TerrainMaterialSettings.HeightBlendEnabled",
+          "Name": "HeightBlendEnabled",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Height Blend"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "147"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.TerrainStorage.TerrainMaterialSettings.HeightBlendEnabled"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Terrain/TerrainStorage.cs",
+            "Line": 166
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TerrainStorage.TerrainMaterialSettings.HeightBlendSharpness",
+          "Name": "HeightBlendSharpness",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Height Blend"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Terrain\\TerrainStorage.cs",
+                "159"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.TerrainStorage.TerrainMaterialSettings.HeightBlendSharpness"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.TerrainStorage.TerrainMaterialSettings",
+      "Name": "TerrainMaterialSettings",
+      "DeclaringType": "Sandbox.TerrainStorage",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Terrain\\TerrainStorage.cs",
+            "143"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.TerrainStorage.TerrainMaterialSettings"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.GameResource",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Assets/RenderTextureAsset.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RenderTextureAsset..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.RenderTextureAsset",
+          "DocId": "M:Sandbox.RenderTextureAsset.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Resources/Textures/Assets/RenderTextureAsset.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RenderTextureAsset.Texture",
+          "Name": "Texture",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Assets\\RenderTextureAsset.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.RenderTextureAsset.Texture"
+        },
+        {
+          "PropertyType": "Vector2Int",
+          "Loc": {
+            "File": "Resources/Textures/Assets/RenderTextureAsset.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RenderTextureAsset.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Size (pixels)"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Resolution of the render target in pixels."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Assets\\RenderTextureAsset.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Resolution of the render target in pixels."
+          },
+          "DocId": "P:Sandbox.RenderTextureAsset.Size"
+        },
+        {
+          "PropertyType": "Sandbox.ImageFormat",
+          "Loc": {
+            "File": "Resources/Textures/Assets/RenderTextureAsset.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RenderTextureAsset.Format",
+          "Name": "Format",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Color Format"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Color format used when building the render target. Unsupported formats fall back to RGBA8888."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Assets\\RenderTextureAsset.cs",
+                "33"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Color format used when building the render target. Unsupported formats fall back to RGBA8888."
+          },
+          "DocId": "P:Sandbox.RenderTextureAsset.Format"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Resources/Textures/Assets/RenderTextureAsset.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RenderTextureAsset.ClearColor",
+          "Name": "ClearColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Initial Clear Color"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Optional clear colour applied when the texture is (re)created."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Assets\\RenderTextureAsset.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Optional clear colour applied when the texture is (re)created."
+          },
+          "DocId": "P:Sandbox.RenderTextureAsset.ClearColor"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.RenderTextureAsset",
+      "Name": "RenderTextureAsset",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.AssetTypeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Asset that owns a GPU render target texture which can be shared across runtime systems."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Assets\\RenderTextureAsset.cs",
+            "11"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Asset that owns a GPU render target texture which can be shared across runtime systems."
+      },
+      "DocId": "T:Sandbox.RenderTextureAsset"
+    }
+  ],
+  "_metadata": {
+    "chunk": 64,
+    "items_count": 4
+  }
+}

@@ -1,0 +1,1090 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "cornerRadius",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Panel.Draw.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Panel.Draw.Rect",
+          "Name": "Rect",
+          "DeclaringType": "Sandbox.UI.Panel.Draw",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a filled rectangle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Draw.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a filled rectangle.",
+            "Params": {
+              "rect": "The rectangle to draw, in panel-local coordinates.",
+              "color": "Fill color.",
+              "cornerRadius": "Uniform corner radius for rounded rectangles. Use the <see cref=\"M:Sandbox.UI.Panel.Draw.Rect(Sandbox.Rect,Color,Vector4)\" /> overload for per-corner control."
+            }
+          },
+          "DocId": "M:Sandbox.UI.Panel.Draw.Rect(Sandbox.Rect,Color,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "cornerRadius",
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Panel.Draw.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Panel.Draw.Rect",
+          "Name": "Rect",
+          "DeclaringType": "Sandbox.UI.Panel.Draw",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a filled rectangle with per-corner radius control."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Draw.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a filled rectangle with per-corner radius control.",
+            "Params": {
+              "rect": "The rectangle to draw, in panel-local coordinates.",
+              "color": "Fill color.",
+              "cornerRadius": "Corner radii as (bottom-right, top-right, bottom-left, top-left)."
+            }
+          },
+          "DocId": "M:Sandbox.UI.Panel.Draw.Rect(Sandbox.Rect,Color,Vector4)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "center",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Panel.Draw.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Panel.Draw.Circle",
+          "Name": "Circle",
+          "DeclaringType": "Sandbox.UI.Panel.Draw",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a filled circle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Draw.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a filled circle.",
+            "Params": {
+              "center": "Center position in panel-local coordinates.",
+              "radius": "Circle radius in pixels.",
+              "color": "Fill color."
+            }
+          },
+          "DocId": "M:Sandbox.UI.Panel.Draw.Circle(Vector2,System.Single,Color)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "tint",
+              "Type": "System.Nullable`1<Color>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Panel.Draw.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Panel.Draw.Texture",
+          "Name": "Texture",
+          "DeclaringType": "Sandbox.UI.Panel.Draw",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a texture within the given rectangle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Draw.cs",
+                "69"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.Panel.Draw.Texture(Sandbox.Texture,Sandbox.Rect,System.Nullable`1{Color})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "size",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "33"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Panel.Draw.cs",
+            "Line": 90
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Panel.Draw.Text",
+          "Name": "Text",
+          "DeclaringType": "Sandbox.UI.Panel.Draw",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a text string within the given rectangle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Draw.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a text string within the given rectangle.",
+            "Params": {
+              "text": "The text to render.",
+              "rect": "Bounding rectangle for text layout, in panel-local coordinates.",
+              "size": "Font size in pixels.",
+              "color": "Text color.",
+              "flags": "Text alignment and layout flags. Defaults to <see cref=\"F:Sandbox.TextFlag.LeftTop\" />."
+            }
+          },
+          "DocId": "M:Sandbox.UI.Panel.Draw.Text(System.String,Sandbox.Rect,System.Single,Color,Sandbox.TextFlag)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "blur",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "spread",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "offset",
+              "Type": "Vector2",
+              "Default": "null"
+            },
+            {
+              "Name": "cornerRadius",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "inset",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Panel.Draw.cs",
+            "Line": 117
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Panel.Draw.Shadow",
+          "Name": "Shadow",
+          "DeclaringType": "Sandbox.UI.Panel.Draw",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a box shadow (drop shadow or inset shadow)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Draw.cs",
+                "115"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a box shadow (drop shadow or inset shadow).",
+            "Params": {
+              "rect": "The rectangle to cast the shadow from, in panel-local coordinates.",
+              "color": "Shadow color.",
+              "blur": "Blur radius in pixels. Higher values produce softer shadows.",
+              "spread": "Spread distance in pixels. Positive values expand the shadow, negative values shrink it.",
+              "offset": "Shadow offset from the rectangle position.",
+              "cornerRadius": "Corner radius to match rounded rectangles.",
+              "inset": "If true, draws an inner shadow instead of a drop shadow."
+            }
+          },
+          "DocId": "M:Sandbox.UI.Panel.Draw.Shadow(Sandbox.Rect,Color,System.Single,System.Single,Vector2,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "width",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "cornerRadius",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "offset",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Panel.Draw.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Panel.Draw.Outline",
+          "Name": "Outline",
+          "DeclaringType": "Sandbox.UI.Panel.Draw",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws an outline (stroke) around a rectangle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Draw.cs",
+                "135"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws an outline (stroke) around a rectangle.",
+            "Params": {
+              "rect": "The rectangle to outline, in panel-local coordinates.",
+              "color": "Outline color.",
+              "width": "Outline thickness in pixels.",
+              "cornerRadius": "Corner radius to match rounded rectangles.",
+              "offset": "Outline offset. Positive values push the outline outward, negative values pull it inward."
+            }
+          },
+          "DocId": "M:Sandbox.UI.Panel.Draw.Outline(Sandbox.Rect,Color,System.Single,System.Single,System.Single)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.UI.Panel.Draw",
+      "Name": "Draw",
+      "DeclaringType": "Sandbox.UI.Panel",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Panel.Draw.cs",
+            "20"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "To be used inside <see cref=\"M:Sandbox.UI.Panel.OnDraw\" /> to add custom shapes, textures and text to a panel.\nThese draw calls will be batched together with the panel's CSS-styled content for efficient rendering.\n<example><code>\npublic override void OnDraw()\n{\n    Draw.Rect( new Rect( 0, 0, 100, 100 ), Color.Red, cornerRadius: 8 );\n    Draw.Text( \"Hello\", new Rect( 10, 10, 80, 20 ), 14, Color.White );\n}\n</code></example>"
+      },
+      "DocId": "T:Sandbox.UI.Panel.Draw"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.Box",
+          "DocId": "M:Sandbox.UI.Box.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/UI/Panel/Panel.Layout.cs",
+            "Line": 677
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.Left",
+          "Name": "Left",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Position of the left edge in screen coordinates."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "676"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position of the left edge in screen coordinates."
+          },
+          "DocId": "P:Sandbox.UI.Box.Left"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/UI/Panel/Panel.Layout.cs",
+            "Line": 682
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.Right",
+          "Name": "Right",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Position of the right edge in screen coordinates."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "681"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position of the right edge in screen coordinates."
+          },
+          "DocId": "P:Sandbox.UI.Box.Right"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/UI/Panel/Panel.Layout.cs",
+            "Line": 687
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.Top",
+          "Name": "Top",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Position of the top edge in screen coordinates."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "686"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position of the top edge in screen coordinates."
+          },
+          "DocId": "P:Sandbox.UI.Box.Top"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/UI/Panel/Panel.Layout.cs",
+            "Line": 692
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.Bottom",
+          "Name": "Bottom",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Position of the bottom edge in screen coordinates."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "691"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position of the bottom edge in screen coordinates."
+          },
+          "DocId": "P:Sandbox.UI.Box.Bottom"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Rect",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.RectOuter",
+          "Name": "RectOuter",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "640"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position and size of the element on the screen, <b>including both - its padding AND margin</b>."
+          },
+          "DocId": "F:Sandbox.UI.Box.RectOuter"
+        },
+        {
+          "FieldType": "Sandbox.Rect",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.RectInner",
+          "Name": "RectInner",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "645"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position and size of only the element's inner content on the screen, <i>without padding OR margin</i>."
+          },
+          "DocId": "F:Sandbox.UI.Box.RectInner"
+        },
+        {
+          "FieldType": "Sandbox.UI.Margin",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.Padding",
+          "Name": "Padding",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "650"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The size of padding."
+          },
+          "DocId": "F:Sandbox.UI.Box.Padding"
+        },
+        {
+          "FieldType": "Sandbox.UI.Margin",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.Border",
+          "Name": "Border",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "655"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The size of border."
+          },
+          "DocId": "F:Sandbox.UI.Box.Border"
+        },
+        {
+          "FieldType": "Sandbox.UI.Margin",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.Margin",
+          "Name": "Margin",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "660"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The size of border."
+          },
+          "DocId": "F:Sandbox.UI.Box.Margin"
+        },
+        {
+          "FieldType": "Sandbox.Rect",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.Rect",
+          "Name": "Rect",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "665"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position and size of the element on the screen, <b>including its padding</b>, <i>but not margin</i>."
+          },
+          "DocId": "F:Sandbox.UI.Box.Rect"
+        },
+        {
+          "FieldType": "Sandbox.Rect",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Box.ClipRect",
+          "Name": "ClipRect",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Panel.Layout.cs",
+                "671"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "<see cref=\"F:Sandbox.UI.Box.Rect\" /> minus the border sizes.\n            Used internally to \"clip\" (hide) everything outside of these bounds, if the panels <see cref=\"T:Sandbox.UI.OverflowMode\" /> is not set to <see cref=\"F:Sandbox.UI.OverflowMode.Visible\" />."
+          },
+          "DocId": "F:Sandbox.UI.Box.ClipRect"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Box",
+      "Name": "Box",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.SkipHotloadAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents position and size of a <span style=\"color: #4EC9B0;\">Panel</span> on the screen."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Panel.Layout.cs",
+            "634"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents position and size of a <see cref=\"T:Sandbox.UI.Panel\" /> on the screen."
+      },
+      "DocId": "T:Sandbox.UI.Box"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "arguments",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.String>"
+            },
+            {
+              "Name": "contentBlock",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Parser/Mixin.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinDefinition.Expand",
+          "Name": "Expand",
+          "DeclaringType": "Sandbox.UI.MixinDefinition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Expand this mixin with the given arguments, returning the CSS content with all parameters substituted."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Parser\\Mixin.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.MixinDefinition.Expand(System.Collections.Generic.Dictionary`2{System.String,System.String},System.String)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/Parser/Mixin.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinDefinition..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.MixinDefinition",
+          "DocId": "M:Sandbox.UI.MixinDefinition.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/UI/Parser/Mixin.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinDefinition.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The name of the mixin (e.g., \"button\" from \"@mixin button\")"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Parser\\Mixin.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The name of the mixin (e.g., \"button\" from \"@mixin button\")"
+          },
+          "DocId": "P:Sandbox.UI.MixinDefinition.Name"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.UI.MixinParameter>",
+          "Loc": {
+            "File": "Systems/UI/Parser/Mixin.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinDefinition.Parameters",
+          "Name": "Parameters",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Parameter definitions in order, with optional default values. Key = parameter name (without $), Value = default value (null if required)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Parser\\Mixin.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Parameter definitions in order, with optional default values.\nKey = parameter name (without $), Value = default value (null if required)"
+          },
+          "DocId": "P:Sandbox.UI.MixinDefinition.Parameters"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/UI/Parser/Mixin.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinDefinition.HasVariadicParameter",
+          "Name": "HasVariadicParameter",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether this mixin has a variadic parameter (last param ends with ...)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Parser\\Mixin.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether this mixin has a variadic parameter (last param ends with ...)"
+          },
+          "DocId": "P:Sandbox.UI.MixinDefinition.HasVariadicParameter"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/UI/Parser/Mixin.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinDefinition.Content",
+          "Name": "Content",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The raw content of the mixin body, to be expanded when included. This includes nested rules which will be parsed during expansion."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Parser\\Mixin.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The raw content of the mixin body, to be expanded when included.\nThis includes nested rules which will be parsed during expansion."
+          },
+          "DocId": "P:Sandbox.UI.MixinDefinition.Content"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/UI/Parser/Mixin.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinDefinition.FileName",
+          "Name": "FileName",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Source file for error messages"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Parser\\Mixin.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Source file for error messages"
+          },
+          "DocId": "P:Sandbox.UI.MixinDefinition.FileName"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/UI/Parser/Mixin.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinDefinition.FileLine",
+          "Name": "FileLine",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Source line for error messages"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Parser\\Mixin.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Source line for error messages"
+          },
+          "DocId": "P:Sandbox.UI.MixinDefinition.FileLine"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.MixinDefinition",
+      "Name": "MixinDefinition",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents a parsed @mixin definition that can be included elsewhere."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Parser\\Mixin.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents a parsed @mixin definition that can be included elsewhere."
+      },
+      "DocId": "T:Sandbox.UI.MixinDefinition"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "isVariadic",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Parser/Mixin.cs",
+            "Line": 135
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinParameter..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.MixinParameter",
+          "Documentation": {
+            "Summary": "A single parameter in a mixin definition."
+          },
+          "DocId": "M:Sandbox.UI.MixinParameter.#ctor(System.String,System.String,System.Boolean)"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinParameter.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Parser\\Mixin.cs",
+                "133"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Parameter name without the $ prefix (and without ... for variadic)"
+          },
+          "DocId": "F:Sandbox.UI.MixinParameter.Name"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinParameter.DefaultValue",
+          "Name": "DefaultValue",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Parser\\Mixin.cs",
+                "138"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Default value, or null if the parameter is required"
+          },
+          "DocId": "F:Sandbox.UI.MixinParameter.DefaultValue"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MixinParameter.IsVariadic",
+          "Name": "IsVariadic",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Parser\\Mixin.cs",
+                "143"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether this is a variadic parameter (collects remaining arguments)"
+          },
+          "DocId": "F:Sandbox.UI.MixinParameter.IsVariadic"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.MixinParameter",
+      "Name": "MixinParameter",
+      "Documentation": {
+        "Summary": "A single parameter in a mixin definition."
+      },
+      "DocId": "T:Sandbox.UI.MixinParameter"
+    }
+  ],
+  "_metadata": {
+    "chunk": 181,
+    "items_count": 4
+  }
+}

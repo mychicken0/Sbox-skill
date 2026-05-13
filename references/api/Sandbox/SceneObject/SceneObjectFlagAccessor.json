@@ -1,0 +1,1550 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 447
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.CastShadows",
+          "Name": "CastShadows",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether this scene object should cast shadows."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "443"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether this scene object should cast shadows."
+          },
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.CastShadows"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 453
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.IsOpaque",
+          "Name": "IsOpaque",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "449"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.IsOpaque"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 459
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.IsTranslucent",
+          "Name": "IsTranslucent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "455"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.IsTranslucent"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 466
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.IsDecal",
+          "Name": "IsDecal",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "SceneObject.IsDecal is obsolete"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "461"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.IsDecal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 472
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.OverlayLayer",
+          "Name": "OverlayLayer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "468"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.OverlayLayer"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 482
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.ExcludeGameLayer",
+          "Name": "ExcludeGameLayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Don't render in the opaque/translucent game passes. This is useful when you want to only render in the Bloom layer, rather than additionally to it."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "478"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Don't render in the opaque/translucent game passes. This is useful when you\nwant to only render in the Bloom layer, rather than additionally to it."
+          },
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.ExcludeGameLayer"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 488
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.ViewModelLayer",
+          "Name": "ViewModelLayer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "484"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.ViewModelLayer"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 494
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.SkyBoxLayer",
+          "Name": "SkyBoxLayer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "490"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.SkyBoxLayer"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 500
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.NeedsLightProbe",
+          "Name": "NeedsLightProbe",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "496"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.NeedsLightProbe"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 509
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.NeedsEnvironmentMap",
+          "Name": "NeedsEnvironmentMap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this object needs cubemap information"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "505"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this object needs cubemap information"
+          },
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.NeedsEnvironmentMap"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 520
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.WantsFrameBufferCopy",
+          "Name": "WantsFrameBufferCopy",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Automatically sets the \"FrameBufferCopyTexture\" attribute within the material. This does the same thing as Render.CopyFrameBuffer(); except automatically if the pass allows for it."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "516"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Automatically sets the \"FrameBufferCopyTexture\" attribute within the material.\nThis does the same thing as Render.CopyFrameBuffer(); except automatically if\nthe pass allows for it."
+          },
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.WantsFrameBufferCopy"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 529
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.IncludeInCubemap",
+          "Name": "IncludeInCubemap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw this in cubemaps"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "525"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw this in cubemaps"
+          },
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.IncludeInCubemap"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneObject.cs",
+            "Line": 547
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor.WantsPrePass",
+          "Name": "WantsPrePass",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneObject.cs",
+                "543"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SceneObject.SceneObjectFlagAccessor.WantsPrePass"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneObject.SceneObjectFlagAccessor",
+      "Name": "SceneObjectFlagAccessor",
+      "DeclaringType": "Sandbox.SceneObject",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\SceneSystem\\SceneObject.cs",
+            "420"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.SceneObject.SceneObjectFlagAccessor"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.SceneRenderLayer",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneRenderLayer.Default",
+          "Name": "Default",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw wherever makes sense based on the flags, default behaviour"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw wherever makes sense based on the flags, default behaviour"
+          },
+          "DocId": "F:Sandbox.SceneRenderLayer.Default"
+        },
+        {
+          "FieldType": "Sandbox.SceneRenderLayer",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneRenderLayer.ViewModel",
+          "Name": "ViewModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Layer drawn on top of everything else - with altered depth"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Layer drawn on top of everything else - with altered depth"
+          },
+          "DocId": "F:Sandbox.SceneRenderLayer.ViewModel"
+        },
+        {
+          "FieldType": "Sandbox.SceneRenderLayer",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneRenderLayer.OverlayWithDepth",
+          "Name": "OverlayWithDepth",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Overlay - after post processing - but still with the scene's depth"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overlay - after post processing - but still with the scene's depth"
+          },
+          "DocId": "F:Sandbox.SceneRenderLayer.OverlayWithDepth"
+        },
+        {
+          "FieldType": "Sandbox.SceneRenderLayer",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneRenderLayer.OverlayWithoutDepth",
+          "Name": "OverlayWithoutDepth",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Overlay - after post processing - without depth (draw over)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Overlay - after post processing - without depth (draw over)"
+          },
+          "DocId": "F:Sandbox.SceneRenderLayer.OverlayWithoutDepth"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneRenderLayer",
+      "Name": "SceneRenderLayer",
+      "Documentation": {
+        "Summary": "SceneObjects can be rendered on layers other than the main game layer.\nThis is useful if, for example, you want to render on top of everything without\napplying post processing."
+      },
+      "DocId": "T:Sandbox.SceneRenderLayer"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.SceneObject",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.IsControlPointSet",
+          "Name": "IsControlPointSet",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether given control point has any data set."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "60"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether given control point has any data set.",
+            "Params": {
+              "index": "The control point index. Range is 0-63."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.IsControlPointSet(System.Int32)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.GetControlPointPosition",
+          "Name": "GetControlPointPosition",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the position set on a given control point."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "66"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the position set on a given control point.",
+            "Params": {
+              "index": "The control point index. Range is 0-63."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.GetControlPointPosition(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.SetControlPoint",
+          "Name": "SetControlPoint",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set position on given control point."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "73"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set position on given control point.",
+            "Params": {
+              "i": "The control point index. Range is 0-63.",
+              "position": "The position to set."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.SetControlPoint(System.Int32,Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "rotation",
+              "Type": "Rotation"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.SetControlPoint",
+          "Name": "SetControlPoint",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set rotation on given control point."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set rotation on given control point.",
+            "Params": {
+              "i": "The control point index. Range is 0-63.",
+              "rotation": "The rotation to set."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.SetControlPoint(System.Int32,Rotation)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.SetControlPoint",
+          "Name": "SetControlPoint",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set transform on given control point."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "86"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set transform on given control point.",
+            "Params": {
+              "i": "The control point index. Range is 0-63.",
+              "transform": "The transform to set."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.SetControlPoint(System.Int32,Transform)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "snapshot",
+              "Type": "Sandbox.ParticleSnapshot"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 94
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.SetControlPoint",
+          "Name": "SetControlPoint",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set snapshot on given control point."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "93"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set snapshot on given control point.",
+            "Params": {
+              "i": "The control point index. Range is 0-63.",
+              "snapshot": "The snapshot to set."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.SetControlPoint(System.Int32,Sandbox.ParticleSnapshot)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 101
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.SetControlPoint",
+          "Name": "SetControlPoint",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set model on given control point."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "100"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set model on given control point.",
+            "Params": {
+              "i": "The control point index. Range is 0-63.",
+              "model": "The model to set."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.SetControlPoint(System.Int32,Sandbox.Model)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 108
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.SetNamedValue",
+          "Name": "SetNamedValue",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set vector on given named value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "107"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set vector on given named value.",
+            "Params": {
+              "name": "The name of the key.",
+              "value": "The value to set."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.SetNamedValue(System.String,Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 114
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.Simulate",
+          "Name": "Simulate",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Simulate the particles for given amount of time."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "113"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Simulate the particles for given amount of time.",
+            "Params": {
+              "f": "Amount of time has passed since last simulation."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.Simulate(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.Emit",
+          "Name": "Emit",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Manually emit a bunch of particles"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "137"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Manually emit a bunch of particles"
+          },
+          "DocId": "M:Sandbox.SceneParticles.Emit(System.Int32)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "world",
+              "Type": "Sandbox.SceneWorld"
+            },
+            {
+              "Name": "particleSystem",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create scene particles.",
+            "Params": {
+              "world": "The scene world to create the particles in.",
+              "particleSystem": "Path to the particle system file."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.#ctor(Sandbox.SceneWorld,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "world",
+              "Type": "Sandbox.SceneWorld"
+            },
+            {
+              "Name": "particleSystem",
+              "Type": "Sandbox.ParticleSystem"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SceneParticles",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create scene particles.",
+            "Params": {
+              "world": "The scene world to create the particles in.",
+              "particleSystem": "Particle system resource."
+            }
+          },
+          "DocId": "M:Sandbox.SceneParticles.#ctor(Sandbox.SceneWorld,Sandbox.ParticleSystem)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.RenderParticles",
+          "Name": "RenderParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether to render the particles or not."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether to render the particles or not."
+          },
+          "DocId": "P:Sandbox.SceneParticles.RenderParticles"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.EmissionStopped",
+          "Name": "EmissionStopped",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Stop (or start) the particle system emission."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Stop (or start) the particle system emission."
+          },
+          "DocId": "P:Sandbox.SceneParticles.EmissionStopped"
+        },
+        {
+          "PropertyType": "Sandbox.PhysicsWorld",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.PhysicsWorld",
+          "Name": "PhysicsWorld",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Particle collisions use this physics world to perform traces."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Particle collisions use this physics world to perform traces."
+          },
+          "DocId": "P:Sandbox.SceneParticles.PhysicsWorld"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 123
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.ActiveParticlesSelf",
+          "Name": "ActiveParticlesSelf",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The amount of particles"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "122"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The amount of particles"
+          },
+          "DocId": "P:Sandbox.SceneParticles.ActiveParticlesSelf"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 128
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.ActiveParticlesTotal",
+          "Name": "ActiveParticlesTotal",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The amount of particles including child systems"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "127"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The amount of particles including child systems"
+          },
+          "DocId": "P:Sandbox.SceneParticles.ActiveParticlesTotal"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 133
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.MaximumParticles",
+          "Name": "MaximumParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The total allowed particle count"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "132"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The total allowed particle count"
+          },
+          "DocId": "P:Sandbox.SceneParticles.MaximumParticles"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 143
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.Finished",
+          "Name": "Finished",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if particle system has reached the end"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "142"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if particle system has reached the end"
+          },
+          "DocId": "P:Sandbox.SceneParticles.Finished"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneParticles.cs",
+            "Line": 148
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneParticles.SimulationTime",
+          "Name": "SimulationTime",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get or set the simulation time"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneParticles.cs",
+                "147"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get or set the simulation time"
+          },
+          "DocId": "P:Sandbox.SceneParticles.SimulationTime"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneParticles",
+      "Name": "SceneParticles",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A SceneObject used to render particles. We need to be careful with what we do here, because this object is created for in-engine particles as well as custom scene object particles. With custom particles there's no automatic Simulate, or deletion.. You're completely on your own. This is perhaps a good thing though, it's maybe what you want to happen. To be completely isolated and completely in control. But at the same time maybe it's not and it's something we need to sort out."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\SceneSystem\\SceneParticles.cs",
+            "13"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A SceneObject used to render particles.\nWe need to be careful with what we do here, because this object is created for in-engine particles\nas well as custom scene object particles.\nWith custom particles there's no automatic Simulate, or deletion.. You're completely on your own. This\nis perhaps a good thing though, it's maybe what you want to happen. To be completely isolated and completely\nin control. But at the same time maybe it's not and it's something we need to sort out."
+      },
+      "DocId": "T:Sandbox.SceneParticles"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.SceneObject",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "ConstantSkyLight",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneSkyBox.cs",
+            "Line": 103
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.SetSkyLighting",
+          "Name": "SetSkyLighting",
+          "DeclaringType": "Sandbox.SceneSkyBox",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "99"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SceneSkyBox.SetSkyLighting(Vector3)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "world",
+              "Type": "Sandbox.SceneWorld"
+            },
+            {
+              "Name": "skyMaterial",
+              "Type": "Sandbox.Material"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneSkyBox.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SceneSkyBox",
+          "DocId": "M:Sandbox.SceneSkyBox.#ctor(Sandbox.SceneWorld,Sandbox.Material)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneSkyBox.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.SkyMaterial",
+          "Name": "SkyMaterial",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The skybox material. Typically it should use the \"Sky\" shader."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The skybox material. Typically it should use the \"Sky\" shader."
+          },
+          "DocId": "P:Sandbox.SceneSkyBox.SkyMaterial"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneSkyBox.cs",
+            "Line": 76
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.SkyTint",
+          "Name": "SkyTint",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Skybox color tint."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "72"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Skybox color tint."
+          },
+          "DocId": "P:Sandbox.SceneSkyBox.SkyTint"
+        },
+        {
+          "PropertyType": "Sandbox.SceneSkyBox.FogParamInfo",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneSkyBox.cs",
+            "Line": 94
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.FogParams",
+          "Name": "FogParams",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controls the skybox specific fog."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "81"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controls the skybox specific fog."
+          },
+          "DocId": "P:Sandbox.SceneSkyBox.FogParams"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneSkyBox",
+      "Name": "SceneSkyBox",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Renders a skybox within a <span style=\"color: #4EC9B0;\">SceneWorld</span>."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\SceneSystem\\SceneSkyBox.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Renders a skybox within a <see cref=\"T:Sandbox.SceneWorld\" />."
+      },
+      "DocId": "T:Sandbox.SceneSkyBox"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.SceneSkyBox.FogType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneSkyBox.FogType.None",
+          "Name": "None",
+          "DocId": "F:Sandbox.SceneSkyBox.FogType.None"
+        },
+        {
+          "FieldType": "Sandbox.SceneSkyBox.FogType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneSkyBox.FogType.Distance",
+          "Name": "Distance",
+          "DocId": "F:Sandbox.SceneSkyBox.FogType.Distance"
+        },
+        {
+          "FieldType": "Sandbox.SceneSkyBox.FogType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SceneSkyBox.FogType.Angular",
+          "Name": "Angular",
+          "DocId": "F:Sandbox.SceneSkyBox.FogType.Angular"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneSkyBox.FogType",
+      "Name": "FogType",
+      "DeclaringType": "Sandbox.SceneSkyBox",
+      "DocId": "T:Sandbox.SceneSkyBox.FogType"
+    },
+    {
+      "Namespace": "",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.SceneSkyBox.FogType",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.FogParamInfo.FogType",
+          "Name": "FogType",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.SceneSkyBox.FogParamInfo.FogType"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.FogParamInfo.FogMinStart",
+          "Name": "FogMinStart",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.SceneSkyBox.FogParamInfo.FogMinStart"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.FogParamInfo.FogMinEnd",
+          "Name": "FogMinEnd",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "24"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.SceneSkyBox.FogParamInfo.FogMinEnd"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.FogParamInfo.FogMaxStart",
+          "Name": "FogMaxStart",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.SceneSkyBox.FogParamInfo.FogMaxStart"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.FogParamInfo.FogMaxEnd",
+          "Name": "FogMaxEnd",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.SceneSkyBox.FogParamInfo.FogMaxEnd"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneSkyBox.FogParamInfo",
+      "Name": "FogParamInfo",
+      "DeclaringType": "Sandbox.SceneSkyBox",
+      "DocId": "T:Sandbox.SceneSkyBox.FogParamInfo"
+    },
+    {
+      "Namespace": "",
+      "Fields": [
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.SkyLightInfo.LightColor",
+          "Name": "LightColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.SceneSkyBox.SkyLightInfo.LightColor"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneSkyBox.SkyLightInfo.LightDirection",
+          "Name": "LightDirection",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneSkyBox.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.SceneSkyBox.SkyLightInfo.LightDirection"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneSkyBox.SkyLightInfo",
+      "Name": "SkyLightInfo",
+      "DeclaringType": "Sandbox.SceneSkyBox",
+      "DocId": "T:Sandbox.SceneSkyBox.SkyLightInfo"
+    }
+  ],
+  "_metadata": {
+    "chunk": 167,
+    "items_count": 7
+  }
+}

@@ -1,0 +1,1654 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Utility",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "System.Collections.Generic.IEnumerable`1<T>"
+            },
+            {
+              "Name": "body",
+              "Type": "System.Action`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Utility/Parallel.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Parallel.ForEach",
+          "Name": "ForEach",
+          "DeclaringType": "Sandbox.Utility.Parallel",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Parallel.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Parallel.ForEach``1(System.Collections.Generic.IEnumerable`1{``0},System.Action`1{``0})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "System.Collections.Generic.IEnumerable`1<T>"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken"
+            },
+            {
+              "Name": "body",
+              "Type": "System.Action`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Utility/Parallel.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Parallel.ForEach",
+          "Name": "ForEach",
+          "DeclaringType": "Sandbox.Utility.Parallel",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Parallel.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Parallel.ForEach``1(System.Collections.Generic.IEnumerable`1{``0},System.Threading.CancellationToken,System.Action`1{``0})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "fromInclusive",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "toExclusive",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "body",
+              "Type": "System.Action`1<System.Int32>"
+            }
+          ],
+          "l": {
+            "File": "Utility/Parallel.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Parallel.For",
+          "Name": "For",
+          "DeclaringType": "Sandbox.Utility.Parallel",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Parallel.cs",
+                "27"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Parallel.For(System.Int32,System.Int32,System.Action`1{System.Int32})"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "fromInclusive",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "toExclusive",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken"
+            },
+            {
+              "Name": "body",
+              "Type": "System.Func`3<System.Int32,System.Threading.CancellationToken,System.Threading.Tasks.ValueTask>"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Parallel.ForAsync",
+          "Name": "ForAsync",
+          "DeclaringType": "Sandbox.Utility.Parallel",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Utility.Parallel/<ForAsync>d__3"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Parallel.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Parallel.ForAsync(System.Int32,System.Int32,System.Threading.CancellationToken,System.Func`3{System.Int32,System.Threading.CancellationToken,System.Threading.Tasks.ValueTask})"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Utility.Parallel",
+      "Name": "Parallel",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Wrappers of the parallel class."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\Parallel.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Wrappers of the parallel class."
+      },
+      "DocId": "T:Sandbox.Utility.Parallel"
+    },
+    {
+      "Namespace": "Sandbox.Utility",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.SteamId.AccountTypes",
+          "Parameters": [
+            {
+              "Name": "steamid",
+              "Type": "Sandbox.SteamId"
+            }
+          ],
+          "l": {
+            "File": "Utility/Steam.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Steam.CategorizeSteamId",
+          "Name": "CategorizeSteamId",
+          "DeclaringType": "Sandbox.Utility.Steam",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return what type os SteamId this is"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Steam.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return what type os SteamId this is"
+          },
+          "DocId": "M:Sandbox.Utility.Steam.CategorizeSteamId(Sandbox.SteamId)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "steamid",
+              "Type": "Sandbox.SteamId"
+            }
+          ],
+          "l": {
+            "File": "Utility/Steam.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Steam.IsFriend",
+          "Name": "IsFriend",
+          "DeclaringType": "Sandbox.Utility.Steam",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return true if this is a friend"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Steam.cs",
+                "57"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if this is a friend"
+          },
+          "DocId": "M:Sandbox.Utility.Steam.IsFriend(Sandbox.SteamId)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "steamid",
+              "Type": "Sandbox.SteamId"
+            }
+          ],
+          "l": {
+            "File": "Utility/Steam.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Steam.IsOnline",
+          "Name": "IsOnline",
+          "DeclaringType": "Sandbox.Utility.Steam",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return true if this person is online"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Steam.cs",
+                "65"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if this person is online"
+          },
+          "DocId": "M:Sandbox.Utility.Steam.IsOnline(Sandbox.SteamId)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "System.String"
+            },
+            {
+              "Name": "from",
+              "Type": "System.Nullable`1<Sandbox.SteamId>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Utility/Steam.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Steam.FilterText",
+          "Name": "FilterText",
+          "DeclaringType": "Sandbox.Utility.Steam",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Filters text for game content using Steam's text filter."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Steam.cs",
+                "73"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Steam.FilterText(System.String,System.Nullable`1{Sandbox.SteamId})"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "System.String"
+            },
+            {
+              "Name": "from",
+              "Type": "System.Nullable`1<Sandbox.SteamId>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Utility/Steam.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Steam.FilterChat",
+          "Name": "FilterChat",
+          "DeclaringType": "Sandbox.Utility.Steam",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Filters chat messages using Steam's text filter."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Steam.cs",
+                "78"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Steam.FilterChat(System.String,System.Nullable`1{Sandbox.SteamId})"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "input",
+              "Type": "System.String"
+            },
+            {
+              "Name": "from",
+              "Type": "System.Nullable`1<Sandbox.SteamId>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Utility/Steam.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Steam.FilterName",
+          "Name": "FilterName",
+          "DeclaringType": "Sandbox.Utility.Steam",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Filters player names using Steam's text filter."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Steam.cs",
+                "83"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Steam.FilterName(System.String,System.Nullable`1{Sandbox.SteamId})"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.SteamId",
+          "Loc": {
+            "File": "Utility/Steam.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Steam.SteamId",
+          "Name": "SteamId",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The current user's SteamId"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Steam.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The current user's SteamId"
+          },
+          "DocId": "P:Sandbox.Utility.Steam.SteamId"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Utility/Steam.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Steam.PersonaName",
+          "Name": "PersonaName",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The current user's persona name (Steam name)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Steam.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The current user's persona name (Steam name)"
+          },
+          "DocId": "P:Sandbox.Utility.Steam.PersonaName"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Utility.Steam",
+      "Name": "Steam",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\Steam.cs",
+            "6"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Utility.Steam"
+    },
+    {
+      "Namespace": "Sandbox.Utility.Svg",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Utility.Svg.PathFillType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Svg.PathFillType.Winding",
+          "Name": "Winding",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clockwise paths are filled, counter-clockwise are empty."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clockwise paths are filled, counter-clockwise are empty."
+          },
+          "DocId": "F:Sandbox.Utility.Svg.PathFillType.Winding"
+        },
+        {
+          "FieldType": "Sandbox.Utility.Svg.PathFillType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Svg.PathFillType.EvenOdd",
+          "Name": "EvenOdd",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Regions that are enclosed by an odd number of paths are filled, other regions are empty."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Regions that are enclosed by an odd number of paths are filled, other regions are empty."
+          },
+          "DocId": "F:Sandbox.Utility.Svg.PathFillType.EvenOdd"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.Svg.PathFillType",
+      "Name": "PathFillType",
+      "Documentation": {
+        "Summary": "How to determine which sections of the path are filled."
+      },
+      "DocId": "T:Sandbox.Utility.Svg.PathFillType"
+    },
+    {
+      "Namespace": "Sandbox.Utility.Svg",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Utility.Svg.PathArcSize",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Svg.PathArcSize.Small",
+          "Name": "Small",
+          "DocId": "F:Sandbox.Utility.Svg.PathArcSize.Small"
+        },
+        {
+          "FieldType": "Sandbox.Utility.Svg.PathArcSize",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Svg.PathArcSize.Large",
+          "Name": "Large",
+          "DocId": "F:Sandbox.Utility.Svg.PathArcSize.Large"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.Svg.PathArcSize",
+      "Name": "PathArcSize",
+      "Documentation": {
+        "Summary": "Controls arc size in <see cref=\"T:Sandbox.Utility.Svg.ArcToPathCommand\" />."
+      },
+      "DocId": "T:Sandbox.Utility.Svg.PathArcSize"
+    },
+    {
+      "Namespace": "Sandbox.Utility.Svg",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Utility.Svg.PathDirection",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Svg.PathDirection.Clockwise",
+          "Name": "Clockwise",
+          "DocId": "F:Sandbox.Utility.Svg.PathDirection.Clockwise"
+        },
+        {
+          "FieldType": "Sandbox.Utility.Svg.PathDirection",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Svg.PathDirection.CounterClockwise",
+          "Name": "CounterClockwise",
+          "DocId": "F:Sandbox.Utility.Svg.PathDirection.CounterClockwise"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.Svg.PathDirection",
+      "Name": "PathDirection",
+      "Documentation": {
+        "Summary": "Controls arc direction in <see cref=\"T:Sandbox.Utility.Svg.ArcToPathCommand\" />."
+      },
+      "DocId": "T:Sandbox.Utility.Svg.PathDirection"
+    },
+    {
+      "Namespace": "Sandbox.Utility.Svg",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.PathCommand.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Sandbox.Utility.Svg.PathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.PathCommand.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Sandbox.Utility.Svg.PathCommand",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.PathCommand.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Sandbox.Utility.Svg.PathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.PathCommand.<Clone>$"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Sandbox.Utility.Svg.PathCommand"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.PathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.PathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.PathCommand.#ctor(Sandbox.Utility.Svg.PathCommand)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.PathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.PathCommand",
+          "DocId": "M:Sandbox.Utility.Svg.PathCommand.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.PathCommand.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.Utility.Svg.PathCommand.EqualityContract"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.Svg.PathCommand",
+      "Name": "PathCommand",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Base class for SVG path commands."
+      },
+      "DocId": "T:Sandbox.Utility.Svg.PathCommand"
+    },
+    {
+      "Namespace": "Sandbox.Utility.Svg",
+      "BaseType": "Sandbox.Utility.Svg.PathCommand",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddCirclePathCommand.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Sandbox.Utility.Svg.AddCirclePathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddCirclePathCommand.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Sandbox.Utility.Svg.AddCirclePathCommand",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddCirclePathCommand.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Sandbox.Utility.Svg.AddCirclePathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.PreserveBaseOverridesAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddCirclePathCommand.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "X",
+              "Out": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "Y",
+              "Out": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "Radius",
+              "Out": true,
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddCirclePathCommand.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Utility.Svg.AddCirclePathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddCirclePathCommand.Deconstruct(System.Single@,System.Single@,System.Single@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "X",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "Y",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "Radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddCirclePathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.AddCirclePathCommand",
+          "Documentation": {
+            "Summary": "See <see href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle\" />."
+          },
+          "DocId": "M:Sandbox.Utility.Svg.AddCirclePathCommand.#ctor(System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Sandbox.Utility.Svg.AddCirclePathCommand"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddCirclePathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.AddCirclePathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddCirclePathCommand.#ctor(Sandbox.Utility.Svg.AddCirclePathCommand)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddCirclePathCommand.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.Utility.Svg.AddCirclePathCommand.EqualityContract"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddCirclePathCommand.X",
+          "Name": "X",
+          "DocId": "P:Sandbox.Utility.Svg.AddCirclePathCommand.X"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddCirclePathCommand.Y",
+          "Name": "Y",
+          "DocId": "P:Sandbox.Utility.Svg.AddCirclePathCommand.Y"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddCirclePathCommand.Radius",
+          "Name": "Radius",
+          "DocId": "P:Sandbox.Utility.Svg.AddCirclePathCommand.Radius"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.Svg.AddCirclePathCommand",
+      "Name": "AddCirclePathCommand",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "See <see href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle\" />."
+      },
+      "DocId": "T:Sandbox.Utility.Svg.AddCirclePathCommand"
+    },
+    {
+      "Namespace": "Sandbox.Utility.Svg",
+      "BaseType": "Sandbox.Utility.Svg.PathCommand",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddOvalPathCommand.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Sandbox.Utility.Svg.AddOvalPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddOvalPathCommand.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Sandbox.Utility.Svg.AddOvalPathCommand",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddOvalPathCommand.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Sandbox.Utility.Svg.AddOvalPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.PreserveBaseOverridesAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddOvalPathCommand.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Rect",
+              "Out": true,
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddOvalPathCommand.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Utility.Svg.AddOvalPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddOvalPathCommand.Deconstruct(Sandbox.Rect@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Rect",
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddOvalPathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.AddOvalPathCommand",
+          "Documentation": {
+            "Summary": "See <see href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse\" />."
+          },
+          "DocId": "M:Sandbox.Utility.Svg.AddOvalPathCommand.#ctor(Sandbox.Rect)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Sandbox.Utility.Svg.AddOvalPathCommand"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddOvalPathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.AddOvalPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddOvalPathCommand.#ctor(Sandbox.Utility.Svg.AddOvalPathCommand)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddOvalPathCommand.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.Utility.Svg.AddOvalPathCommand.EqualityContract"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddOvalPathCommand.Rect",
+          "Name": "Rect",
+          "DocId": "P:Sandbox.Utility.Svg.AddOvalPathCommand.Rect"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.Svg.AddOvalPathCommand",
+      "Name": "AddOvalPathCommand",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "See <see href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse\" />."
+      },
+      "DocId": "T:Sandbox.Utility.Svg.AddOvalPathCommand"
+    },
+    {
+      "Namespace": "Sandbox.Utility.Svg",
+      "BaseType": "Sandbox.Utility.Svg.PathCommand",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddPolyPathCommand.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Sandbox.Utility.Svg.AddPolyPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddPolyPathCommand.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Sandbox.Utility.Svg.AddPolyPathCommand",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddPolyPathCommand.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Sandbox.Utility.Svg.AddPolyPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.PreserveBaseOverridesAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddPolyPathCommand.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Points",
+              "Out": true,
+              "Type": "System.Collections.Generic.IReadOnlyList`1<Vector2>"
+            },
+            {
+              "Name": "Close",
+              "Out": true,
+              "Type": "System.Boolean"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddPolyPathCommand.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Utility.Svg.AddPolyPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddPolyPathCommand.Deconstruct(System.Collections.Generic.IReadOnlyList`1{Vector2}@,System.Boolean@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Points",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<Vector2>"
+            },
+            {
+              "Name": "Close",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddPolyPathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.AddPolyPathCommand",
+          "DocId": "M:Sandbox.Utility.Svg.AddPolyPathCommand.#ctor(System.Collections.Generic.IReadOnlyList`1{Vector2},System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Sandbox.Utility.Svg.AddPolyPathCommand"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddPolyPathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.AddPolyPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddPolyPathCommand.#ctor(Sandbox.Utility.Svg.AddPolyPathCommand)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddPolyPathCommand.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.Utility.Svg.AddPolyPathCommand.EqualityContract"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<Vector2>",
+          "Loc": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddPolyPathCommand.Points",
+          "Name": "Points",
+          "DocId": "P:Sandbox.Utility.Svg.AddPolyPathCommand.Points"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddPolyPathCommand.Close",
+          "Name": "Close",
+          "DocId": "P:Sandbox.Utility.Svg.AddPolyPathCommand.Close"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.Svg.AddPolyPathCommand",
+      "Name": "AddPolyPathCommand",
+      "Documentation": {
+        "Summary": "See <see href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline\" />, <see href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon\" />."
+      },
+      "DocId": "T:Sandbox.Utility.Svg.AddPolyPathCommand"
+    },
+    {
+      "Namespace": "Sandbox.Utility.Svg",
+      "BaseType": "Sandbox.Utility.Svg.PathCommand",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddRectPathCommand.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Sandbox.Utility.Svg.AddRectPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddRectPathCommand.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Sandbox.Utility.Svg.AddRectPathCommand",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddRectPathCommand.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Sandbox.Utility.Svg.AddRectPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.PreserveBaseOverridesAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddRectPathCommand.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Rect",
+              "Out": true,
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddRectPathCommand.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Utility.Svg.AddRectPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddRectPathCommand.Deconstruct(Sandbox.Rect@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Rect",
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddRectPathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.AddRectPathCommand",
+          "Documentation": {
+            "Summary": "See <see href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect\" />."
+          },
+          "DocId": "M:Sandbox.Utility.Svg.AddRectPathCommand.#ctor(Sandbox.Rect)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Sandbox.Utility.Svg.AddRectPathCommand"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddRectPathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.AddRectPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddRectPathCommand.#ctor(Sandbox.Utility.Svg.AddRectPathCommand)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddRectPathCommand.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.Utility.Svg.AddRectPathCommand.EqualityContract"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddRectPathCommand.Rect",
+          "Name": "Rect",
+          "DocId": "P:Sandbox.Utility.Svg.AddRectPathCommand.Rect"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.Svg.AddRectPathCommand",
+      "Name": "AddRectPathCommand",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "See <see href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect\" />."
+      },
+      "DocId": "T:Sandbox.Utility.Svg.AddRectPathCommand"
+    },
+    {
+      "Namespace": "Sandbox.Utility.Svg",
+      "BaseType": "Sandbox.Utility.Svg.PathCommand",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddRoundRectPathCommand.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Sandbox.Utility.Svg.AddRoundRectPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddRoundRectPathCommand.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Sandbox.Utility.Svg.AddRoundRectPathCommand",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddRoundRectPathCommand.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Sandbox.Utility.Svg.AddRoundRectPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.PreserveBaseOverridesAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddRoundRectPathCommand.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Rect",
+              "Out": true,
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "Rx",
+              "Out": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "Ry",
+              "Out": true,
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddRoundRectPathCommand.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Utility.Svg.AddRoundRectPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddRoundRectPathCommand.Deconstruct(Sandbox.Rect@,System.Single@,System.Single@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "Rx",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "Ry",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddRoundRectPathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.AddRoundRectPathCommand",
+          "Documentation": {
+            "Summary": "See <see href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect\" />."
+          },
+          "DocId": "M:Sandbox.Utility.Svg.AddRoundRectPathCommand.#ctor(Sandbox.Rect,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Sandbox.Utility.Svg.AddRoundRectPathCommand"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddRoundRectPathCommand..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Svg.AddRoundRectPathCommand",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Utility.Svg.AddRoundRectPathCommand.#ctor(Sandbox.Utility.Svg.AddRoundRectPathCommand)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Sandbox.Utility.Svg.AddRoundRectPathCommand.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.Utility.Svg.AddRoundRectPathCommand.EqualityContract"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddRoundRectPathCommand.Rect",
+          "Name": "Rect",
+          "DocId": "P:Sandbox.Utility.Svg.AddRoundRectPathCommand.Rect"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddRoundRectPathCommand.Rx",
+          "Name": "Rx",
+          "DocId": "P:Sandbox.Utility.Svg.AddRoundRectPathCommand.Rx"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "obj/.generated/Utility/Web/Svg.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Svg.AddRoundRectPathCommand.Ry",
+          "Name": "Ry",
+          "DocId": "P:Sandbox.Utility.Svg.AddRoundRectPathCommand.Ry"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.Svg.AddRoundRectPathCommand",
+      "Name": "AddRoundRectPathCommand",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "See <see href=\"https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect\" />."
+      },
+      "DocId": "T:Sandbox.Utility.Svg.AddRoundRectPathCommand"
+    }
+  ],
+  "_metadata": {
+    "chunk": 174,
+    "items_count": 11
+  }
+}

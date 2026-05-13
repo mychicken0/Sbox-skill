@@ -1,0 +1,1869 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Renderer",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.LineRenderer",
+          "DocId": "M:Sandbox.LineRenderer.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.UseVectorPoints",
+          "Name": "UseVectorPoints",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Points"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.UseVectorPoints"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.GameObject>",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.Points",
+          "Name": "Points",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Points"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "UseVectorPoints",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.Points"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Vector3>",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.VectorPoints",
+          "Name": "VectorPoints",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Points"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "UseVectorPoints",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.VectorPoints"
+        },
+        {
+          "PropertyType": "Sandbox.SceneLineObject.FaceMode",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.Face",
+          "Name": "Face",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Points"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.Face"
+        },
+        {
+          "PropertyType": "Sandbox.Gradient",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Appearance"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "28"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.Color"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Appearance"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.Width"
+        },
+        {
+          "PropertyType": "Sandbox.TrailTextureConfig",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.Texturing",
+          "Name": "Texturing",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Appearance"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.InlineEditorAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.Texturing"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.SplineInterpolation",
+          "Name": "SplineInterpolation",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Spline"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "32"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.SplineInterpolation"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.SplineTension",
+          "Name": "SplineTension",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Spline"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "-1",
+                "1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "40"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.SplineTension"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.SplineContinuity",
+          "Name": "SplineContinuity",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Spline"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "-1",
+                "1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "43"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.SplineContinuity"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.SplineBias",
+          "Name": "SplineBias",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Spline"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "-1",
+                "1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.SplineBias"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.AutoCalculateNormals",
+          "Name": "AutoCalculateNormals",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Spline"
+              ]
+            },
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "Face",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "49"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.AutoCalculateNormals"
+        },
+        {
+          "PropertyType": "Sandbox.SceneLineObject.CapStyle",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.StartCap",
+          "Name": "StartCap",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "End Caps"
+              ]
+            },
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "Face",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "52"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.StartCap"
+        },
+        {
+          "PropertyType": "Sandbox.SceneLineObject.CapStyle",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.EndCap",
+          "Name": "EndCap",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "End Caps"
+              ]
+            },
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "Face",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "55"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.EndCap"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.Wireframe",
+          "Name": "Wireframe",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "58"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.Wireframe"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.Opaque",
+          "Name": "Opaque",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "61"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.Opaque"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.Additive",
+          "Name": "Additive",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "64"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.Additive"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.CastShadows",
+          "Name": "CastShadows",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "67"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.CastShadows"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.DepthFeather",
+          "Name": "DepthFeather",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "70"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.DepthFeather"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.FogStrength",
+          "Name": "FogStrength",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "73"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.FogStrength"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.Lighting",
+          "Name": "Lighting",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "76"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.Lighting"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Render/LineRenderer.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LineRenderer.CylinderSegments",
+          "Name": "CylinderSegments",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Rendering"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Face",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "3",
+                "32"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\LineRenderer.cs",
+                "79"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LineRenderer.CylinderSegments"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.LineRenderer",
+      "Name": "LineRenderer",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Line Renderer"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Rendering"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "show_chart"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Renders a line between a list of points"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\LineRenderer.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Renders a line between a list of points"
+      },
+      "DocId": "T:Sandbox.LineRenderer"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Renderer",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.GameObject",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.Attachments.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.GetAttachmentObject",
+          "Name": "GetAttachmentObject",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the GameObject of a specific attachment."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.Attachments.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the GameObject of a specific attachment."
+          },
+          "DocId": "M:Sandbox.ModelRenderer.GetAttachmentObject(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.GameObject",
+          "Parameters": [
+            {
+              "Name": "attachment",
+              "Type": "Sandbox.ModelAttachments.Attachment"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.Attachments.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.GetAttachmentObject",
+          "Name": "GetAttachmentObject",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the GameObject of a specific attachment."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.Attachments.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the GameObject of a specific attachment."
+          },
+          "DocId": "M:Sandbox.ModelRenderer.GetAttachmentObject(Sandbox.ModelAttachments.Attachment)"
+        },
+        {
+          "ReturnType": "Sandbox.GameObject",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "bone",
+              "Type": "Sandbox.BoneCollection.Bone"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.Attachments.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.GetBoneObject",
+          "Name": "GetBoneObject",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.Attachments.cs",
+                "30"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelRenderer.GetBoneObject(Sandbox.BoneCollection.Bone)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 144
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.SetBodyGroup",
+          "Name": "SetBodyGroup",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set body group value by name"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "141"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set body group value by name"
+          },
+          "DocId": "M:Sandbox.ModelRenderer.SetBodyGroup(System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "choice",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 158
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.SetBodyGroup",
+          "Name": "SetBodyGroup",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set body group value by name and choice"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "155"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set body group value by name and choice"
+          },
+          "DocId": "M:Sandbox.ModelRenderer.SetBodyGroup(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "part",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 177
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.SetBodyGroup",
+          "Name": "SetBodyGroup",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set body group value by index"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "174"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set body group value by index"
+          },
+          "DocId": "M:Sandbox.ModelRenderer.SetBodyGroup(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 195
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.GetBodyGroup",
+          "Name": "GetBodyGroup",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get body group value by name"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "192"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get body group value by name"
+          },
+          "DocId": "M:Sandbox.ModelRenderer.GetBodyGroup(System.String)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "part",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 206
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.GetBodyGroup",
+          "Name": "GetBodyGroup",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get body group value by index"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "203"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get body group value by index"
+          },
+          "DocId": "M:Sandbox.ModelRenderer.GetBodyGroup(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 236
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ModelRenderer.UpdateObject",
+          "Name": "UpdateObject",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "234"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelRenderer.UpdateObject"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 270
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ModelRenderer.OnEnabled",
+          "Name": "OnEnabled",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "268"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelRenderer.OnEnabled"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 364
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ModelRenderer.OnRenderOptionsChanged",
+          "Name": "OnRenderOptionsChanged",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "361"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelRenderer.OnRenderOptionsChanged"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "triangle",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 371
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.SetMaterial",
+          "Name": "SetMaterial",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "369"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelRenderer.SetMaterial(Sandbox.Material,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Material",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "triangle",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 377
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.GetMaterial",
+          "Name": "GetMaterial",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "374"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelRenderer.GetMaterial(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Sandbox.Renderer"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 384
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.CopyFrom",
+          "Name": "CopyFrom",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Copy everything from another renderer"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "382"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Copy everything from another renderer"
+          },
+          "DocId": "M:Sandbox.ModelRenderer.CopyFrom(Sandbox.Renderer)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.Materials.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.ClearMaterialOverrides",
+          "Name": "ClearMaterialOverrides",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Completely stop overriding materials"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.Materials.cs",
+                "36"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Completely stop overriding materials"
+          },
+          "DocId": "M:Sandbox.ModelRenderer.ClearMaterialOverrides"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "target",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.Materials.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.SetMaterialOverride",
+          "Name": "SetMaterialOverride",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set a material override for a material with a specific attribute set. For example, if you have a model with lots of different materials, but one of them has an attribute \"skin\" set to \"1\", then calling this with a material and \"skin\" will override only that material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.Materials.cs",
+                "47"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set a material override for a material with a specific attribute set. For example, if you have a model with lots of different materials, but one of them has an attribute \"skin\" set to \"1\", then \ncalling this with a material and \"skin\" will override only that material."
+          },
+          "DocId": "M:Sandbox.ModelRenderer.SetMaterialOverride(Sandbox.Material,System.String)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/ModelRenderer.Attachments.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ModelRenderer",
+          "DocId": "M:Sandbox.ModelRenderer.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "BBox",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.Bounds.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.Bounds",
+          "Name": "Bounds",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.Bounds.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.Bounds"
+        },
+        {
+          "PropertyType": "BBox",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.Bounds.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.LocalBounds",
+          "Name": "LocalBounds",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.Bounds.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.LocalBounds"
+        },
+        {
+          "PropertyType": "Sandbox.Model",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.Model",
+          "Name": "Model",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.Model"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.Tint",
+          "Name": "Tint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "43"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.Tint"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.CreateAttachments",
+          "Name": "CreateAttachments",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "59"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.CreateAttachments"
+        },
+        {
+          "PropertyType": "System.UInt64",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.BodyGroups",
+          "Name": "BodyGroups",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Model.BodyGroupMaskAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "HasBodyGroups",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "72"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.BodyGroups"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.HasBodyGroups",
+          "Name": "HasBodyGroups",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "86"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.HasBodyGroups"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 96
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.MaterialGroup",
+          "Name": "MaterialGroup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Model.MaterialGroupAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "HasMaterialGroups",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "88"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.MaterialGroup"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 103
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.HasMaterialGroups",
+          "Name": "HasMaterialGroups",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "102"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.HasMaterialGroups"
+        },
+        {
+          "PropertyType": "Sandbox.ModelRenderer.ShadowRenderType",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.RenderType",
+          "Name": "RenderType",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Cast Shadows"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Lighting"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "104"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.RenderType"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.Int32>",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.LodOverride",
+          "Name": "LodOverride",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Force a level of detail."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "122"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Force a level of detail."
+          },
+          "DocId": "P:Sandbox.ModelRenderer.LodOverride"
+        },
+        {
+          "PropertyType": "Sandbox.SceneObject",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.cs",
+            "Line": 216
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.SceneObject",
+          "Name": "SceneObject",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.cs",
+                "215"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.SceneObject"
+        },
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.Materials.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.MaterialOverride",
+          "Name": "MaterialOverride",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.Materials.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelRenderer.MaterialOverride"
+        },
+        {
+          "PropertyType": "Sandbox.Engine.MaterialAccessor",
+          "Loc": {
+            "File": "Scene/Components/Render/ModelRenderer.Materials.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelRenderer.Materials",
+          "Name": "Materials",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Materials"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access to the materials"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ModelRenderer.Materials.cs",
+                "90"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access to the materials"
+          },
+          "DocId": "P:Sandbox.ModelRenderer.Materials"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ModelRenderer",
+      "Name": "ModelRenderer",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Renders a model in the world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\ModelRenderer.Attachments.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Renders a model in the world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\ModelRenderer.Bounds.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Model Renderer"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Rendering"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "free_breakfast"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Renders a model in the world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\ModelRenderer.cs",
+            "8"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Renders a model in the world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\ModelRenderer.Materials.cs",
+            "12"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Renders a model in the world"
+      },
+      "DocId": "T:Sandbox.ModelRenderer"
+    }
+  ],
+  "_metadata": {
+    "chunk": 109,
+    "items_count": 2
+  }
+}

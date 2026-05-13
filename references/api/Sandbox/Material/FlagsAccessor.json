@@ -1,0 +1,1770 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Flags.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.FlagsAccessor.GetInt",
+          "Name": "GetInt",
+          "DeclaringType": "Sandbox.Material.FlagsAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Flags.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Material.FlagsAccessor.GetInt(System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Flags.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.FlagsAccessor.GetFloat",
+          "Name": "GetFloat",
+          "DeclaringType": "Sandbox.Material.FlagsAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Flags.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Material.FlagsAccessor.GetFloat(System.String,System.Single)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            }
+          ],
+          "l": {
+            "File": "Resources/Material/Material.Flags.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.FlagsAccessor..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Material.FlagsAccessor",
+          "DocId": "M:Sandbox.Material.FlagsAccessor.#ctor(Sandbox.Material)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Material/Material.Flags.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.FlagsAccessor.IsSky",
+          "Name": "IsSky",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Flags.cs",
+                "30"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Material.FlagsAccessor.IsSky"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Material/Material.Flags.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.FlagsAccessor.IsTranslucent",
+          "Name": "IsTranslucent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Flags.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Material.FlagsAccessor.IsTranslucent"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Material/Material.Flags.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.FlagsAccessor.IsAlphaTest",
+          "Name": "IsAlphaTest",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Flags.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Material.FlagsAccessor.IsAlphaTest"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Material/Material.Flags.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Material.FlagsAccessor.IsDecal",
+          "Name": "IsDecal",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Decal materials are obsolete"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.Flags.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Material.FlagsAccessor.IsDecal"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Material.FlagsAccessor",
+      "Name": "FlagsAccessor",
+      "DeclaringType": "Sandbox.Material",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Material.FlagsAccessor"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "Resources/Material/Material.UI.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Material.UI.Basic",
+          "Name": "Basic",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "As basic 2D drawing material. Supports Texture and vertex color."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.UI.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "As basic 2D drawing material. Supports Texture and vertex color."
+          },
+          "DocId": "P:Sandbox.Material.UI.Basic"
+        },
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "Resources/Material/Material.UI.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Material.UI.Box",
+          "Name": "Box",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "CSS Box rendering"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Material\\Material.UI.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "CSS Box rendering"
+          },
+          "DocId": "P:Sandbox.Material.UI.Box"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Material.UI",
+      "Name": "UI",
+      "DeclaringType": "Sandbox.Material",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Static materials for UI rendering purposes."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Material\\Material.UI.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Static materials for UI rendering purposes."
+      },
+      "DocId": "T:Sandbox.Material.UI"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.MeshPrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.MeshPrimitiveType.Points",
+          "Name": "Points",
+          "DocId": "F:Sandbox.MeshPrimitiveType.Points"
+        },
+        {
+          "FieldType": "Sandbox.MeshPrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.MeshPrimitiveType.Lines",
+          "Name": "Lines",
+          "DocId": "F:Sandbox.MeshPrimitiveType.Lines"
+        },
+        {
+          "FieldType": "Sandbox.MeshPrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.MeshPrimitiveType.LineStrip",
+          "Name": "LineStrip",
+          "DocId": "F:Sandbox.MeshPrimitiveType.LineStrip"
+        },
+        {
+          "FieldType": "Sandbox.MeshPrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.MeshPrimitiveType.Triangles",
+          "Name": "Triangles",
+          "DocId": "F:Sandbox.MeshPrimitiveType.Triangles"
+        },
+        {
+          "FieldType": "Sandbox.MeshPrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.MeshPrimitiveType.TriangleStrip",
+          "Name": "TriangleStrip",
+          "DocId": "F:Sandbox.MeshPrimitiveType.TriangleStrip"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MeshPrimitiveType",
+      "Name": "MeshPrimitiveType",
+      "Documentation": {
+        "Summary": "Possible primitive types of a <see cref=\"T:Sandbox.Mesh\" />."
+      },
+      "DocId": "T:Sandbox.MeshPrimitiveType"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Mesh.Finalize",
+          "Name": "Finalize",
+          "DeclaringType": "Sandbox.Mesh",
+          "DocId": "M:Sandbox.Mesh.Finalize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "start",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 114
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.SetVertexRange",
+          "Name": "SetVertexRange",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set how many vertices this mesh draws (if there's no index buffer)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.cs",
+                "112"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set how many vertices this mesh draws (if there's no index buffer)"
+          },
+          "DocId": "M:Sandbox.Mesh.SetVertexRange(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "start",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 122
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.SetIndexRange",
+          "Name": "SetIndexRange",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set how many indices this mesh draws"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.cs",
+                "120"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set how many indices this mesh draws"
+          },
+          "DocId": "M:Sandbox.Mesh.SetIndexRange(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vb",
+              "Type": "Sandbox.VertexBuffer"
+            },
+            {
+              "Name": "calculateBounds",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 133
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.CreateBuffers",
+          "Name": "CreateBuffers",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create vertex and index buffers."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.cs",
+                "130"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create vertex and index buffers.",
+            "Params": {
+              "vb": "Input vertex buffer. If it is indexed (<see cref=\"P:Sandbox.VertexBuffer.Indexed\" />), then index buffer will also be created.",
+              "calculateBounds": "Whether to recalculate bounds from the vertex buffer."
+            }
+          },
+          "DocId": "M:Sandbox.Mesh.CreateBuffers(Sandbox.VertexBuffer,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Span`1<System.Int32>",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Span`1<Vector3>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 193
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mesh.TriangulatePolygon",
+          "Name": "TriangulatePolygon",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Triangulate a polygon made up of points, returns triangle indices into the list of vertices."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.cs",
+                "190"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.TriangulatePolygon(System.Span`1{Vector3})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 270
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.CreateIndexBuffer",
+          "Name": "CreateIndexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create an empty index buffer, it can be resized later"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "268"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create an empty index buffer, it can be resized later"
+          },
+          "DocId": "M:Sandbox.Mesh.CreateIndexBuffer"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "indexCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "data",
+              "Type": "System.Collections.Generic.List`1<System.Int32>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 278
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.CreateIndexBuffer",
+          "Name": "CreateIndexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a index buffer with a number of indices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "276"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.CreateIndexBuffer(System.Int32,System.Collections.Generic.List`1{System.Int32})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "indexCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "data",
+              "Type": "System.Span`1<System.Int32>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 287
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.CreateIndexBuffer",
+          "Name": "CreateIndexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a index buffer with a number of indices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "284"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.CreateIndexBuffer(System.Int32,System.Span`1{System.Int32})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Collections.Generic.List`1<System.Int32>"
+            },
+            {
+              "Name": "elementOffset",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 304
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.SetIndexBufferData",
+          "Name": "SetIndexBufferData",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set data of this buffer"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "302"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.SetIndexBufferData(System.Collections.Generic.List`1{System.Int32},System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Span`1<System.Int32>"
+            },
+            {
+              "Name": "elementOffset",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 312
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.SetIndexBufferData",
+          "Name": "SetIndexBufferData",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set data of this buffer"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "310"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.SetIndexBufferData(System.Span`1{System.Int32},System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "elementCount",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 320
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.SetIndexBufferSize",
+          "Name": "SetIndexBufferSize",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Resize the index buffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "318"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Resize the index buffer."
+          },
+          "DocId": "M:Sandbox.Mesh.SetIndexBufferSize(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "Sandbox.Mesh.IndexBufferLockHandler"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 342
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.LockIndexBuffer",
+          "Name": "LockIndexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Lock all the memory in this buffer so you can write to it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "339"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Lock all the memory in this buffer so you can write to it"
+          },
+          "DocId": "M:Sandbox.Mesh.LockIndexBuffer(Sandbox.Mesh.IndexBufferLockHandler)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "elementCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "handler",
+              "Type": "Sandbox.Mesh.IndexBufferLockHandler"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 358
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.LockIndexBuffer",
+          "Name": "LockIndexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Lock a specific amount of the memory in this buffer so you can write to it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "355"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Lock a specific amount of the memory in this buffer so you can write to it"
+          },
+          "DocId": "M:Sandbox.Mesh.LockIndexBuffer(System.Int32,Sandbox.Mesh.IndexBufferLockHandler)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "elementOffset",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "elementCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "handler",
+              "Type": "Sandbox.Mesh.IndexBufferLockHandler"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 374
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.LockIndexBuffer",
+          "Name": "LockIndexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Lock a region of memory in this buffer so you can write to it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "371"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Lock a region of memory in this buffer so you can write to it"
+          },
+          "DocId": "M:Sandbox.Mesh.LockIndexBuffer(System.Int32,System.Int32,Sandbox.Mesh.IndexBufferLockHandler)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertexCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "data",
+              "Type": "System.Span`1<T>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 587
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.CreateVertexBuffer",
+          "Name": "CreateVertexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a vertex buffer with a number of vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "584"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.CreateVertexBuffer``1(System.Int32,System.Span`1{``0})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertexCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "data",
+              "Type": "System.Collections.Generic.List`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 614
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.CreateVertexBuffer",
+          "Name": "CreateVertexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a vertex buffer with a number of vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "612"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.CreateVertexBuffer``1(System.Int32,System.Collections.Generic.List`1{``0})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "layout",
+              "Type": "Sandbox.VertexAttribute[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 623
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.CreateVertexBuffer",
+          "Name": "CreateVertexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use CreateVertexBuffer without layout, use VertexLayout attributes on your vertex struct instead"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create an empty vertex buffer, it can be resized later"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "620"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create an empty vertex buffer, it can be resized later"
+          },
+          "DocId": "M:Sandbox.Mesh.CreateVertexBuffer``1(Sandbox.VertexAttribute[])"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertexCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "layout",
+              "Type": "Sandbox.VertexAttribute[]"
+            },
+            {
+              "Name": "data",
+              "Type": "System.Collections.Generic.List`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 632
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.CreateVertexBuffer",
+          "Name": "CreateVertexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use CreateVertexBuffer without layout, use VertexLayout attributes on your vertex struct instead"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a vertex buffer with a number of vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "629"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.CreateVertexBuffer``1(System.Int32,Sandbox.VertexAttribute[],System.Collections.Generic.List`1{``0})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertexCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "layout",
+              "Type": "Sandbox.VertexAttribute[]"
+            },
+            {
+              "Name": "data",
+              "Type": "System.Span`1<T>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 642
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.CreateVertexBuffer",
+          "Name": "CreateVertexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use CreateVertexBuffer without layout, use VertexLayout attributes on your vertex struct instead"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a vertex buffer with a number of vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "638"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.CreateVertexBuffer``1(System.Int32,Sandbox.VertexAttribute[],System.Span`1{``0})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Collections.Generic.List`1<T>"
+            },
+            {
+              "Name": "elementOffset",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 670
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.SetVertexBufferData",
+          "Name": "SetVertexBufferData",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set data of this buffer"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "668"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.SetVertexBufferData``1(System.Collections.Generic.List`1{``0},System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Span`1<T>"
+            },
+            {
+              "Name": "elementOffset",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 678
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.SetVertexBufferData",
+          "Name": "SetVertexBufferData",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set data of this buffer"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "676"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.SetVertexBufferData``1(System.Span`1{``0},System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "elementCount",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 687
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.SetVertexBufferSize",
+          "Name": "SetVertexBufferSize",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Resize the vertex buffer"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "684"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Resize the vertex buffer"
+          },
+          "DocId": "M:Sandbox.Mesh.SetVertexBufferSize(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "Sandbox.Mesh.VertexBufferLockHandler`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.LockVertexBuffer",
+          "Name": "LockVertexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Lock all the memory in this buffer so you can write to it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "716"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.LockVertexBuffer``1(Sandbox.Mesh.VertexBufferLockHandler`1{``0})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "elementCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "handler",
+              "Type": "Sandbox.Mesh.VertexBufferLockHandler`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.LockVertexBuffer",
+          "Name": "LockVertexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Lock a specific amount of the memory in this buffer so you can write to it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "724"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.LockVertexBuffer``1(System.Int32,Sandbox.Mesh.VertexBufferLockHandler`1{``0})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "elementOffset",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "elementCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "handler",
+              "Type": "Sandbox.Mesh.VertexBufferLockHandler`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.LockVertexBuffer",
+          "Name": "LockVertexBuffer",
+          "DeclaringType": "Sandbox.Mesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Lock a region of memory in this buffer so you can write to it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "732"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mesh.LockVertexBuffer``1(System.Int32,System.Int32,Sandbox.Mesh.VertexBufferLockHandler`1{``0})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Mesh",
+          "DocId": "M:Sandbox.Mesh.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "primType",
+              "Type": "Sandbox.MeshPrimitiveType",
+              "Default": "3"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Mesh",
+          "DocId": "M:Sandbox.Mesh.#ctor(Sandbox.Material,Sandbox.MeshPrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "primType",
+              "Type": "Sandbox.MeshPrimitiveType",
+              "Default": "3"
+            }
+          ],
+          "l": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Mesh",
+          "DocId": "M:Sandbox.Mesh.#ctor(System.String,Sandbox.Material,Sandbox.MeshPrimitiveType)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.cs",
+                "67"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.Mesh.IsValid"
+        },
+        {
+          "PropertyType": "Sandbox.MeshPrimitiveType",
+          "Loc": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.PrimitiveType",
+          "Name": "PrimitiveType",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the primitive type for this mesh."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.cs",
+                "72"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the primitive type for this mesh."
+          },
+          "DocId": "P:Sandbox.Mesh.PrimitiveType"
+        },
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.Material",
+          "Name": "Material",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets material for this mesh."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.cs",
+                "80"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets material for this mesh."
+          },
+          "DocId": "P:Sandbox.Mesh.Material"
+        },
+        {
+          "PropertyType": "BBox",
+          "Loc": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.Bounds",
+          "Name": "Bounds",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets AABB bounds for this mesh."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.cs",
+                "88"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets AABB bounds for this mesh."
+          },
+          "DocId": "P:Sandbox.Mesh.Bounds"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Mesh/Mesh.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.UvDensity",
+          "Name": "UvDensity",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Used to calculate texture size for texture streaming."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.cs",
+                "101"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Used to calculate texture size for texture streaming."
+          },
+          "DocId": "P:Sandbox.Mesh.UvDensity"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 259
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.HasIndexBuffer",
+          "Name": "HasIndexBuffer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether this mesh has an index buffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "258"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether this mesh has an index buffer."
+          },
+          "DocId": "P:Sandbox.Mesh.HasIndexBuffer"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Mesh/Mesh.IndexBuffer.cs",
+            "Line": 264
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.IndexCount",
+          "Name": "IndexCount",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Number of indices this mesh has."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+                "263"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of indices this mesh has."
+          },
+          "DocId": "P:Sandbox.Mesh.IndexCount"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 572
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.HasVertexBuffer",
+          "Name": "HasVertexBuffer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether this mesh has a vertex buffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "571"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether this mesh has a vertex buffer."
+          },
+          "DocId": "P:Sandbox.Mesh.HasVertexBuffer"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Mesh/Mesh.VertexBuffer.cs",
+            "Line": 577
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.VertexCount",
+          "Name": "VertexCount",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Number of vertices this mesh has."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+                "576"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of vertices this mesh has."
+          },
+          "DocId": "P:Sandbox.Mesh.VertexCount"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Mesh",
+      "Name": "Mesh",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A <a>mesh</a> is a basic version of a <span style=\"color: #4EC9B0;\">Model</span>, containing a set of vertices and indices which make up faces that make up a shape. <br/>A set of meshes can be used to create a <span style=\"color: #4EC9B0;\">Model</span> via the <span style=\"color: #4EC9B0;\">ModelBuilder</span> class.<br/>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Mesh\\Mesh.cs",
+            "24"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A <a>mesh</a> is a basic version of a <span style=\"color: #4EC9B0;\">Model</span>, containing a set of vertices and indices which make up faces that make up a shape. <br/>A set of meshes can be used to create a <span style=\"color: #4EC9B0;\">Model</span> via the <span style=\"color: #4EC9B0;\">ModelBuilder</span> class.<br/>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Mesh\\Mesh.IndexBuffer.cs",
+            "251"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A <a>mesh</a> is a basic version of a <span style=\"color: #4EC9B0;\">Model</span>, containing a set of vertices and indices which make up faces that make up a shape. <br/>A set of meshes can be used to create a <span style=\"color: #4EC9B0;\">Model</span> via the <span style=\"color: #4EC9B0;\">ModelBuilder</span> class.<br/>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Mesh\\Mesh.VertexBuffer.cs",
+            "564"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A <a href=\"https://en.wikipedia.org/wiki/Polygon_mesh\">mesh</a> is a basic version of a <see cref=\"T:Sandbox.Model\" />,\ncontaining a set of vertices and indices which make up faces that make up a shape.\n            \n<para>A set of meshes can be used to create a <see cref=\"T:Sandbox.Model\" /> via the <see cref=\"T:Sandbox.ModelBuilder\" /> class.</para>"
+      },
+      "DocId": "T:Sandbox.Mesh"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Span`1<System.Int32>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.IndexBufferLockHandler.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.Mesh.IndexBufferLockHandler",
+          "DocId": "M:Sandbox.Mesh.IndexBufferLockHandler.Invoke(System.Span`1{System.Int32})"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Span`1<System.Int32>"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.IndexBufferLockHandler.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Sandbox.Mesh.IndexBufferLockHandler",
+          "DocId": "M:Sandbox.Mesh.IndexBufferLockHandler.BeginInvoke(System.Span`1{System.Int32},System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.IndexBufferLockHandler.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Sandbox.Mesh.IndexBufferLockHandler",
+          "DocId": "M:Sandbox.Mesh.IndexBufferLockHandler.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Mesh.IndexBufferLockHandler..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Mesh.IndexBufferLockHandler",
+          "DocId": "M:Sandbox.Mesh.IndexBufferLockHandler.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Mesh.IndexBufferLockHandler",
+      "Name": "IndexBufferLockHandler",
+      "DeclaringType": "Sandbox.Mesh",
+      "DocId": "T:Sandbox.Mesh.IndexBufferLockHandler"
+    }
+  ],
+  "_metadata": {
+    "chunk": 49,
+    "items_count": 5
+  }
+}

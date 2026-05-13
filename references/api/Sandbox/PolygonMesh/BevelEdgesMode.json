@@ -1,0 +1,754 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.PolygonMesh.BevelEdgesMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.BevelEdgesMode.LeaveOriginalEdges",
+          "Name": "LeaveOriginalEdges",
+          "DocId": "F:Sandbox.PolygonMesh.BevelEdgesMode.LeaveOriginalEdges"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.BevelEdgesMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.BevelEdgesMode.RemoveOriginalEdges",
+          "Name": "RemoveOriginalEdges",
+          "DocId": "F:Sandbox.PolygonMesh.BevelEdgesMode.RemoveOriginalEdges"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.BevelEdgesMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.BevelEdgesMode.RemoveClosedEdges",
+          "Name": "RemoveClosedEdges",
+          "DocId": "F:Sandbox.PolygonMesh.BevelEdgesMode.RemoveClosedEdges"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PolygonMesh.BevelEdgesMode",
+      "Name": "BevelEdgesMode",
+      "DeclaringType": "Sandbox.PolygonMesh",
+      "DocId": "T:Sandbox.PolygonMesh.BevelEdgesMode"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.PolygonMesh.BooleanOperation",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.BooleanOperation.Union",
+          "Name": "Union",
+          "DocId": "F:Sandbox.PolygonMesh.BooleanOperation.Union"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.BooleanOperation",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.BooleanOperation.Subtract",
+          "Name": "Subtract",
+          "DocId": "F:Sandbox.PolygonMesh.BooleanOperation.Subtract"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.BooleanOperation",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.BooleanOperation.Intersect",
+          "Name": "Intersect",
+          "DocId": "F:Sandbox.PolygonMesh.BooleanOperation.Intersect"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PolygonMesh.BooleanOperation",
+      "Name": "BooleanOperation",
+      "DeclaringType": "Sandbox.PolygonMesh",
+      "DocId": "T:Sandbox.PolygonMesh.BooleanOperation"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.PolygonMesh.EdgeSmoothMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.EdgeSmoothMode.Default",
+          "Name": "Default",
+          "DocId": "F:Sandbox.PolygonMesh.EdgeSmoothMode.Default"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.EdgeSmoothMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.EdgeSmoothMode.Hard",
+          "Name": "Hard",
+          "DocId": "F:Sandbox.PolygonMesh.EdgeSmoothMode.Hard"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.EdgeSmoothMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.EdgeSmoothMode.Soft",
+          "Name": "Soft",
+          "DocId": "F:Sandbox.PolygonMesh.EdgeSmoothMode.Soft"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PolygonMesh.EdgeSmoothMode",
+      "Name": "EdgeSmoothMode",
+      "DeclaringType": "Sandbox.PolygonMesh",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.PolygonMesh.EdgeSmoothMode"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.PolygonMesh.DissolveRemoveVertexCondition",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.DissolveRemoveVertexCondition.None",
+          "Name": "None",
+          "DocId": "F:Sandbox.PolygonMesh.DissolveRemoveVertexCondition.None"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.DissolveRemoveVertexCondition",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.DissolveRemoveVertexCondition.Colinear",
+          "Name": "Colinear",
+          "DocId": "F:Sandbox.PolygonMesh.DissolveRemoveVertexCondition.Colinear"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.DissolveRemoveVertexCondition",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.DissolveRemoveVertexCondition.InteriorOrColinear",
+          "Name": "InteriorOrColinear",
+          "DocId": "F:Sandbox.PolygonMesh.DissolveRemoveVertexCondition.InteriorOrColinear"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.DissolveRemoveVertexCondition",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.DissolveRemoveVertexCondition.All",
+          "Name": "All",
+          "DocId": "F:Sandbox.PolygonMesh.DissolveRemoveVertexCondition.All"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PolygonMesh.DissolveRemoveVertexCondition",
+      "Name": "DissolveRemoveVertexCondition",
+      "DeclaringType": "Sandbox.PolygonMesh",
+      "DocId": "T:Sandbox.PolygonMesh.DissolveRemoveVertexCondition"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.PolygonMesh.BridgeUVMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeUVMode.Auto",
+          "Name": "Auto",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Auto"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeUVMode.Auto"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.BridgeUVMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeUVMode.UAxis",
+          "Name": "UAxis",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "U Axis"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeUVMode.UAxis"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.BridgeUVMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeUVMode.VAxis",
+          "Name": "VAxis",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "V Axis"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeUVMode.VAxis"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PolygonMesh.BridgeUVMode",
+      "Name": "BridgeUVMode",
+      "DeclaringType": "Sandbox.PolygonMesh",
+      "DocId": "T:Sandbox.PolygonMesh.BridgeUVMode"
+    },
+    {
+      "Namespace": "",
+      "Fields": [
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeInterpolationParameters.NumSteps",
+          "Name": "NumSteps",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1685"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeInterpolationParameters.NumSteps"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeInterpolationParameters.FromDeltaN",
+          "Name": "FromDeltaN",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1686"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeInterpolationParameters.FromDeltaN"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeInterpolationParameters.FromDeltaT",
+          "Name": "FromDeltaT",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1687"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeInterpolationParameters.FromDeltaT"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeInterpolationParameters.ToDeltaN",
+          "Name": "ToDeltaN",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1688"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeInterpolationParameters.ToDeltaN"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeInterpolationParameters.ToDeltaT",
+          "Name": "ToDeltaT",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1689"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeInterpolationParameters.ToDeltaT"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeInterpolationParameters.RepeatsU",
+          "Name": "RepeatsU",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1690"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeInterpolationParameters.RepeatsU"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeInterpolationParameters.RepeatsV",
+          "Name": "RepeatsV",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1691"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeInterpolationParameters.RepeatsV"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.BridgeUVMode",
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.BridgeInterpolationParameters.UVMode",
+          "Name": "UVMode",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "1692"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.PolygonMesh.BridgeInterpolationParameters.UVMode"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PolygonMesh.BridgeInterpolationParameters",
+      "Name": "BridgeInterpolationParameters",
+      "DeclaringType": "Sandbox.PolygonMesh",
+      "DocId": "T:Sandbox.PolygonMesh.BridgeInterpolationParameters"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.PolygonMesh.ExtentType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.ExtentType.XMin",
+          "Name": "XMin",
+          "DocId": "F:Sandbox.PolygonMesh.ExtentType.XMin"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.ExtentType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.ExtentType.XMax",
+          "Name": "XMax",
+          "DocId": "F:Sandbox.PolygonMesh.ExtentType.XMax"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.ExtentType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.ExtentType.YMin",
+          "Name": "YMin",
+          "DocId": "F:Sandbox.PolygonMesh.ExtentType.YMin"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.ExtentType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.ExtentType.YMax",
+          "Name": "YMax",
+          "DocId": "F:Sandbox.PolygonMesh.ExtentType.YMax"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.ExtentType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.ExtentType.ZMin",
+          "Name": "ZMin",
+          "DocId": "F:Sandbox.PolygonMesh.ExtentType.ZMin"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.ExtentType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.ExtentType.ZMax",
+          "Name": "ZMax",
+          "DocId": "F:Sandbox.PolygonMesh.ExtentType.ZMax"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PolygonMesh.ExtentType",
+      "Name": "ExtentType",
+      "DeclaringType": "Sandbox.PolygonMesh",
+      "DocId": "T:Sandbox.PolygonMesh.ExtentType"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5356
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FaceExtents.AddPoint",
+          "Name": "AddPoint",
+          "DeclaringType": "Sandbox.PolygonMesh.FaceExtents",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5353"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FaceExtents.AddPoint(Vector3)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Sandbox.PolygonMesh.ExtentType"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5364
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FaceExtents.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.PolygonMesh.FaceExtents",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5363"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FaceExtents.Get(Sandbox.PolygonMesh.ExtentType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Sandbox.PolygonMesh.FaceExtents"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5368
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FaceExtents.AddExtents",
+          "Name": "AddExtents",
+          "DeclaringType": "Sandbox.PolygonMesh.FaceExtents",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Mesh\\PolygonMesh.cs",
+                "5365"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PolygonMesh.FaceExtents.AddExtents(Sandbox.PolygonMesh.FaceExtents)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Mesh/PolygonMesh.cs",
+            "Line": 5344
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PolygonMesh.FaceExtents..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.PolygonMesh.FaceExtents",
+          "DocId": "M:Sandbox.PolygonMesh.FaceExtents.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PolygonMesh.FaceExtents",
+      "Name": "FaceExtents",
+      "DeclaringType": "Sandbox.PolygonMesh",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Mesh\\PolygonMesh.cs",
+            "5340"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.PolygonMesh.FaceExtents"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.PolygonMesh.TextureJustification",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureJustification.None",
+          "Name": "None",
+          "DocId": "F:Sandbox.PolygonMesh.TextureJustification.None"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.TextureJustification",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureJustification.Top",
+          "Name": "Top",
+          "DocId": "F:Sandbox.PolygonMesh.TextureJustification.Top"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.TextureJustification",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureJustification.Bottom",
+          "Name": "Bottom",
+          "DocId": "F:Sandbox.PolygonMesh.TextureJustification.Bottom"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.TextureJustification",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureJustification.Left",
+          "Name": "Left",
+          "DocId": "F:Sandbox.PolygonMesh.TextureJustification.Left"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.TextureJustification",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureJustification.Center",
+          "Name": "Center",
+          "DocId": "F:Sandbox.PolygonMesh.TextureJustification.Center"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.TextureJustification",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureJustification.Right",
+          "Name": "Right",
+          "DocId": "F:Sandbox.PolygonMesh.TextureJustification.Right"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.TextureJustification",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureJustification.Fit",
+          "Name": "Fit",
+          "DocId": "F:Sandbox.PolygonMesh.TextureJustification.Fit"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.TextureJustification",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureJustification.FitX",
+          "Name": "FitX",
+          "DocId": "F:Sandbox.PolygonMesh.TextureJustification.FitX"
+        },
+        {
+          "FieldType": "Sandbox.PolygonMesh.TextureJustification",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PolygonMesh.TextureJustification.FitY",
+          "Name": "FitY",
+          "DocId": "F:Sandbox.PolygonMesh.TextureJustification.FitY"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PolygonMesh.TextureJustification",
+      "Name": "TextureJustification",
+      "DeclaringType": "Sandbox.PolygonMesh",
+      "DocId": "T:Sandbox.PolygonMesh.TextureJustification"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Text.Json.Nodes.JsonObject",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/MissingComponent.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MissingComponent.GetJson",
+          "Name": "GetJson",
+          "DeclaringType": "Sandbox.MissingComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the Json data that was deserialized"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\MissingComponent.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the Json data that was deserialized"
+          },
+          "DocId": "M:Sandbox.MissingComponent.GetJson"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "jso",
+              "Type": "System.Text.Json.Nodes.JsonObject"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/MissingComponent.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MissingComponent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.MissingComponent",
+          "DocId": "M:Sandbox.MissingComponent.#ctor(System.Text.Json.Nodes.JsonObject)"
+        }
+      ],
+      "Properties": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.MissingComponent",
+      "Name": "MissingComponent",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.HideAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "This is added when a component is missing. It will store the json data of the missing component, so we don't lose any data."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\MissingComponent.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "This is added when a component is missing. It will store the json data of the missing component, so we don't lose any data."
+      },
+      "DocId": "T:Sandbox.MissingComponent"
+    }
+  ],
+  "_metadata": {
+    "chunk": 95,
+    "items_count": 10
+  }
+}

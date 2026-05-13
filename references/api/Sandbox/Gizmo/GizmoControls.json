@@ -1,0 +1,809 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "BBox"
+            },
+            {
+              "Name": "outValue",
+              "Out": true,
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.BoundingBox.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.BoundingBox",
+          "Name": "BoundingBox",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.BoundingBox.cs",
+                "63"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.BoundingBox(System.String,BBox,BBox@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "BBox"
+            },
+            {
+              "Name": "outValue",
+              "Out": true,
+              "Type": "BBox"
+            },
+            {
+              "Name": "outPressed",
+              "Out": true,
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.BoundingBox.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.BoundingBox",
+          "Name": "BoundingBox",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.BoundingBox.cs",
+                "68"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.BoundingBox(System.String,BBox,BBox@,System.Boolean@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "BBox"
+            },
+            {
+              "Name": "outValue",
+              "Out": true,
+              "Type": "BBox"
+            },
+            {
+              "Name": "outPressed",
+              "Out": true,
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "outResizeAxis",
+              "Out": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.BoundingBox.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.BoundingBox",
+          "Name": "BoundingBox",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.BoundingBox.cs",
+                "73"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.BoundingBox(System.String,BBox,BBox@,System.Boolean@,Vector3@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "capsule",
+              "Type": "Capsule"
+            },
+            {
+              "Name": "outCapsule",
+              "Out": true,
+              "Type": "Capsule"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.Capsule.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.Capsule",
+          "Name": "Capsule",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.Capsule.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.Capsule(System.String,Capsule,Capsule@,Color)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "newPos",
+              "Out": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "axisRotation",
+              "Type": "System.Nullable`1<Rotation>",
+              "Default": "null"
+            },
+            {
+              "Name": "squareSize",
+              "Type": "System.Single",
+              "Default": "3"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.Position",
+          "Name": "Position",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A front left up position movement widget. If widget was moved then will return true and out will return the new position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.Position(System.String,Vector3,Vector3@,System.Nullable`1{Rotation},System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "axis",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "distance",
+              "Out": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "length",
+              "Type": "System.Single",
+              "Default": "24"
+            },
+            {
+              "Name": "girth",
+              "Type": "System.Single",
+              "Default": "6"
+            },
+            {
+              "Name": "axisOffset",
+              "Type": "System.Single",
+              "Default": "2"
+            },
+            {
+              "Name": "cullAngle",
+              "Type": "System.Single",
+              "Default": "10"
+            },
+            {
+              "Name": "snapSize",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "head",
+              "Type": "System.String",
+              "Default": "cone"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.Arrow",
+          "Name": "Arrow",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw an arrow - return move delta if interacted with"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.cs",
+                "153"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw an arrow - return move delta if interacted with"
+          },
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.Arrow(System.String,Vector3,System.Single@,System.Single,System.Single,System.Single,System.Single,System.Single,System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "size",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "rotation",
+              "Type": "Rotation"
+            },
+            {
+              "Name": "movement",
+              "Out": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.cs",
+            "Line": 220
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.DragBox",
+          "Name": "DragBox",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.cs",
+                "218"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.DragBox(System.String,Vector3,Rotation,Vector3@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "size",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "rotation",
+              "Type": "Rotation"
+            },
+            {
+              "Name": "movement",
+              "Out": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "drawHandle",
+              "Type": "System.Action",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.cs",
+            "Line": 271
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.DragSquare",
+          "Name": "DragSquare",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Manipulate a 2d value by moving on 2 axis"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.cs",
+                "269"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Manipulate a 2d value by moving on 2 axis"
+          },
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.DragSquare(System.String,Vector2,Rotation,Vector3@,System.Action)"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "Parameters": [
+            {
+              "Name": "scale",
+              "Type": "System.Nullable`1<System.Single>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.cs",
+            "Line": 331
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.PushFixedScale",
+          "Name": "PushFixedScale",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Scope this before drawing a control to obey Settings.GizmoScale"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.cs",
+                "328"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.PushFixedScale(System.Nullable`1{System.Single})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Rotation"
+            },
+            {
+              "Name": "newValue",
+              "Out": true,
+              "Type": "Rotation"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.Rotation.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.Rotate",
+          "Name": "Rotate",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A full 3d rotation gizmo. If rotated will return true and newValue will be the new rotation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.Rotation.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A full 3d rotation gizmo. If rotated will return true and newValue will be the new rotation."
+          },
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.Rotate(System.String,Rotation,Rotation@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "outValue",
+              "Out": true,
+              "Type": "Angles"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.Rotation.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.Rotate",
+          "Name": "Rotate",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use Rotate( string name, out Rotation outValue ) and WorldRotation = outValue rather than *="
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.Rotation.cs",
+                "74"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.Rotate(System.String,Angles@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "angleDelta",
+              "Out": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "size",
+              "Type": "System.Single",
+              "Default": "19"
+            },
+            {
+              "Name": "useHalfCircle",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.Rotation.cs",
+            "Line": 122
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.RotateSingle",
+          "Name": "RotateSingle",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A single rotation axis"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.Rotation.cs",
+                "120"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A single rotation axis"
+          },
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.RotateSingle(System.String,Color,System.Single@,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "outValue",
+              "Out": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.Scale.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.Scale",
+          "Name": "Scale",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A front left up position movement widget. If widget was moved then will return true and out will return the new position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.Scale.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A front left up position movement widget. If widget was moved then will return true and out will return the new position."
+          },
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.Scale(System.String,System.Single,System.Single@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "outValue",
+              "Out": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "axisRotation",
+              "Type": "System.Nullable`1<Rotation>",
+              "Default": "null"
+            },
+            {
+              "Name": "squareSize",
+              "Type": "System.Single",
+              "Default": "3"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.Scale.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.Scale",
+          "Name": "Scale",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A front left up position movement widget. If widget was moved then will return true and out will return the new position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.Scale.cs",
+                "57"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.Scale(System.String,Vector3,Vector3@,System.Nullable`1{Rotation},System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "outRadius",
+              "Out": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Editor/Gizmos/Control/Control.Sphere.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Gizmo.GizmoControls.Sphere",
+          "Name": "Sphere",
+          "DeclaringType": "Sandbox.Gizmo.GizmoControls",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A scalable sphere gizmo. Returns true if the gizmo was interacted with and outValue will return the new radius."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Editor\\Gizmos\\Control\\Control.Sphere.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A scalable sphere gizmo. Returns true if the gizmo was interacted with and outValue will return the new radius."
+          },
+          "DocId": "M:Sandbox.Gizmo.GizmoControls.Sphere(System.String,System.Single,System.Single@,Color)"
+        }
+      ],
+      "Constructors": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Gizmo.GizmoControls",
+      "Name": "GizmoControls",
+      "DeclaringType": "Sandbox.Gizmo",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Extendable helper to create common gizmos"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Editor\\Gizmos\\Control\\Control.BoundingBox.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Extendable helper to create common gizmos"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Editor\\Gizmos\\Control\\Control.Capsule.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Extendable helper to create common gizmos"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Editor\\Gizmos\\Control\\Control.cs",
+            "15"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Extendable helper to create common gizmos"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Editor\\Gizmos\\Control\\Control.Rotation.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Extendable helper to create common gizmos"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Editor\\Gizmos\\Control\\Control.Scale.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Extendable helper to create common gizmos"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Editor\\Gizmos\\Control\\Control.Sphere.cs",
+            "5"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Extendable helper to create common gizmos"
+      },
+      "DocId": "T:Sandbox.Gizmo.GizmoControls"
+    }
+  ],
+  "_metadata": {
+    "chunk": 35,
+    "items_count": 1
+  }
+}

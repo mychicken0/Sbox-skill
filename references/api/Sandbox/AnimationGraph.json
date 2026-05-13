@@ -1,0 +1,1618 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Resource",
+      "Methods": [
+        {
+          "ReturnType": "System.Type",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Animation/AnimationGraph.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AnimationGraph.GetParameterType",
+          "Name": "GetParameterType",
+          "DeclaringType": "Sandbox.AnimationGraph",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get value type of parameter at given index"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.cs",
+                "102"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get value type of parameter at given index"
+          },
+          "DocId": "M:Sandbox.AnimationGraph.GetParameterType(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Type",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Animation/AnimationGraph.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AnimationGraph.GetParameterType",
+          "Name": "GetParameterType",
+          "DeclaringType": "Sandbox.AnimationGraph",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get value type of parameter with the given <span style=\"color: #9CDCFE;\">name</span>, or <span style=\"color: #569CD6;\">null</span> if not found."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.cs",
+                "110"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get value type of parameter with the given <paramref name=\"name\" />, or <see langword=\"null\" /> if not found."
+          },
+          "DocId": "M:Sandbox.AnimationGraph.GetParameterType(System.String)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Animation/AnimationGraph.cs",
+            "Line": 128
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AnimationGraph.GetParameterName",
+          "Name": "GetParameterName",
+          "DeclaringType": "Sandbox.AnimationGraph",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get name of parameter at given index"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.cs",
+                "125"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get name of parameter at given index"
+          },
+          "DocId": "M:Sandbox.AnimationGraph.GetParameterName(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "index",
+              "Out": true,
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Animation/AnimationGraph.cs",
+            "Line": 163
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AnimationGraph.TryGetParameterIndex",
+          "Name": "TryGetParameterIndex",
+          "DeclaringType": "Sandbox.AnimationGraph",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Try to get parameter index at given name"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.cs",
+                "160"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Try to get parameter index at given name"
+          },
+          "DocId": "M:Sandbox.AnimationGraph.TryGetParameterIndex(System.String,System.Int32@)"
+        },
+        {
+          "ReturnType": "Sandbox.AnimParam`1<T>",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Animation/AnimationGraph.cs",
+            "Line": 171
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AnimationGraph.GetParameter",
+          "Name": "GetParameter",
+          "DeclaringType": "Sandbox.AnimationGraph",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get parameter at given name"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.cs",
+                "168"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get parameter at given name"
+          },
+          "DocId": "M:Sandbox.AnimationGraph.GetParameter``1(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.AnimParam`1<T>",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Animation/AnimationGraph.cs",
+            "Line": 179
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AnimationGraph.GetParameter",
+          "Name": "GetParameter",
+          "DeclaringType": "Sandbox.AnimationGraph",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get parameter at given index"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.cs",
+                "176"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get parameter at given index"
+          },
+          "DocId": "M:Sandbox.AnimationGraph.GetParameter``1(System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.AnimationGraph",
+          "Parameters": [
+            {
+              "Name": "filename",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Animation/AnimationGraph.Load.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.AnimationGraph.Load",
+          "Name": "Load",
+          "DeclaringType": "Sandbox.AnimationGraph",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Load an animation graph from given file."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.Load.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Load an animation graph from given file."
+          },
+          "DocId": "M:Sandbox.AnimationGraph.Load(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/Animation/AnimationGraph.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AnimationGraph.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.AnimationGraph.IsValid"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Animation/AnimationGraph.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AnimationGraph.IsError",
+          "Name": "IsError",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the animation graph is invalid, or has not yet loaded."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the animation graph is invalid, or has not yet loaded."
+          },
+          "DocId": "P:Sandbox.AnimationGraph.IsError"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/Animation/AnimationGraph.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AnimationGraph.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Animation graph file name."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Animation graph file name."
+          },
+          "DocId": "P:Sandbox.AnimationGraph.Name"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Animation/AnimationGraph.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.AnimationGraph.ParamCount",
+          "Name": "ParamCount",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Number of parameters in this animgraph"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Animation\\AnimationGraph.cs",
+                "84"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of parameters in this animgraph"
+          },
+          "DocId": "P:Sandbox.AnimationGraph.ParamCount"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.AnimationGraph",
+      "Name": "AnimationGraph",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Animation\\AnimationGraph.cs",
+            "17"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Animation\\AnimationGraph.Load.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.AnimationGraph"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.GameResource",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.DecalDefinition",
+          "DocId": "M:Sandbox.DecalDefinition.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.DecalDefinition.DecalEntry>",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.Decals",
+          "Name": "Decals",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalDefinition.Decals"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.ColorTexture",
+          "Name": "ColorTexture",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Textures"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The color map to use for the decal including transparency which masks the decal. This must be set for other textures to use the decal mask."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The color map to use for the decal including transparency which masks the decal.\nThis must be set for other textures to use the decal mask."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.ColorTexture"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.NormalTexture",
+          "Name": "NormalTexture",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The normal texture map to use for the decal."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "36"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The normal texture map to use for the decal."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.NormalTexture"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.RoughMetalOcclusionTexture",
+          "Name": "RoughMetalOcclusionTexture",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Rough/Metal/Occlusion"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The Roughness/Metal/Ambient Occlusion texture map to use for the decal, stored in the respective RGB channels."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The Roughness/Metal/Ambient Occlusion texture map to use for the decal, stored in the respective RGB channels."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.RoughMetalOcclusionTexture"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.EmissiveTexture",
+          "Name": "EmissiveTexture",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The emissive texture map to use for the decal."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "47"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The emissive texture map to use for the decal."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.EmissiveTexture"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.EmissionEnergy",
+          "Name": "EmissionEnergy",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Strength of the emission effect."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "52"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Strength of the emission effect."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.EmissionEnergy"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.HeightTexture",
+          "Name": "HeightTexture",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The height texture to use for parallax mapping."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "57"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The height texture to use for parallax mapping."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.HeightTexture"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.ParallaxStrength",
+          "Name": "ParallaxStrength",
+          "Attributes": [
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "HeightTexture",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Strength of the parallax effect."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "62"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Strength of the parallax effect."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.ParallaxStrength"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.Tint",
+          "Name": "Tint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Parameters"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tints the color of the decal's albedo and can be used to adjust the overall opacity of the decal."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "68"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tints the color of the decal's albedo and can be used to adjust the overall opacity of the decal."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.Tint"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.ColorMix",
+          "Name": "ColorMix",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controls the opacity of the decal's color texture without reducing the impact of the normal or rmo texture. Set to 0 to create a normal/rmo only decal masked by the color textures alpha."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "75"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controls the opacity of the decal's color texture without reducing the impact of the normal or rmo texture.\nSet to 0 to create a normal/rmo only decal masked by the color textures alpha."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.ColorMix"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Width of the decal."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "81"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Width of the decal."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.Width"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Height of the decal."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "86"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Height of the decal."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.Height"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.FilterMode",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.FilterMode",
+          "Name": "FilterMode",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How the texture gets filtered."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "91"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How the texture gets filtered."
+          },
+          "DocId": "P:Sandbox.DecalDefinition.FilterMode"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.DecalDefinition",
+      "Name": "DecalDefinition",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.AssetTypeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A decal which can be applied to objects and surfaces."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\DecalDefinition.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A decal which can be applied to objects and surfaces."
+      },
+      "DocId": "T:Sandbox.DecalDefinition"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.DecalEntry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.DecalDefinition.DecalEntry",
+          "DocId": "M:Sandbox.DecalDefinition.DecalEntry.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.DecalEntry.Material",
+          "Name": "Material",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalDefinition.DecalEntry.Material"
+        },
+        {
+          "PropertyType": "RangedFloat",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.DecalEntry.Depth",
+          "Name": "Depth",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalDefinition.DecalEntry.Depth"
+        },
+        {
+          "PropertyType": "RangedFloat",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.DecalEntry.Rotation",
+          "Name": "Rotation",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalDefinition.DecalEntry.Rotation"
+        },
+        {
+          "PropertyType": "RangedFloat",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.DecalEntry.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalDefinition.DecalEntry.Width"
+        },
+        {
+          "PropertyType": "RangedFloat",
+          "Loc": {
+            "File": "Resources/DecalDefinition.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalDefinition.DecalEntry.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\DecalDefinition.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalDefinition.DecalEntry.Height"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.DecalDefinition.DecalEntry",
+      "Name": "DecalEntry",
+      "DeclaringType": "Sandbox.DecalDefinition",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\DecalDefinition.cs",
+            "16"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.DecalDefinition.DecalEntry"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Resource",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Resources/GameResource.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResource.StateHasChanged",
+          "Name": "StateHasChanged",
+          "DeclaringType": "Sandbox.GameResource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should be called after the resource has been edited by the inspector"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "61"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should be called after the resource has been edited by the inspector"
+          },
+          "DocId": "M:Sandbox.GameResource.StateHasChanged"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<System.String>",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/GameResource.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResource.GetReferencedPackages",
+          "Name": "GetReferencedPackages",
+          "DeclaringType": "Sandbox.GameResource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a list of packages that are needed to load this asset"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a list of packages that are needed to load this asset"
+          },
+          "DocId": "M:Sandbox.GameResource.GetReferencedPackages"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Resources/GameResource.cs",
+            "Line": 90
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameResource.PostLoad",
+          "Name": "PostLoad",
+          "DeclaringType": "Sandbox.GameResource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when the asset is first loaded from disk."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when the asset is first loaded from disk."
+          },
+          "DocId": "M:Sandbox.GameResource.PostLoad"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Resources/GameResource.cs",
+            "Line": 113
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameResource.PostReload",
+          "Name": "PostReload",
+          "DeclaringType": "Sandbox.GameResource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when the asset is recompiled/reloaded from disk."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "110"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when the asset is recompiled/reloaded from disk."
+          },
+          "DocId": "M:Sandbox.GameResource.PostReload"
+        },
+        {
+          "ReturnType": "System.Text.Json.Nodes.JsonObject",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/GameResource.cs",
+            "Line": 249
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResource.Serialize",
+          "Name": "Serialize",
+          "DeclaringType": "Sandbox.GameResource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Serialize the current state to a JsonObject"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "244"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Serialize the current state to a JsonObject"
+          },
+          "DocId": "M:Sandbox.GameResource.Serialize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "json",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/GameResource.cs",
+            "Line": 292
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResource.LoadFromJson",
+          "Name": "LoadFromJson",
+          "DeclaringType": "Sandbox.GameResource",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "290"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.GameResource.LoadFromJson(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "jso",
+              "Type": "System.Text.Json.Nodes.JsonObject"
+            }
+          ],
+          "l": {
+            "File": "Resources/GameResource.cs",
+            "Line": 327
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResource.Deserialize",
+          "Name": "Deserialize",
+          "DeclaringType": "Sandbox.GameResource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Deserialize values from a JsonObject"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "324"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Deserialize values from a JsonObject"
+          },
+          "DocId": "M:Sandbox.GameResource.Deserialize(System.Text.Json.Nodes.JsonObject)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "node",
+              "Type": "System.Text.Json.Nodes.JsonObject"
+            }
+          ],
+          "l": {
+            "File": "Resources/GameResource.cs",
+            "Line": 338
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameResource.OnJsonSerialize",
+          "Name": "OnJsonSerialize",
+          "DeclaringType": "Sandbox.GameResource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called after we serialize, allowing you to store any extra or modify the output."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "335"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called after we serialize, allowing you to store any extra or modify the output."
+          },
+          "DocId": "M:Sandbox.GameResource.OnJsonSerialize(System.Text.Json.Nodes.JsonObject)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Resources/GameResource.cs",
+            "Line": 409
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameResource.OnDestroy",
+          "Name": "OnDestroy",
+          "DeclaringType": "Sandbox.GameResource",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when this resource is being unloaded. Clean up any resources owned by this instance here."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "405"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when this resource is being unloaded.\nClean up any resources owned by this instance here."
+          },
+          "DocId": "M:Sandbox.GameResource.OnDestroy"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/GameResource.cs",
+            "Line": 43
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameResource..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.GameResource",
+          "DocId": "M:Sandbox.GameResource.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Resources/GameResource.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResource.HasUnsavedChanges",
+          "Name": "HasUnsavedChanges",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this resource has changed but the changes aren't written to disk"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this resource has changed but the changes aren't written to disk"
+          },
+          "DocId": "P:Sandbox.GameResource.HasUnsavedChanges"
+        },
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/GameResource.cs",
+            "Line": 213
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameResource.ActionGraphTargetType",
+          "Name": "ActionGraphTargetType",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Target type used for any action graphs contained in this resource. Defaults to this resource's type."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "211"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Target type used for any action graphs contained in this resource.\nDefaults to this resource's type."
+          },
+          "DocId": "P:Sandbox.GameResource.ActionGraphTargetType"
+        },
+        {
+          "PropertyType": "System.Object",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/GameResource.cs",
+            "Line": 220
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameResource.ActionGraphTarget",
+          "Name": "ActionGraphTarget",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Target instance used for any action graphs contained in this resource. Defaults to this resource itself."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "218"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Target instance used for any action graphs contained in this resource.\nDefaults to this resource itself."
+          },
+          "DocId": "P:Sandbox.GameResource.ActionGraphTarget"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/GameResource.cs",
+            "Line": 289
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResource.ResourceVersion",
+          "Name": "ResourceVersion",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The version of the component. Used by <span style=\"color: #4EC9B0;\">JsonUpgrader</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "288"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The version of the component. Used by <see cref=\"T:Sandbox.JsonUpgrader\" />."
+          },
+          "DocId": "P:Sandbox.GameResource.ResourceVersion"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Resources/GameResource.cs",
+            "Line": 400
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameResource.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\GameResource.cs",
+                "399"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.GameResource.IsValid"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.GameResource",
+      "Name": "GameResource",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.LibraryAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Assets defined in C# and created through tools. You can define your own <a>Custom Asset Types</a>."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\GameResource.cs",
+            "15"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Assets defined in C# and created through tools.\nYou can define your own <a href=\"https://sbox.game/dev/doc/assetsresources/custom-assets/\">Custom Asset Types</a>."
+      },
+      "DocId": "T:Sandbox.GameResource"
+    }
+  ],
+  "_metadata": {
+    "chunk": 47,
+    "items_count": 4
+  }
+}

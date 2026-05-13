@@ -1,0 +1,1525 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.DontExecuteOnServer",
+      "Name": "DontExecuteOnServer",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "A component with this interface will not run on dedicated servers."
+      },
+      "DocId": "T:Sandbox.Component.DontExecuteOnServer"
+    },
+    {
+      "Namespace": "",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.ExecuteInEditor",
+      "Name": "ExecuteInEditor",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "A component with this interface will run in the editor."
+      },
+      "DocId": "T:Sandbox.Component.ExecuteInEditor"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "collision",
+              "Type": "Sandbox.Collision"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/ICollisionListener.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.ICollisionListener.OnCollisionStart",
+          "Name": "OnCollisionStart",
+          "DeclaringType": "Sandbox.Component.ICollisionListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when this collider/rigidbody starts touching another collider."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\ICollisionListener.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when this collider/rigidbody starts touching another collider."
+          },
+          "DocId": "M:Sandbox.Component.ICollisionListener.OnCollisionStart(Sandbox.Collision)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "collision",
+              "Type": "Sandbox.Collision"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/ICollisionListener.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.ICollisionListener.OnCollisionUpdate",
+          "Name": "OnCollisionUpdate",
+          "DeclaringType": "Sandbox.Component.ICollisionListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called once per physics step for every collider being touched."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\ICollisionListener.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called once per physics step for every collider being touched."
+          },
+          "DocId": "M:Sandbox.Component.ICollisionListener.OnCollisionUpdate(Sandbox.Collision)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "collision",
+              "Type": "Sandbox.CollisionStop"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/ICollisionListener.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.ICollisionListener.OnCollisionStop",
+          "Name": "OnCollisionStop",
+          "DeclaringType": "Sandbox.Component.ICollisionListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when this collider/rigidbody stops touching another collider."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\ICollisionListener.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when this collider/rigidbody stops touching another collider."
+          },
+          "DocId": "M:Sandbox.Component.ICollisionListener.OnCollisionStop(Sandbox.CollisionStop)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.ICollisionListener",
+      "Name": "ICollisionListener",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "A <see cref=\"T:Sandbox.Component\" /> with this interface can react to collisions."
+      },
+      "DocId": "T:Sandbox.Component.ICollisionListener"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "Color",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IColorProvider.ComponentColor",
+          "Name": "ComponentColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IColorProvider.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Component.IColorProvider.ComponentColor"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.IColorProvider",
+      "Name": "IColorProvider",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "When applied to a <see cref=\"T:Sandbox.Component\" />, the component will be able to provide the color to use for certain UI editor elements."
+      },
+      "DocId": "T:Sandbox.Component.IColorProvider"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "damage",
+              "In": true,
+              "Type": "Sandbox.DamageInfo& modreq(System.Runtime.InteropServices.InAttribute)"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IDamageable.OnDamage",
+          "Name": "OnDamage",
+          "DeclaringType": "Sandbox.Component.IDamageable",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IDamageable.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Component.IDamageable.OnDamage(Sandbox.DamageInfo& modreq(System.Runtime.InteropServices.InAttribute))"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.IDamageable",
+      "Name": "IDamageable",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "A component that can be damaged by something."
+      },
+      "DocId": "T:Sandbox.Component.IDamageable"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "BBox",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IHasBounds.LocalBounds",
+          "Name": "LocalBounds",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns bounds, in local space"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IHasBounds.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns bounds, in local space"
+          },
+          "DocId": "P:Sandbox.Component.IHasBounds.LocalBounds"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.IHasBounds",
+      "Name": "IHasBounds",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "A component that has bounds"
+      },
+      "DocId": "T:Sandbox.Component.IHasBounds"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "triangle",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IMaterialSetter.SetMaterial",
+          "Name": "SetMaterial",
+          "DeclaringType": "Sandbox.Component.IMaterialSetter",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IMaterialSetter.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Component.IMaterialSetter.SetMaterial(Sandbox.Material,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Material",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "triangle",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IMaterialSetter.GetMaterial",
+          "Name": "GetMaterial",
+          "DeclaringType": "Sandbox.Component.IMaterialSetter",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IMaterialSetter.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Component.IMaterialSetter.GetMaterial(System.Int32)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.IMaterialSetter",
+      "Name": "IMaterialSetter",
+      "DeclaringType": "Sandbox.Component",
+      "DocId": "T:Sandbox.Component.IMaterialSetter"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "channel",
+              "Type": "Sandbox.Connection"
+            },
+            {
+              "Name": "reason",
+              "Ref": true,
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/INetworkListener.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.INetworkListener.AcceptConnection",
+          "Name": "AcceptConnection",
+          "DeclaringType": "Sandbox.Component.INetworkListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called on the host to decide whether to accept a <span style=\"color: #4EC9B0;\">Connection</span>. If any <span style=\"color: #4EC9B0;\">Component</span> that implements this returns false, the connection will be denied."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\INetworkListener.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called on the host to decide whether to accept a <see cref=\"T:Sandbox.Connection\" />. If any <see cref=\"T:Sandbox.Component\" />\nthat implements this returns false, the connection will be denied.",
+            "Params": {
+              "channel": "",
+              "reason": "The reason to display to the client."
+            }
+          },
+          "DocId": "M:Sandbox.Component.INetworkListener.AcceptConnection(Sandbox.Connection,System.String@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "channel",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/INetworkListener.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.INetworkListener.OnConnected",
+          "Name": "OnConnected",
+          "DeclaringType": "Sandbox.Component.INetworkListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when someone joins the server. This will only be called for the host."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\INetworkListener.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when someone joins the server. This will only be called for the host."
+          },
+          "DocId": "M:Sandbox.Component.INetworkListener.OnConnected(Sandbox.Connection)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "channel",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/INetworkListener.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.INetworkListener.OnDisconnected",
+          "Name": "OnDisconnected",
+          "DeclaringType": "Sandbox.Component.INetworkListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when someone leaves the server. This will only be called for the host."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\INetworkListener.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when someone leaves the server. This will only be called for the host."
+          },
+          "DocId": "M:Sandbox.Component.INetworkListener.OnDisconnected(Sandbox.Connection)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "channel",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/INetworkListener.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.INetworkListener.OnActive",
+          "Name": "OnActive",
+          "DeclaringType": "Sandbox.Component.INetworkListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when someone is all loaded and entered the game. This will only be called for the host."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\INetworkListener.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when someone is all loaded and entered the game. This will only be called for the host."
+          },
+          "DocId": "M:Sandbox.Component.INetworkListener.OnActive(Sandbox.Connection)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "previousHost",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/INetworkListener.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.INetworkListener.OnBecameHost",
+          "Name": "OnBecameHost",
+          "DeclaringType": "Sandbox.Component.INetworkListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when the host of the game has left - and you are now the new host."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\INetworkListener.cs",
+                "48"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when the host of the game has left - and you are now the new host."
+          },
+          "DocId": "M:Sandbox.Component.INetworkListener.OnBecameHost(Sandbox.Connection)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.INetworkListener",
+      "Name": "INetworkListener",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "A <see cref=\"T:Sandbox.Component\" /> with this interface can react to network events."
+      },
+      "DocId": "T:Sandbox.Component.INetworkListener"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "reader",
+              "Ref": true,
+              "Type": "Sandbox.ByteStream"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/INetworkSnapshot.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.INetworkSnapshot.ReadSnapshot",
+          "Name": "ReadSnapshot",
+          "DeclaringType": "Sandbox.Component.INetworkSnapshot",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Read data from the snapshot."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\INetworkSnapshot.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Read data from the snapshot."
+          },
+          "DocId": "M:Sandbox.Component.INetworkSnapshot.ReadSnapshot(Sandbox.ByteStream@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "writer",
+              "Ref": true,
+              "Type": "Sandbox.ByteStream"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/INetworkSnapshot.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.INetworkSnapshot.WriteSnapshot",
+          "Name": "WriteSnapshot",
+          "DeclaringType": "Sandbox.Component.INetworkSnapshot",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Write data to the snapshot."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\INetworkSnapshot.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Write data to the snapshot."
+          },
+          "DocId": "M:Sandbox.Component.INetworkSnapshot.WriteSnapshot(Sandbox.ByteStream@)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.INetworkSnapshot",
+      "Name": "INetworkSnapshot",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "When implemented on a <see cref=\"T:Sandbox.Component\" /> or <see cref=\"T:Sandbox.GameObjectSystem\" /> it can read and write\ndata to and from a network snapshot."
+      },
+      "DocId": "T:Sandbox.Component.INetworkSnapshot"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "owner",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.INetworkSpawn.OnNetworkSpawn",
+          "Name": "OnNetworkSpawn",
+          "DeclaringType": "Sandbox.Component.INetworkSpawn",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when this object is spawned on the network."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\INetworkSpawn.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when this object is spawned on the network."
+          },
+          "DocId": "M:Sandbox.Component.INetworkSpawn.OnNetworkSpawn(Sandbox.Connection)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.INetworkSpawn",
+      "Name": "INetworkSpawn",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "A <see cref=\"T:Sandbox.Component\" /> with this interface can listen for when a GameObject\nin its ancestors has been network spawned."
+      },
+      "DocId": "T:Sandbox.Component.INetworkSpawn"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "connection",
+              "Type": "Sandbox.Connection"
+            },
+            {
+              "Name": "worldBounds",
+              "In": true,
+              "Type": "BBox& modreq(System.Runtime.InteropServices.InAttribute)"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.INetworkVisible.IsVisibleToConnection",
+          "Name": "IsVisibleToConnection",
+          "DeclaringType": "Sandbox.Component.INetworkVisible",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether this networked object is visible for the specified <span style=\"color: #4EC9B0;\">Connection</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\INetworkVisible.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Component.INetworkVisible.IsVisibleToConnection(Sandbox.Connection,BBox& modreq(System.Runtime.InteropServices.InAttribute))"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.INetworkVisible",
+      "Name": "INetworkVisible",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "A <see cref=\"T:Sandbox.Component\" /> with this interface can determine whether a networked object\nshould be visible for a specific <see cref=\"T:Sandbox.Connection\" />."
+      },
+      "DocId": "T:Sandbox.Component.INetworkVisible"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.Component.IPressable.Event"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Hover",
+          "Name": "Hover",
+          "DeclaringType": "Sandbox.Component.IPressable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A player has started looking at this"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IPressable.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A player has started looking at this"
+          },
+          "DocId": "M:Sandbox.Component.IPressable.Hover(Sandbox.Component.IPressable.Event)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.Component.IPressable.Event"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Look",
+          "Name": "Look",
+          "DeclaringType": "Sandbox.Component.IPressable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A player is still looking at this. Called every frame."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IPressable.cs",
+                "33"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A player is still looking at this. Called every frame."
+          },
+          "DocId": "M:Sandbox.Component.IPressable.Look(Sandbox.Component.IPressable.Event)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.Component.IPressable.Event"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Blur",
+          "Name": "Blur",
+          "DeclaringType": "Sandbox.Component.IPressable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A player has stopped looking at this"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IPressable.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A player has stopped looking at this"
+          },
+          "DocId": "M:Sandbox.Component.IPressable.Blur(Sandbox.Component.IPressable.Event)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.Component.IPressable.Event"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Press",
+          "Name": "Press",
+          "DeclaringType": "Sandbox.Component.IPressable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Pressed. Returns true on success, else false. If it returns true then you should call Release when the press finishes. Not everything expects it, but some stuff will."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IPressable.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Pressed. Returns true on success, else false.\nIf it returns true then you should call Release when the\npress finishes. Not everything expects it, but some stuff will."
+          },
+          "DocId": "M:Sandbox.Component.IPressable.Press(Sandbox.Component.IPressable.Event)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.Component.IPressable.Event"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Pressing",
+          "Name": "Pressing",
+          "DeclaringType": "Sandbox.Component.IPressable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Still being pressed. Return true to allow the press to continue, false cancel the press"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IPressable.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Still being pressed. Return true to allow the press to continue, false cancel the press"
+          },
+          "DocId": "M:Sandbox.Component.IPressable.Pressing(Sandbox.Component.IPressable.Event)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.Component.IPressable.Event"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Release",
+          "Name": "Release",
+          "DeclaringType": "Sandbox.Component.IPressable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "To be called when the press finishes. You should only call this after a successful press - ie when Press hass returned true."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IPressable.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "To be called when the press finishes. You should only call this\nafter a successful press - ie when Press hass returned true."
+          },
+          "DocId": "M:Sandbox.Component.IPressable.Release(Sandbox.Component.IPressable.Event)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.Component.IPressable.Event"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.CanPress",
+          "Name": "CanPress",
+          "DeclaringType": "Sandbox.Component.IPressable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return true if the press is possible right now"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IPressable.cs",
+                "61"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if the press is possible right now"
+          },
+          "DocId": "M:Sandbox.Component.IPressable.CanPress(Sandbox.Component.IPressable.Event)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.Component.IPressable.Tooltip>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.Component.IPressable.Event"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.GetTooltip",
+          "Name": "GetTooltip",
+          "DeclaringType": "Sandbox.Component.IPressable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a tooltip to show when looking at this pressable"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\IPressable.cs",
+                "66"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a tooltip to show when looking at this pressable"
+          },
+          "DocId": "M:Sandbox.Component.IPressable.GetTooltip(Sandbox.Component.IPressable.Event)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.IPressable",
+      "Name": "IPressable",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "A component that can be pressed. Like a button. This could be by \na player USE'ing it, or by a player walking on it, or by an NPC.\nA call to Press should ALWAYS call release afterwards. Generally\nthis is done by the player, where holding E presses the button, and\nreleasing E stops pressing it. You need to handle edge cases where\nthe player dies while holding etc."
+      },
+      "DocId": "T:Sandbox.Component.IPressable"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Source",
+              "Out": true,
+              "Type": "Sandbox.Component"
+            },
+            {
+              "Name": "Ray",
+              "Out": true,
+              "Type": "System.Nullable`1<Ray>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Event.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Component.IPressable.Event",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Component.IPressable.Event.Deconstruct(Sandbox.Component@,System.Nullable`1{Ray}@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Source",
+              "Type": "Sandbox.Component"
+            },
+            {
+              "Name": "Ray",
+              "Type": "System.Nullable`1<Ray>",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Event..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Component.IPressable.Event",
+          "DocId": "M:Sandbox.Component.IPressable.Event.#ctor(Sandbox.Component,System.Nullable`1{Ray})"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Component",
+          "Loc": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Event.Source",
+          "Name": "Source",
+          "DocId": "P:Sandbox.Component.IPressable.Event.Source"
+        },
+        {
+          "PropertyType": "System.Nullable`1<Ray>",
+          "Loc": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Event.Ray",
+          "Name": "Ray",
+          "DocId": "P:Sandbox.Component.IPressable.Event.Ray"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.IPressable.Event",
+      "Name": "Event",
+      "DeclaringType": "Sandbox.Component/IPressable",
+      "Documentation": {
+        "Summary": "Describes who pressed it."
+      },
+      "DocId": "T:Sandbox.Component.IPressable.Event"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Title",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Description",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Enabled",
+              "Out": true,
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "Pressable",
+              "Out": true,
+              "Type": "Sandbox.Component.IPressable"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Tooltip.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Component.IPressable.Tooltip",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Component.IPressable.Tooltip.Deconstruct(System.String@,System.String@,System.String@,System.Boolean@,Sandbox.Component.IPressable@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Description",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Enabled",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "Pressable",
+              "Type": "Sandbox.Component.IPressable",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Tooltip..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Component.IPressable.Tooltip",
+          "Documentation": {
+            "Summary": "A tooltip to show when looking at this pressable"
+          },
+          "DocId": "M:Sandbox.Component.IPressable.Tooltip.#ctor(System.String,System.String,System.String,System.Boolean,Sandbox.Component.IPressable)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Tooltip.Title",
+          "Name": "Title",
+          "DocId": "P:Sandbox.Component.IPressable.Tooltip.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Tooltip.Icon",
+          "Name": "Icon",
+          "DocId": "P:Sandbox.Component.IPressable.Tooltip.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Tooltip.Description",
+          "Name": "Description",
+          "DocId": "P:Sandbox.Component.IPressable.Tooltip.Description"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Tooltip.Enabled",
+          "Name": "Enabled",
+          "DocId": "P:Sandbox.Component.IPressable.Tooltip.Enabled"
+        },
+        {
+          "PropertyType": "Sandbox.Component.IPressable",
+          "Loc": {
+            "File": "Scene/Components/Markers/IPressable.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.IPressable.Tooltip.Pressable",
+          "Name": "Pressable",
+          "DocId": "P:Sandbox.Component.IPressable.Tooltip.Pressable"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.IPressable.Tooltip",
+      "Name": "Tooltip",
+      "DeclaringType": "Sandbox.Component/IPressable",
+      "Documentation": {
+        "Summary": "A tooltip to show when looking at this pressable"
+      },
+      "DocId": "T:Sandbox.Component.IPressable.Tooltip"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Markers/ISceneStage.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.ISceneStage.Start",
+          "Name": "Start",
+          "DeclaringType": "Sandbox.Component.ISceneStage",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\ISceneStage.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Component.ISceneStage.Start"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Markers/ISceneStage.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.ISceneStage.End",
+          "Name": "End",
+          "DeclaringType": "Sandbox.Component.ISceneStage",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\ISceneStage.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Component.ISceneStage.End"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.ISceneStage",
+      "Name": "ISceneStage",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "Called on update start. This is the very first thing called."
+      },
+      "DocId": "T:Sandbox.Component.ISceneStage"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Markers/ITemporaryEffect.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.ITemporaryEffect.DisableLooping",
+          "Name": "DisableLooping",
+          "DeclaringType": "Sandbox.Component.ITemporaryEffect",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Indicates to the target object that we want it to die. If it's looping then it should stop now and put itself in a state where it will eventually die."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\ITemporaryEffect.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Indicates to the target object that we want it to die. If it's looping then\nit should stop now and put itself in a state where it will eventually die."
+          },
+          "DocId": "M:Sandbox.Component.ITemporaryEffect.DisableLooping"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "go",
+              "Type": "Sandbox.GameObject"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Markers/ITemporaryEffect.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Component.ITemporaryEffect.DisableLoopingEffects",
+          "Name": "DisableLoopingEffects",
+          "DeclaringType": "Sandbox.Component.ITemporaryEffect",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Disable the any looping effects. This indicates to the target object that we want it to die soon."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\ITemporaryEffect.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Disable the any looping effects. This indicates to the target object that we want it to die soon."
+          },
+          "DocId": "M:Sandbox.Component.ITemporaryEffect.DisableLoopingEffects(Sandbox.GameObject)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.ITemporaryEffect.IsActive",
+          "Name": "IsActive",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should return true if the effect is active in a visible way"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\ITemporaryEffect.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should return true if the effect is active in a visible way"
+          },
+          "DocId": "P:Sandbox.Component.ITemporaryEffect.IsActive"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.ITemporaryEffect",
+      "Name": "ITemporaryEffect",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "Allows components to indicate their state in a generic way. This is useful if you have a temporary effect system in which\nyou want to remove GameObjects when their effects have all finished."
+      },
+      "DocId": "T:Sandbox.Component.ITemporaryEffect"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "Color",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Component.ITintable.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Markers\\ITintable.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Component.ITintable.Color"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Component.ITintable",
+      "Name": "ITintable",
+      "DeclaringType": "Sandbox.Component",
+      "Documentation": {
+        "Summary": "A <see cref=\"T:Sandbox.Component\" /> that lets you change its color."
+      },
+      "DocId": "T:Sandbox.Component.ITintable"
+    }
+  ],
+  "_metadata": {
+    "chunk": 80,
+    "items_count": 17
+  }
+}

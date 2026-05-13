@@ -1,0 +1,2667 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "57"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Bitmap.Dispose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears the bitmap to the specified color."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "70"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears the bitmap to the specified color.",
+            "Params": {
+              "color": "The color to fill the bitmap with."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.Clear(Color)"
+        },
+        {
+          "ReturnType": "Color[]",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.GetPixels",
+          "Name": "GetPixels",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Retrieves the pixel data of the bitmap as an array of colors."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "78"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Retrieves the pixel data of the bitmap as an array of colors."
+          },
+          "DocId": "M:Sandbox.Bitmap.GetPixels"
+        },
+        {
+          "ReturnType": "Color.Rgba16[]",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.GetPixels16",
+          "Name": "GetPixels16",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Retrieves the pixel data of the bitmap as an array of colors."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "108"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Retrieves the pixel data of the bitmap as an array of colors."
+          },
+          "DocId": "M:Sandbox.Bitmap.GetPixels16"
+        },
+        {
+          "ReturnType": "Color32[]",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 131
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.GetPixels32",
+          "Name": "GetPixels32",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Retrieves the pixel data of the bitmap as an array of colors."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "128"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Retrieves the pixel data of the bitmap as an array of colors."
+          },
+          "DocId": "M:Sandbox.Bitmap.GetPixels32"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "colors",
+              "Type": "Color[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 158
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.SetPixels",
+          "Name": "SetPixels",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "155"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Bitmap.SetPixels(Color[])"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "y",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 193
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.GetPixel",
+          "Name": "GetPixel",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Retrieves the color of a specific pixel in the bitmap."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "191"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Retrieves the color of a specific pixel in the bitmap.",
+            "Return": "The color of the pixel at the specified coordinates.",
+            "Params": {
+              "x": "The x-coordinate of the pixel.",
+              "y": "The y-coordinate of the pixel."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.GetPixel(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "y",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 206
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.SetPixel",
+          "Name": "SetPixel",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the color of a specific pixel in the bitmap."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "204"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the color of a specific pixel in the bitmap.",
+            "Params": {
+              "x": "The x-coordinate of the pixel.",
+              "y": "The y-coordinate of the pixel.",
+              "color": "The color to set the pixel to."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.SetPixel(System.Int32,System.Int32,Color)"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 261
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Clone",
+          "Name": "Clone",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Copy the bitmap to a new one without any changes."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "258"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Copy the bitmap to a new one without any changes."
+          },
+          "DocId": "M:Sandbox.Bitmap.Clone"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.IsOpaque",
+          "Name": "IsOpaque",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if this bitmap is completely opaque (no alpha) This does a pixel by pixel search, so it's not the fastest."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "269"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if this bitmap is completely opaque (no alpha)\nThis does a pixel by pixel search, so it's not the fastest."
+          },
+          "DocId": "M:Sandbox.Bitmap.IsOpaque"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawRect",
+          "Name": "DrawRect",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a rectangle using the current pen settings."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a rectangle using the current pen settings.",
+            "Params": {
+              "rect": "The rectangle to draw."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawRect(Sandbox.Rect)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "y",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "width",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "height",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawRect",
+          "Name": "DrawRect",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a rectangle using the current pen settings."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a rectangle using the current pen settings.",
+            "Params": {
+              "x": "The x-coordinate of the top-left corner.",
+              "y": "The y-coordinate of the top-left corner.",
+              "width": "The width of the rectangle.",
+              "height": "The height of the rectangle."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawRect(System.Single,System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "margins",
+              "Type": "Sandbox.UI.Margin"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawRoundRect",
+          "Name": "DrawRoundRect",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a rectangle using the current pen settings."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "33"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a rectangle using the current pen settings."
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawRoundRect(Sandbox.Rect,Sandbox.UI.Margin)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "center",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawCircle",
+          "Name": "DrawCircle",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a circle using the current pen settings."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "47"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a circle using the current pen settings.",
+            "Params": {
+              "center": "The center of the circle.",
+              "radius": "The radius of the circle."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawCircle(Vector2,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "y",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawCircle",
+          "Name": "DrawCircle",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a circle using the current pen settings."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "58"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a circle using the current pen settings.",
+            "Params": {
+              "x": "The x-coordinate of the circle's center.",
+              "y": "The y-coordinate of the circle's center.",
+              "radius": "The radius of the circle."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawCircle(System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "points",
+              "Type": "Vector2[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawPolygon",
+          "Name": "DrawPolygon",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a polygon using the current pen settings."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "67"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a polygon using the current pen settings.",
+            "Params": {
+              "points": "The points of the polygon."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawPolygon(Vector2[])"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "startAngle",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "sweepAngle",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawArc",
+          "Name": "DrawArc",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws an arc using the current pen settings."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws an arc using the current pen settings.",
+            "Params": {
+              "rect": "The bounding rectangle of the arc.",
+              "startAngle": "The starting angle of the arc, in degrees.",
+              "sweepAngle": "The sweep angle of the arc, in degrees."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawArc(Sandbox.Rect,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "startAngle",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "sweepAngle",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "useCenter",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 101
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawArc",
+          "Name": "DrawArc",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws an arc using the current pen settings, with an option to connect to the center."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "99"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws an arc using the current pen settings, with an option to connect to the center.",
+            "Params": {
+              "rect": "The bounding rectangle of the arc.",
+              "startAngle": "The starting angle of the arc, in degrees.",
+              "sweepAngle": "The sweep angle of the arc, in degrees.",
+              "useCenter": "If true, connects the arc endpoints to the center point, forming a pie shape."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawArc(Sandbox.Rect,System.Single,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "bitmap",
+              "Type": "Sandbox.Bitmap"
+            },
+            {
+              "Name": "destRect",
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawBitmap",
+          "Name": "DrawBitmap",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws another bitmap onto this bitmap."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "109"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws another bitmap onto this bitmap.",
+            "Params": {
+              "bitmap": "The bitmap to draw.",
+              "destRect": "The destination rectangle for the drawn bitmap."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawBitmap(Sandbox.Bitmap,Sandbox.Rect)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "start",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "end",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawLine",
+          "Name": "DrawLine",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a line using the current pen settings."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "119"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a line using the current pen settings.",
+            "Params": {
+              "start": "The starting point of the line.",
+              "end": "The ending point of the line."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawLine(Vector2,Vector2)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "points",
+              "Type": "Vector2[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Draw.cs",
+            "Line": 131
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawLines",
+          "Name": "DrawLines",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws connected lines through a series of points using the current pen settings."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+                "128"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws connected lines through a series of points using the current pen settings.",
+            "Params": {
+              "points": "The points to connect with lines."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawLines(Vector2[])"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "tileClamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Filters.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Blur",
+          "Name": "Blur",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Applies a Gaussian blur effect to the current bitmap."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Filters.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Applies a Gaussian blur effect to the current bitmap.",
+            "Params": {
+              "radius": "The radius of the blur, controlling its intensity. Must be non-negative.",
+              "tileClamp": "Determines the behavior at the edges of the bitmap:\n            <c>true</c> to clamp the edges (default), or <c>false</c> to repeat the edges."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.Blur(System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "amount",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "tileClamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Filters.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Sharpen",
+          "Name": "Sharpen",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Applies a Gaussian blur effect to the current bitmap."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Filters.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Applies a Gaussian blur effect to the current bitmap."
+          },
+          "DocId": "M:Sandbox.Bitmap.Sharpen(System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "brightness",
+              "Type": "System.Single",
+              "Default": "1"
+            },
+            {
+              "Name": "contrast",
+              "Type": "System.Single",
+              "Default": "1"
+            },
+            {
+              "Name": "saturation",
+              "Type": "System.Single",
+              "Default": "1"
+            },
+            {
+              "Name": "hueDegrees",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Filters.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Adjust",
+          "Name": "Adjust",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adjusts brightness, contrast, and saturation in one pass."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Filters.cs",
+                "55"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adjusts brightness, contrast, and saturation in one pass."
+          },
+          "DocId": "M:Sandbox.Bitmap.Adjust(System.Single,System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "angle",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Filters.cs",
+            "Line": 110
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.AdjustHue",
+          "Name": "AdjustHue",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adjusts the hue of the bitmap."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Filters.cs",
+                "108"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adjusts the hue of the bitmap.",
+            "Params": {
+              "angle": "The angle to rotate the hue, in degrees (0 to 360)."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.AdjustHue(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Filters.cs",
+            "Line": 140
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Colorize",
+          "Name": "Colorize",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Color the bitmap using this color, respect alpha"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Filters.cs",
+                "137"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Color the bitmap using this color, respect alpha"
+          },
+          "DocId": "M:Sandbox.Bitmap.Colorize(Color)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Filters.cs",
+            "Line": 156
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Tint",
+          "Name": "Tint",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tint the bitmap using this color, respect alpha"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Filters.cs",
+                "153"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tint the bitmap using this color, respect alpha",
+            "Params": {
+              "color": ""
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.Tint(Color)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "margin",
+              "Type": "Sandbox.UI.Margin"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Filters.cs",
+            "Line": 171
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.InsertPadding",
+          "Name": "InsertPadding",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Shrink the image by adding padding all around - without resizing the bitmap"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Filters.cs",
+                "168"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Shrink the image by adding padding all around - without resizing the bitmap"
+          },
+          "DocId": "M:Sandbox.Bitmap.InsertPadding(Sandbox.UI.Margin)"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [
+            {
+              "Name": "strength",
+              "Type": "System.Single",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Filters.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.HeightmapToNormalMap",
+          "Name": "HeightmapToNormalMap",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Converts a heightmap to a normal map using parallel processing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Filters.cs",
+                "219"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Converts a heightmap to a normal map using parallel processing.",
+            "Return": "The generated normal map as an SKBitmap.",
+            "Params": {
+              "strength": "The strength of the normal map effect (default is 1.0)."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.HeightmapToNormalMap(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Filters.cs",
+            "Line": 284
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.InvertColor",
+          "Name": "InvertColor",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Inverts the colors of the bitmap while preserving alpha."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Filters.cs",
+                "281"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Inverts the colors of the bitmap while preserving alpha."
+          },
+          "DocId": "M:Sandbox.Bitmap.InvertColor"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Byte[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Loading.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Bitmap.CreateFromBytes",
+          "Name": "CreateFromBytes",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Loads a bitmap from the specified byte array."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Loading.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Loads a bitmap from the specified byte array.",
+            "Return": "A new <see cref=\"T:Sandbox.Bitmap\" /> instance.",
+            "Params": {
+              "data": "The byte array containing the image data."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.CreateFromBytes(System.Byte[])"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Byte[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Loading.Ies.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Bitmap.CreateFromIesBytes",
+          "Name": "CreateFromIesBytes",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Loading.Ies.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Bitmap.CreateFromIesBytes(System.Byte[])"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Byte[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Loading.Ies.cs",
+            "Line": 239
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Bitmap.IsIes",
+          "Name": "IsIes",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return true if this data is a Ies file"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Loading.Ies.cs",
+                "236"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if this data is a Ies file"
+          },
+          "DocId": "M:Sandbox.Bitmap.IsIes(System.Byte[])"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Byte[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Loading.Psd.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Bitmap.CreateFromPsdBytes",
+          "Name": "CreateFromPsdBytes",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Creates a Bitmap instance from PSD file data."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Loading.Psd.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Creates a Bitmap instance from PSD file data.",
+            "Return": "A Bitmap instance if successful, or null if the data is not valid PSD.",
+            "Params": {
+              "data": "Byte array containing the PSD file data."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.CreateFromPsdBytes(System.Byte[])"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Byte[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Loading.Psd.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Bitmap.IsPsd",
+          "Name": "IsPsd",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Checks if the provided byte array is a valid PSD file."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Loading.Psd.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Checks if the provided byte array is a valid PSD file.",
+            "Return": "True if the data is a PSD file, otherwise false.",
+            "Params": {
+              "data": "Byte array to check."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.IsPsd(System.Byte[])"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [
+            {
+              "Name": "svgContents",
+              "Type": "System.String"
+            },
+            {
+              "Name": "width",
+              "Type": "System.Nullable`1<System.Int32>"
+            },
+            {
+              "Name": "height",
+              "Type": "System.Nullable`1<System.Int32>"
+            },
+            {
+              "Name": "scale",
+              "Type": "System.Nullable`1<Vector2>",
+              "Default": "null"
+            },
+            {
+              "Name": "offset",
+              "Type": "System.Nullable`1<Vector2>",
+              "Default": "null"
+            },
+            {
+              "Name": "rotation",
+              "Type": "System.Nullable`1<System.Single>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Loading.Svg.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Bitmap.CreateFromSvgString",
+          "Name": "CreateFromSvgString",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a bitmap from an SVG, with optional size"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Loading.Svg.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Bitmap.CreateFromSvgString(System.String,System.Nullable`1{System.Int32},System.Nullable`1{System.Int32},System.Nullable`1{Vector2},System.Nullable`1{Vector2},System.Nullable`1{System.Single})"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Byte[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Loading.Tga.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Bitmap.CreateFromTgaBytes",
+          "Name": "CreateFromTgaBytes",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Loading.Tga.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Bitmap.CreateFromTgaBytes(System.Byte[])"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Byte[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Loading.Tga.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Bitmap.IsTga",
+          "Name": "IsTga",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return true if this data is a Tga file"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Loading.Tga.cs",
+                "37"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if this data is a Tga file"
+          },
+          "DocId": "M:Sandbox.Bitmap.IsTga(System.Byte[])"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Byte[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Loading.Tif.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Bitmap.CreateFromTifBytes",
+          "Name": "CreateFromTifBytes",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Loading.Tif.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Bitmap.CreateFromTifBytes(System.Byte[])"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.ReadOnlySpan`1<System.Byte>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Loading.Tif.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Bitmap.IsTif",
+          "Name": "IsTif",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Loading.Tif.cs",
+                "38"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Bitmap.IsTif(System.ReadOnlySpan`1{System.Byte})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "on",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Pen.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.SetAntialias",
+          "Name": "SetAntialias",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the pen for drawing with a solid color and stroke style."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Pen.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the pen for drawing with a solid color and stroke style."
+          },
+          "DocId": "M:Sandbox.Bitmap.SetAntialias(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "blendMode",
+              "Type": "Sandbox.BlendMode"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Pen.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.SetBlendMode",
+          "Name": "SetBlendMode",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the pen to use a specific blend mode."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Pen.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the pen to use a specific blend mode.",
+            "Params": {
+              "blendMode": "The blend mode to apply."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.SetBlendMode(Sandbox.BlendMode)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "width",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Pen.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.SetPen",
+          "Name": "SetPen",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the pen for drawing with a solid color and stroke style."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Pen.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the pen for drawing with a solid color and stroke style.",
+            "Params": {
+              "color": "The color of the pen.",
+              "width": "The width of the pen in pixels."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.SetPen(Color,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "width",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "dashPattern",
+              "Type": "System.Single[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Pen.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.SetDashedPen",
+          "Name": "SetDashedPen",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the pen for drawing dashed or dotted lines."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Pen.cs",
+                "61"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the pen for drawing dashed or dotted lines.",
+            "Params": {
+              "color": "The color of the pen.",
+              "width": "The width of the pen in pixels.",
+              "dashPattern": "An array defining the dash pattern (e.g., [10, 5] for 10px dash, 5px gap)."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.SetDashedPen(Color,System.Single,System.Single[])"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Pen.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.SetFill",
+          "Name": "SetFill",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the pen for drawing filled shapes with a solid color."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Pen.cs",
+                "76"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the pen for drawing filled shapes with a solid color.",
+            "Params": {
+              "color": "The color to fill the shapes with."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.SetFill(Color)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "start",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "end",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "gradient",
+              "Type": "Sandbox.Gradient"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Pen.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.SetLinearGradient",
+          "Name": "SetLinearGradient",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the pen for drawing with a linear gradient."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Pen.cs",
+                "94"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the pen for drawing with a linear gradient.",
+            "Params": {
+              "start": "the gradient's start point.",
+              "end": "the gradient's end point.",
+              "gradient": "The color of the gradient."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.SetLinearGradient(Vector2,Vector2,Sandbox.Gradient)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "center",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "gradient",
+              "Type": "Sandbox.Gradient"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Pen.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.SetRadialGradient",
+          "Name": "SetRadialGradient",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the pen for drawing with a radial gradient."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Pen.cs",
+                "118"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the pen for drawing with a radial gradient.",
+            "Params": {
+              "center": "The gradient's center.",
+              "radius": "The radius of the gradient.",
+              "gradient": "The color of the gradient."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.SetRadialGradient(Vector2,System.Single,Sandbox.Gradient)"
+        },
+        {
+          "ReturnType": "System.Byte[]",
+          "Parameters": [
+            {
+              "Name": "quality",
+              "Type": "System.Int32",
+              "Default": "100"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Saving.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.ToJpg",
+          "Name": "ToJpg",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Exports the bitmap as a JPEG byte array with the specified quality."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Saving.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Exports the bitmap as a JPEG byte array with the specified quality.",
+            "Return": "A byte array containing the JPEG image data.",
+            "Params": {
+              "quality": "The quality of the JPEG, between 0 and 100."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.ToJpg(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Byte[]",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Saving.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.ToPng",
+          "Name": "ToPng",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Exports the bitmap as a PNG byte array."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Saving.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Exports the bitmap as a PNG byte array.",
+            "Return": "A byte array containing the PNG image data."
+          },
+          "DocId": "M:Sandbox.Bitmap.ToPng"
+        },
+        {
+          "ReturnType": "System.Byte[]",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Saving.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.ToBmp",
+          "Name": "ToBmp",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Exports the bitmap as a BMP byte array."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Saving.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Exports the bitmap as a BMP byte array.",
+            "Return": "A byte array containing the BMP image data."
+          },
+          "DocId": "M:Sandbox.Bitmap.ToBmp"
+        },
+        {
+          "ReturnType": "System.Byte[]",
+          "Parameters": [
+            {
+              "Name": "quality",
+              "Type": "System.Int32",
+              "Default": "100"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Saving.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.ToWebP",
+          "Name": "ToWebP",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Exports the bitmap as an HDR WebP byte array with the specified quality."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Saving.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Exports the bitmap as an HDR WebP byte array with the specified quality.",
+            "Return": "A byte array containing the WebP HDR image data.",
+            "Params": {
+              "quality": "The quality of the WebP image, between 0 and 100."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.ToWebP(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Byte[]",
+          "Parameters": [
+            {
+              "Name": "format",
+              "Type": "Sandbox.ImageFormat"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Saving.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.ToFormat",
+          "Name": "ToFormat",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Exports the bitmap to the specified engine format"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Saving.cs",
+                "62"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Exports the bitmap to the specified engine format"
+          },
+          "DocId": "M:Sandbox.Bitmap.ToFormat(Sandbox.ImageFormat)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scope",
+              "Type": "Sandbox.TextRendering.Scope"
+            },
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "132"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Text.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.DrawText",
+          "Name": "DrawText",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws text onto this bitmap"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Text.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws text onto this bitmap"
+          },
+          "DocId": "M:Sandbox.Bitmap.DrawText(Sandbox.TextRendering.Scope,Sandbox.Rect,Sandbox.TextFlag)"
+        },
+        {
+          "ReturnType": "Sandbox.Texture",
+          "Parameters": [
+            {
+              "Name": "mips",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Texture.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.ToTexture",
+          "Name": "ToTexture",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Try to create a texture from this bitmap"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Texture.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Try to create a texture from this bitmap"
+          },
+          "DocId": "M:Sandbox.Bitmap.ToTexture(System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Transforms.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Rotate",
+          "Name": "Rotate",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Rotates the bitmap by the specified angle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Transforms.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Rotates the bitmap by the specified angle.",
+            "Return": "A new <see cref=\"T:Sandbox.Bitmap\" /> instance with the rotated image.",
+            "Params": {
+              "degrees": "The angle in degrees to rotate the bitmap."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.Rotate(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [
+            {
+              "Name": "newWidth",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "newHeight",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "smooth",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Transforms.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Resize",
+          "Name": "Resize",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Resizes the bitmap to the specified dimensions and returns a new bitmap."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Transforms.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Resizes the bitmap to the specified dimensions and returns a new bitmap.",
+            "Return": "A new <see cref=\"T:Sandbox.Bitmap\" /> instance with the specified dimensions.",
+            "Params": {
+              "newWidth": "The new width of the bitmap.",
+              "newHeight": "The new height of the bitmap.",
+              "smooth": "Resample smoothly. If false this will be nearest neighbour."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.Resize(System.Int32,System.Int32,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Transforms.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.FlipVertical",
+          "Name": "FlipVertical",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Flips the bitmap vertically."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Transforms.cs",
+                "58"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Flips the bitmap vertically.",
+            "Return": "A new <see cref=\"T:Sandbox.Bitmap\" /> instance with the flipped image."
+          },
+          "DocId": "M:Sandbox.Bitmap.FlipVertical"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Transforms.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.FlipHorizontal",
+          "Name": "FlipHorizontal",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Flips the bitmap horizontally."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Transforms.cs",
+                "76"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Flips the bitmap horizontally.",
+            "Return": "A new <see cref=\"T:Sandbox.Bitmap\" /> instance with the flipped image."
+          },
+          "DocId": "M:Sandbox.Bitmap.FlipHorizontal"
+        },
+        {
+          "ReturnType": "Sandbox.Bitmap",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.Transforms.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Crop",
+          "Name": "Crop",
+          "DeclaringType": "Sandbox.Bitmap",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Crops the bitmap to the specified rectangle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.Transforms.cs",
+                "95"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Crops the bitmap to the specified rectangle.",
+            "Return": "A new <see cref=\"T:Sandbox.Bitmap\" /> instance with the cropped image.",
+            "Params": {
+              "rect": "The rectangle to crop to."
+            }
+          },
+          "DocId": "M:Sandbox.Bitmap.Crop(Sandbox.Rect)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "width",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "height",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "floatingPoint",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Bitmap",
+          "DocId": "M:Sandbox.Bitmap.#ctor(System.Int32,System.Int32,System.Boolean)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Bitmap.Width"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Bitmap.Height"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.BytesPerPixel",
+          "Name": "BytesPerPixel",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Bitmap.BytesPerPixel"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.ByteCount",
+          "Name": "ByteCount",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Bitmap.ByteCount"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Rect",
+          "Name": "Rect",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Bitmap.Rect"
+        },
+        {
+          "PropertyType": "Vector2Int",
+          "Loc": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The width and height of the bitmap"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The width and height of the bitmap"
+          },
+          "DocId": "P:Sandbox.Bitmap.Size"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.Center",
+          "Name": "Center",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Bitmap.Center"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.IsFloatingPoint",
+          "Name": "IsFloatingPoint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Bitmap.IsFloatingPoint"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Resources/Textures/Bitmap/Bitmap.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Bitmap.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Bitmap\\Bitmap.cs",
+                "27"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Bitmap.IsValid"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Bitmap",
+      "Name": "Bitmap",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Draw.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Filters.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Loading.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Loading.Ies.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Loading.Psd.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Loading.Svg.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Loading.Tga.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Loading.Tif.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Pen.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Saving.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Text.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Texture.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Bitmap\\Bitmap.Transforms.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Bitmap"
+    }
+  ],
+  "_metadata": {
+    "chunk": 65,
+    "items_count": 1
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.VideoWriter.EncodingPreset",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.EncodingPreset.Fast",
+          "Name": "Fast",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Optimized for speed. Suitable for real-time recording."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Optimized for speed. Suitable for real-time recording."
+          },
+          "DocId": "F:Sandbox.VideoWriter.EncodingPreset.Fast"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.EncodingPreset",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.EncodingPreset.Balanced",
+          "Name": "Balanced",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Balanced speed and quality."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Balanced speed and quality."
+          },
+          "DocId": "F:Sandbox.VideoWriter.EncodingPreset.Balanced"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.EncodingPreset",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.EncodingPreset.Quality",
+          "Name": "Quality",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Optimized for quality. Suitable for offline export."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Optimized for quality. Suitable for offline export."
+          },
+          "DocId": "F:Sandbox.VideoWriter.EncodingPreset.Quality"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VideoWriter.EncodingPreset",
+      "Name": "EncodingPreset",
+      "DeclaringType": "Sandbox.VideoWriter",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Controls the speed/quality tradeoff of video encoding."
+      },
+      "DocId": "T:Sandbox.VideoWriter.EncodingPreset"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.VideoWriter.AudioCodec",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.AudioCodec.Opus",
+          "Name": "Opus",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Opus — high quality, open codec."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Opus — high quality, open codec."
+          },
+          "DocId": "F:Sandbox.VideoWriter.AudioCodec.Opus"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VideoWriter.AudioCodec",
+      "Name": "AudioCodec",
+      "DeclaringType": "Sandbox.VideoWriter",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Audio codec to use for encoding."
+      },
+      "DocId": "T:Sandbox.VideoWriter.AudioCodec"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.VideoWriter.Container",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.Container.MP4",
+          "Name": "MP4",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "MP4 container (does not support transparency)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "MP4 container (does not support transparency)"
+          },
+          "DocId": "F:Sandbox.VideoWriter.Container.MP4"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.Container",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.Container.WebM",
+          "Name": "WebM",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "WebM container (supports transparency)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "WebM container (supports transparency)"
+          },
+          "DocId": "F:Sandbox.VideoWriter.Container.WebM"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.Container",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.Container.WebP",
+          "Name": "WebP",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "WebP container (supports transparency)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "WebP container (supports transparency)"
+          },
+          "DocId": "F:Sandbox.VideoWriter.Container.WebP"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VideoWriter.Container",
+      "Name": "Container",
+      "DeclaringType": "Sandbox.VideoWriter",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.VideoWriter.Container"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/RayTracingAccelerationStructure.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RayTracingAccelerationStructure.IsValid",
+          "Name": "IsValid",
+          "DeclaringType": "Sandbox.RayTracingAccelerationStructure",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets whether this acceleration structure is valid and can be used for ray tracing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RayTracingAccelerationStructure.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets whether this acceleration structure is valid and can be used for ray tracing."
+          },
+          "DocId": "M:Sandbox.RayTracingAccelerationStructure.IsValid"
+        },
+        {
+          "ReturnType": "Sandbox.RayTracingAccelerationStructure",
+          "Parameters": [
+            {
+              "Name": "geometryData",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/RayTracingAccelerationStructure.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.RayTracingAccelerationStructure.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.RayTracingAccelerationStructure",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a ray tracing acceleration structure from scene geometry."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RayTracingAccelerationStructure.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a ray tracing acceleration structure from scene geometry.",
+            "Return": "A new acceleration structure, or null if creation failed.",
+            "Params": {
+              "geometryData": "The geometry data to build the acceleration structure from."
+            }
+          },
+          "DocId": "M:Sandbox.RayTracingAccelerationStructure.Create(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "geometryData",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/RayTracingAccelerationStructure.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RayTracingAccelerationStructure.Update",
+          "Name": "Update",
+          "DeclaringType": "Sandbox.RayTracingAccelerationStructure",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Updates the acceleration structure with new geometry data. This is more efficient than rebuilding from scratch for dynamic geometry."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RayTracingAccelerationStructure.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Updates the acceleration structure with new geometry data.\nThis is more efficient than rebuilding from scratch for dynamic geometry.",
+            "Params": {
+              "geometryData": "The updated geometry data."
+            }
+          },
+          "DocId": "M:Sandbox.RayTracingAccelerationStructure.Update(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/RayTracingAccelerationStructure.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RayTracingAccelerationStructure.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.RayTracingAccelerationStructure",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Releases the native resources associated with this acceleration structure."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\RayTracingAccelerationStructure.cs",
+                "62"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Releases the native resources associated with this acceleration structure."
+          },
+          "DocId": "M:Sandbox.RayTracingAccelerationStructure.Dispose"
+        }
+      ],
+      "Constructors": [],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.RayTracingAccelerationStructure",
+      "Name": "RayTracingAccelerationStructure",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents a ray tracing acceleration structure that contains geometry for efficient ray intersection testing. This is used to organize scene geometry in a hierarchical structure optimized for ray tracing performance."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\RayTracingAccelerationStructure.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents a ray tracing acceleration structure that contains geometry for efficient ray intersection testing.\nThis is used to organize scene geometry in a hierarchical structure optimized for ray tracing performance."
+      },
+      "DocId": "T:Sandbox.RayTracingAccelerationStructure"
+    }
+  ],
+  "_metadata": {
+    "chunk": 158,
+    "items_count": 4
+  }
+}

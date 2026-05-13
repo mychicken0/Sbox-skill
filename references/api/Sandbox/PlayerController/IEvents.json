@@ -1,0 +1,1781 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "angles",
+              "Ref": true,
+              "Type": "Angles"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Events.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IEvents.OnEyeAngles",
+          "Name": "OnEyeAngles",
+          "DeclaringType": "Sandbox.PlayerController.IEvents",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Our eye angles are changing. Allows you to change the sensitivity, or stomp all together."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Events.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Our eye angles are changing. Allows you to change the sensitivity, or stomp all together."
+          },
+          "DocId": "M:Sandbox.PlayerController.IEvents.OnEyeAngles(Angles@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "cam",
+              "Type": "Sandbox.CameraComponent"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Events.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IEvents.PostCameraSetup",
+          "Name": "PostCameraSetup",
+          "DeclaringType": "Sandbox.PlayerController.IEvents",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called after we've set the camera up"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Events.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called after we've set the camera up"
+          },
+          "DocId": "M:Sandbox.PlayerController.IEvents.PostCameraSetup(Sandbox.CameraComponent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Events.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IEvents.OnJumped",
+          "Name": "OnJumped",
+          "DeclaringType": "Sandbox.PlayerController.IEvents",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The player has just jumped"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Events.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The player has just jumped"
+          },
+          "DocId": "M:Sandbox.PlayerController.IEvents.OnJumped"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "distance",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "impactVelocity",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Events.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IEvents.OnLanded",
+          "Name": "OnLanded",
+          "DeclaringType": "Sandbox.PlayerController.IEvents",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The player has landed on the ground, after falling this distance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Events.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The player has landed on the ground, after falling this distance."
+          },
+          "DocId": "M:Sandbox.PlayerController.IEvents.OnLanded(System.Single,Vector3)"
+        },
+        {
+          "ReturnType": "Sandbox.Component",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "go",
+              "Type": "Sandbox.GameObject"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Events.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IEvents.GetUsableComponent",
+          "Name": "GetUsableComponent",
+          "DeclaringType": "Sandbox.PlayerController.IEvents",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Used by the Using system to find components we can interact with. By default we can only interact with IPressable components. Return a component if we can use it, or else return null."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Events.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Used by the Using system to find components we can interact with.\nBy default we can only interact with IPressable components.\nReturn a component if we can use it, or else return null."
+          },
+          "DocId": "M:Sandbox.PlayerController.IEvents.GetUsableComponent(Sandbox.GameObject)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.Component"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Events.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IEvents.StartPressing",
+          "Name": "StartPressing",
+          "DeclaringType": "Sandbox.PlayerController.IEvents",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "We have started using something (use was pressed)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Events.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "We have started using something (use was pressed)"
+          },
+          "DocId": "M:Sandbox.PlayerController.IEvents.StartPressing(Sandbox.Component)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.Component"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Events.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IEvents.StopPressing",
+          "Name": "StopPressing",
+          "DeclaringType": "Sandbox.PlayerController.IEvents",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "We have stopped using something"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Events.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "We have stopped using something"
+          },
+          "DocId": "M:Sandbox.PlayerController.IEvents.StopPressing(Sandbox.Component)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Events.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IEvents.FailPressing",
+          "Name": "FailPressing",
+          "DeclaringType": "Sandbox.PlayerController.IEvents",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "We pressed USE but it did nothing"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Events.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "We pressed USE but it did nothing"
+          },
+          "DocId": "M:Sandbox.PlayerController.IEvents.FailPressing"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Events.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IEvents.PreInput",
+          "Name": "PreInput",
+          "DeclaringType": "Sandbox.PlayerController.IEvents",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "We have a chance to do something before input is processed"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Events.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "We have a chance to do something before input is processed"
+          },
+          "DocId": "M:Sandbox.PlayerController.IEvents.PreInput"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PlayerController.IEvents",
+      "Name": "IEvents",
+      "DeclaringType": "Sandbox.PlayerController",
+      "Documentation": {
+        "Summary": "Events from the PlayerController"
+      },
+      "DocId": "T:Sandbox.PlayerController.IEvents"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "damage",
+              "In": true,
+              "Type": "Sandbox.DamageInfo"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 353
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.OnDamage",
+          "Name": "OnDamage",
+          "DeclaringType": "Sandbox.Prop",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "351"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Prop.OnDamage(Sandbox.DamageInfo@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 408
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.Ignite",
+          "Name": "Ignite",
+          "DeclaringType": "Sandbox.Prop",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "405"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Prop.Ignite"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 433
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.Kill",
+          "Name": "Kill",
+          "DeclaringType": "Sandbox.Prop",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "431"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Prop.Kill"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.CreateExplosion",
+          "Name": "CreateExplosion",
+          "DeclaringType": "Sandbox.Prop",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "448"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Prop.CreateExplosion"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 518
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.NetworkCreateGibs",
+          "Name": "NetworkCreateGibs",
+          "DeclaringType": "Sandbox.Prop",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Rpc.BroadcastAttribute",
+              "ConstructorArguments": [
+                "32"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create the gibs for this prop breaking, over the network. This causes clients to spawn the gibs too."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "514"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create the gibs for this prop breaking, over the network. This causes clients to spawn the gibs too."
+          },
+          "DocId": "M:Sandbox.Prop.NetworkCreateGibs"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.List`1<Sandbox.Gib>",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 526
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.CreateGibs",
+          "Name": "CreateGibs",
+          "DeclaringType": "Sandbox.Prop",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create the gibs and return them."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "523"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create the gibs and return them."
+          },
+          "DocId": "M:Sandbox.Prop.CreateGibs"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 623
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.Break",
+          "Name": "Break",
+          "DeclaringType": "Sandbox.Prop",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ButtonAttribute",
+              "ConstructorArguments": [
+                "Break into separate components",
+                "call_split"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Delete this component and split into the procedural components that this prop created."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "619"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Delete this component and split into the procedural components that this prop created."
+          },
+          "DocId": "M:Sandbox.Prop.Break"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Prop",
+          "DocId": "M:Sandbox.Prop.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Model",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.Model",
+          "Name": "Model",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.Model"
+        },
+        {
+          "PropertyType": "System.UInt64",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.BodyGroups",
+          "Name": "BodyGroups",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Model.BodyGroupMaskAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "HasBodyGroups",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "47"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.BodyGroups"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.MaterialGroup",
+          "Name": "MaterialGroup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Model.MaterialGroupAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "HasMaterialGroups",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "64"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.MaterialGroup"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.Tint",
+          "Name": "Tint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "81"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.Tint"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 99
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Prop.HasMaterialGroups",
+          "Name": "HasMaterialGroups",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "98"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.HasMaterialGroups"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 100
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Prop.HasBodyGroups",
+          "Name": "HasBodyGroups",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "99"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.HasBodyGroups"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 106
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.Health",
+          "Name": "Health",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.SyncAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "101"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.Health"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 114
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.IsStatic",
+          "Name": "IsStatic",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If the prop is static - it won't have dynamic physics. This is usually used for things that you want to be breakable but don't move. Like fences and stuff."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "107"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If the prop is static - it won't have dynamic physics. This is usually used for things that\nyou want to be breakable but don't move. Like fences and stuff."
+          },
+          "DocId": "P:Sandbox.Prop.IsStatic"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 133
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.StartAsleep",
+          "Name": "StartAsleep",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "IsStatic",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Physics will be asleep until it's woken up."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "131"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Physics will be asleep until it's woken up."
+          },
+          "DocId": "P:Sandbox.Prop.StartAsleep"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 135
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.OnPropBreak",
+          "Name": "OnPropBreak",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "134"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.OnPropBreak"
+        },
+        {
+          "PropertyType": "System.Action`1<Sandbox.DamageInfo>",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 136
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.OnPropTakeDamage",
+          "Name": "OnPropTakeDamage",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "135"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.OnPropTakeDamage"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 339
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.IsFlammable",
+          "Name": "IsFlammable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this prop can be set on fire."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "338"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this prop can be set on fire."
+          },
+          "DocId": "P:Sandbox.Prop.IsFlammable"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 344
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.IsExplosive",
+          "Name": "IsExplosive",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this prop will explode when destroyed."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "343"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this prop will explode when destroyed."
+          },
+          "DocId": "P:Sandbox.Prop.IsExplosive"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 350
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.IsOnFire",
+          "Name": "IsOnFire",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.SyncAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "345"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.IsOnFire"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Game/Prop.cs",
+            "Line": 353
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Prop.LastAttacker",
+          "Name": "LastAttacker",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.SyncAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\Prop.cs",
+                "348"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Prop.LastAttacker"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Prop",
+      "Name": "Prop",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Prop"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Game"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "toys"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A prop is defined by its model. The model can define its health and what happens when it breaks. This component is designed to be easy to use - since you only need to define the model. Although you can access the procedural (hidden) components, they aren't saved, so it's a waste of time."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\Prop.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A prop is defined by its model. The model can define its health and what happens when it breaks.\nThis component is designed to be easy to use - since you only need to define the model. Although you can \naccess the procedural (hidden) components, they aren't saved, so it's a waste of time."
+      },
+      "DocId": "T:Sandbox.Prop"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/RadiusDamage.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RadiusDamage.Apply",
+          "Name": "Apply",
+          "DeclaringType": "Sandbox.RadiusDamage",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Apply the damage now"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\RadiusDamage.cs",
+                "74"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Apply the damage now"
+          },
+          "DocId": "M:Sandbox.RadiusDamage.Apply"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sphere",
+              "Type": "Sandbox.Sphere"
+            },
+            {
+              "Name": "damage",
+              "Type": "Sandbox.DamageInfo"
+            },
+            {
+              "Name": "physicsForce",
+              "Type": "System.Single",
+              "Default": "1"
+            },
+            {
+              "Name": "ignore",
+              "Type": "Sandbox.GameObject",
+              "Default": "null"
+            },
+            {
+              "Name": "occlusion",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/RadiusDamage.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.RadiusDamage.ApplyDamage",
+          "Name": "ApplyDamage",
+          "DeclaringType": "Sandbox.RadiusDamage",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\RadiusDamage.cs",
+                "87"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.RadiusDamage.ApplyDamage(Sandbox.Sphere,Sandbox.DamageInfo,System.Single,Sandbox.GameObject,System.Boolean)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/RadiusDamage.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RadiusDamage..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.RadiusDamage",
+          "DocId": "M:Sandbox.RadiusDamage.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/RadiusDamage.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RadiusDamage.Radius",
+          "Name": "Radius",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The radius of the damage area."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\RadiusDamage.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The radius of the damage area."
+          },
+          "DocId": "P:Sandbox.RadiusDamage.Radius"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/RadiusDamage.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RadiusDamage.PhysicsForceScale",
+          "Name": "PhysicsForceScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How much physics force should be applied on explosion?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\RadiusDamage.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How much physics force should be applied on explosion?"
+          },
+          "DocId": "P:Sandbox.RadiusDamage.PhysicsForceScale"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/RadiusDamage.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RadiusDamage.DamageOnEnabled",
+          "Name": "DamageOnEnabled",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If enabled we'll apply damage once as soon as enabled"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\RadiusDamage.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If enabled we'll apply damage once as soon as enabled"
+          },
+          "DocId": "P:Sandbox.RadiusDamage.DamageOnEnabled"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/RadiusDamage.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RadiusDamage.Occlusion",
+          "Name": "Occlusion",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should the world shield victims from damage?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\RadiusDamage.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should the world shield victims from damage?"
+          },
+          "DocId": "P:Sandbox.RadiusDamage.Occlusion"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/RadiusDamage.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RadiusDamage.DamageAmount",
+          "Name": "DamageAmount",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The amount of damage inflicted"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\RadiusDamage.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The amount of damage inflicted"
+          },
+          "DocId": "P:Sandbox.RadiusDamage.DamageAmount"
+        },
+        {
+          "PropertyType": "Sandbox.TagSet",
+          "Loc": {
+            "File": "Scene/Components/Game/RadiusDamage.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RadiusDamage.DamageTags",
+          "Name": "DamageTags",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tags to apply to the damage"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\RadiusDamage.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tags to apply to the damage"
+          },
+          "DocId": "P:Sandbox.RadiusDamage.DamageTags"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Game/RadiusDamage.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.RadiusDamage.Attacker",
+          "Name": "Attacker",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Who should we credit with this attack?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\RadiusDamage.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Who should we credit with this attack?"
+          },
+          "DocId": "P:Sandbox.RadiusDamage.Attacker"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.RadiusDamage",
+      "Name": "RadiusDamage",
+      "Attributes": [
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Game"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "flare"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Applies damage in a radius, with physics force, and optional occlusion"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\RadiusDamage.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Applies damage in a radius, with physics force, and optional occlusion"
+      },
+      "DocId": "T:Sandbox.RadiusDamage"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/SpawnPoint.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SpawnPoint..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SpawnPoint",
+          "DocId": "M:Sandbox.SpawnPoint.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Game/SpawnPoint.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SpawnPoint.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\SpawnPoint.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SpawnPoint.Color"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SpawnPoint",
+      "Name": "SpawnPoint",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Spawn Point"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Game"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "accessibility_new"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/spawnpoint.png"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Dictates where players will spawn when they join the game when using a NetworkHelper."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\SpawnPoint.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Dictates where players will spawn when they join the game when using a NetworkHelper."
+      },
+      "DocId": "T:Sandbox.SpawnPoint"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/TriggerHurt.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TriggerHurt..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.TriggerHurt",
+          "DocId": "M:Sandbox.TriggerHurt.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.TagSet",
+          "Loc": {
+            "File": "Scene/Components/Game/TriggerHurt.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TriggerHurt.DamageTags",
+          "Name": "DamageTags",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Damage"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "These tags will be applied to the emitted <span style=\"color: #4EC9B0;\">DamageInfo</span>"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\TriggerHurt.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "These tags will be applied to the emitted <see cref=\"T:Sandbox.DamageInfo\" />"
+          },
+          "DocId": "P:Sandbox.TriggerHurt.DamageTags"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/TriggerHurt.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TriggerHurt.Damage",
+          "Name": "Damage",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Damage"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How much damage to apply"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\TriggerHurt.cs",
+                "17"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How much damage to apply"
+          },
+          "DocId": "P:Sandbox.TriggerHurt.Damage"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/TriggerHurt.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TriggerHurt.Rate",
+          "Name": "Rate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Damage"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The delay between applying the damage"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\TriggerHurt.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The delay between applying the damage"
+          },
+          "DocId": "P:Sandbox.TriggerHurt.Rate"
+        },
+        {
+          "PropertyType": "Sandbox.TagSet",
+          "Loc": {
+            "File": "Scene/Components/Game/TriggerHurt.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TriggerHurt.Include",
+          "Name": "Include",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Target"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If not empty, the target must have one of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\TriggerHurt.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If not empty, the target must have one of these tags"
+          },
+          "DocId": "P:Sandbox.TriggerHurt.Include"
+        },
+        {
+          "PropertyType": "Sandbox.TagSet",
+          "Loc": {
+            "File": "Scene/Components/Game/TriggerHurt.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TriggerHurt.Exclude",
+          "Name": "Exclude",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Target"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If not empty, the target must not have one of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\TriggerHurt.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If not empty, the target must not have one of these tags"
+          },
+          "DocId": "P:Sandbox.TriggerHurt.Exclude"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.TriggerHurt",
+      "Name": "TriggerHurt",
+      "Attributes": [
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Game"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "medical_services"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Deals damage to objects inside"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\TriggerHurt.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Deals damage to objects inside"
+      },
+      "DocId": "T:Sandbox.TriggerHurt"
+    }
+  ],
+  "_metadata": {
+    "chunk": 86,
+    "items_count": 5
+  }
+}

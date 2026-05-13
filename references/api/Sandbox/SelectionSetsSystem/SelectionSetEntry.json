@@ -1,0 +1,1323 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystems/SelectionSetsSystem.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SelectionSetsSystem.SelectionSetEntry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SelectionSetsSystem.SelectionSetEntry",
+          "DocId": "M:Sandbox.SelectionSetsSystem.SelectionSetEntry.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/SelectionSetsSystem.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SelectionSetsSystem.SelectionSetEntry.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\SelectionSetsSystem.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SelectionSetsSystem.SelectionSetEntry.Name"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<System.Guid>",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/SelectionSetsSystem.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SelectionSetsSystem.SelectionSetEntry.ObjectIds",
+          "Name": "ObjectIds",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\SelectionSetsSystem.cs",
+                "24"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SelectionSetsSystem.SelectionSetEntry.ObjectIds"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/SelectionSetsSystem.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SelectionSetsSystem.SelectionSetEntry.Enabled",
+          "Name": "Enabled",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\SelectionSetsSystem.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SelectionSetsSystem.SelectionSetEntry.Enabled"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SelectionSetsSystem.SelectionSetEntry",
+      "Name": "SelectionSetEntry",
+      "DeclaringType": "Sandbox.SelectionSetsSystem",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\SelectionSetsSystem.cs",
+            "21"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.SelectionSetsSystem.SelectionSetEntry"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameObjectSystem.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.GameObjectSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.GameObjectSystem.Dispose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "stage",
+              "Type": "Sandbox.GameObjectSystem.Stage"
+            },
+            {
+              "Name": "order",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "function",
+              "Type": "System.Action"
+            },
+            {
+              "Name": "debugName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.cs",
+            "Line": 40
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameObjectSystem.Listen",
+          "Name": "Listen",
+          "DeclaringType": "Sandbox.GameObjectSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Listen to a frame stage. Order is used to determine the order in which listeners are called, the default action always happens at 0, so if you want it to happen before you should go to -1, if you want it to happen after go to 1 etc."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.cs",
+                "37"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Listen to a frame stage. Order is used to determine the order in which listeners are called, the default action always happens at 0, so if you\nwant it to happen before you should go to -1, if you want it to happen after go to 1 etc."
+          },
+          "DocId": "M:Sandbox.GameObjectSystem.Listen(Sandbox.GameObjectSystem.Stage,System.Int32,System.Action,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "m",
+              "In": true,
+              "Type": "Sandbox.WrappedMethod"
+            },
+            {
+              "Name": "argument",
+              "Type": "T[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.Network.cs",
+            "Line": 45
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameObjectSystem.__rpc_Wrapper",
+          "Name": "__rpc_Wrapper",
+          "DeclaringType": "Sandbox.GameObjectSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.Network.cs",
+                "41"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.GameObjectSystem.__rpc_Wrapper``1(Sandbox.WrappedMethod@,``0[])"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "m",
+              "In": true,
+              "Type": "Sandbox.WrappedMethod"
+            },
+            {
+              "Name": "argumentList",
+              "Type": "System.Object[]"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.Network.cs",
+            "Line": 52
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameObjectSystem.__rpc_Wrapper",
+          "Name": "__rpc_Wrapper",
+          "DeclaringType": "Sandbox.GameObjectSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.Network.cs",
+                "48"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.GameObjectSystem.__rpc_Wrapper(Sandbox.WrappedMethod@,System.Object[])"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "p",
+              "In": true,
+              "Type": "Sandbox.WrappedPropertySet`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.Network.cs",
+            "Line": 62
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameObjectSystem.__sync_SetValue",
+          "Name": "__sync_SetValue",
+          "DeclaringType": "Sandbox.GameObjectSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.Network.cs",
+                "55"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.GameObjectSystem.__sync_SetValue``1(Sandbox.WrappedPropertySet`1{``0}@)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "p",
+              "Type": "Sandbox.WrappedPropertyGet`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.Network.cs",
+            "Line": 106
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameObjectSystem.__sync_GetValue",
+          "Name": "__sync_GetValue",
+          "DeclaringType": "Sandbox.GameObjectSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.Network.cs",
+                "102"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.GameObjectSystem.__sync_GetValue``1(Sandbox.WrappedPropertyGet`1{``0})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameObjectSystem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.GameObjectSystem",
+          "DocId": "M:Sandbox.GameObjectSystem.#ctor(Sandbox.Scene)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Scene",
+          "Loc": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameObjectSystem.Scene",
+          "Name": "Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.GameObjectSystem.Scene"
+        },
+        {
+          "PropertyType": "System.Guid",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.Network.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GameObjectSystem.Id",
+          "Name": "Id",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.Network.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.GameObjectSystem.Id"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.GameObjectSystem",
+      "Name": "GameObjectSystem",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Allows creation of a system that always exists in every scene, is hooked into the scene's lifecycle, and is disposed when the scene is disposed."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystem\\GameObjectSystem.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Allows creation of a system that always exists in every scene, is hooked into the scene's lifecycle, and is disposed when the scene is disposed."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystem\\GameObjectSystem.Network.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Allows creation of a system that always exists in every scene, is hooked into the scene's lifecycle, \nand is disposed when the scene is disposed."
+      },
+      "DocId": "T:Sandbox.GameObjectSystem"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.GameObjectSystem.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GameObjectSystem.Stage.StartUpdate",
+          "Name": "StartUpdate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "At the very start of the scene update"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "At the very start of the scene update"
+          },
+          "DocId": "F:Sandbox.GameObjectSystem.Stage.StartUpdate"
+        },
+        {
+          "FieldType": "Sandbox.GameObjectSystem.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GameObjectSystem.Stage.UpdateBones",
+          "Name": "UpdateBones",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Bones are worked out"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Bones are worked out"
+          },
+          "DocId": "F:Sandbox.GameObjectSystem.Stage.UpdateBones"
+        },
+        {
+          "FieldType": "Sandbox.GameObjectSystem.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GameObjectSystem.Stage.PhysicsStep",
+          "Name": "PhysicsStep",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Physics step, called in fixed update"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Physics step, called in fixed update"
+          },
+          "DocId": "F:Sandbox.GameObjectSystem.Stage.PhysicsStep"
+        },
+        {
+          "FieldType": "Sandbox.GameObjectSystem.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GameObjectSystem.Stage.Interpolation",
+          "Name": "Interpolation",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When transforms are interpolated"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When transforms are interpolated"
+          },
+          "DocId": "F:Sandbox.GameObjectSystem.Stage.Interpolation"
+        },
+        {
+          "FieldType": "Sandbox.GameObjectSystem.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GameObjectSystem.Stage.FinishUpdate",
+          "Name": "FinishUpdate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "At the very end of the scene update"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "At the very end of the scene update"
+          },
+          "DocId": "F:Sandbox.GameObjectSystem.Stage.FinishUpdate"
+        },
+        {
+          "FieldType": "Sandbox.GameObjectSystem.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GameObjectSystem.Stage.StartFixedUpdate",
+          "Name": "StartFixedUpdate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called at the start of fixed update"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called at the start of fixed update"
+          },
+          "DocId": "F:Sandbox.GameObjectSystem.Stage.StartFixedUpdate"
+        },
+        {
+          "FieldType": "Sandbox.GameObjectSystem.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GameObjectSystem.Stage.FinishFixedUpdate",
+          "Name": "FinishFixedUpdate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called at the end of fixed update"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called at the end of fixed update"
+          },
+          "DocId": "F:Sandbox.GameObjectSystem.Stage.FinishFixedUpdate"
+        },
+        {
+          "FieldType": "Sandbox.GameObjectSystem.Stage",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GameObjectSystem.Stage.SceneLoaded",
+          "Name": "SceneLoaded",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called after a scene has been loaded"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called after a scene has been loaded"
+          },
+          "DocId": "F:Sandbox.GameObjectSystem.Stage.SceneLoaded"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.GameObjectSystem.Stage",
+      "Name": "Stage",
+      "DeclaringType": "Sandbox.GameObjectSystem",
+      "Documentation": {
+        "Summary": "A list of stages in the scene tick in which we can hook"
+      },
+      "DocId": "T:Sandbox.GameObjectSystem.Stage"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "trace",
+              "In": true,
+              "Type": "Sandbox.SceneTrace& modreq(System.Runtime.InteropServices.InAttribute)"
+            },
+            {
+              "Name": "results",
+              "Type": "System.Collections.Generic.List`1<Sandbox.SceneTraceResult>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.GameObjectSystem.ITraceProvider.DoTrace",
+          "Name": "DoTrace",
+          "DeclaringType": "Sandbox.GameObjectSystem.ITraceProvider",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.cs",
+                "96"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.GameObjectSystem.ITraceProvider.DoTrace(Sandbox.SceneTrace& modreq(System.Runtime.InteropServices.InAttribute),System.Collections.Generic.List`1{Sandbox.SceneTraceResult})"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.SceneTraceResult>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "trace",
+              "In": true,
+              "Type": "Sandbox.SceneTrace& modreq(System.Runtime.InteropServices.InAttribute)"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.GameObjectSystem.ITraceProvider.DoTrace",
+          "Name": "DoTrace",
+          "DeclaringType": "Sandbox.GameObjectSystem.ITraceProvider",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.cs",
+                "97"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.GameObjectSystem.ITraceProvider.DoTrace(Sandbox.SceneTrace& modreq(System.Runtime.InteropServices.InAttribute))"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.GameObjectSystem.ITraceProvider",
+      "Name": "ITraceProvider",
+      "DeclaringType": "Sandbox.GameObjectSystem",
+      "Documentation": {
+        "Summary": "When implementing an ITraceProvider, the most important thing to keep in mind\nis that the call to DoTrace should be thread safe. This might be called from\nmultiple threads at once, so you better watch out."
+      },
+      "DocId": "T:Sandbox.GameObjectSystem.ITraceProvider"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.GameObjectSystem",
+      "Methods": [
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GameObjectSystem<T>.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.GameObjectSystem<T>",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.cs",
+                "114"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.GameObjectSystem`1.Get(Sandbox.Scene)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.cs",
+            "Line": 109
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GameObjectSystem<T>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.GameObjectSystem<T>",
+          "DocId": "M:Sandbox.GameObjectSystem`1.#ctor(Sandbox.Scene)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "T",
+          "Loc": {
+            "File": "Scene/GameObjectSystem/GameObjectSystem.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GameObjectSystem<T>.Current",
+          "Name": "Current",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\GameObjectSystem.cs",
+                "112"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.GameObjectSystem`1.Current"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.GameObjectSystem<T>",
+      "Name": "GameObjectSystem<T>",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A syntax sugar wrapper around GameObjectSystem, which allows you to access your system using SystemName.Current instead of Scene.GetSystem."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystem\\GameObjectSystem.cs",
+            "106"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A syntax sugar wrapper around GameObjectSystem, which allows you to access your system using\nSystemName.Current instead of Scene.GetSystem."
+      },
+      "DocId": "T:Sandbox.GameObjectSystem`1"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.ConfigData",
+      "Methods": [
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [
+            {
+              "Name": "systemType",
+              "Type": "Sandbox.TypeDescription"
+            },
+            {
+              "Name": "property",
+              "Type": "Sandbox.PropertyDescription"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/SystemsConfig.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SystemsConfig.GetPropertyValue",
+          "Name": "GetPropertyValue",
+          "DeclaringType": "Sandbox.SystemsConfig",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get property value for a specific system type. Returns the configured value, or a default value for the type if not found."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\SystemsConfig.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get property value for a specific system type.\nReturns the configured value, or a default value for the type if not found."
+          },
+          "DocId": "M:Sandbox.SystemsConfig.GetPropertyValue(Sandbox.TypeDescription,Sandbox.PropertyDescription)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "systemType",
+              "Type": "Sandbox.TypeDescription"
+            },
+            {
+              "Name": "property",
+              "Type": "Sandbox.PropertyDescription"
+            },
+            {
+              "Name": "value",
+              "Out": true,
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/SystemsConfig.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SystemsConfig.TryGetPropertyValue",
+          "Name": "TryGetPropertyValue",
+          "DeclaringType": "Sandbox.SystemsConfig",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Try to get property value for a specific system type. Returns true if the property was found in the config."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\SystemsConfig.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Try to get property value for a specific system type.\nReturns true if the property was found in the config."
+          },
+          "DocId": "M:Sandbox.SystemsConfig.TryGetPropertyValue(Sandbox.TypeDescription,Sandbox.PropertyDescription,System.Object@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "systemType",
+              "Type": "Sandbox.TypeDescription"
+            },
+            {
+              "Name": "property",
+              "Type": "Sandbox.PropertyDescription"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystem/SystemsConfig.cs",
+            "Line": 104
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SystemsConfig.SetPropertyValue",
+          "Name": "SetPropertyValue",
+          "DeclaringType": "Sandbox.SystemsConfig",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set property value for a specific system type"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\SystemsConfig.cs",
+                "101"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set property value for a specific system type"
+          },
+          "DocId": "M:Sandbox.SystemsConfig.SetPropertyValue(Sandbox.TypeDescription,Sandbox.PropertyDescription,System.Object)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystem/SystemsConfig.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SystemsConfig..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SystemsConfig",
+          "DocId": "M:Sandbox.SystemsConfig.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>>",
+          "Loc": {
+            "File": "Scene/GameObjectSystem/SystemsConfig.cs",
+            "Line": 17
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.SystemsConfig.Systems",
+          "Name": "Systems",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Stores GameObjectSystems to property names to property values"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystem\\SystemsConfig.cs",
+                "15"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Stores GameObjectSystems to property names to property values"
+          },
+          "DocId": "P:Sandbox.SystemsConfig.Systems"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SystemsConfig",
+      "Name": "SystemsConfig",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Configuration for GameObjectSystem properties at a project level. Specific scenes may override this as well - but will be serialized directly in the scene."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystem\\SystemsConfig.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Configuration for GameObjectSystem properties at a project level. \nSpecific scenes may override this as well - but will be serialized directly in the scene."
+      },
+      "DocId": "T:Sandbox.SystemsConfig"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.Enabled",
+          "Name": "Enabled",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Components that are enabled"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Components that are enabled"
+          },
+          "DocId": "F:Sandbox.FindMode.Enabled"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.Disabled",
+          "Name": "Disabled",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Components that are disabled"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Components that are disabled"
+          },
+          "DocId": "F:Sandbox.FindMode.Disabled"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.InSelf",
+          "Name": "InSelf",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Components in this object"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Components in this object"
+          },
+          "DocId": "F:Sandbox.FindMode.InSelf"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.InParent",
+          "Name": "InParent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Components in our parent"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Components in our parent"
+          },
+          "DocId": "F:Sandbox.FindMode.InParent"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.InAncestors",
+          "Name": "InAncestors",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Components in all ancestors (parent, their parent, their parent, etc)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Components in all ancestors (parent, their parent, their parent, etc)"
+          },
+          "DocId": "F:Sandbox.FindMode.InAncestors"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.InChildren",
+          "Name": "InChildren",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Components in our children"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Components in our children"
+          },
+          "DocId": "F:Sandbox.FindMode.InChildren"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.InDescendants",
+          "Name": "InDescendants",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Components in all decendants (our children, their children, their children etc)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Components in all decendants (our children, their children, their children etc)"
+          },
+          "DocId": "F:Sandbox.FindMode.InDescendants"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EnabledInSelf",
+          "Name": "EnabledInSelf",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EnabledInSelf"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EnabledInSelfAndDescendants",
+          "Name": "EnabledInSelfAndDescendants",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EnabledInSelfAndDescendants"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EnabledInSelfAndChildren",
+          "Name": "EnabledInSelfAndChildren",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EnabledInSelfAndChildren"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.DisabledInSelf",
+          "Name": "DisabledInSelf",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.DisabledInSelf"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.DisabledInSelfAndDescendants",
+          "Name": "DisabledInSelfAndDescendants",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.DisabledInSelfAndDescendants"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.DisabledInSelfAndChildren",
+          "Name": "DisabledInSelfAndChildren",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.DisabledInSelfAndChildren"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EverythingInSelf",
+          "Name": "EverythingInSelf",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EverythingInSelf"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EverythingInSelfAndDescendants",
+          "Name": "EverythingInSelfAndDescendants",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EverythingInSelfAndDescendants"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EverythingInSelfAndChildren",
+          "Name": "EverythingInSelfAndChildren",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EverythingInSelfAndChildren"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EverythingInSelfAndParent",
+          "Name": "EverythingInSelfAndParent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EverythingInSelfAndParent"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EverythingInSelfAndAncestors",
+          "Name": "EverythingInSelfAndAncestors",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EverythingInSelfAndAncestors"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EverythingInAncestors",
+          "Name": "EverythingInAncestors",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EverythingInAncestors"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EverythingInChildren",
+          "Name": "EverythingInChildren",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EverythingInChildren"
+        },
+        {
+          "FieldType": "Sandbox.FindMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.FindMode.EverythingInDescendants",
+          "Name": "EverythingInDescendants",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.FindMode.EverythingInDescendants"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.FindMode",
+      "Name": "FindMode",
+      "Attributes": [
+        {
+          "FullName": "System.FlagsAttribute"
+        },
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Flags to search for Components.\nI've named this something generic because I think we can re-use it to search for GameObjects too."
+      },
+      "DocId": "T:Sandbox.FindMode"
+    }
+  ],
+  "_metadata": {
+    "chunk": 119,
+    "items_count": 7
+  }
+}

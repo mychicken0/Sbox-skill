@@ -1,0 +1,1457 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.Invalid",
+          "Name": "Invalid",
+          "Documentation": {
+            "Summary": "Invalid or uninitialized account"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.Invalid"
+        },
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.Individual",
+          "Name": "Individual",
+          "Documentation": {
+            "Summary": "Single user account"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.Individual"
+        },
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.Multiseat",
+          "Name": "Multiseat",
+          "Documentation": {
+            "Summary": "Multiseat account (e.g. cybercafe)"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.Multiseat"
+        },
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.GameServer",
+          "Name": "GameServer",
+          "Documentation": {
+            "Summary": "Game server account"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.GameServer"
+        },
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.AnonGameServer",
+          "Name": "AnonGameServer",
+          "Documentation": {
+            "Summary": "Anonymous game server account"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.AnonGameServer"
+        },
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.Pending",
+          "Name": "Pending",
+          "Documentation": {
+            "Summary": "Pending account"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.Pending"
+        },
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.ContentServer",
+          "Name": "ContentServer",
+          "Documentation": {
+            "Summary": "Content server account"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.ContentServer"
+        },
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.Clan",
+          "Name": "Clan",
+          "Documentation": {
+            "Summary": "Steam group/clan"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.Clan"
+        },
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.Lobby",
+          "Name": "Lobby",
+          "Documentation": {
+            "Summary": "Game lobby"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.Lobby"
+        },
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.ConsoleUser",
+          "Name": "ConsoleUser",
+          "Documentation": {
+            "Summary": "Console user (PSN/Xbox Live)"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.ConsoleUser"
+        },
+        {
+          "FieldType": "Sandbox.SteamId.AccountTypes",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.SteamId.AccountTypes.AnonUser",
+          "Name": "AnonUser",
+          "Documentation": {
+            "Summary": "Anonymous user"
+          },
+          "DocId": "F:Sandbox.SteamId.AccountTypes.AnonUser"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.SteamId.AccountTypes",
+      "Name": "AccountTypes",
+      "DeclaringType": "Sandbox.SteamId",
+      "Documentation": {
+        "Summary": "The different types of Steam accounts."
+      },
+      "DocId": "T:Sandbox.SteamId.AccountTypes"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.StringToken",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "token",
+              "Type": "System.UInt32"
+            }
+          ],
+          "l": {
+            "File": "Utility/StringToken.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.StringToken.Literal",
+          "Name": "Literal",
+          "DeclaringType": "Sandbox.StringToken",
+          "Documentation": {
+            "Summary": "This is used by codegen. String literals are replaced by this function call, which\navoids having to create or lookup the string token."
+          },
+          "DocId": "M:Sandbox.StringToken.Literal(System.String,System.UInt32)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Utility/StringToken.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.StringToken..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.StringToken",
+          "DocId": "M:Sandbox.StringToken.#ctor(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "System.UInt32"
+            }
+          ],
+          "l": {
+            "File": "Utility/StringToken.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.StringToken..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.StringToken",
+          "DocId": "M:Sandbox.StringToken.#ctor(System.UInt32)"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.UInt32",
+          "IsPublic": true,
+          "FullName": "Sandbox.StringToken.Value",
+          "Name": "Value",
+          "DocId": "F:Sandbox.StringToken.Value"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.StringToken",
+      "Name": "StringToken",
+      "Documentation": {
+        "Summary": "Strings are commonly converted to tokens in engine, to save space and speed up things like comparisons.\nWe wrap this functionality up in the StringToken struct, because we can apply a bunch of compile time \noptimizations to speed up the conversion."
+      },
+      "DocId": "T:Sandbox.StringToken"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.StringToken.ConvertAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.StringToken.ConvertAttribute",
+          "DocId": "M:Sandbox.StringToken.ConvertAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.StringToken.ConvertAttribute",
+      "Name": "ConvertAttribute",
+      "DeclaringType": "Sandbox.StringToken",
+      "Documentation": {
+        "Summary": "To allow redirecting in the case where a class has both a string and StringToken version of a method.\nWe should be able to remove this when we're compiling on demand instead of keeping the string versions around for compatibility."
+      },
+      "DocId": "T:Sandbox.StringToken.ConvertAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "memberName",
+              "Type": "System.String",
+              "Default": ""
+            }
+          ],
+          "l": {
+            "File": "Utility/ThreadSafe.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ThreadSafe.AssertIsMainThread",
+          "Name": "AssertIsMainThread",
+          "DeclaringType": "Sandbox.ThreadSafe",
+          "Documentation": {
+            "Summary": "Throws an exception if not called from the main thread.\nUseful for enforcing thread safety on main-thread-only APIs.",
+            "Params": {
+              "memberName": "Automatically filled with the calling method name"
+            },
+            "Exceptions": {
+              "System.Exception": "Thrown if not on the main thread"
+            }
+          },
+          "DocId": "M:Sandbox.ThreadSafe.AssertIsMainThread(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/ThreadSafe.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ThreadSafe.AssertIsNotMainThread",
+          "Name": "AssertIsNotMainThread",
+          "DeclaringType": "Sandbox.ThreadSafe",
+          "Documentation": {
+            "Summary": "Throws an exception if called from the main thread.\nUseful for enforcing that blocking operations don't run on the main thread.",
+            "Exceptions": {
+              "System.Exception": "Thrown if on the main thread"
+            }
+          },
+          "DocId": "M:Sandbox.ThreadSafe.AssertIsNotMainThread"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Utility/ThreadSafe.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ThreadSafe.CurrentThreadId",
+          "Name": "CurrentThreadId",
+          "Documentation": {
+            "Summary": "Gets the current thread's managed thread ID."
+          },
+          "DocId": "P:Sandbox.ThreadSafe.CurrentThreadId"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Utility/ThreadSafe.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ThreadSafe.CurrentThreadName",
+          "Name": "CurrentThreadName",
+          "Documentation": {
+            "Summary": "Gets the current thread's name, or null if unnamed."
+          },
+          "DocId": "P:Sandbox.ThreadSafe.CurrentThreadName"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Utility/ThreadSafe.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ThreadSafe.IsMainThread",
+          "Name": "IsMainThread",
+          "Documentation": {
+            "Summary": "Returns true if currently executing on the main thread."
+          },
+          "DocId": "P:Sandbox.ThreadSafe.IsMainThread"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.ThreadSafe",
+      "Name": "ThreadSafe",
+      "Documentation": {
+        "Summary": "Provides utilities for working with threads, particularly for identifying\nand asserting code is running on the main thread."
+      },
+      "DocId": "T:Sandbox.ThreadSafe"
+    },
+    {
+      "Namespace": "Sandbox.Localization",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Localization.LanguageInformation",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Localization/Languages.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Localization.Languages.Find",
+          "Name": "Find",
+          "DeclaringType": "Sandbox.Localization.Languages",
+          "Documentation": {
+            "Summary": "Find a language by shortname, or full name"
+          },
+          "DocId": "M:Sandbox.Localization.Languages.Find(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Sandbox.Localization.LanguageInformation>",
+          "Loc": {
+            "File": "Localization/Languages.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Localization.Languages.List",
+          "Name": "List",
+          "Documentation": {
+            "Summary": "Enumerate all languages, in no particular order"
+          },
+          "DocId": "P:Sandbox.Localization.Languages.List"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Localization.Languages",
+      "Name": "Languages",
+      "Documentation": {
+        "Summary": "A list of supported languages and metadata surrounding them"
+      },
+      "DocId": "T:Sandbox.Localization.Languages"
+    },
+    {
+      "Namespace": "Sandbox.Localization",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "abbreviation",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "rightToLeft",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Localization/Languages.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.LanguageInformation..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Localization.LanguageInformation",
+          "DocId": "M:Sandbox.Localization.LanguageInformation.#ctor(System.String,System.String,System.String,System.Boolean)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Localization/Languages.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.LanguageInformation.Title",
+          "Name": "Title",
+          "Documentation": {
+            "Summary": "Title of the localization language."
+          },
+          "DocId": "P:Sandbox.Localization.LanguageInformation.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Localization/Languages.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.LanguageInformation.Abbreviation",
+          "Name": "Abbreviation",
+          "Documentation": {
+            "Summary": "ISO 639-1 code of the language, with optional ISO 3166-1 alpha-2 country specifiers. (for example \"en-GB\" for British English)"
+          },
+          "DocId": "P:Sandbox.Localization.LanguageInformation.Abbreviation"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Localization/Languages.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.LanguageInformation.Parent",
+          "Name": "Parent",
+          "Documentation": {
+            "Summary": "If set, the <see cref=\"P:Sandbox.Localization.LanguageInformation.Abbreviation\" /> of the parent language. For example, Pirate English is based on English."
+          },
+          "DocId": "P:Sandbox.Localization.LanguageInformation.Parent"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Localization/Languages.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.LanguageInformation.RightToLeft",
+          "Name": "RightToLeft",
+          "Documentation": {
+            "Summary": "Whether the language is typed right to left, such as the Arabic language."
+          },
+          "DocId": "P:Sandbox.Localization.LanguageInformation.RightToLeft"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Localization.LanguageInformation",
+      "Name": "LanguageInformation",
+      "DocId": "T:Sandbox.Localization.LanguageInformation"
+    },
+    {
+      "Namespace": "Sandbox.Localization",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "Parameters": [],
+          "l": {
+            "File": "Localization/Phrase.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.Phrase.Render",
+          "Name": "Render",
+          "DeclaringType": "Sandbox.Localization.Phrase",
+          "Documentation": {
+            "Summary": "Render with no data - basically just returns Value"
+          },
+          "DocId": "M:Sandbox.Localization.Phrase.Render"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.Object>"
+            }
+          ],
+          "l": {
+            "File": "Localization/Phrase.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.Phrase.Render",
+          "Name": "Render",
+          "DeclaringType": "Sandbox.Localization.Phrase",
+          "DocId": "M:Sandbox.Localization.Phrase.Render(System.Collections.Generic.Dictionary`2{System.String,System.Object})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Localization/Phrase.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.Phrase..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Localization.Phrase",
+          "Documentation": {
+            "Summary": "Create a SmartString from a phrase."
+          },
+          "DocId": "M:Sandbox.Localization.Phrase.#ctor(System.String)"
+        }
+      ],
+      "Properties": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Localization.Phrase",
+      "Name": "Phrase",
+      "Documentation": {
+        "Summary": "A translated string. ie \"Hello World\".\nIt might also have variables, ie \"Hello {PlayerName}\".\nTodo support for conditionals and plurals"
+      },
+      "DocId": "T:Sandbox.Localization.Phrase"
+    },
+    {
+      "Namespace": "Sandbox.Localization",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Localization/PhraseCollection.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.PhraseCollection.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Localization.PhraseCollection",
+          "Documentation": {
+            "Summary": "Add a phrase to the language"
+          },
+          "DocId": "M:Sandbox.Localization.PhraseCollection.Set(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "phrase",
+              "Type": "System.String"
+            },
+            {
+              "Name": "data",
+              "Type": "System.Collections.Generic.Dictionary`2<System.String,System.Object>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Localization/PhraseCollection.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.PhraseCollection.GetPhrase",
+          "Name": "GetPhrase",
+          "DeclaringType": "Sandbox.Localization.PhraseCollection",
+          "DocId": "M:Sandbox.Localization.PhraseCollection.GetPhrase(System.String,System.Collections.Generic.Dictionary`2{System.String,System.Object})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Localization/PhraseCollection.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Localization.PhraseCollection..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Localization.PhraseCollection",
+          "DocId": "M:Sandbox.Localization.PhraseCollection.#ctor"
+        }
+      ],
+      "Properties": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Localization.PhraseCollection",
+      "Name": "PhraseCollection",
+      "Documentation": {
+        "Summary": "Holds a bunch of localized phrases"
+      },
+      "DocId": "T:Sandbox.Localization.PhraseCollection"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "classes",
+              "Type": "System.String[]"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleTarget.HasClasses",
+          "Name": "HasClasses",
+          "DeclaringType": "Sandbox.UI.IStyleTarget",
+          "DocId": "M:Sandbox.UI.IStyleTarget.HasClasses(System.String[])"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleTarget.ElementName",
+          "Name": "ElementName",
+          "DocId": "P:Sandbox.UI.IStyleTarget.ElementName"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleTarget.Id",
+          "Name": "Id",
+          "DocId": "P:Sandbox.UI.IStyleTarget.Id"
+        },
+        {
+          "PropertyType": "Sandbox.UI.PseudoClass",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleTarget.PseudoClass",
+          "Name": "PseudoClass",
+          "DocId": "P:Sandbox.UI.IStyleTarget.PseudoClass"
+        },
+        {
+          "PropertyType": "Sandbox.UI.IStyleTarget",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleTarget.Parent",
+          "Name": "Parent",
+          "DocId": "P:Sandbox.UI.IStyleTarget.Parent"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<Sandbox.UI.IStyleTarget>",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleTarget.Children",
+          "Name": "Children",
+          "DocId": "P:Sandbox.UI.IStyleTarget.Children"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleTarget.SiblingIndex",
+          "Name": "SiblingIndex",
+          "DocId": "P:Sandbox.UI.IStyleTarget.SiblingIndex"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.IStyleTarget",
+      "Name": "IStyleTarget",
+      "Documentation": {
+        "Summary": "Everything the style system needs to work out a style"
+      },
+      "DocId": "T:Sandbox.UI.IStyleTarget"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "dimension",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Length.GetPixels",
+          "Name": "GetPixels",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Convert to a pixel value. Use the dimension to work out percentage values."
+          },
+          "DocId": "M:Sandbox.UI.Length.GetPixels(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "dimension",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "contentSize",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 96
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Length.GetPixels",
+          "Name": "GetPixels",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the pixel size but also evaluate content size to support use Start, End, Center"
+          },
+          "DocId": "M:Sandbox.UI.Length.GetPixels(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.UI.Length>",
+          "Parameters": [
+            {
+              "Name": "pixels",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 168
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Pixels",
+          "Name": "Pixels",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Create a length in pixels",
+            "Return": "A new length",
+            "Params": {
+              "pixels": "The amount of pixels for this length"
+            }
+          },
+          "DocId": "M:Sandbox.UI.Length.Pixels(System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.UI.Length>",
+          "Parameters": [
+            {
+              "Name": "percent",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 175
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Percent",
+          "Name": "Percent",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Create a length in percents",
+            "Return": "A new length",
+            "Params": {
+              "percent": "The amount of percent for this (0-100)"
+            }
+          },
+          "DocId": "M:Sandbox.UI.Length.Percent(System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.UI.Length>",
+          "Parameters": [
+            {
+              "Name": "percentage",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 182
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.ViewHeight",
+          "Name": "ViewHeight",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Create a length based on the view height",
+            "Return": "A new length",
+            "Params": {
+              "percentage": "The amount of percent for this (0-100)"
+            }
+          },
+          "DocId": "M:Sandbox.UI.Length.ViewHeight(System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.UI.Length>",
+          "Parameters": [
+            {
+              "Name": "percentage",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 189
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.ViewWidth",
+          "Name": "ViewWidth",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Create a length based on the view width",
+            "Return": "A new length",
+            "Params": {
+              "percentage": "The amount of percent for this (0-100)"
+            }
+          },
+          "DocId": "M:Sandbox.UI.Length.ViewWidth(System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.UI.Length>",
+          "Parameters": [
+            {
+              "Name": "percentage",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 196
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.ViewMax",
+          "Name": "ViewMax",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Create a length based on the longest edge of the screen size",
+            "Return": "A new length",
+            "Params": {
+              "percentage": "The amount of percent for this (0-100)"
+            }
+          },
+          "DocId": "M:Sandbox.UI.Length.ViewMax(System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.UI.Length>",
+          "Parameters": [
+            {
+              "Name": "percentage",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 203
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.ViewMin",
+          "Name": "ViewMin",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Create a length based on the shortest edge of the screen size",
+            "Return": "A new length",
+            "Params": {
+              "percentage": "The amount of percent for this (0-100)"
+            }
+          },
+          "DocId": "M:Sandbox.UI.Length.ViewMin(System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.UI.Length>",
+          "Parameters": [
+            {
+              "Name": "fraction",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 210
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Fraction",
+          "Name": "Fraction",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Create a length in percents",
+            "Return": "A new length",
+            "Params": {
+              "fraction": "The fraction of a percent (0 = 0%, 1 = 100%)"
+            }
+          },
+          "DocId": "M:Sandbox.UI.Length.Fraction(System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.UI.Length>",
+          "Parameters": [
+            {
+              "Name": "expression",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 215
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Calc",
+          "Name": "Calc",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Create a length based on a css calc expression"
+          },
+          "DocId": "M:Sandbox.UI.Length.Calc(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.UI.Length",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 222
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Rem",
+          "Name": "Rem",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Create a length based on the font size of the root element.",
+            "Return": "A new length",
+            "Params": {
+              "value": "Value in rem"
+            }
+          },
+          "DocId": "M:Sandbox.UI.Length.Rem(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.UI.Length",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 229
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Em",
+          "Name": "Em",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Create a length based on the font size of the current element.",
+            "Return": "A new length",
+            "Params": {
+              "value": "Value in em"
+            }
+          },
+          "DocId": "M:Sandbox.UI.Length.Em(System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.UI.Length>",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 257
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Parse",
+          "Name": "Parse",
+          "DeclaringType": "Sandbox.UI.Length",
+          "Documentation": {
+            "Summary": "Parse a length. This is used by the stylesheet parsing system.",
+            "Return": "",
+            "Params": {
+              "value": "A length represented by a string"
+            },
+            "Examples": [
+              "Length.Parse( \"100px\" )",
+              "Length.Parse( \"56%\" )"
+            ]
+          },
+          "DocId": "M:Sandbox.UI.Length.Parse(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.UI.Length",
+          "Loc": {
+            "File": "Math/Length.cs",
+            "Line": 234
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Auto",
+          "Name": "Auto",
+          "Documentation": {
+            "Summary": "Quickly create a Length with Unit set to LengthUnit.Auto"
+          },
+          "DocId": "P:Sandbox.UI.Length.Auto"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Length",
+          "Loc": {
+            "File": "Math/Length.cs",
+            "Line": 239
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Contain",
+          "Name": "Contain",
+          "Documentation": {
+            "Summary": "Quickly create a Length with Unit set to LengthUnit.Contain"
+          },
+          "DocId": "P:Sandbox.UI.Length.Contain"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Length",
+          "Loc": {
+            "File": "Math/Length.cs",
+            "Line": 244
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Cover",
+          "Name": "Cover",
+          "Documentation": {
+            "Summary": "Quickly create a Length with Unit set to LengthUnit.Cover"
+          },
+          "DocId": "P:Sandbox.UI.Length.Cover"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Length",
+          "Loc": {
+            "File": "Math/Length.cs",
+            "Line": 246
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Length.Undefined",
+          "Name": "Undefined",
+          "DocId": "P:Sandbox.UI.Length.Undefined"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Length.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The meaning of the value is dependent on <see cref=\"F:Sandbox.UI.Length.Unit\" />."
+          },
+          "DocId": "F:Sandbox.UI.Length.Value"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Length.Unit",
+          "Name": "Unit",
+          "Documentation": {
+            "Summary": "How to determine the final length. Commonly used with Pixel or Percentage."
+          },
+          "DocId": "F:Sandbox.UI.Length.Unit"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Length",
+      "Name": "Length",
+      "Documentation": {
+        "Summary": "A variable unit based length. ie, could be a percentage or a pixel length. This is commonly used to express the size of things in UI space, usually coming from style sheets."
+      },
+      "DocId": "T:Sandbox.UI.Length"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.Auto",
+          "Name": "Auto",
+          "Documentation": {
+            "Summary": "The layout engine will calculate and select a width for the specified element."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.Auto"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.Pixels",
+          "Name": "Pixels",
+          "Documentation": {
+            "Summary": "The length is in pixels."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.Pixels"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.Percentage",
+          "Name": "Percentage",
+          "Documentation": {
+            "Summary": "The length is a percentage (0-100) of the parent's length. (typically)"
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.Percentage"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.ViewHeight",
+          "Name": "ViewHeight",
+          "Documentation": {
+            "Summary": "The length is a percentage (0-100) of the viewport's height."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.ViewHeight"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.ViewWidth",
+          "Name": "ViewWidth",
+          "Documentation": {
+            "Summary": "The length is a percentage (0-100) of the viewport's width."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.ViewWidth"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.ViewMin",
+          "Name": "ViewMin",
+          "Documentation": {
+            "Summary": "The length is a percentage (0-100) of the viewport's smallest side/edge."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.ViewMin"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.ViewMax",
+          "Name": "ViewMax",
+          "Documentation": {
+            "Summary": "The length is a percentage (0-100) of the viewport's largest side/edge."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.ViewMax"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.Start",
+          "Name": "Start",
+          "Documentation": {
+            "Summary": "Start of the parent at the appropriate axis."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.Start"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.Cover",
+          "Name": "Cover",
+          "Documentation": {
+            "Summary": "For background images, cover the entire element with the image, stretcing and cropping as necessary."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.Cover"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.Contain",
+          "Name": "Contain",
+          "Documentation": {
+            "Summary": "For background images, contain the image within the element bounds."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.Contain"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.End",
+          "Name": "End",
+          "Documentation": {
+            "Summary": "End of the parent at the appropriate axis."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.End"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.Center",
+          "Name": "Center",
+          "Documentation": {
+            "Summary": "In the middle of the parent at the appropriate axis."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.Center"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.Undefined",
+          "Name": "Undefined",
+          "Documentation": {
+            "Summary": "Similar to CSS 'unset', basically means we don't have a value; should only really be used under certain\ncircumstances (e.g. to handle background sizing properly)."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.Undefined"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.Expression",
+          "Name": "Expression",
+          "Documentation": {
+            "Summary": "Represents a calc( ... ) expression"
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.Expression"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.RootEm",
+          "Name": "RootEm",
+          "Documentation": {
+            "Summary": "Font size of the root element."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.RootEm"
+        },
+        {
+          "FieldType": "Sandbox.UI.LengthUnit",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.LengthUnit.Em",
+          "Name": "Em",
+          "Documentation": {
+            "Summary": "Font size of the current element."
+          },
+          "DocId": "F:Sandbox.UI.LengthUnit.Em"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.LengthUnit",
+      "Name": "LengthUnit",
+      "Documentation": {
+        "Summary": "Possible units for various CSS properties that require length, used by <see cref=\"T:Sandbox.UI.Length\" /> struct."
+      },
+      "DocId": "T:Sandbox.UI.LengthUnit"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "unit",
+              "Type": "Sandbox.UI.LengthUnit"
+            }
+          ],
+          "l": {
+            "File": "Math/Length.cs",
+            "Line": 528
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.UI.LengthUnitExtension.IsDynamic",
+          "Name": "IsDynamic",
+          "DeclaringType": "Sandbox.UI.LengthUnitExtension",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Determine whether this unit type is dynamic (ie. should be updated regularly) or whether it's constant"
+          },
+          "DocId": "M:Sandbox.UI.LengthUnitExtension.IsDynamic(Sandbox.UI.LengthUnit)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "IsStatic": true,
+      "IsExtension": true,
+      "FullName": "Sandbox.UI.LengthUnitExtension",
+      "Name": "LengthUnitExtension",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.UI.LengthUnitExtension"
+    }
+  ],
+  "_metadata": {
+    "chunk": 24,
+    "items_count": 12
+  }
+}

@@ -1,0 +1,1342 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 198
+          },
+          "IsProtected": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Parameter<T>",
+          "DocId": "M:Facepunch.ActionGraphs.Node.Parameter`1.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "T",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 198
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>.Definition",
+          "Name": "Definition",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.Node.Parameter`1.Definition"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 201
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>.IsMissing",
+          "Name": "IsMissing",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.Node.Parameter`1.IsMissing"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 204
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>.Node",
+          "Name": "Node",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.Node.Parameter`1.Node"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 207
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>.Name",
+          "Name": "Name",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.Node.Parameter`1.Name"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 209
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>.Index",
+          "Name": "Index",
+          "DocId": "P:Facepunch.ActionGraphs.Node.Parameter`1.Index"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 215
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>.StackTraceIdentifier",
+          "Name": "StackTraceIdentifier",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.Node.Parameter`1.StackTraceIdentifier"
+        },
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 220
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>.Type",
+          "Name": "Type",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.Node.Parameter`1.Type"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.DisplayInfo",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 223
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>.Display",
+          "Name": "Display",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.Node.Parameter`1.Display"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyCollection`1<System.Attribute>",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 226
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>.Attributes",
+          "Name": "Attributes",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.Node.Parameter`1.Attributes"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.Node.Parameter<T>",
+      "Name": "Parameter<T>",
+      "DeclaringType": "Facepunch.ActionGraphs.Node",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Base class for properties, inputs, and outputs of nodes.",
+        "TypeParams": {
+          "T": "Definition type for this parameter."
+        }
+      },
+      "DocId": "T:Facepunch.ActionGraphs.Node.Parameter`1"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Facepunch.ActionGraphs.Node.Parameter<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Out": true,
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 366
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Property.TryGetValue",
+          "Name": "TryGetValue",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Property",
+          "Documentation": {
+            "Summary": "Attempts to get either the current assigned value, or default value\nfor optional properties. Returns false if this property is required\nand has no assigned value.",
+            "Return": "True if this node has an assigned or default value.",
+            "Params": {
+              "value": "Current assigned or default value."
+            }
+          },
+          "DocId": "M:Facepunch.ActionGraphs.Node.Property.TryGetValue(System.Object@)"
+        },
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 394
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Property.GetValueOrDefault",
+          "Name": "GetValueOrDefault",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Property",
+          "Documentation": {
+            "Summary": "Attempts to get either the current assigned value, or default value\nfor optional properties. Throws an exception if this property is\nrequired and has no assigned value."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.Node.Property.GetValueOrDefault"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 410
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Property.GetValueOrDefault",
+          "Name": "GetValueOrDefault",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Property",
+          "Documentation": {
+            "Summary": "Attempts to get either the current assigned value, or default value\nfor optional properties. Throws an exception if this property is\nrequired and has no assigned value, or the assigned value is the\nwrong type."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.Node.Property.GetValueOrDefault``1"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Property..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Property",
+          "DocId": "M:Facepunch.ActionGraphs.Node.Property.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 285
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Property.IsVariable",
+          "Name": "IsVariable",
+          "Documentation": {
+            "Summary": "If true, this property references a <see cref=\"T:Facepunch.ActionGraphs.Variable\" />."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Property.IsVariable"
+        },
+        {
+          "PropertyType": "System.Object",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 294
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Property.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "Constant value assigned to this parameter."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Property.Value"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.Node.Property",
+      "Name": "Property",
+      "DeclaringType": "Facepunch.ActionGraphs.Node",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A named constant value stored inside a node."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.Node.Property"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Facepunch.ActionGraphs.Node.Parameter<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "link",
+              "Type": "Facepunch.ActionGraphs.Link"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 551
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.IndexOfLink",
+          "Name": "IndexOfLink",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Input",
+          "Documentation": {
+            "Summary": "If this input is connected to an array of outputs, gets the index\nof the given link in that array. Returns -1 if not found.",
+            "Params": {
+              "link": "Link to get the index of."
+            }
+          },
+          "DocId": "M:Facepunch.ActionGraphs.Node.Input.IndexOfLink(Facepunch.ActionGraphs.Link)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 559
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.ClearLinks",
+          "Name": "ClearLinks",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Input",
+          "Documentation": {
+            "Summary": "Removes all links from this input."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.Node.Input.ClearLinks"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.Link",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "Facepunch.ActionGraphs.ILinkSource"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 570
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.SetLink",
+          "Name": "SetLink",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Input",
+          "Documentation": {
+            "Summary": "Clears any existing links or constant value, and sets this input to be linked to the given output.",
+            "Params": {
+              "source": "Output to link to."
+            }
+          },
+          "DocId": "M:Facepunch.ActionGraphs.Node.Input.SetLink(Facepunch.ActionGraphs.ILinkSource)"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.Link",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "Facepunch.ActionGraphs.ILinkSource"
+            },
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 577
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.SetLink",
+          "Name": "SetLink",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Input",
+          "Documentation": {
+            "Summary": "If this input accepts an array of links, replaces a link in that array to the given output.",
+            "Params": {
+              "source": "Output to link to.",
+              "index": "Index into the link array to set the link."
+            }
+          },
+          "DocId": "M:Facepunch.ActionGraphs.Node.Input.SetLink(Facepunch.ActionGraphs.ILinkSource,System.Int32)"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.Link",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "Facepunch.ActionGraphs.ILinkSource"
+            },
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 601
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.InsertLink",
+          "Name": "InsertLink",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Input",
+          "Documentation": {
+            "Summary": "If this input accepts an array of links, inserts a link in that array to the given output.",
+            "Params": {
+              "source": "Output to link to.",
+              "index": "Index into the link array to insert the link."
+            }
+          },
+          "DocId": "M:Facepunch.ActionGraphs.Node.Input.InsertLink(Facepunch.ActionGraphs.ILinkSource,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<Facepunch.ActionGraphs.Link>",
+          "Parameters": [
+            {
+              "Name": "sources",
+              "Type": "Facepunch.ActionGraphs.ILinkSource[]"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 608
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.SetLinks",
+          "Name": "SetLinks",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Input",
+          "Documentation": {
+            "Summary": "If this input accepts an array of links, clears any existing links or constant value and sets\nthis input to be linked to the given array of outputs.",
+            "Params": {
+              "sources": "Array of outputs to link to."
+            }
+          },
+          "DocId": "M:Facepunch.ActionGraphs.Node.Input.SetLinks(Facepunch.ActionGraphs.ILinkSource[])"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<Facepunch.ActionGraphs.Link>",
+          "Parameters": [
+            {
+              "Name": "sources",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<Facepunch.ActionGraphs.ILinkSource>"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 615
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.SetLinks",
+          "Name": "SetLinks",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Input",
+          "DocId": "M:Facepunch.ActionGraphs.Node.Input.SetLinks(System.Collections.Generic.IReadOnlyList`1{Facepunch.ActionGraphs.ILinkSource})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Input",
+          "DocId": "M:Facepunch.ActionGraphs.Node.Input.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 446
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.IsArray",
+          "Name": "IsArray",
+          "Documentation": {
+            "Summary": "If true, this input accepts an array of values. Each element\ncan be connected to a different output with <see cref=\"M:Facepunch.ActionGraphs.Node.Input.InsertLink(Facepunch.ActionGraphs.ILinkSource,System.Int32)\" />\nor <see cref=\"!:SetLinks(Output[])\" />."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.IsArray"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 452
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.IsSignal",
+          "Name": "IsSignal",
+          "Documentation": {
+            "Summary": "If true, this input receives a signal that will cause the parent node\nto act."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.IsSignal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 454
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.IsPrimarySignal",
+          "Name": "IsPrimarySignal",
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.IsPrimarySignal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 456
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.IsTarget",
+          "Name": "IsTarget",
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.IsTarget"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 461
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.IsLinked",
+          "Name": "IsLinked",
+          "Documentation": {
+            "Summary": "If true, this input is linked to an output."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.IsLinked"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 466
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.SourceType",
+          "Name": "SourceType",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the type arriving in this input. Returns null if unlinked."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.SourceType"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Link",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 471
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.Link",
+          "Name": "Link",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If this is linked to a single output, gets that link."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.Link"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<Facepunch.ActionGraphs.Link>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 476
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.LinkArray",
+          "Name": "LinkArray",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument[]"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If this is linked to an array of outputs, gets the connecting links."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.LinkArray"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Facepunch.ActionGraphs.Link>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 481
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.Links",
+          "Name": "Links",
+          "Documentation": {
+            "Summary": "Gets any links connected to this input."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.Links"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 486
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.ElementType",
+          "Name": "ElementType",
+          "Documentation": {
+            "Summary": "For array input types, the type of an element of the array."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.ElementType"
+        },
+        {
+          "PropertyType": "System.Object",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 495
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Input.Value",
+          "Name": "Value",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Constant source value for this input."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Input.Value"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.Node.Input",
+      "Name": "Input",
+      "DeclaringType": "Facepunch.ActionGraphs.Node",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A named input of a node. Inputs can connect to outputs of other nodes,\nor have a constant value. Use <see cref=\"!:SetLink(LinkSource)\" /> to set which output\nthis input links to, or <see cref=\"!:SetLinks(LinkSource[])\" /> if this input\ncan accept an array of values."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.Node.Input"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Facepunch.ActionGraphs.Node.Parameter<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "output",
+              "Type": "Facepunch.ActionGraphs.Node.Output"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 706
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Output.IsProvidedBy",
+          "Name": "IsProvidedBy",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Output",
+          "DocId": "M:Facepunch.ActionGraphs.Node.Output.IsProvidedBy(Facepunch.ActionGraphs.Node.Output)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 686
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Output..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.Node.Output",
+          "DocId": "M:Facepunch.ActionGraphs.Node.Output.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 692
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Output.IsSignal",
+          "Name": "IsSignal",
+          "Documentation": {
+            "Summary": "If true, this output emits signals that can trigger other nodes\nto act."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Output.IsSignal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 694
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Output.IsPrimarySignal",
+          "Name": "IsPrimarySignal",
+          "DocId": "P:Facepunch.ActionGraphs.Node.Output.IsPrimarySignal"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlySet`1<Facepunch.ActionGraphs.Link>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 704
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Output.Links",
+          "Name": "Links",
+          "Documentation": {
+            "Summary": "All links currently connected to this output."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Output.Links"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.Parameter.cs",
+            "Line": 711
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.Node.Output.IsLinked",
+          "Name": "IsLinked",
+          "Documentation": {
+            "Summary": "If true, this output has at least one connected input."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.Node.Output.IsLinked"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.Node.Output",
+      "Name": "Output",
+      "DeclaringType": "Facepunch.ActionGraphs.Node",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A named output of a node. Use <see cref=\"!:Input.SetLink(LinkSource)\" />,\nor <see cref=\"!:Input.SetLinks(LinkSource[])\" /> to connect this\noutput to an input."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.Node.Output"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.String,T>>",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 295
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeParameters<T>.GetEnumerator",
+          "Name": "GetEnumerator",
+          "DeclaringType": "Facepunch.ActionGraphs.NodeParameters<T>",
+          "DocId": "M:Facepunch.ActionGraphs.NodeParameters`1.GetEnumerator"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 300
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeParameters<T>.ContainsKey",
+          "Name": "ContainsKey",
+          "DeclaringType": "Facepunch.ActionGraphs.NodeParameters<T>",
+          "DocId": "M:Facepunch.ActionGraphs.NodeParameters`1.ContainsKey(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Out": true,
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 301
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeParameters<T>.TryGetValue",
+          "Name": "TryGetValue",
+          "DeclaringType": "Facepunch.ActionGraphs.NodeParameters<T>",
+          "DocId": "M:Facepunch.ActionGraphs.NodeParameters`1.TryGetValue(System.String,``0@)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 298
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeParameters<T>.Count",
+          "Name": "Count",
+          "DocId": "P:Facepunch.ActionGraphs.NodeParameters`1.Count"
+        },
+        {
+          "PropertyType": "T",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 303
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeParameters<T>.Item",
+          "Name": "Item",
+          "DocId": "P:Facepunch.ActionGraphs.NodeParameters`1.Item"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<System.String>",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 305
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeParameters<T>.Keys",
+          "Name": "Keys",
+          "DocId": "P:Facepunch.ActionGraphs.NodeParameters`1.Keys"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<T>",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 306
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeParameters<T>.Values",
+          "Name": "Values",
+          "DocId": "P:Facepunch.ActionGraphs.NodeParameters`1.Values"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.NodeParameters<T>",
+      "Name": "NodeParameters<T>",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        },
+        {
+          "FullName": "System.Reflection.DefaultMemberAttribute",
+          "ConstructorArguments": [
+            "Item"
+          ]
+        }
+      ],
+      "DocId": "T:Facepunch.ActionGraphs.NodeParameters`1"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Fields": [
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.ParameterNames.Result",
+          "Name": "Result",
+          "DocId": "F:Facepunch.ActionGraphs.ParameterNames.Result"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.ParameterNames.Signal",
+          "Name": "Signal",
+          "DocId": "F:Facepunch.ActionGraphs.ParameterNames.Signal"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.ParameterNames.Target",
+          "Name": "Target",
+          "DocId": "F:Facepunch.ActionGraphs.ParameterNames.Target"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.ParameterNames.Value",
+          "Name": "Value",
+          "DocId": "F:Facepunch.ActionGraphs.ParameterNames.Value"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.ParameterNames.Name",
+          "Name": "Name",
+          "DocId": "F:Facepunch.ActionGraphs.ParameterNames.Name"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.ParameterNames.Type",
+          "Name": "Type",
+          "DocId": "F:Facepunch.ActionGraphs.ParameterNames.Type"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.ParameterNames.IsStatic",
+          "Name": "IsStatic",
+          "DocId": "F:Facepunch.ActionGraphs.ParameterNames.IsStatic"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.ParameterNames.Variable",
+          "Name": "Variable",
+          "DocId": "F:Facepunch.ActionGraphs.ParameterNames.Variable"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.ParameterNames.Kind",
+          "Name": "Kind",
+          "DocId": "F:Facepunch.ActionGraphs.ParameterNames.Kind"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Facepunch.ActionGraphs.ParameterNames",
+      "Name": "ParameterNames",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Special names for parameters of built-in node types."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.ParameterNames"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "Facepunch.ActionGraphs.NodeParameters<T>",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Property",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 342
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeProperties.Variable",
+          "Name": "Variable",
+          "Documentation": {
+            "Summary": "Used by:\n<list type=\"bullet\"><item><description><see cref=\"!:NodeLibrary.GetVar\" /></description></item><item><description><see cref=\"!:NodeLibrary.SetVar\" /></description></item></list>"
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeProperties.Variable"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Property",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 351
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeProperties.Type",
+          "Name": "Type",
+          "Documentation": {
+            "Summary": "Used by:\n<list type=\"bullet\"><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.Property\" /></description></item><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.CallMethod\" /></description></item></list>"
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeProperties.Type"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Property",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 360
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeProperties.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "Used by:\n<list type=\"bullet\"><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.Property\" /></description></item><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.CallMethod\" /></description></item></list>"
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeProperties.Name"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Property",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 370
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeProperties.IsStatic",
+          "Name": "IsStatic",
+          "Documentation": {
+            "Summary": "Used by:\n<list type=\"bullet\"><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.Property\" /></description></item><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.CallMethod\" /></description></item><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.Output\" /></description></item></list>"
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeProperties.IsStatic"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Property",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 378
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeProperties.Kind",
+          "Name": "Kind",
+          "Documentation": {
+            "Summary": "Used by:\n<list type=\"bullet\"><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.Property\" /></description></item></list>"
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeProperties.Kind"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Property",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 386
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeProperties.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "Used by:\n<list type=\"bullet\"><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.Constant\" /></description></item></list>"
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeProperties.Value"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.NodeProperties",
+      "Name": "NodeProperties",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Constant named values stored in a node."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.NodeProperties"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "Facepunch.ActionGraphs.NodeParameters<T>",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Input",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 403
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeInputs.Signal",
+          "Name": "Signal",
+          "Documentation": {
+            "Summary": "Used by <see cref=\"F:Facepunch.ActionGraphs.NodeKind.Action\" /> nodes."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeInputs.Signal"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Input",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 412
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeInputs.Target",
+          "Name": "Target",
+          "Documentation": {
+            "Summary": "Used by:\n<list type=\"bullet\"><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.Property\" /></description></item><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.CallMethod\" /></description></item></list>"
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeInputs.Target"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Input",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 420
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeInputs.Result",
+          "Name": "Result",
+          "Documentation": {
+            "Summary": "Used by:\n<list type=\"bullet\"><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.Output\" /></description></item></list>"
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeInputs.Result"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Input",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 430
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeInputs.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "Used by:\n<list type=\"bullet\"><item><description><see cref=\"P:Facepunch.ActionGraphs.NodeLibrary.Property\" /></description></item><item><description><see cref=\"!:NodeLibrary.SetVar\" /></description></item></list>"
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeInputs.Value"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Facepunch.ActionGraphs.Link>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 435
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeInputs.Links",
+          "Name": "Links",
+          "Documentation": {
+            "Summary": "All current links into inputs of this node."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeInputs.Links"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.NodeInputs",
+      "Name": "NodeInputs",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Named inputs of a node, that may either link to the outputs of other nodes,\nor be assigned a constant value."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.NodeInputs"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "Facepunch.ActionGraphs.NodeParameters<T>",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Output",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 451
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeOutputs.Signal",
+          "Name": "Signal",
+          "Documentation": {
+            "Summary": "Used by <see cref=\"F:Facepunch.ActionGraphs.NodeKind.Action\" /> nodes."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeOutputs.Signal"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node.Output",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 456
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeOutputs.Result",
+          "Name": "Result",
+          "Documentation": {
+            "Summary": "Default output of most nodes that produce a single value."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeOutputs.Result"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Facepunch.ActionGraphs.Link>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/Node.cs",
+            "Line": 461
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.NodeOutputs.Links",
+          "Name": "Links",
+          "Documentation": {
+            "Summary": "All current links from outputs of this node."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.NodeOutputs.Links"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.NodeOutputs",
+      "Name": "NodeOutputs",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Named outputs of a node, that may link to the inputs of other nodes."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.NodeOutputs"
+    }
+  ],
+  "_metadata": {
+    "chunk": 280,
+    "items_count": 9
+  }
+}

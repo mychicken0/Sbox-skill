@@ -1,0 +1,1726 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "agent",
+              "Type": "Sandbox.NavMeshAgent"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 135
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.NavMeshLink.OnLinkEntered",
+          "Name": "OnLinkEntered",
+          "DeclaringType": "Sandbox.NavMeshLink",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when an agent enters the link."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "132"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when an agent enters the link."
+          },
+          "DocId": "M:Sandbox.NavMeshLink.OnLinkEntered(Sandbox.NavMeshAgent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "agent",
+              "Type": "Sandbox.NavMeshAgent"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 142
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.NavMeshLink.OnLinkExited",
+          "Name": "OnLinkExited",
+          "DeclaringType": "Sandbox.NavMeshLink",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when an agent exits the link."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "139"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when an agent exits the link."
+          },
+          "DocId": "M:Sandbox.NavMeshLink.OnLinkExited(Sandbox.NavMeshAgent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 211
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.NavMeshLink.DrawGizmos",
+          "Name": "DrawGizmos",
+          "DeclaringType": "Sandbox.NavMeshLink",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "208"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.NavMeshLink.DrawGizmos"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.NavMeshLink",
+          "DocId": "M:Sandbox.NavMeshLink.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.LocalStartPosition",
+          "Name": "LocalStartPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Start position relative to the game object's position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Start position relative to the game object's position."
+          },
+          "DocId": "P:Sandbox.NavMeshLink.LocalStartPosition"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.LocalEndPosition",
+          "Name": "LocalEndPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "End position relative to the game object's position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "37"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "End position relative to the game object's position."
+          },
+          "DocId": "P:Sandbox.NavMeshLink.LocalEndPosition"
+        },
+        {
+          "PropertyType": "System.Nullable`1<Vector3>",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.WorldStartPositionOnNavmesh",
+          "Name": "WorldStartPositionOnNavmesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Start position in world space snapped to the navmesh."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "51"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Start position in world space snapped to the navmesh."
+          },
+          "DocId": "P:Sandbox.NavMeshLink.WorldStartPositionOnNavmesh"
+        },
+        {
+          "PropertyType": "System.Nullable`1<Vector3>",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.WorldEndPositionOnNavmesh",
+          "Name": "WorldEndPositionOnNavmesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "End position in world space snapped to the navmesh."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "End position in world space snapped to the navmesh."
+          },
+          "DocId": "P:Sandbox.NavMeshLink.WorldEndPositionOnNavmesh"
+        },
+        {
+          "PropertyType": "Sandbox.Engine.Resources.NavMeshAreaDefinition",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.Area",
+          "Name": "Area",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The NavMesh area definition to apply to this link."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "81"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The NavMesh area definition to apply to this link."
+          },
+          "DocId": "P:Sandbox.NavMeshLink.Area"
+        },
+        {
+          "PropertyType": "System.Action`1<Sandbox.NavMeshAgent>",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.LinkEntered",
+          "Name": "LinkEntered",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Emitted when an agent enters the link."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "96"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Emitted when an agent enters the link."
+          },
+          "DocId": "P:Sandbox.NavMeshLink.LinkEntered"
+        },
+        {
+          "PropertyType": "System.Action`1<Sandbox.NavMeshAgent>",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.LinkExited",
+          "Name": "LinkExited",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Emitted when an agent exits the link."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "101"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Emitted when an agent exits the link."
+          },
+          "DocId": "P:Sandbox.NavMeshLink.LinkExited"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.WorldStartPosition",
+          "Name": "WorldStartPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Start position in world space."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "108"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Start position in world space."
+          },
+          "DocId": "P:Sandbox.NavMeshLink.WorldStartPosition"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Navigation/NavMeshLink.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.WorldEndPosition",
+          "Name": "WorldEndPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "End position in world space."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "120"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "End position in world space."
+          },
+          "DocId": "P:Sandbox.NavMeshLink.WorldEndPosition"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.IsBiDirectional",
+          "Name": "IsBiDirectional",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "69"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether this link can be traverse bi-directional or only start towards end."
+          },
+          "DocId": "F:Sandbox.NavMeshLink.IsBiDirectional"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.NavMeshLink.ConnectionRadius",
+          "Name": "ConnectionRadius",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Navigation\\NavMeshLink.cs",
+                "75"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Radius that will be searched at the start and end positions for a connection to the navmesh."
+          },
+          "DocId": "F:Sandbox.NavMeshLink.ConnectionRadius"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.NavMeshLink",
+      "Name": "NavMeshLink",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "NavMesh - Link"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Navigation"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "link"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/navmeshagent.png"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "NavigationLinks connect navigation mesh polygons for pathfinding and enable shortcuts like ladders, jumps, or teleports."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Navigation\\NavMeshLink.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "NavigationLinks connect navigation mesh polygons for pathfinding and enable shortcuts like ladders, jumps, or teleports."
+      },
+      "DocId": "T:Sandbox.NavMeshLink"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.ParticleController",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleAttractor.cs",
+            "Line": 31
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleAttractor.DrawGizmos",
+          "Name": "DrawGizmos",
+          "DeclaringType": "Sandbox.ParticleAttractor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleAttractor.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleAttractor.DrawGizmos"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleAttractor.cs",
+            "Line": 47
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleAttractor.OnBeforeStep",
+          "Name": "OnBeforeStep",
+          "DeclaringType": "Sandbox.ParticleAttractor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleAttractor.cs",
+                "45"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleAttractor.OnBeforeStep(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "particle",
+              "Type": "Sandbox.Particle"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleAttractor.cs",
+            "Line": 53
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleAttractor.OnParticleStep",
+          "Name": "OnParticleStep",
+          "DeclaringType": "Sandbox.ParticleAttractor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleAttractor.cs",
+                "50"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleAttractor.OnParticleStep(Sandbox.Particle,System.Single)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleAttractor.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleAttractor..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ParticleAttractor",
+          "DocId": "M:Sandbox.ParticleAttractor.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Particles/Controllers/ParticleAttractor.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleAttractor.Target",
+          "Name": "Target",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleAttractor.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleAttractor.Target"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/Controllers/ParticleAttractor.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleAttractor.Force",
+          "Name": "Force",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleAttractor.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleAttractor.Force"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/Controllers/ParticleAttractor.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleAttractor.MaxForce",
+          "Name": "MaxForce",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleAttractor.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleAttractor.MaxForce"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/Controllers/ParticleAttractor.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleAttractor.Randomness",
+          "Name": "Randomness",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleAttractor.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleAttractor.Randomness"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Particles/Controllers/ParticleAttractor.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleAttractor.Radius",
+          "Name": "Radius",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleAttractor.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleAttractor.Radius"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ParticleAttractor",
+      "Name": "ParticleAttractor",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Particle Attractor"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Effects"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "attractions"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Attract particles to a GameObject in the scene"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\Controllers\\ParticleAttractor.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Attract particles to a GameObject in the scene"
+      },
+      "DocId": "T:Sandbox.ParticleAttractor"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleController.cs",
+            "Line": 15
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleController.OnEnabled",
+          "Name": "OnEnabled",
+          "DeclaringType": "Sandbox.ParticleController",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleController.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleController.OnEnabled"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleController.cs",
+            "Line": 35
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleController.OnDisabled",
+          "Name": "OnDisabled",
+          "DeclaringType": "Sandbox.ParticleController",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleController.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleController.OnDisabled"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleController.cs",
+            "Line": 55
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleController.OnBeforeStep",
+          "Name": "OnBeforeStep",
+          "DeclaringType": "Sandbox.ParticleController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called before the particle step"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleController.cs",
+                "51"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called before the particle step"
+          },
+          "DocId": "M:Sandbox.ParticleController.OnBeforeStep(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleController.cs",
+            "Line": 63
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleController.OnAfterStep",
+          "Name": "OnAfterStep",
+          "DeclaringType": "Sandbox.ParticleController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called after the particle step"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleController.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called after the particle step"
+          },
+          "DocId": "M:Sandbox.ParticleController.OnAfterStep(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "particle",
+              "Type": "Sandbox.Particle"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleController.cs",
+            "Line": 72
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleController.OnParticleStep",
+          "Name": "OnParticleStep",
+          "DeclaringType": "Sandbox.ParticleController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called for each particle during the particle step. This is super threaded so you better watch out."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleController.cs",
+                "68"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called for each particle during the particle step. This is super threaded\nso you better watch out."
+          },
+          "DocId": "M:Sandbox.ParticleController.OnParticleStep(Sandbox.Particle,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "p",
+              "Type": "Sandbox.Particle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleController.cs",
+            "Line": 77
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleController.OnParticleCreated",
+          "Name": "OnParticleCreated",
+          "DeclaringType": "Sandbox.ParticleController",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleController.cs",
+                "73"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleController.OnParticleCreated(Sandbox.Particle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "p",
+              "Type": "Sandbox.Particle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Controllers/ParticleController.cs",
+            "Line": 106
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleController.OnParticleDestroyed",
+          "Name": "OnParticleDestroyed",
+          "DeclaringType": "Sandbox.ParticleController",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleController.cs",
+                "102"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleController.OnParticleDestroyed(Sandbox.Particle)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.ParticleController..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ParticleController",
+          "DocId": "M:Sandbox.ParticleController.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.ParticleEffect",
+          "Loc": {
+            "File": "Scene/Components/Particles/Controllers/ParticleController.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleController.ParticleEffect",
+          "Name": "ParticleEffect",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The particle we're controlling"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Controllers\\ParticleController.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The particle we're controlling"
+          },
+          "DocId": "P:Sandbox.ParticleController.ParticleEffect"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ParticleController",
+      "Name": "ParticleController",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Particles can have extra controllers that can modify the particles every frame."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\Controllers\\ParticleController.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Particles can have extra controllers that can modify the particles every frame."
+      },
+      "DocId": "T:Sandbox.ParticleController"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.ParticleEmitter",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.ParticleEffect"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Emitter/ParticleBoxEmitter.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleBoxEmitter.Emit",
+          "Name": "Emit",
+          "DeclaringType": "Sandbox.ParticleBoxEmitter",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleBoxEmitter.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleBoxEmitter.Emit(Sandbox.ParticleEffect)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/Emitter/ParticleBoxEmitter.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleBoxEmitter..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ParticleBoxEmitter",
+          "DocId": "M:Sandbox.ParticleBoxEmitter.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleBoxEmitter.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleBoxEmitter.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleBoxEmitter.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleBoxEmitter.Size"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleBoxEmitter.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleBoxEmitter.OnEdge",
+          "Name": "OnEdge",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleBoxEmitter.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleBoxEmitter.OnEdge"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ParticleBoxEmitter",
+      "Name": "ParticleBoxEmitter",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Box Emitter"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Effects"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "check_box_outline_blank"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Emits particles within a box shape."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\Emitter\\ParticleBoxEmitter.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Emits particles within a box shape."
+      },
+      "DocId": "T:Sandbox.ParticleBoxEmitter"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.ParticleEmitter",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.ParticleEffect"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter.Emit",
+          "Name": "Emit",
+          "DeclaringType": "Sandbox.ParticleConeEmitter",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+                "62"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleConeEmitter.Emit(Sandbox.ParticleEffect)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ParticleConeEmitter",
+          "DocId": "M:Sandbox.ParticleConeEmitter.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter.OnEdge",
+          "Name": "OnEdge",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Placement"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleConeEmitter.OnEdge"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter.InVolume",
+          "Name": "InVolume",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Placement"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleConeEmitter.InVolume"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter.ConeAngle",
+          "Name": "ConeAngle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "45"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Cone"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Angle"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleConeEmitter.ConeAngle"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter.ConeNear",
+          "Name": "ConeNear",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Cone"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Start"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleConeEmitter.ConeNear"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter.ConeFar",
+          "Name": "ConeFar",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Cone"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "End"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleConeEmitter.ConeFar"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter.VelocityRandom",
+          "Name": "VelocityRandom",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Cone"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Randomize the direction of the initial velocity. 0 = no randomization, 1 = full randomization."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Randomize the direction of the initial velocity. 0 = no randomization, 1 = full randomization."
+          },
+          "DocId": "P:Sandbox.ParticleConeEmitter.VelocityRandom"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter.CenterBias",
+          "Name": "CenterBias",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Cone"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When distributing should we bias the center of the cone"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When distributing should we bias the center of the cone"
+          },
+          "DocId": "P:Sandbox.ParticleConeEmitter.CenterBias"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter.CenterBiasVelocity",
+          "Name": "CenterBiasVelocity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Cone"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should particles near the center have more velocity"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should particles near the center have more velocity"
+          },
+          "DocId": "P:Sandbox.ParticleConeEmitter.CenterBiasVelocity"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/Emitter/ParticleConeEmitter.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleConeEmitter.VelocityMultiplier",
+          "Name": "VelocityMultiplier",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Cone"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Multiply velocity by this"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Multiply velocity by this"
+          },
+          "DocId": "P:Sandbox.ParticleConeEmitter.VelocityMultiplier"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ParticleConeEmitter",
+      "Name": "ParticleConeEmitter",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Cone Emitter"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Effects"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "change_history"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Emits particles within/along a cone shape."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\Emitter\\ParticleConeEmitter.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Emits particles within/along a cone shape."
+      },
+      "DocId": "T:Sandbox.ParticleConeEmitter"
+    }
+  ],
+  "_metadata": {
+    "chunk": 97,
+    "items_count": 5
+  }
+}

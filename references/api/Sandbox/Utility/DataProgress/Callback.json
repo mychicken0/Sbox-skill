@@ -1,0 +1,1253 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "progress",
+              "Type": "Sandbox.Utility.DataProgress"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.DataProgress.Callback.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.Utility.DataProgress.Callback",
+          "DocId": "M:Sandbox.Utility.DataProgress.Callback.Invoke(Sandbox.Utility.DataProgress)"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "progress",
+              "Type": "Sandbox.Utility.DataProgress"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.DataProgress.Callback.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Sandbox.Utility.DataProgress.Callback",
+          "DocId": "M:Sandbox.Utility.DataProgress.Callback.BeginInvoke(Sandbox.Utility.DataProgress,System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.DataProgress.Callback.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Sandbox.Utility.DataProgress.Callback",
+          "DocId": "M:Sandbox.Utility.DataProgress.Callback.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.DataProgress.Callback..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.DataProgress.Callback",
+          "DocId": "M:Sandbox.Utility.DataProgress.Callback.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.DataProgress.Callback",
+      "Name": "Callback",
+      "DeclaringType": "Sandbox.Utility.DataProgress",
+      "Documentation": {
+        "Summary": "Callback delegate for receiving progress updates."
+      },
+      "DocId": "T:Sandbox.Utility.DataProgress.Callback"
+    },
+    {
+      "Namespace": "Sandbox.Utility",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Utility/DisposableAction.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.DisposeAction.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.Utility.DisposeAction",
+          "Documentation": {
+            "Summary": "Invokes the action specified in the constructor."
+          },
+          "DocId": "M:Sandbox.Utility.DisposeAction.Dispose"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "Parameters": [
+            {
+              "Name": "action",
+              "Type": "System.Action"
+            }
+          ],
+          "l": {
+            "File": "Utility/DisposableAction.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.DisposeAction.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Utility.DisposeAction",
+          "Documentation": {
+            "Summary": "Factory method to create a DisposeAction as an IDisposable.",
+            "Return": "A disposable object that will invoke the action",
+            "Params": {
+              "action": "The action to invoke when disposed"
+            }
+          },
+          "DocId": "M:Sandbox.Utility.DisposeAction.Create(System.Action)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "action",
+              "Type": "System.Action"
+            }
+          ],
+          "l": {
+            "File": "Utility/DisposableAction.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.DisposeAction..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.DisposeAction",
+          "Documentation": {
+            "Summary": "Creates a new DisposeAction that will invoke the specified action on disposal.",
+            "Params": {
+              "action": "The action to invoke when disposed"
+            }
+          },
+          "DocId": "M:Sandbox.Utility.DisposeAction.#ctor(System.Action)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.DisposeAction",
+      "Name": "DisposeAction",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "A simple IDisposable that invokes an action when disposed.\nUseful for creating using-blocks with cleanup logic.",
+        "Examples": [
+          "using ( DisposeAction.Create( () =&gt; Console.WriteLine( \"Cleanup!\" ) ) )\n{\n    // Do work\n} // \"Cleanup!\" is printed here"
+        ]
+      },
+      "DocId": "T:Sandbox.Utility.DisposeAction"
+    },
+    {
+      "Namespace": "Sandbox.Utility",
+      "Methods": [
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.EaseInOut",
+          "Name": "EaseInOut",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {},
+          "DocId": "M:Sandbox.Utility.Easing.EaseInOut(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.EaseIn",
+          "Name": "EaseIn",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {},
+          "DocId": "M:Sandbox.Utility.Easing.EaseIn(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.EaseOut",
+          "Name": "EaseOut",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {},
+          "DocId": "M:Sandbox.Utility.Easing.EaseOut(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.Linear",
+          "Name": "Linear",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Linear easing function, x=y.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.Linear(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.QuadraticIn",
+          "Name": "QuadraticIn",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Quadratic ease in.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.QuadraticIn(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.QuadraticOut",
+          "Name": "QuadraticOut",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Quadratic ease out.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.QuadraticOut(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.QuadraticInOut",
+          "Name": "QuadraticInOut",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Quadratic ease in and out.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.QuadraticInOut(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.ExpoIn",
+          "Name": "ExpoIn",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Exponential ease in.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.ExpoIn(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.ExpoOut",
+          "Name": "ExpoOut",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Exponential ease out.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.ExpoOut(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.ExpoInOut",
+          "Name": "ExpoInOut",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Exponential ease in and out.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.ExpoInOut(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.BounceIn",
+          "Name": "BounceIn",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Bouncy ease in.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.BounceIn(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 104
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.BounceOut",
+          "Name": "BounceOut",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Bouncy ease out.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.BounceOut(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.BounceInOut",
+          "Name": "BounceInOut",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Bouncy ease in and out.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.BounceInOut(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.SineEaseIn",
+          "Name": "SineEaseIn",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Sine ease in.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.SineEaseIn(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.SineEaseOut",
+          "Name": "SineEaseOut",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Sine ease out.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.SineEaseOut(System.Single)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 133
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.SineEaseInOut",
+          "Name": "SineEaseInOut",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Sine ease in and out.",
+            "Return": "Output in range 0 to 1.",
+            "Params": {
+              "f": "Input in range of 0 to 1."
+            }
+          },
+          "DocId": "M:Sandbox.Utility.Easing.SineEaseInOut(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.Utility.Easing.Function",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 154
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.GetFunction",
+          "Name": "GetFunction",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Get an easing function by name (ie, \"ease-in\").\nIf the function doesn't exist we return QuadraticInOut"
+          },
+          "DocId": "M:Sandbox.Utility.Easing.GetFunction(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "function",
+              "Out": true,
+              "Type": "Sandbox.Utility.Easing.Function"
+            }
+          ],
+          "l": {
+            "File": "Utility/Easing.cs",
+            "Line": 166
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Utility.Easing.TryGetFunction",
+          "Name": "TryGetFunction",
+          "DeclaringType": "Sandbox.Utility.Easing",
+          "Documentation": {
+            "Summary": "Get an easing function by name (ie, \"ease-in\").\nIf the function exists we return true, otherwise return false."
+          },
+          "DocId": "M:Sandbox.Utility.Easing.TryGetFunction(System.String,Sandbox.Utility.Easing.Function@)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Utility.Easing",
+      "Name": "Easing",
+      "Documentation": {
+        "Summary": "Easing functions used for transitions. See <a href=\"https://easings.net/\">https://easings.net/</a> for examples."
+      },
+      "DocId": "T:Sandbox.Utility.Easing"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Single",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Easing.Function.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.Utility.Easing.Function",
+          "DocId": "M:Sandbox.Utility.Easing.Function.Invoke(System.Single)"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Easing.Function.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Sandbox.Utility.Easing.Function",
+          "DocId": "M:Sandbox.Utility.Easing.Function.BeginInvoke(System.Single,System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Easing.Function.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Sandbox.Utility.Easing.Function",
+          "DocId": "M:Sandbox.Utility.Easing.Function.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Utility.Easing.Function..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Utility.Easing.Function",
+          "DocId": "M:Sandbox.Utility.Easing.Function.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Utility.Easing.Function",
+      "Name": "Function",
+      "DeclaringType": "Sandbox.Utility.Easing",
+      "Documentation": {
+        "Summary": "An easing function that transforms the linear input into non linear output.",
+        "Return": "The resulting non linear output value, from 0 to 1",
+        "Params": {
+          "delta": "A linear input value from 0 to 1"
+        }
+      },
+      "DocId": "T:Sandbox.Utility.Easing.Function"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.ITitleProvider.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The title."
+          },
+          "DocId": "P:Sandbox.Internal.ITitleProvider.Value"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.ITitleProvider",
+      "Name": "ITitleProvider",
+      "Documentation": {
+        "Summary": "Provides a title or a \"nice name\" for DisplayInfo of a member or a type."
+      },
+      "DocId": "T:Sandbox.Internal.ITitleProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IPlaceholderProvider.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The placeholder text."
+          },
+          "DocId": "P:Sandbox.Internal.IPlaceholderProvider.Value"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IPlaceholderProvider",
+      "Name": "IPlaceholderProvider",
+      "Documentation": {
+        "Summary": "Provides placeholder text for DisplayInfo of a member or a type."
+      },
+      "DocId": "T:Sandbox.Internal.IPlaceholderProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IDescriptionProvider.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The description."
+          },
+          "DocId": "P:Sandbox.Internal.IDescriptionProvider.Value"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IDescriptionProvider",
+      "Name": "IDescriptionProvider",
+      "Documentation": {
+        "Summary": "Provides a description for DisplayInfo of a member or a type."
+      },
+      "DocId": "T:Sandbox.Internal.IDescriptionProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.ICategoryProvider.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The category."
+          },
+          "DocId": "P:Sandbox.Internal.ICategoryProvider.Value"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.ICategoryProvider",
+      "Name": "ICategoryProvider",
+      "Documentation": {
+        "Summary": "Provides category or group for DisplayInfo of a member or a type."
+      },
+      "DocId": "T:Sandbox.Internal.ICategoryProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IClassNameProvider.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The class name.\nTypically a class name is all lower case, has spaces replaced by underscores (_) or dashes (-) and contains no other special symbols."
+          },
+          "DocId": "P:Sandbox.Internal.IClassNameProvider.Value"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IClassNameProvider",
+      "Name": "IClassNameProvider",
+      "Documentation": {
+        "Summary": "Provides internal class name for DisplayInfo of a member or a type."
+      },
+      "DocId": "T:Sandbox.Internal.IClassNameProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IIconProvider.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The icon. Typically this is the name of a <a href=\"https://fonts.google.com/icons\">material icon</a>."
+          },
+          "DocId": "P:Sandbox.Internal.IIconProvider.Value"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IIconProvider",
+      "Name": "IIconProvider",
+      "Documentation": {
+        "Summary": "Provides an icon for DisplayInfo of a member or a type."
+      },
+      "DocId": "T:Sandbox.Internal.IIconProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IOrderProvider.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "Order value, for sorting in menus."
+          },
+          "DocId": "P:Sandbox.Internal.IOrderProvider.Value"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IOrderProvider",
+      "Name": "IOrderProvider",
+      "Documentation": {
+        "Summary": "Provides an order number for DisplayInfo of a member or a type."
+      },
+      "DocId": "T:Sandbox.Internal.IOrderProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 94
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.ClassFileLocationAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.ClassFileLocationAttribute",
+          "DocId": "M:Sandbox.Internal.ClassFileLocationAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.ClassFileLocationAttribute.Path",
+          "Name": "Path",
+          "DocId": "P:Sandbox.Internal.ClassFileLocationAttribute.Path"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.ClassFileLocationAttribute",
+      "Name": "ClassFileLocationAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Automatically added to codegenerated classes to let them determine their location\nThis helps when looking for resources relative to them, like style sheets.\nReplaced in Sept 2023 by SourceLocationAttribute, which is added to classes and members."
+      },
+      "DocId": "T:Sandbox.Internal.ClassFileLocationAttribute"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.ISourcePathProvider.Path",
+          "Name": "Path",
+          "DocId": "P:Sandbox.Internal.ISourcePathProvider.Path"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.ISourcePathProvider",
+      "Name": "ISourcePathProvider",
+      "DocId": "T:Sandbox.Internal.ISourcePathProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.ISourceLineProvider.Line",
+          "Name": "Line",
+          "DocId": "P:Sandbox.Internal.ISourceLineProvider.Line"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.ISourceLineProvider",
+      "Name": "ISourceLineProvider",
+      "DocId": "T:Sandbox.Internal.ISourceLineProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.ISourceColumnProvider.Column",
+          "Name": "Column",
+          "DocId": "P:Sandbox.Internal.ISourceColumnProvider.Column"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.ISourceColumnProvider",
+      "Name": "ISourceColumnProvider",
+      "DocId": "T:Sandbox.Internal.ISourceColumnProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IMemberNameProvider.MemberName",
+          "Name": "MemberName",
+          "DocId": "P:Sandbox.Internal.IMemberNameProvider.MemberName"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IMemberNameProvider",
+      "Name": "IMemberNameProvider",
+      "DocId": "T:Sandbox.Internal.IMemberNameProvider"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "BaseType": "Sandbox.Internal.ClassFileLocationAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "path",
+              "Type": "System.String"
+            },
+            {
+              "Name": "line",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SourceLocationAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.SourceLocationAttribute",
+          "DocId": "M:Sandbox.Internal.SourceLocationAttribute.#ctor(System.String,System.Int32)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.SourceLocationAttribute.Line",
+          "Name": "Line",
+          "DocId": "P:Sandbox.Internal.SourceLocationAttribute.Line"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.SourceLocationAttribute",
+      "Name": "SourceLocationAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Automatically added to classes and their members to let them determine their location\nThis helps when looking for resources relative to them, like style sheets."
+      },
+      "DocId": "T:Sandbox.Internal.SourceLocationAttribute"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IUpdateSubscriber",
+      "Name": "IUpdateSubscriber",
+      "Documentation": {
+        "Summary": "Automatically added to classes that implement OnUpdate()"
+      },
+      "DocId": "T:Sandbox.Internal.IUpdateSubscriber"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IFixedUpdateSubscriber",
+      "Name": "IFixedUpdateSubscriber",
+      "Documentation": {
+        "Summary": "Automatically added to classes that implement OnFixedUpdate()"
+      },
+      "DocId": "T:Sandbox.Internal.IFixedUpdateSubscriber"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IPreRenderSubscriber",
+      "Name": "IPreRenderSubscriber",
+      "Documentation": {
+        "Summary": "Automatically added to classes that implement OnPreRender()"
+      },
+      "DocId": "T:Sandbox.Internal.IPreRenderSubscriber"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.PublicArrayPool<T>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.PublicArrayPool<T>",
+          "DocId": "M:Sandbox.Internal.PublicArrayPool`1.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Buffers.ArrayPool`1<T>",
+          "Loc": {
+            "File": "Collections/PublicArrayPool.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.PublicArrayPool<T>.Shared",
+          "Name": "Shared",
+          "Documentation": {
+            "Summary": "Retrieves a shared <see cref=\"T:System.Buffers.ArrayPool`1\" /> instance.",
+            "Remarks": "The shared pool provides a default implementation of <see cref=\"T:System.Buffers.ArrayPool`1\" />\nthat's intended for general applicability.  It maintains arrays of multiple sizes, and\nmay hand back a larger array than was actually requested, but will never hand back a smaller\narray than was requested. Renting a buffer from it with <see cref=\"M:System.Buffers.ArrayPool`1.Rent(System.Int32)\" /> will result in an\nexisting buffer being taken from the pool if an appropriate buffer is available or in a new\nbuffer being allocated if one is not available.\nThe shared pool instance is created lazily on first access."
+          },
+          "DocId": "P:Sandbox.Internal.PublicArrayPool`1.Shared"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.PublicArrayPool<T>",
+      "Name": "PublicArrayPool<T>",
+      "Documentation": {
+        "Summary": "Calls to ArrayPool.Shared{T} will map to this class.\nYou can use it directly but you probably shouldn't"
+      },
+      "DocId": "T:Sandbox.Internal.PublicArrayPool`1"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Diagnostics.Logger",
+          "Loc": {
+            "File": "GlobalNamespace.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.GlobalSystemNamespace.Log",
+          "Name": "Log",
+          "DocId": "P:Sandbox.Internal.GlobalSystemNamespace.Log"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Internal.GlobalSystemNamespace",
+      "Name": "GlobalSystemNamespace",
+      "DocId": "T:Sandbox.Internal.GlobalSystemNamespace"
+    }
+  ],
+  "_metadata": {
+    "chunk": 28,
+    "items_count": 22
+  }
+}

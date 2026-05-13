@@ -1,0 +1,1670 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Volumes.VolumeComponent",
+      "Methods": [
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "pos",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/PostProcessing/PostProcessVolume.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PostProcessVolume.GetWeight",
+          "Name": "GetWeight",
+          "DeclaringType": "Sandbox.PostProcessVolume",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get weight based on position"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\PostProcessVolume.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get weight based on position"
+          },
+          "DocId": "M:Sandbox.PostProcessVolume.GetWeight(Vector3)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/PostProcessVolume.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PostProcessVolume..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.PostProcessVolume",
+          "DocId": "M:Sandbox.PostProcessVolume.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/PostProcessVolume.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PostProcessVolume.Priority",
+          "Name": "Priority",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Higher priority volumes override lower priority ones. The default priority is 0."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\PostProcessVolume.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Higher priority volumes override lower priority ones. The default priority is 0."
+          },
+          "DocId": "P:Sandbox.PostProcessVolume.Priority"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/PostProcessVolume.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PostProcessVolume.BlendWeight",
+          "Name": "BlendWeight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows fading in and out"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\PostProcessVolume.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows fading in and out"
+          },
+          "DocId": "P:Sandbox.PostProcessVolume.BlendWeight"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/PostProcessVolume.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PostProcessVolume.BlendDistance",
+          "Name": "BlendDistance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "500"
+              ]
+            },
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "IsInfinite",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Distance from the edge of the volume where blending starts. 0 means hard edge, higher values create softer transitions."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\PostProcessVolume.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Distance from the edge of the volume where blending starts.\n0 means hard edge, higher values create softer transitions."
+          },
+          "DocId": "P:Sandbox.PostProcessVolume.BlendDistance"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/PostProcessVolume.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PostProcessVolume.EditorPreview",
+          "Name": "EditorPreview",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Preview the post processing when this object is selected in the editor, or when the editor camera is inside the volume."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\PostProcessVolume.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Preview the post processing when this object is selected in the editor, or when the editor camera is inside the volume."
+          },
+          "DocId": "P:Sandbox.PostProcessVolume.EditorPreview"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PostProcessVolume",
+      "Name": "PostProcessVolume",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.EditorHandleAttribute"
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Post Processing"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "contrast"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A volume that defines a region in the scene where post processing effects will be applied."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\PostProcessing\\PostProcessVolume.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A volume that defines a region in the scene where post processing effects will be applied."
+      },
+      "DocId": "T:Sandbox.PostProcessVolume"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "json",
+              "Type": "System.Text.Json.Nodes.JsonObject"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/Decal.Upgrade.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Decal.Upgrader_v2",
+          "Name": "Upgrader_v2",
+          "DeclaringType": "Sandbox.Decal",
+          "Attributes": [
+            {
+              "FullName": "ExposeAttribute"
+            },
+            {
+              "FullName": "Sandbox.JsonUpgraderAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Decal",
+                "2"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.Upgrade.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Decal.Upgrader_v2(System.Text.Json.Nodes.JsonObject)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "json",
+              "Type": "System.Text.Json.Nodes.JsonObject"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/Decal.Upgrade.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Decal.Upgrader_v3",
+          "Name": "Upgrader_v3",
+          "DeclaringType": "Sandbox.Decal",
+          "Attributes": [
+            {
+              "FullName": "ExposeAttribute"
+            },
+            {
+              "FullName": "Sandbox.JsonUpgraderAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Decal",
+                "3"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.Upgrade.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Decal.Upgrader_v3(System.Text.Json.Nodes.JsonObject)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Decal",
+          "DocId": "M:Sandbox.Decal.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.DecalDefinition>",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.Decals",
+          "Name": "Decals",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.WideModeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Decal.Decals"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.ColorTexture",
+          "Name": "ColorTexture",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Decal.ColorTexture"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.NormalTexture",
+          "Name": "NormalTexture",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Decal.NormalTexture"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.RMOTexture",
+          "Name": "RMOTexture",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Decal.RMOTexture"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.LifeTime",
+          "Name": "LifeTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Life"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How long should this decal live for?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How long should this decal live for?"
+          },
+          "DocId": "P:Sandbox.Decal.LifeTime"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.Looped",
+          "Name": "Looped",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true then the decal will repeat itself forever"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true then the decal will repeat itself forever"
+          },
+          "DocId": "P:Sandbox.Decal.Looped"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.Transient",
+          "Name": "Transient",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true then this decal will automatically get removed when maxdecals are exceeded. This is good for things like bullect impacts, where you want to keep them around for as long as possible but also don't want to have an unlimited amount of them hanging around. Note that while the component will be destroyed, you probably want a TemporaryEffect component on the GameObject to make sure it all gets fully deleted."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "52"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true then this decal will automatically get removed when maxdecals are exceeded. This is good for\nthings like bullect impacts, where you want to keep them around for as long as possible but also\ndon't want to have an unlimited amount of them hanging around.\n\nNote that while the component will be destroyed, you probably want a TemporaryEffect component on the \nGameObject to make sure it all gets fully deleted."
+          },
+          "DocId": "P:Sandbox.Decal.Transient"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Dimensions"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A 2D size of the decal in world units."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "58"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A 2D size of the decal in world units."
+          },
+          "DocId": "P:Sandbox.Decal.Size"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.Scale",
+          "Name": "Scale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Scale the width and height by this value"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Scale the width and height by this value"
+          },
+          "DocId": "P:Sandbox.Decal.Scale"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.Rotation",
+          "Name": "Rotation",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Rotation angle of the decal in degrees"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "70"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Rotation angle of the decal in degrees"
+          },
+          "DocId": "P:Sandbox.Decal.Rotation"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.Depth",
+          "Name": "Depth",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The depth of the decal in world units. This is how far the decal extends into the surface it is projected onto."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "76"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The depth of the decal in world units. This is how far the decal extends into the surface it is projected onto."
+          },
+          "DocId": "P:Sandbox.Decal.Depth"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.Parallax",
+          "Name": "Parallax",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Properties"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Parallax depth strength of the decal"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "82"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Parallax depth strength of the decal"
+          },
+          "DocId": "P:Sandbox.Decal.Parallax"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleGradient",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 90
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.ColorTint",
+          "Name": "ColorTint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tints the color of the decal's albedo and can be used to adjust the overall opacity of the decal."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "88"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tints the color of the decal's albedo and can be used to adjust the overall opacity of the decal."
+          },
+          "DocId": "P:Sandbox.Decal.ColorTint"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.ColorMix",
+          "Name": "ColorMix",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controls the opacity of the decal's color texture without reducing the impact of the normal or rmo texture. Set to 0 to create a normal/rmo only decal masked by the color textures alpha."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "95"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controls the opacity of the decal's color texture without reducing the impact of the normal or rmo texture.\nSet to 0 to create a normal/rmo only decal masked by the color textures alpha."
+          },
+          "DocId": "P:Sandbox.Decal.ColorMix"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 104
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.AttenuationAngle",
+          "Name": "AttenuationAngle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Attenuation angle controls how much the decal fades at an angle. At 0 it does not fade at all. Up to 1 it fades the most."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "102"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Attenuation angle controls how much the decal fades at an angle.\nAt 0 it does not fade at all. Up to 1 it fades the most."
+          },
+          "DocId": "P:Sandbox.Decal.AttenuationAngle"
+        },
+        {
+          "PropertyType": "System.UInt32",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.SortLayer",
+          "Name": "SortLayer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Sorting"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Determines the order the decal gets rendered in, the higher the layer the more priority it has. Decals on the same layer get automatically sorted by their GameObject ID."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "111"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Determines the order the decal gets rendered in, the higher the layer the more priority it has.\nDecals on the same layer get automatically sorted by their GameObject ID."
+          },
+          "DocId": "P:Sandbox.Decal.SortLayer"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.SheetSequence",
+          "Name": "SheetSequence",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Sheet"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "SheetSequence"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "123"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Decal.SheetSequence"
+        },
+        {
+          "PropertyType": "System.UInt32",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.SequenceId",
+          "Name": "SequenceId",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "SheetSequence"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "255"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Which sequence to use"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "130"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Which sequence to use"
+          },
+          "DocId": "P:Sandbox.Decal.SequenceId"
+        },
+        {
+          "PropertyType": "BBox",
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.cs",
+            "Line": 268
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.WorldBounds",
+          "Name": "WorldBounds",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the world bounds of this decal"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.cs",
+                "267"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the world bounds of this decal"
+          },
+          "DocId": "P:Sandbox.Decal.WorldBounds"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Scene/Components/Render/Decal.Upgrade.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Decal.ComponentVersion",
+          "Name": "ComponentVersion",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\Decal.Upgrade.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Decal.ComponentVersion"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Decal",
+      "Name": "Decal",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Decal"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Rendering"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "lens_blur"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/decal.png"
+          ]
+        },
+        {
+          "FullName": "Sandbox.HelpUrlAttribute",
+          "ConstructorArguments": [
+            "https://sbox.game/dev/doc/scene/components/reference/decals/"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "The Decal component projects textures onto model's opaque or transparent surfaces. They inherit and modify the PBR properties of the surface they're projected on."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\Decal.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "The Decal component projects textures onto model's opaque or transparent surfaces. They inherit and modify the PBR properties of the surface they're projected on."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\Decal.Upgrade.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "The Decal component projects textures onto model's opaque or transparent surfaces.\nThey inherit and modify the PBR properties of the surface they're projected on."
+      },
+      "DocId": "T:Sandbox.Decal"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Renderer",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/DecalRenderer.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalRenderer..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.DecalRenderer",
+          "DocId": "M:Sandbox.DecalRenderer.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "Scene/Components/Render/DecalRenderer.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalRenderer.Material",
+          "Name": "Material",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\DecalRenderer.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalRenderer.Material"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Render/DecalRenderer.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalRenderer.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\DecalRenderer.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalRenderer.Size"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Render/DecalRenderer.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalRenderer.TintColor",
+          "Name": "TintColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\DecalRenderer.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalRenderer.TintColor"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/DecalRenderer.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DecalRenderer.TriPlanar",
+          "Name": "TriPlanar",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\DecalRenderer.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DecalRenderer.TriPlanar"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.DecalRenderer",
+      "Name": "DecalRenderer",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.HideAttribute"
+        },
+        {
+          "FullName": "System.ObsoleteAttribute",
+          "ConstructorArguments": [
+            "DecalRenderer is obsolete, use Decal which uses textures instead of materials https://sbox.game/dev/doc/reference/components/decals/"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Component that creates a projected decal relative to its GameObject."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\DecalRenderer.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Component that creates a projected decal relative to its GameObject."
+      },
+      "DocId": "T:Sandbox.DecalRenderer"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/GradientFog.cs",
+            "Line": 33
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.GradientFog.OnPreRender",
+          "Name": "OnPreRender",
+          "DeclaringType": "Sandbox.GradientFog",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\GradientFog.cs",
+                "30"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.GradientFog.OnPreRender"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/GradientFog.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GradientFog..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.GradientFog",
+          "DocId": "M:Sandbox.GradientFog.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Render/GradientFog.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GradientFog.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Vertical Fog"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\GradientFog.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.GradientFog.Color"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/GradientFog.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GradientFog.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Vertical Fog"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\GradientFog.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.GradientFog.Height"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/GradientFog.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GradientFog.VerticalFalloffExponent",
+          "Name": "VerticalFalloffExponent",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Vertical Fog"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\GradientFog.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.GradientFog.VerticalFalloffExponent"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/GradientFog.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GradientFog.StartDistance",
+          "Name": "StartDistance",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Camera Distance Fade"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\GradientFog.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.GradientFog.StartDistance"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/GradientFog.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GradientFog.EndDistance",
+          "Name": "EndDistance",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Camera Distance Fade"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\GradientFog.cs",
+                "24"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.GradientFog.EndDistance"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/GradientFog.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.GradientFog.FalloffExponent",
+          "Name": "FalloffExponent",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Camera Distance Fade"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\GradientFog.cs",
+                "27"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.GradientFog.FalloffExponent"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.GradientFog",
+      "Name": "GradientFog",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Gradient Fog"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Rendering"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "foggy"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Adds a gradient fog to the world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\GradientFog.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Adds a gradient fog to the world"
+      },
+      "DocId": "T:Sandbox.GradientFog"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.ISpriteRenderGroup.Opaque",
+          "Name": "Opaque",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ISpriteRenderGroup.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ISpriteRenderGroup.Opaque"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.ISpriteRenderGroup.Additive",
+          "Name": "Additive",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ISpriteRenderGroup.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ISpriteRenderGroup.Additive"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.ISpriteRenderGroup.Shadows",
+          "Name": "Shadows",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ISpriteRenderGroup.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ISpriteRenderGroup.Shadows"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.ISpriteRenderGroup.IsSorted",
+          "Name": "IsSorted",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\ISpriteRenderGroup.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ISpriteRenderGroup.IsSorted"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ISpriteRenderGroup",
+      "Name": "ISpriteRenderGroup",
+      "Documentation": {
+        "Summary": "Base interface for components that can be grouped for sprite rendering.\nContains the 4 fields needed for render group classification."
+      },
+      "DocId": "T:Sandbox.ISpriteRenderGroup"
+    }
+  ],
+  "_metadata": {
+    "chunk": 108,
+    "items_count": 5
+  }
+}

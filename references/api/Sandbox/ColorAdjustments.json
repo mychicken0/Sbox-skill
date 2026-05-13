@@ -1,0 +1,1864 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.BasePostProcess<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorAdjustments.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorAdjustments.Render",
+          "Name": "Render",
+          "DeclaringType": "Sandbox.ColorAdjustments",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorAdjustments.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ColorAdjustments.Render"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorAdjustments.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorAdjustments..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ColorAdjustments",
+          "DocId": "M:Sandbox.ColorAdjustments.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorAdjustments.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorAdjustments.Blend",
+          "Name": "Blend",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorAdjustments.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorAdjustments.Blend"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorAdjustments.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorAdjustments.Saturation",
+          "Name": "Saturation",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorAdjustments.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorAdjustments.Saturation"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorAdjustments.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorAdjustments.HueRotate",
+          "Name": "HueRotate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "360"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorAdjustments.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorAdjustments.HueRotate"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorAdjustments.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorAdjustments.Brightness",
+          "Name": "Brightness",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorAdjustments.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorAdjustments.Brightness"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorAdjustments.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorAdjustments.Contrast",
+          "Name": "Contrast",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorAdjustments.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorAdjustments.Contrast"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ColorAdjustments",
+      "Name": "ColorAdjustments",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Color Adjustments"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Post Processing"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "palette"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Applies color adjustments to the camera."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\PostProcessing\\Effects\\ColorAdjustments.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Applies color adjustments to the camera."
+      },
+      "DocId": "T:Sandbox.ColorAdjustments"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.BasePostProcess<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.Render",
+          "Name": "Render",
+          "DeclaringType": "Sandbox.ColorGrading",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "82"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ColorGrading.Render"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ColorGrading",
+          "DocId": "M:Sandbox.ColorGrading.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.ColorGrading.GradingType",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.GradingMethod",
+          "Name": "GradingMethod",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Grading"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "27"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.GradingMethod"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.ColorTempK",
+          "Name": "ColorTempK",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Grading"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1000",
+                "40000"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "GradingMethod",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "30"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.ColorTempK"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.BlendFactor",
+          "Name": "BlendFactor",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Grading"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "GradingMethod",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.BlendFactor"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.LookupTexture",
+          "Name": "LookupTexture",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Grading"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "GradingMethod",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "40"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.LookupTexture"
+        },
+        {
+          "PropertyType": "Sandbox.ColorGrading.ColorSpaceEnum",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.ColorSpace",
+          "Name": "ColorSpace",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Per Channel"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.ColorSpace"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.RedCurve",
+          "Name": "RedCurve",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Per Channel"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "ColorSpace",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "50"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.RedCurve"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.GreenCurve",
+          "Name": "GreenCurve",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Per Channel"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "ColorSpace",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "55"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.GreenCurve"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.BlueCurve",
+          "Name": "BlueCurve",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Per Channel"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "ColorSpace",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "60"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.BlueCurve"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.HueCurve",
+          "Name": "HueCurve",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Per Channel"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "ColorSpace",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "65"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.HueCurve"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.SaturationCurve",
+          "Name": "SaturationCurve",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Per Channel"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "ColorSpace",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "70"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.SaturationCurve"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/ColorGrading.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorGrading.ValueCurve",
+          "Name": "ValueCurve",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Per Channel"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "ColorSpace",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+                "75"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ColorGrading.ValueCurve"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ColorGrading",
+      "Name": "ColorGrading",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Color Grading"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Post Processing"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "center_focus_strong"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Applies color grading to the camera"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\PostProcessing\\Effects\\ColorGrading.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Applies color grading to the camera"
+      },
+      "DocId": "T:Sandbox.ColorGrading"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.ColorGrading.GradingType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ColorGrading.GradingType.None",
+          "Name": "None",
+          "DocId": "F:Sandbox.ColorGrading.GradingType.None"
+        },
+        {
+          "FieldType": "Sandbox.ColorGrading.GradingType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ColorGrading.GradingType.TemperatureControl",
+          "Name": "TemperatureControl",
+          "DocId": "F:Sandbox.ColorGrading.GradingType.TemperatureControl"
+        },
+        {
+          "FieldType": "Sandbox.ColorGrading.GradingType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ColorGrading.GradingType.LUT",
+          "Name": "LUT",
+          "DocId": "F:Sandbox.ColorGrading.GradingType.LUT"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ColorGrading.GradingType",
+      "Name": "GradingType",
+      "DeclaringType": "Sandbox.ColorGrading",
+      "DocId": "T:Sandbox.ColorGrading.GradingType"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.ColorGrading.ColorSpaceEnum",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ColorGrading.ColorSpaceEnum.None",
+          "Name": "None",
+          "DocId": "F:Sandbox.ColorGrading.ColorSpaceEnum.None"
+        },
+        {
+          "FieldType": "Sandbox.ColorGrading.ColorSpaceEnum",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ColorGrading.ColorSpaceEnum.RGB",
+          "Name": "RGB",
+          "DocId": "F:Sandbox.ColorGrading.ColorSpaceEnum.RGB"
+        },
+        {
+          "FieldType": "Sandbox.ColorGrading.ColorSpaceEnum",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ColorGrading.ColorSpaceEnum.HSV",
+          "Name": "HSV",
+          "DocId": "F:Sandbox.ColorGrading.ColorSpaceEnum.HSV"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ColorGrading.ColorSpaceEnum",
+      "Name": "ColorSpaceEnum",
+      "DeclaringType": "Sandbox.ColorGrading",
+      "DocId": "T:Sandbox.ColorGrading.ColorSpaceEnum"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.BasePostProcess<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/DepthOfField.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DepthOfField.Render",
+          "Name": "Render",
+          "DeclaringType": "Sandbox.DepthOfField",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\DepthOfField.cs",
+                "60"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.DepthOfField.Render"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/DepthOfField.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DepthOfField..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.DepthOfField",
+          "DocId": "M:Sandbox.DepthOfField.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/DepthOfField.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DepthOfField.BlurSize",
+          "Name": "BlurSize",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "100"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Focus"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "blur_circular"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How blurry to make stuff that isn't in focus."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\DepthOfField.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How blurry to make stuff that isn't in focus."
+          },
+          "DocId": "P:Sandbox.DepthOfField.BlurSize"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/DepthOfField.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DepthOfField.FocalDistance",
+          "Name": "FocalDistance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "1000"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Focus"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "horizontal_distribute"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How far away from the camera to focus in world units."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\DepthOfField.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How far away from the camera to focus in world units."
+          },
+          "DocId": "P:Sandbox.DepthOfField.FocalDistance"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/DepthOfField.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DepthOfField.FocusRange",
+          "Name": "FocusRange",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1000"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Focus"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "blur_linear"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This modulates how far is the blur to the image."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\DepthOfField.cs",
+                "39"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This modulates how far is the blur to the image."
+          },
+          "DocId": "P:Sandbox.DepthOfField.FocusRange"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/DepthOfField.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DepthOfField.FrontBlur",
+          "Name": "FrontBlur",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Properties"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "flip_to_back"
+              ]
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should we blur what's ahead the focal point towards us?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\DepthOfField.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should we blur what's ahead the focal point towards us?"
+          },
+          "DocId": "P:Sandbox.DepthOfField.FrontBlur"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/DepthOfField.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DepthOfField.BackBlur",
+          "Name": "BackBlur",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Properties"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "flip_to_front"
+              ]
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should we blur what's behind the focal point?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\DepthOfField.cs",
+                "51"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should we blur what's behind the focal point?"
+          },
+          "DocId": "P:Sandbox.DepthOfField.BackBlur"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.DepthOfField",
+      "Name": "DepthOfField",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Depth Of Field"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Post Processing"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "center_focus_strong"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Applies a depth of field effect to the camera"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\PostProcessing\\Effects\\DepthOfField.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Applies a depth of field effect to the camera"
+      },
+      "DocId": "T:Sandbox.DepthOfField"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.BasePostProcess<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/FilmGrain.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FilmGrain.Render",
+          "Name": "Render",
+          "DeclaringType": "Sandbox.FilmGrain",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\FilmGrain.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FilmGrain.Render"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/FilmGrain.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FilmGrain..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.FilmGrain",
+          "DocId": "M:Sandbox.FilmGrain.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/FilmGrain.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FilmGrain.Intensity",
+          "Name": "Intensity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\FilmGrain.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.FilmGrain.Intensity"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/FilmGrain.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FilmGrain.Response",
+          "Name": "Response",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\FilmGrain.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.FilmGrain.Response"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.FilmGrain",
+      "Name": "FilmGrain",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "FilmGrain"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Post Processing"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "grain"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Applies a film grain effect to the camera"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\PostProcessing\\Effects\\FilmGrain.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Applies a film grain effect to the camera"
+      },
+      "DocId": "T:Sandbox.FilmGrain"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.BasePostProcess<T>",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/Highlight.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Highlight.Render",
+          "Name": "Render",
+          "DeclaringType": "Sandbox.Highlight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\Highlight.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Highlight.Render"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/Highlight.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Highlight..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Highlight",
+          "DocId": "M:Sandbox.Highlight.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Highlight",
+      "Name": "Highlight",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Highlight"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Post Processing"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "lightbulb_outline"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "This should be added to a camera that you want to outline stuff"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\PostProcessing\\Effects\\Highlight.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "This should be added to a camera that you want to outline stuff"
+      },
+      "DocId": "T:Sandbox.Highlight"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.Renderer>",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/HighlightOutline.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HighlightOutline.GetOutlineTargets",
+          "Name": "GetOutlineTargets",
+          "DeclaringType": "Sandbox.HighlightOutline",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a list of targets that we want to draw the outline around"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\HighlightOutline.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a list of targets that we want to draw the outline around"
+          },
+          "DocId": "M:Sandbox.HighlightOutline.GetOutlineTargets"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/PostProcessing/Effects/HighlightOutline.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HighlightOutline..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.HighlightOutline",
+          "DocId": "M:Sandbox.HighlightOutline.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/HighlightOutline.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HighlightOutline.Material",
+          "Name": "Material",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If defined, the glow will use this material rather than a generated one."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\HighlightOutline.cs",
+                "15"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If defined, the glow will use this material rather than a generated one."
+          },
+          "DocId": "P:Sandbox.HighlightOutline.Material"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/HighlightOutline.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HighlightOutline.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The colour of the glow outline"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\HighlightOutline.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The colour of the glow outline"
+          },
+          "DocId": "P:Sandbox.HighlightOutline.Color"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/HighlightOutline.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HighlightOutline.ObscuredColor",
+          "Name": "ObscuredColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The colour of the glow when the mesh is obscured by something closer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\HighlightOutline.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The colour of the glow when the mesh is obscured by something closer."
+          },
+          "DocId": "P:Sandbox.HighlightOutline.ObscuredColor"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/HighlightOutline.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HighlightOutline.InsideColor",
+          "Name": "InsideColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Color of the inside of the glow"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\HighlightOutline.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Color of the inside of the glow"
+          },
+          "DocId": "P:Sandbox.HighlightOutline.InsideColor"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/HighlightOutline.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HighlightOutline.InsideObscuredColor",
+          "Name": "InsideObscuredColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Color of the inside of the glow when the mesh is obscured by something closer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\HighlightOutline.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Color of the inside of the glow when the mesh is obscured by something closer."
+          },
+          "DocId": "P:Sandbox.HighlightOutline.InsideObscuredColor"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/HighlightOutline.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HighlightOutline.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The width of the line of the glow"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\HighlightOutline.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The width of the line of the glow"
+          },
+          "DocId": "P:Sandbox.HighlightOutline.Width"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/HighlightOutline.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HighlightOutline.OverrideTargets",
+          "Name": "OverrideTargets",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "Manual Targets"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Specify targets of the outline manually"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\HighlightOutline.cs",
+                "46"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Specify targets of the outline manually"
+          },
+          "DocId": "P:Sandbox.HighlightOutline.OverrideTargets"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Renderer>",
+          "Loc": {
+            "File": "Scene/Components/PostProcessing/Effects/HighlightOutline.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HighlightOutline.Targets",
+          "Name": "Targets",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Manual Targets"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Specify targets of the outline manually"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\PostProcessing\\Effects\\HighlightOutline.cs",
+                "51"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Specify targets of the outline manually"
+          },
+          "DocId": "P:Sandbox.HighlightOutline.Targets"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.HighlightOutline",
+      "Name": "HighlightOutline",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Highlight Outline"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Rendering"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "lightbulb_outline"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "This component should be added to stuff you want to be outlined. You will also need to add the Highlight component to the camera you want to render the outlines."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\PostProcessing\\Effects\\HighlightOutline.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "This component should be added to stuff you want to be outlined. You will also need to \nadd the Highlight component to the camera you want to render the outlines."
+      },
+      "DocId": "T:Sandbox.HighlightOutline"
+    }
+  ],
+  "_metadata": {
+    "chunk": 106,
+    "items_count": 8
+  }
+}

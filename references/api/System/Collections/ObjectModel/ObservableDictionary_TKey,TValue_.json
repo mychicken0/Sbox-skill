@@ -1,0 +1,1732 @@
+{
+  "Types": [
+    {
+      "Namespace": "System.Collections.ObjectModel",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "TKey"
+            },
+            {
+              "Name": "value",
+              "Type": "TValue"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Add",
+          "Name": "Add",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.Add(``0,``1)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "TKey"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.ContainsKey",
+          "Name": "ContainsKey",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.ContainsKey(``0)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "TKey"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Remove",
+          "Name": "Remove",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.Remove(``0)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "TKey"
+            },
+            {
+              "Name": "value",
+              "Out": true,
+              "Type": "TValue"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.TryGetValue",
+          "Name": "TryGetValue",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.TryGetValue(``0,``1@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "System.Collections.Generic.KeyValuePair`2<TKey,TValue>"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 116
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Add",
+          "Name": "Add",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.Add(System.Collections.Generic.KeyValuePair`2{``0,``1})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Clear",
+          "Name": "Clear",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.Clear"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "System.Collections.Generic.KeyValuePair`2<TKey,TValue>"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Contains",
+          "Name": "Contains",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.Contains(System.Collections.Generic.KeyValuePair`2{``0,``1})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "array",
+              "Type": "System.Collections.Generic.KeyValuePair`2<TKey,TValue>[]"
+            },
+            {
+              "Name": "arrayIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 134
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.CopyTo",
+          "Name": "CopyTo",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair`2{``0,``1}[],System.Int32)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "System.Collections.Generic.KeyValuePair`2<TKey,TValue>"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 152
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Remove",
+          "Name": "Remove",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.Remove(System.Collections.Generic.KeyValuePair`2{``0,``1})"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerator`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 163
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.GetEnumerator",
+          "Name": "GetEnumerator",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.GetEnumerator"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "items",
+              "Type": "System.Collections.Generic.IDictionary`2<TKey,TValue>"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 208
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.AddRange",
+          "Name": "AddRange",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.AddRange(System.Collections.Generic.IDictionary`2{``0,``1})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "propertyName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 263
+          },
+          "IsProtected": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.OnPropertyChanged",
+          "Name": "OnPropertyChanged",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "Documentation": {
+            "Summary": "Called when a property (such as element count) of the dictionary has changed."
+          },
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.OnPropertyChanged(System.String)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "dictionary",
+              "Type": "System.Collections.Generic.IDictionary`2<TKey,TValue>"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.#ctor(System.Collections.Generic.IDictionary`2{``0,``1})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "comparer",
+              "Type": "System.Collections.Generic.IEqualityComparer`1<TKey>"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.#ctor(System.Collections.Generic.IEqualityComparer`1{``0})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "capacity",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.#ctor(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "dictionary",
+              "Type": "System.Collections.Generic.IDictionary`2<TKey,TValue>"
+            },
+            {
+              "Name": "comparer",
+              "Type": "System.Collections.Generic.IEqualityComparer`1<TKey>"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.#ctor(System.Collections.Generic.IDictionary`2{``0,``1},System.Collections.Generic.IEqualityComparer`1{``0})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "capacity",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "comparer",
+              "Type": "System.Collections.Generic.IEqualityComparer`1<TKey>"
+            }
+          ],
+          "l": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+          "DocId": "M:System.Collections.ObjectModel.ObservableDictionary`2.#ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1{``0})"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IDictionary`2<TKey,TValue>",
+          "Loc": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 24
+          },
+          "IsProtected": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Dictionary",
+          "Name": "Dictionary",
+          "Documentation": {
+            "Summary": "The dictionary being observed."
+          },
+          "DocId": "P:System.Collections.ObjectModel.ObservableDictionary`2.Dictionary"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.ICollection`1<TKey>",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Keys",
+          "Name": "Keys",
+          "DocId": "P:System.Collections.ObjectModel.ObservableDictionary`2.Keys"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.ICollection`1<TValue>",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Values",
+          "Name": "Values",
+          "DocId": "P:System.Collections.ObjectModel.ObservableDictionary`2.Values"
+        },
+        {
+          "PropertyType": "TValue",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Item",
+          "Name": "Item",
+          "DocId": "P:System.Collections.ObjectModel.ObservableDictionary`2.Item"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 140
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.Count",
+          "Name": "Count",
+          "DocId": "P:System.Collections.ObjectModel.ObservableDictionary`2.Count"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Collections/ObservableDictionary.cs",
+            "Line": 146
+          },
+          "IsPublic": true,
+          "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>.IsReadOnly",
+          "Name": "IsReadOnly",
+          "DocId": "P:System.Collections.ObjectModel.ObservableDictionary`2.IsReadOnly"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "System.Collections.ObjectModel.ObservableDictionary<TKey,TValue>",
+      "Name": "ObservableDictionary<TKey,TValue>",
+      "Attributes": [
+        {
+          "FullName": "System.Reflection.DefaultMemberAttribute",
+          "ConstructorArguments": [
+            "Item"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A dictionary with callbacks for when changes occur."
+      },
+      "DocId": "T:System.Collections.ObjectModel.ObservableDictionary`2"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "System.String"
+            },
+            {
+              "Name": "path",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Attributes/MenuAttribute.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MenuAttribute",
+          "DocId": "M:Editor.MenuAttribute.#ctor(System.String,System.String,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/MenuAttribute.cs",
+            "Line": 6
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuAttribute.Target",
+          "Name": "Target",
+          "DocId": "P:Editor.MenuAttribute.Target"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/MenuAttribute.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuAttribute.Path",
+          "Name": "Path",
+          "DocId": "P:Editor.MenuAttribute.Path"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/MenuAttribute.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuAttribute.Icon",
+          "Name": "Icon",
+          "DocId": "P:Editor.MenuAttribute.Icon"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Attributes/MenuAttribute.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuAttribute.Priority",
+          "Name": "Priority",
+          "DocId": "P:Editor.MenuAttribute.Priority"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/MenuAttribute.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuAttribute.Shortcut",
+          "Name": "Shortcut",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use [Shortcut] attribute"
+              ]
+            }
+          ],
+          "DocId": "P:Editor.MenuAttribute.Shortcut"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Editor.MenuAttribute",
+      "Name": "MenuAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Editor.MenuAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.PureAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.PureAttribute",
+          "DocId": "M:Sandbox.PureAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.PureAttribute",
+      "Name": "PureAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Sandbox.PureAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ImpureAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ImpureAttribute",
+          "DocId": "M:Sandbox.ImpureAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ImpureAttribute",
+      "Name": "ImpureAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Sandbox.ImpureAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphTargetAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphTargetAttribute",
+          "DocId": "M:Sandbox.ActionGraphTargetAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphTargetAttribute",
+      "Name": "ActionGraphTargetAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Sandbox.ActionGraphTargetAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "baseType",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "Attributes/ActionGraphs.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HasImplementationAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.HasImplementationAttribute",
+          "Documentation": {
+            "Params": {
+              "baseType": "Base class or interface for which there must exist an extending / implementing type."
+            }
+          },
+          "DocId": "M:Sandbox.HasImplementationAttribute.#ctor(System.Type)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "Attributes/ActionGraphs.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HasImplementationAttribute.BaseType",
+          "Name": "BaseType",
+          "Documentation": {
+            "Summary": "Base class or interface for which there must exist an extending / implementing type."
+          },
+          "DocId": "P:Sandbox.HasImplementationAttribute.BaseType"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.HasImplementationAttribute",
+      "Name": "HasImplementationAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "In ActionGraph, this type parameter can only be satisfied by a type <c>TArg</c>, such\nthat there exists at least one non-abstract type that extends / implements both\n<c>TArg</c> and <see cref=\"P:Sandbox.HasImplementationAttribute.BaseType\" />."
+      },
+      "DocId": "T:Sandbox.HasImplementationAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphPropertyAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphPropertyAttribute",
+          "DocId": "M:Sandbox.ActionGraphPropertyAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphPropertyAttribute",
+      "Name": "ActionGraphPropertyAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "In ActionGraph, this parameter should only be configurable in the inspector as a property and not have a dedicated input."
+      },
+      "DocId": "T:Sandbox.ActionGraphPropertyAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphIgnoreAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphIgnoreAttribute",
+          "DocId": "M:Sandbox.ActionGraphIgnoreAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphIgnoreAttribute",
+      "Name": "ActionGraphIgnoreAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.ActionGraphIgnoreAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphExposeWhenCachedAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphExposeWhenCachedAttribute",
+          "DocId": "M:Sandbox.ActionGraphExposeWhenCachedAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphExposeWhenCachedAttribute",
+      "Name": "ActionGraphExposeWhenCachedAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Don't cache instances of this type when serializing action graph references, force them to be always serialized separately.\nWe need this for component / game object references so we can update IDs when duplicating objects / instantiating prefabs."
+      },
+      "DocId": "T:Sandbox.ActionGraphExposeWhenCachedAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "identifier",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/ActionGraphs.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphNodeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphNodeAttribute",
+          "DocId": "M:Sandbox.ActionGraphNodeAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Attributes/ActionGraphs.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphNodeAttribute.Identifier",
+          "Name": "Identifier",
+          "Documentation": {},
+          "DocId": "P:Sandbox.ActionGraphNodeAttribute.Identifier"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/ActionGraphs.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphNodeAttribute.DefaultInputSignal",
+          "Name": "DefaultInputSignal",
+          "Documentation": {},
+          "DocId": "P:Sandbox.ActionGraphNodeAttribute.DefaultInputSignal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/ActionGraphs.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphNodeAttribute.DefaultOutputSignal",
+          "Name": "DefaultOutputSignal",
+          "Documentation": {},
+          "DocId": "P:Sandbox.ActionGraphNodeAttribute.DefaultOutputSignal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/ActionGraphs.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphNodeAttribute.InheritAsync",
+          "Name": "InheritAsync",
+          "Documentation": {},
+          "DocId": "P:Sandbox.ActionGraphNodeAttribute.InheritAsync"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphNodeAttribute",
+      "Name": "ActionGraphNodeAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Sandbox.ActionGraphNodeAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphOperatorAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphOperatorAttribute",
+          "DocId": "M:Sandbox.ActionGraphOperatorAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphOperatorAttribute",
+      "Name": "ActionGraphOperatorAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Display this node as an operator, with no header or socket labels, and a big icon in the middle."
+      },
+      "DocId": "T:Sandbox.ActionGraphOperatorAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Facepunch.ActionGraphs.NodeAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "identifier",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/ActionGraphs.cs",
+            "Line": 112
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ExpressionNodeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ExpressionNodeAttribute",
+          "DocId": "M:Sandbox.ExpressionNodeAttribute.#ctor(System.String)"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ExpressionNodeAttribute",
+      "Name": "ExpressionNodeAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute",
+          "ConstructorArguments": [
+            "Please use [ActionGraphNode( id ), Pure]."
+          ]
+        },
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.ExpressionNodeAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Facepunch.ActionGraphs.NodeAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "identifier",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/ActionGraphs.cs",
+            "Line": 123
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionNodeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionNodeAttribute",
+          "DocId": "M:Sandbox.ActionNodeAttribute.#ctor(System.String)"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionNodeAttribute",
+      "Name": "ActionNodeAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute",
+          "ConstructorArguments": [
+            "Please use [ActionGraphNode( id )]."
+          ]
+        },
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.ActionNodeAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphIncludeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphIncludeAttribute",
+          "DocId": "M:Sandbox.ActionGraphIncludeAttribute.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/ActionGraphs.cs",
+            "Line": 135
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphIncludeAttribute.AutoExpand",
+          "Name": "AutoExpand",
+          "Documentation": {
+            "Summary": "If true, double-clicking on an output of the declaring type will auto-expand this member."
+          },
+          "DocId": "P:Sandbox.ActionGraphIncludeAttribute.AutoExpand"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphIncludeAttribute",
+      "Name": "ActionGraphIncludeAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.ActionGraphIncludeAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.SingleActionAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SingleActionAttribute",
+          "DocId": "M:Sandbox.SingleActionAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.SingleActionAttribute",
+      "Name": "SingleActionAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Force a delegate-type property to only have a single attached Action Graph."
+      },
+      "DocId": "T:Sandbox.SingleActionAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Attributes/ChangeAttribute.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ChangeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ChangeAttribute",
+          "DocId": "M:Sandbox.ChangeAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/ChangeAttribute.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ChangeAttribute.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "Name of the method to call on change. If no name is provided, we will try to call On[PropertyName]Changed."
+          },
+          "DocId": "P:Sandbox.ChangeAttribute.Name"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ChangeAttribute",
+      "Name": "ChangeAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "Sandbox.CodeGeneratorAttribute",
+          "ConstructorArguments": [
+            "26",
+            "Sandbox.ConsoleSystem.OnChangePropertySet",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "This will invoke a method when the property changes. It can be used with any property but is especially useful\nwhen combined with [Sync] or [ConVar].\n<br /><br />\nIf no name is provided, we will try to call On[PropertyName]Changed. The callback should have 2 arguments - oldValue and newValue, both of the same type as the property itself."
+      },
+      "DocId": "T:Sandbox.ChangeAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ClientEditableAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ClientEditableAttribute",
+          "DocId": "M:Sandbox.ClientEditableAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ClientEditableAttribute",
+      "Name": "ClientEditableAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Indicates that this propery can be edited by the client, in a game like Sandbox Mode. In reality\nthis is used however the game wants to implement it."
+      },
+      "DocId": "T:Sandbox.ClientEditableAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 343
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WideModeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.WideModeAttribute",
+          "DocId": "M:Sandbox.WideModeAttribute.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 343
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WideModeAttribute.HasLabel",
+          "Name": "HasLabel",
+          "DocId": "P:Sandbox.WideModeAttribute.HasLabel"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.WideModeAttribute",
+      "Name": "WideModeAttribute",
+      "Documentation": {
+        "Summary": "Expand the value editor to fill the next line in the inspector, leaving the title above it"
+      },
+      "DocId": "T:Sandbox.WideModeAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ReadOnlyAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ReadOnlyAttribute",
+          "DocId": "M:Sandbox.ReadOnlyAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ReadOnlyAttribute",
+      "Name": "ReadOnlyAttribute",
+      "Documentation": {
+        "Summary": "Display this in the inspector - but don't let anyone edit it"
+      },
+      "DocId": "T:Sandbox.ReadOnlyAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.TextAreaAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.TextAreaAttribute",
+          "DocId": "M:Sandbox.TextAreaAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.TextAreaAttribute",
+      "Name": "TextAreaAttribute",
+      "Documentation": {
+        "Summary": "When applied to a string property, show a multi-line text box instead of a single line."
+      },
+      "DocId": "T:Sandbox.TextAreaAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.InputActionAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.InputActionAttribute",
+          "DocId": "M:Sandbox.InputActionAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.InputActionAttribute",
+      "Name": "InputActionAttribute",
+      "Documentation": {
+        "Summary": "When applied to a string property, use an input action selector."
+      },
+      "DocId": "T:Sandbox.InputActionAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 377
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TargetTypeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.TargetTypeAttribute",
+          "DocId": "M:Sandbox.TargetTypeAttribute.#ctor(System.Type)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 375
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TargetTypeAttribute.Type",
+          "Name": "Type",
+          "Documentation": {
+            "Summary": "The type that the property's value must derive from."
+          },
+          "DocId": "P:Sandbox.TargetTypeAttribute.Type"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.TargetTypeAttribute",
+      "Name": "TargetTypeAttribute",
+      "Documentation": {
+        "Summary": "When applied to a Type property, allows you to specify a Type that the property's value must derive from."
+      },
+      "DocId": "T:Sandbox.TargetTypeAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.FontNameAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.FontNameAttribute",
+          "DocId": "M:Sandbox.FontNameAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.FontNameAttribute",
+      "Name": "FontNameAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "When applied to a string property, uses a font name selector."
+      },
+      "DocId": "T:Sandbox.FontNameAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.IconNameAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.IconNameAttribute",
+          "DocId": "M:Sandbox.IconNameAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.IconNameAttribute",
+      "Name": "IconNameAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "When applied to a string property, uses a Material Icon selector."
+      },
+      "DocId": "T:Sandbox.IconNameAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hasAlpha",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "isHDR",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 405
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorUsageAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ColorUsageAttribute",
+          "DocId": "M:Sandbox.ColorUsageAttribute.#ctor(System.Boolean,System.Boolean)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 405
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorUsageAttribute.HasAlpha",
+          "Name": "HasAlpha",
+          "DocId": "P:Sandbox.ColorUsageAttribute.HasAlpha"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 406
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ColorUsageAttribute.IsHDR",
+          "Name": "IsHDR",
+          "DocId": "P:Sandbox.ColorUsageAttribute.IsHDR"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.ColorUsageAttribute",
+      "Name": "ColorUsageAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "When applied to a Color property, allows you to specify whether the color should have an alpha channel and/or be in HDR."
+      },
+      "DocId": "T:Sandbox.ColorUsageAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 447
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FeatureAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.FeatureAttribute",
+          "DocId": "M:Sandbox.FeatureAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 424
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FeatureAttribute.Identifier",
+          "Name": "Identifier",
+          "Documentation": {
+            "Summary": "How we will group features together"
+          },
+          "DocId": "P:Sandbox.FeatureAttribute.Identifier"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 429
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FeatureAttribute.Title",
+          "Name": "Title",
+          "Documentation": {
+            "Summary": "Title of the feature. Keep it short please!"
+          },
+          "DocId": "P:Sandbox.FeatureAttribute.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 434
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FeatureAttribute.Description",
+          "Name": "Description",
+          "Documentation": {
+            "Summary": "The description of the feature"
+          },
+          "DocId": "P:Sandbox.FeatureAttribute.Description"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 439
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FeatureAttribute.Icon",
+          "Name": "Icon",
+          "Documentation": {
+            "Summary": "Icon to show next to the feature"
+          },
+          "DocId": "P:Sandbox.FeatureAttribute.Icon"
+        },
+        {
+          "PropertyType": "Sandbox.EditorTint",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 444
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FeatureAttribute.Tint",
+          "Name": "Tint",
+          "Documentation": {
+            "Summary": "The color of the feature button. Helps group things, helps things to stand out. Defaults to white."
+          },
+          "DocId": "P:Sandbox.FeatureAttribute.Tint"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.FeatureAttribute",
+      "Name": "FeatureAttribute",
+      "Documentation": {
+        "Summary": "Sets the category or the group of a type or a type member.\nThis info can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:Sandbox.FeatureAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "tint",
+              "Type": "Sandbox.EditorTint"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 458
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TintAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.TintAttribute",
+          "DocId": "M:Sandbox.TintAttribute.#ctor(Sandbox.EditorTint)"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.EditorTint",
+          "IsPublic": true,
+          "FullName": "Sandbox.TintAttribute.Tint",
+          "Name": "Tint",
+          "DocId": "F:Sandbox.TintAttribute.Tint"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.TintAttribute",
+      "Name": "TintAttribute",
+      "DocId": "T:Sandbox.TintAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.EditorTint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EditorTint.White",
+          "Name": "White",
+          "DocId": "F:Sandbox.EditorTint.White"
+        },
+        {
+          "FieldType": "Sandbox.EditorTint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EditorTint.Pink",
+          "Name": "Pink",
+          "DocId": "F:Sandbox.EditorTint.Pink"
+        },
+        {
+          "FieldType": "Sandbox.EditorTint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EditorTint.Green",
+          "Name": "Green",
+          "DocId": "F:Sandbox.EditorTint.Green"
+        },
+        {
+          "FieldType": "Sandbox.EditorTint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EditorTint.Yellow",
+          "Name": "Yellow",
+          "DocId": "F:Sandbox.EditorTint.Yellow"
+        },
+        {
+          "FieldType": "Sandbox.EditorTint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EditorTint.Blue",
+          "Name": "Blue",
+          "DocId": "F:Sandbox.EditorTint.Blue"
+        },
+        {
+          "FieldType": "Sandbox.EditorTint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.EditorTint.Red",
+          "Name": "Red",
+          "DocId": "F:Sandbox.EditorTint.Red"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.EditorTint",
+      "Name": "EditorTint",
+      "DocId": "T:Sandbox.EditorTint"
+    }
+  ],
+  "_metadata": {
+    "chunk": 12,
+    "items_count": 28
+  }
+}

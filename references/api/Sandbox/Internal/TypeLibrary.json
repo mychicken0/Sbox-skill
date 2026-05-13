@@ -1,0 +1,1349 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Internal",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<T>",
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/Attributes.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetAttributes",
+          "Name": "GetAttributes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get all attributes of this type"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetAttributes``1"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<System.ValueTuple`2<Sandbox.TypeDescription,T>>",
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/Attributes.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetTypesWithAttribute",
+          "Name": "GetTypesWithAttribute",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get all attributes of this type. Returns the type description along with the attribute. This will \nalso return types that inherit the attribute from base classes too."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetTypesWithAttribute``1"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<System.ValueTuple`2<Sandbox.TypeDescription,T>>",
+          "Parameters": [
+            {
+              "Name": "inherited",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Attributes.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetTypesWithAttribute",
+          "Name": "GetTypesWithAttribute",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get all attributes of this type. Returns the type description along with the attribute.\nIf inherited is false, we will return only classes that contain this attribute directly."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetTypesWithAttribute``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "t",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Attributes.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetAttribute",
+          "Name": "GetAttribute",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get single attribute of type, from type"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetAttribute``1(System.Type)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<T>",
+          "Parameters": [
+            {
+              "Name": "t",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Attributes.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetAttributes",
+          "Name": "GetAttributes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get all attribute of type, from all types assignable to type"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetAttributes``1(System.Type)"
+        },
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "targetType",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "args",
+              "Type": "System.Object[]",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Instancing.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Create a type instance by name and is assignable to given type, with optional arguments for its constructor.",
+            "Params": {
+              "name": "Name of the type to create.",
+              "targetType": "Type \"constraint\", as in the type instance must be assignable to this given type.",
+              "args": "Optional arguments for the constructor of the selected type."
+            }
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.Create(System.String,System.Type,System.Object[])"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "args",
+              "Type": "System.Object[]",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Instancing.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Create type instance from type."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.Create``1(System.Type,System.Object[])"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "complainOnMissing",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Instancing.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Create a type instance by name and is assignable to given type.",
+            "Params": {
+              "name": "Name of the type to create.",
+              "complainOnMissing": "Display a warning when requested type name was not found."
+            },
+            "TypeParams": {
+              "T": "Type \"constraint\", as in the type instance must be assignable to this given type."
+            }
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.Create``1(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "args",
+              "Type": "System.Object[]"
+            },
+            {
+              "Name": "complainOnMissing",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Instancing.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Create a type instance by name and is assignable to given type.",
+            "Params": {
+              "name": "Name of the type to create.",
+              "complainOnMissing": "Display a warning when requested type name was not found.",
+              "args": ""
+            },
+            "TypeParams": {
+              "T": "Type \"constraint\", as in the type instance must be assignable to this given type."
+            }
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.Create``1(System.String,System.Object[],System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Instancing.cs",
+            "Line": 103
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Create a type instance by its identity. See <see cref=\"M:Sandbox.Internal.TypeLibrary.GetIdent(System.Type)\" />."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.Create``1(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<System.ValueTuple`2<Sandbox.MethodDescription,T>>",
+          "Parameters": [
+            {
+              "Name": "onlyStatic",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetMethodsWithAttribute",
+          "Name": "GetMethodsWithAttribute",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find all methods with given attribute, optionally non static"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetMethodsWithAttribute``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.MethodDescription>",
+          "Parameters": [
+            {
+              "Name": "methodName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.FindStaticMethods",
+          "Name": "FindStaticMethods",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find all static methods with given name."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.FindStaticMethods(System.String)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.MethodDescription>",
+          "Parameters": [
+            {
+              "Name": "methodName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.FindStaticMethods",
+          "Name": "FindStaticMethods",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find all static methods with given name and given attribute."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.FindStaticMethods``1(System.String)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<T>",
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/Members.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetMemberAttributes",
+          "Name": "GetMemberAttributes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find all member attributes (instances) with given attribute type."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetMemberAttributes``1"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<T>",
+          "Parameters": [
+            {
+              "Name": "staticMembers",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetMemberAttributes",
+          "Name": "GetMemberAttributes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find all static or non static only member attributes (instances) with given attribute type."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetMemberAttributes``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.PropertyDescription[]",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "onlyOwn",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Properties.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetPropertyDescriptions",
+          "Name": "GetPropertyDescriptions",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get a list of properties on the target object. To do this we'll just call GetDescription( obj.GetType() ) and return .Properties.\nWill return an empty array if we can't access these properties."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetPropertyDescriptions(System.Object,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Properties.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.SetProperty",
+          "Name": "SetProperty",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Set a named property on given object.\nWill perform extra magic for string inputs and try to convert to target property type.",
+            "Return": "Whether the property was set or not.",
+            "Params": {
+              "target": "The target object to set a named property on.",
+              "name": "Name of the property to set.",
+              "value": "Value for the property."
+            }
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.SetProperty(System.Object,System.String,System.Object)"
+        },
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Properties.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetPropertyValue",
+          "Name": "GetPropertyValue",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Try to get a value from a property on an object"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetPropertyValue(System.Object,System.String)"
+        },
+        {
+          "ReturnType": "System.Byte[]",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Serializer.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.ToBytes",
+          "Name": "ToBytes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Serialize this value to bytes, where possible"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.ToBytes``1(``0)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "T"
+            },
+            {
+              "Name": "bs",
+              "Ref": true,
+              "Type": "Sandbox.ByteStream"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Serializer.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.ToBytes",
+          "Name": "ToBytes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Serialize this value to bytes, where possible"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.ToBytes``1(``0,Sandbox.ByteStream@)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.Byte[]"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Serializer.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.FromBytes",
+          "Name": "FromBytes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Deserialize this from bytes. \nIf the type is unknown, T can be an object."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.FromBytes``1(System.Byte[])"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.ReadOnlySpan`1<System.Byte>"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Serializer.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.FromBytes",
+          "Name": "FromBytes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "DocId": "M:Sandbox.Internal.TypeLibrary.FromBytes``1(System.ReadOnlySpan`1{System.Byte})"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "bs",
+              "Ref": true,
+              "Type": "Sandbox.ByteStream"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Serializer.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.FromBytes",
+          "Name": "FromBytes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Deserialize this from bytes. \nIf the type is unknown, T can be an object."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.FromBytes``1(Sandbox.ByteStream@)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 354
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetTypeIdent",
+          "Name": "GetTypeIdent",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get hash of a type."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetTypeIdent(System.Type)"
+        },
+        {
+          "ReturnType": "Sandbox.TypeDescription",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 361
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetType",
+          "Name": "GetType",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get the description for a specific type. This will return null if you don't have whitelist access to the type.\nFor constructed generic types, this will give you the description of the generic type definition."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetType(System.Type)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<Sandbox.TypeDescription>",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "types",
+              "Type": "System.Type[]"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 384
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetGenericTypes",
+          "Name": "GetGenericTypes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get a list of types that implement this generic type"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetGenericTypes(System.Type,System.Type[])"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<Sandbox.TypeDescription>",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetTypes",
+          "Name": "GetTypes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get descriptions for all types that derive from T"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetTypes(System.Type)"
+        },
+        {
+          "ReturnType": "Sandbox.TypeDescription",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 402
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetType",
+          "Name": "GetType",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find a TypeDescription that derives from <typeparamref name=\"T\" />, by name"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetType``1(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.TypeDescription",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "preferAddonAssembly",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 409
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetType",
+          "Name": "GetType",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find a TypeDescription that derives from T by name, which can be an Alias etc.\nIf preferAddonAssembly is true, then if there are conflicts we'll prefer types that are \nin addon code."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetType``1(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.TypeDescription",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "preferAddonAssembly",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "exactFullName",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 417
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetType",
+          "Name": "GetType",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find a TypeDescription that derives from T by name, which can be an Alias etc.\nIf preferAddonAssembly is true, then if there are conflicts we'll prefer types that are \nin addon code.\nIf exactFullName is true, the name must match the FullName of the type."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetType``1(System.String,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.TypeDescription",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "preferAddonAssembly",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "exactFullName",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetType",
+          "Name": "GetType",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find a TypeDescription that derives from T by name, which can be an Alias etc.\nIf preferAddonAssembly is true, then if there are conflicts we'll prefer types that are \nin addon code.",
+            "Params": {
+              "type": "The base type to search for, or null to search all types",
+              "name": "The name to search for, which can be an alias or the full name depending on the value of <paramref name=\"exactFullName\" />",
+              "preferAddonAssembly": "If true, then if there are conflicts we'll prefer types that are in addon code.",
+              "exactFullName": "If true, the name must match the FullName (or alias) of the type"
+            }
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetType(System.Type,System.String,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<Sandbox.TypeDescription>",
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 437
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetTypes",
+          "Name": "GetTypes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get descriptions for all types that derive from T"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetTypes``1"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.TypeDescription>",
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 442
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetTypes",
+          "Name": "GetTypes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get all types"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetTypes"
+        },
+        {
+          "ReturnType": "Sandbox.TypeDescription",
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 447
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetType",
+          "Name": "GetType",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find the description for templated type"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetType``1"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "t",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "typeDescription",
+              "Out": true,
+              "Type": "Sandbox.TypeDescription"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 455
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.TryGetType",
+          "Name": "TryGetType",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find the description type"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.TryGetType(System.Type,Sandbox.TypeDescription@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "typeDescription",
+              "Out": true,
+              "Type": "Sandbox.TypeDescription"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 461
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.TryGetType",
+          "Name": "TryGetType",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find the description type"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.TryGetType``1(Sandbox.TypeDescription@)"
+        },
+        {
+          "ReturnType": "Sandbox.TypeDescription",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "exactFullName",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 466
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetType",
+          "Name": "GetType",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find a TypeDescription by name"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetType(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.TypeDescription",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetTypeByIdent",
+          "Name": "GetTypeByIdent",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find a TypeDescription by name"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetTypeByIdent(System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.MemberDescription",
+          "Parameters": [
+            {
+              "Name": "ident",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 478
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetMemberByIdent",
+          "Name": "GetMemberByIdent",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Find a <see cref=\"T:Sandbox.MemberDescription\" /> by its <see cref=\"P:Sandbox.MemberDescription.Identity\" />"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetMemberByIdent(System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.TypeDescription",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "baseType",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 487
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetType",
+          "Name": "GetType",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use GetType with the arguments the other way around"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find a TypeDescription that derives from <paramref name=\"baseType\" />, by name"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetType(System.String,System.Type)"
+        },
+        {
+          "ReturnType": "System.Type[]",
+          "Parameters": [
+            {
+              "Name": "genericType",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 496
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetGenericArguments",
+          "Name": "GetGenericArguments",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Performs <see cref=\"M:System.Type.GetGenericArguments\" /> with access control checks.\nWill throw if any arguments aren't in the whitelist.",
+            "Params": {
+              "genericType": "Constructed generic type to get the arguments of"
+            }
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetGenericArguments(System.Type)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 516
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.HasAttribute",
+          "Name": "HasAttribute",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Return true if this type contains this attribute"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.HasAttribute``1(System.Type)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 529
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.CheckValidationAttributes",
+          "Name": "CheckValidationAttributes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Check if all properties of this class instance pass their <see cref=\"T:System.ComponentModel.DataAnnotations.ValidationAttribute\" />.",
+            "Return": "True if all properties pass their validity checks (or if there are no checks), false otherwise.",
+            "Params": {
+              "obj": "Object to test."
+            }
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.CheckValidationAttributes``1(``0)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "T"
+            },
+            {
+              "Name": "errors",
+              "Out": true,
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 540
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.CheckValidationAttributes",
+          "Name": "CheckValidationAttributes",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Check if all properties of this class instance pass their <see cref=\"T:System.ComponentModel.DataAnnotations.ValidationAttribute\" />.",
+            "Return": "True if all properties pass their validity checks (or if there are no checks), false otherwise.",
+            "Params": {
+              "obj": "Object to test.",
+              "errors": "string array of first invalid obj property error"
+            }
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.CheckValidationAttributes``1(``0,System.String[]@)"
+        },
+        {
+          "ReturnType": "Sandbox.SerializedObject",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 558
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetSerializedObject",
+          "Name": "GetSerializedObject",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get a SerializedObject version of this object"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetSerializedObject(System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.SerializedObject",
+          "Parameters": [
+            {
+              "Name": "fetchTarget",
+              "Type": "System.Func`1<System.Object>"
+            },
+            {
+              "Name": "typeDescription",
+              "Type": "Sandbox.TypeDescription"
+            },
+            {
+              "Name": "parent",
+              "Type": "Sandbox.SerializedProperty",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetSerializedObject",
+          "Name": "GetSerializedObject",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetSerializedObject(System.Func`1{System.Object},Sandbox.TypeDescription,Sandbox.SerializedProperty)"
+        },
+        {
+          "ReturnType": "Sandbox.EnumDescription",
+          "Parameters": [
+            {
+              "Name": "enumType",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 654
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetEnumDescription",
+          "Name": "GetEnumDescription",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get a class describing the values of an enum"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetEnumDescription(System.Type)"
+        },
+        {
+          "ReturnType": "Sandbox.EnumDescription.Entry",
+          "Parameters": [
+            {
+              "Name": "enumValue",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 665
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.GetEnumDescription",
+          "Name": "GetEnumDescription",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Get a describtion of an enum value. This is useful if your enum values are decorated with attributes that you want to read, for example."
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.GetEnumDescription``1(``0)"
+        },
+        {
+          "ReturnType": "Sandbox.SerializedProperty",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "get",
+              "Type": "System.Func`1<T>"
+            },
+            {
+              "Name": "set",
+              "Type": "System.Action`1<T>"
+            },
+            {
+              "Name": "attributes",
+              "Type": "System.Attribute[]",
+              "Default": "null"
+            },
+            {
+              "Name": "parent",
+              "Type": "Sandbox.SerializedObject",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 675
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.CreateProperty",
+          "Name": "CreateProperty",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "DocId": "M:Sandbox.Internal.TypeLibrary.CreateProperty``1(System.String,System.Func`1{``0},System.Action`1{``0},System.Attribute[],Sandbox.SerializedObject)"
+        },
+        {
+          "ReturnType": "Sandbox.SerializedProperty",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "so",
+              "Type": "Sandbox.SerializedObject"
+            },
+            {
+              "Name": "attributes",
+              "Type": "System.Attribute[]",
+              "Default": "null"
+            },
+            {
+              "Name": "parent",
+              "Type": "Sandbox.SerializedObject",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeLibrary.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.TypeLibrary.CreateProperty",
+          "Name": "CreateProperty",
+          "DeclaringType": "Sandbox.Internal.TypeLibrary",
+          "Documentation": {
+            "Summary": "Create a serialized property from a SerializedObject"
+          },
+          "DocId": "M:Sandbox.Internal.TypeLibrary.CreateProperty``1(System.String,Sandbox.SerializedObject,System.Attribute[],Sandbox.SerializedObject)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Reflection",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.TypeLibrary",
+      "Name": "TypeLibrary",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.SkipHotloadAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Internal.TypeLibrary"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Editor.EditorSystem",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "list",
+              "Type": "System.Collections.Generic.IEnumerable`1<T>"
+            },
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "worker",
+              "Type": "System.Func`3<T,System.Threading.CancellationToken,System.Threading.Tasks.Task>"
+            },
+            {
+              "Name": "cancel",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            },
+            {
+              "Name": "modal",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.EditorSystemPublic.ForEachAsync",
+          "Name": "ForEachAsync",
+          "DeclaringType": "Sandbox.EditorSystemPublic",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.EditorSystemPublic/<ForEachAsync>d__2`1"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.EditorSystemPublic.ForEachAsync``1(System.Collections.Generic.IEnumerable`1{``0},System.String,System.Func`3{``0,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationToken,System.Boolean)"
+        },
+        {
+          "ReturnType": "Editor.IProgressSection",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "modal",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "EditorSystemPublic.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EditorSystemPublic.ProgressSection",
+          "Name": "ProgressSection",
+          "DeclaringType": "Sandbox.EditorSystemPublic",
+          "Documentation": {
+            "Summary": "Start a progress section"
+          },
+          "DocId": "M:Sandbox.EditorSystemPublic.ProgressSection(System.Boolean)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.EditorSystemPublic..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.EditorSystemPublic",
+          "DocId": "M:Sandbox.EditorSystemPublic.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Scene",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "EditorSystemPublic.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EditorSystemPublic.Scene",
+          "Name": "Scene",
+          "DocId": "P:Sandbox.EditorSystemPublic.Scene"
+        },
+        {
+          "PropertyType": "Sandbox.CameraComponent",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "EditorSystemPublic.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.EditorSystemPublic.Camera",
+          "Name": "Camera",
+          "DocId": "P:Sandbox.EditorSystemPublic.Camera"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Sandbox.EditorSystemPublic",
+      "Name": "EditorSystemPublic",
+      "DocId": "T:Sandbox.EditorSystemPublic"
+    }
+  ],
+  "_metadata": {
+    "chunk": 240,
+    "items_count": 2
+  }
+}

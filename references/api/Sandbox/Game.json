@@ -1,0 +1,1030 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "seed",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Game/Game/Game.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.SetRandomSeed",
+          "Name": "SetRandomSeed",
+          "DeclaringType": "Sandbox.Game",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the seed for Game.Random"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "96"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the seed for Game.Random"
+          },
+          "DocId": "M:Sandbox.Game.SetRandomSeed(System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.WebSurface",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Game/Game.cs",
+            "Line": 112
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.CreateWebSurface",
+          "Name": "CreateWebSurface",
+          "DeclaringType": "Sandbox.Game",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a limited web surface"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "109"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a limited web surface"
+          },
+          "DocId": "M:Sandbox.Game.CreateWebSurface"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Game/Game.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.Disconnect",
+          "Name": "Disconnect",
+          "DeclaringType": "Sandbox.Game",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Disconnect from the current game session"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "117"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Disconnect from the current game session"
+          },
+          "DocId": "M:Sandbox.Game.Disconnect"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Game/Game.cs",
+            "Line": 139
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.Close",
+          "Name": "Close",
+          "DeclaringType": "Sandbox.Game",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Close the current game."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "135"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Close the current game."
+          },
+          "DocId": "M:Sandbox.Game.Close"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "gameIdent",
+              "Type": "System.String"
+            },
+            {
+              "Name": "keepClients",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Game/Game/Game.cs",
+            "Line": 180
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.Load",
+          "Name": "Load",
+          "DeclaringType": "Sandbox.Game",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Load a game. You can configure the new game with LaunchArguments before calling this."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "178"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Load a game. You can configure the new game with LaunchArguments before calling this."
+          },
+          "DocId": "M:Sandbox.Game.Load(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Game/Game.cs",
+            "Line": 231
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.TakeScreenshot",
+          "Name": "TakeScreenshot",
+          "DeclaringType": "Sandbox.Game",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ConCmdAttribute",
+              "ConstructorArguments": [
+                "screenshot",
+                "0"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Capture a screenshot. Saves it in Steam."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "228"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Capture a screenshot. Saves it in Steam."
+          },
+          "DocId": "M:Sandbox.Game.TakeScreenshot"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "width",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "height",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Game/Game/Game.cs",
+            "Line": 240
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.TakeHighResScreenshot",
+          "Name": "TakeHighResScreenshot",
+          "DeclaringType": "Sandbox.Game",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ConCmdAttribute",
+              "ConstructorArguments": [
+                "screenshot_highres",
+                "0"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Capture a high resolution screenshot using the active scene camera."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "237"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Capture a high resolution screenshot using the active scene camera."
+          },
+          "DocId": "M:Sandbox.Game.TakeHighResScreenshot(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.SceneLoadOptions"
+            }
+          ],
+          "l": {
+            "File": "Game/Game/Game.Scene.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.ChangeScene",
+          "Name": "ChangeScene",
+          "DeclaringType": "Sandbox.Game",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Change the active scene and optionally bring all connected clients to the new scene (broadcast the scene change.) If we're in a networking session, then only the host can change the scene."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.Scene.cs",
+                "33"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Change the active scene and optionally bring all connected clients to\nthe new scene (broadcast the scene change.) If we're in a networking\nsession, then only the host can change the scene.",
+            "Return": "Whether the scene was changed successfully.",
+            "Params": {
+              "options": "The <see cref=\"T:Sandbox.SceneLoadOptions\" /> to use which also specifies which scene to load."
+            }
+          },
+          "DocId": "M:Sandbox.Game.ChangeScene(Sandbox.SceneLoadOptions)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.UInt64",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.AppId",
+          "Name": "AppId",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Steam AppId of S&box."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Steam AppId of S&amp;box."
+          },
+          "DocId": "P:Sandbox.Game.AppId"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.InGame",
+          "Name": "InGame",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return true if we're in a game (ie, not in the main menu)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if we're in a game (ie, not in the main menu)"
+          },
+          "DocId": "P:Sandbox.Game.InGame"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.IsEditor",
+          "Name": "IsEditor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if the game is running with the editor enabled"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "55"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if the game is running with the editor enabled"
+          },
+          "DocId": "P:Sandbox.Game.IsEditor"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.Ident",
+          "Name": "Ident",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the current game's ident - ie facepunch.sandbox"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "60"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the current game's ident - ie facepunch.sandbox"
+          },
+          "DocId": "P:Sandbox.Game.Ident"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.IsMainMenuVisible",
+          "Name": "IsMainMenuVisible",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if the main menu is visible. Note that this will work serverside too but will only return the state of the host."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "66"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if the main menu is visible. Note that this will work serverside too but will only\nreturn the state of the host."
+          },
+          "DocId": "P:Sandbox.Game.IsMainMenuVisible"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.IsRecordingVideo",
+          "Name": "IsRecordingVideo",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if we're currently recording a video (using the video command, or F6)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "71"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if we're currently recording a video (using the video command, or F6)"
+          },
+          "DocId": "P:Sandbox.Game.IsRecordingVideo"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.IsClosing",
+          "Name": "IsClosing",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set to true when the game is closing"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "76"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set to true when the game is closing"
+          },
+          "DocId": "P:Sandbox.Game.IsClosing"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.IsRunningInVR",
+          "Name": "IsRunningInVR",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return true if we're running in VR"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "81"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if we're running in VR"
+          },
+          "DocId": "P:Sandbox.Game.IsRunningInVR"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.IsRunningOnHandheld",
+          "Name": "IsRunningOnHandheld",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return true if we're running on a handheld device (the deck). Will always be false serverside."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "86"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if we're running on a handheld device (the deck). Will always be false serverside."
+          },
+          "DocId": "P:Sandbox.Game.IsRunningOnHandheld"
+        },
+        {
+          "PropertyType": "System.Random",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.Random",
+          "Name": "Random",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A shared random that is automatically seeded on tick"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "91"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A shared random that is automatically seeded on tick"
+          },
+          "DocId": "P:Sandbox.Game.Random"
+        },
+        {
+          "PropertyType": "Sandbox.SteamId",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.SteamId",
+          "Name": "SteamId",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Your SteamId"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "104"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Your SteamId"
+          },
+          "DocId": "P:Sandbox.Game.SteamId"
+        },
+        {
+          "PropertyType": "Sandbox.PhysicsTraceBuilder",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.PhysicsTrace",
+          "Name": "PhysicsTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Trace against the physics in the current scene"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "125"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Trace against the physics in the current scene"
+          },
+          "DocId": "P:Sandbox.Game.PhysicsTrace"
+        },
+        {
+          "PropertyType": "Sandbox.SceneTrace",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 131
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.SceneTrace",
+          "Name": "SceneTrace",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Trace against the physics and hitboxes in the current scene"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "130"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Trace against the physics and hitboxes in the current scene"
+          },
+          "DocId": "P:Sandbox.Game.SceneTrace"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Game/Game.cs",
+            "Line": 252
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.CheatsEnabled",
+          "Name": "CheatsEnabled",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ConVarAttribute",
+              "ConstructorArguments": [
+                "sv_cheats",
+                "66"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This has to be in Game.dll so the codegen will get generated for it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.cs",
+                "246"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This has to be in Game.dll so the codegen will get generated for it"
+          },
+          "DocId": "P:Sandbox.Game.CheatsEnabled"
+        },
+        {
+          "PropertyType": "Sandbox.Internal.TypeLibrary",
+          "Loc": {
+            "File": "Game/Game/Game.Host.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.TypeLibrary",
+          "Name": "TypeLibrary",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Provides access to the global Sandbox.Internal.TypeLibrary for the current game context. <br/>The <code style=\"color: #DCDCDC; background-color: #111111; padding: 4px;\">TypeLibrary</code> is a runtime reflection system that describes types, their members, and relationships in the game and engine assemblies. It allows you to find and create types by name and id. It's basically a sandboxed version of the .net reflection system.<br/>"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.Host.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Provides access to the global <see cref=\"T:Sandbox.Internal.TypeLibrary\" /> for the current game context.\n<para>\nThe <c>TypeLibrary</c> is a runtime reflection system that describes types, their members, and relationships in the game and engine assemblies. It allows you to\nfind and create types by name and id. It's basically a sandboxed version of the .net reflection system.\n</para>"
+          },
+          "DocId": "P:Sandbox.Game.TypeLibrary"
+        },
+        {
+          "PropertyType": "Sandbox.CookieContainer",
+          "Loc": {
+            "File": "Game/Game/Game.Host.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.Cookies",
+          "Name": "Cookies",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows access to the cookies for the current game. The cookies are used to store persistent data across game sessions, such as user preferences or session data. Internally the cookies are encoded to JSON and stored in a file on disk."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.Host.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows access to the cookies for the current game. The cookies are used to store persistent data across game sessions, such as user preferences or session data.\nInternally the cookies are encoded to JSON and stored in a file on disk."
+          },
+          "DocId": "P:Sandbox.Game.Cookies"
+        },
+        {
+          "PropertyType": "Sandbox.LanguageContainer",
+          "Loc": {
+            "File": "Game/Game/Game.Host.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.Language",
+          "Name": "Language",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Lets you get translated phrases from the localization system"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.Host.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Lets you get translated phrases from the localization system"
+          },
+          "DocId": "P:Sandbox.Game.Language"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Game/Game.Scene.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.IsPlaying",
+          "Name": "IsPlaying",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Indicates whether the game is currently running and actively playing a scene."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.Scene.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Indicates whether the game is currently running and actively playing a scene."
+          },
+          "DocId": "P:Sandbox.Game.IsPlaying"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Game/Game.Scene.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.IsPaused",
+          "Name": "IsPaused",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Indicates whether the game is currently paused."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.Scene.cs",
+                "15"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Indicates whether the game is currently paused."
+          },
+          "DocId": "P:Sandbox.Game.IsPaused"
+        },
+        {
+          "PropertyType": "Sandbox.Scene",
+          "Loc": {
+            "File": "Game/Game/Game.Scene.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Game.ActiveScene",
+          "Name": "ActiveScene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The current scene that is being played."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Game\\Game.Scene.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The current scene that is being played."
+          },
+          "DocId": "P:Sandbox.Game.ActiveScene"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Game",
+      "Name": "Game",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides global access to core game state, utilities, and operations for S&box. <br/>The <span style=\"color: #4EC9B0;\">Game</span> class exposes static properties and methods to query and control the running game, such as checking if the game is running, getting your steamid, taking screenshots, and managing game sessions.<br/>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Game\\Game.cs",
+            "31"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides global access to core game state, utilities, and operations for S&box. <br/>The <span style=\"color: #4EC9B0;\">Game</span> class exposes static properties and methods to query and control the running game, such as checking if the game is running, getting your steamid, taking screenshots, and managing game sessions.<br/>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Game\\Game.Debug.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides global access to core game state, utilities, and operations for S&box. <br/>The <span style=\"color: #4EC9B0;\">Game</span> class exposes static properties and methods to query and control the running game, such as checking if the game is running, getting your steamid, taking screenshots, and managing game sessions.<br/>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Game\\Game.Host.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides global access to core game state, utilities, and operations for S&box. <br/>The <span style=\"color: #4EC9B0;\">Game</span> class exposes static properties and methods to query and control the running game, such as checking if the game is running, getting your steamid, taking screenshots, and managing game sessions.<br/>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Game\\Game.Local.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides global access to core game state, utilities, and operations for S&box. <br/>The <span style=\"color: #4EC9B0;\">Game</span> class exposes static properties and methods to query and control the running game, such as checking if the game is running, getting your steamid, taking screenshots, and managing game sessions.<br/>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Game\\Game.Overlay.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides global access to core game state, utilities, and operations for S&box. <br/>The <span style=\"color: #4EC9B0;\">Game</span> class exposes static properties and methods to query and control the running game, such as checking if the game is running, getting your steamid, taking screenshots, and managing game sessions.<br/>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Game\\Game.Scene.cs",
+            "5"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Provides global access to core game state, utilities, and operations for S&amp;box.\n<para>\nThe <see cref=\"T:Sandbox.Game\" /> class exposes static properties and methods to query and control the running game,\nsuch as checking if the game is running, getting your steamid, taking screenshots, and managing game sessions.\n</para>",
+        "SeeAlso": [
+          "T:Sandbox.Application"
+        ],
+        "Examples": [
+          "<code>\n            // Check if the game is running in the editor\n            if (Game.IsEditor)\n            {\n                // Perform editor-specific logic\n            }\n            </code>",
+          "<code>\n            // Take a screenshot\n            Game.TakeScreenshot();\n            </code>"
+        ]
+      },
+      "DocId": "T:Sandbox.Game"
+    }
+  ],
+  "_metadata": {
+    "chunk": 42,
+    "items_count": 1
+  }
+}

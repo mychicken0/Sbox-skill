@@ -1,0 +1,1606 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 278
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Hit",
+          "Name": "Hit",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "277"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Hit"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 283
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Distance",
+          "Name": "Distance",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The distance between start and end positions."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "282"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The distance between start and end positions."
+          },
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Distance"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 288
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.StartPosition",
+          "Name": "StartPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The start position of the trace"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "287"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The start position of the trace"
+          },
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.StartPosition"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 293
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.EndPosition",
+          "Name": "EndPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The end or hit position of the trace"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "292"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The end or hit position of the trace"
+          },
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.EndPosition"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 298
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.HitPosition",
+          "Name": "HitPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The hit position of the trace"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "297"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The hit position of the trace"
+          },
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.HitPosition"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 303
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Fraction",
+          "Name": "Fraction",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A fraction [0..1] of where the trace hit between the start and the original end positions"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "302"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A fraction [0..1] of where the trace hit between the start and the original end positions"
+          },
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Fraction"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 308
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Normal",
+          "Name": "Normal",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The hit surface normal (direction vector)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "307"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The hit surface normal (direction vector)"
+          },
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Normal"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 309
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.HitTriangle",
+          "Name": "HitTriangle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "308"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.HitTriangle"
+        },
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 310
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Material",
+          "Name": "Material",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "309"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Material"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 315
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Transform",
+          "Name": "Transform",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The transform of the hit object (if it has one)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "314"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The transform of the hit object (if it has one)"
+          },
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Transform"
+        },
+        {
+          "PropertyType": "Sandbox.SceneObject",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 320
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.SceneObject",
+          "Name": "SceneObject",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If we hit something associated with a sceneobject, this will be that object."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "319"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If we hit something associated with a sceneobject, this will be that object."
+          },
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.SceneObject"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 325
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.HitTriangleUv",
+          "Name": "HitTriangleUv",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This is the Uv coordinate on the triangle hit. 'x' represents the distance between Vertex 0-1, 'y' represents the distance between Vertex 0-2."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "324"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This is the Uv coordinate on the triangle hit. 'x' represents the distance between Vertex 0-1, 'y' represents the distance between Vertex 0-2."
+          },
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.HitTriangleUv"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 332
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexInfluence",
+          "Name": "VertexInfluence",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Given the position on the triangle hit, this vector gives the influence of each vertex on that position. So for example, if the Vector is [1,0,0] that means that the hit point is right on vertex 0. If it's [0.33, 0.33, 0.33] then it's right in the middle of each vertex."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "331"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Given the position on the triangle hit, this vector gives the influence of each vertex on that position.\nSo for example, if the Vector is [1,0,0] that means that the hit point is right on vertex 0. If it's [0.33, 0.33, 0.33] then it's \nright in the middle of each vertex."
+          },
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexInfluence"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail",
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Vertex0",
+          "Name": "Vertex0",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "346"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Vertex0"
+        },
+        {
+          "FieldType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail",
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Vertex1",
+          "Name": "Vertex1",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "347"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Vertex1"
+        },
+        {
+          "FieldType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail",
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Vertex2",
+          "Name": "Vertex2",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "348"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.Vertex2"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result",
+      "Name": "Result",
+      "DeclaringType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+      "DocId": "T:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 336
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Position",
+          "Name": "Position",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "335"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Position"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 337
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Normal",
+          "Name": "Normal",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "336"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Normal"
+        },
+        {
+          "PropertyType": "Vector4",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 338
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "337"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Color"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 340
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Uv0",
+          "Name": "Uv0",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "339"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Uv0"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 341
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Uv1",
+          "Name": "Uv1",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "340"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Uv1"
+        },
+        {
+          "PropertyType": "Vector4",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 343
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Paint1",
+          "Name": "Paint1",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "342"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Paint1"
+        },
+        {
+          "PropertyType": "Vector4",
+          "Loc": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 344
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Paint0",
+          "Name": "Paint0",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "343"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail.Paint0"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail",
+      "Name": "VertexDetail",
+      "DeclaringType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest/Result",
+      "DocId": "T:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result.VertexDetail"
+    },
+    {
+      "Namespace": "Sandbox.Engine.Shaders",
+      "Methods": [],
+      "Properties": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Engine.Shaders.ShaderCompile",
+      "Name": "ShaderCompile",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Engine.Shaders.ShaderCompile"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompile.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Engine.Shaders.ShaderCompile.Results",
+          "DocId": "M:Sandbox.Engine.Shaders.ShaderCompile.Results.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompile.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.Success",
+          "Name": "Success",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if the shader was compiled successfully. False indicates an error occurred. You can dig deeper into why in Programs."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if the shader was compiled successfully. False indicates an error\noccurred. You can dig deeper into why in Programs."
+          },
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompile.Results.Success"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompile.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.Skipped",
+          "Name": "Skipped",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true then this compile was skipped because nothing changed"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true then this compile was skipped because nothing changed"
+          },
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompile.Results.Skipped"
+        },
+        {
+          "PropertyType": "System.Byte[]",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompile.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.CompiledShader",
+          "Name": "CompiledShader",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If successful, this contains the actual resource-encoded bytes of the shader compile."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If successful, this contains the actual resource-encoded bytes of the\nshader compile."
+          },
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompile.Results.CompiledShader"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Engine.Shaders.ShaderCompile.Results.Program>",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompile.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.Programs",
+          "Name": "Programs",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+                "68"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompile.Results.Programs"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results",
+      "Name": "Results",
+      "DeclaringType": "Sandbox.Engine.Shaders.ShaderCompile",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "The results of a shader compile"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+            "12"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "The results of a shader compile"
+      },
+      "DocId": "T:Sandbox.Engine.Shaders.ShaderCompile.Results"
+    },
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.Program..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Engine.Shaders.ShaderCompile.Results.Program",
+          "DocId": "M:Sandbox.Engine.Shaders.ShaderCompile.Results.Program.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompile.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.Program.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The identifier for this program"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+                "39"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The identifier for this program"
+          },
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompile.Results.Program.Name"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompile.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.Program.ComboCount",
+          "Name": "ComboCount",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many combos had to be compiled for this program. This is Static * Dynamic."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many combos had to be compiled for this program. This is Static * Dynamic."
+          },
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompile.Results.Program.ComboCount"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompile.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.Program.Source",
+          "Name": "Source",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The full pre-processed source for this shader"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The full pre-processed source for this shader"
+          },
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompile.Results.Program.Source"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompile.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.Program.Success",
+          "Name": "Success",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this was compiled successfully"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this was compiled successfully"
+          },
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompile.Results.Program.Success"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<System.String>",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompile.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.Program.Output",
+          "Name": "Output",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Shader compile output, warnings and errors"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Shader compile output, warnings and errors"
+          },
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompile.Results.Program.Output"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.Shaders.ShaderCompile.Results.Program",
+      "Name": "Program",
+      "DeclaringType": "Sandbox.Engine.Shaders.ShaderCompile/Results",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "The results of an individual shader program compile (PS, VS etc)"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\ShaderCompile\\ShaderCompile.cs",
+            "34"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "The results of an individual shader program compile (PS, VS etc)"
+      },
+      "DocId": "T:Sandbox.Engine.Shaders.ShaderCompile.Results.Program"
+    },
+    {
+      "Namespace": "Sandbox.Engine.Shaders",
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompileOptions.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompileOptions.SingleThreaded",
+          "Name": "SingleThreaded",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompileOptions.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompileOptions.SingleThreaded"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompileOptions.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompileOptions.ForceRecompile",
+          "Name": "ForceRecompile",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompileOptions.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompileOptions.ForceRecompile"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/ShaderCompile/ShaderCompileOptions.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Shaders.ShaderCompileOptions.ConsoleOutput",
+          "Name": "ConsoleOutput",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Write to console. Used when running from the command line."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\ShaderCompile\\ShaderCompileOptions.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Write to console. Used when running from the command line."
+          },
+          "DocId": "P:Sandbox.Engine.Shaders.ShaderCompileOptions.ConsoleOutput"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.Shaders.ShaderCompileOptions",
+      "Name": "ShaderCompileOptions",
+      "Documentation": {
+        "Summary": "Options used when compiling a shader"
+      },
+      "DocId": "T:Sandbox.Engine.Shaders.ShaderCompileOptions"
+    },
+    {
+      "Namespace": "Sandbox.Engine.Settings",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Engine.Settings.PostProcessQuality",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.Settings.PostProcessQuality.Low",
+          "Name": "Low",
+          "DocId": "F:Sandbox.Engine.Settings.PostProcessQuality.Low"
+        },
+        {
+          "FieldType": "Sandbox.Engine.Settings.PostProcessQuality",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.Settings.PostProcessQuality.Medium",
+          "Name": "Medium",
+          "DocId": "F:Sandbox.Engine.Settings.PostProcessQuality.Medium"
+        },
+        {
+          "FieldType": "Sandbox.Engine.Settings.PostProcessQuality",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.Settings.PostProcessQuality.High",
+          "Name": "High",
+          "DocId": "F:Sandbox.Engine.Settings.PostProcessQuality.High"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.Settings.PostProcessQuality",
+      "Name": "PostProcessQuality",
+      "Documentation": {
+        "Summary": "Controls the quality level of post processing effects such as:\nambient occlusion, depth of field, motion blur and more"
+      },
+      "DocId": "T:Sandbox.Engine.Settings.PostProcessQuality"
+    },
+    {
+      "Namespace": "Sandbox.Engine.Settings",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Settings/RenderSettings.cs",
+            "Line": 95
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.ResetVideoConfig",
+          "Name": "ResetVideoConfig",
+          "DeclaringType": "Sandbox.Engine.Settings.RenderSettings",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.cs",
+                "92"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Engine.Settings.RenderSettings.ResetVideoConfig"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Settings/RenderSettings.cs",
+            "Line": 114
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.Apply",
+          "Name": "Apply",
+          "DeclaringType": "Sandbox.Engine.Settings.RenderSettings",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.cs",
+                "112"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Engine.Settings.RenderSettings.Apply"
+        },
+        {
+          "ReturnType": "Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode[]",
+          "Parameters": [
+            {
+              "Name": "windowed",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.DisplayModes",
+          "Name": "DisplayModes",
+          "DeclaringType": "Sandbox.Engine.Settings.RenderSettings",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "72"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Engine.Settings.RenderSettings.DisplayModes(System.Boolean)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.MaxFrameRate",
+          "Name": "MaxFrameRate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.cs",
+                "24"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.MaxFrameRate"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.MaxFrameRateInactive",
+          "Name": "MaxFrameRateInactive",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.cs",
+                "30"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.MaxFrameRateInactive"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.DefaultFOV",
+          "Name": "DefaultFOV",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.cs",
+                "36"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.DefaultFOV"
+        },
+        {
+          "PropertyType": "Sandbox.Engine.Settings.TextureQuality",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.TextureQuality",
+          "Name": "TextureQuality",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.cs",
+                "42"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.TextureQuality"
+        },
+        {
+          "PropertyType": "Sandbox.Engine.Settings.VolumetricFogQuality",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.VolumetricFogQuality",
+          "Name": "VolumetricFogQuality",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.cs",
+                "52"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.VolumetricFogQuality"
+        },
+        {
+          "PropertyType": "Sandbox.Engine.Settings.PostProcessQuality",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.PostProcessQuality",
+          "Name": "PostProcessQuality",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.cs",
+                "62"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.PostProcessQuality"
+        },
+        {
+          "PropertyType": "Sandbox.Engine.Settings.ShadowQuality",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.ShadowQuality",
+          "Name": "ShadowQuality",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.cs",
+                "72"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.ShadowQuality"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.MotionBlurScale",
+          "Name": "MotionBlurScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.cs",
+                "82"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.MotionBlurScale"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.ResolutionWidth",
+          "Name": "ResolutionWidth",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.ResolutionWidth"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.ResolutionHeight",
+          "Name": "ResolutionHeight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.ResolutionHeight"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.Fullscreen",
+          "Name": "Fullscreen",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.Fullscreen"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.Borderless",
+          "Name": "Borderless",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.Borderless"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.VSync",
+          "Name": "VSync",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.VSync"
+        },
+        {
+          "PropertyType": "Sandbox.MultisampleAmount",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.AntiAliasQuality",
+          "Name": "AntiAliasQuality",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.AntiAliasQuality"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.Settings.RenderSettings",
+      "Name": "RenderSettings",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "User graphics settings"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Settings\\RenderSettings.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "User graphics settings"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+            "5"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "User graphics settings"
+      },
+      "DocId": "T:Sandbox.Engine.Settings.RenderSettings"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "88"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode.Width"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 90
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "89"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode.Height"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode.RefreshRate",
+          "Name": "RefreshRate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "90"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode.RefreshRate"
+        },
+        {
+          "PropertyType": "Sandbox.ImageFormat",
+          "Loc": {
+            "File": "Systems/Render/Settings/RenderSettings.VideoMode.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode.Format",
+          "Name": "Format",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Settings\\RenderSettings.VideoMode.cs",
+                "91"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode.Format"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode",
+      "Name": "VideoDisplayMode",
+      "DeclaringType": "Sandbox.Engine.Settings.RenderSettings",
+      "DocId": "T:Sandbox.Engine.Settings.RenderSettings.VideoDisplayMode"
+    },
+    {
+      "Namespace": "Sandbox.Engine.Settings",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Engine.Settings.ShadowQuality",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.Settings.ShadowQuality.Low",
+          "Name": "Low",
+          "DocId": "F:Sandbox.Engine.Settings.ShadowQuality.Low"
+        },
+        {
+          "FieldType": "Sandbox.Engine.Settings.ShadowQuality",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.Settings.ShadowQuality.Medium",
+          "Name": "Medium",
+          "DocId": "F:Sandbox.Engine.Settings.ShadowQuality.Medium"
+        },
+        {
+          "FieldType": "Sandbox.Engine.Settings.ShadowQuality",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.Settings.ShadowQuality.High",
+          "Name": "High",
+          "DocId": "F:Sandbox.Engine.Settings.ShadowQuality.High"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.Settings.ShadowQuality",
+      "Name": "ShadowQuality",
+      "DocId": "T:Sandbox.Engine.Settings.ShadowQuality"
+    }
+  ],
+  "_metadata": {
+    "chunk": 236,
+    "items_count": 10
+  }
+}

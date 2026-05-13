@@ -1,0 +1,2345 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.SceneObject"
+            },
+            {
+              "Name": "targetAttributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 241
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.SetupLighting",
+          "Name": "SetupLighting",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Setup the lighting attributes for this current object. Place them in the targetAttributes"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "239"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Setup the lighting attributes for this current object. Place them in the targetAttributes"
+          },
+          "DocId": "M:Sandbox.Graphics.SetupLighting(Sandbox.SceneObject,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "Sandbox.RenderTarget",
+          "Parameters": [
+            {
+              "Name": "targetName",
+              "Type": "System.String",
+              "Default": "FrameTexture"
+            },
+            {
+              "Name": "renderAttributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "downsampleMethod",
+              "Type": "Sandbox.Graphics.DownsampleMethod",
+              "Default": "-1"
+            },
+            {
+              "Name": "maxMips",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 254
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.GrabFrameTexture",
+          "Name": "GrabFrameTexture",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Grabs the current viewport's color texture and stores it in targetName on renderAttributes."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "252"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Grabs the current viewport's color texture and stores it in targetName on renderAttributes."
+          },
+          "DocId": "M:Sandbox.Graphics.GrabFrameTexture(System.String,Sandbox.RenderAttributes,Sandbox.Graphics.DownsampleMethod,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "targetName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "renderAttributes",
+              "Type": "Sandbox.RenderAttributes"
+            },
+            {
+              "Name": "withMips",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 281
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.GrabFrameTexture",
+          "Name": "GrabFrameTexture",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use GrabFrameTexture with DownsampleMethod instead"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "278"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.GrabFrameTexture(System.String,Sandbox.RenderAttributes,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.RenderTarget",
+          "Parameters": [
+            {
+              "Name": "targetName",
+              "Type": "System.String",
+              "Default": "DepthTexture"
+            },
+            {
+              "Name": "renderAttributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 289
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.GrabDepthTexture",
+          "Name": "GrabDepthTexture",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Grabs the current depth texture and stores it in targetName on renderAttributes."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "287"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Grabs the current depth texture and stores it in targetName on renderAttributes."
+          },
+          "DocId": "M:Sandbox.Graphics.GrabDepthTexture(System.String,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "clearColor",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "clearDepth",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "clearStencil",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 359
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clear the current drawing context to given color."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "357"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clear the current drawing context to given color.",
+            "Params": {
+              "color": "Color to clear to.",
+              "clearColor": "Whether to clear the color buffer at all.",
+              "clearDepth": "Whether to clear the depth buffer.",
+              "clearStencil": "Whether to clear the stencil buffer."
+            }
+          },
+          "DocId": "M:Sandbox.Graphics.Clear(Color,System.Boolean,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "clearColor",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "clearDepth",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 369
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clear the current drawing context to given color."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "367"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clear the current drawing context to given color.",
+            "Params": {
+              "clearColor": "Whether to clear the color buffer to transparent color.",
+              "clearDepth": "Whether to clear the depth buffer."
+            }
+          },
+          "DocId": "M:Sandbox.Graphics.Clear(System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "camera",
+              "Type": "Sandbox.SceneCamera"
+            },
+            {
+              "Name": "target",
+              "Type": "Sandbox.Texture"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 379
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.RenderToTexture",
+          "Name": "RenderToTexture",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use CameraComponent.RenderToTexture"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Render this camera to the specified texture target"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "375"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render this camera to the specified texture target"
+          },
+          "DocId": "M:Sandbox.Graphics.RenderToTexture(Sandbox.SceneCamera,Sandbox.Texture)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "srcTexture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "dstTexture",
+              "Type": "Sandbox.Texture"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 388
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.CopyTexture",
+          "Name": "CopyTexture",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Copies pixel data from one texture to another on the GPU. This does not automatically resize or scale the texture, format and size should be equal."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "385"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Copies pixel data from one texture to another on the GPU.\nThis does not automatically resize or scale the texture, format and size should be equal."
+          },
+          "DocId": "M:Sandbox.Graphics.CopyTexture(Sandbox.Texture,Sandbox.Texture)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "srcTexture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "dstTexture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "srcMipSlice",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "srcArraySlice",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "srcMipLevels",
+              "Type": "System.Int32",
+              "Default": "1"
+            },
+            {
+              "Name": "dstMipSlice",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "dstArraySlice",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "dstMipLevels",
+              "Type": "System.Int32",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 398
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.CopyTexture",
+          "Name": "CopyTexture",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use the CopyTexture overload without 'srcMipLevels' and 'dstMipLevels' parameters instead."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "395"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.CopyTexture(Sandbox.Texture,Sandbox.Texture,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "srcTexture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "dstTexture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "srcMipSlice",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "srcArraySlice",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "dstMipSlice",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "dstArraySlice",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 409
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.CopyTexture",
+          "Name": "CopyTexture",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Copies pixel data from one texture to another on the GPU. This does not automatically resize or scale the texture, format and size should be equal. This one lets you copy to/from arrays / specific mips."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "406"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Copies pixel data from one texture to another on the GPU.\nThis does not automatically resize or scale the texture, format and size should be equal.\nThis one lets you copy to/from arrays / specific mips."
+          },
+          "DocId": "M:Sandbox.Graphics.CopyTexture(Sandbox.Texture,Sandbox.Texture,System.Int32,System.Int32,System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 443
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.FlushGPU",
+          "Name": "FlushGPU",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Forces the GPU to flush all pending commands and wait for completion. Useful when you need to ensure GPU work is finished before proceeding. Can be called outside of a render block."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "440"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Forces the GPU to flush all pending commands and wait for completion.\nUseful when you need to ensure GPU work is finished before proceeding.\nCan be called outside of a render block."
+          },
+          "DocId": "M:Sandbox.Graphics.FlushGPU"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertexBuffer",
+              "Type": "Sandbox.GpuBuffer`1<T>"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "startVertex",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "vertexCount",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.Buffer.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Draw",
+          "Name": "Draw",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws geometry using a vertex buffer and material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.Buffer.cs",
+                "82"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.Draw``1(Sandbox.GpuBuffer`1{``0},Sandbox.Material,System.Int32,System.Int32,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertexBuffer",
+              "Type": "Sandbox.GpuBuffer`1<T>"
+            },
+            {
+              "Name": "indexBuffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "indexCount",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.Buffer.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Draw",
+          "Name": "Draw",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws indexed geometry using vertex and index buffers."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.Buffer.cs",
+                "116"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.Draw``1(Sandbox.GpuBuffer`1{``0},Sandbox.GpuBuffer,Sandbox.Material,System.Int32,System.Int32,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Span`1<Sandbox.Vertex>"
+            },
+            {
+              "Name": "vertCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Draw",
+          "Name": "Draw",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a bunch of vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "62"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.Draw(System.Span`1{Sandbox.Vertex},System.Int32,Sandbox.Material,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Collections.Generic.List`1<Sandbox.Vertex>"
+            },
+            {
+              "Name": "vertCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Draw",
+          "Name": "Draw",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a bunch of vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "87"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.Draw(System.Collections.Generic.List`1{Sandbox.Vertex},System.Int32,Sandbox.Material,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Span`1<Sandbox.Vertex>"
+            },
+            {
+              "Name": "vertCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "indices",
+              "Type": "System.Span`1<System.UInt16>"
+            },
+            {
+              "Name": "indexCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 109
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Draw",
+          "Name": "Draw",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a bunch of vertices"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "106"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.Draw(System.Span`1{Sandbox.Vertex},System.Int32,System.Span`1{System.UInt16},System.Int32,Sandbox.Material,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Blit",
+          "Name": "Blit",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a screen space quad using the passed material. Your material should be using a screenspace shader so it will actually render to the screen and not in worldspace at 0,0,0"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "121"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a screen space quad using the passed material. Your material should be using a\nscreenspace shader so it will actually render to the screen and not in worldspace at 0,0,0"
+          },
+          "DocId": "M:Sandbox.Graphics.Blit(Sandbox.Material,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.SceneObject"
+            },
+            {
+              "Name": "transform",
+              "Type": "System.Nullable`1<Transform>",
+              "Default": "null"
+            },
+            {
+              "Name": "color",
+              "Type": "System.Nullable`1<Color>",
+              "Default": "null"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 151
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Render",
+          "Name": "Render",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Render a SceneObject"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "149"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.Render(Sandbox.SceneObject,System.Nullable`1{Transform},System.Nullable`1{Color},Sandbox.Material)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "In": true,
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "material",
+              "In": true,
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "color",
+              "In": true,
+              "Type": "Color"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 169
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DrawQuad",
+          "Name": "DrawQuad",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a quad in screenspace"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "167"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a quad in screenspace"
+          },
+          "DocId": "M:Sandbox.Graphics.DrawQuad(Sandbox.Rect@,Sandbox.Material@,Color@,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "Sandbox.Rect",
+          "Parameters": [
+            {
+              "Name": "position",
+              "In": true,
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "fontFamily",
+              "Type": "System.String",
+              "Default": "Roboto"
+            },
+            {
+              "Name": "fontSize",
+              "Type": "System.Single",
+              "Default": "20"
+            },
+            {
+              "Name": "fontWeight",
+              "Type": "System.Single",
+              "Default": "450"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "132"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 218
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DrawText",
+          "Name": "DrawText",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a text quad in screenspace using the Material.UI.Text material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "215"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a text quad in screenspace using the Material.UI.Text material."
+          },
+          "DocId": "M:Sandbox.Graphics.DrawText(Sandbox.Rect@,System.String,Color,System.String,System.Single,System.Single,Sandbox.TextFlag)"
+        },
+        {
+          "ReturnType": "Sandbox.Rect",
+          "Parameters": [
+            {
+              "Name": "position",
+              "In": true,
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "scope",
+              "In": true,
+              "Type": "Sandbox.TextRendering.Scope"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "132"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 226
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DrawText",
+          "Name": "DrawText",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a text quad in screenspace using the Material.UI.Text material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "223"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a text quad in screenspace using the Material.UI.Text material."
+          },
+          "DocId": "M:Sandbox.Graphics.DrawText(Sandbox.Rect@,Sandbox.TextRendering.Scope@,Sandbox.TextFlag)"
+        },
+        {
+          "ReturnType": "Sandbox.Rect",
+          "Parameters": [
+            {
+              "Name": "position",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "fontFamily",
+              "Type": "System.String",
+              "Default": "Roboto"
+            },
+            {
+              "Name": "fontSize",
+              "Type": "System.Single",
+              "Default": "20"
+            },
+            {
+              "Name": "fontWeight",
+              "Type": "System.Single",
+              "Default": "450"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 256
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DrawText",
+          "Name": "DrawText",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a text quad in screenspace using the Material.UI.Text material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "253"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a text quad in screenspace using the Material.UI.Text material."
+          },
+          "DocId": "M:Sandbox.Graphics.DrawText(Vector2@,System.String,Color,System.String,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.Rect",
+          "Parameters": [
+            {
+              "Name": "position",
+              "In": true,
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "fontFamily",
+              "Type": "System.String",
+              "Default": "Roboto"
+            },
+            {
+              "Name": "fontSize",
+              "Type": "System.Single",
+              "Default": "20"
+            },
+            {
+              "Name": "fontWeight",
+              "Type": "System.Single",
+              "Default": "450"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "132"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 266
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.MeasureText",
+          "Name": "MeasureText",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Measure how big some text will be, without having to render it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "263"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Measure how big some text will be, without having to render it"
+          },
+          "DocId": "M:Sandbox.Graphics.MeasureText(Sandbox.Rect@,System.String,System.String,System.Single,System.Single,Sandbox.TextFlag)"
+        },
+        {
+          "ReturnType": "Sandbox.Rect",
+          "Parameters": [
+            {
+              "Name": "position",
+              "In": true,
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "scope",
+              "In": true,
+              "Type": "Sandbox.TextRendering.Scope"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "132"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 274
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.MeasureText",
+          "Name": "MeasureText",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Measure how big some text will be, without having to render it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "271"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Measure how big some text will be, without having to render it"
+          },
+          "DocId": "M:Sandbox.Graphics.MeasureText(Sandbox.Rect@,Sandbox.TextRendering.Scope@,Sandbox.TextFlag)"
+        },
+        {
+          "ReturnType": "Sandbox.Rect",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "iconName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "fontSize",
+              "Type": "System.Single",
+              "Default": "20"
+            },
+            {
+              "Name": "alignment",
+              "Type": "Sandbox.TextFlag",
+              "Default": "132"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 284
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DrawIcon",
+          "Name": "DrawIcon",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Calls DrawText with \"Material Icons\" font. You can get a list of icons here https://fonts.google.com/icons?selected=Material+Icons"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "281"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Calls DrawText with \"Material Icons\" font. You can get a list of icons here https://fonts.google.com/icons?selected=Material+Icons"
+          },
+          "DocId": "M:Sandbox.Graphics.DrawIcon(Sandbox.Rect,System.String,Color,System.Single,Sandbox.TextFlag)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "In": true,
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "color",
+              "In": true,
+              "Type": "Color"
+            },
+            {
+              "Name": "cornerRadius",
+              "In": true,
+              "Type": "Vector4",
+              "Default": "null"
+            },
+            {
+              "Name": "borderWidth",
+              "In": true,
+              "Type": "Vector4",
+              "Default": "null"
+            },
+            {
+              "Name": "borderColor",
+              "In": true,
+              "Type": "Color",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.cs",
+            "Line": 294
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DrawRoundedRectangle",
+          "Name": "DrawRoundedRectangle",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw a rounded rectangle, with optional border, in Material.UI.Box"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.cs",
+                "292"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw a rounded rectangle, with optional border, in Material.UI.Box"
+          },
+          "DocId": "M:Sandbox.Graphics.DrawRoundedRectangle(Sandbox.Rect@,Color@,Vector4@,Vector4@,Color@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.Mesh.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DrawModel",
+          "Name": "DrawModel",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a single model at the given Transform immediately."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.Mesh.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a single model at the given Transform immediately.",
+            "Params": {
+              "model": "The model to draw",
+              "transform": "Transform to draw the model at",
+              "attributes": "Optional attributes to apply only for this draw call"
+            }
+          },
+          "DocId": "M:Sandbox.Graphics.DrawModel(Sandbox.Model,Transform,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            },
+            {
+              "Name": "transforms",
+              "Type": "System.Span`1<Transform>"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.Mesh.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DrawModelInstanced",
+          "Name": "DrawModelInstanced",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws multiple instances of a model using GPU instancing, assuming standard implemented shaders. Use `GetTransformMatrix( int instance )` in shaders to access the instance transform. There is a limit of 1,048,576 transform slots per frame when using this method."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.Mesh.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.DrawModelInstanced(Sandbox.Model,System.Span`1{Transform},Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            },
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "bufferOffset",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.Mesh.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DrawModelInstancedIndirect",
+          "Name": "DrawModelInstancedIndirect",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws multiple instances of a model using GPU instancing with the number of instances being provided by indirect draw arguments. Use `SV_InstanceID` semantic in shaders to access the rendered instance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.Mesh.cs",
+                "58"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws multiple instances of a model using GPU instancing with the number of instances being provided by indirect draw arguments.\nUse `SV_InstanceID` semantic in shaders to access the rendered instance.",
+            "Params": {
+              "model": "The model to draw",
+              "buffer": "The GPU buffer containing the DrawIndirectArguments",
+              "bufferOffset": "Optional offset in the GPU buffer",
+              "attributes": "Optional attributes to apply only for this draw call"
+            }
+          },
+          "DocId": "M:Sandbox.Graphics.DrawModelInstancedIndirect(Sandbox.Model,Sandbox.GpuBuffer,System.Int32,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            },
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.Draw.Mesh.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.DrawModelInstanced",
+          "Name": "DrawModelInstanced",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws multiple instances of a model using GPU instancing. This is similar to <span style=\"color: #4EC9B0;\">Graphics</span>.<span style=\"color: #DCDCAA;\">DrawModelInstancedIndirect</span>(<span style=\"color: #4EC9B0;\">Model</span>,<span style=\"color: #4EC9B0;\">GpuBuffer</span>,<span style=\"color: #86C691;\">int</span>,<span style=\"color: #4EC9B0;\">RenderAttributes</span>), except the count is provided from the CPU rather than via a GPU buffer. Use `SV_InstanceID` semantic in shaders to access the rendered instance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.Draw.Mesh.cs",
+                "80"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws multiple instances of a model using GPU instancing.\nThis is similar to <see cref=\"M:Sandbox.Graphics.DrawModelInstancedIndirect(Sandbox.Model,Sandbox.GpuBuffer,System.Int32,Sandbox.RenderAttributes)\" />,\nexcept the count is provided from the CPU rather than via a GPU buffer.\n\nUse `SV_InstanceID` semantic in shaders to access the rendered instance.",
+            "Params": {
+              "model": "The model to draw",
+              "count": "The number of instances to draw",
+              "attributes": "Optional attributes to apply only for this draw call"
+            }
+          },
+          "DocId": "M:Sandbox.Graphics.DrawModelInstanced(Sandbox.Model,System.Int32,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "downsampleMethod",
+              "Type": "Sandbox.Graphics.DownsampleMethod",
+              "Default": "0"
+            },
+            {
+              "Name": "initialMip",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "numMips",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.MipmapGen.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.GenerateMipMaps",
+          "Name": "GenerateMipMaps",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Generate the mip maps for this texture. Obviously the texture needs to support mip maps."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.MipmapGen.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Generate the mip maps for this texture. Obviously the texture needs to support mip maps."
+          },
+          "DocId": "M:Sandbox.Graphics.GenerateMipMaps(Sandbox.Texture,Sandbox.Graphics.DownsampleMethod,System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "state",
+              "Type": "Sandbox.Rendering.ResourceState"
+            },
+            {
+              "Name": "mip",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.ResourceBarriers.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the given GPU Texture Resource. Transitions the texture resource to a new pipeline stage and access state."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.ResourceBarriers.cs",
+                "15"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Executes a barrier transition for the given GPU Texture Resource.\nTransitions the texture resource to a new pipeline stage and access state.",
+            "Params": {
+              "texture": "The texture to transition.",
+              "state": "The new resource state for the texture.",
+              "mip": "The mip level to transition (-1 for all mips)."
+            }
+          },
+          "DocId": "M:Sandbox.Graphics.ResourceBarrierTransition(Sandbox.Texture,Sandbox.Rendering.ResourceState,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer`1<T>"
+            },
+            {
+              "Name": "state",
+              "Type": "Sandbox.Rendering.ResourceState"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.ResourceBarriers.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the given GPU Buffer Resource. Transitions the buffer resource to a new pipeline stage and access state."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.ResourceBarriers.cs",
+                "39"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.ResourceBarrierTransition``1(Sandbox.GpuBuffer`1{``0},Sandbox.Rendering.ResourceState)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "state",
+              "Type": "Sandbox.Rendering.ResourceState"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.ResourceBarriers.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the given GPU Buffer Resource. Transitions the buffer resource to a new pipeline stage and access state."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.ResourceBarriers.cs",
+                "62"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Executes a barrier transition for the given GPU Buffer Resource.\nTransitions the buffer resource to a new pipeline stage and access state.",
+            "Params": {
+              "buffer": "The GPU buffer to transition.",
+              "state": "The new resource state for the buffer."
+            }
+          },
+          "DocId": "M:Sandbox.Graphics.ResourceBarrierTransition(Sandbox.GpuBuffer,Sandbox.Rendering.ResourceState)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer`1<T>"
+            },
+            {
+              "Name": "before",
+              "Type": "Sandbox.Rendering.ResourceState"
+            },
+            {
+              "Name": "after",
+              "Type": "Sandbox.Rendering.ResourceState"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.ResourceBarriers.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the given GPU Buffer Resource. Transitions the buffer resource from a known source state to a specified destination state."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.ResourceBarriers.cs",
+                "87"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Graphics.ResourceBarrierTransition``1(Sandbox.GpuBuffer`1{``0},Sandbox.Rendering.ResourceState,Sandbox.Rendering.ResourceState)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "before",
+              "Type": "Sandbox.Rendering.ResourceState"
+            },
+            {
+              "Name": "after",
+              "Type": "Sandbox.Rendering.ResourceState"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.ResourceBarriers.cs",
+            "Line": 106
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the given GPU Buffer Resource. Transitions the buffer resource from a known source state to a specified destination state."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.ResourceBarriers.cs",
+                "104"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Executes a barrier transition for the given GPU Buffer Resource.\nTransitions the buffer resource from a known source state to a specified destination state.",
+            "Params": {
+              "buffer": "The GPU buffer to transition.",
+              "before": "The current resource state of the buffer.",
+              "after": "The desired resource state of the buffer after the transition."
+            }
+          },
+          "DocId": "M:Sandbox.Graphics.ResourceBarrierTransition(Sandbox.GpuBuffer,Sandbox.Rendering.ResourceState,Sandbox.Rendering.ResourceState)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.ResourceBarriers.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.UavBarrier",
+          "Name": "UavBarrier",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Issues a UAV barrier for the given texture, ensuring writes from prior shader invocations are visible to subsequent ones without changing the resource layout."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.ResourceBarriers.cs",
+                "119"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Issues a UAV barrier for the given texture, ensuring writes from prior shader invocations\nare visible to subsequent ones without changing the resource layout.",
+            "Params": {
+              "texture": "The texture to barrier."
+            }
+          },
+          "DocId": "M:Sandbox.Graphics.UavBarrier(Sandbox.Texture)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Graphics.ResourceBarriers.cs",
+            "Line": 136
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.UavBarrier",
+          "Name": "UavBarrier",
+          "DeclaringType": "Sandbox.Graphics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Issues a UAV barrier for the given GPU buffer, ensuring writes from prior shader invocations are visible to subsequent ones."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.ResourceBarriers.cs",
+                "134"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Issues a UAV barrier for the given GPU buffer, ensuring writes from prior shader invocations\nare visible to subsequent ones.",
+            "Params": {
+              "buffer": "The buffer to barrier."
+            }
+          },
+          "DocId": "M:Sandbox.Graphics.UavBarrier(Sandbox.GpuBuffer)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.IsActive",
+          "Name": "IsActive",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true then we're currently rendering and you are safe to use the contents of this class"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true then we're currently rendering and\nyou are safe to use the contents of this class"
+          },
+          "DocId": "P:Sandbox.Graphics.IsActive"
+        },
+        {
+          "PropertyType": "Sandbox.SceneLayerType",
+          "Loc": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.LayerType",
+          "Name": "LayerType",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The current layer type. This is useful to tell whether you're meant to be drawing opaque, transparent or shadow. You mainly don't need to think about this, but when you do, it's here."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "36"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The current layer type. This is useful to tell whether you're meant to be drawing opaque, transparent or shadow. You mainly\ndon't need to think about this, but when you do, it's here."
+          },
+          "DocId": "P:Sandbox.Graphics.LayerType"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Viewport",
+          "Name": "Viewport",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "In pixel size, where are we rendering to?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "76"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "In pixel size, where are we rendering to?"
+          },
+          "DocId": "P:Sandbox.Graphics.Viewport"
+        },
+        {
+          "PropertyType": "Sandbox.RenderAttributes",
+          "Loc": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Attributes",
+          "Name": "Attributes",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access to the current render context's attributes. These will be used to set attributes in materials/shaders. This is cleared at the end of the render block."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "86"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access to the current render context's attributes. These will be used\nto set attributes in materials/shaders. This is cleared at the end of the render block."
+          },
+          "DocId": "P:Sandbox.Graphics.Attributes"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 99
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.CameraTransform",
+          "Name": "CameraTransform",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The camera transform of the currently rendering view"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "98"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The camera transform of the currently rendering view"
+          },
+          "DocId": "P:Sandbox.Graphics.CameraTransform"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 104
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.CameraPosition",
+          "Name": "CameraPosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The camera position of the currently rendering view"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "103"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The camera position of the currently rendering view"
+          },
+          "DocId": "P:Sandbox.Graphics.CameraPosition"
+        },
+        {
+          "PropertyType": "Rotation",
+          "Loc": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 109
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.CameraRotation",
+          "Name": "CameraRotation",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The camera rotation of the currently rendering view"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "108"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The camera rotation of the currently rendering view"
+          },
+          "DocId": "P:Sandbox.Graphics.CameraRotation"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.FieldOfView",
+          "Name": "FieldOfView",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The field of view of the currently rendering camera view, in degrees."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "114"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The field of view of the currently rendering camera view, in degrees."
+          },
+          "DocId": "P:Sandbox.Graphics.FieldOfView"
+        },
+        {
+          "PropertyType": "Sandbox.Frustum",
+          "Loc": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 123
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.Frustum",
+          "Name": "Frustum",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The frustum of the currently rendering camera view."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "119"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The frustum of the currently rendering camera view."
+          },
+          "DocId": "P:Sandbox.Graphics.Frustum"
+        },
+        {
+          "PropertyType": "Sandbox.RenderTarget",
+          "Loc": {
+            "File": "Systems/Render/Graphics.cs",
+            "Line": 319
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Graphics.RenderTarget",
+          "Name": "RenderTarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get or set the current render target. Setting this will bind the render target and change the viewport to match it."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Graphics.cs",
+                "313"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get or set the current render target. Setting this will bind the render target and change the viewport to match it."
+          },
+          "DocId": "P:Sandbox.Graphics.RenderTarget"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Graphics",
+      "Name": "Graphics",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Used to render to the screen using your Graphics Card, or whatever you kids are using in your crazy future computers. Whatever it is I'm sure it isn't fungible and everyone has free money and no-one has to ever work."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Graphics.cs",
+            "11"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Used to render to the screen using your Graphics Card, or whatever you kids are using in your crazy future computers. Whatever it is I'm sure it isn't fungible and everyone has free money and no-one has to ever work."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Graphics.Draw.Buffer.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Used to render to the screen using your Graphics Card, or whatever you kids are using in your crazy future computers. Whatever it is I'm sure it isn't fungible and everyone has free money and no-one has to ever work."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Graphics.Draw.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Used to render to the screen using your Graphics Card, or whatever you kids are using in your crazy future computers. Whatever it is I'm sure it isn't fungible and everyone has free money and no-one has to ever work."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Graphics.Draw.Mesh.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Used to render to the screen using your Graphics Card, or whatever you kids are using in your crazy future computers. Whatever it is I'm sure it isn't fungible and everyone has free money and no-one has to ever work."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Graphics.Hooks.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Used to render to the screen using your Graphics Card, or whatever you kids are using in your crazy future computers. Whatever it is I'm sure it isn't fungible and everyone has free money and no-one has to ever work."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Graphics.MipmapGen.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Used to render to the screen using your Graphics Card, or whatever you kids are using in your crazy future computers. Whatever it is I'm sure it isn't fungible and everyone has free money and no-one has to ever work."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Graphics.ResourceBarriers.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Used to render to the screen using your Graphics Card, or whatever you\nkids are using in your crazy future computers. Whatever it is I'm sure\nit isn't fungible and everyone has free money and no-one has to ever work."
+      },
+      "DocId": "T:Sandbox.Graphics"
+    }
+  ],
+  "_metadata": {
+    "chunk": 155,
+    "items_count": 1
+  }
+}

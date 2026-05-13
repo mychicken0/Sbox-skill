@@ -1,0 +1,1195 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.Component>",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetAll",
+          "Name": "GetAll",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get all components, including disabled ones"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "108"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get all components, including disabled ones"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetAll"
+        },
+        {
+          "ReturnType": "Sandbox.Component",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "Sandbox.TypeDescription"
+            },
+            {
+              "Name": "startEnabled",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 128
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a component of this type"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "125"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a component of this type"
+          },
+          "DocId": "M:Sandbox.ComponentList.Create(Sandbox.TypeDescription,System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "startEnabled",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 148
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a component of this type"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "145"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a component of this type"
+          },
+          "DocId": "M:Sandbox.ComponentList.Create``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "search",
+              "Type": "Sandbox.FindMode"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 187
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a component of this type"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "184"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a component of this type"
+          },
+          "DocId": "M:Sandbox.ComponentList.Get``1(Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "Sandbox.Component",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "find",
+              "Type": "Sandbox.FindMode",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 195
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a component of this type"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "192"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a component of this type"
+          },
+          "DocId": "M:Sandbox.ComponentList.Get(System.Type,Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.Component>",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "find",
+              "Type": "Sandbox.FindMode"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetAll",
+          "Name": "GetAll",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get all components of this type"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "200"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get all components of this type"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetAll(System.Type,Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.Component>",
+          "Parameters": [
+            {
+              "Name": "find",
+              "Type": "Sandbox.FindMode"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 209
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetAll",
+          "Name": "GetAll",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get all components"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "208"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get all components"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetAll(Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<T>",
+          "Parameters": [
+            {
+              "Name": "find",
+              "Type": "Sandbox.FindMode",
+              "Default": "69"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 216
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetAll",
+          "Name": "GetAll",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a list of components on this game object, optionally recurse when deep is true"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "213"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a list of components on this game object, optionally recurse when deep is true"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetAll``1(Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "component",
+              "Out": true,
+              "Type": "T"
+            },
+            {
+              "Name": "search",
+              "Type": "Sandbox.FindMode",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 437
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.TryGet",
+          "Name": "TryGet",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Try to get this component"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "435"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Try to get this component"
+          },
+          "DocId": "M:Sandbox.ComponentList.TryGet``1(``0@,Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "Sandbox.Component",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Func`2<Sandbox.Component,System.Boolean>"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 446
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.FirstOrDefault",
+          "Name": "FirstOrDefault",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows linq style queries"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "445"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ComponentList.FirstOrDefault(System.Func`2{Sandbox.Component,System.Boolean})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "action",
+              "Type": "System.Action`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 455
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.ForEach",
+          "Name": "ForEach",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "452"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ComponentList.ForEach``1(System.String,System.Boolean,System.Action`1{``0})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "action",
+              "Type": "System.Action`1<Sandbox.Component>"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 486
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.ForEach",
+          "Name": "ForEach",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "485"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ComponentList.ForEach(System.String,System.Boolean,System.Action`1{Sandbox.Component})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "baseComponent",
+              "Type": "Sandbox.Component"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 512
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.Move",
+          "Name": "Move",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Move the position of the component in the list by delta (-1 means up one, 1 means down one)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "509"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Move the position of the component in the list by delta (-1 means up one, 1 means down one)"
+          },
+          "DocId": "M:Sandbox.ComponentList.Move(Sandbox.Component,System.Int32)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 546
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find component on this gameobject"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "543"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find component on this gameobject"
+          },
+          "DocId": "M:Sandbox.ComponentList.Get``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "flags",
+              "Type": "Sandbox.FindMode",
+              "Default": "7"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 557
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetOrCreate",
+          "Name": "GetOrCreate",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find this component, if it doesn't exist - create it."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "554"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find this component, if it doesn't exist - create it."
+          },
+          "DocId": "M:Sandbox.ComponentList.GetOrCreate``1(Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 568
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetInAncestorsOrSelf",
+          "Name": "GetInAncestorsOrSelf",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find component on this gameobject's ancestors or on self"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "565"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find component on this gameobject's ancestors or on self"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetInAncestorsOrSelf``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 579
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetInAncestors",
+          "Name": "GetInAncestors",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find component on this gameobject's ancestors"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "576"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find component on this gameobject's ancestors"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetInAncestors``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 590
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetInDescendantsOrSelf",
+          "Name": "GetInDescendantsOrSelf",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find component on this gameobject's decendants or on self"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "587"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find component on this gameobject's decendants or on self"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetInDescendantsOrSelf``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 601
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetInDescendants",
+          "Name": "GetInDescendants",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find component on this gameobject's decendants"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "598"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find component on this gameobject's decendants"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetInDescendants``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 612
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetInChildrenOrSelf",
+          "Name": "GetInChildrenOrSelf",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find component on this gameobject's immediate children or on self"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "609"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find component on this gameobject's immediate children or on self"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetInChildrenOrSelf``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 623
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetInChildren",
+          "Name": "GetInChildren",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find component on this gameobject's immediate children"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "620"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find component on this gameobject's immediate children"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetInChildren``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 634
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetInParentOrSelf",
+          "Name": "GetInParentOrSelf",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find component on this gameobject's parent or on self"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "631"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find component on this gameobject's parent or on self"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetInParentOrSelf``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "includeDisabled",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 645
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.GetInParent",
+          "Name": "GetInParent",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find component on this gameobject's parent"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "642"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find component on this gameobject's parent"
+          },
+          "DocId": "M:Sandbox.ComponentList.GetInParent``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.Component",
+          "Parameters": [
+            {
+              "Name": "id",
+              "Type": "System.Guid"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.ComponentList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find component on this gameobject with the specified id"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "653"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find component on this gameobject with the specified id"
+          },
+          "DocId": "M:Sandbox.ComponentList.Get(System.Guid)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 451
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ComponentList.Count",
+          "Name": "Count",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Amount of components - including disabled"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "450"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Amount of components - including disabled"
+          },
+          "DocId": "P:Sandbox.ComponentList.Count"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ComponentList",
+      "Name": "ComponentList",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObject\\ComponentList.cs",
+            "88"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.ComponentList"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "T",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "startEnabled",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 684
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IComponentLister.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.IComponentLister",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Create {T|Component}"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "680"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.IComponentLister.Create``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "search",
+              "Type": "Sandbox.FindMode",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 690
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IComponentLister.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.IComponentLister",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Get {T|Component}"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "686"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.IComponentLister.Get``1(Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "component",
+              "Out": true,
+              "Type": "T"
+            },
+            {
+              "Name": "search",
+              "Type": "Sandbox.FindMode",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 697
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IComponentLister.TryGet",
+          "Name": "TryGet",
+          "DeclaringType": "Sandbox.IComponentLister",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Try Get {T|Component}"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "692"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.IComponentLister.TryGet``1(``0@,Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<T>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "search",
+              "Type": "Sandbox.FindMode",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 703
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IComponentLister.GetAll",
+          "Name": "GetAll",
+          "DeclaringType": "Sandbox.IComponentLister",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Get All {T|Component}"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "699"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.IComponentLister.GetAll``1(Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "T",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "flags",
+              "Type": "Sandbox.FindMode",
+              "Default": "7"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObject/ComponentList.cs",
+            "Line": 709
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IComponentLister.GetOrCreate",
+          "Name": "GetOrCreate",
+          "DeclaringType": "Sandbox.IComponentLister",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Get or Create {T|Component}"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "705"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.IComponentLister.GetOrCreate``1(Sandbox.FindMode)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.ComponentList",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.IComponentLister.Components",
+          "Name": "Components",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObject\\ComponentList.cs",
+                "677"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.IComponentLister.Components"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.IComponentLister",
+      "Name": "IComponentLister",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Component List"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "apps"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Interface for types that reference a <see cref=\"T:Sandbox.ComponentList\" />, to provide\nconvenience method for accessing that list."
+      },
+      "DocId": "T:Sandbox.IComponentLister"
+    }
+  ],
+  "_metadata": {
+    "chunk": 120,
+    "items_count": 2
+  }
+}

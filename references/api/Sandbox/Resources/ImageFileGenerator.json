@@ -1,0 +1,1582 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Resources",
+      "BaseType": "Sandbox.Resources.TextureGenerator",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.ValueTask`1<Sandbox.Texture>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.CreateTexture",
+          "Name": "CreateTexture",
+          "DeclaringType": "Sandbox.Resources.ImageFileGenerator",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Resources.ImageFileGenerator/<CreateTexture>d__82"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "178"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.ImageFileGenerator.CreateTexture(Sandbox.Resources.ResourceGenerator.Options,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Sandbox.Resources.EmbeddedResource>",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 284
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.CreateEmbeddedResource",
+          "Name": "CreateEmbeddedResource",
+          "DeclaringType": "Sandbox.Resources.ImageFileGenerator",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "280"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.ImageFileGenerator.CreateEmbeddedResource"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Resources.ImageFileGenerator",
+          "DocId": "M:Sandbox.Resources.ImageFileGenerator.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.FilePath",
+          "Name": "FilePath",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Image"
+              ]
+            },
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.TextureImagePathAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The path to the image file, relative to any other assets in the project."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The path to the image file, relative to any other assets in the project."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.FilePath"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.MaxSize",
+          "Name": "MaxSize",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The maximum size of the image in pixels. If the imported image is larger than this (after cropping), it will be downscaled to fit."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The maximum size of the image in pixels. If the imported image is larger than this (after cropping), it will be downscaled to fit."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.MaxSize"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.ConvertHeightToNormals",
+          "Name": "ConvertHeightToNormals",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Normal Map"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Height to Normal"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When enabled, the output texture will be a normal map generated from the heightmap of the image."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When enabled, the output texture will be a normal map generated from the heightmap of the image."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.ConvertHeightToNormals"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.NormalScale",
+          "Name": "NormalScale",
+          "Attributes": [
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "ConvertHeightToNormals",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The scale of the normal map when using <span style=\"color: #4EC9B0;\">ImageFileGenerator</span>.<span style=\"color: #DCDCDC;\">ConvertHeightToNormals</span>. If negative, the normal map will be inverted."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "37"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The scale of the normal map when using <see cref=\"P:Sandbox.Resources.ImageFileGenerator.ConvertHeightToNormals\" />. If negative, the normal map will be inverted."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.NormalScale"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Rotate",
+          "Name": "Rotate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Adjust"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "360"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How much to rotate the image by, in degrees. This is applied after cropping and padding."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "43"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How much to rotate the image by, in degrees. This is applied after cropping and padding."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Rotate"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.FlipVertical",
+          "Name": "FlipVertical",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether or not to flip the image vertically. This is done after everything else has been applied."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether or not to flip the image vertically. This is done after everything else has been applied."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.FlipVertical"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.FlipHorizontal",
+          "Name": "FlipHorizontal",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether or not to flip the image horizontally. This is done after everything else has been applied."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether or not to flip the image horizontally. This is done after everything else has been applied."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.FlipHorizontal"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Margin",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Cropping",
+          "Name": "Cropping",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many pixels from each edge to crop from the image. If negative values are used, the image will be expanded instead of cropped."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many pixels from each edge to crop from the image. If negative values are used, the image will be expanded instead of cropped."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Cropping"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Margin",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Padding",
+          "Name": "Padding",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many pixels of padding from each edge. After the image has been cropped, padding is added without affecting the size of the image (scaling the original image down to fit padded margins)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "65"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many pixels of padding from each edge. After the image has been cropped,\npadding is added without affecting the size of the image (scaling the original image down to fit padded margins)."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Padding"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.InvertColor",
+          "Name": "InvertColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Effects"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether or not to invert the colors of the image."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "70"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether or not to invert the colors of the image."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.InvertColor"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Tint",
+          "Name": "Tint",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The color the image should be tinted. This effectively multiplies the color of each pixel by this color (including alpha)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "76"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The color the image should be tinted. This effectively multiplies the color of each pixel by this color (including alpha)."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Tint"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Blur",
+          "Name": "Blur",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "32"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The intensity of the blur effect. If 0, no blur is applied."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "81"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The intensity of the blur effect. If 0, no blur is applied."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Blur"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Sharpen",
+          "Name": "Sharpen",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "10"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The intensity of the sharpen effect. If 0, no sharpening is applied."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The intensity of the sharpen effect. If 0, no sharpening is applied."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Sharpen"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 95
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Brightness",
+          "Name": "Brightness",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The brightness of the image."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "93"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The brightness of the image."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Brightness"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 101
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Contrast",
+          "Name": "Contrast",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The contrast of the image."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "99"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The contrast of the image."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Contrast"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Saturation",
+          "Name": "Saturation",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The saturation of the image."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "105"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The saturation of the image."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Saturation"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Hue",
+          "Name": "Hue",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "360"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How much to adjust the hue of the image, in degrees. If 0, no hue adjustment is applied."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "111"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How much to adjust the hue of the image, in degrees. If 0, no hue adjustment is applied."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Hue"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.Colorize",
+          "Name": "Colorize",
+          "Attributes": [
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "Colorize"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When enabled, every pixel in the image will be re-colored to the <span style=\"color: #4EC9B0;\">ImageFileGenerator</span>.<span style=\"color: #DCDCDC;\">TargetColor</span> (interpolated by the alpha)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "117"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When enabled, every pixel in the image will be re-colored to the <see cref=\"P:Sandbox.Resources.ImageFileGenerator.TargetColor\" /> (interpolated by the alpha)."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.Colorize"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.TargetColor",
+          "Name": "TargetColor",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Colorize"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When <span style=\"color: #4EC9B0;\">ImageFileGenerator</span>.<span style=\"color: #DCDCDC;\">Colorize</span> is enabled, this is the target color that every pixel in the image will be re-colored to."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "123"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When <see cref=\"P:Sandbox.Resources.ImageFileGenerator.Colorize\" /> is enabled, this is the target color that every pixel in the image will be re-colored to."
+          },
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.TargetColor"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/Textures/Generators/ImageFileTextureGenerator.cs",
+            "Line": 128
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.ImageFileGenerator.CacheToDisk",
+          "Name": "CacheToDisk",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+                "126"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.ImageFileGenerator.CacheToDisk"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Resources.ImageFileGenerator",
+      "Name": "ImageFileGenerator",
+      "Attributes": [
+        {
+          "FullName": "OrderAttribute",
+          "ConstructorArguments": [
+            "-100"
+          ]
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Image File"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "image"
+          ]
+        },
+        {
+          "FullName": "ClassNameAttribute",
+          "ConstructorArguments": [
+            "imagefile"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Load images from disk and convert them to textures"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Generators\\ImageFileTextureGenerator.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Load images from disk and convert them to textures"
+      },
+      "DocId": "T:Sandbox.Resources.ImageFileGenerator"
+    },
+    {
+      "Namespace": "Sandbox.Resources",
+      "BaseType": "Sandbox.Resources.TextureGenerator",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.ValueTask`1<Sandbox.Texture>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 41
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.LinearGradient.CreateTexture",
+          "Name": "CreateTexture",
+          "DeclaringType": "Sandbox.Resources.LinearGradient",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+                "38"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.LinearGradient.CreateTexture(Sandbox.Resources.ResourceGenerator.Options,System.Threading.CancellationToken)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.LinearGradient..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Resources.LinearGradient",
+          "DocId": "M:Sandbox.Resources.LinearGradient.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector2Int",
+          "Loc": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.LinearGradient.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.LinearGradient.Size"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.LinearGradient.IsHdr",
+          "Name": "IsHdr",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.LinearGradient.IsHdr"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.LinearGradient.Angle",
+          "Name": "Angle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "360"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.LinearGradient.Angle"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.LinearGradient.Scale",
+          "Name": "Scale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.LinearGradient.Scale"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.LinearGradient.Center",
+          "Name": "Center",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.LinearGradient.Center"
+        },
+        {
+          "PropertyType": "Sandbox.Gradient",
+          "Loc": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.LinearGradient.Gradient",
+          "Name": "Gradient",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.LinearGradient.Gradient"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.LinearGradient.ConvertHeightToNormals",
+          "Name": "ConvertHeightToNormals",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Normal Map"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Height to Normal"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.LinearGradient.ConvertHeightToNormals"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.LinearGradient.NormalScale",
+          "Name": "NormalScale",
+          "Attributes": [
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "ConvertHeightToNormals",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.LinearGradient.NormalScale"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/Textures/Generators/LinearGradientTextureGenerator.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.LinearGradient.CacheToDisk",
+          "Name": "CacheToDisk",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.LinearGradient.CacheToDisk"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Resources.LinearGradient",
+      "Name": "LinearGradient",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Gradient - Linear"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "gradient"
+          ]
+        },
+        {
+          "FullName": "ClassNameAttribute",
+          "ConstructorArguments": [
+            "gradientlinear"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Generators\\LinearGradientTextureGenerator.cs",
+            "7"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Resources.LinearGradient"
+    },
+    {
+      "Namespace": "Sandbox.Resources",
+      "BaseType": "Sandbox.Resources.TextureGenerator",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.ValueTask`1<Sandbox.Texture>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.Resources.ResourceGenerator.Options"
+            },
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "l": {
+            "File": "Resources/Textures/Generators/RadialGradientTextureGenerator.cs",
+            "Line": 38
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Resources.RadialGradient.CreateTexture",
+          "Name": "CreateTexture",
+          "DeclaringType": "Sandbox.Resources.RadialGradient",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\RadialGradientTextureGenerator.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Resources.RadialGradient.CreateTexture(Sandbox.Resources.ResourceGenerator.Options,System.Threading.CancellationToken)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Textures/Generators/RadialGradientTextureGenerator.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.RadialGradient..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Resources.RadialGradient",
+          "DocId": "M:Sandbox.Resources.RadialGradient.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector2Int",
+          "Loc": {
+            "File": "Resources/Textures/Generators/RadialGradientTextureGenerator.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.RadialGradient.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\RadialGradientTextureGenerator.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.RadialGradient.Size"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Textures/Generators/RadialGradientTextureGenerator.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.RadialGradient.IsHdr",
+          "Name": "IsHdr",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\RadialGradientTextureGenerator.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.RadialGradient.IsHdr"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/RadialGradientTextureGenerator.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.RadialGradient.Scale",
+          "Name": "Scale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\RadialGradientTextureGenerator.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.RadialGradient.Scale"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Resources/Textures/Generators/RadialGradientTextureGenerator.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.RadialGradient.Center",
+          "Name": "Center",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\RadialGradientTextureGenerator.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.RadialGradient.Center"
+        },
+        {
+          "PropertyType": "Sandbox.Gradient",
+          "Loc": {
+            "File": "Resources/Textures/Generators/RadialGradientTextureGenerator.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.RadialGradient.Gradient",
+          "Name": "Gradient",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\RadialGradientTextureGenerator.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.RadialGradient.Gradient"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Textures/Generators/RadialGradientTextureGenerator.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.RadialGradient.ConvertHeightToNormals",
+          "Name": "ConvertHeightToNormals",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Normal Map"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Height to Normal"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\RadialGradientTextureGenerator.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.RadialGradient.ConvertHeightToNormals"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Textures/Generators/RadialGradientTextureGenerator.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.RadialGradient.NormalScale",
+          "Name": "NormalScale",
+          "Attributes": [
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "ConvertHeightToNormals",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\RadialGradientTextureGenerator.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.RadialGradient.NormalScale"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Resources/Textures/Generators/RadialGradientTextureGenerator.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Resources.RadialGradient.CacheToDisk",
+          "Name": "CacheToDisk",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Textures\\Generators\\RadialGradientTextureGenerator.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Resources.RadialGradient.CacheToDisk"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Resources.RadialGradient",
+      "Name": "RadialGradient",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Gradient - Radial"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "vignette"
+          ]
+        },
+        {
+          "FullName": "ClassNameAttribute",
+          "ConstructorArguments": [
+            "gradientradial"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Textures\\Generators\\RadialGradientTextureGenerator.cs",
+            "6"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Resources.RadialGradient"
+    }
+  ],
+  "_metadata": {
+    "chunk": 211,
+    "items_count": 3
+  }
+}

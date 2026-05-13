@@ -1,0 +1,1688 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Editor.Asset[]",
+          "Parameters": [
+            {
+              "Name": "project",
+              "Type": "Sandbox.Project"
+            }
+          ],
+          "l": {
+            "File": "Extensions/LocalProjectExtensions.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.GetAssets",
+          "Name": "GetAssets",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get all assets in this project"
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.GetAssets(Sandbox.Project)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "package",
+              "Type": "Sandbox.Package"
+            },
+            {
+              "Name": "state",
+              "Type": "System.Boolean"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.SetFavouriteAsync",
+          "Name": "SetFavouriteAsync",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.SandboxToolExtensions/<SetFavouriteAsync>d__1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Mark this package as a favourite"
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.SetFavouriteAsync(Sandbox.Package,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "package",
+              "Type": "Sandbox.Package"
+            },
+            {
+              "Name": "up",
+              "Type": "System.Boolean"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.SetVoteAsync",
+          "Name": "SetVoteAsync",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.SandboxToolExtensions/<SetVoteAsync>d__2"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add your vote for this package"
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.SetVoteAsync(Sandbox.Package,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Boolean>",
+          "Parameters": [
+            {
+              "Name": "package",
+              "Type": "Sandbox.Package"
+            },
+            {
+              "Name": "absolutePath",
+              "Type": "System.String"
+            },
+            {
+              "Name": "relativePath",
+              "Type": "System.String"
+            },
+            {
+              "Name": "progress",
+              "Type": "Sandbox.Utility.DataProgress.Callback"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.UploadFile",
+          "Name": "UploadFile",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.SandboxToolExtensions/<UploadFile>d__3"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Mark this package as a favourite"
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.UploadFile(Sandbox.Package,System.String,System.String,Sandbox.Utility.DataProgress.Callback,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Boolean>",
+          "Parameters": [
+            {
+              "Name": "package",
+              "Type": "Sandbox.Package"
+            },
+            {
+              "Name": "contents",
+              "Type": "System.Byte[]"
+            },
+            {
+              "Name": "relativePath",
+              "Type": "System.String"
+            },
+            {
+              "Name": "progress",
+              "Type": "Sandbox.Utility.DataProgress.Callback"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.UploadFile",
+          "Name": "UploadFile",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.SandboxToolExtensions/<UploadFile>d__4"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Upload a file used by this package"
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.UploadFile(Sandbox.Package,System.Byte[],System.String,Sandbox.Utility.DataProgress.Callback,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Boolean>",
+          "Parameters": [
+            {
+              "Name": "asset",
+              "Type": "Editor.Asset"
+            },
+            {
+              "Name": "contents",
+              "Type": "System.Byte[]"
+            },
+            {
+              "Name": "isThumbVideo",
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "hidden",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "tag",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "progress",
+              "Type": "Sandbox.Utility.DataProgress.Callback",
+              "Default": "null"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.UploadVideo",
+          "Name": "UploadVideo",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.SandboxToolExtensions/<UploadVideo>d__5"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Upload a video for this package"
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.UploadVideo(Editor.Asset,System.Byte[],System.Boolean,System.Boolean,System.String,Sandbox.Utility.DataProgress.Callback,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "package",
+              "Type": "Sandbox.Package"
+            },
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.UpdateValue",
+          "Name": "UpdateValue",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.SandboxToolExtensions/<UpdateValue>d__7"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update a value on this package"
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.UpdateValue(Sandbox.Package,System.String,System.String,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "camera",
+              "Type": "Sandbox.SceneCamera"
+            },
+            {
+              "Name": "targetPixmap",
+              "Type": "Editor.Pixmap"
+            },
+            {
+              "Name": "async",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.RenderToPixmap",
+          "Name": "RenderToPixmap",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render this camera to the target widget. Once you do this the target widget becomes \"externally painted\", so you\nwon't be able to paint on it anymore with Qt's Paint stuff."
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.RenderToPixmap(Sandbox.SceneCamera,Editor.Pixmap,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "camera",
+              "Type": "Sandbox.CameraComponent"
+            },
+            {
+              "Name": "targetPixmap",
+              "Type": "Editor.Pixmap"
+            },
+            {
+              "Name": "async",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.RenderToPixmap",
+          "Name": "RenderToPixmap",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render this camera to the target widget. Once you do this the target widget becomes \"externally painted\", so you\nwon't be able to paint on it anymore with Qt's Paint stuff."
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.RenderToPixmap(Sandbox.CameraComponent,Editor.Pixmap,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            },
+            {
+              "Name": "targetPixmap",
+              "Type": "Editor.Pixmap"
+            },
+            {
+              "Name": "async",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.RenderToPixmap",
+          "Name": "RenderToPixmap",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render this camera to the target widget. Once you do this the target widget becomes \"externally painted\", so you\nwon't be able to paint on it anymore with Qt's Paint stuff."
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.RenderToPixmap(Sandbox.Scene,Editor.Pixmap,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "camera",
+              "Type": "Sandbox.SceneCamera"
+            },
+            {
+              "Name": "videoWriter",
+              "Type": "Sandbox.VideoWriter"
+            },
+            {
+              "Name": "time",
+              "Type": "System.Nullable`1<System.TimeSpan>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.RenderToVideo",
+          "Name": "RenderToVideo",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SandboxToolExtensions.RenderToVideo(Sandbox.SceneCamera,Sandbox.VideoWriter,System.Nullable`1{System.TimeSpan})"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Boolean>",
+          "Parameters": [
+            {
+              "Name": "camera",
+              "Type": "Sandbox.SceneCamera"
+            },
+            {
+              "Name": "videoWriter",
+              "Type": "Sandbox.VideoWriter"
+            },
+            {
+              "Name": "time",
+              "Type": "System.Nullable`1<System.TimeSpan>",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.RenderToVideoAsync",
+          "Name": "RenderToVideoAsync",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.SandboxToolExtensions/<RenderToVideoAsync>d__12"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SandboxToolExtensions.RenderToVideoAsync(Sandbox.SceneCamera,Sandbox.VideoWriter,System.Nullable`1{System.TimeSpan})"
+        },
+        {
+          "ReturnType": "Sandbox.SerializedObject",
+          "Parameters": [
+            {
+              "Name": "self",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.GetSerialized",
+          "Name": "GetSerialized",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Shortcut for EditorTypeLibrary.GetSerializedObject( x )"
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.GetSerialized(System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.SandboxToolExtensions.PropertyPath",
+          "Parameters": [
+            {
+              "Name": "prop",
+              "Type": "Sandbox.SerializedProperty"
+            }
+          ],
+          "l": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 167
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.FindPathInScene",
+          "Name": "FindPathInScene",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tries to find the path from a <see cref=\"T:Sandbox.GameObject\" /> or <see cref=\"T:Sandbox.Component\" /> to this property.\nReturns <see langword=\"null\" /> if not found."
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.FindPathInScene(Sandbox.SerializedProperty)"
+        },
+        {
+          "ReturnType": "Sandbox.GameObject",
+          "Parameters": [
+            {
+              "Name": "prop",
+              "Type": "Sandbox.SerializedProperty"
+            }
+          ],
+          "l": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 191
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.GetContainingGameObject",
+          "Name": "GetContainingGameObject",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tries to find the <see cref=\"T:Sandbox.GameObject\" /> that contains the given property.\nReturns <see langword=\"null\" /> if not found."
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.GetContainingGameObject(Sandbox.SerializedProperty)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "sys",
+              "Type": "Sandbox.SelectionSystem"
+            }
+          ],
+          "l": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 214
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.ConstructTitle",
+          "Name": "ConstructTitle",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a feasible title from the current selection"
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.ConstructTitle(Sandbox.SelectionSystem)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "resource",
+              "Type": "Sandbox.Resource"
+            },
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.WaitForLoadAsync",
+          "Name": "WaitForLoadAsync",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.SandboxToolExtensions/<WaitForLoadAsync>d__18"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Creates a task that completes when <paramref name=\"resource\" /> is fully loaded."
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.WaitForLoadAsync(Sandbox.Resource,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "Parameters": [
+            {
+              "Name": "player",
+              "Type": "Sandbox.MovieMaker.MoviePlayer"
+            }
+          ],
+          "l": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 239
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.BeginApplyFrame",
+          "Name": "BeginApplyFrame",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Creates a scope for applying a frame in a <see cref=\"T:Sandbox.MovieMaker.MoviePlayer\" />.\nDispose after modifying any properties controlled by the movie."
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.BeginApplyFrame(Sandbox.MovieMaker.MoviePlayer)"
+        },
+        {
+          "ReturnType": "Sandbox.Bind.Link",
+          "Parameters": [
+            {
+              "Name": "self",
+              "Type": "Sandbox.Bind.Builder"
+            },
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Data.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.FromConsoleVariable",
+          "Name": "FromConsoleVariable",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Bind the Left hand side to the value of the given console variable."
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.FromConsoleVariable(Sandbox.Bind.Builder,System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Bind.Link",
+          "Parameters": [
+            {
+              "Name": "self",
+              "Type": "Sandbox.Bind.Builder"
+            },
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/Widget.Data.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SandboxToolExtensions.FromConsoleVariableInt",
+          "Name": "FromConsoleVariableInt",
+          "DeclaringType": "Sandbox.SandboxToolExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Bind the Left hand side to the value of the given console variable as an integer."
+          },
+          "DocId": "M:Sandbox.SandboxToolExtensions.FromConsoleVariableInt(Sandbox.Bind.Builder,System.String)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "IsExtension": true,
+      "FullName": "Sandbox.SandboxToolExtensions",
+      "Name": "SandboxToolExtensions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.SandboxToolExtensions"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<Sandbox.SerializedProperty>",
+          "Loc": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SandboxToolExtensions.PropertyPath.Properties",
+          "Name": "Properties",
+          "Documentation": {
+            "Summary": "Full path to reach the original property, starting from a property on a <see cref=\"T:Sandbox.GameObject\" /> or\n<see cref=\"T:Sandbox.Component\" />."
+          },
+          "DocId": "P:Sandbox.SandboxToolExtensions.PropertyPath.Properties"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 143
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SandboxToolExtensions.PropertyPath.FullName",
+          "Name": "FullName",
+          "Documentation": {
+            "Summary": "Names of each property in <see cref=\"P:Sandbox.SandboxToolExtensions.PropertyPath.Properties\" />, separated by <c>'.'</c>s."
+          },
+          "DocId": "P:Sandbox.SandboxToolExtensions.PropertyPath.FullName"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<System.Object>",
+          "Loc": {
+            "File": "Extensions/ToolExtensions.cs",
+            "Line": 148
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SandboxToolExtensions.PropertyPath.Targets",
+          "Name": "Targets",
+          "Documentation": {
+            "Summary": "<see cref=\"T:Sandbox.GameObject\" />(s) or <see cref=\"T:Sandbox.Component\" />(s) that contain the original property."
+          },
+          "DocId": "P:Sandbox.SandboxToolExtensions.PropertyPath.Targets"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Sandbox.SandboxToolExtensions.PropertyPath",
+      "Name": "PropertyPath",
+      "DeclaringType": "Sandbox.SandboxToolExtensions",
+      "Documentation": {
+        "Summary": "Describes the path to a <see cref=\"T:Sandbox.SerializedProperty\" /> from either a <see cref=\"T:Sandbox.GameObject\" />\nor <see cref=\"T:Sandbox.Component\" />."
+      },
+      "DocId": "T:Sandbox.SandboxToolExtensions.PropertyPath"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Global.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Global.InGame",
+          "Name": "InGame",
+          "Documentation": {
+            "Summary": "Is the local client in game or not."
+          },
+          "DocId": "P:Sandbox.Global.InGame"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Global.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Global.MapName",
+          "Name": "MapName",
+          "Documentation": {
+            "Summary": "Name of the map the local client is on."
+          },
+          "DocId": "P:Sandbox.Global.MapName"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Global.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Global.GameIdent",
+          "Name": "GameIdent",
+          "Documentation": {
+            "Summary": "Identity of the gamemode the local client is currently playing."
+          },
+          "DocId": "P:Sandbox.Global.GameIdent"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Global.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Global.BackendTitle",
+          "Name": "BackendTitle",
+          "Documentation": {
+            "Summary": "Front facing identity for the backend"
+          },
+          "DocId": "P:Sandbox.Global.BackendTitle"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Global.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Global.BackendUrl",
+          "Name": "BackendUrl",
+          "Documentation": {
+            "Summary": "Url for the backend"
+          },
+          "DocId": "P:Sandbox.Global.BackendUrl"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Global.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Global.IsApiConnected",
+          "Name": "IsApiConnected",
+          "Documentation": {
+            "Summary": "Are we connected to the API? (If not, offline mode. Requires Steam Servers to be online to connect..)"
+          },
+          "DocId": "P:Sandbox.Global.IsApiConnected"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Global",
+      "Name": "Global",
+      "Documentation": {
+        "Summary": "Utility info for tools usage."
+      },
+      "DocId": "T:Sandbox.Global"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.GameObject"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectExtensions.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.IsDeletable",
+          "Name": "IsDeletable",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SceneExtensions.IsDeletable(Sandbox.GameObject)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.GameObject>",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.GameObjectDirectory"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectExtensions.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.GetAll",
+          "Name": "GetAll",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SceneExtensions.GetAll(Sandbox.GameObjectDirectory)"
+        },
+        {
+          "ReturnType": "Editor.Menu",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/SceneExtensions.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.CreateContextMenu",
+          "Name": "CreateContextMenu",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "We should make this globally reachanle at some point. Should be able to draw icons using bitmaps etc too."
+          },
+          "DocId": "M:Sandbox.SceneExtensions.CreateContextMenu(Sandbox.Scene,Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "component",
+              "Type": "Sandbox.Component"
+            }
+          ],
+          "l": {
+            "File": "Scene/SceneExtensions.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.CopyToClipboard",
+          "Name": "CopyToClipboard",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Copy the target <see cref=\"T:Sandbox.Component\" /> to the clipboard.",
+            "Params": {
+              "component": ""
+            }
+          },
+          "DocId": "M:Sandbox.SceneExtensions.CopyToClipboard(Sandbox.Component)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.Component"
+            }
+          ],
+          "l": {
+            "File": "Scene/SceneExtensions.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.PasteValues",
+          "Name": "PasteValues",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Paste component values from clipboard to the target <see cref=\"T:Sandbox.Component\" />.",
+            "Params": {
+              "target": ""
+            }
+          },
+          "DocId": "M:Sandbox.SceneExtensions.PasteValues(Sandbox.Component)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.GameObject"
+            }
+          ],
+          "l": {
+            "File": "Scene/SceneExtensions.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.ShouldShowInHierarchy",
+          "Name": "ShouldShowInHierarchy",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if this object should be shown in the GameObject list"
+          },
+          "DocId": "M:Sandbox.SceneExtensions.ShouldShowInHierarchy(Sandbox.GameObject)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.GameObject"
+            }
+          ],
+          "l": {
+            "File": "Scene/SceneExtensions.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.PasteComponent",
+          "Name": "PasteComponent",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Paste a <see cref=\"T:Sandbox.Component\" /> as a new component on the target <see cref=\"T:Sandbox.GameObject\" />.",
+            "Params": {
+              "target": ""
+            }
+          },
+          "DocId": "M:Sandbox.SceneExtensions.PasteComponent(Sandbox.GameObject)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "td",
+              "Type": "Sandbox.TypeDescription"
+            },
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "opacity",
+              "Type": "System.Single",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Scene/SceneExtensions.cs",
+            "Line": 117
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.PaintComponentIcon",
+          "Name": "PaintComponentIcon",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SceneExtensions.PaintComponentIcon(Sandbox.TypeDescription,Sandbox.Rect,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            },
+            {
+              "Name": "body",
+              "Type": "Sandbox.Rigidbody"
+            },
+            {
+              "Name": "enabled",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/SceneExtensions.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.EnableEditorRigidBody",
+          "Name": "EnableEditorRigidBody",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SceneExtensions.EnableEditorRigidBody(Sandbox.Scene,Sandbox.Rigidbody,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Scene/SceneExtensions.cs",
+            "Line": 140
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.DisableEditorRigidBodies",
+          "Name": "DisableEditorRigidBodies",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SceneExtensions.DisableEditorRigidBodies(Sandbox.Scene)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            },
+            {
+              "Name": "enabled",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/SceneExtensions.cs",
+            "Line": 149
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.EnableEditorPhysics",
+          "Name": "EnableEditorPhysics",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SceneExtensions.EnableEditorPhysics(Sandbox.Scene,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "body",
+              "Type": "Sandbox.Rigidbody"
+            },
+            {
+              "Name": "tx",
+              "Type": "System.Nullable`1<Transform>"
+            }
+          ],
+          "l": {
+            "File": "Scene/SceneExtensions.cs",
+            "Line": 158
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.SceneExtensions.SetTargetTransform",
+          "Name": "SetTargetTransform",
+          "DeclaringType": "Sandbox.SceneExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SceneExtensions.SetTargetTransform(Sandbox.Rigidbody,System.Nullable`1{Transform})"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "IsExtension": true,
+      "FullName": "Sandbox.SceneExtensions",
+      "Name": "SceneExtensions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.SceneExtensions"
+    },
+    {
+      "Namespace": "Sandbox.Helpers",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Undo",
+          "Name": "Undo",
+          "DeclaringType": "Sandbox.Helpers.UndoSystem",
+          "Documentation": {
+            "Summary": "Instigate an undo. Return true if we found a successful undo"
+          },
+          "DocId": "M:Sandbox.Helpers.UndoSystem.Undo"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Redo",
+          "Name": "Redo",
+          "DeclaringType": "Sandbox.Helpers.UndoSystem",
+          "Documentation": {
+            "Summary": "Instigate a redo, returns true if we found a successful undo"
+          },
+          "DocId": "M:Sandbox.Helpers.UndoSystem.Redo"
+        },
+        {
+          "ReturnType": "Sandbox.Helpers.UndoSystem.Entry",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "undo",
+              "Type": "System.Action"
+            },
+            {
+              "Name": "redo",
+              "Type": "System.Action",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Insert",
+          "Name": "Insert",
+          "DeclaringType": "Sandbox.Helpers.UndoSystem",
+          "Documentation": {
+            "Summary": "Insert a new undo entry"
+          },
+          "DocId": "M:Sandbox.Helpers.UndoSystem.Insert(System.String,System.Action,System.Action)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "snapshot",
+              "Type": "System.Func`1<System.Action>"
+            }
+          ],
+          "l": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 120
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.SetSnapshotFunction",
+          "Name": "SetSnapshotFunction",
+          "DeclaringType": "Sandbox.Helpers.UndoSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Auto Snapshotting is obsolete and no longer working. If you really want to use snapshotting for Undo, create/restore the snapshots manually in the undo/redo actions provided to UndoSystem.Insert"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Helpers.UndoSystem.SetSnapshotFunction(System.Func`1{System.Action})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "changeTitle",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 158
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Snapshot",
+          "Name": "Snapshot",
+          "DeclaringType": "Sandbox.Helpers.UndoSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Auto Snapshotting is obsolete and no longer working. If you really want to use snapshotting for Undo, create/restore the snapshots manually in the undo/redo actions provided to UndoSystem.Insert"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should be called after you make a change to your project. The snapshot system\nis good for self contained projects that can be serialized and deserialized quickly."
+          },
+          "DocId": "M:Sandbox.Helpers.UndoSystem.Snapshot(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 166
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Initialize",
+          "Name": "Initialize",
+          "DeclaringType": "Sandbox.Helpers.UndoSystem",
+          "Documentation": {
+            "Summary": "Clear the history and take an initial snapshot.\nYou should call this right after a load, or a new project."
+          },
+          "DocId": "M:Sandbox.Helpers.UndoSystem.Initialize"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Helpers.UndoSystem",
+          "DocId": "M:Sandbox.Helpers.UndoSystem.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.Stack`1<Sandbox.Helpers.UndoSystem.Entry>",
+          "Loc": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Back",
+          "Name": "Back",
+          "Documentation": {
+            "Summary": "Backwards stack"
+          },
+          "DocId": "P:Sandbox.Helpers.UndoSystem.Back"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.Stack`1<Sandbox.Helpers.UndoSystem.Entry>",
+          "Loc": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Forward",
+          "Name": "Forward",
+          "Documentation": {
+            "Summary": "Forwards stack, gets cleared when a new undo is added"
+          },
+          "DocId": "P:Sandbox.Helpers.UndoSystem.Forward"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Action`1<Sandbox.Helpers.UndoSystem.Entry>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.OnUndo",
+          "Name": "OnUndo",
+          "Documentation": {
+            "Summary": "Called when an undo is run"
+          },
+          "DocId": "F:Sandbox.Helpers.UndoSystem.OnUndo"
+        },
+        {
+          "FieldType": "System.Action`1<Sandbox.Helpers.UndoSystem.Entry>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.OnRedo",
+          "Name": "OnRedo",
+          "Documentation": {
+            "Summary": "Called when a redo is run"
+          },
+          "DocId": "F:Sandbox.Helpers.UndoSystem.OnRedo"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Sandbox.Helpers.UndoSystem",
+      "Name": "UndoSystem",
+      "Documentation": {
+        "Summary": "A system that aims to wrap the main reusable functionality of an undo system"
+      },
+      "DocId": "T:Sandbox.Helpers.UndoSystem"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Entry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Helpers.UndoSystem.Entry",
+          "DocId": "M:Sandbox.Helpers.UndoSystem.Entry.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Entry.Name",
+          "Name": "Name",
+          "DocId": "P:Sandbox.Helpers.UndoSystem.Entry.Name"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Entry.Undo",
+          "Name": "Undo",
+          "DocId": "P:Sandbox.Helpers.UndoSystem.Entry.Undo"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Entry.Redo",
+          "Name": "Redo",
+          "DocId": "P:Sandbox.Helpers.UndoSystem.Entry.Redo"
+        },
+        {
+          "PropertyType": "System.Object",
+          "Loc": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Entry.Image",
+          "Name": "Image",
+          "Documentation": {},
+          "DocId": "P:Sandbox.Helpers.UndoSystem.Entry.Image"
+        },
+        {
+          "PropertyType": "System.DateTime",
+          "Loc": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Entry.Timestamp",
+          "Name": "Timestamp",
+          "DocId": "P:Sandbox.Helpers.UndoSystem.Entry.Timestamp"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Utility/UndoSystem.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Helpers.UndoSystem.Entry.Locked",
+          "Name": "Locked",
+          "DocId": "P:Sandbox.Helpers.UndoSystem.Entry.Locked"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Sandbox.Helpers.UndoSystem.Entry",
+      "Name": "Entry",
+      "DeclaringType": "Sandbox.Helpers.UndoSystem",
+      "DocId": "T:Sandbox.Helpers.UndoSystem.Entry"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Properties": [
+        {
+          "PropertyType": "Editor.EditorMainWindow",
+          "Loc": {
+            "File": "GlobalToolsNamespace.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.GlobalToolsNamespace.EditorWindow",
+          "Name": "EditorWindow",
+          "DocId": "P:Sandbox.Internal.GlobalToolsNamespace.EditorWindow"
+        },
+        {
+          "PropertyType": "Sandbox.CookieContainer",
+          "Loc": {
+            "File": "GlobalToolsNamespace.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.GlobalToolsNamespace.EditorCookie",
+          "Name": "EditorCookie",
+          "DocId": "P:Sandbox.Internal.GlobalToolsNamespace.EditorCookie"
+        },
+        {
+          "PropertyType": "Sandbox.CookieContainer",
+          "Loc": {
+            "File": "GlobalToolsNamespace.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.GlobalToolsNamespace.ProjectCookie",
+          "Name": "ProjectCookie",
+          "DocId": "P:Sandbox.Internal.GlobalToolsNamespace.ProjectCookie"
+        },
+        {
+          "PropertyType": "Sandbox.Bind.BindSystem",
+          "Loc": {
+            "File": "GlobalToolsNamespace.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.GlobalToolsNamespace.BindSystem",
+          "Name": "BindSystem",
+          "DocId": "P:Sandbox.Internal.GlobalToolsNamespace.BindSystem"
+        },
+        {
+          "PropertyType": "Sandbox.Internal.TypeLibrary",
+          "Loc": {
+            "File": "GlobalToolsNamespace.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.GlobalToolsNamespace.EditorTypeLibrary",
+          "Name": "EditorTypeLibrary",
+          "DocId": "P:Sandbox.Internal.GlobalToolsNamespace.EditorTypeLibrary"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.NodeLibrary",
+          "Loc": {
+            "File": "GlobalToolsNamespace.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.GlobalToolsNamespace.EditorNodeLibrary",
+          "Name": "EditorNodeLibrary",
+          "DocId": "P:Sandbox.Internal.GlobalToolsNamespace.EditorNodeLibrary"
+        },
+        {
+          "PropertyType": "System.Text.Json.JsonSerializerOptions",
+          "Loc": {
+            "File": "GlobalToolsNamespace.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.GlobalToolsNamespace.EditorJsonOptions",
+          "Name": "EditorJsonOptions",
+          "DocId": "P:Sandbox.Internal.GlobalToolsNamespace.EditorJsonOptions"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Internal.GlobalToolsNamespace",
+      "Name": "GlobalToolsNamespace",
+      "DocId": "T:Sandbox.Internal.GlobalToolsNamespace"
+    }
+  ],
+  "_metadata": {
+    "chunk": 241,
+    "items_count": 7
+  }
+}

@@ -1,0 +1,1150 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.Package.Facet.Entry.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Sandbox.Package.Facet.Entry",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Package.Facet.Entry.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Sandbox.Package.Facet.Entry",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.Facet.Entry.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Sandbox.Package.Facet.Entry",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Package.Facet.Entry.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Title",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Count",
+              "Out": true,
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "Children",
+              "Out": true,
+              "Type": "System.Collections.Generic.List`1<Sandbox.Package.Facet.Entry>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.Facet.Entry.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Package.Facet.Entry",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Package.Facet.Entry.Deconstruct(System.String@,System.String@,System.String@,System.Int32@,System.Collections.Generic.List`1{Sandbox.Package.Facet.Entry}@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Count",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "Children",
+              "Type": "System.Collections.Generic.List`1<Sandbox.Package.Facet.Entry>"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Package.Facet.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.Facet.Entry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Package.Facet.Entry",
+          "DocId": "M:Sandbox.Package.Facet.Entry.#ctor(System.String,System.String,System.String,System.Int32,System.Collections.Generic.List`1{Sandbox.Package.Facet.Entry})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Sandbox.Package.Facet.Entry"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Package.Facet.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Package.Facet.Entry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Package.Facet.Entry",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Package.Facet.Entry.#ctor(Sandbox.Package.Facet.Entry)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Sandbox.Package.Facet.Entry.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.Package.Facet.Entry.EqualityContract"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.Facet.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.Facet.Entry.Name",
+          "Name": "Name",
+          "DocId": "P:Sandbox.Package.Facet.Entry.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.Facet.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.Facet.Entry.Title",
+          "Name": "Title",
+          "DocId": "P:Sandbox.Package.Facet.Entry.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.Facet.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.Facet.Entry.Icon",
+          "Name": "Icon",
+          "DocId": "P:Sandbox.Package.Facet.Entry.Icon"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Services/Packages/Package.Facet.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.Facet.Entry.Count",
+          "Name": "Count",
+          "DocId": "P:Sandbox.Package.Facet.Entry.Count"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Package.Facet.Entry>",
+          "Loc": {
+            "File": "Services/Packages/Package.Facet.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.Facet.Entry.Children",
+          "Name": "Children",
+          "DocId": "P:Sandbox.Package.Facet.Entry.Children"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Package.Facet.Entry",
+      "Name": "Entry",
+      "DeclaringType": "Sandbox.Package/Facet",
+      "Documentation": {
+        "Summary": "A facet entry consists of a name, display information and the number of items inside"
+      },
+      "DocId": "T:Sandbox.Package.Facet.Entry"
+    },
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.FindResult..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Package.FindResult",
+          "DocId": "M:Sandbox.Package.FindResult.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Double",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.FindResult.Milliseconds",
+          "Name": "Milliseconds",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The amount of time the query took"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.FindResult.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The amount of time the query took"
+          },
+          "DocId": "P:Sandbox.Package.FindResult.Milliseconds"
+        },
+        {
+          "PropertyType": "Sandbox.Package[]",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.FindResult.Packages",
+          "Name": "Packages",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of packages retrieved"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.FindResult.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of packages retrieved"
+          },
+          "DocId": "P:Sandbox.Package.FindResult.Packages"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.FindResult.TotalCount",
+          "Name": "TotalCount",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The total amount of packages"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.FindResult.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The total amount of packages"
+          },
+          "DocId": "P:Sandbox.Package.FindResult.TotalCount"
+        },
+        {
+          "PropertyType": "Sandbox.Package.Facet[]",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.FindResult.Facets",
+          "Name": "Facets",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Facets particular to this search"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.FindResult.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Facets particular to this search"
+          },
+          "DocId": "P:Sandbox.Package.FindResult.Facets"
+        },
+        {
+          "PropertyType": "Sandbox.Package.TagEntry[]",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.FindResult.Tags",
+          "Name": "Tags",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of tags relevant to this search"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.FindResult.cs",
+                "34"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of tags relevant to this search"
+          },
+          "DocId": "P:Sandbox.Package.FindResult.Tags"
+        },
+        {
+          "PropertyType": "Sandbox.Package.SortOrder[]",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.FindResult.Orders",
+          "Name": "Orders",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of sort orders. There may be other sort orders, but we provide a list here that can be easily used to save rewriting the same code over and over."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.FindResult.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of sort orders. There may be other sort orders, but we provide a list here that can\nbe easily used to save rewriting the same code over and over."
+          },
+          "DocId": "P:Sandbox.Package.FindResult.Orders"
+        },
+        {
+          "PropertyType": "Sandbox.Package.PackageProperty[]",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.FindResult.Properties",
+          "Name": "Properties",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Binary options"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.FindResult.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Binary options"
+          },
+          "DocId": "P:Sandbox.Package.FindResult.Properties"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Package.FindResult",
+      "Name": "FindResult",
+      "DeclaringType": "Sandbox.Package",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A result from the call to FindAsync"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Services\\Packages\\Package.FindResult.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A result from the call to FindAsync"
+      },
+      "DocId": "T:Sandbox.Package.FindResult"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Count",
+              "Out": true,
+              "Type": "System.Int32"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.TagEntry.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Package.TagEntry",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Package.TagEntry.Deconstruct(System.String@,System.Int32@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Count",
+              "Type": "System.Int32"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.TagEntry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Package.TagEntry",
+          "Documentation": {
+            "Summary": "Represents a tag along with the count of items it contains"
+          },
+          "DocId": "M:Sandbox.Package.TagEntry.#ctor(System.String,System.Int32)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.TagEntry.Name",
+          "Name": "Name",
+          "DocId": "P:Sandbox.Package.TagEntry.Name"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.TagEntry.Count",
+          "Name": "Count",
+          "DocId": "P:Sandbox.Package.TagEntry.Count"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Package.TagEntry",
+      "Name": "TagEntry",
+      "DeclaringType": "Sandbox.Package",
+      "Documentation": {
+        "Summary": "Represents a tag along with the count of items it contains"
+      },
+      "DocId": "T:Sandbox.Package.TagEntry"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Title",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Out": true,
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.SortOrder.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Package.SortOrder",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Package.SortOrder.Deconstruct(System.String@,System.String@,System.String@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.SortOrder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Package.SortOrder",
+          "Documentation": {
+            "Summary": "Describes a sort order which can be used with the package/find api"
+          },
+          "DocId": "M:Sandbox.Package.SortOrder.#ctor(System.String,System.String,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.SortOrder.Name",
+          "Name": "Name",
+          "DocId": "P:Sandbox.Package.SortOrder.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.SortOrder.Title",
+          "Name": "Title",
+          "DocId": "P:Sandbox.Package.SortOrder.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.SortOrder.Icon",
+          "Name": "Icon",
+          "DocId": "P:Sandbox.Package.SortOrder.Icon"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Package.SortOrder",
+      "Name": "SortOrder",
+      "DeclaringType": "Sandbox.Package",
+      "Documentation": {
+        "Summary": "Describes a sort order which can be used with the package/find api"
+      },
+      "DocId": "T:Sandbox.Package.SortOrder"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Title",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Description",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Count",
+              "Out": true,
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "IsExclusive",
+              "Out": true,
+              "Type": "System.Boolean"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.PackageProperty.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.Package.PackageProperty",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.Package.PackageProperty.Deconstruct(System.String@,System.String@,System.String@,System.String@,System.Int32@,System.Boolean@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Description",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Count",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "IsExclusive",
+              "Type": "System.Boolean"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.PackageProperty..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Package.PackageProperty",
+          "Documentation": {
+            "Summary": "A binary category used to divide into two categories. For example, Work In Progress."
+          },
+          "DocId": "M:Sandbox.Package.PackageProperty.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Boolean)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.PackageProperty.Name",
+          "Name": "Name",
+          "DocId": "P:Sandbox.Package.PackageProperty.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.PackageProperty.Icon",
+          "Name": "Icon",
+          "DocId": "P:Sandbox.Package.PackageProperty.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.PackageProperty.Title",
+          "Name": "Title",
+          "DocId": "P:Sandbox.Package.PackageProperty.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.PackageProperty.Description",
+          "Name": "Description",
+          "DocId": "P:Sandbox.Package.PackageProperty.Description"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.PackageProperty.Count",
+          "Name": "Count",
+          "DocId": "P:Sandbox.Package.PackageProperty.Count"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Services/Packages/Package.FindResult.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.PackageProperty.IsExclusive",
+          "Name": "IsExclusive",
+          "DocId": "P:Sandbox.Package.PackageProperty.IsExclusive"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Package.PackageProperty",
+      "Name": "PackageProperty",
+      "DeclaringType": "Sandbox.Package",
+      "Documentation": {
+        "Summary": "A binary category used to divide into two categories. For example, Work In Progress."
+      },
+      "DocId": "T:Sandbox.Package.PackageProperty"
+    },
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.ListResult..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Package.ListResult",
+          "DocId": "M:Sandbox.Package.ListResult.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.ListResult.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.ListResult.Title",
+          "Name": "Title",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The name of this group"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.ListResult.cs",
+                "15"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The name of this group"
+          },
+          "DocId": "P:Sandbox.Package.ListResult.Title"
+        },
+        {
+          "PropertyType": "Sandbox.Package.ListResult.Grouping[]",
+          "Loc": {
+            "File": "Services/Packages/Package.ListResult.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.ListResult.Groupings",
+          "Name": "Groupings",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The groups of packages"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.ListResult.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The groups of packages"
+          },
+          "DocId": "P:Sandbox.Package.ListResult.Groupings"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Package.ListResult",
+      "Name": "ListResult",
+      "DeclaringType": "Sandbox.Package",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents the actual response from the api"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Services\\Packages\\Package.ListResult.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents the actual response from the api"
+      },
+      "DocId": "T:Sandbox.Package.ListResult"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.ListResult.Grouping..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Package.ListResult.Grouping",
+          "DocId": "M:Sandbox.Package.ListResult.Grouping.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.ListResult.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.ListResult.Grouping.Title",
+          "Name": "Title",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The title of this group"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.ListResult.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The title of this group"
+          },
+          "DocId": "P:Sandbox.Package.ListResult.Grouping.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.ListResult.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.ListResult.Grouping.Icon",
+          "Name": "Icon",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The icon of this group"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.ListResult.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The icon of this group"
+          },
+          "DocId": "P:Sandbox.Package.ListResult.Grouping.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.ListResult.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.ListResult.Grouping.Style",
+          "Name": "Style",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The style of this group"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.ListResult.cs",
+                "37"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The style of this group"
+          },
+          "DocId": "P:Sandbox.Package.ListResult.Grouping.Style"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Package.ListResult.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.ListResult.Grouping.QueryString",
+          "Name": "QueryString",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Link to get a full list of this category"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.ListResult.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Link to get a full list of this category"
+          },
+          "DocId": "P:Sandbox.Package.ListResult.Grouping.QueryString"
+        },
+        {
+          "PropertyType": "Sandbox.Package[]",
+          "Loc": {
+            "File": "Services/Packages/Package.ListResult.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Package.ListResult.Grouping.Packages",
+          "Name": "Packages",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The packages in this group"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Package.ListResult.cs",
+                "47"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The packages in this group"
+          },
+          "DocId": "P:Sandbox.Package.ListResult.Grouping.Packages"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Package.ListResult.Grouping",
+      "Name": "Grouping",
+      "DeclaringType": "Sandbox.Package/ListResult",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Services\\Packages\\Package.ListResult.cs",
+            "22"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Package.ListResult.Grouping"
+    }
+  ],
+  "_metadata": {
+    "chunk": 135,
+    "items_count": 7
+  }
+}

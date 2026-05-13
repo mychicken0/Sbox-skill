@@ -1,0 +1,776 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "velocity",
+              "Type": "System.Single",
+              "Default": "10"
+            },
+            {
+              "Name": "fadeOut",
+              "Type": "System.Single",
+              "Default": "-1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.SetEffect",
+          "Name": "SetEffect",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.cs",
+                "30"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Sound.SetEffect(System.String,System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "eventName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.Preload",
+          "Name": "Preload",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Precaches sound files associated with given sound event by name. This helps avoid stutters on first load of each sound file."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.cs",
+                "46"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Precaches sound files associated with given sound event by name.\nThis helps avoid stutters on first load of each sound file."
+          },
+          "DocId": "M:Sandbox.Sound.Preload(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "System.Byte[]"
+            },
+            {
+              "Name": "ondata",
+              "Type": "System.Action`1<System.Memory`1<System.Int16>>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.UncompressVoiceData",
+          "Name": "UncompressVoiceData",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Uncompress the voice data"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.cs",
+                "70"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Sound.UncompressVoiceData(System.Byte[],System.Action`1{System.Memory`1{System.Int16}})"
+        },
+        {
+          "ReturnType": "Sandbox.SoundHandle",
+          "Parameters": [
+            {
+              "Name": "eventName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "fadeInTime",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.Play.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.Play.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Sound.Play(System.String,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.SoundHandle",
+          "Parameters": [
+            {
+              "Name": "soundEvent",
+              "Type": "Sandbox.SoundEvent"
+            },
+            {
+              "Name": "fadeInTime",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.Play.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.Play.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Sound.Play(Sandbox.SoundEvent,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.SoundHandle",
+          "Parameters": [
+            {
+              "Name": "soundEvent",
+              "Type": "Sandbox.SoundEvent"
+            },
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "fadeInTime",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.Play.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "sound.playat"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Play Sound At"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Audio"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "volume_up"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Play a sound and set its position"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.Play.cs",
+                "68"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Play a sound and set its position"
+          },
+          "DocId": "M:Sandbox.Sound.Play(Sandbox.SoundEvent,Vector3,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.SoundHandle",
+          "Parameters": [
+            {
+              "Name": "eventName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "fadeInTime",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.Play.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Play a sound and set its position"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.Play.cs",
+                "82"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Play a sound and set its position"
+          },
+          "DocId": "M:Sandbox.Sound.Play(System.String,Vector3,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.SoundHandle",
+          "Parameters": [
+            {
+              "Name": "eventName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "mixer",
+              "Type": "Sandbox.Audio.Mixer"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.Play.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Play a sound and set its mixer"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.Play.cs",
+                "95"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Play a sound and set its mixer"
+          },
+          "DocId": "M:Sandbox.Sound.Play(System.String,Sandbox.Audio.Mixer)"
+        },
+        {
+          "ReturnType": "Sandbox.SoundHandle",
+          "Parameters": [
+            {
+              "Name": "soundEvent",
+              "Type": "Sandbox.SoundEvent"
+            },
+            {
+              "Name": "mixer",
+              "Type": "Sandbox.Audio.Mixer"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.Play.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Play a sound and set its mixer"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.Play.cs",
+                "108"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Play a sound and set its mixer"
+          },
+          "DocId": "M:Sandbox.Sound.Play(Sandbox.SoundEvent,Sandbox.Audio.Mixer)"
+        },
+        {
+          "ReturnType": "Sandbox.SoundHandle",
+          "Parameters": [
+            {
+              "Name": "soundFile",
+              "Type": "Sandbox.SoundFile"
+            },
+            {
+              "Name": "volume",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "pitch",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "decibels",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "delay",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "fadeInTime",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.Play.cs",
+            "Line": 123
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.PlayFile",
+          "Name": "PlayFile",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "sound.playfile"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Play Sound File"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Audio"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "volume_up"
+              ]
+            },
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Decibels are obsolete"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.Play.cs",
+                "118"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Sound.PlayFile(Sandbox.SoundFile,System.Single,System.Single,System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.SoundHandle",
+          "Parameters": [
+            {
+              "Name": "soundFile",
+              "Type": "Sandbox.SoundFile"
+            },
+            {
+              "Name": "volume",
+              "Type": "System.Single",
+              "Default": "1"
+            },
+            {
+              "Name": "pitch",
+              "Type": "System.Single",
+              "Default": "1"
+            },
+            {
+              "Name": "delay",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "fadeInTime",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.Play.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.PlayFile",
+          "Name": "PlayFile",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "sound.playfile"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Play Sound File"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Audio"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "volume_up"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.Play.cs",
+                "125"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Sound.PlayFile(Sandbox.SoundFile,System.Single,System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "fade",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Sound.Play.cs",
+            "Line": 161
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.StopAll",
+          "Name": "StopAll",
+          "DeclaringType": "Sandbox.Sound",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "sound.stopall"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Stop All Sounds"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Audio"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "volume_off"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.Play.cs",
+                "158"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Sound.StopAll(System.Single)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Systems/Audio/Sound.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.Listener",
+          "Name": "Listener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sound listener of the active scene."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sound listener of the active scene."
+          },
+          "DocId": "P:Sandbox.Sound.Listener"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/Sound.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.MasterVolume",
+          "Name": "MasterVolume",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ConVarAttribute",
+              "ConstructorArguments": [
+                "volume",
+                "65"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The user's preference for their master volume."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The user's preference for their master volume."
+          },
+          "DocId": "P:Sandbox.Sound.MasterVolume"
+        },
+        {
+          "PropertyType": "System.String[]",
+          "Loc": {
+            "File": "Systems/Audio/Sound.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.DspNames",
+          "Name": "DspNames",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a list of available DSP names"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a list of available DSP names"
+          },
+          "DocId": "P:Sandbox.Sound.DspNames"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Audio/Sound.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Sound.VoiceSampleRate",
+          "Name": "VoiceSampleRate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The sample rate for voice data"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Sound.cs",
+                "78"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The sample rate for voice data"
+          },
+          "DocId": "P:Sandbox.Sound.VoiceSampleRate"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Sound",
+      "Name": "Sound",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Single source for creating sounds"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Sound.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Single source for creating sounds"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Sound.Play.cs",
+            "4"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Single source for creating sounds"
+      },
+      "DocId": "T:Sandbox.Sound"
+    }
+  ],
+  "_metadata": {
+    "chunk": 136,
+    "items_count": 1
+  }
+}

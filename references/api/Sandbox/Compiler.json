@@ -1,0 +1,1253 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Sandbox.CodeArchive"
+            }
+          ],
+          "l": {
+            "File": "Compiler/Compiler.Build.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.UpdateFromArchive",
+          "Name": "UpdateFromArchive",
+          "DeclaringType": "Sandbox.Compiler",
+          "Documentation": {
+            "Summary": "Fill this compiler from a code archive"
+          },
+          "DocId": "M:Sandbox.Compiler.UpdateFromArchive(Sandbox.CodeArchive)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "fullPath",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.AddSourcePath",
+          "Name": "AddSourcePath",
+          "DeclaringType": "Sandbox.Compiler",
+          "Documentation": {
+            "Summary": "Add an extra source path. Useful for situations where you want to combine multiple addons into one."
+          },
+          "DocId": "M:Sandbox.Compiler.AddSourcePath(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "newConfig",
+              "Type": "Sandbox.Compiler.Configuration"
+            }
+          ],
+          "l": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.SetConfiguration",
+          "Name": "SetConfiguration",
+          "DeclaringType": "Sandbox.Compiler",
+          "DocId": "M:Sandbox.Compiler.SetConfiguration(Sandbox.Compiler.Configuration)"
+        },
+        {
+          "ReturnType": "Sandbox.Compiler.Configuration",
+          "Parameters": [],
+          "l": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 143
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.GetConfiguration",
+          "Name": "GetConfiguration",
+          "DeclaringType": "Sandbox.Compiler",
+          "DocId": "M:Sandbox.Compiler.GetConfiguration"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "fastHotloadedVersion",
+              "Type": "System.Version"
+            }
+          ],
+          "l": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 163
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.NotifyFastHotload",
+          "Name": "NotifyFastHotload",
+          "DeclaringType": "Sandbox.Compiler",
+          "DocId": "M:Sandbox.Compiler.NotifyFastHotload(System.Version)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 277
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.Compiler",
+          "DocId": "M:Sandbox.Compiler.Dispose"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "depth",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 301
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.DependencyIndex",
+          "Name": "DependencyIndex",
+          "DeclaringType": "Sandbox.Compiler",
+          "DocId": "M:Sandbox.Compiler.DependencyIndex(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 324
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.MarkForRecompile",
+          "Name": "MarkForRecompile",
+          "DeclaringType": "Sandbox.Compiler",
+          "Documentation": {
+            "Summary": "Recompile this as soon as is appropriate"
+          },
+          "DocId": "M:Sandbox.Compiler.MarkForRecompile"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "referenceName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Compiler/Compiler.References.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.AddReference",
+          "Name": "AddReference",
+          "DeclaringType": "Sandbox.Compiler",
+          "Documentation": {
+            "Summary": "Add a reference to this compiler. This might be a system dll, or an assembly name from a fellow compiler."
+          },
+          "DocId": "M:Sandbox.Compiler.AddReference(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "referenceName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "deep",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Compiler/Compiler.References.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.HasReference",
+          "Name": "HasReference",
+          "DeclaringType": "Sandbox.Compiler",
+          "Documentation": {
+            "Summary": "Returns true if <see cref=\"P:Sandbox.Compiler._references\" /> contains the given reference assembly name.\nIf <paramref name=\"deep\" /> is true, referenced compilers are searched too."
+          },
+          "DocId": "M:Sandbox.Compiler.HasReference(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "Microsoft.CodeAnalysis.SyntaxTree",
+          "Parameters": [
+            {
+              "Name": "tree",
+              "Type": "Microsoft.CodeAnalysis.SyntaxTree"
+            }
+          ],
+          "l": {
+            "File": "Compiler/Compiler.SyntaxTree.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Compiler.StripDisabledTextTrivia",
+          "Name": "StripDisabledTextTrivia",
+          "DeclaringType": "Sandbox.Compiler",
+          "Documentation": {
+            "Summary": "Strips out disabled text trivia from the syntax tree. This is stuff like `#if false` blocks that are not compiled.",
+            "Return": "",
+            "Params": {
+              "tree": ""
+            }
+          },
+          "DocId": "M:Sandbox.Compiler.StripDisabledTextTrivia(Microsoft.CodeAnalysis.SyntaxTree)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Compiler/Compiler.Watch.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.WatchForChanges",
+          "Name": "WatchForChanges",
+          "DeclaringType": "Sandbox.Compiler",
+          "Documentation": {
+            "Summary": "Watch the filesystem for changes to our c# files, and trigger a recompile if they change."
+          },
+          "DocId": "M:Sandbox.Compiler.WatchForChanges"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.CompileGroup",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Group",
+          "Name": "Group",
+          "Documentation": {
+            "Summary": "Each compiler must belong to a compile group"
+          },
+          "DocId": "P:Sandbox.Compiler.Group"
+        },
+        {
+          "PropertyType": "Sandbox.CompilerOutput",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Output",
+          "Name": "Output",
+          "Documentation": {
+            "Summary": "The output from the previous build"
+          },
+          "DocId": "P:Sandbox.Compiler.Output"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.IsBuilding",
+          "Name": "IsBuilding",
+          "Documentation": {
+            "Summary": "Is this compiler currently building?"
+          },
+          "DocId": "P:Sandbox.Compiler.IsBuilding"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.NeedsBuild",
+          "Name": "NeedsBuild",
+          "Documentation": {
+            "Summary": "Returns true if this compiler is pending a build, or currently building."
+          },
+          "DocId": "P:Sandbox.Compiler.NeedsBuild"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "Name of the project this compiler was created for. This could be something like \"base\" or \"org.ident\"."
+          },
+          "DocId": "P:Sandbox.Compiler.Name"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.UseAbsoluteSourcePaths",
+          "Name": "UseAbsoluteSourcePaths",
+          "Documentation": {
+            "Summary": "During development we use absolute source paths so that debugging works better. In a packed/release build it's\ngood to use relative paths instead, just to avoid exposing the builder's file system."
+          },
+          "DocId": "P:Sandbox.Compiler.UseAbsoluteSourcePaths"
+        },
+        {
+          "PropertyType": "Microsoft.CodeAnalysis.Diagnostic[]",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Diagnostics",
+          "Name": "Diagnostics",
+          "Documentation": {
+            "Summary": "A list of warnings and errors created by the last build"
+          },
+          "DocId": "P:Sandbox.Compiler.Diagnostics"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.AssemblyName",
+          "Name": "AssemblyName",
+          "Documentation": {
+            "Summary": "Generated assembly name, without an extension. This will be \"package.{Name}\"."
+          },
+          "DocId": "P:Sandbox.Compiler.AssemblyName"
+        },
+        {
+          "PropertyType": "System.Text.StringBuilder",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.GeneratedCode",
+          "Name": "GeneratedCode",
+          "Documentation": {
+            "Summary": "Global namespaces"
+          },
+          "DocId": "P:Sandbox.Compiler.GeneratedCode"
+        },
+        {
+          "PropertyType": "Sandbox.BaseFileSystem",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.FileSystem",
+          "Name": "FileSystem",
+          "Documentation": {
+            "Summary": "An aggregate of all the filesystem this compiler has"
+          },
+          "DocId": "P:Sandbox.Compiler.FileSystem"
+        },
+        {
+          "PropertyType": "Microsoft.CodeAnalysis.Emit.EmitResult",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 149
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.BuildResult",
+          "Name": "BuildResult",
+          "Documentation": {
+            "Summary": "Results for the assembly build. This can contain warnings or errors."
+          },
+          "DocId": "P:Sandbox.Compiler.BuildResult"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Compiler/Compiler.cs",
+            "Line": 154
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.BuildSuccess",
+          "Name": "BuildSuccess",
+          "Documentation": {
+            "Summary": "Accesses Output.Successful"
+          },
+          "DocId": "P:Sandbox.Compiler.BuildSuccess"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Compiling",
+      "IsPublic": true,
+      "FullName": "Sandbox.Compiler",
+      "Name": "Compiler",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.SkipHotloadAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Given a folder of .cs files, this will produce (and load) an assembly"
+      },
+      "DocId": "T:Sandbox.Compiler"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Compiler.ReleaseMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Compiler.ReleaseMode.Debug",
+          "Name": "Debug",
+          "DocId": "F:Sandbox.Compiler.ReleaseMode.Debug"
+        },
+        {
+          "FieldType": "Sandbox.Compiler.ReleaseMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Compiler.ReleaseMode.Release",
+          "Name": "Release",
+          "DocId": "F:Sandbox.Compiler.ReleaseMode.Release"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Compiling",
+      "IsPublic": true,
+      "FullName": "Sandbox.Compiler.ReleaseMode",
+      "Name": "ReleaseMode",
+      "DeclaringType": "Sandbox.Compiler",
+      "DocId": "T:Sandbox.Compiler.ReleaseMode"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.Clean",
+          "Name": "Clean",
+          "DeclaringType": "Sandbox.Compiler.Configuration",
+          "DocId": "M:Sandbox.Compiler.Configuration.Clean"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.HashSet`1<System.String>",
+          "Parameters": [],
+          "l": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 120
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.GetPreprocessorSymbols",
+          "Name": "GetPreprocessorSymbols",
+          "DeclaringType": "Sandbox.Compiler.Configuration",
+          "Documentation": {
+            "Summary": "Fetches the preprocessor symbols, which might've changed based on criteria",
+            "Return": ""
+          },
+          "DocId": "M:Sandbox.Compiler.Configuration.GetPreprocessorSymbols"
+        },
+        {
+          "ReturnType": "Microsoft.CodeAnalysis.CSharp.CSharpParseOptions",
+          "Parameters": [],
+          "l": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 141
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.GetParseOptions",
+          "Name": "GetParseOptions",
+          "DeclaringType": "Sandbox.Compiler.Configuration",
+          "Documentation": {
+            "Summary": "Returns the CSharpParseOptions for this configuration, which includes the preprocessor symbols defined in <see cref=\"P:Sandbox.Compiler.Configuration.DefineConstants\" />.",
+            "Return": ""
+          },
+          "DocId": "M:Sandbox.Compiler.Configuration.GetParseOptions"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Compiler.Configuration",
+          "DocId": "M:Sandbox.Compiler.Configuration.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.RootNamespace",
+          "Name": "RootNamespace",
+          "DocId": "P:Sandbox.Compiler.Configuration.RootNamespace"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.DefineConstants",
+          "Name": "DefineConstants",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Symbols"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of pre-processor symbols to define when compiling, separated with semi-colons."
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Compiler.Configuration.DefineConstants"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.NoWarn",
+          "Name": "NoWarn",
+          "DocId": "P:Sandbox.Compiler.Configuration.NoWarn"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.WarningsAsErrors",
+          "Name": "WarningsAsErrors",
+          "DocId": "P:Sandbox.Compiler.Configuration.WarningsAsErrors"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.TreatWarningsAsErrors",
+          "Name": "TreatWarningsAsErrors",
+          "DocId": "P:Sandbox.Compiler.Configuration.TreatWarningsAsErrors"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.Nullables",
+          "Name": "Nullables",
+          "DocId": "P:Sandbox.Compiler.Configuration.Nullables"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.Whitelist",
+          "Name": "Whitelist",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true, we will be using the whitelist system. If false then this package won't\nbe \"sandboxed\", so won't be able to be published on the platform."
+          },
+          "DocId": "P:Sandbox.Compiler.Configuration.Whitelist"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.Unsafe",
+          "Name": "Unsafe",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true, we'll compile with /unsafe. This means that the package won't be able to\nbe published on the platform."
+          },
+          "DocId": "P:Sandbox.Compiler.Configuration.Unsafe"
+        },
+        {
+          "PropertyType": "Sandbox.Compiler.ReleaseMode",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.ReleaseMode",
+          "Name": "ReleaseMode",
+          "Documentation": {
+            "Summary": "The current release mode. This only matters during local development. \nPublished games are always built in release mode, where optimizations are enabled and debugging is limited (breakpoints, sequence points, and locals may be unavailable)."
+          },
+          "DocId": "P:Sandbox.Compiler.Configuration.ReleaseMode"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<System.String>",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.AssemblyReferences",
+          "Name": "AssemblyReferences",
+          "Documentation": {
+            "Summary": "References to non-package assemblies, by assembly name."
+          },
+          "DocId": "P:Sandbox.Compiler.Configuration.AssemblyReferences"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.Dictionary`2<System.String,System.String>",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.ReplacementDirectives",
+          "Name": "ReplacementDirectives",
+          "Documentation": {
+            "Summary": "Maps file patterns to preprocessor directives they should be wrapped in"
+          },
+          "DocId": "P:Sandbox.Compiler.Configuration.ReplacementDirectives"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.HashSet`1<System.String>",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.IgnoreFolders",
+          "Name": "IgnoreFolders",
+          "Documentation": {
+            "Summary": "Folders to ignore when walking the tree"
+          },
+          "DocId": "P:Sandbox.Compiler.Configuration.IgnoreFolders"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlySet`1<System.String>",
+          "Loc": {
+            "File": "CompilerConfiguration.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Compiler.Configuration.DistinctAssemblyReferences",
+          "Name": "DistinctAssemblyReferences",
+          "Documentation": {
+            "Summary": "Each unique element of <see cref=\"P:Sandbox.Compiler.Configuration.AssemblyReferences\" />"
+          },
+          "DocId": "P:Sandbox.Compiler.Configuration.DistinctAssemblyReferences"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Compiling",
+      "IsPublic": true,
+      "FullName": "Sandbox.Compiler.Configuration",
+      "Name": "Configuration",
+      "DeclaringType": "Sandbox.Compiler",
+      "DocId": "T:Sandbox.Compiler.Configuration"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "compiler",
+              "Type": "Sandbox.Compiler"
+            }
+          ],
+          "l": {
+            "File": "CompilerOutput.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompilerOutput..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.CompilerOutput",
+          "DocId": "M:Sandbox.CompilerOutput.#ctor(Sandbox.Compiler)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "CompilerOutput.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompilerOutput.Successful",
+          "Name": "Successful",
+          "Documentation": {
+            "Summary": "True if the build succeeded"
+          },
+          "DocId": "P:Sandbox.CompilerOutput.Successful"
+        },
+        {
+          "PropertyType": "Sandbox.Compiler",
+          "Loc": {
+            "File": "CompilerOutput.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompilerOutput.Compiler",
+          "Name": "Compiler",
+          "Documentation": {
+            "Summary": "The compiler that has produced this build"
+          },
+          "DocId": "P:Sandbox.CompilerOutput.Compiler"
+        },
+        {
+          "PropertyType": "System.Version",
+          "Loc": {
+            "File": "CompilerOutput.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompilerOutput.Version",
+          "Name": "Version",
+          "Documentation": {
+            "Summary": "The version of the assembly"
+          },
+          "DocId": "P:Sandbox.CompilerOutput.Version"
+        },
+        {
+          "PropertyType": "System.Byte[]",
+          "Loc": {
+            "File": "CompilerOutput.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompilerOutput.AssemblyData",
+          "Name": "AssemblyData",
+          "Documentation": {
+            "Summary": "The [assembly].dll contents for this build"
+          },
+          "DocId": "P:Sandbox.CompilerOutput.AssemblyData"
+        },
+        {
+          "PropertyType": "Sandbox.CodeArchive",
+          "Loc": {
+            "File": "CompilerOutput.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompilerOutput.Archive",
+          "Name": "Archive",
+          "Documentation": {
+            "Summary": "A code archive created during the compile"
+          },
+          "DocId": "P:Sandbox.CompilerOutput.Archive"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "CompilerOutput.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompilerOutput.XmlDocumentation",
+          "Name": "XmlDocumentation",
+          "Documentation": {
+            "Summary": "The [assembly].xml contents for this build"
+          },
+          "DocId": "P:Sandbox.CompilerOutput.XmlDocumentation"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Microsoft.CodeAnalysis.Diagnostic>",
+          "Loc": {
+            "File": "CompilerOutput.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompilerOutput.Diagnostics",
+          "Name": "Diagnostics",
+          "Documentation": {
+            "Summary": "A list of diagnostics caused by the previous build"
+          },
+          "DocId": "P:Sandbox.CompilerOutput.Diagnostics"
+        },
+        {
+          "PropertyType": "System.Exception",
+          "Loc": {
+            "File": "CompilerOutput.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CompilerOutput.Exception",
+          "Name": "Exception",
+          "Documentation": {
+            "Summary": "If an exception happened during the build, it'll be available here"
+          },
+          "DocId": "P:Sandbox.CompilerOutput.Exception"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Compiling",
+      "IsPublic": true,
+      "FullName": "Sandbox.CompilerOutput",
+      "Name": "CompilerOutput",
+      "DocId": "T:Sandbox.CompilerOutput"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Variables",
+              "Out": true,
+              "Type": "System.Collections.Generic.IReadOnlyCollection`1<Facepunch.ActionGraphs.Variable>"
+            },
+            {
+              "Name": "Nodes",
+              "Out": true,
+              "Type": "System.Collections.Generic.IReadOnlyCollection`1<Facepunch.ActionGraphs.Node>"
+            },
+            {
+              "Name": "Links",
+              "Out": true,
+              "Type": "System.Collections.Generic.IReadOnlyCollection`1<Facepunch.ActionGraphs.Link>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.InsertResult.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Facepunch.ActionGraphs.InsertResult",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.InsertResult.Deconstruct(System.Collections.Generic.IReadOnlyCollection`1{Facepunch.ActionGraphs.Variable}@,System.Collections.Generic.IReadOnlyCollection`1{Facepunch.ActionGraphs.Node}@,System.Collections.Generic.IReadOnlyCollection`1{Facepunch.ActionGraphs.Link}@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Variables",
+              "Type": "System.Collections.Generic.IReadOnlyCollection`1<Facepunch.ActionGraphs.Variable>"
+            },
+            {
+              "Name": "Nodes",
+              "Type": "System.Collections.Generic.IReadOnlyCollection`1<Facepunch.ActionGraphs.Node>"
+            },
+            {
+              "Name": "Links",
+              "Type": "System.Collections.Generic.IReadOnlyCollection`1<Facepunch.ActionGraphs.Link>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.InsertResult..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.InsertResult",
+          "DocId": "M:Facepunch.ActionGraphs.InsertResult.#ctor(System.Collections.Generic.IReadOnlyCollection`1{Facepunch.ActionGraphs.Variable},System.Collections.Generic.IReadOnlyCollection`1{Facepunch.ActionGraphs.Node},System.Collections.Generic.IReadOnlyCollection`1{Facepunch.ActionGraphs.Link})"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyCollection`1<Facepunch.ActionGraphs.Variable>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.InsertResult.Variables",
+          "Name": "Variables",
+          "Documentation": {
+            "Summary": "Newly added variables."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.InsertResult.Variables"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyCollection`1<Facepunch.ActionGraphs.Node>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.InsertResult.Nodes",
+          "Name": "Nodes",
+          "Documentation": {
+            "Summary": "Newly added nodes."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.InsertResult.Nodes"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyCollection`1<Facepunch.ActionGraphs.Link>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.InsertResult.Links",
+          "Name": "Links",
+          "Documentation": {
+            "Summary": "Newly added links."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.InsertResult.Links"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.InsertResult",
+      "Name": "InsertResult",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Elements added by a call to <see cref=\"!:IActionGraph.DeserializeInsert\" />.",
+        "Params": {
+          "Variables": "Newly added variables.",
+          "Nodes": "Newly added nodes.",
+          "Links": "Newly added links."
+        }
+      },
+      "DocId": "T:Facepunch.ActionGraphs.InsertResult"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "NewGraph",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            },
+            {
+              "Name": "GraphNode",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.Node"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.CreateSubGraphResult.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Facepunch.ActionGraphs.CreateSubGraphResult",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.CreateSubGraphResult.Deconstruct(Facepunch.ActionGraphs.ActionGraph@,Facepunch.ActionGraphs.Node@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "NewGraph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            },
+            {
+              "Name": "GraphNode",
+              "Type": "Facepunch.ActionGraphs.Node"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.CreateSubGraphResult..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.CreateSubGraphResult",
+          "DocId": "M:Facepunch.ActionGraphs.CreateSubGraphResult.#ctor(Facepunch.ActionGraphs.ActionGraph,Facepunch.ActionGraphs.Node)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Facepunch.ActionGraphs.ActionGraph",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.CreateSubGraphResult.NewGraph",
+          "Name": "NewGraph",
+          "DocId": "P:Facepunch.ActionGraphs.CreateSubGraphResult.NewGraph"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.Node",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.CreateSubGraphResult.GraphNode",
+          "Name": "GraphNode",
+          "DocId": "P:Facepunch.ActionGraphs.CreateSubGraphResult.GraphNode"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.CreateSubGraphResult",
+      "Name": "CreateSubGraphResult",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "DocId": "T:Facepunch.ActionGraphs.CreateSubGraphResult"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<Facepunch.ActionGraphs.Node>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "subGraph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.CreateSubGraphNodeDelegate.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Facepunch.ActionGraphs.CreateSubGraphNodeDelegate",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.CreateSubGraphNodeDelegate.Invoke(Facepunch.ActionGraphs.ActionGraph)"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "subGraph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.CreateSubGraphNodeDelegate.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Facepunch.ActionGraphs.CreateSubGraphNodeDelegate",
+          "DocId": "M:Facepunch.ActionGraphs.CreateSubGraphNodeDelegate.BeginInvoke(Facepunch.ActionGraphs.ActionGraph,System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<Facepunch.ActionGraphs.Node>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.CreateSubGraphNodeDelegate.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Facepunch.ActionGraphs.CreateSubGraphNodeDelegate",
+          "DocId": "M:Facepunch.ActionGraphs.CreateSubGraphNodeDelegate.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.CreateSubGraphNodeDelegate..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.CreateSubGraphNodeDelegate",
+          "DocId": "M:Facepunch.ActionGraphs.CreateSubGraphNodeDelegate.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.CreateSubGraphNodeDelegate",
+      "Name": "CreateSubGraphNodeDelegate",
+      "DocId": "T:Facepunch.ActionGraphs.CreateSubGraphNodeDelegate"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "Facepunch.ActionGraphs.Node",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "definition",
+              "Type": "Facepunch.ActionGraphs.NodeDefinition"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.INodeContainer.AddNode",
+          "Name": "AddNode",
+          "DeclaringType": "Facepunch.ActionGraphs.INodeContainer",
+          "DocId": "M:Facepunch.ActionGraphs.INodeContainer.AddNode(Facepunch.ActionGraphs.NodeDefinition)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Facepunch.ActionGraphs.NodeLibrary",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.INodeContainer.NodeLibrary",
+          "Name": "NodeLibrary",
+          "DocId": "P:Facepunch.ActionGraphs.INodeContainer.NodeLibrary"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.INodeContainer",
+      "Name": "INodeContainer",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "DocId": "T:Facepunch.ActionGraphs.INodeContainer"
+    }
+  ],
+  "_metadata": {
+    "chunk": 272,
+    "items_count": 8
+  }
+}

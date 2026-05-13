@@ -1,0 +1,1025 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.Styles",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/PanelStyle.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelStyle.Dirty",
+          "Name": "Dirty",
+          "DeclaringType": "Sandbox.UI.PanelStyle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\PanelStyle.cs",
+                "30"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.PanelStyle.Dirty"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "property",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/PanelStyle.cs",
+            "Line": 249
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelStyle.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.UI.PanelStyle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\PanelStyle.cs",
+                "247"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.PanelStyle.Set(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/PanelStyle.cs",
+            "Line": 277
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelStyle.SetBackgroundImage",
+          "Name": "SetBackgroundImage",
+          "DeclaringType": "Sandbox.UI.PanelStyle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\PanelStyle.cs",
+                "275"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.PanelStyle.SetBackgroundImage(Sandbox.Texture)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "image",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/PanelStyle.cs",
+            "Line": 282
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelStyle.SetBackgroundImage",
+          "Name": "SetBackgroundImage",
+          "DeclaringType": "Sandbox.UI.PanelStyle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\PanelStyle.cs",
+                "280"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.PanelStyle.SetBackgroundImage(System.String)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "image",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelStyle.SetBackgroundImageAsync",
+          "Name": "SetBackgroundImageAsync",
+          "DeclaringType": "Sandbox.UI.PanelStyle",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.UI.PanelStyle/<SetBackgroundImageAsync>d__32"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\PanelStyle.cs",
+                "285"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.PanelStyle.SetBackgroundImageAsync(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/PanelStyle.cs",
+            "Line": 292
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelStyle.SetRect",
+          "Name": "SetRect",
+          "DeclaringType": "Sandbox.UI.PanelStyle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\PanelStyle.cs",
+                "290"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.PanelStyle.SetRect(Sandbox.Rect)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/UI/PanelStyle.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelStyle.HasBeforeElement",
+          "Name": "HasBeforeElement",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This style has a ::before element available. This is signalling to the panel system that if we apply this style, we should also create a ::before element."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\PanelStyle.cs",
+                "66"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This style has a ::before element available. This is signalling to the panel system that if we \napply this style, we should also create a ::before element."
+          },
+          "DocId": "P:Sandbox.UI.PanelStyle.HasBeforeElement"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/UI/PanelStyle.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelStyle.HasAfterElement",
+          "Name": "HasAfterElement",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This style has a ::after element available. This is signalling to the panel system that if we apply this style, we should also create a ::after element."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\PanelStyle.cs",
+                "72"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This style has a ::after element available. This is signalling to the panel system that if we \napply this style, we should also create a ::after element."
+          },
+          "DocId": "P:Sandbox.UI.PanelStyle.HasAfterElement"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.PanelStyle",
+      "Name": "PanelStyle",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\PanelStyle.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.PanelStyle"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.PanelEvent",
+      "Constructors": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.CopyEvent",
+      "Name": "CopyEvent",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Event\\CutCopyPasteEvent.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.CopyEvent"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.PanelEvent",
+      "Constructors": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.CutEvent",
+      "Name": "CutEvent",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Event\\CutCopyPasteEvent.cs",
+            "11"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.CutEvent"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.PanelEvent",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/UI/Panel/Event/CutCopyPasteEvent.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PasteEvent.ClipboardValue",
+          "Name": "ClipboardValue",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\CutCopyPasteEvent.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.PasteEvent.ClipboardValue"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.PasteEvent",
+      "Name": "PasteEvent",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Event\\CutCopyPasteEvent.cs",
+            "19"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.PasteEvent"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.PanelEvent",
+      "Constructors": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.EscapeEvent",
+      "Name": "EscapeEvent",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Event\\CutCopyPasteEvent.cs",
+            "29"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.EscapeEvent"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.PanelEvent",
+      "Constructors": [],
+      "Fields": [
+        {
+          "FieldType": "Vector2",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.DragEvent.MouseDelta",
+          "Name": "MouseDelta",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\DragEvent.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "For ondrag event - the delta of the mouse movement"
+          },
+          "DocId": "F:Sandbox.UI.DragEvent.MouseDelta"
+        },
+        {
+          "FieldType": "Vector2",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.DragEvent.LocalGrabPosition",
+          "Name": "LocalGrabPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\DragEvent.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The position on the Target panel where the drag started"
+          },
+          "DocId": "F:Sandbox.UI.DragEvent.LocalGrabPosition"
+        },
+        {
+          "FieldType": "Vector2",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.DragEvent.ScreenGrabPosition",
+          "Name": "ScreenGrabPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\DragEvent.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The position relative to the screen where the drag started"
+          },
+          "DocId": "F:Sandbox.UI.DragEvent.ScreenGrabPosition"
+        },
+        {
+          "FieldType": "Vector2",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.DragEvent.LocalPosition",
+          "Name": "LocalPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\DragEvent.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The current mouse position relative to target"
+          },
+          "DocId": "F:Sandbox.UI.DragEvent.LocalPosition"
+        },
+        {
+          "FieldType": "Vector2",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.DragEvent.ScreenPosition",
+          "Name": "ScreenPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\DragEvent.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The current position relative to the screen"
+          },
+          "DocId": "F:Sandbox.UI.DragEvent.ScreenPosition"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.DragEvent",
+      "Name": "DragEvent",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Event\\DragEvent.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.DragEvent"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.PanelEvent",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "event_name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "active",
+              "Type": "Sandbox.UI.Panel"
+            },
+            {
+              "Name": "button",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Event/MousePanelEvent.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MousePanelEvent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.MousePanelEvent",
+          "DocId": "M:Sandbox.UI.MousePanelEvent.#ctor(System.String,Sandbox.UI.Panel,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.MouseButtons",
+          "Loc": {
+            "File": "Systems/UI/Panel/Event/MousePanelEvent.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MousePanelEvent.MouseButton",
+          "Name": "MouseButton",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Which button triggered the event, as a <span style=\"color: #86C691;\">MouseButtons</span> enum."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\MousePanelEvent.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Which button triggered the event, as a <see cref=\"T:Sandbox.MouseButtons\" /> enum."
+          },
+          "DocId": "P:Sandbox.UI.MousePanelEvent.MouseButton"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Vector2",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MousePanelEvent.LocalPosition",
+          "Name": "LocalPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\MousePanelEvent.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position of the cursor relative to the panel's top left corner at the time the event was triggered."
+          },
+          "DocId": "F:Sandbox.UI.MousePanelEvent.LocalPosition"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.MousePanelEvent.Button",
+          "Name": "Button",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\MousePanelEvent.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Which button triggered the event, in string form."
+          },
+          "DocId": "F:Sandbox.UI.MousePanelEvent.Button"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.MousePanelEvent",
+      "Name": "MousePanelEvent",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Mouse related <span style=\"color: #4EC9B0;\">PanelEvent</span>."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Event\\MousePanelEvent.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Mouse related <see cref=\"T:Sandbox.UI.PanelEvent\" />."
+      },
+      "DocId": "T:Sandbox.UI.MousePanelEvent"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Event/PanelEvent.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEvent.Is",
+          "Name": "Is",
+          "DeclaringType": "Sandbox.UI.PanelEvent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\PanelEvent.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.PanelEvent.Is(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/Panel/Event/PanelEvent.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEvent.StopPropagation",
+          "Name": "StopPropagation",
+          "DeclaringType": "Sandbox.UI.PanelEvent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\PanelEvent.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.PanelEvent.StopPropagation"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "eventName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "active",
+              "Type": "Sandbox.UI.Panel",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Event/PanelEvent.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEvent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.PanelEvent",
+          "DocId": "M:Sandbox.UI.PanelEvent.#ctor(System.String,Sandbox.UI.Panel)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/UI/Panel/Event/PanelEvent.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEvent.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\PanelEvent.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.PanelEvent.Name"
+        },
+        {
+          "PropertyType": "System.Object",
+          "Loc": {
+            "File": "Systems/UI/Panel/Event/PanelEvent.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEvent.Value",
+          "Name": "Value",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\PanelEvent.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.PanelEvent.Value"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/UI/Panel/Event/PanelEvent.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEvent.Time",
+          "Name": "Time",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\PanelEvent.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.PanelEvent.Time"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/UI/Panel/Event/PanelEvent.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEvent.Button",
+          "Name": "Button",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\PanelEvent.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.PanelEvent.Button"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Panel",
+          "Loc": {
+            "File": "Systems/UI/Panel/Event/PanelEvent.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEvent.This",
+          "Name": "This",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The panel on which the event is being called. For example, if you have a button with a label.. when the button gets clicked the actual click event might come from the label. When the event is called on the label, This will be the label. When the event propagates up to the button This will be the button - but Target will be the label. This is mainly of use with Razor callbacks, where you want to get the actual panel that created the event."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\PanelEvent.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The panel on which the event is being called. For example, if you have a button with a label.. when the\nbutton gets clicked the actual click event might come from the label. When the event is called on the\nlabel, This will be the label. When the event propagates up to the button This will be the button - but\nTarget will be the label. This is mainly of use with Razor callbacks, where you want to get the actual\npanel that created the event."
+          },
+          "DocId": "P:Sandbox.UI.PanelEvent.This"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Panel",
+          "Loc": {
+            "File": "Systems/UI/Panel/Event/PanelEvent.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEvent.Target",
+          "Name": "Target",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\PanelEvent.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.PanelEvent.Target"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.PanelEvent",
+      "Name": "PanelEvent",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Base <span style=\"color: #4EC9B0;\">Panel</span> event.<br></br> See <span style=\"color: #4EC9B0;\">Panel</span>.<span style=\"color: #DCDCAA;\">CreateEvent</span>(<span style=\"color: #4EC9B0;\">string</span>,<span style=\"color: #4EC9B0;\">object</span>,<span style=\"color: #86C691;\">float?</span>)."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Event\\PanelEvent.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Base <see cref=\"T:Sandbox.UI.Panel\" /> event.<br />\nSee <see cref=\"M:Sandbox.UI.Panel.CreateEvent(Sandbox.UI.PanelEvent)\" />."
+      },
+      "DocId": "T:Sandbox.UI.PanelEvent"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Event/PanelEventAttribute.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEventAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.PanelEventAttribute",
+          "DocId": "M:Sandbox.UI.PanelEventAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/UI/Panel/Event/PanelEventAttribute.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelEventAttribute.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Name of the event to listen to."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\PanelEventAttribute.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Name of the event to listen to."
+          },
+          "DocId": "P:Sandbox.UI.PanelEventAttribute.Name"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.PanelEventAttribute",
+      "Name": "PanelEventAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Add an event listener to a <span style=\"color: #4EC9B0;\">Panel</span> event with the given name.<br></br> See <span style=\"color: #4EC9B0;\">Panel</span>.<span style=\"color: #DCDCAA;\">CreateEvent</span>(<span style=\"color: #4EC9B0;\">string</span>,<span style=\"color: #4EC9B0;\">object</span>,<span style=\"color: #86C691;\">float?</span>)."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Event\\PanelEventAttribute.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Add an event listener to a <see cref=\"T:Sandbox.UI.Panel\" /> event with the given name.<br />\nSee <see cref=\"M:Sandbox.UI.Panel.CreateEvent(System.String,System.Object,System.Nullable{System.Single})\" />."
+      },
+      "DocId": "T:Sandbox.UI.PanelEventAttribute"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.PanelEvent",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "event_name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "active",
+              "Type": "Sandbox.UI.Panel"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Panel/Event/SelectionEvent.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.SelectionEvent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.SelectionEvent",
+          "DocId": "M:Sandbox.UI.SelectionEvent.#ctor(System.String,Sandbox.UI.Panel)"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Rect",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.SelectionEvent.SelectionRect",
+          "Name": "SelectionRect",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\SelectionEvent.cs",
+                "5"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.UI.SelectionEvent.SelectionRect"
+        },
+        {
+          "FieldType": "Vector2",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.SelectionEvent.StartPoint",
+          "Name": "StartPoint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\SelectionEvent.cs",
+                "6"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.UI.SelectionEvent.StartPoint"
+        },
+        {
+          "FieldType": "Vector2",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.SelectionEvent.EndPoint",
+          "Name": "EndPoint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Panel\\Event\\SelectionEvent.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.UI.SelectionEvent.EndPoint"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.SelectionEvent",
+      "Name": "SelectionEvent",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Event\\SelectionEvent.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.SelectionEvent"
+    }
+  ],
+  "_metadata": {
+    "chunk": 179,
+    "items_count": 10
+  }
+}

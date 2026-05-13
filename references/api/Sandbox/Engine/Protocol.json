@@ -1,0 +1,1659 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Engine",
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Protocol.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.Protocol.Api",
+          "Name": "Api",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "We cannot play packages with an Api version higher than this."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Protocol.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "We cannot play packages with an Api version higher than this."
+          },
+          "DocId": "P:Sandbox.Engine.Protocol.Api"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Protocol.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.Protocol.Network",
+          "Name": "Network",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "We cannot talk to servers or clients with a network protocol different to this."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Protocol.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "We cannot talk to servers or clients with a network protocol different to this."
+          },
+          "DocId": "P:Sandbox.Engine.Protocol.Network"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Engine.Protocol",
+      "Name": "Protocol",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A centralized place to access the protocols"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Protocol.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A centralized place to access the protocols"
+      },
+      "DocId": "T:Sandbox.Engine.Protocol"
+    },
+    {
+      "Namespace": "Sandbox.Engine",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Material",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/MaterialAccessor.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.GetOriginal",
+          "Name": "GetOriginal",
+          "DeclaringType": "Sandbox.Engine.MaterialAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the original material for the specified index."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "72"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the original material for the specified index."
+          },
+          "DocId": "M:Sandbox.Engine.MaterialAccessor.GetOriginal(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/MaterialAccessor.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.HasOverride",
+          "Name": "HasOverride",
+          "DeclaringType": "Sandbox.Engine.MaterialAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Does this index have an override material?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "77"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Does this index have an override material?"
+          },
+          "DocId": "M:Sandbox.Engine.MaterialAccessor.HasOverride(System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Material",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/MaterialAccessor.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.GetOverride",
+          "Name": "GetOverride",
+          "DeclaringType": "Sandbox.Engine.MaterialAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the override material for this slot. Or null if not set."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "82"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the override material for this slot. Or null if not set."
+          },
+          "DocId": "M:Sandbox.Engine.MaterialAccessor.GetOverride(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/MaterialAccessor.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.SetOverride",
+          "Name": "SetOverride",
+          "DeclaringType": "Sandbox.Engine.MaterialAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set an override material for this slot. If the material is null, it will clear the override."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "90"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set an override material for this slot. If the material is null, it will clear the override."
+          },
+          "DocId": "M:Sandbox.Engine.MaterialAccessor.SetOverride(System.Int32,Sandbox.Material)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/MaterialAccessor.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.Apply",
+          "Name": "Apply",
+          "DeclaringType": "Sandbox.Engine.MaterialAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Apply to the object. You don't need to call this when setting overrides, as it will automatically apply them to the target when you set them. This is here as a convenience if this object holds data, and you need to apply it to another object that didn't exist when the overrides were originally set, or loaded."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "152"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Apply to the object. You don't need to call this when setting overrides, as it will automatically apply them to the target when you set them.\nThis is here as a convenience if this object holds data, and you need to apply it to another object that didn't exist when the\noverrides were originally set, or loaded."
+          },
+          "DocId": "M:Sandbox.Engine.MaterialAccessor.Apply"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "renderer",
+              "Type": "Sandbox.Engine.MaterialAccessor.ITarget"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/MaterialAccessor.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Engine.MaterialAccessor",
+          "Documentation": {
+            "Summary": "Create a new material accessor for this object."
+          },
+          "DocId": "M:Sandbox.Engine.MaterialAccessor.#ctor(Sandbox.Engine.MaterialAccessor.ITarget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Render/MaterialAccessor.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.Count",
+          "Name": "Count",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Total number of material slots"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Total number of material slots"
+          },
+          "DocId": "P:Sandbox.Engine.MaterialAccessor.Count"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.MaterialAccessor",
+      "Name": "MaterialAccessor",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A wrapper to allow the unification of editing materials. This is usually a member on a Component which implements MaterialAccessor.ITarget."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\MaterialAccessor.cs",
+            "16"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A wrapper to allow the unification of editing materials. This is usually a member on a Component which implements MaterialAccessor.ITarget.",
+        "Examples": [
+          "<code>\n             MaterialAccessor materialAccessor;\n            \n            \t[Property]\n            \tpublic MaterialAccessor Materials =&gt; materialAccessor ??= new MaterialAccessor( this );\n             </code>"
+        ]
+      },
+      "DocId": "T:Sandbox.Engine.MaterialAccessor"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Int32",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.ITarget.GetMaterialCount",
+          "Name": "GetMaterialCount",
+          "DeclaringType": "Sandbox.Engine.MaterialAccessor.ITarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The number of materials on this target"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The number of materials on this target",
+            "Return": ""
+          },
+          "DocId": "M:Sandbox.Engine.MaterialAccessor.ITarget.GetMaterialCount"
+        },
+        {
+          "ReturnType": "Sandbox.Material",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.ITarget.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.Engine.MaterialAccessor.ITarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the original material, before overrides, matching this index"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the original material, before overrides, matching this index"
+          },
+          "DocId": "M:Sandbox.Engine.MaterialAccessor.ITarget.Get(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.ITarget.SetOverride",
+          "Name": "SetOverride",
+          "DeclaringType": "Sandbox.Engine.MaterialAccessor.ITarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the override material for this index."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the override material for this index."
+          },
+          "DocId": "M:Sandbox.Engine.MaterialAccessor.ITarget.SetOverride(System.Int32,Sandbox.Material)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.ITarget.ClearOverrides",
+          "Name": "ClearOverrides",
+          "DeclaringType": "Sandbox.Engine.MaterialAccessor.ITarget",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Wipe all overrides"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Wipe all overrides"
+          },
+          "DocId": "M:Sandbox.Engine.MaterialAccessor.ITarget.ClearOverrides"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.MaterialAccessor.ITarget.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return true if this target is valid"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\MaterialAccessor.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if this target is valid"
+          },
+          "DocId": "P:Sandbox.Engine.MaterialAccessor.ITarget.IsValid"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.MaterialAccessor.ITarget",
+      "Name": "ITarget",
+      "DeclaringType": "Sandbox.Engine.MaterialAccessor",
+      "Documentation": {
+        "Summary": "The target of a MaterialAccessor. This is the object that will be modified when setting or clearing material overrides."
+      },
+      "DocId": "T:Sandbox.Engine.MaterialAccessor.ITarget"
+    },
+    {
+      "Namespace": "Sandbox.Engine",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Engine.BindCollection.ActionBind",
+          "Parameters": [
+            {
+              "Name": "actionName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "create",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.GetBind",
+          "Name": "GetBind",
+          "DeclaringType": "Sandbox.Engine.BindCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the bind, create if it doesn't exist"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the bind, create if it doesn't exist"
+          },
+          "DocId": "M:Sandbox.Engine.BindCollection.GetBind(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.Engine.BindCollection.ActionBind",
+          "Parameters": [
+            {
+              "Name": "actionName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "slot",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "buttonName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 99
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Engine.BindCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the bind value for this action. This will overwrite what's in this slot."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "96"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the bind value for this action. This will overwrite what's in this slot."
+          },
+          "DocId": "M:Sandbox.Engine.BindCollection.Set(System.String,System.Int32,System.String)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "actionName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "slot",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 108
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.Engine.BindCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the bind value at this slot"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "106"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the bind value at this slot"
+          },
+          "DocId": "M:Sandbox.Engine.BindCollection.Get(System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 120
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.SaveToDisk",
+          "Name": "SaveToDisk",
+          "DeclaringType": "Sandbox.Engine.BindCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Save the collection to disk"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "118"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Save the collection to disk"
+          },
+          "DocId": "M:Sandbox.Engine.BindCollection.SaveToDisk"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Engine.BindCollection",
+          "Documentation": {
+            "Summary": "Creates a collection and tries to load it from disk."
+          },
+          "DocId": "M:Sandbox.Engine.BindCollection.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Engine.BindCollection",
+          "Loc": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.Base",
+          "Name": "Base",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The base collection. Game binds have this set to the common binds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The base collection. Game binds have this set to the common binds."
+          },
+          "DocId": "P:Sandbox.Engine.BindCollection.Base"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.CollectionName",
+          "Name": "CollectionName",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Will be either \"common\" or the ident of the current game."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Will be either \"common\" or the ident of the current game."
+          },
+          "DocId": "P:Sandbox.Engine.BindCollection.CollectionName"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.ConfigPath",
+          "Name": "ConfigPath",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The location of the config file to load from in EngineFileSystem.Config"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The location of the config file to load from in EngineFileSystem.Config"
+          },
+          "DocId": "P:Sandbox.Engine.BindCollection.ConfigPath"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.CaseInsensitiveDictionary`1<Sandbox.Engine.BindCollection.ActionBind>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.Actions",
+          "Name": "Actions",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The actual collection of binds."
+          },
+          "DocId": "F:Sandbox.Engine.BindCollection.Actions"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.BindCollection",
+      "Name": "BindCollection",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A collection of action binds. BindCollection - Action: attack1 - Slot0: mouse1 - Action: selectall - Slot0: ctrl + a The bind collection can be saved and loaded from disk via the BindSaveConfig class. The bind collection can have a base collection which it will fall back to if it contains the same binds. This allows us to have a \"common\" collection which can be shared between all games, but can also let the games + users to override those binds if they choose."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Input\\Bindings\\BindCollection.cs",
+            "20"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "\nA collection of action binds. \n\n BindCollection\n   - Action: attack1\n     - Slot0: mouse1\n   - Action: selectall\n     - Slot0: ctrl + a\n     \nThe bind collection can be saved and loaded from disk via the BindSaveConfig class.\n\nThe bind collection can have a base collection which it will fall back to if it contains\nthe same binds. This allows us to have a \"common\" collection which can be shared between\nall games, but can also let the games + users to override those binds if they choose."
+      },
+      "DocId": "T:Sandbox.Engine.BindCollection"
+    },
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 211
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.ActionBind..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Engine.BindCollection.ActionBind",
+          "DocId": "M:Sandbox.Engine.BindCollection.ActionBind.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 209
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.ActionBind.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "208"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.BindCollection.ActionBind.Name"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 215
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.ActionBind.IsCommon",
+          "Name": "IsCommon",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If this is set then we want to read the value from the base collection"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "214"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If this is set then we want to read the value from the base collection"
+          },
+          "DocId": "P:Sandbox.Engine.BindCollection.ActionBind.IsCommon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 217
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.ActionBind.Default",
+          "Name": "Default",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "216"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.BindCollection.ActionBind.Default"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Engine.BindCollection.BindEntry[]",
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.ActionBind.Slots",
+          "Name": "Slots",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "209"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Engine.BindCollection.ActionBind.Slots"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.BindCollection.ActionBind",
+      "Name": "ActionBind",
+      "DeclaringType": "Sandbox.Engine.BindCollection",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Input\\Bindings\\BindCollection.cs",
+            "206"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Engine.BindCollection.ActionBind"
+    },
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Input/Bindings/BindCollection.cs",
+            "Line": 243
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.BindCollection.BindEntry.FullString",
+          "Name": "FullString",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Bindings\\BindCollection.cs",
+                "242"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Engine.BindCollection.BindEntry.FullString"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.BindCollection.BindEntry",
+      "Name": "BindEntry",
+      "DeclaringType": "Sandbox.Engine.BindCollection",
+      "DocId": "T:Sandbox.Engine.BindCollection.BindEntry"
+    },
+    {
+      "Namespace": "Sandbox.Engine",
+      "Methods": [],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Utility/SystemInfo.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.SystemInfo.ProcessorName",
+          "Name": "ProcessorName",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Human-readable product name of this system's processor."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\SystemInfo.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Human-readable product name of this system's processor."
+          },
+          "DocId": "P:Sandbox.Engine.SystemInfo.ProcessorName"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Utility/SystemInfo.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.SystemInfo.ProcessorFrequency",
+          "Name": "ProcessorFrequency",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The frequency of this system's processor in GHz."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\SystemInfo.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The frequency of this system's processor in GHz."
+          },
+          "DocId": "P:Sandbox.Engine.SystemInfo.ProcessorFrequency"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Utility/SystemInfo.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.SystemInfo.ProcessorCount",
+          "Name": "ProcessorCount",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The number of logical processors in this system."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\SystemInfo.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The number of logical processors in this system."
+          },
+          "DocId": "P:Sandbox.Engine.SystemInfo.ProcessorCount"
+        },
+        {
+          "PropertyType": "System.UInt64",
+          "Loc": {
+            "File": "Utility/SystemInfo.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.SystemInfo.TotalMemory",
+          "Name": "TotalMemory",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Total physical memory available on this machine, in bytes."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\SystemInfo.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Total physical memory available on this machine, in bytes."
+          },
+          "DocId": "P:Sandbox.Engine.SystemInfo.TotalMemory"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Utility/SystemInfo.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.SystemInfo.Gpu",
+          "Name": "Gpu",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Human-readable product name of the graphics card in this system."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\SystemInfo.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Human-readable product name of the graphics card in this system."
+          },
+          "DocId": "P:Sandbox.Engine.SystemInfo.Gpu"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Utility/SystemInfo.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.SystemInfo.GpuVersion",
+          "Name": "GpuVersion",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The version number of the graphics card driver."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\SystemInfo.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The version number of the graphics card driver."
+          },
+          "DocId": "P:Sandbox.Engine.SystemInfo.GpuVersion"
+        },
+        {
+          "PropertyType": "System.UInt64",
+          "Loc": {
+            "File": "Utility/SystemInfo.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.SystemInfo.GpuMemory",
+          "Name": "GpuMemory",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Total VRAM on this system's graphics card."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\SystemInfo.cs",
+                "55"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Total VRAM on this system's graphics card."
+          },
+          "DocId": "P:Sandbox.Engine.SystemInfo.GpuMemory"
+        },
+        {
+          "PropertyType": "System.Int64",
+          "Loc": {
+            "File": "Utility/SystemInfo.cs",
+            "Line": 76
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.SystemInfo.StorageSizeAvailable",
+          "Name": "StorageSizeAvailable",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Indicates the amount of available free space on game drive in bytes"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\SystemInfo.cs",
+                "75"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Indicates the amount of available free space on game drive in bytes"
+          },
+          "DocId": "P:Sandbox.Engine.SystemInfo.StorageSizeAvailable"
+        },
+        {
+          "PropertyType": "System.Int64",
+          "Loc": {
+            "File": "Utility/SystemInfo.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Engine.SystemInfo.StorageSizeTotal",
+          "Name": "StorageSizeTotal",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the total size of storage space on game drive in bytes"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\SystemInfo.cs",
+                "80"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the total size of storage space on game drive in bytes"
+          },
+          "DocId": "P:Sandbox.Engine.SystemInfo.StorageSizeTotal"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Engine.SystemInfo",
+      "Name": "SystemInfo",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\SystemInfo.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Engine.SystemInfo"
+    },
+    {
+      "Namespace": "Sandbox.Engine.Utility.RayTrace",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Run",
+          "Name": "Run",
+          "DeclaringType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Run the trace and return the result. The result will return the first hit."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Run the trace and return the result. The result will return the first hit."
+          },
+          "DocId": "M:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Run"
+        },
+        {
+          "ReturnType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Result[]",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.RunAll",
+          "Name": "RunAll",
+          "DeclaringType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "85"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.RunAll"
+        },
+        {
+          "ReturnType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Parameters": [
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Ray",
+          "Name": "Ray",
+          "DeclaringType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a ray from point A to point B."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "136"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a ray from point A to point B."
+          },
+          "DocId": "M:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Ray(Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Parameters": [
+            {
+              "Name": "ray",
+              "In": true,
+              "Type": "Ray"
+            },
+            {
+              "Name": "distance",
+              "In": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 149
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Ray",
+          "Name": "Ray",
+          "DeclaringType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Casts a ray from a given position and direction, up to a given distance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "147"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Casts a ray from a given position and direction, up to a given distance."
+          },
+          "DocId": "M:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.Ray(Ray@,System.Single@)"
+        },
+        {
+          "ReturnType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 180
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.WithTag",
+          "Name": "WithTag",
+          "DeclaringType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return scene objects with this tag. Subsequent calls to this will add multiple requirements and they'll all have to be met (ie, the scene object will need all tags)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "177"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return scene objects with this tag. Subsequent calls to this will add multiple requirements\nand they'll all have to be met (ie, the scene object will need all tags)."
+          },
+          "DocId": "M:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.WithTag(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 201
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.WithAllTags",
+          "Name": "WithAllTags",
+          "DeclaringType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return scene objects with all of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "198"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return scene objects with all of these tags"
+          },
+          "DocId": "M:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.WithAllTags(System.String[])"
+        },
+        {
+          "ReturnType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 216
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.WithAnyTags",
+          "Name": "WithAnyTags",
+          "DeclaringType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return scene objects with any of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "213"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return scene objects with any of these tags"
+          },
+          "DocId": "M:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.WithAnyTags(System.String[])"
+        },
+        {
+          "ReturnType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "Utility/RayTrace/MeshTraceRequest.cs",
+            "Line": 249
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.WithoutTags",
+          "Name": "WithoutTags",
+          "DeclaringType": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Only return scene objects without any of these tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\RayTrace\\MeshTraceRequest.cs",
+                "246"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only return scene objects without any of these tags"
+          },
+          "DocId": "M:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest.WithoutTags(System.String[])"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Engine.Utility.RayTrace.MeshTraceRequest",
+      "Name": "MeshTraceRequest",
+      "DocId": "T:Sandbox.Engine.Utility.RayTrace.MeshTraceRequest"
+    }
+  ],
+  "_metadata": {
+    "chunk": 235,
+    "items_count": 8
+  }
+}

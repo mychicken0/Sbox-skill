@@ -1,0 +1,303 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "packageIdent",
+              "Type": "System.String"
+            },
+            {
+              "Name": "assetPath",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Services/Packages/Cloud/Cloud.cs",
+            "Line": 194
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Cloud.AssetAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Cloud.AssetAttribute",
+          "DocId": "M:Sandbox.Cloud.AssetAttribute.#ctor(System.String,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Cloud/Cloud.cs",
+            "Line": 191
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Cloud.AssetAttribute.PackageIdent",
+          "Name": "PackageIdent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "190"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Cloud.AssetAttribute.PackageIdent"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/Cloud/Cloud.cs",
+            "Line": 192
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Cloud.AssetAttribute.AssetPath",
+          "Name": "AssetPath",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\Cloud\\Cloud.cs",
+                "191"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Cloud.AssetAttribute.AssetPath"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Cloud.AssetAttribute",
+      "Name": "AssetAttribute",
+      "DeclaringType": "Sandbox.Cloud",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Automatically addeded to a type as a result of using Cloud.Model etc inside."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Services\\Packages\\Cloud\\Cloud.cs",
+            "187"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Automatically addeded to a type as a result of using Cloud.Model etc inside."
+      },
+      "DocId": "T:Sandbox.Cloud.AssetAttribute"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ManifestSchema..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ManifestSchema",
+          "DocId": "M:Sandbox.ManifestSchema.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Services/Packages/ManifestSchema.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ManifestSchema.Schema",
+          "Name": "Schema",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "For internal use"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\ManifestSchema.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "For internal use"
+          },
+          "DocId": "P:Sandbox.ManifestSchema.Schema"
+        },
+        {
+          "PropertyType": "Sandbox.ManifestSchema.File[]",
+          "Loc": {
+            "File": "Services/Packages/ManifestSchema.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ManifestSchema.Files",
+          "Name": "Files",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of files that should be mounted to use this asset"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\ManifestSchema.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of files that should be mounted to use this asset"
+          },
+          "DocId": "P:Sandbox.ManifestSchema.Files"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ManifestSchema",
+      "Name": "ManifestSchema",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An addon's manifest, describing what files are available"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Services\\Packages\\ManifestSchema.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "An addon's manifest, describing what files are available"
+      },
+      "DocId": "T:Sandbox.ManifestSchema"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/ManifestSchema.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ManifestSchema.File.Url",
+          "Name": "Url",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\ManifestSchema.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ManifestSchema.File.Url"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/ManifestSchema.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ManifestSchema.File.Crc",
+          "Name": "Crc",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\ManifestSchema.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ManifestSchema.File.Crc"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Services/Packages/ManifestSchema.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ManifestSchema.File.Path",
+          "Name": "Path",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\ManifestSchema.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ManifestSchema.File.Path"
+        },
+        {
+          "PropertyType": "System.Int64",
+          "Loc": {
+            "File": "Services/Packages/ManifestSchema.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ManifestSchema.File.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Services\\Packages\\ManifestSchema.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ManifestSchema.File.Size"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ManifestSchema.File",
+      "Name": "File",
+      "DeclaringType": "Sandbox.ManifestSchema",
+      "DocId": "T:Sandbox.ManifestSchema.File"
+    }
+  ],
+  "_metadata": {
+    "chunk": 132,
+    "items_count": 3
+  }
+}

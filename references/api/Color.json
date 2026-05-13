@@ -1,0 +1,1457 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "alpha",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Color.WithAlpha",
+          "Name": "WithAlpha",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns this color with its alpha value changed",
+            "Params": {
+              "alpha": "The required alpha value, usually between 0-1"
+            }
+          },
+          "DocId": "M:Color.WithAlpha(System.Single)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "alpha",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Color.WithAlphaMultiplied",
+          "Name": "WithAlphaMultiplied",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Similar to <see cref=\"M:Color.WithAlpha(System.Single)\" /> but multiplies the alpha instead of replacing."
+          },
+          "DocId": "M:Color.WithAlphaMultiplied(System.Single)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "amount",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Color.WithColorMultiplied",
+          "Name": "WithColorMultiplied",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a new version with only the red, green, blue components multiplied"
+          },
+          "DocId": "M:Color.WithColorMultiplied(System.Single)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "red",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "Color.WithRed",
+          "Name": "WithRed",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns this color with its red value changed"
+          },
+          "DocId": "M:Color.WithRed(System.Single)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "green",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 139
+          },
+          "IsPublic": true,
+          "FullName": "Color.WithGreen",
+          "Name": "WithGreen",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns this color with its green value changed"
+          },
+          "DocId": "M:Color.WithGreen(System.Single)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "blue",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 148
+          },
+          "IsPublic": true,
+          "FullName": "Color.WithBlue",
+          "Name": "WithBlue",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns this color with its blue value changed"
+          },
+          "DocId": "M:Color.WithBlue(System.Single)"
+        },
+        {
+          "ReturnType": "ColorHsv",
+          "Parameters": [],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 157
+          },
+          "IsPublic": true,
+          "FullName": "Color.ToHsv",
+          "Name": "ToHsv",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Converts this color to a HSV format.",
+            "Return": "The HSV color."
+          },
+          "DocId": "M:Color.ToHsv"
+        },
+        {
+          "ReturnType": "Color32",
+          "Parameters": [
+            {
+              "Name": "srgb",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 190
+          },
+          "IsPublic": true,
+          "FullName": "Color.ToColor32",
+          "Name": "ToColor32",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Convert to a Color32 (a 32 bit color value)",
+            "Params": {
+              "srgb": "If true we'll convert to the srgb color space"
+            }
+          },
+          "DocId": "M:Color.ToColor32(System.Boolean)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Color"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 253
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Min",
+          "Name": "Min",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Returns a new color with each component being the minimum of the 2 given colors.",
+            "Return": "The new color with minimum values.",
+            "Params": {
+              "a": "Color A",
+              "b": "Color B"
+            }
+          },
+          "DocId": "M:Color.Min(Color@,Color@)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Color"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 268
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Max",
+          "Name": "Max",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Returns a new color with each component being the maximum of the 2 given colors.",
+            "Return": "The new color with maximum values.",
+            "Params": {
+              "a": "Color A",
+              "b": "Color B"
+            }
+          },
+          "DocId": "M:Color.Max(Color@,Color@)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "values",
+              "Type": "Color[]"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 435
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Average",
+          "Name": "Average",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Returns a color whose components are averaged of all given colors.",
+            "Return": "The average color.",
+            "Params": {
+              "values": "The colors to get average of."
+            }
+          },
+          "DocId": "M:Color.Average(Color[])"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Color"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Color"
+            },
+            {
+              "Name": "frac",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "clamped",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 465
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Lerp",
+          "Name": "Lerp",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "geom.lerp"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "timeline"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Performs linear interpolation between two colors.",
+            "Return": "The interpolated color.",
+            "Params": {
+              "a": "The source color.",
+              "b": "The target color.",
+              "frac": "Fraction to the target color. 0 will return source color, 1 will return target color, 0.5 will \"mix\" the 2 colors equally.",
+              "clamped": "Clamp fraction to range of [0,1]. If not clamped, the color will be extrapolated."
+            }
+          },
+          "DocId": "M:Color.Lerp(Color@,Color@,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Color"
+            },
+            {
+              "Name": "frac",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 478
+          },
+          "IsPublic": true,
+          "FullName": "Color.LerpTo",
+          "Name": "LerpTo",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Performs linear interpolation between this and given colors.",
+            "Return": "",
+            "Params": {
+              "target": "Color B",
+              "frac": "Fraction, where 0 would return this, 0.5 would return a point between this and given colors, and 1 would return the given color.",
+              "clamp": "Whether to clamp the fraction argument between [0,1]"
+            }
+          },
+          "DocId": "M:Color.LerpTo(Color@,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "r",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "g",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "b",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "a",
+              "Type": "System.Int32",
+              "Default": "255"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 490
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.FromBytes",
+          "Name": "FromBytes",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Creates a color from 0-255 range inputs, converting them to 0-1 range.",
+            "Return": "",
+            "Params": {
+              "r": "The red component.",
+              "g": "The green component.",
+              "b": "The blue component.",
+              "a": "The alpha/transparency component."
+            }
+          },
+          "DocId": "M:Color.FromBytes(System.Int32,System.Int32,System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "rgb",
+              "Type": "System.UInt32"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 497
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.FromRgb",
+          "Name": "FromRgb",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Converts an integer of the form 0xRRGGBB into the color #RRGGBB with 100% alpha.",
+            "Params": {
+              "rgb": "Integer between 0x000000 and 0xffffff representing a color."
+            }
+          },
+          "DocId": "M:Color.FromRgb(System.UInt32)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "rgba",
+              "Type": "System.UInt32"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 503
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.FromRgba",
+          "Name": "FromRgba",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Converts an integer of the form 0xRRGGBBAA into the color #RRGGBBAA.",
+            "Params": {
+              "rgba": "Integer between 0x00000000 and 0xffffffff representing a color with alpha."
+            }
+          },
+          "DocId": "M:Color.FromRgba(System.UInt32)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "amount",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 512
+          },
+          "IsPublic": true,
+          "FullName": "Color.AdjustHue",
+          "Name": "AdjustHue",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Increases or decreases this color's hue",
+            "Return": "The adjusted color",
+            "Params": {
+              "amount": "A number between -360 and 360 to add to the color's hue"
+            }
+          },
+          "DocId": "M:Color.AdjustHue(System.Single)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "fraction",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 527
+          },
+          "IsPublic": true,
+          "FullName": "Color.Darken",
+          "Name": "Darken",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Darkens the color by given amount.",
+            "Return": "The darkened color.",
+            "Params": {
+              "fraction": "How much to darken the color by, in range of 0 (not at all) to 1 (fully black). Negative values will lighten the color."
+            }
+          },
+          "DocId": "M:Color.Darken(System.Single)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "fraction",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 541
+          },
+          "IsPublic": true,
+          "FullName": "Color.Lighten",
+          "Name": "Lighten",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Lightens the color by given amount.",
+            "Return": "The lightened color.",
+            "Params": {
+              "fraction": "How much to lighten the color by, in range of 0 (not at all) to 1 (double the color). Negative values will darken the color."
+            }
+          },
+          "DocId": "M:Color.Lighten(System.Single)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 554
+          },
+          "IsPublic": true,
+          "FullName": "Color.Invert",
+          "Name": "Invert",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns inverted color. Alpha is unchanged.",
+            "Return": "The inverted color."
+          },
+          "DocId": "M:Color.Invert"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "fraction",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 568
+          },
+          "IsPublic": true,
+          "FullName": "Color.Desaturate",
+          "Name": "Desaturate",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Desaturates the color by given amount.",
+            "Return": "The desaturated color.",
+            "Params": {
+              "fraction": "How much to desaturate the color by, in range of 0 (not at all) to 1 (no saturation, i.e. fully white). Negative values will saturate the color."
+            }
+          },
+          "DocId": "M:Color.Desaturate(System.Single)"
+        },
+        {
+          "ReturnType": "Color",
+          "Parameters": [
+            {
+              "Name": "fraction",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 580
+          },
+          "IsPublic": true,
+          "FullName": "Color.Saturate",
+          "Name": "Saturate",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Saturates the color by given amount.",
+            "Return": "The saturated color.",
+            "Params": {
+              "fraction": "How much to saturate the color by, in range of 0 (not at all) to 1 (double the saturation). Negative values will desaturate the color."
+            }
+          },
+          "DocId": "M:Color.Saturate(System.Single)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "b",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 590
+          },
+          "IsPublic": true,
+          "FullName": "Color.ComponentCountChangedBetweenColors",
+          "Name": "ComponentCountChangedBetweenColors",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns how many color components would be changed between this color and another color"
+          },
+          "DocId": "M:Color.ComponentCountChangedBetweenColors(Color)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Color>",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 761
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Parse",
+          "Name": "Parse",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Parse the color from a string. Many common formats are supported.",
+            "Return": "The parsed color if operation completed successfully.",
+            "Params": {
+              "value": "The string to parse."
+            }
+          },
+          "DocId": "M:Color.Parse(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "color",
+              "Out": true,
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 770
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.TryParse",
+          "Name": "TryParse",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Try to parse the color. Returns true on success"
+          },
+          "DocId": "M:Color.TryParse(System.String,Color@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "r",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "g",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "b",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "a",
+              "Type": "System.Single",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Color..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Color",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "color.new"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Color"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Graphics/Color"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "palette"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Initialize a color with each component set to given values, in range [0,1]"
+          },
+          "DocId": "M:Color.#ctor(System.Single,System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rgb",
+              "In": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Color..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Initialize a color with the same value for each color, but a different value for alpha"
+          },
+          "DocId": "M:Color.#ctor(System.Single@,System.Single@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "all",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Color..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Initialize a color with each component set to given value, even alpha.",
+            "Params": {
+              "all": "A number in range [0-1]"
+            }
+          },
+          "DocId": "M:Color.#ctor(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "raw",
+              "Type": "System.UInt32"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Color..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Initialize from an integer of the form 0xAABBGGRR.",
+            "Params": {
+              "raw": "Packed integer of the form 0xAABBGGRR."
+            }
+          },
+          "DocId": "M:Color.#ctor(System.UInt32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "raw",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Color..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Color",
+          "Documentation": {
+            "Summary": "Initialize from an integer of the form 0xAABBGGRR.",
+            "Params": {
+              "raw": "Packed integer of the form 0xAABBGGRR."
+            }
+          },
+          "DocId": "M:Color.#ctor(System.Int32)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 279
+          },
+          "IsPublic": true,
+          "FullName": "Color.Luminance",
+          "Name": "Luminance",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the luminance of the color, basically it's grayscale value or \"black and white version\"."
+          },
+          "DocId": "P:Color.Luminance"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 285
+          },
+          "IsPublic": true,
+          "FullName": "Color.IsRepresentableInHex",
+          "Name": "IsRepresentableInHex",
+          "Documentation": {
+            "Summary": "Returns true if this color can be represented in hexadecimal format (#RRGGBB[AA]).\nThis may not be the case if the color components are outside of [0,1] range."
+          },
+          "DocId": "P:Color.IsRepresentableInHex"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 290
+          },
+          "IsPublic": true,
+          "FullName": "Color.IsSdr",
+          "Name": "IsSdr",
+          "Documentation": {
+            "Summary": "Returns true if all components are between 0 and 1"
+          },
+          "DocId": "P:Color.IsSdr"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 295
+          },
+          "IsPublic": true,
+          "FullName": "Color.IsHdr",
+          "Name": "IsHdr",
+          "Documentation": {
+            "Summary": "Returns true if any component exceeds 1"
+          },
+          "DocId": "P:Color.IsHdr"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 355
+          },
+          "IsPublic": true,
+          "FullName": "Color.Hex",
+          "Name": "Hex",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "String representation of the form \"#RRGGBB[AA]\"."
+          },
+          "DocId": "P:Color.Hex"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 361
+          },
+          "IsPublic": true,
+          "FullName": "Color.Rgba",
+          "Name": "Rgba",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "String representation in the form of <see href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba\">rgba</see>( r, g, b, a )\ncss function notation."
+          },
+          "DocId": "P:Color.Rgba"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 367
+          },
+          "IsPublic": true,
+          "FullName": "Color.Rgb",
+          "Name": "Rgb",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "String representation in the form of <see href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb\">rgb</see>( r, g, b )\ncss function notation."
+          },
+          "DocId": "P:Color.Rgb"
+        },
+        {
+          "PropertyType": "System.UInt32",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 372
+          },
+          "IsPublic": true,
+          "FullName": "Color.RgbaInt",
+          "Name": "RgbaInt",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Integer representation of the form 0xRRGGBBAA."
+          },
+          "DocId": "P:Color.RgbaInt"
+        },
+        {
+          "PropertyType": "System.UInt32",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 377
+          },
+          "IsPublic": true,
+          "FullName": "Color.RgbInt",
+          "Name": "RgbInt",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Integer representation of the form 0xRRGGBB."
+          },
+          "DocId": "P:Color.RgbInt"
+        },
+        {
+          "PropertyType": "System.UInt32",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 382
+          },
+          "IsPublic": true,
+          "FullName": "Color.RawInt",
+          "Name": "RawInt",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Integer representation of the form 0xAABBGGRR as used by native code."
+          },
+          "DocId": "P:Color.RawInt"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 391
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Random",
+          "Name": "Random",
+          "Documentation": {
+            "Summary": "Returns a random color out of 8 preset colors."
+          },
+          "DocId": "P:Color.Random"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Graphics/Color.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Color.Item",
+          "Name": "Item",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "DocId": "P:Color.Item"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Color.r",
+          "Name": "r",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The red color component, in range of 0-1, which <b>can be exceeded</b>."
+          },
+          "DocId": "F:Color.r"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Color.g",
+          "Name": "g",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The green color component, in range of 0-1, which <b>can be exceeded</b>."
+          },
+          "DocId": "F:Color.g"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Color.b",
+          "Name": "b",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The blue color component, in range of 0-1, which <b>can be exceeded</b>."
+          },
+          "DocId": "F:Color.b"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Color.a",
+          "Name": "a",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The alpha/transparency color component, in range of 0 (fully transparent) to 1 (fully opaque), which <b>can be exceeded</b>."
+          },
+          "DocId": "F:Color.a"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.White",
+          "Name": "White",
+          "Documentation": {
+            "Summary": "Fully opaque white color."
+          },
+          "DocId": "F:Color.White"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Gray",
+          "Name": "Gray",
+          "Documentation": {
+            "Summary": "Fully opaque gray color, right between white and black."
+          },
+          "DocId": "F:Color.Gray"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Black",
+          "Name": "Black",
+          "Documentation": {
+            "Summary": "Fully opaque black color."
+          },
+          "DocId": "F:Color.Black"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Red",
+          "Name": "Red",
+          "Documentation": {
+            "Summary": "Fully opaque pure red color."
+          },
+          "DocId": "F:Color.Red"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Green",
+          "Name": "Green",
+          "Documentation": {
+            "Summary": "Fully opaque pure green color."
+          },
+          "DocId": "F:Color.Green"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Blue",
+          "Name": "Blue",
+          "Documentation": {
+            "Summary": "Fully opaque pure blue color."
+          },
+          "DocId": "F:Color.Blue"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Yellow",
+          "Name": "Yellow",
+          "Documentation": {
+            "Summary": "Fully opaque yellow color."
+          },
+          "DocId": "F:Color.Yellow"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Orange",
+          "Name": "Orange",
+          "Documentation": {
+            "Summary": "Fully opaque orange color."
+          },
+          "DocId": "F:Color.Orange"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Cyan",
+          "Name": "Cyan",
+          "Documentation": {
+            "Summary": "Fully opaque cyan color."
+          },
+          "DocId": "F:Color.Cyan"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Magenta",
+          "Name": "Magenta",
+          "Documentation": {
+            "Summary": "Fully opaque magenta color."
+          },
+          "DocId": "F:Color.Magenta"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Color.Transparent",
+          "Name": "Transparent",
+          "Documentation": {
+            "Summary": "Fully transparent color."
+          },
+          "DocId": "F:Color.Transparent"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Color",
+      "Name": "Color",
+      "Attributes": [
+        {
+          "FullName": "System.Reflection.DefaultMemberAttribute",
+          "ConstructorArguments": [
+            "Item"
+          ]
+        },
+        {
+          "FullName": "System.Text.Json.Serialization.JsonConverterAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Internal.JsonConvert.ColorConverter"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents a color using 4 floats (rgba), with 0-1 range."
+      },
+      "DocId": "T:Color"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Color",
+          "Parameters": [],
+          "l": {
+            "File": "Graphics/Color.Rgba16.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Color.Rgba16.ToColor",
+          "Name": "ToColor",
+          "DeclaringType": "Color.Rgba16",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Convert this object to <see cref=\"T:Color\" />.",
+            "Return": "The converted color struct."
+          },
+          "DocId": "M:Color.Rgba16.ToColor"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Graphics/Color.Rgba16.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Color.Rgba16..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Color.Rgba16",
+          "DocId": "M:Color.Rgba16.#ctor(Color)"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Half",
+          "IsPublic": true,
+          "FullName": "Color.Rgba16.r",
+          "Name": "r",
+          "Documentation": {
+            "Summary": "The red color component"
+          },
+          "DocId": "F:Color.Rgba16.r"
+        },
+        {
+          "FieldType": "System.Half",
+          "IsPublic": true,
+          "FullName": "Color.Rgba16.g",
+          "Name": "g",
+          "Documentation": {
+            "Summary": "The green color component"
+          },
+          "DocId": "F:Color.Rgba16.g"
+        },
+        {
+          "FieldType": "System.Half",
+          "IsPublic": true,
+          "FullName": "Color.Rgba16.b",
+          "Name": "b",
+          "Documentation": {
+            "Summary": "The blue color component"
+          },
+          "DocId": "F:Color.Rgba16.b"
+        },
+        {
+          "FieldType": "System.Half",
+          "IsPublic": true,
+          "FullName": "Color.Rgba16.a",
+          "Name": "a",
+          "Documentation": {
+            "Summary": "The alpha/transparency color component, in range of 0 (fully transparent) to 255 (fully opaque)."
+          },
+          "DocId": "F:Color.Rgba16.a"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Color.Rgba16",
+      "Name": "Rgba16",
+      "DeclaringType": "Color",
+      "DocId": "T:Color.Rgba16"
+    }
+  ],
+  "_metadata": {
+    "chunk": 1,
+    "items_count": 2
+  }
+}

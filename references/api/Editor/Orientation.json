@@ -1,0 +1,1795 @@
+{
+  "Types": [
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.Orientation",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Orientation.Horizontal",
+          "Name": "Horizontal",
+          "DocId": "F:Editor.Orientation.Horizontal"
+        },
+        {
+          "FieldType": "Editor.Orientation",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Orientation.Vertical",
+          "Name": "Vertical",
+          "DocId": "F:Editor.Orientation.Vertical"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Orientation",
+      "Name": "Orientation",
+      "DocId": "T:Editor.Orientation"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.ShortcutContext",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ShortcutContext.WidgetShortcut",
+          "Name": "WidgetShortcut",
+          "Documentation": {
+            "Summary": "Shortcut is only active when the parent widget is focused."
+          },
+          "DocId": "F:Editor.ShortcutContext.WidgetShortcut"
+        },
+        {
+          "FieldType": "Editor.ShortcutContext",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ShortcutContext.WindowShortcut",
+          "Name": "WindowShortcut",
+          "Documentation": {
+            "Summary": "Shortcut is only active when the window of the parent widget is focused."
+          },
+          "DocId": "F:Editor.ShortcutContext.WindowShortcut"
+        },
+        {
+          "FieldType": "Editor.ShortcutContext",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ShortcutContext.ApplicationShortcut",
+          "Name": "ApplicationShortcut",
+          "Documentation": {
+            "Summary": "Shortcut is only active when one of the application windows is focused."
+          },
+          "DocId": "F:Editor.ShortcutContext.ApplicationShortcut"
+        },
+        {
+          "FieldType": "Editor.ShortcutContext",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ShortcutContext.WidgetWithChildrenShortcut",
+          "Name": "WidgetWithChildrenShortcut",
+          "Documentation": {
+            "Summary": "Shortcut is only active when the parent widget, or a child of the parent widget, is focused."
+          },
+          "DocId": "F:Editor.ShortcutContext.WidgetWithChildrenShortcut"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ShortcutContext",
+      "Name": "ShortcutContext",
+      "Documentation": {
+        "Summary": "Scope of the shortcut. Requires focus at this level for the shortcut to be active.\nDefaults to <see cref=\"F:Editor.ShortcutContext.WindowShortcut\" />."
+      },
+      "DocId": "T:Editor.ShortcutContext"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.SizeConstraint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeConstraint.SetDefaultConstraint",
+          "Name": "SetDefaultConstraint",
+          "Documentation": {
+            "Summary": "The main widget enforces minimum size"
+          },
+          "DocId": "F:Editor.SizeConstraint.SetDefaultConstraint"
+        },
+        {
+          "FieldType": "Editor.SizeConstraint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeConstraint.SetNoConstraint",
+          "Name": "SetNoConstraint",
+          "Documentation": {
+            "Summary": "The widget size ignores minimum and maximum size"
+          },
+          "DocId": "F:Editor.SizeConstraint.SetNoConstraint"
+        },
+        {
+          "FieldType": "Editor.SizeConstraint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeConstraint.SetMinimumSize",
+          "Name": "SetMinimumSize",
+          "Documentation": {
+            "Summary": "The main widget is set to minimum size and cannot be smaller"
+          },
+          "DocId": "F:Editor.SizeConstraint.SetMinimumSize"
+        },
+        {
+          "FieldType": "Editor.SizeConstraint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeConstraint.SetFixedSize",
+          "Name": "SetFixedSize",
+          "Documentation": {
+            "Summary": "The main widget is fixed to the layout's size and won't resize at all"
+          },
+          "DocId": "F:Editor.SizeConstraint.SetFixedSize"
+        },
+        {
+          "FieldType": "Editor.SizeConstraint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeConstraint.SetMaximumSize",
+          "Name": "SetMaximumSize",
+          "Documentation": {
+            "Summary": "The main widget is set to maximum size and cannot be smaller"
+          },
+          "DocId": "F:Editor.SizeConstraint.SetMaximumSize"
+        },
+        {
+          "FieldType": "Editor.SizeConstraint",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeConstraint.SetMinAndMaxSize",
+          "Name": "SetMinAndMaxSize",
+          "Documentation": {
+            "Summary": "Size between minimum and maximum size"
+          },
+          "DocId": "F:Editor.SizeConstraint.SetMinAndMaxSize"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.SizeConstraint",
+      "Name": "SizeConstraint",
+      "DocId": "T:Editor.SizeConstraint"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.SizeMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeMode.CanGrow",
+          "Name": "CanGrow",
+          "Documentation": {
+            "Summary": "Can grow beyond its size hint if necessary"
+          },
+          "DocId": "F:Editor.SizeMode.CanGrow"
+        },
+        {
+          "FieldType": "Editor.SizeMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeMode.Expand",
+          "Name": "Expand",
+          "Documentation": {
+            "Summary": "Should get as much space as possible."
+          },
+          "DocId": "F:Editor.SizeMode.Expand"
+        },
+        {
+          "FieldType": "Editor.SizeMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeMode.CanShrink",
+          "Name": "CanShrink",
+          "Documentation": {
+            "Summary": "can shrink below its size hint if necessary."
+          },
+          "DocId": "F:Editor.SizeMode.CanShrink"
+        },
+        {
+          "FieldType": "Editor.SizeMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeMode.Ignore",
+          "Name": "Ignore",
+          "Documentation": {
+            "Summary": "Widget size is ignored, will get as much space as possible."
+          },
+          "DocId": "F:Editor.SizeMode.Ignore"
+        },
+        {
+          "FieldType": "Editor.SizeMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeMode.Default",
+          "Name": "Default",
+          "Documentation": {
+            "Summary": "Default size mode - CanGrow and CanShrink"
+          },
+          "DocId": "F:Editor.SizeMode.Default"
+        },
+        {
+          "FieldType": "Editor.SizeMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.SizeMode.Flexible",
+          "Name": "Flexible",
+          "Documentation": {
+            "Summary": "Ignores the size hint - just expand as large as possible"
+          },
+          "DocId": "F:Editor.SizeMode.Flexible"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.SizeMode",
+      "Name": "SizeMode",
+      "DocId": "T:Editor.SizeMode"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.ToolbarPosition",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ToolbarPosition.Left",
+          "Name": "Left",
+          "DocId": "F:Editor.ToolbarPosition.Left"
+        },
+        {
+          "FieldType": "Editor.ToolbarPosition",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ToolbarPosition.Right",
+          "Name": "Right",
+          "DocId": "F:Editor.ToolbarPosition.Right"
+        },
+        {
+          "FieldType": "Editor.ToolbarPosition",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ToolbarPosition.Top",
+          "Name": "Top",
+          "DocId": "F:Editor.ToolbarPosition.Top"
+        },
+        {
+          "FieldType": "Editor.ToolbarPosition",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ToolbarPosition.Bottom",
+          "Name": "Bottom",
+          "DocId": "F:Editor.ToolbarPosition.Bottom"
+        },
+        {
+          "FieldType": "Editor.ToolbarPosition",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ToolbarPosition.All",
+          "Name": "All",
+          "DocId": "F:Editor.ToolbarPosition.All"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ToolbarPosition",
+      "Name": "ToolbarPosition",
+      "DocId": "T:Editor.ToolbarPosition"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.Widget",
+          "Name": "Widget",
+          "DocId": "F:Editor.WindowFlags.Widget"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.Window",
+          "Name": "Window",
+          "DocId": "F:Editor.WindowFlags.Window"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.Dialog",
+          "Name": "Dialog",
+          "DocId": "F:Editor.WindowFlags.Dialog"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.Sheet",
+          "Name": "Sheet",
+          "DocId": "F:Editor.WindowFlags.Sheet"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.Popup",
+          "Name": "Popup",
+          "DocId": "F:Editor.WindowFlags.Popup"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.Tool",
+          "Name": "Tool",
+          "DocId": "F:Editor.WindowFlags.Tool"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.ToolTip",
+          "Name": "ToolTip",
+          "DocId": "F:Editor.WindowFlags.ToolTip"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.SplashScreen",
+          "Name": "SplashScreen",
+          "DocId": "F:Editor.WindowFlags.SplashScreen"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.Desktop",
+          "Name": "Desktop",
+          "DocId": "F:Editor.WindowFlags.Desktop"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.SubWindow",
+          "Name": "SubWindow",
+          "DocId": "F:Editor.WindowFlags.SubWindow"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.ForeignWindow",
+          "Name": "ForeignWindow",
+          "DocId": "F:Editor.WindowFlags.ForeignWindow"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.WindowType_Mask",
+          "Name": "WindowType_Mask",
+          "DocId": "F:Editor.WindowFlags.WindowType_Mask"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.MSWindowsFixedSizeDialogHint",
+          "Name": "MSWindowsFixedSizeDialogHint",
+          "DocId": "F:Editor.WindowFlags.MSWindowsFixedSizeDialogHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.MSWindowsOwnDC",
+          "Name": "MSWindowsOwnDC",
+          "DocId": "F:Editor.WindowFlags.MSWindowsOwnDC"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.BypassWindowManagerHint",
+          "Name": "BypassWindowManagerHint",
+          "DocId": "F:Editor.WindowFlags.BypassWindowManagerHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.X11BypassWindowManagerHint",
+          "Name": "X11BypassWindowManagerHint",
+          "DocId": "F:Editor.WindowFlags.X11BypassWindowManagerHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.FramelessWindowHint",
+          "Name": "FramelessWindowHint",
+          "DocId": "F:Editor.WindowFlags.FramelessWindowHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.WindowTitle",
+          "Name": "WindowTitle",
+          "DocId": "F:Editor.WindowFlags.WindowTitle"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.WindowSystemMenuHint",
+          "Name": "WindowSystemMenuHint",
+          "DocId": "F:Editor.WindowFlags.WindowSystemMenuHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.MinimizeButton",
+          "Name": "MinimizeButton",
+          "DocId": "F:Editor.WindowFlags.MinimizeButton"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.MaximizeButton",
+          "Name": "MaximizeButton",
+          "DocId": "F:Editor.WindowFlags.MaximizeButton"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.MinMaxButtons",
+          "Name": "MinMaxButtons",
+          "DocId": "F:Editor.WindowFlags.MinMaxButtons"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.WindowContextHelpButtonHint",
+          "Name": "WindowContextHelpButtonHint",
+          "DocId": "F:Editor.WindowFlags.WindowContextHelpButtonHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.WindowShadeButtonHint",
+          "Name": "WindowShadeButtonHint",
+          "DocId": "F:Editor.WindowFlags.WindowShadeButtonHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.WindowStaysOnTopHint",
+          "Name": "WindowStaysOnTopHint",
+          "DocId": "F:Editor.WindowFlags.WindowStaysOnTopHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.WindowTransparentForInput",
+          "Name": "WindowTransparentForInput",
+          "DocId": "F:Editor.WindowFlags.WindowTransparentForInput"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.WindowOverridesSystemGestures",
+          "Name": "WindowOverridesSystemGestures",
+          "DocId": "F:Editor.WindowFlags.WindowOverridesSystemGestures"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.WindowDoesNotAcceptFocus",
+          "Name": "WindowDoesNotAcceptFocus",
+          "DocId": "F:Editor.WindowFlags.WindowDoesNotAcceptFocus"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.MaximizeUsingFullscreenGeometryHint",
+          "Name": "MaximizeUsingFullscreenGeometryHint",
+          "DocId": "F:Editor.WindowFlags.MaximizeUsingFullscreenGeometryHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.Customized",
+          "Name": "Customized",
+          "DocId": "F:Editor.WindowFlags.Customized"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.WindowStaysOnBottomHint",
+          "Name": "WindowStaysOnBottomHint",
+          "DocId": "F:Editor.WindowFlags.WindowStaysOnBottomHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.CloseButton",
+          "Name": "CloseButton",
+          "DocId": "F:Editor.WindowFlags.CloseButton"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.MacWindowToolBarButtonHint",
+          "Name": "MacWindowToolBarButtonHint",
+          "DocId": "F:Editor.WindowFlags.MacWindowToolBarButtonHint"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.BypassGraphicsProxyWidget",
+          "Name": "BypassGraphicsProxyWidget",
+          "DocId": "F:Editor.WindowFlags.BypassGraphicsProxyWidget"
+        },
+        {
+          "FieldType": "Editor.WindowFlags",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.WindowFlags.NoDropShadowWindowHint",
+          "Name": "NoDropShadowWindowHint",
+          "DocId": "F:Editor.WindowFlags.NoDropShadowWindowHint"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.WindowFlags",
+      "Name": "WindowFlags",
+      "Attributes": [
+        {
+          "FullName": "System.FlagsAttribute"
+        }
+      ],
+      "DocId": "T:Editor.WindowFlags"
+    },
+    {
+      "Namespace": "Editor",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.LeftMouseButton",
+          "Name": "LeftMouseButton",
+          "Documentation": {
+            "Summary": "Whether the event was triggered by the left mouse button."
+          },
+          "DocId": "P:Editor.MouseEvent.LeftMouseButton"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.RightMouseButton",
+          "Name": "RightMouseButton",
+          "Documentation": {
+            "Summary": "Whether the event was triggered by the left mouse button."
+          },
+          "DocId": "P:Editor.MouseEvent.RightMouseButton"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.MiddleMouseButton",
+          "Name": "MiddleMouseButton",
+          "Documentation": {
+            "Summary": "Whether the event was triggered by the left mouse button."
+          },
+          "DocId": "P:Editor.MouseEvent.MiddleMouseButton"
+        },
+        {
+          "PropertyType": "Sandbox.MouseButtons",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.ButtonState",
+          "Name": "ButtonState",
+          "Documentation": {
+            "Summary": "The current mouse button state."
+          },
+          "DocId": "P:Editor.MouseEvent.ButtonState"
+        },
+        {
+          "PropertyType": "Sandbox.MouseButtons",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.Button",
+          "Name": "Button",
+          "Documentation": {
+            "Summary": "The mouse button that triggered the event."
+          },
+          "DocId": "P:Editor.MouseEvent.Button"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.LocalPosition",
+          "Name": "LocalPosition",
+          "Documentation": {
+            "Summary": "Position of the mouse cursor relative to the widgets top left corner."
+          },
+          "DocId": "P:Editor.MouseEvent.LocalPosition"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.WindowPosition",
+          "Name": "WindowPosition",
+          "Documentation": {
+            "Summary": "Position of the mouse cursor relative to the top left corner of the window the widget belongs to."
+          },
+          "DocId": "P:Editor.MouseEvent.WindowPosition"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.ScreenPosition",
+          "Name": "ScreenPosition",
+          "Documentation": {
+            "Summary": "Absolute position of the mouse cursor on the screen."
+          },
+          "DocId": "P:Editor.MouseEvent.ScreenPosition"
+        },
+        {
+          "PropertyType": "Sandbox.KeyboardModifiers",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.KeyboardModifiers",
+          "Name": "KeyboardModifiers",
+          "Documentation": {
+            "Summary": "The keyboard modifier keys that were held down at the moment the event triggered."
+          },
+          "DocId": "P:Editor.MouseEvent.KeyboardModifiers"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.HasShift",
+          "Name": "HasShift",
+          "Documentation": {
+            "Summary": "Whether <c>Shift</c> key was being held down at the time of the event."
+          },
+          "DocId": "P:Editor.MouseEvent.HasShift"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.HasCtrl",
+          "Name": "HasCtrl",
+          "Documentation": {
+            "Summary": "Whether <c>Control</c> key was being held down at the time of the event."
+          },
+          "DocId": "P:Editor.MouseEvent.HasCtrl"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 76
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.HasAlt",
+          "Name": "HasAlt",
+          "Documentation": {
+            "Summary": "Whether <c>Alt</c> key was being held down at the time of the event."
+          },
+          "DocId": "P:Editor.MouseEvent.HasAlt"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.Accepted",
+          "Name": "Accepted",
+          "Documentation": {
+            "Summary": "Whether this event should be propagated to parent widgets (<see langword=\"false\" />) or not (<see langword=\"true\" />)."
+          },
+          "DocId": "P:Editor.MouseEvent.Accepted"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 90
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MouseEvent.IsDoubleClick",
+          "Name": "IsDoubleClick",
+          "Documentation": {
+            "Summary": "Whether this mouse event was a double click."
+          },
+          "DocId": "P:Editor.MouseEvent.IsDoubleClick"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MouseEvent",
+      "Name": "MouseEvent",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Information about a <see cref=\"T:Editor.Widget\" />s mouse event."
+      },
+      "DocId": "T:Editor.MouseEvent"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 175
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.GetButtonCodeName",
+          "Name": "GetButtonCodeName",
+          "DeclaringType": "Editor.KeyEvent",
+          "DocId": "M:Editor.KeyEvent.GetButtonCodeName"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Editor.KeyCode",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.Key",
+          "Name": "Key",
+          "Documentation": {
+            "Summary": "The key that triggered this event."
+          },
+          "DocId": "P:Editor.KeyEvent.Key"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 132
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.IsAutoRepeat",
+          "Name": "IsAutoRepeat",
+          "Documentation": {
+            "Summary": "Whether this key event was generated by keyboard auto-repeat."
+          },
+          "DocId": "P:Editor.KeyEvent.IsAutoRepeat"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.Text",
+          "Name": "Text",
+          "Documentation": {
+            "Summary": "Text the <see cref=\"P:Editor.KeyEvent.Key\" /> would type in a text field."
+          },
+          "DocId": "P:Editor.KeyEvent.Text"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "The name of the key that triggered this event."
+          },
+          "DocId": "P:Editor.KeyEvent.Name"
+        },
+        {
+          "PropertyType": "System.UInt32",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 147
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.NativeKeyCode",
+          "Name": "NativeKeyCode",
+          "Documentation": {
+            "Summary": "OS specific key code that triggered this event."
+          },
+          "DocId": "P:Editor.KeyEvent.NativeKeyCode"
+        },
+        {
+          "PropertyType": "System.UInt32",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 152
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.NativeScanCode",
+          "Name": "NativeScanCode",
+          "Documentation": {
+            "Summary": "The native scan code."
+          },
+          "DocId": "P:Editor.KeyEvent.NativeScanCode"
+        },
+        {
+          "PropertyType": "Sandbox.KeyboardModifiers",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.KeyboardModifiers",
+          "Name": "KeyboardModifiers",
+          "Documentation": {},
+          "DocId": "P:Editor.KeyEvent.KeyboardModifiers"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 158
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.HasShift",
+          "Name": "HasShift",
+          "Documentation": {},
+          "DocId": "P:Editor.KeyEvent.HasShift"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 161
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.HasCtrl",
+          "Name": "HasCtrl",
+          "Documentation": {},
+          "DocId": "P:Editor.KeyEvent.HasCtrl"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 164
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.HasAlt",
+          "Name": "HasAlt",
+          "Documentation": {},
+          "DocId": "P:Editor.KeyEvent.HasAlt"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 170
+          },
+          "IsPublic": true,
+          "FullName": "Editor.KeyEvent.Accepted",
+          "Name": "Accepted",
+          "Documentation": {},
+          "DocId": "P:Editor.KeyEvent.Accepted"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.KeyEvent",
+      "Name": "KeyEvent",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Information about a <see cref=\"T:Editor.Widget\" />s keyboard event."
+      },
+      "DocId": "T:Editor.KeyEvent"
+    },
+    {
+      "Namespace": "Editor",
+      "Properties": [
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 298
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ContextMenuEvent.LocalPosition",
+          "Name": "LocalPosition",
+          "Documentation": {},
+          "DocId": "P:Editor.ContextMenuEvent.LocalPosition"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 301
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ContextMenuEvent.ScreenPosition",
+          "Name": "ScreenPosition",
+          "Documentation": {},
+          "DocId": "P:Editor.ContextMenuEvent.ScreenPosition"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 307
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ContextMenuEvent.Accepted",
+          "Name": "Accepted",
+          "Documentation": {},
+          "DocId": "P:Editor.ContextMenuEvent.Accepted"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ContextMenuEvent",
+      "Name": "ContextMenuEvent",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Information about a <see cref=\"T:Editor.Widget\" />s context menu event."
+      },
+      "DocId": "T:Editor.ContextMenuEvent"
+    },
+    {
+      "Namespace": "Editor",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 326
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.LeftMouseButton",
+          "Name": "LeftMouseButton",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.LeftMouseButton"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 329
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.RightMouseButton",
+          "Name": "RightMouseButton",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.RightMouseButton"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 332
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.MiddleMouseButton",
+          "Name": "MiddleMouseButton",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.MiddleMouseButton"
+        },
+        {
+          "PropertyType": "Sandbox.MouseButtons",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 335
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.Buttons",
+          "Name": "Buttons",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.Buttons"
+        },
+        {
+          "PropertyType": "Sandbox.MouseButtons",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 338
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.Button",
+          "Name": "Button",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.Button"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 341
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.LocalPosition",
+          "Name": "LocalPosition",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.LocalPosition"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 346
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.ScenePosition",
+          "Name": "ScenePosition",
+          "Documentation": {
+            "Summary": "Position of the mouse cursor within the <see cref=\"T:Editor.GraphicsScene\" />."
+          },
+          "DocId": "P:Editor.GraphicsMouseEvent.ScenePosition"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 349
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.ScreenPosition",
+          "Name": "ScreenPosition",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.ScreenPosition"
+        },
+        {
+          "PropertyType": "Sandbox.KeyboardModifiers",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 352
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.KeyboardModifiers",
+          "Name": "KeyboardModifiers",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.KeyboardModifiers"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 355
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.HasShift",
+          "Name": "HasShift",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.HasShift"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 358
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.HasCtrl",
+          "Name": "HasCtrl",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.HasCtrl"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 361
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.HasAlt",
+          "Name": "HasAlt",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.HasAlt"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 367
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsMouseEvent.Accepted",
+          "Name": "Accepted",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsMouseEvent.Accepted"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.GraphicsMouseEvent",
+      "Name": "GraphicsMouseEvent",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Information about a <see cref=\"T:Editor.GraphicsItem\" />s mouse click event."
+      },
+      "DocId": "T:Editor.GraphicsMouseEvent"
+    },
+    {
+      "Namespace": "Editor",
+      "Properties": [
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 379
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsHoverEvent.LocalPosition",
+          "Name": "LocalPosition",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsHoverEvent.LocalPosition"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 382
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsHoverEvent.ScenePosition",
+          "Name": "ScenePosition",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsHoverEvent.ScenePosition"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 385
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsHoverEvent.ScreenPosition",
+          "Name": "ScreenPosition",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsHoverEvent.ScreenPosition"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/MouseEvent.cs",
+            "Line": 391
+          },
+          "IsPublic": true,
+          "FullName": "Editor.GraphicsHoverEvent.Accepted",
+          "Name": "Accepted",
+          "Documentation": {},
+          "DocId": "P:Editor.GraphicsHoverEvent.Accepted"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.GraphicsHoverEvent",
+      "Name": "GraphicsHoverEvent",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Information about a <see cref=\"T:Editor.GraphicsItem\" />s mouse hover event."
+      },
+      "DocId": "T:Editor.GraphicsHoverEvent"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Event/WheelEvent.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Editor.WheelEvent.Accept",
+          "Name": "Accept",
+          "DeclaringType": "Editor.WheelEvent",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "DocId": "M:Editor.WheelEvent.Accept"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Event/WheelEvent.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Editor.WheelEvent.Ignore",
+          "Name": "Ignore",
+          "DeclaringType": "Editor.WheelEvent",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "DocId": "M:Editor.WheelEvent.Ignore"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Event/WheelEvent.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Editor.WheelEvent.Delta",
+          "Name": "Delta",
+          "DocId": "P:Editor.WheelEvent.Delta"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/WheelEvent.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Editor.WheelEvent.Position",
+          "Name": "Position",
+          "DocId": "P:Editor.WheelEvent.Position"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Event/WheelEvent.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Editor.WheelEvent.GlobalPosition",
+          "Name": "GlobalPosition",
+          "DocId": "P:Editor.WheelEvent.GlobalPosition"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/WheelEvent.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Editor.WheelEvent.Accepted",
+          "Name": "Accepted",
+          "Documentation": {},
+          "DocId": "P:Editor.WheelEvent.Accepted"
+        },
+        {
+          "PropertyType": "Sandbox.KeyboardModifiers",
+          "Loc": {
+            "File": "Qt/Event/WheelEvent.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Editor.WheelEvent.KeyboardModifiers",
+          "Name": "KeyboardModifiers",
+          "Documentation": {},
+          "DocId": "P:Editor.WheelEvent.KeyboardModifiers"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/WheelEvent.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Editor.WheelEvent.HasShift",
+          "Name": "HasShift",
+          "Documentation": {},
+          "DocId": "P:Editor.WheelEvent.HasShift"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/WheelEvent.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Editor.WheelEvent.HasCtrl",
+          "Name": "HasCtrl",
+          "Documentation": {},
+          "DocId": "P:Editor.WheelEvent.HasCtrl"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Event/WheelEvent.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Editor.WheelEvent.HasAlt",
+          "Name": "HasAlt",
+          "Documentation": {},
+          "DocId": "P:Editor.WheelEvent.HasAlt"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.WheelEvent",
+      "Name": "WheelEvent",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Information about a mouse wheel scroll event of a <see cref=\"T:Editor.Widget\" />."
+      },
+      "DocId": "T:Editor.WheelEvent"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.Execute",
+          "Name": "Execute",
+          "DeclaringType": "Editor.FileDialog",
+          "DocId": "M:Editor.FileDialog.Execute"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.SetNameFilter",
+          "Name": "SetNameFilter",
+          "DeclaringType": "Editor.FileDialog",
+          "DocId": "M:Editor.FileDialog.SetNameFilter(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.SetFindDirectory",
+          "Name": "SetFindDirectory",
+          "DeclaringType": "Editor.FileDialog",
+          "DocId": "M:Editor.FileDialog.SetFindDirectory"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.SetFindFile",
+          "Name": "SetFindFile",
+          "DeclaringType": "Editor.FileDialog",
+          "DocId": "M:Editor.FileDialog.SetFindFile"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.SetFindExistingFile",
+          "Name": "SetFindExistingFile",
+          "DeclaringType": "Editor.FileDialog",
+          "DocId": "M:Editor.FileDialog.SetFindExistingFile"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.SetFindExistingFiles",
+          "Name": "SetFindExistingFiles",
+          "DeclaringType": "Editor.FileDialog",
+          "DocId": "M:Editor.FileDialog.SetFindExistingFiles"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.SetModeOpen",
+          "Name": "SetModeOpen",
+          "DeclaringType": "Editor.FileDialog",
+          "DocId": "M:Editor.FileDialog.SetModeOpen"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.SetModeSave",
+          "Name": "SetModeSave",
+          "DeclaringType": "Editor.FileDialog",
+          "DocId": "M:Editor.FileDialog.SetModeSave"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "file",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.SelectFile",
+          "Name": "SelectFile",
+          "DeclaringType": "Editor.FileDialog",
+          "DocId": "M:Editor.FileDialog.SelectFile(System.String)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.FileDialog",
+          "DocId": "M:Editor.FileDialog.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.Title",
+          "Name": "Title",
+          "DocId": "P:Editor.FileDialog.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.SelectedFile",
+          "Name": "SelectedFile",
+          "DocId": "P:Editor.FileDialog.SelectedFile"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.Directory",
+          "Name": "Directory",
+          "DocId": "P:Editor.FileDialog.Directory"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.DefaultSuffix",
+          "Name": "DefaultSuffix",
+          "DocId": "P:Editor.FileDialog.DefaultSuffix"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<System.String>",
+          "Loc": {
+            "File": "Qt/FileDialog.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Editor.FileDialog.SelectedFiles",
+          "Name": "SelectedFiles",
+          "DocId": "P:Editor.FileDialog.SelectedFiles"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.FileDialog",
+      "Name": "FileDialog",
+      "DocId": "T:Editor.FileDialog"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/Frame.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Frame..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Frame",
+          "DocId": "M:Editor.Frame.#ctor(Editor.Widget)"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Frame",
+      "Name": "Frame",
+      "Documentation": {
+        "Summary": "Like a widget - but is drawn"
+      },
+      "DocId": "T:Editor.Frame"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.ScrollbarMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ScrollbarMode.Auto",
+          "Name": "Auto",
+          "Documentation": {
+            "Summary": "Only show the scrollbar when necessary."
+          },
+          "DocId": "F:Editor.ScrollbarMode.Auto"
+        },
+        {
+          "FieldType": "Editor.ScrollbarMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ScrollbarMode.Off",
+          "Name": "Off",
+          "Documentation": {
+            "Summary": "Never show the scrollbar."
+          },
+          "DocId": "F:Editor.ScrollbarMode.Off"
+        },
+        {
+          "FieldType": "Editor.ScrollbarMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.ScrollbarMode.On",
+          "Name": "On",
+          "Documentation": {
+            "Summary": "Always show the scrollbar."
+          },
+          "DocId": "F:Editor.ScrollbarMode.On"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ScrollbarMode",
+      "Name": "ScrollbarMode",
+      "DocId": "T:Editor.ScrollbarMode"
+    }
+  ],
+  "_metadata": {
+    "chunk": 253,
+    "items_count": 15
+  }
+}

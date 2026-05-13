@@ -1,0 +1,1521 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Network",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.Dispose"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "channel",
+              "Type": "Sandbox.Connection"
+            },
+            {
+              "Name": "reason",
+              "Ref": true,
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.AcceptConnection",
+          "Name": "AcceptConnection",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called on the host to decide whether to accept a <span style=\"color: #4EC9B0;\">Connection</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called on the host to decide whether to accept a <see cref=\"T:Sandbox.Connection\" />.",
+            "Params": {
+              "channel": "",
+              "reason": "The reason to display to the client."
+            }
+          },
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.AcceptConnection(Sandbox.Connection,System.String@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "Sandbox.Connection"
+            },
+            {
+              "Name": "msg",
+              "Ref": true,
+              "Type": "Sandbox.Network.MountedVPKsResponse"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.GetMountedVPKs",
+          "Name": "GetMountedVPKs",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.GetMountedVPKs(Sandbox.Connection,Sandbox.Network.MountedVPKsResponse@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "Sandbox.Connection"
+            },
+            {
+              "Name": "msg",
+              "Ref": true,
+              "Type": "Sandbox.Network.SnapshotMsg"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.GetSnapshot",
+          "Name": "GetSnapshot",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.GetSnapshot(Sandbox.Connection,Sandbox.Network.SnapshotMsg@)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "Sandbox.Network.SnapshotMsg"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.SetSnapshotAsync",
+          "Name": "SetSnapshotAsync",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.SetSnapshotAsync(Sandbox.Network.SnapshotMsg)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "Sandbox.Connection"
+            },
+            {
+              "Name": "msg",
+              "Type": "Sandbox.Network.MountedVPKsResponse"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.MountVPKs",
+          "Name": "MountVPKs",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "39"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.MountVPKs(Sandbox.Connection,Sandbox.Network.MountedVPKsResponse)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.OnInitialize",
+          "Name": "OnInitialize",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when the network system should handle initialization."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when the network system should handle initialization."
+          },
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.OnInitialize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "client",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.OnConnected",
+          "Name": "OnConnected",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A client has connected to the server but hasn't fully finished joining yet."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "52"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A client has connected to the server but hasn't fully finished joining yet."
+          },
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.OnConnected(Sandbox.Connection)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "client",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.OnJoined",
+          "Name": "OnJoined",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Fully joined the server. Can be called when changing the map too. The game should usually create some object for the player to control here."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "58"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Fully joined the server. Can be called when changing the map too. The game should usually create\nsome object for the player to control here."
+          },
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.OnJoined(Sandbox.Connection)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "client",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.OnLeave",
+          "Name": "OnLeave",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A client has disconnected from the server."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "63"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A client has disconnected from the server."
+          },
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.OnLeave(Sandbox.Connection)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "previousHost",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.OnBecameHost",
+          "Name": "OnBecameHost",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The host left the server and you are now in charge."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "68"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The host left the server and you are now in charge."
+          },
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.OnBecameHost(Sandbox.Connection)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "previousHost",
+              "Type": "Sandbox.Connection"
+            },
+            {
+              "Name": "newHost",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.OnHostChanged",
+          "Name": "OnHostChanged",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The current host has been changed."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "73"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The current host has been changed."
+          },
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.OnHostChanged(Sandbox.Connection,Sandbox.Connection)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "msg",
+              "Type": "Sandbox.ByteStream"
+            },
+            {
+              "Name": "filter",
+              "Type": "System.Nullable`1<Sandbox.Connection.Filter>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.BroadcastRaw",
+          "Name": "BroadcastRaw",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "91"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.BroadcastRaw(Sandbox.ByteStream,System.Nullable`1{Sandbox.Connection.Filter})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "T"
+            },
+            {
+              "Name": "filter",
+              "Type": "System.Nullable`1<Sandbox.Connection.Filter>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 116
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.Broadcast",
+          "Name": "Broadcast",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "114"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.Broadcast``1(``0,System.Nullable`1{Sandbox.Connection.Filter})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "connectionId",
+              "Type": "System.Guid"
+            },
+            {
+              "Name": "obj",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 211
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.Send",
+          "Name": "Send",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "209"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.Send``1(System.Guid,``0)"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 219
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.Push",
+          "Name": "Push",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows to push some kind of scope when reading network messages. This is useful if you need to adjust Time.Now etc."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "218"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows to push some kind of scope when reading network messages. This is useful if you\nneed to adjust Time.Now etc."
+          },
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.Push"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "System.Action`3<T,Sandbox.Connection,System.Guid>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 222
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.AddHandler",
+          "Name": "AddHandler",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "220"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.AddHandler``1(System.Action`3{``0,Sandbox.Connection,System.Guid})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "System.Func`4<T,Sandbox.Connection,System.Guid,System.Threading.Tasks.Task>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 227
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.AddHandler",
+          "Name": "AddHandler",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "225"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.AddHandler``1(System.Func`4{``0,Sandbox.Connection,System.Guid,System.Threading.Tasks.Task})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handler",
+              "Type": "System.Action`2<T,Sandbox.Connection>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.AddHandler",
+          "Name": "AddHandler",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "230"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.AddHandler``1(System.Action`2{``0,Sandbox.Connection})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 247
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called every frame"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+                "243"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called every frame"
+          },
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.Tick"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.CreateLobby",
+          "Name": "CreateLobby",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Networking.CreateLobby"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "47"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.CreateLobby"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Collections.Generic.List`1<Sandbox.Network.LobbyInformation>>",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.QueryLobbies",
+          "Name": "QueryLobbies",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Networking.QueryLobbies"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "50"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.QueryLobbies"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.Disconnect",
+          "Name": "Disconnect",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Networking.Disconnect"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "59"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.Disconnect"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "steamid",
+              "Type": "System.UInt64"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.Connect",
+          "Name": "Connect",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Networking.Connect"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "62"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.Connect(System.UInt64)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.Connect",
+          "Name": "Connect",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Networking.Connect"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "65"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.Connect(System.String)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Boolean>",
+          "Parameters": [
+            {
+              "Name": "steamId",
+              "Type": "System.UInt64"
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.TryConnectSteamId",
+          "Name": "TryConnectSteamId",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Networking.Connect"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "68"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.TryConnectSteamId(System.UInt64)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Network.GameNetworkSystem",
+          "DocId": "M:Sandbox.Network.GameNetworkSystem.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.IsHost",
+          "Name": "IsHost",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Networking.IsHost"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if we can be considered the host of this session. Either we're not connected to a server, or we are and we are the host."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if we can be considered the host of this session. Either we're not connected to a server, or we are and we are the host."
+          },
+          "DocId": "P:Sandbox.Network.GameNetworkSystem.IsHost"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.IsClient",
+          "Name": "IsClient",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Networking.IsClient"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if we're connected to a server and not the host."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if we're connected to a server and not the host."
+          },
+          "DocId": "P:Sandbox.Network.GameNetworkSystem.IsClient"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.IsConnecting",
+          "Name": "IsConnecting",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Networking.IsConnecting"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if we're currently connecting to the server"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if we're currently connecting to the server"
+          },
+          "DocId": "P:Sandbox.Network.GameNetworkSystem.IsConnecting"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Network.GameNetworkSystem.IsActive",
+          "Name": "IsActive",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Networking.IsActive"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if we're currently connected etc"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if we're currently connected etc"
+          },
+          "DocId": "P:Sandbox.Network.GameNetworkSystem.IsActive"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Network.GameNetworkSystem",
+      "Name": "GameNetworkSystem",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An instance of this is created by the NetworkSystem when a server is joined, or created. You should not try to create this manually."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.cs",
+            "9"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An instance of this is created by the NetworkSystem when a server is joined, or created. You should not try to create this manually."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "An instance of this is created by the NetworkSystem when a server is joined, or created.\nYou should not try to create this manually."
+      },
+      "DocId": "T:Sandbox.Network.GameNetworkSystem"
+    },
+    {
+      "Namespace": "Sandbox.Network",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "System.String",
+              "Default": ""
+            }
+          ],
+          "l": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.Network.LobbyInformation",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "124"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Network.LobbyInformation.Get(System.String,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.IsFull",
+          "Name": "IsFull",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this lobby is full (Members &gt;= MaxMembers)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "112"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this lobby is full (Members &gt;= MaxMembers)."
+          },
+          "DocId": "P:Sandbox.Network.LobbyInformation.IsFull"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/GameNetworkSystem/GameNetworkSystem.Static.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.IsHidden",
+          "Name": "IsHidden",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this lobby should be hidden from server lists."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "117"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this lobby should be hidden from server lists."
+          },
+          "DocId": "P:Sandbox.Network.LobbyInformation.IsHidden"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.UInt64",
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.LobbyId",
+          "Name": "LobbyId",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "92"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Network.LobbyInformation.LobbyId"
+        },
+        {
+          "FieldType": "System.UInt64",
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.OwnerId",
+          "Name": "OwnerId",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "93"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Network.LobbyInformation.OwnerId"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.Members",
+          "Name": "Members",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "95"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Network.LobbyInformation.Members"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.MaxMembers",
+          "Name": "MaxMembers",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "96"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Network.LobbyInformation.MaxMembers"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "98"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Network.LobbyInformation.Name"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.Map",
+          "Name": "Map",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "99"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Network.LobbyInformation.Map"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.Game",
+          "Name": "Game",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "100"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Network.LobbyInformation.Game"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.Ping",
+          "Name": "Ping",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "105"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Ping in milliseconds. Only available for dedicated servers, -1 if unknown."
+          },
+          "DocId": "F:Sandbox.Network.LobbyInformation.Ping"
+        },
+        {
+          "FieldType": "System.Collections.Generic.Dictionary`2<System.String,System.String>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyInformation.Data",
+          "Name": "Data",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\GameNetworkSystem\\GameNetworkSystem.Static.cs",
+                "107"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Network.LobbyInformation.Data"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Network.LobbyInformation",
+      "Name": "LobbyInformation",
+      "DocId": "T:Sandbox.Network.LobbyInformation"
+    },
+    {
+      "Namespace": "Sandbox.Network",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Networking/System/LobbyConfig.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyConfig..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Network.LobbyConfig",
+          "DocId": "M:Sandbox.Network.LobbyConfig.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/LobbyConfig.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyConfig.DestroyWhenHostLeaves",
+          "Name": "DestroyWhenHostLeaves",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether to automatically destroy this lobby when the host leaves. This is only applicable to P2P lobbies."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\LobbyConfig.cs",
+                "10"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether to automatically destroy this lobby when the host leaves. This is only\napplicable to P2P lobbies."
+          },
+          "DocId": "P:Sandbox.Network.LobbyConfig.DestroyWhenHostLeaves"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/LobbyConfig.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyConfig.AutoSwitchToBestHost",
+          "Name": "AutoSwitchToBestHost",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether to periodically switch to the best possible host candidate. This is only applicable to P2P lobbies."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\LobbyConfig.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether to periodically switch to the best possible host candidate. This is only\napplicable to P2P lobbies."
+          },
+          "DocId": "P:Sandbox.Network.LobbyConfig.AutoSwitchToBestHost"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Networking/System/LobbyConfig.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyConfig.Hidden",
+          "Name": "Hidden",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether to hide this lobby from appearing in the server list. It will still be queryable programatically, so long as the <span style=\"color: #86C691;\">LobbyConfig</span>.<span style=\"color: #DCDCDC;\">Privacy</span> mode allows it."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\LobbyConfig.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether to hide this lobby from appearing in the server list. It will still be\nqueryable programatically, so long as the <see cref=\"P:Sandbox.Network.LobbyConfig.Privacy\" /> mode allows it."
+          },
+          "DocId": "P:Sandbox.Network.LobbyConfig.Hidden"
+        },
+        {
+          "PropertyType": "Sandbox.Network.LobbyPrivacy",
+          "Loc": {
+            "File": "Systems/Networking/System/LobbyConfig.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyConfig.Privacy",
+          "Name": "Privacy",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Determines who is able to connect to this lobby. This will be public by default."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\LobbyConfig.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Determines who is able to connect to this lobby. This will be public by default."
+          },
+          "DocId": "P:Sandbox.Network.LobbyConfig.Privacy"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Networking/System/LobbyConfig.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyConfig.MaxPlayers",
+          "Name": "MaxPlayers",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The maximum amount of players this lobby can hold. By default, this will be the Max Players set in the current Game Package's project settings."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\LobbyConfig.cs",
+                "33"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The maximum amount of players this lobby can hold. By default, this will be\nthe Max Players set in the current Game Package's project settings."
+          },
+          "DocId": "P:Sandbox.Network.LobbyConfig.MaxPlayers"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Networking/System/LobbyConfig.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Network.LobbyConfig.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The name of this lobby. If this isn't set, a default lobby name will be chosen instead."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Networking\\System\\LobbyConfig.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The name of this lobby. If this isn't set, a default lobby name will be chosen instead."
+          },
+          "DocId": "P:Sandbox.Network.LobbyConfig.Name"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Network.LobbyConfig",
+      "Name": "LobbyConfig",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.Network.LobbyConfig"
+    }
+  ],
+  "_metadata": {
+    "chunk": 204,
+    "items_count": 3
+  }
+}

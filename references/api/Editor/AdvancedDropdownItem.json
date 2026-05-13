@@ -1,0 +1,1052 @@
+{
+  "Types": [
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "Editor.AdvancedDropdownItem",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.Add",
+          "Name": "Add",
+          "DeclaringType": "Editor.AdvancedDropdownItem",
+          "Documentation": {
+            "Summary": "Add a child item and return it."
+          },
+          "DocId": "M:Editor.AdvancedDropdownItem.Add(System.String,System.String,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "Editor.AdvancedDropdownItem"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.Add",
+          "Name": "Add",
+          "DeclaringType": "Editor.AdvancedDropdownItem",
+          "Documentation": {
+            "Summary": "Add an existing item as a child."
+          },
+          "DocId": "M:Editor.AdvancedDropdownItem.Add(Editor.AdvancedDropdownItem)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Editor.AdvancedDropdownItem",
+          "Documentation": {
+            "Summary": "Remove all children."
+          },
+          "DocId": "M:Editor.AdvancedDropdownItem.Clear"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.AdvancedDropdownItem",
+          "DocId": "M:Editor.AdvancedDropdownItem.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.AdvancedDropdownItem",
+          "DocId": "M:Editor.AdvancedDropdownItem.#ctor(System.String,System.String,System.Object)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.Title",
+          "Name": "Title",
+          "DocId": "P:Editor.AdvancedDropdownItem.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.Icon",
+          "Name": "Icon",
+          "DocId": "P:Editor.AdvancedDropdownItem.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.Description",
+          "Name": "Description",
+          "DocId": "P:Editor.AdvancedDropdownItem.Description"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.Tooltip",
+          "Name": "Tooltip",
+          "DocId": "P:Editor.AdvancedDropdownItem.Tooltip"
+        },
+        {
+          "PropertyType": "System.Object",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.Value",
+          "Name": "Value",
+          "DocId": "P:Editor.AdvancedDropdownItem.Value"
+        },
+        {
+          "PropertyType": "System.Action`2<Sandbox.Rect,System.Single>",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.PaintIcon",
+          "Name": "PaintIcon",
+          "Documentation": {
+            "Summary": "Optional custom icon painting. Receives the icon rect and current opacity."
+          },
+          "DocId": "P:Editor.AdvancedDropdownItem.PaintIcon"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<Editor.AdvancedDropdownItem>",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.Children",
+          "Name": "Children",
+          "DocId": "P:Editor.AdvancedDropdownItem.Children"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownItem.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownItem.HasChildren",
+          "Name": "HasChildren",
+          "DocId": "P:Editor.AdvancedDropdownItem.HasChildren"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.AdvancedDropdownItem",
+      "Name": "AdvancedDropdownItem",
+      "Documentation": {
+        "Summary": "A tree node for use with <see cref=\"T:Editor.AdvancedDropdownWidget\" />.\nItems with children are categories; items without children are selectable leaves."
+      },
+      "DocId": "T:Editor.AdvancedDropdownItem"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.PopupWidget",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownPopup.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownPopup..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.AdvancedDropdownPopup",
+          "DocId": "M:Editor.AdvancedDropdownPopup.#ctor(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            },
+            {
+              "Name": "dropdown",
+              "Type": "Editor.AdvancedDropdownWidget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownPopup.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownPopup..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.AdvancedDropdownPopup",
+          "DocId": "M:Editor.AdvancedDropdownPopup.#ctor(Editor.Widget,Editor.AdvancedDropdownWidget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Editor.AdvancedDropdownWidget",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownPopup.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownPopup.Dropdown",
+          "Name": "Dropdown",
+          "DocId": "P:Editor.AdvancedDropdownPopup.Dropdown"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownPopup.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownPopup.OnSelect",
+          "Name": "OnSelect",
+          "DocId": "P:Editor.AdvancedDropdownPopup.OnSelect"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.AdvancedDropdownPopup",
+      "Name": "AdvancedDropdownPopup",
+      "Documentation": {
+        "Summary": "A popup wrapper around <see cref=\"T:Editor.AdvancedDropdownWidget\" />."
+      },
+      "DocId": "T:Editor.AdvancedDropdownPopup"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 154
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Editor.AdvancedDropdownWidget",
+          "Documentation": {
+            "Summary": "Rebuild the item tree and reset to the root panel."
+          },
+          "DocId": "M:Editor.AdvancedDropdownWidget.Rebuild"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "panel",
+              "Type": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 164
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.PushPanel",
+          "Name": "PushPanel",
+          "DeclaringType": "Editor.AdvancedDropdownWidget",
+          "Documentation": {
+            "Summary": "Push a new panel onto the stack (navigate deeper into a category)."
+          },
+          "DocId": "M:Editor.AdvancedDropdownWidget.PushPanel(Editor.AdvancedDropdownWidget.AdvancedDropdownPanel)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 186
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.PopPanel",
+          "Name": "PopPanel",
+          "DeclaringType": "Editor.AdvancedDropdownWidget",
+          "Documentation": {
+            "Summary": "Pop the current panel (navigate back)."
+          },
+          "DocId": "M:Editor.AdvancedDropdownWidget.PopPanel"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "panel",
+              "Type": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 237
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.BuildPanel",
+          "Name": "BuildPanel",
+          "DeclaringType": "Editor.AdvancedDropdownWidget",
+          "Documentation": {
+            "Summary": "Build a panel's content from the item tree. Override to customize."
+          },
+          "DocId": "M:Editor.AdvancedDropdownWidget.BuildPanel(Editor.AdvancedDropdownWidget.AdvancedDropdownPanel)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "panel",
+              "Type": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel"
+            },
+            {
+              "Name": "searchText",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 311
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.OnBuildSearchResults",
+          "Name": "OnBuildSearchResults",
+          "DeclaringType": "Editor.AdvancedDropdownWidget",
+          "Documentation": {
+            "Summary": "Called after search results are populated. Override to add extra entries (e.g. \"New Component\" button)."
+          },
+          "DocId": "M:Editor.AdvancedDropdownWidget.OnBuildSearchResults(Editor.AdvancedDropdownWidget.AdvancedDropdownPanel,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 330
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.AdvancedDropdownWidget",
+          "DocId": "M:Editor.AdvancedDropdownWidget.OnPaint"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.KeyEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 337
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.OnKeyRelease",
+          "Name": "OnKeyRelease",
+          "DeclaringType": "Editor.AdvancedDropdownWidget",
+          "DocId": "M:Editor.AdvancedDropdownWidget.OnKeyRelease(Editor.KeyEvent)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.AdvancedDropdownWidget",
+          "DocId": "M:Editor.AdvancedDropdownWidget.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Action`1<System.Object>",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.OnSelect",
+          "Name": "OnSelect",
+          "Documentation": {
+            "Summary": "Called when a leaf item is selected. Receives the item's <see cref=\"P:Editor.AdvancedDropdownItem.Value\" />."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.OnSelect"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.OnFinished",
+          "Name": "OnFinished",
+          "Documentation": {
+            "Summary": "Called after selection to allow the host to close/cleanup."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.OnFinished"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.SearchPlaceholderText",
+          "Name": "SearchPlaceholderText",
+          "Documentation": {
+            "Summary": "Placeholder text shown in the search bar."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.SearchPlaceholderText"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.RootTitle",
+          "Name": "RootTitle",
+          "Documentation": {
+            "Summary": "Title shown in the root panel header."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.RootTitle"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.ContentSize",
+          "Name": "ContentSize",
+          "Documentation": {
+            "Summary": "Fixed size of the content area (below the search bar)."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.ContentSize"
+        },
+        {
+          "PropertyType": "Editor.AdvancedDropdownItem",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.RootItem",
+          "Name": "RootItem",
+          "Documentation": {
+            "Summary": "The root of the item tree. Populated by <see cref=\"P:Editor.AdvancedDropdownWidget.OnBuildItems\" /> or set directly."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.RootItem"
+        },
+        {
+          "PropertyType": "System.Action`1<Editor.AdvancedDropdownItem>",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.OnBuildItems",
+          "Name": "OnBuildItems",
+          "Documentation": {
+            "Summary": "Called to (re)build the item tree. Receives <see cref=\"P:Editor.AdvancedDropdownWidget.RootItem\" /> after it has been cleared."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.OnBuildItems"
+        },
+        {
+          "PropertyType": "System.Func`3<Editor.AdvancedDropdownItem,System.String[],System.Int32>",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.SearchScorer",
+          "Name": "SearchScorer",
+          "Documentation": {
+            "Summary": "Optional custom search scorer. Receives an item and the search words, returns a score (0 = no match).\nIf null, the default scorer matches against Title and Description."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.SearchScorer"
+        },
+        {
+          "PropertyType": "Editor.Widget",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.FilterWidget",
+          "Name": "FilterWidget",
+          "Documentation": {
+            "Summary": "Optional filter widget placed next to the search bar (e.g. a settings button)."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.FilterWidget"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 89
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.IsTextInputActive",
+          "Name": "IsTextInputActive",
+          "Documentation": {
+            "Summary": "For subclasses that have a text input inside the panel (e.g. a name field) -\nset to true to prevent Left arrow key from popping the panel."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.IsTextInputActive"
+        },
+        {
+          "PropertyType": "Editor.Widget",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 93
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.Main",
+          "Name": "Main",
+          "DocId": "P:Editor.AdvancedDropdownWidget.Main"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 99
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.IsSearching",
+          "Name": "IsSearching",
+          "Documentation": {
+            "Summary": "Whether the user is currently searching."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.IsSearching"
+        },
+        {
+          "PropertyType": "Editor.LineEdit",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 101
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.Search",
+          "Name": "Search",
+          "DocId": "P:Editor.AdvancedDropdownWidget.Search"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.AdvancedDropdownWidget",
+      "Name": "AdvancedDropdownWidget",
+      "Documentation": {
+        "Summary": "A generic sliding hierarchical selector widget.\nBuild a tree of <see cref=\"T:Editor.AdvancedDropdownItem\" /> and hand it to this widget."
+      },
+      "DocId": "T:Editor.AdvancedDropdownWidget"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "delta",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 402
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.SelectMoveRow",
+          "Name": "SelectMoveRow",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel",
+          "DocId": "M:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.SelectMoveRow(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 439
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.Enter",
+          "Name": "Enter",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel",
+          "DocId": "M:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.Enter"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.KeyEvent"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 451
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.OnKeyRelease",
+          "Name": "OnKeyRelease",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel",
+          "DocId": "M:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.OnKeyRelease(Editor.KeyEvent)"
+        },
+        {
+          "ReturnType": "Editor.Widget",
+          "Parameters": [
+            {
+              "Name": "entry",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 508
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.AddEntry",
+          "Name": "AddEntry",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel",
+          "Documentation": {
+            "Summary": "Add an entry widget to this panel."
+          },
+          "DocId": "M:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.AddEntry(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 519
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.AddStretchCell",
+          "Name": "AddStretchCell",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel",
+          "DocId": "M:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.AddStretchCell"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 525
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.ClearEntries",
+          "Name": "ClearEntries",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel",
+          "DocId": "M:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.ClearEntries"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 531
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel",
+          "DocId": "M:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.OnPaint"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            },
+            {
+              "Name": "owner",
+              "Type": "Editor.AdvancedDropdownWidget"
+            },
+            {
+              "Name": "title",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 364
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel",
+          "DocId": "M:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.#ctor(Editor.Widget,Editor.AdvancedDropdownWidget,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 354
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.Title",
+          "Name": "Title",
+          "DocId": "P:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.Title"
+        },
+        {
+          "PropertyType": "Editor.Widget",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 355
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.CategoryHeader",
+          "Name": "CategoryHeader",
+          "DocId": "P:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.CategoryHeader"
+        },
+        {
+          "PropertyType": "Editor.AdvancedDropdownItem",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 362
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.SourceItem",
+          "Name": "SourceItem",
+          "Documentation": {
+            "Summary": "The item whose children this panel displays. Null for root panel."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.SourceItem"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Editor.Widget>",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 364
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.ItemList",
+          "Name": "ItemList",
+          "DocId": "P:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.ItemList"
+        },
+        {
+          "PropertyType": "Editor.Widget",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 366
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.CurrentItem",
+          "Name": "CurrentItem",
+          "DocId": "P:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.CurrentItem"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 368
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.IsManual",
+          "Name": "IsManual",
+          "DocId": "P:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel.IsManual"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.AdvancedDropdownWidget.AdvancedDropdownPanel",
+      "Name": "AdvancedDropdownPanel",
+      "DeclaringType": "Editor.AdvancedDropdownWidget",
+      "Documentation": {
+        "Summary": "A single sliding panel with header, scroll area, and item list."
+      },
+      "DocId": "T:Editor.AdvancedDropdownWidget.AdvancedDropdownPanel"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 568
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.ItemEntry.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.ItemEntry",
+          "DocId": "M:Editor.AdvancedDropdownWidget.ItemEntry.OnPaint"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            },
+            {
+              "Name": "item",
+              "Type": "Editor.AdvancedDropdownItem",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 542
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.ItemEntry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.ItemEntry",
+          "DocId": "M:Editor.AdvancedDropdownWidget.ItemEntry.#ctor(Editor.Widget,Editor.AdvancedDropdownItem)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 542
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.ItemEntry.Text",
+          "Name": "Text",
+          "DocId": "P:Editor.AdvancedDropdownWidget.ItemEntry.Text"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 543
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.ItemEntry.Icon",
+          "Name": "Icon",
+          "DocId": "P:Editor.AdvancedDropdownWidget.ItemEntry.Icon"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 544
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.ItemEntry.IsSelected",
+          "Name": "IsSelected",
+          "DocId": "P:Editor.AdvancedDropdownWidget.ItemEntry.IsSelected"
+        },
+        {
+          "PropertyType": "Editor.AdvancedDropdownItem",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 551
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.ItemEntry.Item",
+          "Name": "Item",
+          "Documentation": {
+            "Summary": "The source item for this entry."
+          },
+          "DocId": "P:Editor.AdvancedDropdownWidget.ItemEntry.Item"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.AdvancedDropdownWidget.ItemEntry",
+      "Name": "ItemEntry",
+      "DeclaringType": "Editor.AdvancedDropdownWidget",
+      "Documentation": {
+        "Summary": "A leaf item entry widget."
+      },
+      "DocId": "T:Editor.AdvancedDropdownWidget.ItemEntry"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 619
+          },
+          "IsProtected": true,
+          "FullName": "Editor.AdvancedDropdownWidget.CategoryEntry.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.CategoryEntry",
+          "DocId": "M:Editor.AdvancedDropdownWidget.CategoryEntry.OnPaint"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 612
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.CategoryEntry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.AdvancedDropdownWidget.CategoryEntry",
+          "DocId": "M:Editor.AdvancedDropdownWidget.CategoryEntry.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Widgets/AdvancedDropdown/AdvancedDropdownWidget.cs",
+            "Line": 608
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AdvancedDropdownWidget.CategoryEntry.Category",
+          "Name": "Category",
+          "DocId": "P:Editor.AdvancedDropdownWidget.CategoryEntry.Category"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.AdvancedDropdownWidget.CategoryEntry",
+      "Name": "CategoryEntry",
+      "DeclaringType": "Editor.AdvancedDropdownWidget",
+      "Documentation": {
+        "Summary": "A category entry widget with a forward arrow."
+      },
+      "DocId": "T:Editor.AdvancedDropdownWidget.CategoryEntry"
+    }
+  ],
+  "_metadata": {
+    "chunk": 266,
+    "items_count": 6
+  }
+}

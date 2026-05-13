@@ -1,0 +1,943 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "obj/.generated/Systems/Physics/PhysicsBody.Locks.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsLock..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.PhysicsLock",
+          "DocId": "M:Sandbox.PhysicsLock.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsBody.Locks.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsLock.X",
+          "Name": "X",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsBody.Locks.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PhysicsLock.X"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsBody.Locks.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsLock.Y",
+          "Name": "Y",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsBody.Locks.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PhysicsLock.Y"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsBody.Locks.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsLock.Z",
+          "Name": "Z",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsBody.Locks.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PhysicsLock.Z"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsBody.Locks.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsLock.Pitch",
+          "Name": "Pitch",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsBody.Locks.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PhysicsLock.Pitch"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsBody.Locks.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsLock.Yaw",
+          "Name": "Yaw",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsBody.Locks.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PhysicsLock.Yaw"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsBody.Locks.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsLock.Roll",
+          "Name": "Roll",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsBody.Locks.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PhysicsLock.Roll"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PhysicsLock",
+      "Name": "PhysicsLock",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.PhysicsLock"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vel",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.AddVelocity",
+          "Name": "AddVelocity",
+          "DeclaringType": "Sandbox.PhysicsGroup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds given amount of velocity (<span style=\"color: #4EC9B0;\">PhysicsBody</span>.<span style=\"color: #DCDCAA;\">ApplyForce</span>(<span style=\"color: #86C691;\">Vector3</span>)) to all physics bodies in this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "65"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adds given amount of velocity (<see cref=\"M:Sandbox.PhysicsBody.ApplyForce(Vector3)\" />) to all physics bodies in this group.",
+            "Params": {
+              "vel": "How much linear force to add?"
+            }
+          },
+          "DocId": "M:Sandbox.PhysicsGroup.AddVelocity(Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vel",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.AddAngularVelocity",
+          "Name": "AddAngularVelocity",
+          "DeclaringType": "Sandbox.PhysicsGroup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds given amount of angular velocity to all physics bodies in this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "75"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adds given amount of angular velocity to all physics bodies in this group.",
+            "Params": {
+              "vel": "How much angular force to add?"
+            }
+          },
+          "DocId": "M:Sandbox.PhysicsGroup.AddAngularVelocity(Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vel",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "withMass",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 90
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.ApplyImpulse",
+          "Name": "ApplyImpulse",
+          "DeclaringType": "Sandbox.PhysicsGroup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds given amount of linear impulse (<span style=\"color: #4EC9B0;\">PhysicsBody</span>.<span style=\"color: #DCDCAA;\">ApplyImpulse</span>(<span style=\"color: #86C691;\">Vector3</span>)) to all physics bodies in this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "86"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adds given amount of linear impulse (<see cref=\"M:Sandbox.PhysicsBody.ApplyImpulse(Vector3)\" />) to all physics bodies in this group.",
+            "Params": {
+              "vel": "Velocity to apply.",
+              "withMass": "Whether to multiply the velocity by mass of the <see cref=\"T:Sandbox.PhysicsBody\" /> on a per-body basis."
+            }
+          },
+          "DocId": "M:Sandbox.PhysicsGroup.ApplyImpulse(Vector3,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vel",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "withMass",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 116
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.ApplyAngularImpulse",
+          "Name": "ApplyAngularImpulse",
+          "DeclaringType": "Sandbox.PhysicsGroup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds given amount of angular linear impulse (<span style=\"color: #4EC9B0;\">PhysicsBody</span>.<span style=\"color: #DCDCAA;\">ApplyAngularImpulse</span>(<span style=\"color: #86C691;\">Vector3</span>)) to all physics bodies in this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "112"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adds given amount of angular linear impulse (<see cref=\"M:Sandbox.PhysicsBody.ApplyAngularImpulse(Vector3)\" />) to all physics bodies in this group.",
+            "Params": {
+              "vel": "Angular velocity to apply.",
+              "withMass": "Whether to multiply the velocity by mass of the <see cref=\"T:Sandbox.PhysicsBody\" /> on a per-body basis."
+            }
+          },
+          "DocId": "M:Sandbox.PhysicsGroup.ApplyAngularImpulse(Vector3,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 172
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.RebuildMass",
+          "Name": "RebuildMass",
+          "DeclaringType": "Sandbox.PhysicsGroup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "169"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Calls <see cref=\"M:Sandbox.PhysicsBody.RebuildMass\" /> on all bodies of this group."
+          },
+          "DocId": "M:Sandbox.PhysicsGroup.RebuildMass"
+        },
+        {
+          "ReturnType": "Sandbox.PhysicsBody",
+          "Parameters": [
+            {
+              "Name": "groupIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 237
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.GetBody",
+          "Name": "GetBody",
+          "DeclaringType": "Sandbox.PhysicsGroup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets a <span style=\"color: #4EC9B0;\">PhysicsBody</span> at given index within this physics group. See <span style=\"color: #4EC9B0;\">PhysicsGroup</span>.<span style=\"color: #DCDCDC;\">BodyCount</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "235"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets a <see cref=\"T:Sandbox.PhysicsBody\" /> at given index within this physics group. See <see cref=\"P:Sandbox.PhysicsGroup.BodyCount\" />.",
+            "Params": {
+              "groupIndex": "Index for the body to look up, in range from 0 to <see cref=\"P:Sandbox.PhysicsGroup.BodyCount\" />."
+            }
+          },
+          "DocId": "M:Sandbox.PhysicsGroup.GetBody(System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.PhysicsBody",
+          "Parameters": [
+            {
+              "Name": "groupName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 245
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.GetBody",
+          "Name": "GetBody",
+          "DeclaringType": "Sandbox.PhysicsGroup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns a <span style=\"color: #4EC9B0;\">PhysicsBody</span> by its <span style=\"color: #4EC9B0;\">PhysicsBody</span>.<span style=\"color: #DCDCDC;\">GroupName</span> within this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "243"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a <see cref=\"T:Sandbox.PhysicsBody\" /> by its <see cref=\"P:Sandbox.PhysicsBody.GroupName\" /> within this group.",
+            "Return": "The physics body, or null if body with given name is not found.",
+            "Params": {
+              "groupName": "Name of the physics body to look up."
+            }
+          },
+          "DocId": "M:Sandbox.PhysicsGroup.GetBody(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 274
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.SetSurface",
+          "Name": "SetSurface",
+          "DeclaringType": "Sandbox.PhysicsGroup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the physical properties of each <span style=\"color: #4EC9B0;\">PhysicsShape</span> of this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "271"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the physical properties of each <see cref=\"T:Sandbox.PhysicsShape\">PhysicsShape</see> of this group."
+          },
+          "DocId": "M:Sandbox.PhysicsGroup.SetSurface(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 283
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.Remove",
+          "Name": "Remove",
+          "DeclaringType": "Sandbox.PhysicsGroup",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Delete this group, and all of its bodies"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "280"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Delete this group, and all of its bodies"
+          },
+          "DocId": "M:Sandbox.PhysicsGroup.Remove"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.PhysicsWorld",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.World",
+          "Name": "World",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The world in which this group belongs"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The world in which this group belongs"
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.World"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.Pos",
+          "Name": "Pos",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns position of the first physics body of this group, or zero vector if it has none."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "47"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns position of the first physics body of this group, or zero vector if it has none.",
+            "Remarks": "TODO: How useful is this in its current form? Should it be removed, or at least renamed to Position?"
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.Pos"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.MassCenter",
+          "Name": "MassCenter",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the center of mass for this group of physics bodies."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "55"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the center of mass for this group of physics bodies."
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.MassCenter"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 139
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.Velocity",
+          "Name": "Velocity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets <span style=\"color: #4EC9B0;\">PhysicsBody</span>.<span style=\"color: #DCDCDC;\">Velocity</span> on all bodies of this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "135"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets <see cref=\"P:Sandbox.PhysicsBody.Velocity\" /> on all bodies of this group."
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.Velocity"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 148
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.AngularVelocity",
+          "Name": "AngularVelocity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets <span style=\"color: #4EC9B0;\">PhysicsBody</span>.<span style=\"color: #DCDCDC;\">AngularVelocity</span> on all bodies of this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "144"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets <see cref=\"P:Sandbox.PhysicsBody.AngularVelocity\" /> on all bodies of this group."
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.AngularVelocity"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 162
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.Sleeping",
+          "Name": "Sleeping",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Physics bodies automatically go to sleep after a certain amount of time of inactivity to save on performance. You can use this to wake the body up, or prematurely send it to sleep."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "154"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Physics bodies automatically go to sleep after a certain amount of time of inactivity to save on performance.\nYou can use this to wake the body up, or prematurely send it to sleep."
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.Sleeping"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 191
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.Mass",
+          "Name": "Mass",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The total mass of all the <b>dynamic</b><span style=\"color: #4EC9B0;\">PhysicsBody</span> in this group. When setting the total mass, it will be set on each body proportionally to each of their old masses, i.e. if a body had 25% of previous total mass, it will have 25% of new total mass."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "186"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The total mass of all the <b>dynamic</b><see cref=\"T:Sandbox.PhysicsBody\">PhysicsBodies</see> in this group.\nWhen setting the total mass, it will be set on each body proportionally to each of their old masses,\ni.e. if a body had 25% of previous total mass, it will have 25% of new total mass."
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.Mass"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 200
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.LinearDamping",
+          "Name": "LinearDamping",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets <span style=\"color: #4EC9B0;\">PhysicsBody</span>.<span style=\"color: #DCDCDC;\">LinearDamping</span> on all bodies in this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "196"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets <see cref=\"P:Sandbox.PhysicsBody.LinearDamping\" /> on all bodies in this group."
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.LinearDamping"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 209
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.AngularDamping",
+          "Name": "AngularDamping",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets <span style=\"color: #4EC9B0;\">PhysicsBody</span>.<span style=\"color: #DCDCDC;\">AngularDamping</span> on all bodies in this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "205"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets <see cref=\"P:Sandbox.PhysicsBody.AngularDamping\" /> on all bodies in this group."
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.AngularDamping"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Sandbox.PhysicsBody>",
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.Bodies",
+          "Name": "Bodies",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns all physics bodies that belong to this physics group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "214"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns all physics bodies that belong to this physics group."
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.Bodies"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Physics/PhysicsGroup.cs",
+            "Line": 230
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.BodyCount",
+          "Name": "BodyCount",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns amount of physics bodies that belong to this physics group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "228"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns amount of physics bodies that belong to this physics group."
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.BodyCount"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Sandbox.Physics.PhysicsJoint>",
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsGroup.Joints",
+          "Name": "Joints",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Any and all joints that are attached to any body in this group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Physics\\PhysicsGroup.cs",
+                "249"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Any and all joints that are attached to any body in this group."
+          },
+          "DocId": "P:Sandbox.PhysicsGroup.Joints"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PhysicsGroup",
+      "Name": "PhysicsGroup",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.ActionGraphIgnoreAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents a set of <span style=\"color: #4EC9B0;\">PhysicsBody</span> objects. Think ragdoll."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Physics\\PhysicsGroup.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents a set of <see cref=\"T:Sandbox.PhysicsBody\">PhysicsBody</see> objects. Think ragdoll."
+      },
+      "DocId": "T:Sandbox.PhysicsGroup"
+    }
+  ],
+  "_metadata": {
+    "chunk": 148,
+    "items_count": 2
+  }
+}

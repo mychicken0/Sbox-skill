@@ -1,0 +1,1640 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.PhysicsBodyBuilder.SimplifyMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PhysicsBodyBuilder.SimplifyMethod.QEM",
+          "Name": "QEM",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Quadratic Error Metric � prioritizes preserving shape accuracy."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Quadratic Error Metric � prioritizes preserving shape accuracy."
+          },
+          "DocId": "F:Sandbox.PhysicsBodyBuilder.SimplifyMethod.QEM"
+        },
+        {
+          "FieldType": "Sandbox.PhysicsBodyBuilder.SimplifyMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PhysicsBodyBuilder.SimplifyMethod.IVR",
+          "Name": "IVR",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Iterative Vertex Removal � removes vertices gradually."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Iterative Vertex Removal � removes vertices gradually."
+          },
+          "DocId": "F:Sandbox.PhysicsBodyBuilder.SimplifyMethod.IVR"
+        },
+        {
+          "FieldType": "Sandbox.PhysicsBodyBuilder.SimplifyMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PhysicsBodyBuilder.SimplifyMethod.None",
+          "Name": "None",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "No simplification � use the exact points provided."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "No simplification � use the exact points provided."
+          },
+          "DocId": "F:Sandbox.PhysicsBodyBuilder.SimplifyMethod.None"
+        },
+        {
+          "FieldType": "Sandbox.PhysicsBodyBuilder.SimplifyMethod",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.PhysicsBodyBuilder.SimplifyMethod.IFR",
+          "Name": "IFR",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Iterative Face Removal � removes faces to reduce complexity."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Iterative Face Removal � removes faces to reduce complexity."
+          },
+          "DocId": "F:Sandbox.PhysicsBodyBuilder.SimplifyMethod.IFR"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PhysicsBodyBuilder.SimplifyMethod",
+      "Name": "SimplifyMethod",
+      "DeclaringType": "Sandbox.PhysicsBodyBuilder",
+      "Documentation": {
+        "Summary": "The method used to simplify a hull."
+      },
+      "DocId": "T:Sandbox.PhysicsBodyBuilder.SimplifyMethod"
+    },
+    {
+      "Namespace": "",
+      "Fields": [
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsBodyBuilder.HullSimplify.AngleTolerance",
+          "Name": "AngleTolerance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsBodyBuilder.cs",
+                "125"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum allowed angle change between faces, in degrees."
+          },
+          "DocId": "F:Sandbox.PhysicsBodyBuilder.HullSimplify.AngleTolerance"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsBodyBuilder.HullSimplify.DistanceTolerance",
+          "Name": "DistanceTolerance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsBodyBuilder.cs",
+                "128"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum distance a vertex can be moved during simplification."
+          },
+          "DocId": "F:Sandbox.PhysicsBodyBuilder.HullSimplify.DistanceTolerance"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsBodyBuilder.HullSimplify.MaxFaces",
+          "Name": "MaxFaces",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsBodyBuilder.cs",
+                "131"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum number of faces allowed after simplification."
+          },
+          "DocId": "F:Sandbox.PhysicsBodyBuilder.HullSimplify.MaxFaces"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsBodyBuilder.HullSimplify.MaxEdges",
+          "Name": "MaxEdges",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsBodyBuilder.cs",
+                "134"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum number of edges allowed after simplification."
+          },
+          "DocId": "F:Sandbox.PhysicsBodyBuilder.HullSimplify.MaxEdges"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsBodyBuilder.HullSimplify.MaxVerts",
+          "Name": "MaxVerts",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsBodyBuilder.cs",
+                "137"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum number of vertices allowed after simplification."
+          },
+          "DocId": "F:Sandbox.PhysicsBodyBuilder.HullSimplify.MaxVerts"
+        },
+        {
+          "FieldType": "Sandbox.PhysicsBodyBuilder.SimplifyMethod",
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsBodyBuilder.HullSimplify.Method",
+          "Name": "Method",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsBodyBuilder.cs",
+                "140"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The simplification method to use."
+          },
+          "DocId": "F:Sandbox.PhysicsBodyBuilder.HullSimplify.Method"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PhysicsBodyBuilder.HullSimplify",
+      "Name": "HullSimplify",
+      "DeclaringType": "Sandbox.PhysicsBodyBuilder",
+      "Documentation": {
+        "Summary": "Settings for simplifying a hull shape."
+      },
+      "DocId": "T:Sandbox.PhysicsBodyBuilder.HullSimplify"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 62
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.PhysicsJointBuilder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.PhysicsJointBuilder",
+          "DocId": "M:Sandbox.PhysicsJointBuilder.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsJointBuilder.Body1",
+          "Name": "Body1",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The index of the first body connected by the joint."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The index of the first body connected by the joint."
+          },
+          "DocId": "P:Sandbox.PhysicsJointBuilder.Body1"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsJointBuilder.Body2",
+          "Name": "Body2",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The index of the second body connected by the joint."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "34"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The index of the second body connected by the joint."
+          },
+          "DocId": "P:Sandbox.PhysicsJointBuilder.Body2"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsJointBuilder.Frame1",
+          "Name": "Frame1",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The joint frame in the local space of <span style=\"color: #4EC9B0;\">PhysicsJointBuilder</span>.<span style=\"color: #DCDCDC;\">Body1</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "39"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The joint frame in the local space of <see cref=\"P:Sandbox.PhysicsJointBuilder.Body1\" />."
+          },
+          "DocId": "P:Sandbox.PhysicsJointBuilder.Frame1"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsJointBuilder.Frame2",
+          "Name": "Frame2",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The joint frame in the local space of <span style=\"color: #4EC9B0;\">PhysicsJointBuilder</span>.<span style=\"color: #DCDCDC;\">Body2</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The joint frame in the local space of <see cref=\"P:Sandbox.PhysicsJointBuilder.Body2\" />."
+          },
+          "DocId": "P:Sandbox.PhysicsJointBuilder.Frame2"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsJointBuilder.EnableCollision",
+          "Name": "EnableCollision",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the connected bodies can collide with each other."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the connected bodies can collide with each other."
+          },
+          "DocId": "P:Sandbox.PhysicsJointBuilder.EnableCollision"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsJointBuilder.LinearStrength",
+          "Name": "LinearStrength",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The maximum linear force the joint can withstand before breaking."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The maximum linear force the joint can withstand before breaking."
+          },
+          "DocId": "P:Sandbox.PhysicsJointBuilder.LinearStrength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PhysicsJointBuilder.AngularStrength",
+          "Name": "AngularStrength",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The maximum angular force/torque the joint can withstand before breaking."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The maximum angular force/torque the joint can withstand before breaking."
+          },
+          "DocId": "P:Sandbox.PhysicsJointBuilder.AngularStrength"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PhysicsJointBuilder",
+      "Name": "PhysicsJointBuilder",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides ability to generate a physics joint for a <span style=\"color: #4EC9B0;\">Model</span> at runtime."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Provides ability to generate a physics joint for a <see cref=\"T:Sandbox.Model\" /> at runtime."
+      },
+      "DocId": "T:Sandbox.PhysicsJointBuilder"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "b",
+              "Type": "T"
+            },
+            {
+              "Name": "v",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.PhysicsJointBuilderExtensions.WithBody1",
+          "Name": "WithBody1",
+          "DeclaringType": "Sandbox.PhysicsJointBuilderExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "67"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.PhysicsJointBuilderExtensions.WithBody1``1(``0,System.Int32)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "b",
+              "Type": "T"
+            },
+            {
+              "Name": "v",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.PhysicsJointBuilderExtensions.WithBody2",
+          "Name": "WithBody2",
+          "DeclaringType": "Sandbox.PhysicsJointBuilderExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "70"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.PhysicsJointBuilderExtensions.WithBody2``1(``0,System.Int32)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "b",
+              "Type": "T"
+            },
+            {
+              "Name": "v",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.PhysicsJointBuilderExtensions.WithFrame1",
+          "Name": "WithFrame1",
+          "DeclaringType": "Sandbox.PhysicsJointBuilderExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "73"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.PhysicsJointBuilderExtensions.WithFrame1``1(``0,Transform)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "b",
+              "Type": "T"
+            },
+            {
+              "Name": "v",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 76
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.PhysicsJointBuilderExtensions.WithFrame2",
+          "Name": "WithFrame2",
+          "DeclaringType": "Sandbox.PhysicsJointBuilderExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "76"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.PhysicsJointBuilderExtensions.WithFrame2``1(``0,Transform)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "b",
+              "Type": "T"
+            },
+            {
+              "Name": "v",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.PhysicsJointBuilderExtensions.WithCollision",
+          "Name": "WithCollision",
+          "DeclaringType": "Sandbox.PhysicsJointBuilderExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.PhysicsJointBuilderExtensions.WithCollision``1(``0,System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "b",
+              "Type": "T"
+            },
+            {
+              "Name": "v",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.PhysicsJointBuilderExtensions.WithLinearStrength",
+          "Name": "WithLinearStrength",
+          "DeclaringType": "Sandbox.PhysicsJointBuilderExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "82"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.PhysicsJointBuilderExtensions.WithLinearStrength``1(``0,System.Single)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "b",
+              "Type": "T"
+            },
+            {
+              "Name": "v",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.PhysicsJointBuilderExtensions.WithAngularStrength",
+          "Name": "WithAngularStrength",
+          "DeclaringType": "Sandbox.PhysicsJointBuilderExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "85"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.PhysicsJointBuilderExtensions.WithAngularStrength``1(``0,System.Single)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "IsExtension": true,
+      "FullName": "Sandbox.PhysicsJointBuilderExtensions",
+      "Name": "PhysicsJointBuilderExtensions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+            "64"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.PhysicsJointBuilderExtensions"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.PhysicsJointBuilder",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.HingeJointBuilder",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "max",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HingeJointBuilder.WithTwistLimit",
+          "Name": "WithTwistLimit",
+          "DeclaringType": "Sandbox.HingeJointBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "119"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.HingeJointBuilder.WithTwistLimit(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.HingeJointBuilder",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 122
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HingeJointBuilder.WithTargetVelocity",
+          "Name": "WithTargetVelocity",
+          "DeclaringType": "Sandbox.HingeJointBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "122"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.HingeJointBuilder.WithTargetVelocity(Vector3)"
+        },
+        {
+          "ReturnType": "Sandbox.HingeJointBuilder",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HingeJointBuilder.WithMaxTorque",
+          "Name": "WithMaxTorque",
+          "DeclaringType": "Sandbox.HingeJointBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "125"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.HingeJointBuilder.WithMaxTorque(System.Single)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HingeJointBuilder.EnableTwistLimit",
+          "Name": "EnableTwistLimit",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the hinge enforces a twist angle limit."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "96"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the hinge enforces a twist angle limit."
+          },
+          "DocId": "P:Sandbox.HingeJointBuilder.EnableTwistLimit"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HingeJointBuilder.TwistLimit",
+          "Name": "TwistLimit",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The minimum and maximum allowed twist angles (degrees)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "101"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The minimum and maximum allowed twist angles (degrees)."
+          },
+          "DocId": "P:Sandbox.HingeJointBuilder.TwistLimit"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HingeJointBuilder.EnableMotor",
+          "Name": "EnableMotor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the hinge's angular motor is enabled."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "106"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the hinge's angular motor is enabled."
+          },
+          "DocId": "P:Sandbox.HingeJointBuilder.EnableMotor"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 112
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HingeJointBuilder.TargetVelocity",
+          "Name": "TargetVelocity",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Target angular velocity for the motor."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "111"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Target angular velocity for the motor."
+          },
+          "DocId": "P:Sandbox.HingeJointBuilder.TargetVelocity"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 117
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HingeJointBuilder.MaxTorque",
+          "Name": "MaxTorque",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Maximum torque the motor may apply."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "116"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum torque the motor may apply."
+          },
+          "DocId": "P:Sandbox.HingeJointBuilder.MaxTorque"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.HingeJointBuilder",
+      "Name": "HingeJointBuilder",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides ability to generate a hinge joint for a <span style=\"color: #4EC9B0;\">Model</span> at runtime."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+            "91"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Provides ability to generate a hinge joint for a <see cref=\"T:Sandbox.Model\" /> at runtime."
+      },
+      "DocId": "T:Sandbox.HingeJointBuilder"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.PhysicsJointBuilder",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.BallJointBuilder",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 159
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BallJointBuilder.WithSwingLimit",
+          "Name": "WithSwingLimit",
+          "DeclaringType": "Sandbox.BallJointBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "159"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.BallJointBuilder.WithSwingLimit(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.BallJointBuilder",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "max",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 162
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BallJointBuilder.WithTwistLimit",
+          "Name": "WithTwistLimit",
+          "DeclaringType": "Sandbox.BallJointBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "162"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.BallJointBuilder.WithTwistLimit(System.Single,System.Single)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BallJointBuilder.EnableSwingLimit",
+          "Name": "EnableSwingLimit",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the joint enforces a swing angle limit."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "141"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the joint enforces a swing angle limit."
+          },
+          "DocId": "P:Sandbox.BallJointBuilder.EnableSwingLimit"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 147
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BallJointBuilder.EnableTwistLimit",
+          "Name": "EnableTwistLimit",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the joint enforces a twist angle limit."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "146"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the joint enforces a twist angle limit."
+          },
+          "DocId": "P:Sandbox.BallJointBuilder.EnableTwistLimit"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 152
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BallJointBuilder.SwingLimit",
+          "Name": "SwingLimit",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Maximum allowed swing angle in degrees."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "151"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maximum allowed swing angle in degrees."
+          },
+          "DocId": "P:Sandbox.BallJointBuilder.SwingLimit"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 157
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BallJointBuilder.TwistLimit",
+          "Name": "TwistLimit",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Minimum and maximum allowed twist angles in degrees."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "156"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Minimum and maximum allowed twist angles in degrees."
+          },
+          "DocId": "P:Sandbox.BallJointBuilder.TwistLimit"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.BallJointBuilder",
+      "Name": "BallJointBuilder",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides ability to generate a ball joint for a <span style=\"color: #4EC9B0;\">Model</span> at runtime."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+            "136"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Provides ability to generate a ball joint for a <see cref=\"T:Sandbox.Model\" /> at runtime."
+      },
+      "DocId": "T:Sandbox.BallJointBuilder"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.PhysicsJointBuilder",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.FixedJointBuilder",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 200
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FixedJointBuilder.WithLinearFrequency",
+          "Name": "WithLinearFrequency",
+          "DeclaringType": "Sandbox.FixedJointBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "200"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.FixedJointBuilder.WithLinearFrequency(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.FixedJointBuilder",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 203
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FixedJointBuilder.WithLinearDamping",
+          "Name": "WithLinearDamping",
+          "DeclaringType": "Sandbox.FixedJointBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "203"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.FixedJointBuilder.WithLinearDamping(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.FixedJointBuilder",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 206
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FixedJointBuilder.WithAngularFrequency",
+          "Name": "WithAngularFrequency",
+          "DeclaringType": "Sandbox.FixedJointBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "206"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.FixedJointBuilder.WithAngularFrequency(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.FixedJointBuilder",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 209
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FixedJointBuilder.WithAngularDamping",
+          "Name": "WithAngularDamping",
+          "DeclaringType": "Sandbox.FixedJointBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "209"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.FixedJointBuilder.WithAngularDamping(System.Single)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 180
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FixedJointBuilder.LinearFrequency",
+          "Name": "LinearFrequency",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The frequency of the joint's linear spring in hertz. Higher values make the joint stiffer in translation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "179"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The frequency of the joint's linear spring in hertz.\nHigher values make the joint stiffer in translation."
+          },
+          "DocId": "P:Sandbox.FixedJointBuilder.LinearFrequency"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 186
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FixedJointBuilder.LinearDamping",
+          "Name": "LinearDamping",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The damping ratio for the joint's linear spring. Higher values reduce oscillation in translation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "185"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The damping ratio for the joint's linear spring.\nHigher values reduce oscillation in translation."
+          },
+          "DocId": "P:Sandbox.FixedJointBuilder.LinearDamping"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 192
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FixedJointBuilder.AngularFrequency",
+          "Name": "AngularFrequency",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The frequency of the joint's angular spring in hertz. Higher values make the joint stiffer in rotation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "191"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The frequency of the joint's angular spring in hertz.\nHigher values make the joint stiffer in rotation."
+          },
+          "DocId": "P:Sandbox.FixedJointBuilder.AngularFrequency"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 198
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FixedJointBuilder.AngularDamping",
+          "Name": "AngularDamping",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The damping ratio for the joint's angular spring. Higher values reduce oscillation in rotation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "197"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The damping ratio for the joint's angular spring.\nHigher values reduce oscillation in rotation."
+          },
+          "DocId": "P:Sandbox.FixedJointBuilder.AngularDamping"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.FixedJointBuilder",
+      "Name": "FixedJointBuilder",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides ability to generate a fixed joint for a <span style=\"color: #4EC9B0;\">Model</span> at runtime."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+            "173"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Provides ability to generate a fixed joint for a <see cref=\"T:Sandbox.Model\" /> at runtime."
+      },
+      "DocId": "T:Sandbox.FixedJointBuilder"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.PhysicsJointBuilder",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.SliderJointBuilder",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "max",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 233
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SliderJointBuilder.WithLimit",
+          "Name": "WithLimit",
+          "DeclaringType": "Sandbox.SliderJointBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "233"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.SliderJointBuilder.WithLimit(System.Single,System.Single)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 226
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SliderJointBuilder.EnableLimit",
+          "Name": "EnableLimit",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the joint enforces a translation limit along its axis."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "225"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the joint enforces a translation limit along its axis."
+          },
+          "DocId": "P:Sandbox.SliderJointBuilder.EnableLimit"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 231
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SliderJointBuilder.Limit",
+          "Name": "Limit",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The minimum and maximum allowed translation along the joint axis."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "230"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The minimum and maximum allowed translation along the joint axis."
+          },
+          "DocId": "P:Sandbox.SliderJointBuilder.Limit"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SliderJointBuilder",
+      "Name": "SliderJointBuilder",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides ability to generate a slider joint for a <span style=\"color: #4EC9B0;\">Model</span> at runtime."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+            "220"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Provides ability to generate a slider joint for a <see cref=\"T:Sandbox.Model\" /> at runtime."
+      },
+      "DocId": "T:Sandbox.SliderJointBuilder"
+    }
+  ],
+  "_metadata": {
+    "chunk": 56,
+    "items_count": 8
+  }
+}

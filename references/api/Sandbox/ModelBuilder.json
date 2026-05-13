@@ -1,0 +1,1675 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.AnimationBuilder",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "frameRate",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.AnimationBuilder.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddAnimation",
+          "Name": "AddAnimation",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds an animation to this model and returns a builder to construct the animation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.AnimationBuilder.cs",
+                "146"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adds an animation to this model and returns a builder to construct the animation.",
+            "Return": "An <see cref=\"T:Sandbox.AnimationBuilder\" /> instance to construct the animation.",
+            "Params": {
+              "name": "The name of the animation.",
+              "frameRate": "The frames per second of the animation."
+            }
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddAnimation(System.String,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "mass",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.WithMass",
+          "Name": "WithMass",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Total mass of the physics body (Default is 1000)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "95"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Total mass of the physics body (Default is 1000)"
+          },
+          "DocId": "M:Sandbox.ModelBuilder.WithMass(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.WithSurface",
+          "Name": "WithSurface",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Surface property to use for collision"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "105"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Surface property to use for collision"
+          },
+          "DocId": "M:Sandbox.ModelBuilder.WithSurface(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "lod",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "distance",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.WithLodDistance",
+          "Name": "WithLodDistance",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "LOD switch distance increment for each Level of Detail (LOD) level. (Default is 50)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "115"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "LOD switch distance increment for each Level of Detail (LOD) level. (Default is 50)"
+          },
+          "DocId": "M:Sandbox.ModelBuilder.WithLodDistance(System.Int32,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "extents",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "center",
+              "Type": "System.Nullable`1<Vector3>",
+              "Default": "null"
+            },
+            {
+              "Name": "rotation",
+              "Type": "System.Nullable`1<Rotation>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddCollisionBox",
+          "Name": "AddCollisionBox",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add box collision shape."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "128"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddCollisionBox(Vector3,System.Nullable`1{Vector3},System.Nullable`1{Rotation})"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "center",
+              "Type": "Vector3",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 144
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddCollisionSphere",
+          "Name": "AddCollisionSphere",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add sphere collision shape."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "142"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add sphere collision shape."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddCollisionSphere(System.Single,Vector3)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "center0",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "center1",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 158
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddCollisionCapsule",
+          "Name": "AddCollisionCapsule",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add capsule collision shape."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "156"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add capsule collision shape."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddCollisionCapsule(Vector3,Vector3,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Collections.Generic.List`1<Vector3>"
+            },
+            {
+              "Name": "center",
+              "Type": "System.Nullable`1<Vector3>",
+              "Default": "null"
+            },
+            {
+              "Name": "rotation",
+              "Type": "System.Nullable`1<Rotation>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 174
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddCollisionHull",
+          "Name": "AddCollisionHull",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a CONVEX hull collision shape."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "171"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddCollisionHull(System.Collections.Generic.List`1{Vector3},System.Nullable`1{Vector3},System.Nullable`1{Rotation})"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Span`1<Vector3>"
+            },
+            {
+              "Name": "center",
+              "Type": "System.Nullable`1<Vector3>",
+              "Default": "null"
+            },
+            {
+              "Name": "rotation",
+              "Type": "System.Nullable`1<Rotation>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 182
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddCollisionHull",
+          "Name": "AddCollisionHull",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a CONVEX hull collision shape."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "179"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddCollisionHull(System.Span`1{Vector3},System.Nullable`1{Vector3},System.Nullable`1{Rotation})"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Collections.Generic.List`1<Vector3>"
+            },
+            {
+              "Name": "indices",
+              "Type": "System.Collections.Generic.List`1<System.Int32>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 203
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddCollisionMesh",
+          "Name": "AddCollisionMesh",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a CONCAVE mesh collision shape. (This shape can NOT be physically simulated)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "200"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddCollisionMesh(System.Collections.Generic.List`1{Vector3},System.Collections.Generic.List`1{System.Int32})"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Collections.Generic.List`1<Vector3>"
+            },
+            {
+              "Name": "indices",
+              "Type": "System.Collections.Generic.List`1<System.Int32>"
+            },
+            {
+              "Name": "materials",
+              "Type": "System.Collections.Generic.List`1<System.Byte>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 211
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddCollisionMesh",
+          "Name": "AddCollisionMesh",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a CONCAVE mesh collision shape. (This shape can NOT be physically simulated)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "208"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddCollisionMesh(System.Collections.Generic.List`1{Vector3},System.Collections.Generic.List`1{System.Int32},System.Collections.Generic.List`1{System.Byte})"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Span`1<Vector3>"
+            },
+            {
+              "Name": "indices",
+              "Type": "System.Span`1<System.Int32>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 219
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddCollisionMesh",
+          "Name": "AddCollisionMesh",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a CONCAVE mesh collision shape. (This shape can NOT be physically simulated)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "216"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddCollisionMesh(System.Span`1{Vector3},System.Span`1{System.Int32})"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Span`1<Vector3>"
+            },
+            {
+              "Name": "indices",
+              "Type": "System.Span`1<System.Int32>"
+            },
+            {
+              "Name": "materials",
+              "Type": "System.Span`1<System.Byte>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 227
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddCollisionMesh",
+          "Name": "AddCollisionMesh",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a CONCAVE mesh collision shape. (This shape can NOT be physically simulated)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "224"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddCollisionMesh(System.Span`1{Vector3},System.Span`1{System.Int32},System.Span`1{System.Byte})"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Collections.Generic.List`1<Vector3>"
+            },
+            {
+              "Name": "indices",
+              "Type": "System.Collections.Generic.List`1<System.Int32>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 282
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddTraceMesh",
+          "Name": "AddTraceMesh",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add trace vertices for tracing against mesh"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "279"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddTraceMesh(System.Collections.Generic.List`1{Vector3},System.Collections.Generic.List`1{System.Int32})"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "vertices",
+              "Type": "System.Span`1<Vector3>"
+            },
+            {
+              "Name": "indices",
+              "Type": "System.Span`1<System.Int32>"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 290
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddTraceMesh",
+          "Name": "AddTraceMesh",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add trace vertices for tracing against mesh"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "287"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddTraceMesh(System.Span`1{Vector3},System.Span`1{System.Int32})"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "mesh",
+              "Type": "Sandbox.Mesh"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 322
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddMesh",
+          "Name": "AddMesh",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a mesh."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "320"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a mesh."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddMesh(Sandbox.Mesh)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "meshes",
+              "Type": "Sandbox.Mesh[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 331
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddMeshes",
+          "Name": "AddMeshes",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a bunch of meshes."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "329"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a bunch of meshes."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddMeshes(Sandbox.Mesh[])"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "mesh",
+              "Type": "Sandbox.Mesh"
+            },
+            {
+              "Name": "lod",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 341
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddMesh",
+          "Name": "AddMesh",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a mesh to a Level of Detail (LOD) group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "338"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a mesh to a Level of Detail (LOD) group."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddMesh(Sandbox.Mesh,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "meshes",
+              "Type": "Sandbox.Mesh[]"
+            },
+            {
+              "Name": "lod",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 353
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddMeshes",
+          "Name": "AddMeshes",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a bunch of meshes to a Level of Detail (LOD) group."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "350"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a bunch of meshes to a Level of Detail (LOD) group."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddMeshes(Sandbox.Mesh[],System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "mesh",
+              "Type": "Sandbox.Mesh"
+            },
+            {
+              "Name": "groupName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "choiceIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 365
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddMesh",
+          "Name": "AddMesh",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a mesh to a body group choice."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "362"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a mesh to a body group choice."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddMesh(Sandbox.Mesh,System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "mesh",
+              "Type": "Sandbox.Mesh"
+            },
+            {
+              "Name": "lod",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "groupName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "choiceIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 373
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddMesh",
+          "Name": "AddMesh",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a mesh to a Level of Detail (LOD) and a body group choice."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "370"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a mesh to a Level of Detail (LOD) and a body group choice."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddMesh(Sandbox.Mesh,System.Int32,System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "bone",
+              "Type": "Sandbox.ModelBuilder.Bone"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 469
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddBone",
+          "Name": "AddBone",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a bone to the skeleton via a Sandbox.ModelBuilder.Bone struct."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "467"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a bone to the skeleton via a <see cref=\"T:Sandbox.ModelBuilder.Bone\" /> struct."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddBone(Sandbox.ModelBuilder.Bone)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "bones",
+              "Type": "Sandbox.ModelBuilder.Bone[]"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 478
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddBones",
+          "Name": "AddBones",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add multiple bones to the skeleton."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "475"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add multiple bones to the skeleton."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddBones(Sandbox.ModelBuilder.Bone[])"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "rotation",
+              "Type": "Rotation"
+            },
+            {
+              "Name": "parentName",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 490
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddBone",
+          "Name": "AddBone",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a bone to the skeleton."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "487"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a bone to the skeleton."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddBone(System.String,Vector3,Rotation,System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "rotation",
+              "Type": "Rotation"
+            },
+            {
+              "Name": "parentName",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 498
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddAttachment",
+          "Name": "AddAttachment",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add an attachment to the skeleton."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "495"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add an attachment to the skeleton."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddAttachment(System.String,Vector3,Rotation,System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 537
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.WithName",
+          "Name": "WithName",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Provide a name to identify the model by"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "535"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Provide a name to identify the model by",
+            "Params": {
+              "name": "Desired model name"
+            }
+          },
+          "DocId": "M:Sandbox.ModelBuilder.WithName(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.ModelBuilder",
+          "Parameters": [
+            {
+              "Name": "surface",
+              "Type": "Sandbox.Surface"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 545
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddSurface",
+          "Name": "AddSurface",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "543"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddSurface(Sandbox.Surface)"
+        },
+        {
+          "ReturnType": "Sandbox.Model",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 556
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Finish creation of the model."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.Builder.cs",
+                "553"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Finish creation of the model."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.Create"
+        },
+        {
+          "ReturnType": "Sandbox.MaterialGroupBuilder",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.MaterialGroupBuilder.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddMaterialGroup",
+          "Name": "AddMaterialGroup",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a named material group builder."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.MaterialGroupBuilder.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a named material group builder."
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddMaterialGroup(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.PhysicsBodyBuilder",
+          "Parameters": [
+            {
+              "Name": "mass",
+              "Type": "System.Single",
+              "Default": "0"
+            },
+            {
+              "Name": "surface",
+              "Type": "Sandbox.Surface",
+              "Default": "null"
+            },
+            {
+              "Name": "boneName",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsBodyBuilder.cs",
+            "Line": 220
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddBody",
+          "Name": "AddBody",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds a new physics body to this object."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsBodyBuilder.cs",
+                "217"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adds a new physics body to this object.",
+            "Return": "A new <see cref=\"T:Sandbox.PhysicsBodyBuilder\" /> for configuring the body.",
+            "Params": {
+              "mass": "The mass of the body. Default is <c>0</c>.",
+              "surface": "The surface properties to apply. Default is <c>default</c>.",
+              "boneName": "Optional name of the bone this body is attached to.  \nLeave empty for non-skeletal bodies."
+            }
+          },
+          "DocId": "M:Sandbox.ModelBuilder.AddBody(System.Single,Sandbox.Surface,System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.HingeJointBuilder",
+          "Parameters": [
+            {
+              "Name": "body1",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "body2",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "frame1",
+              "Type": "System.Nullable`1<Transform>",
+              "Default": "null"
+            },
+            {
+              "Name": "frame2",
+              "Type": "System.Nullable`1<Transform>",
+              "Default": "null"
+            },
+            {
+              "Name": "collision",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 268
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddHingeJoint",
+          "Name": "AddHingeJoint",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds a hinge joint between two bodies, allowing rotation around a single axis."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "265"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddHingeJoint(System.Int32,System.Int32,System.Nullable`1{Transform},System.Nullable`1{Transform},System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.BallJointBuilder",
+          "Parameters": [
+            {
+              "Name": "body1",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "body2",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "frame1",
+              "Type": "System.Nullable`1<Transform>",
+              "Default": "null"
+            },
+            {
+              "Name": "frame2",
+              "Type": "System.Nullable`1<Transform>",
+              "Default": "null"
+            },
+            {
+              "Name": "collision",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 284
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddBallJoint",
+          "Name": "AddBallJoint",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds a ball joint between two bodies, allowing free rotation within optional swing/twist limits."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "281"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddBallJoint(System.Int32,System.Int32,System.Nullable`1{Transform},System.Nullable`1{Transform},System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.FixedJointBuilder",
+          "Parameters": [
+            {
+              "Name": "body1",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "body2",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "frame1",
+              "Type": "System.Nullable`1<Transform>",
+              "Default": "null"
+            },
+            {
+              "Name": "frame2",
+              "Type": "System.Nullable`1<Transform>",
+              "Default": "null"
+            },
+            {
+              "Name": "collision",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 300
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddFixedJoint",
+          "Name": "AddFixedJoint",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds a fixed joint between two bodies, locking their relative position and orientation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "297"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddFixedJoint(System.Int32,System.Int32,System.Nullable`1{Transform},System.Nullable`1{Transform},System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.SliderJointBuilder",
+          "Parameters": [
+            {
+              "Name": "body1",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "body2",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "frame1",
+              "Type": "System.Nullable`1<Transform>",
+              "Default": "null"
+            },
+            {
+              "Name": "frame2",
+              "Type": "System.Nullable`1<Transform>",
+              "Default": "null"
+            },
+            {
+              "Name": "collision",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Resources/Model/Model.PhysicsJointBuilder.cs",
+            "Line": 316
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.AddSliderJoint",
+          "Name": "AddSliderJoint",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds a slider joint between two bodies, allowing motion along a single axis."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+                "313"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.AddSliderJoint(System.Int32,System.Int32,System.Nullable`1{Transform},System.Nullable`1{Transform},System.Boolean)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Resources/Model/Model.AnimationBuilder.cs",
+            "Line": 140
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ModelBuilder",
+          "DocId": "M:Sandbox.ModelBuilder.#ctor"
+        }
+      ],
+      "Properties": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ModelBuilder",
+      "Name": "ModelBuilder",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides ability to generate <span style=\"color: #4EC9B0;\">Model</span>s at runtime. A static instance of this class is available at <span style=\"color: #4EC9B0;\">Model</span>.<span style=\"color: #DCDCDC;\">Builder</span>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.AnimationBuilder.cs",
+            "136"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides ability to generate <span style=\"color: #4EC9B0;\">Model</span>s at runtime. A static instance of this class is available at <span style=\"color: #4EC9B0;\">Model</span>.<span style=\"color: #DCDCDC;\">Builder</span>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.Builder.cs",
+            "11"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides ability to generate <span style=\"color: #4EC9B0;\">Model</span>s at runtime. A static instance of this class is available at <span style=\"color: #4EC9B0;\">Model</span>.<span style=\"color: #DCDCDC;\">Builder</span>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.MaterialGroupBuilder.cs",
+            "42"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides ability to generate <span style=\"color: #4EC9B0;\">Model</span>s at runtime. A static instance of this class is available at <span style=\"color: #4EC9B0;\">Model</span>.<span style=\"color: #DCDCDC;\">Builder</span>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.PhysicsBodyBuilder.cs",
+            "201"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Provides ability to generate <span style=\"color: #4EC9B0;\">Model</span>s at runtime. A static instance of this class is available at <span style=\"color: #4EC9B0;\">Model</span>.<span style=\"color: #DCDCDC;\">Builder</span>"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Resources\\Model\\Model.PhysicsJointBuilder.cs",
+            "241"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Provides ability to generate <see cref=\"T:Sandbox.Model\" />s at runtime.\nA static instance of this class is available at <see cref=\"P:Sandbox.Model.Builder\" />"
+      },
+      "DocId": "T:Sandbox.ModelBuilder"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "ParentName",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Position",
+              "Out": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "Rotation",
+              "Out": true,
+              "Type": "Rotation"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.Bone.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.ModelBuilder.Bone",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ModelBuilder.Bone.Deconstruct(System.String@,System.String@,Vector3@,Rotation@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "ParentName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "Rotation",
+              "Type": "Rotation"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.Bone..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ModelBuilder.Bone",
+          "Documentation": {
+            "Summary": "A bone definition for use with <see cref=\"T:Sandbox.ModelBuilder\" />.",
+            "Params": {
+              "Name": "Name of the bone.",
+              "ParentName": "Name of the parent bone.",
+              "Position": "Position of the bone, relative to its parent.",
+              "Rotation": "Rotation of the bone, relative to its parent."
+            }
+          },
+          "DocId": "M:Sandbox.ModelBuilder.Bone.#ctor(System.String,System.String,Vector3,Rotation)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 462
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.Bone.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "Name of the bone."
+          },
+          "DocId": "P:Sandbox.ModelBuilder.Bone.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 462
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.Bone.ParentName",
+          "Name": "ParentName",
+          "Documentation": {
+            "Summary": "Name of the parent bone."
+          },
+          "DocId": "P:Sandbox.ModelBuilder.Bone.ParentName"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 462
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.Bone.Position",
+          "Name": "Position",
+          "Documentation": {
+            "Summary": "Position of the bone, relative to its parent."
+          },
+          "DocId": "P:Sandbox.ModelBuilder.Bone.Position"
+        },
+        {
+          "PropertyType": "Rotation",
+          "Loc": {
+            "File": "Resources/Model/Model.Builder.cs",
+            "Line": 462
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelBuilder.Bone.Rotation",
+          "Name": "Rotation",
+          "Documentation": {
+            "Summary": "Rotation of the bone, relative to its parent."
+          },
+          "DocId": "P:Sandbox.ModelBuilder.Bone.Rotation"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ModelBuilder.Bone",
+      "Name": "Bone",
+      "DeclaringType": "Sandbox.ModelBuilder",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "A bone definition for use with <see cref=\"T:Sandbox.ModelBuilder\" />.",
+        "Params": {
+          "Name": "Name of the bone.",
+          "ParentName": "Name of the parent bone.",
+          "Position": "Position of the bone, relative to its parent.",
+          "Rotation": "Rotation of the bone, relative to its parent."
+        }
+      },
+      "DocId": "T:Sandbox.ModelBuilder.Bone"
+    }
+  ],
+  "_metadata": {
+    "chunk": 53,
+    "items_count": 2
+  }
+}

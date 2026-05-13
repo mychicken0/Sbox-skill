@@ -1,0 +1,1229 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Particle",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/Particle.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Particle.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Particle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "89"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Particle.Create"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Particle.cs",
+            "Line": 124
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.Particle",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get an arbituary data value"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "121"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get an arbituary data value"
+          },
+          "DocId": "M:Sandbox.Particle.Get``1(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "tvalue",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Particle.cs",
+            "Line": 136
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Particle",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set an arbituary data value"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "134"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set an arbituary data value"
+          },
+          "DocId": "M:Sandbox.Particle.Set``1(System.String,``0)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "amount",
+              "In": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Particle.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.ApplyDamping",
+          "Name": "ApplyDamping",
+          "DeclaringType": "Sandbox.Particle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "140"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Particle.ApplyDamping(System.Single@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "seed",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "line",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Particle.cs",
+            "Line": 253
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Rand",
+          "Name": "Rand",
+          "DeclaringType": "Sandbox.Particle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "249"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Particle.Rand(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "Sandbox.Particle.BaseListener"
+            },
+            {
+              "Name": "sourceComponent",
+              "Type": "Sandbox.Component"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Particle.Listeners.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.AddListener",
+          "Name": "AddListener",
+          "DeclaringType": "Sandbox.Particle",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a listener."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.Listeners.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a listener."
+          },
+          "DocId": "M:Sandbox.Particle.AddListener(Sandbox.Particle.BaseListener,Sandbox.Component)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "Sandbox.Particle.BaseListener"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/Particle.Listeners.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.RemoveListener",
+          "Name": "RemoveListener",
+          "DeclaringType": "Sandbox.Particle",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove a listener"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.Listeners.cs",
+                "65"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Remove a listener"
+          },
+          "DocId": "M:Sandbox.Particle.RemoveListener(Sandbox.Particle.BaseListener)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Particle",
+          "DocId": "M:Sandbox.Particle.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Particles/Particle.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.LifeTimeRemaining",
+          "Name": "LifeTimeRemaining",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "80"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Particle.LifeTimeRemaining"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Position",
+          "Name": "Position",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Position"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Size"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Velocity",
+          "Name": "Velocity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Velocity"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Color",
+          "Name": "Color",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Color"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.OverlayColor",
+          "Name": "OverlayColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.OverlayColor"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Alpha",
+          "Name": "Alpha",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Alpha"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.BornTime",
+          "Name": "BornTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.BornTime"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Age",
+          "Name": "Age",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Age"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Radius",
+          "Name": "Radius",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Radius"
+        },
+        {
+          "FieldType": "Angles",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Angles",
+          "Name": "Angles",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Angles"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Sequence",
+          "Name": "Sequence",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "24"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Sequence"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.SequenceTime",
+          "Name": "SequenceTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.SequenceTime"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Frame",
+          "Name": "Frame",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Frame"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Random01",
+          "Name": "Random01",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Random01"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Random02",
+          "Name": "Random02",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Random02"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Random03",
+          "Name": "Random03",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Random03"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Random04",
+          "Name": "Random04",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "40"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Random04"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Random05",
+          "Name": "Random05",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "43"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Random05"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Random06",
+          "Name": "Random06",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Random06"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.Random07",
+          "Name": "Random07",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "49"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Random07"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.HitPos",
+          "Name": "HitPos",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "52"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.HitPos"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.HitNormal",
+          "Name": "HitNormal",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "54"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.HitNormal"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.HitTime",
+          "Name": "HitTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "57"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.HitTime"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.LastHitTime",
+          "Name": "LastHitTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "58"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.LastHitTime"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.StartPosition",
+          "Name": "StartPosition",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "59"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.StartPosition"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.LifeDelta",
+          "Name": "LifeDelta",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A range from 0 to 1 descriving how long this particle has been alive"
+          },
+          "DocId": "F:Sandbox.Particle.LifeDelta"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.DeathTime",
+          "Name": "DeathTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "69"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The time that this particle is scheduled to die"
+          },
+          "DocId": "F:Sandbox.Particle.DeathTime"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.TimeScale",
+          "Name": "TimeScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "72"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.TimeScale"
+        },
+        {
+          "FieldType": "System.Collections.Generic.Queue`1<Sandbox.Particle>",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Particle.Pool",
+          "Name": "Pool",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.cs",
+                "87"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Particle.Pool"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Particle",
+      "Name": "Particle",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\Particle.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\Particle.Listeners.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Particle"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "p",
+              "Type": "Sandbox.Particle"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.BaseListener.OnEnabled",
+          "Name": "OnEnabled",
+          "DeclaringType": "Sandbox.Particle.BaseListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called in a thread. The particle is in its first position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.Listeners.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called in a thread. The particle is in its first position."
+          },
+          "DocId": "M:Sandbox.Particle.BaseListener.OnEnabled(Sandbox.Particle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "p",
+              "Type": "Sandbox.Particle"
+            },
+            {
+              "Name": "dt",
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.BaseListener.OnUpdate",
+          "Name": "OnUpdate",
+          "DeclaringType": "Sandbox.Particle.BaseListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called in a thread, guarenteed to be called after OnEnabled"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.Listeners.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called in a thread, guarenteed to be called after OnEnabled"
+          },
+          "DocId": "M:Sandbox.Particle.BaseListener.OnUpdate(Sandbox.Particle,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "p",
+              "Type": "Sandbox.Particle"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.BaseListener.OnDisabled",
+          "Name": "OnDisabled",
+          "DeclaringType": "Sandbox.Particle.BaseListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called in a thread. OnUpdate won't be called again."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.Listeners.cs",
+                "37"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called in a thread. OnUpdate won't be called again."
+          },
+          "DocId": "M:Sandbox.Particle.BaseListener.OnDisabled(Sandbox.Particle)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Particle.BaseListener..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Particle.BaseListener",
+          "DocId": "M:Sandbox.Particle.BaseListener.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Component",
+          "Loc": {
+            "File": "Scene/Components/Particles/Particle.Listeners.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Particle.BaseListener.Source",
+          "Name": "Source",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The component that created this listener. May be null."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\Particle.Listeners.cs",
+                "17"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The component that created this listener. May be null."
+          },
+          "DocId": "P:Sandbox.Particle.BaseListener.Source"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Particle.BaseListener",
+      "Name": "BaseListener",
+      "DeclaringType": "Sandbox.Particle",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Allows creating a class that will exist for as long as a particle. The methods get called in the particle thread, which removes the need to run through the particle list again, but it has the danger and restrictions that come with threaded code."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\Particle.Listeners.cs",
+            "12"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Allows creating a class that will exist for as long as a particle.\nThe methods get called in the particle thread, which removes the need to run through\nthe particle list again, but it has the danger and restrictions that come with threaded code."
+      },
+      "DocId": "T:Sandbox.Particle.BaseListener"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/ParticleControlPoint.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleControlPoint.OutputValue",
+          "Name": "OutputValue",
+          "DeclaringType": "Sandbox.ParticleControlPoint",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleControlPoint.cs",
+                "24"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleControlPoint.OutputValue"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.ParticleControlPoint.ControlPointValueInput",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleControlPoint.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleControlPoint.Value",
+          "Name": "Value",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleControlPoint.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleControlPoint.Value"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleControlPoint.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleControlPoint.StringCP",
+          "Name": "StringCP",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleControlPoint.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleControlPoint.StringCP"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleControlPoint.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleControlPoint.VectorValue",
+          "Name": "VectorValue",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleControlPoint.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleControlPoint.VectorValue"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleControlPoint.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleControlPoint.FloatValue",
+          "Name": "FloatValue",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleControlPoint.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleControlPoint.FloatValue"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleControlPoint.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleControlPoint.ColorValue",
+          "Name": "ColorValue",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleControlPoint.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleControlPoint.ColorValue"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleControlPoint.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleControlPoint.GameObjectValue",
+          "Name": "GameObjectValue",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleControlPoint.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleControlPoint.GameObjectValue"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ParticleControlPoint",
+      "Name": "ParticleControlPoint",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute"
+        },
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.ParticleControlPoint"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.ParticleControlPoint.ControlPointValueInput",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ParticleControlPoint.ControlPointValueInput.GameObject",
+          "Name": "GameObject",
+          "DocId": "F:Sandbox.ParticleControlPoint.ControlPointValueInput.GameObject"
+        },
+        {
+          "FieldType": "Sandbox.ParticleControlPoint.ControlPointValueInput",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ParticleControlPoint.ControlPointValueInput.Vector3",
+          "Name": "Vector3",
+          "DocId": "F:Sandbox.ParticleControlPoint.ControlPointValueInput.Vector3"
+        },
+        {
+          "FieldType": "Sandbox.ParticleControlPoint.ControlPointValueInput",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ParticleControlPoint.ControlPointValueInput.Float",
+          "Name": "Float",
+          "DocId": "F:Sandbox.ParticleControlPoint.ControlPointValueInput.Float"
+        },
+        {
+          "FieldType": "Sandbox.ParticleControlPoint.ControlPointValueInput",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ParticleControlPoint.ControlPointValueInput.Color",
+          "Name": "Color",
+          "DocId": "F:Sandbox.ParticleControlPoint.ControlPointValueInput.Color"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ParticleControlPoint.ControlPointValueInput",
+      "Name": "ControlPointValueInput",
+      "DeclaringType": "Sandbox.ParticleControlPoint",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.ParticleControlPoint.ControlPointValueInput"
+    }
+  ],
+  "_metadata": {
+    "chunk": 99,
+    "items_count": 4
+  }
+}

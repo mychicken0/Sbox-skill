@@ -1,0 +1,1435 @@
+{
+  "Types": [
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "link",
+              "Type": "Facepunch.ActionGraphs.Link"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.LinkTriggeredHandler.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Facepunch.ActionGraphs.LinkTriggeredHandler",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.LinkTriggeredHandler.Invoke(Facepunch.ActionGraphs.Link,System.Object)"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "link",
+              "Type": "Facepunch.ActionGraphs.Link"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.LinkTriggeredHandler.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Facepunch.ActionGraphs.LinkTriggeredHandler",
+          "DocId": "M:Facepunch.ActionGraphs.LinkTriggeredHandler.BeginInvoke(Facepunch.ActionGraphs.Link,System.Object,System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.LinkTriggeredHandler.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Facepunch.ActionGraphs.LinkTriggeredHandler",
+          "DocId": "M:Facepunch.ActionGraphs.LinkTriggeredHandler.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.LinkTriggeredHandler..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.LinkTriggeredHandler",
+          "DocId": "M:Facepunch.ActionGraphs.LinkTriggeredHandler.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.LinkTriggeredHandler",
+      "Name": "LinkTriggeredHandler",
+      "Documentation": {
+        "Summary": "Handler for <see cref=\"E:Facepunch.ActionGraphs.ActionGraph.LinkTriggered\" /> events.",
+        "Params": {
+          "link": "The link that was triggered.",
+          "value": "The value that was propagated, or null for signals."
+        }
+      },
+      "DocId": "T:Facepunch.ActionGraphs.LinkTriggeredHandler"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "Facepunch.ActionGraphs.IActionGraphDelegate",
+          "Parameters": [
+            {
+              "Name": "func",
+              "Type": "System.Delegate"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Delegates.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.DelegateExtensions.GetActionGraphInstance",
+          "Name": "GetActionGraphInstance",
+          "DeclaringType": "Facepunch.ActionGraphs.DelegateExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "If the given delegate is implemented as exactly one <see cref=\"T:Facepunch.ActionGraphs.ActionGraph\" />,\nget that graph and any input value overrides."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.DelegateExtensions.GetActionGraphInstance(System.Delegate)"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.ActionGraphDelegate`1<T>",
+          "Parameters": [
+            {
+              "Name": "func",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Delegates.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.DelegateExtensions.GetActionGraphInstance",
+          "Name": "GetActionGraphInstance",
+          "DeclaringType": "Facepunch.ActionGraphs.DelegateExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "0"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "If the given delegate is implemented as exactly one <see cref=\"T:Facepunch.ActionGraphs.ActionGraph\" />,\nget that graph and any input value overrides."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.DelegateExtensions.GetActionGraphInstance``1(``0)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<Facepunch.ActionGraphs.IActionGraphDelegate>",
+          "Parameters": [
+            {
+              "Name": "func",
+              "Type": "System.Delegate"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Delegates.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.DelegateExtensions.GetActionGraphInstances",
+          "Name": "GetActionGraphInstances",
+          "DeclaringType": "Facepunch.ActionGraphs.DelegateExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "If the given delegate is implemented as one or more <see cref=\"T:Facepunch.ActionGraphs.ActionGraph\" />s,\nget those graphs and their input value overrides."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.DelegateExtensions.GetActionGraphInstances(System.Delegate)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<Facepunch.ActionGraphs.ActionGraphDelegate`1<T>>",
+          "Parameters": [
+            {
+              "Name": "func",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Delegates.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.DelegateExtensions.GetActionGraphInstances",
+          "Name": "GetActionGraphInstances",
+          "DeclaringType": "Facepunch.ActionGraphs.DelegateExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "If the given delegate is implemented as one or more <see cref=\"T:Facepunch.ActionGraphs.ActionGraph\" />s,\nget those graphs and their input value overrides."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.DelegateExtensions.GetActionGraphInstances``1(``0)"
+        }
+      ],
+      "Properties": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "IsStatic": true,
+      "IsExtension": true,
+      "FullName": "Facepunch.ActionGraphs.DelegateExtensions",
+      "Name": "DelegateExtensions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+        }
+      ],
+      "DocId": "T:Facepunch.ActionGraphs.DelegateExtensions"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Properties": [
+        {
+          "PropertyType": "Facepunch.ActionGraphs.ActionGraph",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.IActionGraphDelegate.Graph",
+          "Name": "Graph",
+          "Documentation": {
+            "Summary": "Wrapped action graph."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.IActionGraphDelegate.Graph"
+        },
+        {
+          "PropertyType": "System.Delegate",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.IActionGraphDelegate.Delegate",
+          "Name": "Delegate",
+          "Documentation": {
+            "Summary": "Delegate that is implemented by <see cref=\"P:Facepunch.ActionGraphs.IActionGraphDelegate.Graph\" />, with default arguments supplied by <see cref=\"P:Facepunch.ActionGraphs.IActionGraphDelegate.Defaults\" />.\nThis delegate will remain up-to-date even if the wrapped graph is modified, or default argument dictionary changes."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.IActionGraphDelegate.Delegate"
+        },
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.IActionGraphDelegate.DelegateType",
+          "Name": "DelegateType",
+          "Documentation": {
+            "Summary": "The type that <see cref=\"P:Facepunch.ActionGraphs.IActionGraphDelegate.Delegate\" /> will contain when compiled."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.IActionGraphDelegate.DelegateType"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Object>",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.IActionGraphDelegate.Defaults",
+          "Name": "Defaults",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument[]"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Dictionary of default arguments for any graph input parameters that aren't supplied by delegate parameters."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.IActionGraphDelegate.Defaults"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.IActionGraphDelegate",
+      "Name": "IActionGraphDelegate",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Wrapper for an <see cref=\"T:Facepunch.ActionGraphs.ActionGraph\" /> invokable as a delegate, with optional overridden input values."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.IActionGraphDelegate"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "T",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Delegates.cs",
+            "Line": 170
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphDelegate<T>.Delegate",
+          "Name": "Delegate",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.ActionGraphDelegate`1.Delegate"
+        },
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Delegates.cs",
+            "Line": 175
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphDelegate<T>.DelegateType",
+          "Name": "DelegateType",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.ActionGraphDelegate`1.DelegateType"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.ActionGraph",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Delegates.cs",
+            "Line": 178
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphDelegate<T>.Graph",
+          "Name": "Graph",
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.ActionGraphDelegate`1.Graph"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyDictionary`2<System.String,System.Object>",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Delegates.cs",
+            "Line": 181
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphDelegate<T>.Defaults",
+          "Name": "Defaults",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument[]"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Facepunch.ActionGraphs.ActionGraphDelegate`1.Defaults"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.ActionGraphDelegate<T>",
+      "Name": "ActionGraphDelegate<T>",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Wrapper for an <see cref=\"T:Facepunch.ActionGraphs.ActionGraph\" /> invokable as a delegate, with optional overridden input values.",
+        "TypeParams": {
+          "T": "Delegate type for the compiled graph."
+        }
+      },
+      "DocId": "T:Facepunch.ActionGraphs.ActionGraphDelegate`1"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "Facepunch.ActionGraphs.Node",
+          "Parameters": [
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.INodeContainer"
+            },
+            {
+              "Name": "id",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Extensions.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.AddNode",
+          "Name": "AddNode",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a new node to this action graph with the given definition ID."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.AddNode(Facepunch.ActionGraphs.INodeContainer,System.String)"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.Node",
+          "Parameters": [
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.INodeContainer"
+            },
+            {
+              "Name": "func",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Extensions.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.AddNode",
+          "Name": "AddNode",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a new node to this action graph, defined by the given method. The method must be already included in <see cref=\"T:Facepunch.ActionGraphs.NodeLibrary\" />.",
+            "Params": {
+              "graph": "Action graph to add a node to.",
+              "func": "Method defining a node."
+            },
+            "TypeParams": {
+              "T": "Delegate type of the method."
+            }
+          },
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.AddNode``1(Facepunch.ActionGraphs.INodeContainer,``0)"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.Node",
+          "Parameters": [
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.INodeContainer"
+            },
+            {
+              "Name": "declaringType",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "methodName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Extensions.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.AddNode",
+          "Name": "AddNode",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a new node to this action graph, defined by the given method. The method must be already included in <see cref=\"T:Facepunch.ActionGraphs.NodeLibrary\" />."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.AddNode(Facepunch.ActionGraphs.INodeContainer,System.Type,System.String)"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.Node",
+          "Parameters": [
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.INodeContainer"
+            },
+            {
+              "Name": "expressionType",
+              "Type": "System.Linq.Expressions.ExpressionType"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Extensions.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.AddNode",
+          "Name": "AddNode",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adds a new node to this action graph, defined by the given expression type."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.AddNode(Facepunch.ActionGraphs.INodeContainer,System.Linq.Expressions.ExpressionType)"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.Node",
+          "Parameters": [
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.INodeContainer"
+            },
+            {
+              "Name": "variable",
+              "Type": "Facepunch.ActionGraphs.Variable"
+            },
+            {
+              "Name": "kind",
+              "Type": "System.Nullable`1<Facepunch.ActionGraphs.AssignmentKind>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Extensions.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.AddVariableNode",
+          "Name": "AddVariableNode",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.AddVariableNode(Facepunch.ActionGraphs.INodeContainer,Facepunch.ActionGraphs.Variable,System.Nullable`1{Facepunch.ActionGraphs.AssignmentKind})"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.Node",
+          "Parameters": [
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.INodeContainer"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Extensions.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.AddConstantNode",
+          "Name": "AddConstantNode",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a new constant accessor node to this action graph."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.AddConstantNode(Facepunch.ActionGraphs.INodeContainer,System.Object)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyList`1<Facepunch.ActionGraphs.Link>",
+          "Parameters": [
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            },
+            {
+              "Name": "target",
+              "Type": "Facepunch.ActionGraphs.Node.Input"
+            },
+            {
+              "Name": "sources",
+              "Type": "Facepunch.ActionGraphs.ILinkSource[]"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Extensions.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.SetLinks",
+          "Name": "SetLinks",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.SetLinks(Facepunch.ActionGraphs.ActionGraph,Facepunch.ActionGraphs.Node.Input,Facepunch.ActionGraphs.ILinkSource[])"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Nullable`1<Facepunch.ActionGraphs.CreateSubGraphResult>>",
+          "Parameters": [
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            },
+            {
+              "Name": "nodes",
+              "Type": "System.Collections.Generic.IEnumerable`1<Facepunch.ActionGraphs.Node>"
+            },
+            {
+              "Name": "jsonOptions",
+              "Type": "System.Text.Json.JsonSerializerOptions"
+            },
+            {
+              "Name": "writeSubGraph",
+              "Type": "Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Extensions.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.CreateSubGraphAsync",
+          "Name": "CreateSubGraphAsync",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.CreateSubGraphAsync(Facepunch.ActionGraphs.ActionGraph,System.Collections.Generic.IEnumerable`1{Facepunch.ActionGraphs.Node},System.Text.Json.JsonSerializerOptions,Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "IsStatic": true,
+      "IsExtension": true,
+      "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions",
+      "Name": "ActionGraphExtensions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Extension methods for action graphs."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.ActionGraphExtensions"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.String>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "subGraph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate.Invoke(Facepunch.ActionGraphs.ActionGraph)"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "subGraph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate",
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate.BeginInvoke(Facepunch.ActionGraphs.ActionGraph,System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.String>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate",
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate",
+          "DocId": "M:Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate",
+      "Name": "WriteSubGraphDelegate",
+      "DeclaringType": "Facepunch.ActionGraphs.ActionGraphExtensions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "DocId": "T:Facepunch.ActionGraphs.ActionGraphExtensions.WriteSubGraphDelegate"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.ISourceLocation",
+      "Name": "ISourceLocation",
+      "Documentation": {
+        "Summary": "Interface for types that identify the source of an <see cref=\"T:Facepunch.ActionGraphs.ActionGraph\" />."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.ISourceLocation"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Facepunch.ActionGraphs.SerializationOptions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.SerializationOptions.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Facepunch.ActionGraphs.SerializationOptions",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Facepunch.ActionGraphs.SerializationOptions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.SerializationOptions.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "ImpliedTarget",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.InputDefinition"
+            },
+            {
+              "Name": "Cache",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.IActionGraphCache"
+            },
+            {
+              "Name": "SourceLocation",
+              "Out": true,
+              "Type": "Facepunch.ActionGraphs.ISourceLocation"
+            },
+            {
+              "Name": "GuidMap",
+              "Out": true,
+              "Type": "System.Collections.Generic.IReadOnlyDictionary`2<System.Guid,System.Guid>"
+            },
+            {
+              "Name": "WriteCacheReferences",
+              "Out": true,
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "ForceUpdateCached",
+              "Out": true,
+              "Type": "System.Boolean"
+            },
+            {
+              "Name": "MakeGuidsUnique",
+              "Out": true,
+              "Type": "System.Boolean"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Facepunch.ActionGraphs.SerializationOptions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.SerializationOptions.Deconstruct(Facepunch.ActionGraphs.InputDefinition@,Facepunch.ActionGraphs.IActionGraphCache@,Facepunch.ActionGraphs.ISourceLocation@,System.Collections.Generic.IReadOnlyDictionary`2{System.Guid,System.Guid}@,System.Boolean@,System.Boolean@,System.Boolean@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "ImpliedTarget",
+              "Type": "Facepunch.ActionGraphs.InputDefinition",
+              "Default": "null"
+            },
+            {
+              "Name": "Cache",
+              "Type": "Facepunch.ActionGraphs.IActionGraphCache",
+              "Default": "null"
+            },
+            {
+              "Name": "SourceLocation",
+              "Type": "Facepunch.ActionGraphs.ISourceLocation",
+              "Default": "null"
+            },
+            {
+              "Name": "GuidMap",
+              "Type": "System.Collections.Generic.IReadOnlyDictionary`2<System.Guid,System.Guid>",
+              "Default": "null"
+            },
+            {
+              "Name": "WriteCacheReferences",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "ForceUpdateCached",
+              "Type": "System.Boolean",
+              "Default": "False"
+            },
+            {
+              "Name": "MakeGuidsUnique",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Serialization.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.SerializationOptions",
+          "DocId": "M:Facepunch.ActionGraphs.SerializationOptions.#ctor(Facepunch.ActionGraphs.InputDefinition,Facepunch.ActionGraphs.IActionGraphCache,Facepunch.ActionGraphs.ISourceLocation,System.Collections.Generic.IReadOnlyDictionary`2{System.Guid,System.Guid},System.Boolean,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Facepunch.ActionGraphs.SerializationOptions"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Serialization.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Facepunch.ActionGraphs.SerializationOptions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Facepunch.ActionGraphs.SerializationOptions.#ctor(Facepunch.ActionGraphs.SerializationOptions)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Facepunch.ActionGraphs.SerializationOptions.EqualityContract"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.InputDefinition",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Serialization.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.ImpliedTarget",
+          "Name": "ImpliedTarget",
+          "Documentation": {
+            "Summary": "Add this input to any graphs deserialized in this scope, usually representing\na \"this\" parameter holding the object this graph is embedded in.\nWhen serializing, omit this input from the serialized graph because we know\nit will be added automatically when deserializing."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.SerializationOptions.ImpliedTarget"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.IActionGraphCache",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Serialization.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.Cache",
+          "Name": "Cache",
+          "Documentation": {
+            "Summary": "Re-use instances from this cache when deserializing, matching by <see cref=\"P:Facepunch.ActionGraphs.ActionGraph.Guid\" />.\nGraphs will be added to the cache when serializing or deserializing in this scope.\nWhen serializing, if <see cref=\"P:Facepunch.ActionGraphs.SerializationOptions.WriteCacheReferences\" /> is true, a minimal graph reference stub\nwill be written instead of full graphs."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.SerializationOptions.Cache"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.ISourceLocation",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Serialization.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.SourceLocation",
+          "Name": "SourceLocation",
+          "Documentation": {
+            "Summary": "For debugging / editors, describe where graphs deserialized in this scope came from."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.SerializationOptions.SourceLocation"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyDictionary`2<System.Guid,System.Guid>",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Serialization.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.GuidMap",
+          "Name": "GuidMap",
+          "Documentation": {
+            "Summary": "When deserializing, maps any graph <see cref=\"T:System.Guid\" />s encountered."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.SerializationOptions.GuidMap"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Serialization.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.WriteCacheReferences",
+          "Name": "WriteCacheReferences",
+          "Documentation": {
+            "Summary": "If true, and a <see cref=\"P:Facepunch.ActionGraphs.SerializationOptions.Cache\" /> is provided, write a reference stub when serializing\ngraphs instead of the full JSON."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.SerializationOptions.WriteCacheReferences"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Serialization.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.ForceUpdateCached",
+          "Name": "ForceUpdateCached",
+          "Documentation": {
+            "Summary": "If true, replace cached instance when deserializing. Otherwise, it'll only be\nreplaced if its <see cref=\"P:Facepunch.ActionGraphs.ActionGraph.ChangeId\" /> differs."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.SerializationOptions.ForceUpdateCached"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Serialization.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.MakeGuidsUnique",
+          "Name": "MakeGuidsUnique",
+          "DocId": "P:Facepunch.ActionGraphs.SerializationOptions.MakeGuidsUnique"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.SerializationOptions",
+          "Loc": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Serialization.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.SerializationOptions.Empty",
+          "Name": "Empty",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Default empty <see cref=\"T:Facepunch.ActionGraphs.SerializationOptions\" />."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.SerializationOptions.Empty"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.SerializationOptions",
+      "Name": "SerializationOptions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Controls how <see cref=\"T:Facepunch.ActionGraphs.ActionGraph\" />s are (de)serialized.",
+        "Params": {
+          "ImpliedTarget": "Add this input to any graphs deserialized in this scope, usually representing\na \"this\" parameter holding the object this graph is embedded in.\nWhen serializing, omit this input from the serialized graph because we know\nit will be added automatically when deserializing.",
+          "Cache": "Re-use instances from this cache when deserializing, matching by <see cref=\"P:Facepunch.ActionGraphs.ActionGraph.Guid\" />.\nGraphs will be added to the cache when serializing or deserializing in this scope.\nWhen serializing, if <see cref=\"P:Facepunch.ActionGraphs.SerializationOptions.WriteCacheReferences\" /> is true, a minimal graph reference stub\nwill be written instead of full graphs.",
+          "SourceLocation": "For debugging / editors, describe where graphs deserialized in this scope came from.",
+          "GuidMap": "When deserializing, maps any graph <see cref=\"T:System.Guid\" />s encountered.",
+          "WriteCacheReferences": "If true, and a <see cref=\"P:Facepunch.ActionGraphs.SerializationOptions.Cache\" /> is provided, write a reference stub when serializing\ngraphs instead of the full JSON.",
+          "ForceUpdateCached": "If true, replace cached instance when deserializing. Otherwise, it'll only be\nreplaced if its <see cref=\"P:Facepunch.ActionGraphs.ActionGraph.ChangeId\" /> differs."
+        }
+      },
+      "DocId": "T:Facepunch.ActionGraphs.SerializationOptions"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Facepunch.ActionGraphs.MessageLevel",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.MessageLevel.Info",
+          "Name": "Info",
+          "Documentation": {
+            "Summary": "Purely informative, there's nothing to fix."
+          },
+          "DocId": "F:Facepunch.ActionGraphs.MessageLevel.Info"
+        },
+        {
+          "FieldType": "Facepunch.ActionGraphs.MessageLevel",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.MessageLevel.Warning",
+          "Name": "Warning",
+          "Documentation": {
+            "Summary": "Suggests that something might not be intended, but isn't an error."
+          },
+          "DocId": "F:Facepunch.ActionGraphs.MessageLevel.Warning"
+        },
+        {
+          "FieldType": "Facepunch.ActionGraphs.MessageLevel",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Facepunch.ActionGraphs.MessageLevel.Error",
+          "Name": "Error",
+          "Documentation": {
+            "Summary": "Something is incorrect and must be fixed in order to pass validation."
+          },
+          "DocId": "F:Facepunch.ActionGraphs.MessageLevel.Error"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.MessageLevel",
+      "Name": "MessageLevel",
+      "Documentation": {
+        "Summary": "Severity level of a validation message."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.MessageLevel"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [],
+      "Properties": [
+        {
+          "PropertyType": "Facepunch.ActionGraphs.ActionGraph",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.IMessageContext.ActionGraph",
+          "Name": "ActionGraph",
+          "Documentation": {
+            "Summary": "Action graph this element belongs to."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.IMessageContext.ActionGraph"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.IMessageContext",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.IMessageContext.Parent",
+          "Name": "Parent",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Parent element in the graph. Parents will list all validation messages of\ntheir children."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.IMessageContext.Parent"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Facepunch.ActionGraphs.IMessageContext.StackTraceIdentifier",
+          "Name": "StackTraceIdentifier",
+          "Documentation": {
+            "Summary": "Unique identifier for this graph element in a stack trace."
+          },
+          "DocId": "P:Facepunch.ActionGraphs.IMessageContext.StackTraceIdentifier"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "FullName": "Facepunch.ActionGraphs.IMessageContext",
+      "Name": "IMessageContext",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Interface for action graph elements that can be the context of a <see cref=\"T:Facepunch.ActionGraphs.ValidationMessage\" />."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.IMessageContext"
+    },
+    {
+      "Namespace": "Facepunch.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Facepunch.ActionGraphs.ValidationMessage>",
+          "Parameters": [
+            {
+              "Name": "context",
+              "Type": "Facepunch.ActionGraphs.IMessageContext"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Validation.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationExtensions.GetMessages",
+          "Name": "GetMessages",
+          "DeclaringType": "Facepunch.ActionGraphs.ValidationExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets all validation messages where this, or any child element, is the context."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.ValidationExtensions.GetMessages(Facepunch.ActionGraphs.IMessageContext)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "context",
+              "Type": "Facepunch.ActionGraphs.IMessageContext"
+            }
+          ],
+          "l": {
+            "File": "home/runner/work/ActionGraphs/ActionGraphs/Facepunch.ActionGraphs/ActionGraph.Validation.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Facepunch.ActionGraphs.ValidationExtensions.HasErrors",
+          "Name": "HasErrors",
+          "DeclaringType": "Facepunch.ActionGraphs.ValidationExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if any contained validation messages are errors. An action graph can't\nbe invoked if it has any errors."
+          },
+          "DocId": "M:Facepunch.ActionGraphs.ValidationExtensions.HasErrors(Facepunch.ActionGraphs.IMessageContext)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Facepunch.ActionGraphs",
+      "IsPublic": true,
+      "IsStatic": true,
+      "IsExtension": true,
+      "FullName": "Facepunch.ActionGraphs.ValidationExtensions",
+      "Name": "ValidationExtensions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Extension methods related to validation and validation messages."
+      },
+      "DocId": "T:Facepunch.ActionGraphs.ValidationExtensions"
+    }
+  ],
+  "_metadata": {
+    "chunk": 274,
+    "items_count": 11
+  }
+}

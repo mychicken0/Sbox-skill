@@ -1,0 +1,1856 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Block.GetNodeString",
+          "Name": "GetNodeString",
+          "DeclaringType": "Sandbox.Doo.Block",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns a human-readable string describing this block for display in the editor."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a human-readable string describing this block for display in the editor."
+          },
+          "DocId": "M:Sandbox.Doo.Block.GetNodeString"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Block.HasBody",
+          "Name": "HasBody",
+          "DeclaringType": "Sandbox.Doo.Block",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if this can have child nodes"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if this can have child nodes"
+          },
+          "DocId": "M:Sandbox.Doo.Block.HasBody"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Block.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.Doo.Block",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reset this block to some sensible defaults. This is called when the block is first added, so this is a good opportunity to set up default values for properties."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reset this block to some sensible defaults. This is called when \nthe block is first added, so this is a good opportunity to set up default \nvalues for properties."
+          },
+          "DocId": "M:Sandbox.Doo.Block.Reset"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "arguments",
+              "Type": "System.Collections.Generic.HashSet`1<System.String>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Block.CollectArguments",
+          "Name": "CollectArguments",
+          "DeclaringType": "Sandbox.Doo.Block",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Recursively collects all variable names referenced by this block and its children."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.cs",
+                "50"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.Block.CollectArguments(System.Collections.Generic.HashSet`1{System.String})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Block..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.Block",
+          "DocId": "M:Sandbox.Doo.Block.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Doo.Block>",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Block.Body",
+          "Name": "Body",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Optional list of child blocks nested inside this block."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Optional list of child blocks nested inside this block."
+          },
+          "DocId": "P:Sandbox.Doo.Block.Body"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.Block",
+      "Name": "Block",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "System.Text.Json.Serialization.JsonDerivedTypeAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Doo/DelayBlock",
+            "del"
+          ]
+        },
+        {
+          "FullName": "System.Text.Json.Serialization.JsonDerivedTypeAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Doo/SetBlock",
+            "set"
+          ]
+        },
+        {
+          "FullName": "System.Text.Json.Serialization.JsonDerivedTypeAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Doo/InvokeBlock",
+            "ivk"
+          ]
+        },
+        {
+          "FullName": "System.Text.Json.Serialization.JsonDerivedTypeAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Doo/ReturnBlock",
+            "ret"
+          ]
+        },
+        {
+          "FullName": "System.Text.Json.Serialization.JsonDerivedTypeAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Doo/ForBlock",
+            "for"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Base class for all executable blocks within a Doo."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Base class for all executable blocks within a Doo."
+      },
+      "DocId": "T:Sandbox.Doo.Block"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Doo.Block",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.Delay.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.DelayBlock.GetNodeString",
+          "Name": "GetNodeString",
+          "DeclaringType": "Sandbox.Doo.DelayBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Delay.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.DelayBlock.GetNodeString"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "arguments",
+              "Type": "System.Collections.Generic.HashSet`1<System.String>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.Delay.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.DelayBlock.CollectArguments",
+          "Name": "CollectArguments",
+          "DeclaringType": "Sandbox.Doo.DelayBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Delay.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.DelayBlock.CollectArguments(System.Collections.Generic.HashSet`1{System.String})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.Delay.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.DelayBlock.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.Doo.DelayBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Delay.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.DelayBlock.Reset"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.DelayBlock..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.DelayBlock",
+          "DocId": "M:Sandbox.Doo.DelayBlock.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Doo.Expression",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.Delay.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.DelayBlock.Seconds",
+          "Name": "Seconds",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The number of seconds to wait before continuing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Delay.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The number of seconds to wait before continuing."
+          },
+          "DocId": "P:Sandbox.Doo.DelayBlock.Seconds"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.DelayBlock",
+      "Name": "DelayBlock",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "✋",
+            "#5C4837",
+            "#fff"
+          ]
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Delay"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Wait for a number of seconds"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.Delay.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Wait for a number of seconds"
+      },
+      "DocId": "T:Sandbox.Doo.DelayBlock"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Doo.Block",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.For.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ForBlock.HasBody",
+          "Name": "HasBody",
+          "DeclaringType": "Sandbox.Doo.ForBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.For.cs",
+                "42"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.ForBlock.HasBody"
+        },
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.For.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ForBlock.GetNodeString",
+          "Name": "GetNodeString",
+          "DeclaringType": "Sandbox.Doo.ForBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.For.cs",
+                "44"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.ForBlock.GetNodeString"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.For.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ForBlock.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.Doo.ForBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.For.cs",
+                "49"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.ForBlock.Reset"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "arguments",
+              "Type": "System.Collections.Generic.HashSet`1<System.String>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.For.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ForBlock.CollectArguments",
+          "Name": "CollectArguments",
+          "DeclaringType": "Sandbox.Doo.ForBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.For.cs",
+                "58"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.ForBlock.CollectArguments(System.Collections.Generic.HashSet`1{System.String})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.For.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ForBlock..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.ForBlock",
+          "DocId": "M:Sandbox.Doo.ForBlock.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.For.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ForBlock.VariableName",
+          "Name": "VariableName",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The name of the loop counter variable."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.For.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The name of the loop counter variable."
+          },
+          "DocId": "P:Sandbox.Doo.ForBlock.VariableName"
+        },
+        {
+          "PropertyType": "Sandbox.Doo.Expression",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.For.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ForBlock.StartValue",
+          "Name": "StartValue",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "TypeHintAttribute",
+              "ConstructorArguments": [
+                "System.Int32"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The initial value of the loop counter."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.For.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The initial value of the loop counter."
+          },
+          "DocId": "P:Sandbox.Doo.ForBlock.StartValue"
+        },
+        {
+          "PropertyType": "Sandbox.Doo.Expression",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.For.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ForBlock.EndValue",
+          "Name": "EndValue",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "TypeHintAttribute",
+              "ConstructorArguments": [
+                "System.Int32"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The upper bound of the loop (exclusive)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.For.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The upper bound of the loop (exclusive)."
+          },
+          "DocId": "P:Sandbox.Doo.ForBlock.EndValue"
+        },
+        {
+          "PropertyType": "Sandbox.Doo.Expression",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.For.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ForBlock.JumpValue",
+          "Name": "JumpValue",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "TypeHintAttribute",
+              "ConstructorArguments": [
+                "System.Int32"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The amount to increment the loop counter each iteration."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.For.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The amount to increment the loop counter each iteration."
+          },
+          "DocId": "P:Sandbox.Doo.ForBlock.JumpValue"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.ForBlock",
+      "Name": "ForBlock",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "♾️",
+            "#4f69db",
+            "white"
+          ]
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "For Block"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Run a block of code a certain number of times, with a loop variable."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.For.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Run a block of code a certain number of times, with a loop variable."
+      },
+      "DocId": "T:Sandbox.Doo.ForBlock"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Doo.Block",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.Invoke.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.InvokeBlock.GetNodeString",
+          "Name": "GetNodeString",
+          "DeclaringType": "Sandbox.Doo.InvokeBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Invoke.cs",
+                "48"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.InvokeBlock.GetNodeString"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "arguments",
+              "Type": "System.Collections.Generic.HashSet`1<System.String>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.Invoke.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.InvokeBlock.CollectArguments",
+          "Name": "CollectArguments",
+          "DeclaringType": "Sandbox.Doo.InvokeBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Invoke.cs",
+                "90"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.InvokeBlock.CollectArguments(System.Collections.Generic.HashSet`1{System.String})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.InvokeBlock..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.InvokeBlock",
+          "DocId": "M:Sandbox.Doo.InvokeBlock.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Doo.InvokeType",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.Invoke.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.InvokeBlock.InvokeType",
+          "Name": "InvokeType",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether this invokes a static global method or a component member."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Invoke.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether this invokes a static global method or a component member."
+          },
+          "DocId": "P:Sandbox.Doo.InvokeBlock.InvokeType"
+        },
+        {
+          "PropertyType": "Sandbox.Doo.TargetComponent",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.Invoke.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.InvokeBlock.TargetComponent",
+          "Name": "TargetComponent",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The component instance to invoke the method on when using Sandbox.Doo.InvokeType.Member."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Invoke.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The component instance to invoke the method on when using <see cref=\"F:Sandbox.Doo.InvokeType.Member\" />."
+          },
+          "DocId": "P:Sandbox.Doo.InvokeBlock.TargetComponent"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.Invoke.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.InvokeBlock.Member",
+          "Name": "Member",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The fully qualified method path to invoke (e.g. \"Log.Info\")."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Invoke.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The fully qualified method path to invoke (e.g. \"Log.Info\")."
+          },
+          "DocId": "P:Sandbox.Doo.InvokeBlock.Member"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Doo.Expression>",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.Invoke.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.InvokeBlock.Arguments",
+          "Name": "Arguments",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The list of argument expressions to pass to the method."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Invoke.cs",
+                "37"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The list of argument expressions to pass to the method."
+          },
+          "DocId": "P:Sandbox.Doo.InvokeBlock.Arguments"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.Invoke.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.InvokeBlock.ReturnVariable",
+          "Name": "ReturnVariable",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Variable"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Variable name to set to the returned value. Leave empty to ignore the return value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Invoke.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Variable name to set to the returned value. Leave empty to ignore the return value."
+          },
+          "DocId": "P:Sandbox.Doo.InvokeBlock.ReturnVariable"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.InvokeBlock",
+      "Name": "InvokeBlock",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "🏃‍",
+            "#506C33",
+            "white"
+          ]
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Invoke"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Call a global method or a method on a component."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.Invoke.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Call a global method or a method on a component."
+      },
+      "DocId": "T:Sandbox.Doo.InvokeBlock"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Doo.Block",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.ReturnBlock..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.ReturnBlock",
+          "DocId": "M:Sandbox.Doo.ReturnBlock.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.ReturnBlock",
+      "Name": "ReturnBlock",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "exit_to_app"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Stops execution of the current Doo immediately."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.Return.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Stops execution of the current Doo immediately."
+      },
+      "DocId": "T:Sandbox.Doo.ReturnBlock"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Doo.Block",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.Set.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.SetBlock.GetNodeString",
+          "Name": "GetNodeString",
+          "DeclaringType": "Sandbox.Doo.SetBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Set.cs",
+                "27"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.SetBlock.GetNodeString"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.Set.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.SetBlock.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.Doo.SetBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Set.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.SetBlock.Reset"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "arguments",
+              "Type": "System.Collections.Generic.HashSet`1<System.String>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Block.Set.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.SetBlock.CollectArguments",
+          "Name": "CollectArguments",
+          "DeclaringType": "Sandbox.Doo.SetBlock",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Set.cs",
+                "38"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.SetBlock.CollectArguments(System.Collections.Generic.HashSet`1{System.String})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.SetBlock..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.SetBlock",
+          "DocId": "M:Sandbox.Doo.SetBlock.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.Set.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.SetBlock.VariableName",
+          "Name": "VariableName",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The name of the variable to assign to."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Set.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The name of the variable to assign to."
+          },
+          "DocId": "P:Sandbox.Doo.SetBlock.VariableName"
+        },
+        {
+          "PropertyType": "Sandbox.Doo.Expression",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Block.Set.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.SetBlock.Value",
+          "Name": "Value",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The expression whose result will be stored in the variable."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Block.Set.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The expression whose result will be stored in the variable."
+          },
+          "DocId": "P:Sandbox.Doo.SetBlock.Value"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.SetBlock",
+      "Name": "SetBlock",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "📥",
+            "#6b336c",
+            "white"
+          ]
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Set Variable"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Set a variable to a value."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Block.Set.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Set a variable to a value."
+      },
+      "DocId": "T:Sandbox.Doo.SetBlock"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Configure.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Configure.SetArgument",
+          "Name": "SetArgument",
+          "DeclaringType": "Sandbox.Doo.Configure",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets a local variable for this Doo run."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Configure.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets a local variable for this Doo run."
+          },
+          "DocId": "M:Sandbox.Doo.Configure.SetArgument(System.String,System.Object)"
+        }
+      ],
+      "Constructors": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.Configure",
+      "Name": "Configure",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Provides configuration for a Doo run, such as setting initial argument values."
+      },
+      "DocId": "T:Sandbox.Doo.Configure"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Doo.InvokeType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Doo.InvokeType.Static",
+          "Name": "Static",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "public"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Static Global"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Doo.InvokeType.Static"
+        },
+        {
+          "FieldType": "Sandbox.Doo.InvokeType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Doo.InvokeType.Member",
+          "Name": "Member",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "inventory"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Component"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Doo.InvokeType.Member"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.InvokeType",
+      "Name": "InvokeType",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Determines how an invoke block resolves its target method."
+      },
+      "DocId": "T:Sandbox.Doo.InvokeType"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Variant",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Expression.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Expression.Evaluate",
+          "Name": "Evaluate",
+          "DeclaringType": "Sandbox.Doo.Expression",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Evaluates this expression and returns its value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Expression.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Evaluates this expression and returns its value."
+          },
+          "DocId": "M:Sandbox.Doo.Expression.Evaluate"
+        },
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Expression.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Expression.GetDebugText",
+          "Name": "GetDebugText",
+          "DeclaringType": "Sandbox.Doo.Expression",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns a human-readable string representation of this expression for the editor."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Expression.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a human-readable string representation of this expression for the editor."
+          },
+          "DocId": "M:Sandbox.Doo.Expression.GetDebugText"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "arguments",
+              "Type": "System.Collections.Generic.HashSet`1<System.String>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Expression.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.Expression.CollectArguments",
+          "Name": "CollectArguments",
+          "DeclaringType": "Sandbox.Doo.Expression",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Collects all variable names referenced by this expression."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Expression.cs",
+                "28"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.Expression.CollectArguments(System.Collections.Generic.HashSet`1{System.String})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Doo.Expression..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.Expression",
+          "DocId": "M:Sandbox.Doo.Expression.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.Expression",
+      "Name": "Expression",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "System.Text.Json.Serialization.JsonDerivedTypeAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Doo/LiteralExpression",
+            "lit"
+          ]
+        },
+        {
+          "FullName": "System.Text.Json.Serialization.JsonDerivedTypeAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Doo/VariableExpression",
+            "var"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Base class for all value expressions used as arguments and assignments within blocks."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Expression.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Base class for all value expressions used as arguments and assignments within blocks."
+      },
+      "DocId": "T:Sandbox.Doo.Expression"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Doo.Expression",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Variant",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Expression.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.LiteralExpression.Evaluate",
+          "Name": "Evaluate",
+          "DeclaringType": "Sandbox.Doo.LiteralExpression",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Expression.cs",
+                "44"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.LiteralExpression.Evaluate"
+        },
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Expression.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.LiteralExpression.GetDebugText",
+          "Name": "GetDebugText",
+          "DeclaringType": "Sandbox.Doo.LiteralExpression",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Expression.cs",
+                "45"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.LiteralExpression.GetDebugText"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.LiteralExpression..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.LiteralExpression",
+          "DocId": "M:Sandbox.Doo.LiteralExpression.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Variant",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Expression.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.LiteralExpression.LiteralValue",
+          "Name": "LiteralValue",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The constant value this expression evaluates to."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Expression.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The constant value this expression evaluates to."
+          },
+          "DocId": "P:Sandbox.Doo.LiteralExpression.LiteralValue"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.LiteralExpression",
+      "Name": "LiteralExpression",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "tag"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An expression that evaluates to a constant literal value."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Expression.cs",
+            "34"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "An expression that evaluates to a constant literal value."
+      },
+      "DocId": "T:Sandbox.Doo.LiteralExpression"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Doo.Expression",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Variant",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Expression.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.VariableExpression.Evaluate",
+          "Name": "Evaluate",
+          "DeclaringType": "Sandbox.Doo.VariableExpression",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Expression.cs",
+                "69"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.VariableExpression.Evaluate"
+        },
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Doo/Doo.Expression.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.VariableExpression.GetDebugText",
+          "Name": "GetDebugText",
+          "DeclaringType": "Sandbox.Doo.VariableExpression",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Expression.cs",
+                "70"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.VariableExpression.GetDebugText"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "arguments",
+              "Type": "System.Collections.Generic.HashSet`1<System.String>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Doo/Doo.Expression.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.VariableExpression.CollectArguments",
+          "Name": "CollectArguments",
+          "DeclaringType": "Sandbox.Doo.VariableExpression",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Expression.cs",
+                "72"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Doo.VariableExpression.CollectArguments(System.Collections.Generic.HashSet`1{System.String})"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.VariableExpression..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Doo.VariableExpression",
+          "DocId": "M:Sandbox.Doo.VariableExpression.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Doo/Doo.Expression.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Doo.VariableExpression.VariableName",
+          "Name": "VariableName",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The name of the variable to read."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Doo\\Doo.Expression.cs",
+                "65"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The name of the variable to read."
+          },
+          "DocId": "P:Sandbox.Doo.VariableExpression.VariableName"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Doo.VariableExpression",
+      "Name": "VariableExpression",
+      "DeclaringType": "Sandbox.Doo",
+      "Attributes": [
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "abc"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "An expression that evaluates to the current value of a named variable."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Doo\\Doo.Expression.cs",
+            "58"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "An expression that evaluates to the current value of a named variable."
+      },
+      "DocId": "T:Sandbox.Doo.VariableExpression"
+    }
+  ],
+  "_metadata": {
+    "chunk": 139,
+    "items_count": 11
+  }
+}

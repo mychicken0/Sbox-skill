@@ -1,0 +1,1600 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "exactFullName",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.IsNamed",
+          "Name": "IsNamed",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Returns true if this is named the passed name, either through classname, target class name or an alias",
+            "Params": {
+              "name": "The name to check",
+              "exactFullName": "If true, only the exact full name or aliases will match."
+            }
+          },
+          "DocId": "M:Sandbox.TypeDescription.IsNamed(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "inherited",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 500
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.GetAttribute",
+          "Name": "GetAttribute",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Returns the first attribute of given type, if any are present."
+          },
+          "DocId": "M:Sandbox.TypeDescription.GetAttribute``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<T>",
+          "Parameters": [
+            {
+              "Name": "inherited",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 508
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.GetAttributes",
+          "Name": "GetAttributes",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Returns all attributes of given type, if any are present."
+          },
+          "DocId": "M:Sandbox.TypeDescription.GetAttributes``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "inherited",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 516
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.HasAttribute",
+          "Name": "HasAttribute",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Returns true if the class has this attribute"
+          },
+          "DocId": "M:Sandbox.TypeDescription.HasAttribute``1(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 522
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.HasTag",
+          "Name": "HasTag",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "True if we have this tag."
+          },
+          "DocId": "M:Sandbox.TypeDescription.HasTag(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.PropertyDescription",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.GetProperty",
+          "Name": "GetProperty",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Get property by name (will not find static properties)"
+          },
+          "DocId": "M:Sandbox.TypeDescription.GetProperty(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.PropertyDescription",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.GetStaticProperty",
+          "Name": "GetStaticProperty",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Get static property by name"
+          },
+          "DocId": "M:Sandbox.TypeDescription.GetStaticProperty(System.String)"
+        },
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [
+            {
+              "Name": "instance",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 544
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.GetValue",
+          "Name": "GetValue",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Get value by field or property name (will not find static members)"
+          },
+          "DocId": "M:Sandbox.TypeDescription.GetValue(System.Object,System.String)"
+        },
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 552
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.GetStaticValue",
+          "Name": "GetStaticValue",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Get value by field or property name, and which type the member is declared to store (will not find static members)"
+          },
+          "DocId": "M:Sandbox.TypeDescription.GetStaticValue(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "instance",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 581
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.SetValue",
+          "Name": "SetValue",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Set value by field or property name (will not set static members)"
+          },
+          "DocId": "M:Sandbox.TypeDescription.SetValue(System.Object,System.String,System.Object)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 589
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.SetStaticValue",
+          "Name": "SetStaticValue",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Set static value by field or property name"
+          },
+          "DocId": "M:Sandbox.TypeDescription.SetStaticValue(System.String,System.Object)"
+        },
+        {
+          "ReturnType": "Sandbox.MethodDescription",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.GetMethod",
+          "Name": "GetMethod",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Get a method by name (will not find static methods)"
+          },
+          "DocId": "M:Sandbox.TypeDescription.GetMethod(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.MethodDescription",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.GetStaticMethod",
+          "Name": "GetStaticMethod",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Get a method by name (will not find static methods)"
+          },
+          "DocId": "M:Sandbox.TypeDescription.GetStaticMethod(System.String)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "args",
+              "Type": "System.Object[]",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 673
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Create an instance of this class, return it as a T.\nIf it can't be cast to a T we won't create it and will return null."
+          },
+          "DocId": "M:Sandbox.TypeDescription.Create``1(System.Object[])"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "typeArgs",
+              "Type": "System.Type[]",
+              "Default": "null"
+            },
+            {
+              "Name": "args",
+              "Type": "System.Object[]",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 697
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.CreateGeneric",
+          "Name": "CreateGeneric",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "Create an instance of this class using generic arguments\nWe're going to assume you know what you're doing here and let it throw any exceptions it wants."
+          },
+          "DocId": "M:Sandbox.TypeDescription.CreateGeneric``1(System.Type[],System.Object[])"
+        },
+        {
+          "ReturnType": "System.Type",
+          "Parameters": [
+            {
+              "Name": "inargs",
+              "Type": "System.Type[]"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 711
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.MakeGenericType",
+          "Name": "MakeGenericType",
+          "DeclaringType": "Sandbox.TypeDescription",
+          "Documentation": {
+            "Summary": "For generic type definitions, create a type by substituting the given types for each type parameter.\nReturns null if any of the type arguments violate the generic constraints."
+          },
+          "DocId": "M:Sandbox.TypeDescription.MakeGenericType(System.Type[])"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.TargetType",
+          "Name": "TargetType",
+          "Documentation": {
+            "Summary": "The type this class describes."
+          },
+          "DocId": "P:Sandbox.TypeDescription.TargetType"
+        },
+        {
+          "PropertyType": "Sandbox.TypeDescription",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.BaseType",
+          "Name": "BaseType",
+          "Documentation": {
+            "Summary": "The base type. This can return null if the type isn't in the type library!"
+          },
+          "DocId": "P:Sandbox.TypeDescription.BaseType"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.IsValid",
+          "Name": "IsValid",
+          "Documentation": {
+            "Summary": "Whether the class is valid or not, i.e. whether the type still exists."
+          },
+          "DocId": "P:Sandbox.TypeDescription.IsValid"
+        },
+        {
+          "PropertyType": "Sandbox.MemberDescription[]",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Members",
+          "Name": "Members",
+          "Documentation": {
+            "Summary": "All members (methods, properties, etc) of this type."
+          },
+          "DocId": "P:Sandbox.TypeDescription.Members"
+        },
+        {
+          "PropertyType": "Sandbox.MemberDescription[]",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.DeclaredMembers",
+          "Name": "DeclaredMembers",
+          "Documentation": {
+            "Summary": "Members (methods, properties, etc) declared by exactly this type, and not inherited."
+          },
+          "DocId": "P:Sandbox.TypeDescription.DeclaredMembers"
+        },
+        {
+          "PropertyType": "Sandbox.MethodDescription[]",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Methods",
+          "Name": "Methods",
+          "Documentation": {
+            "Summary": "All methods of this type."
+          },
+          "DocId": "P:Sandbox.TypeDescription.Methods"
+        },
+        {
+          "PropertyType": "Sandbox.PropertyDescription[]",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Properties",
+          "Name": "Properties",
+          "Documentation": {
+            "Summary": "All properties of this type."
+          },
+          "DocId": "P:Sandbox.TypeDescription.Properties"
+        },
+        {
+          "PropertyType": "Sandbox.FieldDescription[]",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Fields",
+          "Name": "Fields",
+          "Documentation": {
+            "Summary": "All fields on this type."
+          },
+          "DocId": "P:Sandbox.TypeDescription.Fields"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.IsInterface",
+          "Name": "IsInterface",
+          "Documentation": {
+            "Summary": "True if the target type is an interface"
+          },
+          "DocId": "P:Sandbox.TypeDescription.IsInterface"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.IsEnum",
+          "Name": "IsEnum",
+          "Documentation": {
+            "Summary": "True if the target type is an enum"
+          },
+          "DocId": "P:Sandbox.TypeDescription.IsEnum"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.IsStatic",
+          "Name": "IsStatic",
+          "Documentation": {
+            "Summary": "True if the target type is static"
+          },
+          "DocId": "P:Sandbox.TypeDescription.IsStatic"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.IsClass",
+          "Name": "IsClass",
+          "Documentation": {
+            "Summary": "True if the target type is a class"
+          },
+          "DocId": "P:Sandbox.TypeDescription.IsClass"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.IsValueType",
+          "Name": "IsValueType",
+          "Documentation": {
+            "Summary": "True if the target type is a value"
+          },
+          "DocId": "P:Sandbox.TypeDescription.IsValueType"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.IsAbstract",
+          "Name": "IsAbstract",
+          "Documentation": {
+            "Summary": "Gets a value indicating whether the System.Type is abstract and must be overridden."
+          },
+          "DocId": "P:Sandbox.TypeDescription.IsAbstract"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "Name of this type."
+          },
+          "DocId": "P:Sandbox.TypeDescription.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 112
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Namespace",
+          "Name": "Namespace",
+          "Documentation": {
+            "Summary": "Namespace of this type."
+          },
+          "DocId": "P:Sandbox.TypeDescription.Namespace"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 117
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.FullName",
+          "Name": "FullName",
+          "Documentation": {
+            "Summary": "Full name of this type."
+          },
+          "DocId": "P:Sandbox.TypeDescription.FullName"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Title",
+          "Name": "Title",
+          "Documentation": {},
+          "DocId": "P:Sandbox.TypeDescription.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 128
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Description",
+          "Name": "Description",
+          "Documentation": {},
+          "DocId": "P:Sandbox.TypeDescription.Description"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 131
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Icon",
+          "Name": "Icon",
+          "Documentation": {},
+          "DocId": "P:Sandbox.TypeDescription.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 134
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Group",
+          "Name": "Group",
+          "Documentation": {},
+          "DocId": "P:Sandbox.TypeDescription.Group"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Order",
+          "Name": "Order",
+          "Documentation": {},
+          "DocId": "P:Sandbox.TypeDescription.Order"
+        },
+        {
+          "PropertyType": "System.String[]",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Tags",
+          "Name": "Tags",
+          "Documentation": {
+            "Summary": "Tags are set via the [Tag] attribute"
+          },
+          "DocId": "P:Sandbox.TypeDescription.Tags"
+        },
+        {
+          "PropertyType": "System.String[]",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 145
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Aliases",
+          "Name": "Aliases",
+          "Documentation": {},
+          "DocId": "P:Sandbox.TypeDescription.Aliases"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 150
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Identity",
+          "Name": "Identity",
+          "Documentation": {
+            "Summary": "An integer that represents this type. Based off the class name."
+          },
+          "DocId": "P:Sandbox.TypeDescription.Identity"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 156
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.ClassName",
+          "Name": "ClassName",
+          "Documentation": {
+            "Summary": "A string representing this class name. Historically this was provided by [Library( classname )].\nIf no special name is provided, this will be type.Name."
+          },
+          "DocId": "P:Sandbox.TypeDescription.ClassName"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 161
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.SourceLine",
+          "Name": "SourceLine",
+          "Documentation": {
+            "Summary": "The line number of this member"
+          },
+          "DocId": "P:Sandbox.TypeDescription.SourceLine"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 166
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.SourceFile",
+          "Name": "SourceFile",
+          "Documentation": {
+            "Summary": "The file containing this member"
+          },
+          "DocId": "P:Sandbox.TypeDescription.SourceFile"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 626
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.IsGenericType",
+          "Name": "IsGenericType",
+          "Documentation": {
+            "Summary": "True if we're a generic type"
+          },
+          "DocId": "P:Sandbox.TypeDescription.IsGenericType"
+        },
+        {
+          "PropertyType": "System.Type[]",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 632
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.GenericArguments",
+          "Name": "GenericArguments",
+          "Documentation": {
+            "Summary": "If we're a generic type this will return our generic parameters."
+          },
+          "DocId": "P:Sandbox.TypeDescription.GenericArguments"
+        },
+        {
+          "PropertyType": "System.Type[]",
+          "Loc": {
+            "File": "TypeLibrary/TypeDescription.cs",
+            "Line": 637
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.TypeDescription.Interfaces",
+          "Name": "Interfaces",
+          "Documentation": {
+            "Summary": "If we implement any interfaces they will be here"
+          },
+          "DocId": "P:Sandbox.TypeDescription.Interfaces"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Reflection",
+      "IsPublic": true,
+      "FullName": "Sandbox.TypeDescription",
+      "Name": "TypeDescription",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.SkipHotloadAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Describes a type. We use this class to wrap and return <see cref=\"T:System.Type\">System.Type</see>'s that are safe to interact with.\n            \nReturned by <see cref=\"T:Sandbox.Internal.TypeLibrary\" />."
+      },
+      "DocId": "T:Sandbox.TypeDescription"
+    },
+    {
+      "Namespace": "Sandbox.ActionGraphs",
+      "Methods": [
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [
+            {
+              "Name": "actionGraph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.GetEmbeddedTarget",
+          "Name": "GetEmbeddedTarget",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.GetEmbeddedTarget(Facepunch.ActionGraphs.ActionGraph)"
+        },
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [
+            {
+              "Name": "actionGraph",
+              "Type": "Facepunch.ActionGraphs.IActionGraphDelegate"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.GetEmbeddedTarget",
+          "Name": "GetEmbeddedTarget",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.GetEmbeddedTarget(Facepunch.ActionGraphs.IActionGraphDelegate)"
+        },
+        {
+          "ReturnType": "System.Type",
+          "Parameters": [
+            {
+              "Name": "actionGraph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.GetTargetType",
+          "Name": "GetTargetType",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.GetTargetType(Facepunch.ActionGraphs.ActionGraph)"
+        },
+        {
+          "ReturnType": "System.Type",
+          "Parameters": [
+            {
+              "Name": "actionGraph",
+              "Type": "Facepunch.ActionGraphs.IActionGraphDelegate"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.GetTargetType",
+          "Name": "GetTargetType",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.GetTargetType(Facepunch.ActionGraphs.IActionGraphDelegate)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "property",
+              "Type": "Sandbox.PropertyDescription"
+            },
+            {
+              "Name": "nodeLibrary",
+              "Type": "Facepunch.ActionGraphs.NodeLibrary"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.CanActionGraphRead",
+          "Name": "CanActionGraphRead",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.CanActionGraphRead(Sandbox.PropertyDescription,Facepunch.ActionGraphs.NodeLibrary)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "property",
+              "Type": "Sandbox.PropertyDescription"
+            },
+            {
+              "Name": "nodeLibrary",
+              "Type": "Facepunch.ActionGraphs.NodeLibrary"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.CanActionGraphWrite",
+          "Name": "CanActionGraphWrite",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.CanActionGraphWrite(Sandbox.PropertyDescription,Facepunch.ActionGraphs.NodeLibrary)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "field",
+              "Type": "Sandbox.FieldDescription"
+            },
+            {
+              "Name": "nodeLibrary",
+              "Type": "Facepunch.ActionGraphs.NodeLibrary"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.CanActionGraphRead",
+          "Name": "CanActionGraphRead",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.CanActionGraphRead(Sandbox.FieldDescription,Facepunch.ActionGraphs.NodeLibrary)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "field",
+              "Type": "Sandbox.FieldDescription"
+            },
+            {
+              "Name": "nodeLibrary",
+              "Type": "Facepunch.ActionGraphs.NodeLibrary"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.CanActionGraphWrite",
+          "Name": "CanActionGraphWrite",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.CanActionGraphWrite(Sandbox.FieldDescription,Facepunch.ActionGraphs.NodeLibrary)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "methodDesc",
+              "Type": "Sandbox.MethodDescription"
+            },
+            {
+              "Name": "nodeLibrary",
+              "Type": "Facepunch.ActionGraphs.NodeLibrary"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.IsPure",
+          "Name": "IsPure",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.IsPure(Sandbox.MethodDescription,Facepunch.ActionGraphs.NodeLibrary)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "methodDesc",
+              "Type": "Sandbox.MethodDescription"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.AreParametersActionGraphSafe",
+          "Name": "AreParametersActionGraphSafe",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.AreParametersActionGraphSafe(Sandbox.MethodDescription)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "methodBase",
+              "Type": "System.Reflection.MethodBase"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.AreParametersActionGraphSafe",
+          "Name": "AreParametersActionGraphSafe",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.AreParametersActionGraphSafe(System.Reflection.MethodBase)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "memberDesc",
+              "Type": "Sandbox.MemberDescription"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.IsActionGraphIgnored",
+          "Name": "IsActionGraphIgnored",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.IsActionGraphIgnored(Sandbox.MemberDescription)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "typeDesc",
+              "Type": "Sandbox.TypeDescription"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.IsActionGraphIgnored",
+          "Name": "IsActionGraphIgnored",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.IsActionGraphIgnored(Sandbox.TypeDescription)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.UpdateReferences",
+          "Name": "UpdateReferences",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.UpdateReferences(Facepunch.ActionGraphs.ActionGraph)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IReadOnlyCollection`1<System.Type>",
+          "Parameters": [
+            {
+              "Name": "graph",
+              "Type": "Facepunch.ActionGraphs.ActionGraph"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/NodeLibrary.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions.GetReferencedComponentTypes",
+          "Name": "GetReferencedComponentTypes",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets all component types referenced using \"scene.get\" nodes. These components are expected\nto be on the GameObject containing the graph."
+          },
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphExtensions.GetReferencedComponentTypes(Facepunch.ActionGraphs.ActionGraph)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Reflection",
+      "IsPublic": true,
+      "IsStatic": true,
+      "IsExtension": true,
+      "FullName": "Sandbox.ActionGraphs.ActionGraphExtensions",
+      "Name": "ActionGraphExtensions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.ActionGraphs.ActionGraphExtensions"
+    },
+    {
+      "Namespace": "Sandbox.Internal",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sheet",
+              "Type": "Sandbox.Internal.IControlSheet"
+            },
+            {
+              "Name": "q",
+              "Type": "System.Collections.Generic.List`1<Sandbox.SerializedProperty>"
+            },
+            {
+              "Name": "allowFeatures",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.FilterSortAndAdd",
+          "Name": "FilterSortAndAdd",
+          "DeclaringType": "Sandbox.Internal.IControlSheet",
+          "DocId": "M:Sandbox.Internal.IControlSheet.FilterSortAndAdd(Sandbox.Internal.IControlSheet,System.Collections.Generic.List`1{Sandbox.SerializedProperty},System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sheet",
+              "Type": "Sandbox.Internal.IControlSheet"
+            },
+            {
+              "Name": "properties",
+              "Type": "System.Collections.Generic.List`1<Sandbox.SerializedProperty>"
+            },
+            {
+              "Name": "allowFeatures",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.AddProperties",
+          "Name": "AddProperties",
+          "DeclaringType": "Sandbox.Internal.IControlSheet",
+          "DocId": "M:Sandbox.Internal.IControlSheet.AddProperties(Sandbox.Internal.IControlSheet,System.Collections.Generic.List`1{Sandbox.SerializedProperty},System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "properties",
+              "Type": "System.Collections.Generic.List`1<Sandbox.SerializedProperty>"
+            }
+          ],
+          "l": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.RemoveUnusedMethods",
+          "Name": "RemoveUnusedMethods",
+          "DeclaringType": "Sandbox.Internal.IControlSheet",
+          "DocId": "M:Sandbox.Internal.IControlSheet.RemoveUnusedMethods(System.Collections.Generic.List`1{Sandbox.SerializedProperty})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "properties",
+              "Type": "System.Collections.Generic.List`1<Sandbox.SerializedProperty>"
+            }
+          ],
+          "l": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.AddPropertiesWithGrouping",
+          "Name": "AddPropertiesWithGrouping",
+          "DeclaringType": "Sandbox.Internal.IControlSheet",
+          "DocId": "M:Sandbox.Internal.IControlSheet.AddPropertiesWithGrouping(System.Collections.Generic.List`1{Sandbox.SerializedProperty})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "feature",
+              "Type": "Sandbox.Internal.IControlSheet.Feature"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.AddFeature",
+          "Name": "AddFeature",
+          "DeclaringType": "Sandbox.Internal.IControlSheet",
+          "Documentation": {
+            "Summary": "We're adding a feature. Normally would store these in a tab control"
+          },
+          "DocId": "M:Sandbox.Internal.IControlSheet.AddFeature(Sandbox.Internal.IControlSheet.Feature)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "group",
+              "Type": "Sandbox.Internal.IControlSheet.Group"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.AddGroup",
+          "Name": "AddGroup",
+          "DeclaringType": "Sandbox.Internal.IControlSheet",
+          "Documentation": {
+            "Summary": "We're adding a group. Normally would have a Group Panel with the properties as children"
+          },
+          "DocId": "M:Sandbox.Internal.IControlSheet.AddGroup(Sandbox.Internal.IControlSheet.Group)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "prop",
+              "Type": "Sandbox.SerializedProperty"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.TestFilter",
+          "Name": "TestFilter",
+          "DeclaringType": "Sandbox.Internal.IControlSheet",
+          "Documentation": {
+            "Summary": "Implement to filter properties that should be displayed in the control sheet."
+          },
+          "DocId": "M:Sandbox.Internal.IControlSheet.TestFilter(Sandbox.SerializedProperty)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Reflection",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IControlSheet",
+      "Name": "IControlSheet",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Interface for a control sheet that manages the display of serialized properties in a structured way."
+      },
+      "DocId": "T:Sandbox.Internal.IControlSheet"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "properties",
+              "Type": "System.Collections.Generic.List`1<Sandbox.SerializedProperty>"
+            }
+          ],
+          "l": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.Feature..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.IControlSheet.Feature",
+          "DocId": "M:Sandbox.Internal.IControlSheet.Feature.#ctor(System.Collections.Generic.List`1{Sandbox.SerializedProperty})"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.Feature.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "The name of the feature, usually displayed as a tab title in the inspector."
+          },
+          "DocId": "P:Sandbox.Internal.IControlSheet.Feature.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.Feature.Description",
+          "Name": "Description",
+          "Documentation": {
+            "Summary": "The description of the feature"
+          },
+          "DocId": "P:Sandbox.Internal.IControlSheet.Feature.Description"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 110
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.Feature.Icon",
+          "Name": "Icon",
+          "Documentation": {
+            "Summary": "The icon of the feature"
+          },
+          "DocId": "P:Sandbox.Internal.IControlSheet.Feature.Icon"
+        },
+        {
+          "PropertyType": "Sandbox.EditorTint",
+          "Loc": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.Feature.Tint",
+          "Name": "Tint",
+          "Documentation": {
+            "Summary": "Allows tinting this feature, for some reason"
+          },
+          "DocId": "P:Sandbox.Internal.IControlSheet.Feature.Tint"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.SerializedProperty>",
+          "Loc": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 120
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.Feature.Properties",
+          "Name": "Properties",
+          "Documentation": {
+            "Summary": "The properties that are part of this feature, usually displayed together in the inspector."
+          },
+          "DocId": "P:Sandbox.Internal.IControlSheet.Feature.Properties"
+        },
+        {
+          "PropertyType": "Sandbox.SerializedProperty",
+          "Loc": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.Feature.EnabledProperty",
+          "Name": "EnabledProperty",
+          "Documentation": {
+            "Summary": "If we have a FeatureEnabled property, this will be it. If not then we assume it should always be enabled."
+          },
+          "DocId": "P:Sandbox.Internal.IControlSheet.Feature.EnabledProperty"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Reflection",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IControlSheet.Feature",
+      "Name": "Feature",
+      "DeclaringType": "Sandbox.Internal.IControlSheet",
+      "Documentation": {
+        "Summary": "A feature is usually displayed as a tab, to break things up in the inspector. They can sometimes be turned on and off."
+      },
+      "DocId": "T:Sandbox.Internal.IControlSheet.Feature"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "properties",
+              "Type": "System.Collections.Generic.List`1<Sandbox.SerializedProperty>"
+            }
+          ],
+          "l": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 174
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.Group..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Internal.IControlSheet.Group",
+          "DocId": "M:Sandbox.Internal.IControlSheet.Group.#ctor(System.Collections.Generic.List`1{Sandbox.SerializedProperty})"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 167
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.Group.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "The name of the group, usually displayed as a title in the inspector."
+          },
+          "DocId": "P:Sandbox.Internal.IControlSheet.Group.Name"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.SerializedProperty>",
+          "Loc": {
+            "File": "Helpers/IControlSheet.cs",
+            "Line": 172
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Internal.IControlSheet.Group.Properties",
+          "Name": "Properties",
+          "Documentation": {
+            "Summary": "The properties that are part of this group, usually displayed together in the inspector."
+          },
+          "DocId": "P:Sandbox.Internal.IControlSheet.Group.Properties"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Reflection",
+      "IsPublic": true,
+      "FullName": "Sandbox.Internal.IControlSheet.Group",
+      "Name": "Group",
+      "DeclaringType": "Sandbox.Internal.IControlSheet",
+      "Documentation": {
+        "Summary": "A group is a collection of properties that are related to each other, and can be displayed together in the inspector, usually with a title."
+      },
+      "DocId": "T:Sandbox.Internal.IControlSheet.Group"
+    }
+  ],
+  "_metadata": {
+    "chunk": 239,
+    "items_count": 5
+  }
+}

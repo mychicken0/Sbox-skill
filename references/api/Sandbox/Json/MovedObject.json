@@ -1,0 +1,1751 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Json.ObjectIdentifier",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.MovedObject.Id",
+          "Name": "Id",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The identifier of the object to move"
+          },
+          "DocId": "F:Sandbox.Json.MovedObject.Id"
+        },
+        {
+          "FieldType": "Sandbox.Json.ObjectIdentifier",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.MovedObject.NewParent",
+          "Name": "NewParent",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "91"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The new parent object"
+          },
+          "DocId": "F:Sandbox.Json.MovedObject.NewParent"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.MovedObject.NewContainerProperty",
+          "Name": "NewContainerProperty",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "95"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The property name in the new parent that will contain this object"
+          },
+          "DocId": "F:Sandbox.Json.MovedObject.NewContainerProperty"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.MovedObject.IsNewContainerArray",
+          "Name": "IsNewContainerArray",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "99"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the object is being moved to an array (true) or as a direct property (false)"
+          },
+          "DocId": "F:Sandbox.Json.MovedObject.IsNewContainerArray"
+        },
+        {
+          "FieldType": "System.Nullable`1<Sandbox.Json.ObjectIdentifier>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.MovedObject.NewPreviousElement",
+          "Name": "NewPreviousElement",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "103"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The previous sibling in the new location (null if first or not in array)"
+          },
+          "DocId": "F:Sandbox.Json.MovedObject.NewPreviousElement"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Json.MovedObject",
+      "Name": "MovedObject",
+      "DeclaringType": "Sandbox.Json",
+      "Documentation": {
+        "Summary": "Represents an object that should be moved to a new location during patching."
+      },
+      "DocId": "T:Sandbox.Json.MovedObject"
+    },
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.TrackedObjectDefinition..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Json.TrackedObjectDefinition",
+          "DocId": "M:Sandbox.Json.TrackedObjectDefinition.#ctor"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.TrackedObjectDefinition.Type",
+          "Name": "Type",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "116"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A unique identifier for this object type. This is used to categorize objects."
+          },
+          "DocId": "F:Sandbox.Json.TrackedObjectDefinition.Type"
+        },
+        {
+          "FieldType": "System.Func`2<System.Text.Json.Nodes.JsonObject,System.Single>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.TrackedObjectDefinition.MatchScore",
+          "Name": "MatchScore",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "126"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Determines whether a JSON object should be considered an instance of this tracked object type.",
+            "Remarks": "The function returns a float value indicating how well the JSON object matches this definition.\nA return value of 0 indicates no match, while higher values indicate stronger matches.\nThis allows for heuristic-based matching when exact matches aren't possible."
+          },
+          "DocId": "F:Sandbox.Json.TrackedObjectDefinition.MatchScore"
+        },
+        {
+          "FieldType": "System.Func`2<System.Text.Json.Nodes.JsonObject,System.String>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.TrackedObjectDefinition.ToId",
+          "Name": "ToId",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "140"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Maps a JSON object to a unique identifier string.",
+            "Remarks": "The identifier could be derived from a specific property, a combination of properties, or a computed hash.\nIt's critical that this function:\n1. Produces a truly unique value for each distinct object of this type\n2. Never maps two different objects to the same ID\n3. Is deterministic - always returns the same ID when applied to the same object\n\nIf you can just use a UUID or other guaranteed unique identifier."
+          },
+          "DocId": "F:Sandbox.Json.TrackedObjectDefinition.ToId"
+        },
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.TrackedObjectDefinition.ParentType",
+          "Name": "ParentType",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "148"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Specifies the required type of the parent object. If null, AllowedAsRoot must be true.",
+            "Remarks": "This enforces type hierarchy constraints within the JSON structure."
+          },
+          "DocId": "F:Sandbox.Json.TrackedObjectDefinition.ParentType"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.TrackedObjectDefinition.AllowedAsRoot",
+          "Name": "AllowedAsRoot",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "157"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true, objects of this type can be the root of the object tree.",
+            "Remarks": "Root objects don't require a parent, and they don't need an ID since there can only be one root.\nIf AllowedAsRoot is false, ParentType must be specified."
+          },
+          "DocId": "F:Sandbox.Json.TrackedObjectDefinition.AllowedAsRoot"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.TrackedObjectDefinition.Atomic",
+          "Name": "Atomic",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "172"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When true, treats this object as an atomic unit during tracking operations.",
+            "Remarks": "Objects with AtomicTracking enabled:\n1. Have their children excluded from individual tracking\n2. Skip property-level diffing (changes are handled as whole object replacements)\n3. Are treated as \"black boxes\" where internal structure is ignored\n\nThis is useful for:\n- Objects containing data that shouldn't be tracked independently (like patches)\n- Preventing recursive tracking of complex nested structures"
+          },
+          "DocId": "F:Sandbox.Json.TrackedObjectDefinition.Atomic"
+        },
+        {
+          "FieldType": "System.Collections.Generic.HashSet`1<System.String>",
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.TrackedObjectDefinition.IgnoredProperties",
+          "Name": "IgnoredProperties",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "174"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Json.TrackedObjectDefinition.IgnoredProperties"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Json.TrackedObjectDefinition",
+      "Name": "TrackedObjectDefinition",
+      "DeclaringType": "Sandbox.Json",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Defines characteristics of an object type that should be tracked within a JSON tree structure. These definitions are used to identify, track, and manage specific types of objects during JSON diffing and patching operations."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\Json\\Json.Diff.cs",
+            "111"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Defines characteristics of an object type that should be tracked within a JSON tree structure.\nThese definitions are used to identify, track, and manage specific types of objects during JSON diffing and patching operations."
+      },
+      "DocId": "T:Sandbox.Json.TrackedObjectDefinition"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/Json/Json.Diff.cs",
+            "Line": 511
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Patch..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Json.Patch",
+          "DocId": "M:Sandbox.Json.Patch.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Json.AddedObject>",
+          "Loc": {
+            "File": "Utility/Json/Json.Diff.cs",
+            "Line": 511
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Patch.AddedObjects",
+          "Name": "AddedObjects",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Objects that need to be added to the target structure."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "509"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Objects that need to be added to the target structure."
+          },
+          "DocId": "P:Sandbox.Json.Patch.AddedObjects"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Json.RemovedObject>",
+          "Loc": {
+            "File": "Utility/Json/Json.Diff.cs",
+            "Line": 517
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Patch.RemovedObjects",
+          "Name": "RemovedObjects",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Objects that need to be removed from the target structure."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "515"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Objects that need to be removed from the target structure."
+          },
+          "DocId": "P:Sandbox.Json.Patch.RemovedObjects"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Json.PropertyOverride>",
+          "Loc": {
+            "File": "Utility/Json/Json.Diff.cs",
+            "Line": 523
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Patch.PropertyOverrides",
+          "Name": "PropertyOverrides",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Property values that need to be changed on existing objects."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "521"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Property values that need to be changed on existing objects."
+          },
+          "DocId": "P:Sandbox.Json.Patch.PropertyOverrides"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Json.MovedObject>",
+          "Loc": {
+            "File": "Utility/Json/Json.Diff.cs",
+            "Line": 529
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Patch.MovedObjects",
+          "Name": "MovedObjects",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIncludeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Objects that need to be moved to a different location in the structure."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Diff.cs",
+                "527"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Objects that need to be moved to a different location in the structure."
+          },
+          "DocId": "P:Sandbox.Json.Patch.MovedObjects"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Json.Patch",
+      "Name": "Patch",
+      "DeclaringType": "Sandbox.Json",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents a complete set of changes to be applied to a JSON structure."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\Json\\Json.Diff.cs",
+            "504"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents a complete set of changes to be applied to a JSON structure.",
+        "Remarks": "A patch contains all the operations needed to transform one JSON structure into another\nwhile preserving object identity and relationships."
+      },
+      "DocId": "T:Sandbox.Json.Patch"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Json.Pointer",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Utility/Json/Json.Pointer.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Pointer.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Json.Pointer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Appends a token to the JSON Pointer and returns a new Sandbox.Json.Pointer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Pointer.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Appends a token to the JSON Pointer and returns a new <see cref=\"T:Sandbox.Json.Pointer\" />.",
+            "Return": "A new <see cref=\"T:Sandbox.Json.Pointer\" /> with the appended token.",
+            "Params": {
+              "token": "The token to append."
+            }
+          },
+          "DocId": "M:Sandbox.Json.Pointer.Append(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Json.Pointer",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Utility/Json/Json.Pointer.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Pointer.Append",
+          "Name": "Append",
+          "DeclaringType": "Sandbox.Json.Pointer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Appends an integer index as a token to the JSON Pointer and returns a new Sandbox.Json.Pointer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Pointer.cs",
+                "70"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Appends an integer index as a token to the JSON Pointer and returns a new <see cref=\"T:Sandbox.Json.Pointer\" />.",
+            "Return": "A new <see cref=\"T:Sandbox.Json.Pointer\" /> with the appended index.",
+            "Params": {
+              "index": "The integer index to append."
+            }
+          },
+          "DocId": "M:Sandbox.Json.Pointer.Append(System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Json.Pointer",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/Json/Json.Pointer.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Pointer.GetParent",
+          "Name": "GetParent",
+          "DeclaringType": "Sandbox.Json.Pointer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns a new Sandbox.Json.Pointer representing the parent of the current pointer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Pointer.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a new <see cref=\"T:Sandbox.Json.Pointer\" /> representing the parent of the current pointer.",
+            "Return": "A new <see cref=\"T:Sandbox.Json.Pointer\" /> for the parent path."
+          },
+          "DocId": "M:Sandbox.Json.Pointer.GetParent"
+        },
+        {
+          "ReturnType": "System.Text.Json.Nodes.JsonNode",
+          "Parameters": [
+            {
+              "Name": "document",
+              "Type": "System.Text.Json.Nodes.JsonNode"
+            }
+          ],
+          "l": {
+            "File": "Utility/Json/Json.Pointer.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Pointer.Evaluate",
+          "Name": "Evaluate",
+          "DeclaringType": "Sandbox.Json.Pointer",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Pointer.cs",
+                "90"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Json.Pointer.Evaluate(System.Text.Json.Nodes.JsonNode)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Utility/Json/Json.Pointer.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Pointer..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Json.Pointer",
+          "Documentation": {
+            "Summary": "Initializes a new instance of the <see cref=\"T:Sandbox.Json.Pointer\" /> class with the specified string.",
+            "Params": {
+              "value": "The string value of the JSON Pointer."
+            }
+          },
+          "DocId": "M:Sandbox.Json.Pointer.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Immutable.ImmutableArray`1<System.String>",
+          "Loc": {
+            "File": "Utility/Json/Json.Pointer.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Pointer.ReferenceTokens",
+          "Name": "ReferenceTokens",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument[]"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The reference tokens that make up the JSON Pointer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Pointer.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The reference tokens that make up the JSON Pointer."
+          },
+          "DocId": "P:Sandbox.Json.Pointer.ReferenceTokens"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Utility/Json/Json.Pointer.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.Pointer.IsRoot",
+          "Name": "IsRoot",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Pointer.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Json.Pointer.IsRoot"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Json.Pointer",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Json.Pointer.Root",
+          "Name": "Root",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Pointer.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A static instance representing the root JSON Pointer (i.e., \"/\")."
+          },
+          "DocId": "F:Sandbox.Json.Pointer.Root"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Json.Pointer",
+      "Name": "Pointer",
+      "DeclaringType": "Sandbox.Json",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        },
+        {
+          "FullName": "System.Text.Json.Serialization.JsonConverterAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Json/PointerJsonConverter"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents a JSON Pointer as defined in RFC 6901."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\Json\\Json.Pointer.cs",
+            "19"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents a JSON Pointer as defined in RFC 6901."
+      },
+      "DocId": "T:Sandbox.Json.Pointer"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Text.Json.Serialization.JsonConverter`1<Sandbox.Json/Pointer>",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Json.Pointer",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "reader",
+              "Ref": true,
+              "Type": "System.Text.Json.Utf8JsonReader"
+            },
+            {
+              "Name": "typeToConvert",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "options",
+              "Type": "System.Text.Json.JsonSerializerOptions"
+            }
+          ],
+          "l": {
+            "File": "Utility/Json/Json.Pointer.cs",
+            "Line": 222
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.PointerJsonConverter.Read",
+          "Name": "Read",
+          "DeclaringType": "Sandbox.Json.PointerJsonConverter",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Pointer.cs",
+                "219"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Json.PointerJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "writer",
+              "Type": "System.Text.Json.Utf8JsonWriter"
+            },
+            {
+              "Name": "value",
+              "Type": "Sandbox.Json.Pointer"
+            },
+            {
+              "Name": "options",
+              "Type": "System.Text.Json.JsonSerializerOptions"
+            }
+          ],
+          "l": {
+            "File": "Utility/Json/Json.Pointer.cs",
+            "Line": 236
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.PointerJsonConverter.Write",
+          "Name": "Write",
+          "DeclaringType": "Sandbox.Json.PointerJsonConverter",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.Pointer.cs",
+                "233"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Json.PointerJsonConverter.Write(System.Text.Json.Utf8JsonWriter,Sandbox.Json.Pointer,System.Text.Json.JsonSerializerOptions)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Json.PointerJsonConverter..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Json.PointerJsonConverter",
+          "DocId": "M:Sandbox.Json.PointerJsonConverter.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Json.PointerJsonConverter",
+      "Name": "PointerJsonConverter",
+      "DeclaringType": "Sandbox.Json",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "1"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Custom JSON converter for the Pointer class that serializes a Pointer as a string and deserializes a string back into a Pointer using the Parse method."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\Json\\Json.Pointer.cs",
+            "217"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Custom JSON converter for the Pointer class that serializes a Pointer as a string\nand deserializes a string back into a Pointer using the Parse method."
+      },
+      "DocId": "T:Sandbox.Json.PointerJsonConverter"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Text.Json.Nodes.JsonNode",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.IJsonPopulator.Serialize",
+          "Name": "Serialize",
+          "DeclaringType": "Sandbox.IJsonPopulator",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.cs",
+                "365"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.IJsonPopulator.Serialize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "node",
+              "Type": "System.Text.Json.Nodes.JsonNode"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.IJsonPopulator.Deserialize",
+          "Name": "Deserialize",
+          "DeclaringType": "Sandbox.IJsonPopulator",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Json\\Json.cs",
+                "366"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.IJsonPopulator.Deserialize(System.Text.Json.Nodes.JsonNode)"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.IJsonPopulator",
+      "Name": "IJsonPopulator",
+      "Documentation": {
+        "Summary": "Objects that need to be deserialized into can implement this interface\nwhich allows them to be populated from a JSON object."
+      },
+      "DocId": "T:Sandbox.IJsonPopulator"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan.Max",
+          "Name": "Max",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Math\\FloatSpan.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FloatSpan.Max"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan.Min",
+          "Name": "Min",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Math\\FloatSpan.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FloatSpan.Min"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan.Average",
+          "Name": "Average",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Math\\FloatSpan.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FloatSpan.Average"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan.Sum",
+          "Name": "Sum",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Math\\FloatSpan.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FloatSpan.Sum"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Math\\FloatSpan.cs",
+                "43"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FloatSpan.Set(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "values",
+              "Type": "System.ReadOnlySpan`1<System.Single>"
+            }
+          ],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Math\\FloatSpan.cs",
+                "49"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FloatSpan.Set(System.ReadOnlySpan`1{System.Single})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "values",
+              "Type": "System.ReadOnlySpan`1<System.Single>"
+            },
+            {
+              "Name": "scale",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan.CopyScaled",
+          "Name": "CopyScaled",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Math\\FloatSpan.cs",
+                "55"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FloatSpan.CopyScaled(System.ReadOnlySpan`1{System.Single},System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "values",
+              "Type": "System.ReadOnlySpan`1<System.Single>"
+            }
+          ],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan.Add",
+          "Name": "Add",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Math\\FloatSpan.cs",
+                "61"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FloatSpan.Add(System.ReadOnlySpan`1{System.Single})"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "values",
+              "Type": "System.ReadOnlySpan`1<System.Single>"
+            },
+            {
+              "Name": "scale",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan.AddScaled",
+          "Name": "AddScaled",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Math\\FloatSpan.cs",
+                "67"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FloatSpan.AddScaled(System.ReadOnlySpan`1{System.Single},System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scale",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 76
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan.Scale",
+          "Name": "Scale",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Math\\FloatSpan.cs",
+                "73"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.FloatSpan.Scale(System.Single)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "span",
+              "Type": "System.Span`1<System.Single>"
+            }
+          ],
+          "l": {
+            "File": "Utility/Math/FloatSpan.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.FloatSpan..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.FloatSpan",
+          "DocId": "M:Sandbox.FloatSpan.#ctor(System.Span`1{System.Single})"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.FloatSpan",
+      "Name": "FloatSpan",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsByRefLikeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Provides vectorized operations over a span of floats."
+      },
+      "DocId": "T:Sandbox.FloatSpan"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Utility/Metadata.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Metadata.SetValue",
+          "Name": "SetValue",
+          "DeclaringType": "Sandbox.Metadata",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set a value with the specified key."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Metadata.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set a value with the specified key."
+          },
+          "DocId": "M:Sandbox.Metadata.SetValue(System.String,System.Object)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "outValue",
+              "Out": true,
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Utility/Metadata.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Metadata.TryGetValue",
+          "Name": "TryGetValue",
+          "DeclaringType": "Sandbox.Metadata",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Try to get a value of the specified type."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Metadata.cs",
+                "52"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Try to get a value of the specified type."
+          },
+          "DocId": "M:Sandbox.Metadata.TryGetValue``1(System.String,``0@)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "T",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Utility/Metadata.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Metadata.GetValueOrDefault",
+          "Name": "GetValueOrDefault",
+          "DeclaringType": "Sandbox.Metadata",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the a value. If it's missing or the wrong type then use the default value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Metadata.cs",
+                "83"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the a value. If it's missing or the wrong type then use the default value."
+          },
+          "DocId": "M:Sandbox.Metadata.GetValueOrDefault``1(System.String,``0)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Utility/Metadata.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Metadata..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Metadata",
+          "DocId": "M:Sandbox.Metadata.#ctor"
+        }
+      ],
+      "Properties": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Metadata",
+      "Name": "Metadata",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A simple class for storing and retrieving metadata values."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\Metadata.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A simple class for storing and retrieving metadata values."
+      },
+      "DocId": "T:Sandbox.Metadata"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [],
+      "Properties": [
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Utility/Mouse.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mouse.Velocity",
+          "Name": "Velocity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Mouse.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Mouse.Velocity"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Utility/Mouse.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mouse.Position",
+          "Name": "Position",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "input.mouse.pos"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Mouse Position"
+              ]
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "mouse"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access to local clients' cursor position, relative to game windows' top left corner."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Mouse.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access to local clients' cursor position, relative to game windows' top left corner."
+          },
+          "DocId": "P:Sandbox.Mouse.Position"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Utility/Mouse.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mouse.Delta",
+          "Name": "Delta",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "input.mouse.delta"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Mouse Delta"
+              ]
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "mouse"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Change in local clients' cursor position since last frame."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Mouse.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Change in local clients' cursor position since last frame."
+          },
+          "DocId": "P:Sandbox.Mouse.Delta"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Utility/Mouse.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mouse.CursorType",
+          "Name": "CursorType",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the cursor type until another panel stomps this value. Doesn't affect main menu."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Mouse.cs",
+                "58"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the cursor type until another panel stomps this value.\nDoesn't affect main menu."
+          },
+          "DocId": "P:Sandbox.Mouse.CursorType"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Utility/Mouse.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mouse.Active",
+          "Name": "Active",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the local clients' cursor is active or not, meaning it can interact with UI elements, etc."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Mouse.cs",
+                "67"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the local clients' cursor is active or not, meaning it can interact with UI elements, etc."
+          },
+          "DocId": "P:Sandbox.Mouse.Active"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Utility/Mouse.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mouse.Visible",
+          "Name": "Visible",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "DEPRECATED. Use Mouse.Visibility instead."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Mouse.cs",
+                "72"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "DEPRECATED. Use Mouse.Visibility instead."
+          },
+          "DocId": "P:Sandbox.Mouse.Visible"
+        },
+        {
+          "PropertyType": "Sandbox.MouseVisibility",
+          "Loc": {
+            "File": "Utility/Mouse.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mouse.Visibility",
+          "Name": "Visibility",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The visibility state of the mouse cursor. Auto will only show the mouse when clickable UI elements are visible."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Utility\\Mouse.cs",
+                "82"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The visibility state of the mouse cursor. Auto will only show the mouse when clickable UI elements are visible."
+          },
+          "DocId": "P:Sandbox.Mouse.Visibility"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Mouse",
+      "Name": "Mouse",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Gives access to mouse position etc"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Utility\\Mouse.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Gives access to mouse position etc"
+      },
+      "DocId": "T:Sandbox.Mouse"
+    }
+  ],
+  "_metadata": {
+    "chunk": 171,
+    "items_count": 9
+  }
+}

@@ -1,0 +1,1575 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.StartSound",
+          "Name": "StartSound",
+          "DeclaringType": "Sandbox.BaseSoundComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "44"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.BaseSoundComponent.StartSound"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.StopSound",
+          "Name": "StopSound",
+          "DeclaringType": "Sandbox.BaseSoundComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "45"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.BaseSoundComponent.StopSound"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "h",
+              "Type": "Sandbox.SoundHandle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 50
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.BaseSoundComponent.ApplyOverrides",
+          "Name": "ApplyOverrides",
+          "DeclaringType": "Sandbox.BaseSoundComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "47"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.BaseSoundComponent.ApplyOverrides(Sandbox.SoundHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 87
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.BaseSoundComponent.TestSound",
+          "Name": "TestSound",
+          "DeclaringType": "Sandbox.BaseSoundComponent",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Sound"
+              ]
+            },
+            {
+              "FullName": "Sandbox.ButtonAttribute",
+              "ConstructorArguments": [
+                "Test Sound",
+                "play_arrow"
+              ]
+            },
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "SoundEvent",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.WideModeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "84"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.BaseSoundComponent.TestSound"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 17
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.BaseSoundComponent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.BaseSoundComponent",
+          "DocId": "M:Sandbox.BaseSoundComponent.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Audio.MixerHandle",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.TargetMixer",
+          "Name": "TargetMixer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The mixer we want this sound to play through"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The mixer we want this sound to play through"
+          },
+          "DocId": "P:Sandbox.BaseSoundComponent.TargetMixer"
+        },
+        {
+          "PropertyType": "Sandbox.SoundEvent",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.SoundEvent",
+          "Name": "SoundEvent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Sound"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.SoundEvent"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.PlayOnStart",
+          "Name": "PlayOnStart",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Sound"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.PlayOnStart"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.StopOnNew",
+          "Name": "StopOnNew",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Sound"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.StopOnNew"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.SoundOverride",
+          "Name": "SoundOverride",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "SoundOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.SoundOverride"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.Volume",
+          "Name": "Volume",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "SoundOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.Volume"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.Pitch",
+          "Name": "Pitch",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "SoundOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.Pitch"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.Force2d",
+          "Name": "Force2d",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "SoundOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.Force2d"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.Repeat",
+          "Name": "Repeat",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "Repeat"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "24"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.Repeat"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.MinRepeatTime",
+          "Name": "MinRepeatTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Repeat"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.MinRepeatTime"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.MaxRepeatTime",
+          "Name": "MaxRepeatTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Repeat"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.MaxRepeatTime"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.DistanceAttenuationOverride",
+          "Name": "DistanceAttenuationOverride",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "DistanceAttenuationOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "28"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.DistanceAttenuationOverride"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.DistanceAttenuation",
+          "Name": "DistanceAttenuation",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "DistanceAttenuationOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.DistanceAttenuation"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.Distance",
+          "Name": "Distance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "DistanceAttenuationOverride"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Audio.AudioDistanceFloatAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "30"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.Distance"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.Falloff",
+          "Name": "Falloff",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "DistanceAttenuationOverride"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.Falloff"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.OcclusionOverride",
+          "Name": "OcclusionOverride",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "OcclusionOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.OcclusionOverride"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.Occlusion",
+          "Name": "Occlusion",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "OcclusionOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.Occlusion"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.OcclusionRadius",
+          "Name": "OcclusionRadius",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "256"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "OcclusionOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "35"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.OcclusionRadius"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.ReflectionOverride",
+          "Name": "ReflectionOverride",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "ReflectionOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "37"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.ReflectionOverride"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Audio/BaseSoundComponent.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.BaseSoundComponent.Reflections",
+          "Name": "Reflections",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "ReflectionOverride"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "38"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.BaseSoundComponent.Reflections"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.SoundHandle",
+          "IsProtected": true,
+          "FullName": "Sandbox.BaseSoundComponent.SoundHandle",
+          "Name": "SoundHandle",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+                "40"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.BaseSoundComponent.SoundHandle"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.BaseSoundComponent",
+      "Name": "BaseSoundComponent",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.TintAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Audio\\BaseSoundComponent.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.BaseSoundComponent"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Volumes.VolumeComponent",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/Dsp/DspVolume.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DspVolume..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.DspVolume",
+          "DocId": "M:Sandbox.DspVolume.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Audio.DspPresetHandle",
+          "Loc": {
+            "File": "Scene/Components/Audio/Dsp/DspVolume.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DspVolume.Dsp",
+          "Name": "Dsp",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\Dsp\\DspVolume.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DspVolume.Dsp"
+        },
+        {
+          "PropertyType": "Sandbox.Audio.MixerHandle",
+          "Loc": {
+            "File": "Scene/Components/Audio/Dsp/DspVolume.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DspVolume.TargetMixer",
+          "Name": "TargetMixer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\Dsp\\DspVolume.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DspVolume.TargetMixer"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Audio/Dsp/DspVolume.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DspVolume.Priority",
+          "Name": "Priority",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\Dsp\\DspVolume.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DspVolume.Priority"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.DspVolume",
+      "Name": "DspVolume",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Dsp Volume"
+          ]
+        },
+        {
+          "FullName": "GroupAttribute",
+          "ConstructorArguments": [
+            "Audio"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "graphic_eq"
+          ]
+        },
+        {
+          "FullName": "Sandbox.TintAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Audio\\Dsp\\DspVolume.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.DspVolume"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/LipSyncComponent.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LipSync..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.LipSync",
+          "DocId": "M:Sandbox.LipSync.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.BaseSoundComponent",
+          "Loc": {
+            "File": "Scene/Components/Audio/LipSyncComponent.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LipSync.Sound",
+          "Name": "Sound",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\LipSyncComponent.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LipSync.Sound"
+        },
+        {
+          "PropertyType": "Sandbox.SkinnedModelRenderer",
+          "Loc": {
+            "File": "Scene/Components/Audio/LipSyncComponent.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LipSync.Renderer",
+          "Name": "Renderer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\LipSyncComponent.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LipSync.Renderer"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Audio/LipSyncComponent.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LipSync.MorphScale",
+          "Name": "MorphScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Scale"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Morph"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "5"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\LipSyncComponent.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LipSync.MorphScale"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Audio/LipSyncComponent.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.LipSync.MorphSmoothTime",
+          "Name": "MorphSmoothTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Smoothing"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Morph"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\LipSyncComponent.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.LipSync.MorphSmoothTime"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.LipSync",
+      "Name": "LipSync",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Audio"
+          ]
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Lip Syncing"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "emoji_emotions"
+          ]
+        },
+        {
+          "FullName": "Sandbox.TintAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Drive morphs with lipsync from sounds."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Audio\\LipSyncComponent.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Drive morphs with lipsync from sounds."
+      },
+      "DocId": "T:Sandbox.LipSync"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.BaseSoundComponent",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/SoundBoxComponent.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundBoxComponent.StartSound",
+          "Name": "StartSound",
+          "DeclaringType": "Sandbox.SoundBoxComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\SoundBoxComponent.cs",
+                "56"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SoundBoxComponent.StartSound"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/SoundBoxComponent.cs",
+            "Line": 95
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundBoxComponent.StopSound",
+          "Name": "StopSound",
+          "DeclaringType": "Sandbox.SoundBoxComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\SoundBoxComponent.cs",
+                "93"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SoundBoxComponent.StopSound"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/SoundBoxComponent.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundBoxComponent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SoundBoxComponent",
+          "DocId": "M:Sandbox.SoundBoxComponent.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Audio/SoundBoxComponent.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundBoxComponent.Scale",
+          "Name": "Scale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Box Size"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Box"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\SoundBoxComponent.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SoundBoxComponent.Scale"
+        },
+        {
+          "PropertyType": "BBox",
+          "Loc": {
+            "File": "Scene/Components/Audio/SoundBoxComponent.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundBoxComponent.Inner",
+          "Name": "Inner",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\SoundBoxComponent.cs",
+                "27"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SoundBoxComponent.Inner"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Audio/SoundBoxComponent.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundBoxComponent.SndPos",
+          "Name": "SndPos",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\SoundBoxComponent.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SoundBoxComponent.SndPos"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SoundBoxComponent",
+      "Name": "SoundBoxComponent",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Audio"
+          ]
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Sound Box"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "surround_sound"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/sound.png"
+          ]
+        },
+        {
+          "FullName": "Sandbox.TintAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Plays a sound within a box."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Audio\\SoundBoxComponent.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Plays a sound within a box."
+      },
+      "DocId": "T:Sandbox.SoundBoxComponent"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.BaseSoundComponent",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/SoundPointComponent.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundPointComponent.StartSound",
+          "Name": "StartSound",
+          "DeclaringType": "Sandbox.SoundPointComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\SoundPointComponent.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SoundPointComponent.StartSound"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Audio/SoundPointComponent.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundPointComponent.StopSound",
+          "Name": "StopSound",
+          "DeclaringType": "Sandbox.SoundPointComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Audio\\SoundPointComponent.cs",
+                "48"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SoundPointComponent.StopSound"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.SoundPointComponent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SoundPointComponent",
+          "DocId": "M:Sandbox.SoundPointComponent.#ctor"
+        }
+      ],
+      "Properties": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SoundPointComponent",
+      "Name": "SoundPointComponent",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Audio"
+          ]
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Sound Point"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "volume_up"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/sound.png"
+          ]
+        },
+        {
+          "FullName": "Sandbox.TintAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Plays a sound at a point in the world."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Audio\\SoundPointComponent.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Plays a sound at a point in the world."
+      },
+      "DocId": "T:Sandbox.SoundPointComponent"
+    }
+  ],
+  "_metadata": {
+    "chunk": 71,
+    "items_count": 5
+  }
+}

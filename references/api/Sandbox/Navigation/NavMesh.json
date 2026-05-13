@@ -1,0 +1,1592 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Navigation",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.BakeNavMesh",
+          "Name": "BakeNavMesh",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Navigation.NavMesh/<BakeNavMesh>d__0"
+              ]
+            },
+            {
+              "FullName": "Editor.MenuAttribute",
+              "ConstructorArguments": [
+                "Editor",
+                "Scene/Bake NavMesh",
+                "directions_run"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Bake.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Navigation.NavMesh.BakeNavMesh"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Navigation.NavMesh.Dispose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 184
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.SetDirty",
+          "Name": "SetDirty",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the navgiation a dirty, so it will rebuild over the next few frames. If you need an immediate rebuild, call <span style=\"color: #4EC9B0;\">NavMesh</span>.<span style=\"color: #DCDCAA;\">Generate</span>(<span style=\"color: #4EC9B0;\">PhysicsWorld</span>) instead."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "182"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the navgiation a dirty, so it will rebuild over the next few frames.\nIf you need an immediate rebuild, call <see cref=\"M:Sandbox.Navigation.NavMesh.Generate(Sandbox.PhysicsWorld)\" /> instead."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.SetDirty"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<System.Boolean>",
+          "Parameters": [
+            {
+              "Name": "world",
+              "Type": "Sandbox.PhysicsWorld"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.Generate",
+          "Name": "Generate",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Navigation.NavMesh/<Generate>d__112"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "310"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Navigation.NavMesh.Generate(Sandbox.PhysicsWorld)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "world",
+              "Type": "Sandbox.PhysicsWorld"
+            },
+            {
+              "Name": "worldPosition",
+              "Type": "Vector3"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.GenerateTile",
+          "Name": "GenerateTile",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Navigation.NavMesh/<GenerateTile>d__152"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Generates or regenerates the navmesh tile at the given world position. This function is thread safe but can only be called from the main thread."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Generate.cs",
+                "73"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Generates or regenerates the navmesh tile at the given world position.\nThis function is thread safe but can only be called from the main thread.",
+            "Remarks": "While most of the generation happens in parallel, this function also requires some time on the main thread.\nIf you need to update many tiles, consider spreading the updates accross multiple frames."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.GenerateTile(Sandbox.PhysicsWorld,Vector3)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "world",
+              "Type": "Sandbox.PhysicsWorld"
+            },
+            {
+              "Name": "bounds",
+              "Type": "BBox"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.GenerateTiles",
+          "Name": "GenerateTiles",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Navigation.NavMesh/<GenerateTiles>d__153"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Generates or regenerates the navmesh tiles overlapping with the given bounds. This function is thread safe but can only be called from the main thread."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Generate.cs",
+                "127"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Generates or regenerates the navmesh tiles overlapping with the given bounds.\nThis function is thread safe but can only be called from the main thread.",
+            "Remarks": "While most of the generation happens in parallel, this function also requires some time on the main thread.\nIf you need to update many tiles, consider spreading the updates accross multiple frames."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.GenerateTiles(Sandbox.PhysicsWorld,BBox)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "worldPosition",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Generate.cs",
+            "Line": 275
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.UnloadTile",
+          "Name": "UnloadTile",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Removes the navmesh tile at the given world position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Generate.cs",
+                "273"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Removes the navmesh tile at the given world position."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.UnloadTile(Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "bounds",
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Generate.cs",
+            "Line": 289
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.UnloadTiles",
+          "Name": "UnloadTiles",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Removes all navmesh tiles overlapping with the given bounds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Generate.cs",
+                "287"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Removes all navmesh tiles overlapping with the given bounds."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.UnloadTiles(BBox)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "worldPosition",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Generate.cs",
+            "Line": 312
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.RequestTileGeneration",
+          "Name": "RequestTileGeneration",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Queues the navmesh tile at the given world position for incremental generation over subsequent frames. Fire-and-forget alternative to <span style=\"color: #4EC9B0;\">NavMesh</span>.<span style=\"color: #DCDCAA;\">GenerateTile</span>(<span style=\"color: #4EC9B0;\">PhysicsWorld</span>,<span style=\"color: #86C691;\">Vector3</span>)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Generate.cs",
+                "310"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Queues the navmesh tile at the given world position for incremental generation\nover subsequent frames. Fire-and-forget alternative to <see cref=\"M:Sandbox.Navigation.NavMesh.GenerateTile(Sandbox.PhysicsWorld,Vector3)\" />."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.RequestTileGeneration(Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "bounds",
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Generate.cs",
+            "Line": 327
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.RequestTilesGeneration",
+          "Name": "RequestTilesGeneration",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Queues all navmesh tiles overlapping with the given bounds for incremental generation over subsequent frames. Fire-and-forget alternative to <span style=\"color: #4EC9B0;\">NavMesh</span>.<span style=\"color: #DCDCAA;\">GenerateTiles</span>(<span style=\"color: #4EC9B0;\">PhysicsWorld</span>,<span style=\"color: #86C691;\">BBox</span>)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Generate.cs",
+                "325"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Queues all navmesh tiles overlapping with the given bounds for incremental generation\nover subsequent frames. Fire-and-forget alternative to <see cref=\"M:Sandbox.Navigation.NavMesh.GenerateTiles(Sandbox.PhysicsWorld,BBox)\" />."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.RequestTilesGeneration(BBox)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.List`1<Vector3>",
+          "Parameters": [
+            {
+              "Name": "from",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Path.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.GetSimplePath",
+          "Name": "GetSimplePath",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use CalculatePath instead"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Path.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Navigation.NavMesh.GetSimplePath(Vector3,Vector3)"
+        },
+        {
+          "ReturnType": "Sandbox.Navigation.NavMeshPath",
+          "Parameters": [
+            {
+              "Name": "request",
+              "Type": "Sandbox.Navigation.CalculatePathRequest"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Path.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.CalculatePath",
+          "Name": "CalculatePath",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Computes a navigation path between the specified start and target positions on the navmesh. Uses the same pathfinding algorithm as <span style=\"color: #4EC9B0;\">NavMeshAgent</span>, taking agent configuration into account if provided. The result is suitable for direct use with <span style=\"color: #4EC9B0;\">NavMeshAgent</span>.<span style=\"color: #DCDCAA;\">SetPath</span>(<span style=\"color: #86C691;\">NavMeshPath</span>). If a complete path cannot be found, the result may indicate an incomplete or failed path."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Path.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Computes a navigation path between the specified start and target positions on the navmesh.\nUses the same pathfinding algorithm as <see cref=\"T:Sandbox.NavMeshAgent\" />, taking agent configuration into account if provided.\nThe result is suitable for direct use with <see cref=\"M:Sandbox.NavMeshAgent.SetPath(Sandbox.Navigation.NavMeshPath)\" />.\nIf a complete path cannot be found, the result may indicate an incomplete or failed path."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.CalculatePath(Sandbox.Navigation.CalculatePathRequest)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Vector3>",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Query.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.GetRandomPoint",
+          "Name": "GetRandomPoint",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Query.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Navigation.NavMesh.GetRandomPoint"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Vector3>",
+          "Parameters": [
+            {
+              "Name": "box",
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Query.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.GetRandomPoint",
+          "Name": "GetRandomPoint",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a random point on the navmesh, within the bounding box. This will return null if it can't find a point on the navmesh in a few tries. Returning false doesn't mean it's impossible, our algorithm here isn't the best."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Query.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a random point on the navmesh, within the bounding box. \nThis will return null if it can't find a point on the navmesh in a few tries. Returning false doesn't mean it's impossible, our algorithm here isn't the best."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.GetRandomPoint(BBox)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Vector3>",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Query.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.GetRandomPoint",
+          "Name": "GetRandomPoint",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a random point on the navmesh, within the sphere. This will return null if it can't find a point on the navmesh in a few tries. Returning false doesn't mean it's impossible, our algorithm here isn't the best."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Query.cs",
+                "46"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a random point on the navmesh, within the sphere.\nThis will return null if it can't find a point on the navmesh in a few tries. Returning false doesn't mean it's impossible, our algorithm here isn't the best."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.GetRandomPoint(Vector3,System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Vector3>",
+          "Parameters": [
+            {
+              "Name": "box",
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Query.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.GetClosestPoint",
+          "Name": "GetClosestPoint",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Query.cs",
+                "64"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Navigation.NavMesh.GetClosestPoint(BBox)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Vector3>",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single",
+              "Default": "1024"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Query.cs",
+            "Line": 76
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.GetClosestPoint",
+          "Name": "GetClosestPoint",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Query.cs",
+                "75"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Navigation.NavMesh.GetClosestPoint(Vector3,System.Single)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Vector3>",
+          "Parameters": [
+            {
+              "Name": "box",
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Query.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.GetClosestEdge",
+          "Name": "GetClosestEdge",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Query.cs",
+                "78"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Navigation.NavMesh.GetClosestEdge(BBox)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Vector3>",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single",
+              "Default": "1024"
+            }
+          ],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Query.cs",
+            "Line": 94
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.GetClosestEdge",
+          "Name": "GetClosestEdge",
+          "DeclaringType": "Sandbox.Navigation.NavMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Query.cs",
+                "93"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Navigation.NavMesh.GetClosestEdge(Vector3,System.Single)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.IsEnabled",
+          "Name": "IsEnabled",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Determines wether the navigation mesh is enabled and should be generated"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Determines wether the navigation mesh is enabled and should be generated"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.IsEnabled"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.IsGenerating",
+          "Name": "IsGenerating",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The navigation mesh is generating"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "57"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The navigation mesh is generating"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.IsGenerating"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.IsDirty",
+          "Name": "IsDirty",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The navigation mesh is dirty and needs a complete rebuild"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "63"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The navigation mesh is dirty and needs a complete rebuild"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.IsDirty"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.IncludeStaticBodies",
+          "Name": "IncludeStaticBodies",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Generation Input"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should the generator include static bodies"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "73"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should the generator include static bodies"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.IncludeStaticBodies"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.IncludeKeyframedBodies",
+          "Name": "IncludeKeyframedBodies",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should the generator include keyframed bodies"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should the generator include keyframed bodies"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.IncludeKeyframedBodies"
+        },
+        {
+          "PropertyType": "Sandbox.TagSet",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.ExcludedBodies",
+          "Name": "ExcludedBodies",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Don't include these bodies in the generation"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "84"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Don't include these bodies in the generation"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.ExcludedBodies"
+        },
+        {
+          "PropertyType": "Sandbox.TagSet",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 90
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.IncludedBodies",
+          "Name": "IncludedBodies",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If any, we'll only include bodies with this tag"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "89"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If any, we'll only include bodies with this tag"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.IncludedBodies"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 96
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.DeferGeneration",
+          "Name": "DeferGeneration",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Skip tile generation during scene load. Tiles can then be generated on demand via <span style=\"color: #4EC9B0;\">NavMesh</span>.<span style=\"color: #DCDCAA;\">GenerateTile</span>(<span style=\"color: #4EC9B0;\">PhysicsWorld</span>,<span style=\"color: #86C691;\">Vector3</span>), <span style=\"color: #4EC9B0;\">NavMesh</span>.<span style=\"color: #DCDCAA;\">RequestTileGeneration</span>(<span style=\"color: #86C691;\">Vector3</span>), etc."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "95"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Skip tile generation during scene load. Tiles can then be generated on demand\nvia <see cref=\"M:Sandbox.Navigation.NavMesh.GenerateTile(Sandbox.PhysicsWorld,Vector3)\" />, <see cref=\"M:Sandbox.Navigation.NavMesh.RequestTileGeneration(Vector3)\" />, etc."
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.DeferGeneration"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.CustomBounds",
+          "Name": "CustomBounds",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Bounds"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "By Default , the navmesh will calculate bounds based on the world geometry, but if you want to override that, you can set custom bounds here."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "100"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "By Default , the navmesh will calculate bounds based on the world geometry, but if you want to override that, you can set custom bounds here."
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.CustomBounds"
+        },
+        {
+          "PropertyType": "BBox",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 109
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.Bounds",
+          "Name": "Bounds",
+          "Attributes": [
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "CustomBounds",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.WideModeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The bounds to generate the navmesh within. Won't take effect until regenerated or reloaded."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "107"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The bounds to generate the navmesh within.\nWon't take effect until regenerated or reloaded."
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.Bounds"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.EditorAutoUpdate",
+          "Name": "EditorAutoUpdate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Editor"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Constantly update the navigation mesh in the editor"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "113"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Constantly update the navigation mesh in the editor"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.EditorAutoUpdate"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 120
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.DrawMesh",
+          "Name": "DrawMesh",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draw the navigation mesh in the editor"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "119"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw the navigation mesh in the editor"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.DrawMesh"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.AgentHeight",
+          "Name": "AgentHeight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Agent"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Height of the agent"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "124"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Height of the agent"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.AgentHeight"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 131
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.AgentRadius",
+          "Name": "AgentRadius",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The radius of the agent. This will change how much gap is left on the edges of surfaces, so they don't clip into walls."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "130"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The radius of the agent. This will change how much gap is left on the edges of surfaces, so they don't clip into walls."
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.AgentRadius"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 136
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.AgentStepSize",
+          "Name": "AgentStepSize",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The maximum height an agent can climb (step)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "135"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The maximum height an agent can climb (step)"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.AgentStepSize"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.cs",
+            "Line": 141
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.AgentMaxSlope",
+          "Name": "AgentMaxSlope",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The maximum slope an agent can walk up (in degrees)"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.cs",
+                "140"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The maximum slope an agent can walk up (in degrees)"
+          },
+          "DocId": "P:Sandbox.Navigation.NavMesh.AgentMaxSlope"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Navigation.NavMesh",
+      "Name": "NavMesh",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Navigation Mesh - allowing AI to navigate a world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Navigation\\NavMesh\\NavMesh.Bake.cs",
+            "8"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Navigation Mesh - allowing AI to navigate a world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Navigation\\NavMesh\\NavMesh.Cache.cs",
+            "268"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Navigation Mesh - allowing AI to navigate a world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Navigation\\NavMesh\\NavMesh.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Navigation Mesh - allowing AI to navigate a world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Navigation\\NavMesh\\NavMesh.DebugDraw.cs",
+            "9"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Navigation Mesh - allowing AI to navigate a world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Navigation\\NavMesh\\NavMesh.EditorEvents.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Navigation Mesh - allowing AI to navigate a world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Navigation\\NavMesh\\NavMesh.Generate.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Navigation Mesh - allowing AI to navigate a world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Navigation\\NavMesh\\NavMesh.Path.cs",
+            "9"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Navigation Mesh - allowing AI to navigate a world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Navigation\\NavMesh\\NavMesh.Query.cs",
+            "8"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Navigation Mesh - allowing AI to navigate a world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Navigation\\NavMesh\\NavMesh.Serialize.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Navigation Mesh - allowing AI to navigate a world"
+      },
+      "DocId": "T:Sandbox.Navigation.NavMesh"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Game/Navigation/NavMesh/NavMesh.EditorEvents.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMesh.IEventListener.OnAreaDefinitionChanged",
+          "Name": "OnAreaDefinitionChanged",
+          "DeclaringType": "Sandbox.Navigation.NavMesh.IEventListener",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when an area definition has changed or loaded/created."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.EditorEvents.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when an area definition has changed or loaded/created."
+          },
+          "DocId": "M:Sandbox.Navigation.NavMesh.IEventListener.OnAreaDefinitionChanged"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Navigation.NavMesh.IEventListener",
+      "Name": "IEventListener",
+      "DeclaringType": "Sandbox.Navigation.NavMesh",
+      "Documentation": {
+        "Summary": "Implement this interface to receive navmesh editor events."
+      },
+      "DocId": "T:Sandbox.Navigation.NavMesh.IEventListener"
+    },
+    {
+      "Namespace": "Sandbox.Navigation",
+      "Fields": [
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.CalculatePathRequest.Start",
+          "Name": "Start",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Path.cs",
+                "136"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Start position of the path, should be close to the navmesh."
+          },
+          "DocId": "F:Sandbox.Navigation.CalculatePathRequest.Start"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.CalculatePathRequest.Target",
+          "Name": "Target",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Path.cs",
+                "140"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Target/End position of the path, should be close to the navmesh."
+          },
+          "DocId": "F:Sandbox.Navigation.CalculatePathRequest.Target"
+        },
+        {
+          "FieldType": "Sandbox.NavMeshAgent",
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.CalculatePathRequest.Agent",
+          "Name": "Agent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Path.cs",
+                "145"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Optional agent whose configuration is used for path calculation."
+          },
+          "DocId": "F:Sandbox.Navigation.CalculatePathRequest.Agent"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Navigation.CalculatePathRequest",
+      "Name": "CalculatePathRequest",
+      "Documentation": {
+        "Summary": "Defines the input for a pathfinding request on the navmesh."
+      },
+      "DocId": "T:Sandbox.Navigation.CalculatePathRequest"
+    },
+    {
+      "Namespace": "Sandbox.Navigation",
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Navigation.NavMeshPathStatus",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Path.cs",
+            "Line": 157
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMeshPath.Status",
+          "Name": "Status",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The outcome of the path calculation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Path.cs",
+                "156"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The outcome of the path calculation."
+          },
+          "DocId": "P:Sandbox.Navigation.NavMeshPath.Status"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Path.cs",
+            "Line": 162
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMeshPath.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if a path was found."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Path.cs",
+                "161"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if a path was found."
+          },
+          "DocId": "P:Sandbox.Navigation.NavMeshPath.IsValid"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<Sandbox.Navigation.NavMeshPathPoint>",
+          "Loc": {
+            "File": "Game/Navigation/NavMesh/NavMesh.Path.cs",
+            "Line": 173
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMeshPath.Points",
+          "Name": "Points",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Points along the path."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Path.cs",
+                "172"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Points along the path."
+          },
+          "DocId": "P:Sandbox.Navigation.NavMeshPath.Points"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Navigation.NavMeshPath",
+      "Name": "NavMeshPath",
+      "Documentation": {
+        "Summary": "Contains the result of a pathfinding operation."
+      },
+      "DocId": "T:Sandbox.Navigation.NavMeshPath"
+    }
+  ],
+  "_metadata": {
+    "chunk": 224,
+    "items_count": 4
+  }
+}

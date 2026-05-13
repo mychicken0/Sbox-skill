@@ -1,0 +1,2954 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 467
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.ParticleEffect",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "464"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleEffect.Clear"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 484
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ResetEmitters",
+          "Name": "ResetEmitters",
+          "DeclaringType": "Sandbox.ParticleEffect",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "482"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleEffect.ResetEmitters"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "timeDelta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 694
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Step",
+          "Name": "Step",
+          "DeclaringType": "Sandbox.ParticleEffect",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "692"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleEffect.Step(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.Particle",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 769
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Emit",
+          "Name": "Emit",
+          "DeclaringType": "Sandbox.ParticleEffect",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Pass in a delta"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "765"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleEffect.Emit(Vector3)"
+        },
+        {
+          "ReturnType": "Sandbox.Particle",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 842
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Emit",
+          "Name": "Emit",
+          "DeclaringType": "Sandbox.ParticleEffect",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Emit a particle at the given position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "839"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Emit a particle at the given position.",
+            "Return": "A particle, will never be null. It's up to you to obey max particles.",
+            "Params": {
+              "position": "The position in which to spawn the particle",
+              "delta": "The time delta of the spawn. The first spawned particle is 0, the last spawned particle is 1. This is used to evaluate the spawn particles like lifetime and delay."
+            }
+          },
+          "DocId": "M:Sandbox.ParticleEffect.Emit(Vector3,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "p",
+              "Type": "Sandbox.Particle"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 897
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Terminate",
+          "Name": "Terminate",
+          "DeclaringType": "Sandbox.ParticleEffect",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "894"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ParticleEffect.Terminate(Sandbox.Particle)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ParticleEffect",
+          "DocId": "M:Sandbox.ParticleEffect.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.MaxParticles",
+          "Name": "MaxParticles",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Limits"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The maximum number of particles that can exist in this effect at once."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "20"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The maximum number of particles that can exist in this effect at once."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.MaxParticles"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Lifetime",
+          "Name": "Lifetime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The lifetime of each particle, in seconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The lifetime of each particle, in seconds."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Lifetime"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.TimeScale",
+          "Name": "TimeScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Time"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Scales the simulation time for this effect."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Scales the simulation time for this effect."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.TimeScale"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.PreWarm",
+          "Name": "PreWarm",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How many seconds to pre-warm this effect by when creating."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How many seconds to pre-warm this effect by when creating."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.PreWarm"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.StartDelay",
+          "Name": "StartDelay",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The delay before a particle starts after being emitted, in seconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The delay before a particle starts after being emitted, in seconds."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.StartDelay"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.PerParticleTimeScale",
+          "Name": "PerParticleTimeScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Per-particle time scale multiplier. Allows each particle to have a unique simulation speed."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Per-particle time scale multiplier. Allows each particle to have a unique simulation speed."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.PerParticleTimeScale"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleEffect.TimingMode",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Timing",
+          "Name": "Timing",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How time is updated for this effect."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "69"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How time is updated for this effect."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Timing"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleVector3",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.InitialVelocity",
+          "Name": "InitialVelocity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Move"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The initial velocity of the particle when it is created. This is applied before any forces are applied."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "75"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The initial velocity of the particle when it is created. This is applied before any forces are applied."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.InitialVelocity"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.StartVelocity",
+          "Name": "StartVelocity",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Random Velocity"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Move"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Apply an element of random velocity to the particle when it is created, in a random direction."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "81"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Apply an element of random velocity to the particle when it is created, in a random direction."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.StartVelocity"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Damping",
+          "Name": "Damping",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Move"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The damping factor applied to particle velocity over time. This reduces the velocity of particles, simulating resistance or drag."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "89"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The damping factor applied to particle velocity over time.\nThis reduces the velocity of particles, simulating resistance or drag."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Damping"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleVector3",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ConstantMovement",
+          "Name": "ConstantMovement",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Move"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Move this delta constantly. Ignores velocity, collisions and drag."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "95"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Move this delta constantly. Ignores velocity, collisions and drag."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.ConstantMovement"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleEffect.SimulationSpace",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Space",
+          "Name": "Space",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use LocalSpace instead"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Move"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "98"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleEffect.Space"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 109
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.LocalSpace",
+          "Name": "LocalSpace",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Move"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When 1 particles will be moved in local space relative to the emitter GameObject's transform. This allows particles to be emitted in a local space, like a fire effect that moves with the player, but the particles can slowly move to world space."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "107"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When 1 particles will be moved in local space relative to the emitter GameObject's transform. \nThis allows particles to be emitted in a local space, like a fire effect that moves with the player, but the particles can slowly move to world space."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.LocalSpace"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ApplyRotation",
+          "Name": "ApplyRotation",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "Rotation"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables or disables rotation for particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "113"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables or disables rotation for particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.ApplyRotation"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Pitch",
+          "Name": "Pitch",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Rotation"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The pitch rotation of the particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "119"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The pitch rotation of the particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Pitch"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Yaw",
+          "Name": "Yaw",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Rotation"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The yaw rotation of the particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "125"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The yaw rotation of the particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Yaw"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 133
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Roll",
+          "Name": "Roll",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Rotation"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The roll rotation of the particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "131"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The roll rotation of the particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Roll"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 139
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ApplyColor",
+          "Name": "ApplyColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "Color"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables or disables color application for particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "137"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables or disables color application for particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.ApplyColor"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 145
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ApplyAlpha",
+          "Name": "ApplyAlpha",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Color"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables or disables alpha application for particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "143"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables or disables alpha application for particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.ApplyAlpha"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 151
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Tint",
+          "Name": "Tint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Color"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The tint color applied to particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "149"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The tint color applied to particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Tint"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleGradient",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 157
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Gradient",
+          "Name": "Gradient",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Color"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The gradient used to color particles over their lifetime."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "155"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The gradient used to color particles over their lifetime."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Gradient"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 163
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Brightness",
+          "Name": "Brightness",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Color"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The brightness multiplier applied to particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "161"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The brightness multiplier applied to particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Brightness"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 169
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Alpha",
+          "Name": "Alpha",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Color"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The alpha transparency of particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "167"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The alpha transparency of particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Alpha"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 175
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ApplyShape",
+          "Name": "ApplyShape",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "Shape"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables or disables shape application for particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "173"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables or disables shape application for particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.ApplyShape"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 181
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Scale",
+          "Name": "Scale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Shape"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The scale of particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "179"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The scale of particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Scale"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 187
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Stretch",
+          "Name": "Stretch",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Shape"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The stretch factor of particles, affecting their aspect ratio."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "185"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The stretch factor of particles, affecting their aspect ratio."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Stretch"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 193
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Force",
+          "Name": "Force",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "Force"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables or disables the application of forces to particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "191"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables or disables the application of forces to particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Force"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 199
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ForceDirection",
+          "Name": "ForceDirection",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Force"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The direction of the force applied to particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "197"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The direction of the force applied to particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.ForceDirection"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 206
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ForceScale",
+          "Name": "ForceScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Force"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The scale of the force applied to each particle. This multiplier determines the intensity of the force applied to particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "204"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The scale of the force applied to each particle.\nThis multiplier determines the intensity of the force applied to particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.ForceScale"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleVector3",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 212
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.OrbitalForce",
+          "Name": "OrbitalForce",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Force"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The orbital force applied to particles, causing them to rotate around a point."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "210"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The orbital force applied to particles, causing them to rotate around a point."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.OrbitalForce"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 218
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.OrbitalPull",
+          "Name": "OrbitalPull",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Force"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The pull strength of the orbital force, drawing particles closer to the center."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "216"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The pull strength of the orbital force, drawing particles closer to the center."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.OrbitalPull"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleEffect.SimulationSpace",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 226
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ForceSpace",
+          "Name": "ForceSpace",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Space"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Force"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The simulation space in which forces are applied. Forces can be applied in either local space (relative to the emitter) or world space."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "223"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The simulation space in which forces are applied.\nForces can be applied in either local space (relative to the emitter) or world space."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.ForceSpace"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 232
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Collision",
+          "Name": "Collision",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "Collision"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables or disables collision behavior for particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "230"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables or disables collision behavior for particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Collision"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 238
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.DieOnCollisionChance",
+          "Name": "DieOnCollisionChance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Collision"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The chance that a particle will die upon collision."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "236"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The chance that a particle will die upon collision."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.DieOnCollisionChance"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 244
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.CollisionRadius",
+          "Name": "CollisionRadius",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Collision"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The radius used for collision detection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "242"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The radius used for collision detection."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.CollisionRadius"
+        },
+        {
+          "PropertyType": "Sandbox.TagSet",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 250
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.CollisionIgnore",
+          "Name": "CollisionIgnore",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Collision"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The set of tags to ignore during collision detection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "248"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The set of tags to ignore during collision detection."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.CollisionIgnore"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 256
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Bounce",
+          "Name": "Bounce",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Collision"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The bounce factor applied to particles upon collision."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "254"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The bounce factor applied to particles upon collision."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Bounce"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 262
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Friction",
+          "Name": "Friction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Collision"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The friction factor applied to particles upon collision."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "260"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The friction factor applied to particles upon collision."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Friction"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 268
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Bumpiness",
+          "Name": "Bumpiness",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Collision"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The bumpiness factor applied to particles upon collision."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "266"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The bumpiness factor applied to particles upon collision."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Bumpiness"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 274
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.PushStrength",
+          "Name": "PushStrength",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Collision"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The strength of the push force applied to particles upon collision."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "272"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The strength of the push force applied to particles upon collision."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.PushStrength"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 281
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.SheetSequence",
+          "Name": "SheetSequence",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Sheet"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "SheetSequence"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables or disables the use of a sheet sequence for particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "278"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables or disables the use of a sheet sequence for particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.SheetSequence"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 287
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.SequenceId",
+          "Name": "SequenceId",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "SheetSequence"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Which sequence to use."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "285"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Which sequence to use."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.SequenceId"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 293
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.SequenceTime",
+          "Name": "SequenceTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "SheetSequence"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows control of the sequence time, which spans from 0 to 1 for one loop."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "291"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows control of the sequence time, which spans from 0 to 1 for one loop."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.SequenceTime"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 299
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.SequenceSpeed",
+          "Name": "SequenceSpeed",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "SheetSequence"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Increment the sequence time by this much."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "297"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Increment the sequence time by this much."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.SequenceSpeed"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 305
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.SnapToFrame",
+          "Name": "SnapToFrame",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "SheetSequence"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Snap To Frame"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When enabled, snap to the nearest whole frame instead of blending between frames."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "303"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When enabled, snap to the nearest whole frame instead of blending between frames."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.SnapToFrame"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 311
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.UsePrefabFeature",
+          "Name": "UsePrefabFeature",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "Prefab"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables or disables the use of prefabs for particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "309"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables or disables the use of prefabs for particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.UsePrefabFeature"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.GameObject>",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 318
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.FollowerPrefab",
+          "Name": "FollowerPrefab",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Follower"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Prefab"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Will choose a random prefab to spawn from this list."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "315"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Will choose a random prefab to spawn from this list."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.FollowerPrefab"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 324
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.FollowerPrefabChance",
+          "Name": "FollowerPrefabChance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Prefab"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Spawn Chance"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If 1 then we'll always spawn a prefab. If 0.5 then we'll spawn a prefab 50% of the time."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "322"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If 1 then we'll always spawn a prefab. If 0.5 then we'll spawn a prefab 50% of the time."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.FollowerPrefabChance"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 330
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.FollowerPrefabKill",
+          "Name": "FollowerPrefabKill",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Prefab"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Kill on death"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When true the prefab will be destroyed at the end of the particle's life."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "328"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When true the prefab will be destroyed at the end of the particle's life."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.FollowerPrefabKill"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.GameObject>",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 337
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.CollisionPrefab",
+          "Name": "CollisionPrefab",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "On Collision"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Prefab"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Will choose a random prefab to spawn from this list."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "334"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Will choose a random prefab to spawn from this list."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.CollisionPrefab"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 343
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.CollisionPrefabAlign",
+          "Name": "CollisionPrefabAlign",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Prefab"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Align With Surface"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When true the collision prefab will be aligned with the surface it collides with."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "341"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When true the collision prefab will be aligned with the surface it collides with."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.CollisionPrefabAlign"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 349
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.CollisionPrefabRotation",
+          "Name": "CollisionPrefabRotation",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Prefab"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Rotation"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "CollisionPrefabAlign",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "We will by default align to the particle's angle, but we can also randomize that."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "347"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "We will by default align to the particle's angle, but we can also randomize that."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.CollisionPrefabRotation"
+        },
+        {
+          "PropertyType": "Sandbox.ParticleFloat",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 355
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.CollisionPrefabChance",
+          "Name": "CollisionPrefabChance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Prefab"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Spawn Chance"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If 1 then we'll always spawn a prefab. If 0.5 then we'll spawn a prefab 50% of the time."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "353"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If 1 then we'll always spawn a prefab. If 0.5 then we'll spawn a prefab 50% of the time."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.CollisionPrefabChance"
+        },
+        {
+          "PropertyType": "System.Action`1<Sandbox.Particle>",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 361
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.OnParticleDestroyed",
+          "Name": "OnParticleDestroyed",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Actions"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called any time a particle is destroyed."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "359"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called any time a particle is destroyed."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.OnParticleDestroyed"
+        },
+        {
+          "PropertyType": "System.Action`1<Sandbox.Particle>",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 367
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.OnParticleCreated",
+          "Name": "OnParticleCreated",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called any time a particle is created."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "365"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called any time a particle is created."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.OnParticleCreated"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Particle>",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 373
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Particles",
+          "Name": "Particles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Active particles in the effect. Active particles are those currently being simulated and rendered."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "372"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Active particles in the effect.\nActive particles are those currently being simulated and rendered."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Particles"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Particle>",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 379
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.DelayedParticles",
+          "Name": "DelayedParticles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Delayed particles in the effect. Delayed particles are those that have been emitted but are waiting to be activated based on their start delay."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "378"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Delayed particles in the effect.\nDelayed particles are those that have been emitted but are waiting to be activated based on their start delay."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.DelayedParticles"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 384
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ParticleCount",
+          "Name": "ParticleCount",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The total number of particles in the effect, including both active and delayed particles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "383"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The total number of particles in the effect, including both active and delayed particles."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.ParticleCount"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 390
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.IsFull",
+          "Name": "IsFull",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the particle effect has reached its maximum capacity. This is determined by comparing the total particle count to the <span style=\"color: #4EC9B0;\">ParticleEffect</span>.<span style=\"color: #DCDCDC;\">MaxParticles</span> property."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "389"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the particle effect has reached its maximum capacity.\nThis is determined by comparing the total particle count to the <see cref=\"P:Sandbox.ParticleEffect.MaxParticles\" /> property."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.IsFull"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 397
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.Paused",
+          "Name": "Paused",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether the particle simulation is currently paused. When paused, particles will not update their positions, velocities, or other properties."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "395"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether the particle simulation is currently paused.\nWhen paused, particles will not update their positions, velocities, or other properties."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.Paused"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Single>",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 407
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.OnPreStep",
+          "Name": "OnPreStep",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called before the particles are stepped. This allows custom logic to be executed before the simulation advances."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "406"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called before the particles are stepped.\nThis allows custom logic to be executed before the simulation advances."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.OnPreStep"
+        },
+        {
+          "PropertyType": "System.Action`1<System.Single>",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 413
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.OnPostStep",
+          "Name": "OnPostStep",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called after the particles are stepped. This allows custom logic to be executed after the simulation advances."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "412"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called after the particles are stepped.\nThis allows custom logic to be executed after the simulation advances."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.OnPostStep"
+        },
+        {
+          "PropertyType": "System.Action`2<Sandbox.Particle,System.Single>",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 419
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.OnStep",
+          "Name": "OnStep",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called after each particle is stepped. This provides an opportunity to modify individual particles during the simulation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "418"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called after each particle is stepped.\nThis provides an opportunity to modify individual particles during the simulation."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.OnStep"
+        },
+        {
+          "PropertyType": "BBox",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 425
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ParticleBounds",
+          "Name": "ParticleBounds",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The bounding box that encompasses all active particles. This is useful for determining the spatial extent of the particle effect."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "424"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The bounding box that encompasses all active particles.\nThis is useful for determining the spatial extent of the particle effect."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.ParticleBounds"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.cs",
+            "Line": 431
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.MaxParticleSize",
+          "Name": "MaxParticleSize",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The size of the largest particle in the effect. This is determined by the maximum scale of any particle along its x, y, or z axis."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.cs",
+                "430"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The size of the largest particle in the effect.\nThis is determined by the maximum scale of any particle along its x, y, or z axis."
+          },
+          "DocId": "P:Sandbox.ParticleEffect.MaxParticleSize"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Scene/Components/Particles/ParticleEffect.Versioning.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ParticleEffect.ComponentVersion",
+          "Name": "ComponentVersion",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Particles\\ParticleEffect.Versioning.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ParticleEffect.ComponentVersion"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ParticleEffect",
+      "Name": "ParticleEffect",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Particle Effect"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Effects"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "shower"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/particles.png"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Defines and holds particles. This is the core of the particle system."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\ParticleEffect.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Defines and holds particles. This is the core of the particle system."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Particles\\ParticleEffect.Versioning.cs",
+            "5"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Defines and holds particles. This is the core of the particle system."
+      },
+      "DocId": "T:Sandbox.ParticleEffect"
+    }
+  ],
+  "_metadata": {
+    "chunk": 100,
+    "items_count": 1
+  }
+}

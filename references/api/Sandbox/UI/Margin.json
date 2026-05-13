@@ -1,0 +1,1793 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.UI.Margin",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "Sandbox.UI.Margin"
+            }
+          ],
+          "l": {
+            "File": "Math/Margin.cs",
+            "Line": 171
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.EdgeAdd",
+          "Name": "EdgeAdd",
+          "DeclaringType": "Sandbox.UI.Margin",
+          "Documentation": {
+            "Summary": "Where padding is an edge type rect, will return this rect expanded with those edges."
+          },
+          "DocId": "M:Sandbox.UI.Margin.EdgeAdd(Sandbox.UI.Margin)"
+        },
+        {
+          "ReturnType": "Sandbox.UI.Margin",
+          "Parameters": [
+            {
+              "Name": "edges",
+              "Type": "Sandbox.UI.Margin"
+            }
+          ],
+          "l": {
+            "File": "Math/Margin.cs",
+            "Line": 185
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.EdgeSubtract",
+          "Name": "EdgeSubtract",
+          "DeclaringType": "Sandbox.UI.Margin",
+          "Documentation": {
+            "Summary": "Where padding is an edge type rect, will return this rect expanded with those edges."
+          },
+          "DocId": "M:Sandbox.UI.Margin.EdgeSubtract(Sandbox.UI.Margin)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "tolerance",
+              "Type": "System.Double",
+              "Default": "1E-06"
+            }
+          ],
+          "l": {
+            "File": "Math/Margin.cs",
+            "Line": 199
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.IsNearlyZero",
+          "Name": "IsNearlyZero",
+          "DeclaringType": "Sandbox.UI.Margin",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if margin is practically zero"
+          },
+          "DocId": "M:Sandbox.UI.Margin.IsNearlyZero(System.Double)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "r",
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "l": {
+            "File": "Math/Margin.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.Margin",
+          "DocId": "M:Sandbox.UI.Margin.#ctor(Sandbox.Rect)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "uniform",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Margin.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.Margin",
+          "DocId": "M:Sandbox.UI.Margin.#ctor(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "horizontal",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "vertical",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Margin.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.Margin",
+          "DocId": "M:Sandbox.UI.Margin.#ctor(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "left",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "top",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "right",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "bottom",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Margin.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.Margin",
+          "DocId": "M:Sandbox.UI.Margin.#ctor(System.Single,System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "left",
+              "Type": "System.Nullable`1<System.Single>"
+            },
+            {
+              "Name": "top",
+              "Type": "System.Nullable`1<System.Single>"
+            },
+            {
+              "Name": "right",
+              "Type": "System.Nullable`1<System.Single>"
+            },
+            {
+              "Name": "bottom",
+              "Type": "System.Nullable`1<System.Single>"
+            }
+          ],
+          "l": {
+            "File": "Math/Margin.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.Margin",
+          "DocId": "M:Sandbox.UI.Margin.#ctor(System.Nullable`1{System.Single},System.Nullable`1{System.Single},System.Nullable`1{System.Single},System.Nullable`1{System.Single})"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Margin.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Width of the inner square contained within the margin."
+          },
+          "DocId": "P:Sandbox.UI.Margin.Width"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Margin.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Height of the inner square contained within the margin."
+          },
+          "DocId": "P:Sandbox.UI.Margin.Height"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Margin.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.Left",
+          "Name": "Left",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Thickness of the left side margin."
+          },
+          "DocId": "P:Sandbox.UI.Margin.Left"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Margin.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.Top",
+          "Name": "Top",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Thickness of the top margin."
+          },
+          "DocId": "P:Sandbox.UI.Margin.Top"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Margin.cs",
+            "Line": 108
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.Right",
+          "Name": "Right",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Thickness of the right side margin."
+          },
+          "DocId": "P:Sandbox.UI.Margin.Right"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Margin.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.Bottom",
+          "Name": "Bottom",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Thickness of the bottom margin."
+          },
+          "DocId": "P:Sandbox.UI.Margin.Bottom"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Margin.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.Position",
+          "Name": "Position",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position of the inner top left corder of the margin/border."
+          },
+          "DocId": "P:Sandbox.UI.Margin.Position"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Margin.cs",
+            "Line": 146
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.Size",
+          "Name": "Size",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Size of the inner square contained within the margin."
+          },
+          "DocId": "P:Sandbox.UI.Margin.Size"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Margin.cs",
+            "Line": 164
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Margin.EdgeSize",
+          "Name": "EdgeSize",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "When the Rect describes edges, this returns the total size of the edges in each direction"
+          },
+          "DocId": "P:Sandbox.UI.Margin.EdgeSize"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Margin",
+      "Name": "Margin",
+      "Documentation": {
+        "Summary": "Represents a <see cref=\"T:Sandbox.Rect\">Rect</see> where each side is the thickness of an edge/padding/margin/border, rather than positions."
+      },
+      "DocId": "T:Sandbox.UI.Margin"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.CascadingParameterAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.CascadingParameterAttribute",
+          "DocId": "M:Sandbox.UI.CascadingParameterAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.CascadingParameterAttribute",
+      "Name": "CascadingParameterAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "A panel's property will be inherited from its parent."
+      },
+      "DocId": "T:Sandbox.UI.CascadingParameterAttribute"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.List`1<Sandbox.UI.IStyleBlock.StyleProperty>",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.GetRawValues",
+          "Name": "GetRawValues",
+          "DeclaringType": "Sandbox.UI.IStyleBlock",
+          "Documentation": {
+            "Summary": "Get the list of raw style values"
+          },
+          "DocId": "M:Sandbox.UI.IStyleBlock.GetRawValues"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "originalValue",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.SetRawValue",
+          "Name": "SetRawValue",
+          "DeclaringType": "Sandbox.UI.IStyleBlock",
+          "Documentation": {
+            "Summary": "Update a raw style value"
+          },
+          "DocId": "M:Sandbox.UI.IStyleBlock.SetRawValue(System.String,System.String,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.FileName",
+          "Name": "FileName",
+          "Documentation": {
+            "Summary": "The filename of the file containing this style block (or null if none)"
+          },
+          "DocId": "P:Sandbox.UI.IStyleBlock.FileName"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.AbsolutePath",
+          "Name": "AbsolutePath",
+          "Documentation": {
+            "Summary": "The absolute on disk filename for this style block (or null if not on disk)"
+          },
+          "DocId": "P:Sandbox.UI.IStyleBlock.AbsolutePath"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.FileLine",
+          "Name": "FileLine",
+          "Documentation": {
+            "Summary": "The line in the file containing this style block"
+          },
+          "DocId": "P:Sandbox.UI.IStyleBlock.FileLine"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<System.String>",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.SelectorStrings",
+          "Name": "SelectorStrings",
+          "Documentation": {
+            "Summary": "A list of selectors"
+          },
+          "DocId": "P:Sandbox.UI.IStyleBlock.SelectorStrings"
+        }
+      ],
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.IStyleBlock",
+      "Name": "IStyleBlock",
+      "Documentation": {
+        "Summary": "A CSS rule - ie \".chin { width: 100%; height: 100%; }\""
+      },
+      "DocId": "T:Sandbox.UI.IStyleBlock"
+    },
+    {
+      "Namespace": "",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "UI/IStyleBlock.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.StyleProperty.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "Name of the property, ie \"color\" or \"width\""
+          },
+          "DocId": "P:Sandbox.UI.IStyleBlock.StyleProperty.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "UI/IStyleBlock.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.StyleProperty.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "Current value of the property (which is being rendered)"
+          },
+          "DocId": "P:Sandbox.UI.IStyleBlock.StyleProperty.Value"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "UI/IStyleBlock.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.StyleProperty.OriginalValue",
+          "Name": "OriginalValue",
+          "Documentation": {
+            "Summary": "The value that was loaded from the .scss file"
+          },
+          "DocId": "P:Sandbox.UI.IStyleBlock.StyleProperty.OriginalValue"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "UI/IStyleBlock.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.StyleProperty.Line",
+          "Name": "Line",
+          "Documentation": {
+            "Summary": "The line in the file containing this value"
+          },
+          "DocId": "P:Sandbox.UI.IStyleBlock.StyleProperty.Line"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "UI/IStyleBlock.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.IStyleBlock.StyleProperty.IsValid",
+          "Name": "IsValid",
+          "Documentation": {
+            "Summary": "If parsing this property was successful or failed"
+          },
+          "DocId": "P:Sandbox.UI.IStyleBlock.StyleProperty.IsValid"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.IStyleBlock.StyleProperty",
+      "Name": "StyleProperty",
+      "DeclaringType": "Sandbox.UI.IStyleBlock",
+      "DocId": "T:Sandbox.UI.IStyleBlock.StyleProperty"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.None",
+          "Name": "None",
+          "Documentation": {
+            "Summary": "No pseudo-class."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.None"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.Unknown",
+          "Name": "Unknown",
+          "Documentation": {
+            "Summary": "Unused."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.Unknown"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.Hover",
+          "Name": "Hover",
+          "Documentation": {
+            "Summary": "<c>:hover</c> - Any element with the mouse cursor hovering over it."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.Hover"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.Active",
+          "Name": "Active",
+          "Documentation": {
+            "Summary": "<c>:active</c> - A button that is being pressed down."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.Active"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.Focus",
+          "Name": "Focus",
+          "Documentation": {
+            "Summary": "<c>:focus</c> - An element with input focus."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.Focus"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.Intro",
+          "Name": "Intro",
+          "Documentation": {
+            "Summary": "<c>:intro</c> - Present on all elements for their first frame. Useful to start CSS transitions on creation."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.Intro"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.Outro",
+          "Name": "Outro",
+          "Documentation": {
+            "Summary": "<c>:outro</c> - The element has been marked for deletion, and will be deleted once all CSS transitions on it has stopped.<br />\n            Transitions can be started here to gracefully remove the element visually."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.Outro"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.Empty",
+          "Name": "Empty",
+          "Documentation": {
+            "Summary": "<c>:empty</c> - Any element that has no children."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.Empty"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.FirstChild",
+          "Name": "FirstChild",
+          "Documentation": {
+            "Summary": "<c>:first-child</c> - The element is the first element among a group of sibling elements."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.FirstChild"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.LastChild",
+          "Name": "LastChild",
+          "Documentation": {
+            "Summary": "<c>:last-child</c> - The element is the last element among a group of sibling elements."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.LastChild"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.OnlyChild",
+          "Name": "OnlyChild",
+          "Documentation": {
+            "Summary": "<c>:only-child</c> - The element is the only child of their parent element."
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.OnlyChild"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.Before",
+          "Name": "Before",
+          "Documentation": {
+            "Summary": "<c>:before</c> - Creates an element on the parent element"
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.Before"
+        },
+        {
+          "FieldType": "Sandbox.UI.PseudoClass",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PseudoClass.After",
+          "Name": "After",
+          "Documentation": {
+            "Summary": "<c>:after</c> - Creates an element on the parent element"
+          },
+          "DocId": "F:Sandbox.UI.PseudoClass.After"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.PseudoClass",
+      "Name": "PseudoClass",
+      "Attributes": [
+        {
+          "FullName": "System.FlagsAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "List of CSS pseudo-classes used by the styling system for hover, active, etc.\nThis acts as a bit-flag."
+      },
+      "DocId": "T:Sandbox.UI.PseudoClass"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "UI/RenderState.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.RenderState.X",
+          "Name": "X",
+          "Documentation": {
+            "Summary": "Position of the panel on the X axis. This can be a negative value!"
+          },
+          "DocId": "P:Sandbox.UI.RenderState.X"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "UI/RenderState.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.RenderState.Y",
+          "Name": "Y",
+          "Documentation": {
+            "Summary": "Position of the panel on the Y axis. This can be a negative value!"
+          },
+          "DocId": "P:Sandbox.UI.RenderState.Y"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "UI/RenderState.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.RenderState.Width",
+          "Name": "Width",
+          "Documentation": {
+            "Summary": "Width of the panel."
+          },
+          "DocId": "P:Sandbox.UI.RenderState.Width"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "UI/RenderState.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.RenderState.Height",
+          "Name": "Height",
+          "Documentation": {
+            "Summary": "Height of the panel."
+          },
+          "DocId": "P:Sandbox.UI.RenderState.Height"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.RenderState",
+      "Name": "RenderState",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Describes panel's position and size for rendering operations."
+      },
+      "DocId": "T:Sandbox.UI.RenderState"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "UI/StyleSheetAttribute.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheetAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.StyleSheetAttribute",
+          "DocId": "M:Sandbox.UI.StyleSheetAttribute.#ctor(System.String)"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheetAttribute.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "File name of the style sheet file."
+          },
+          "DocId": "F:Sandbox.UI.StyleSheetAttribute.Name"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.StyleSheetAttribute",
+      "Name": "StyleSheetAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Will automatically apply the named stylesheet to the Panel."
+      },
+      "DocId": "T:Sandbox.UI.StyleSheetAttribute"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "width",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "height",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "perspectiveOrigin",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.BuildTransform",
+          "Name": "BuildTransform",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.BuildTransform(System.Single,System.Single,Vector2)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.IsEmpty",
+          "Name": "IsEmpty",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "Documentation": {
+            "Summary": "Returns true if this is empty."
+          },
+          "DocId": "M:Sandbox.UI.PanelTransform.IsEmpty"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "lengthX",
+              "Type": "System.Nullable`1<Sandbox.UI.Length>"
+            },
+            {
+              "Name": "lengthY",
+              "Type": "System.Nullable`1<Sandbox.UI.Length>"
+            },
+            {
+              "Name": "lengthZ",
+              "Type": "System.Nullable`1<Sandbox.UI.Length>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddTranslate",
+          "Name": "AddTranslate",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddTranslate(System.Nullable`1{Sandbox.UI.Length},System.Nullable`1{Sandbox.UI.Length},System.Nullable`1{Sandbox.UI.Length})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "length",
+              "Type": "System.Nullable`1<Sandbox.UI.Length>"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddTranslateX",
+          "Name": "AddTranslateX",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddTranslateX(System.Nullable`1{Sandbox.UI.Length})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "length",
+              "Type": "System.Nullable`1<Sandbox.UI.Length>"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddTranslateY",
+          "Name": "AddTranslateY",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddTranslateY(System.Nullable`1{Sandbox.UI.Length})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "length",
+              "Type": "System.Nullable`1<Sandbox.UI.Length>"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 109
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddTranslateZ",
+          "Name": "AddTranslateZ",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddTranslateZ(System.Nullable`1{Sandbox.UI.Length})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "scale",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddScale",
+          "Name": "AddScale",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddScale(System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "scale",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddScale",
+          "Name": "AddScale",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddScale(Vector3)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "y",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "z",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 139
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddSkew",
+          "Name": "AddSkew",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddSkew(System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "y",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "z",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 148
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddRotation",
+          "Name": "AddRotation",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddRotation(System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "angles",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddRotation",
+          "Name": "AddRotation",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddRotation(Vector3)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "matrix",
+              "Type": "Matrix"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 159
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddMatrix3D",
+          "Name": "AddMatrix3D",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddMatrix3D(Matrix)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "d",
+              "Type": "Sandbox.UI.Length"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 168
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.AddPerspective",
+          "Name": "AddPerspective",
+          "DeclaringType": "Sandbox.UI.PanelTransform",
+          "DocId": "M:Sandbox.UI.PanelTransform.AddPerspective(Sandbox.UI.Length)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.Entries",
+          "Name": "Entries",
+          "DocId": "P:Sandbox.UI.PanelTransform.Entries"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Collections.Immutable.ImmutableList`1<Sandbox.UI.PanelTransform.Entry>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.List",
+          "Name": "List",
+          "DocId": "F:Sandbox.UI.PanelTransform.List"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.PanelTransform",
+      "Name": "PanelTransform",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.SkipHotloadAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.UI.PanelTransform"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "width",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "height",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 303
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.Entry.ToMatrix",
+          "Name": "ToMatrix",
+          "DeclaringType": "Sandbox.UI.PanelTransform.Entry",
+          "DocId": "M:Sandbox.UI.PanelTransform.Entry.ToMatrix(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.UI.PanelTransform.Entry",
+          "Parameters": [],
+          "l": {
+            "File": "UI/Styles/PanelTransform.cs",
+            "Line": 352
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.Entry.GetDefault",
+          "Name": "GetDefault",
+          "DeclaringType": "Sandbox.UI.PanelTransform.Entry",
+          "DocId": "M:Sandbox.UI.PanelTransform.Entry.GetDefault"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.UI.PanelTransform.EntryType",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.Entry.Type",
+          "Name": "Type",
+          "DocId": "F:Sandbox.UI.PanelTransform.Entry.Type"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.Entry.Data",
+          "Name": "Data",
+          "DocId": "F:Sandbox.UI.PanelTransform.Entry.Data"
+        },
+        {
+          "FieldType": "Matrix",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.Entry.Matrix",
+          "Name": "Matrix",
+          "DocId": "F:Sandbox.UI.PanelTransform.Entry.Matrix"
+        },
+        {
+          "FieldType": "Sandbox.UI.Length",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.Entry.X",
+          "Name": "X",
+          "DocId": "F:Sandbox.UI.PanelTransform.Entry.X"
+        },
+        {
+          "FieldType": "Sandbox.UI.Length",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.Entry.Y",
+          "Name": "Y",
+          "DocId": "F:Sandbox.UI.PanelTransform.Entry.Y"
+        },
+        {
+          "FieldType": "Sandbox.UI.Length",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.PanelTransform.Entry.Z",
+          "Name": "Z",
+          "DocId": "F:Sandbox.UI.PanelTransform.Entry.Z"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.PanelTransform.Entry",
+      "Name": "Entry",
+      "DeclaringType": "Sandbox.UI.PanelTransform",
+      "DocId": "T:Sandbox.UI.PanelTransform.Entry"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.UI.PanelTransform.EntryType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PanelTransform.EntryType.Invalid",
+          "Name": "Invalid",
+          "DocId": "F:Sandbox.UI.PanelTransform.EntryType.Invalid"
+        },
+        {
+          "FieldType": "Sandbox.UI.PanelTransform.EntryType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PanelTransform.EntryType.Rotation",
+          "Name": "Rotation",
+          "DocId": "F:Sandbox.UI.PanelTransform.EntryType.Rotation"
+        },
+        {
+          "FieldType": "Sandbox.UI.PanelTransform.EntryType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PanelTransform.EntryType.Scale",
+          "Name": "Scale",
+          "DocId": "F:Sandbox.UI.PanelTransform.EntryType.Scale"
+        },
+        {
+          "FieldType": "Sandbox.UI.PanelTransform.EntryType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PanelTransform.EntryType.Translate",
+          "Name": "Translate",
+          "DocId": "F:Sandbox.UI.PanelTransform.EntryType.Translate"
+        },
+        {
+          "FieldType": "Sandbox.UI.PanelTransform.EntryType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PanelTransform.EntryType.Skew",
+          "Name": "Skew",
+          "DocId": "F:Sandbox.UI.PanelTransform.EntryType.Skew"
+        },
+        {
+          "FieldType": "Sandbox.UI.PanelTransform.EntryType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PanelTransform.EntryType.Matrix",
+          "Name": "Matrix",
+          "DocId": "F:Sandbox.UI.PanelTransform.EntryType.Matrix"
+        },
+        {
+          "FieldType": "Sandbox.UI.PanelTransform.EntryType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.PanelTransform.EntryType.Perspective",
+          "Name": "Perspective",
+          "DocId": "F:Sandbox.UI.PanelTransform.EntryType.Perspective"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.PanelTransform.EntryType",
+      "Name": "EntryType",
+      "DeclaringType": "Sandbox.UI.PanelTransform",
+      "DocId": "T:Sandbox.UI.PanelTransform.EntryType"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.UI.Shadow",
+          "Parameters": [
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/Shadow.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Shadow.Scale",
+          "Name": "Scale",
+          "DeclaringType": "Sandbox.UI.Shadow",
+          "Documentation": {
+            "Summary": "Scale all variables by given scalar.",
+            "Return": "The scaled shadow.",
+            "Params": {
+              "f": "How much to scale the shadow parameters by. 1 is no change, 2 is double the sizes, etc."
+            }
+          },
+          "DocId": "M:Sandbox.UI.Shadow.Scale(System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.UI.Shadow",
+          "Parameters": [
+            {
+              "Name": "shadow",
+              "Type": "Sandbox.UI.Shadow"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/Shadow.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Shadow.LerpTo",
+          "Name": "LerpTo",
+          "DeclaringType": "Sandbox.UI.Shadow",
+          "Documentation": {
+            "Summary": "Perform linear interpolation between 2 shadows.",
+            "Return": "The interpolated shadow.",
+            "Params": {
+              "shadow": "The target shadow to morph into.",
+              "delta": "Progress of the transformation. 0 = original shadow, 1 = fully target shadow."
+            }
+          },
+          "DocId": "M:Sandbox.UI.Shadow.LerpTo(Sandbox.UI.Shadow,System.Single)"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Shadow.OffsetX",
+          "Name": "OffsetX",
+          "Documentation": {
+            "Summary": "Shadow offset on the X axis."
+          },
+          "DocId": "F:Sandbox.UI.Shadow.OffsetX"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Shadow.OffsetY",
+          "Name": "OffsetY",
+          "Documentation": {
+            "Summary": "Shadow offset on the Y axis."
+          },
+          "DocId": "F:Sandbox.UI.Shadow.OffsetY"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Shadow.Blur",
+          "Name": "Blur",
+          "Documentation": {
+            "Summary": "Amount of blurring for the shadow."
+          },
+          "DocId": "F:Sandbox.UI.Shadow.Blur"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Shadow.Spread",
+          "Name": "Spread",
+          "Documentation": {
+            "Summary": "Increases the box size by this much before starting shadow blur.\nBox shadows only."
+          },
+          "DocId": "F:Sandbox.UI.Shadow.Spread"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Shadow.Inset",
+          "Name": "Inset",
+          "Documentation": {
+            "Summary": "Whether or not this shadow is inset.\nBox shadows only."
+          },
+          "DocId": "F:Sandbox.UI.Shadow.Inset"
+        },
+        {
+          "FieldType": "Color",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Shadow.Color",
+          "Name": "Color",
+          "Documentation": {
+            "Summary": "Color of the shadow."
+          },
+          "DocId": "F:Sandbox.UI.Shadow.Color"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Shadow",
+      "Name": "Shadow",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.SkipHotloadAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Shadow style settings"
+      },
+      "DocId": "T:Sandbox.UI.Shadow"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "System.Collections.Generic.List`1<Sandbox.UI.Shadow>",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Sandbox.UI.ShadowList"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/Shadow.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ShadowList.AddFrom",
+          "Name": "AddFrom",
+          "DeclaringType": "Sandbox.UI.ShadowList",
+          "Documentation": {
+            "Summary": "Copy shadows from another list of shadows."
+          },
+          "DocId": "M:Sandbox.UI.ShadowList.AddFrom(Sandbox.UI.ShadowList)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Sandbox.UI.ShadowList"
+            },
+            {
+              "Name": "b",
+              "Type": "Sandbox.UI.ShadowList"
+            },
+            {
+              "Name": "frac",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "UI/Styles/Shadow.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ShadowList.SetFromLerp",
+          "Name": "SetFromLerp",
+          "DeclaringType": "Sandbox.UI.ShadowList",
+          "Documentation": {
+            "Summary": "Given 2 lists of shadows, perform linear interpolation on both lists and store the result in this list.\nWill work with mismatched shadow counts.",
+            "Params": {
+              "a": "The first list of shadows.",
+              "b": "The second list of shadows.",
+              "frac": "Fraction for the linear interpolation, in range of [0,1]"
+            },
+            "Exceptions": {
+              "System.ArgumentException": "Thrown when both inputs are equal."
+            }
+          },
+          "DocId": "M:Sandbox.UI.ShadowList.SetFromLerp(Sandbox.UI.ShadowList,Sandbox.UI.ShadowList,System.Single)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ShadowList..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.ShadowList",
+          "DocId": "M:Sandbox.UI.ShadowList.#ctor"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ShadowList.IsNone",
+          "Name": "IsNone",
+          "Documentation": {
+            "Summary": "Whether there are no shadows at all."
+          },
+          "DocId": "F:Sandbox.UI.ShadowList.IsNone"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.ShadowList",
+      "Name": "ShadowList",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.SkipHotloadAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "A list of shadows"
+      },
+      "DocId": "T:Sandbox.UI.ShadowList"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.UI.OverflowMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.OverflowMode.Visible",
+          "Name": "Visible",
+          "Documentation": {
+            "Summary": "Overflowing content is visible at all times."
+          },
+          "DocId": "F:Sandbox.UI.OverflowMode.Visible"
+        },
+        {
+          "FieldType": "Sandbox.UI.OverflowMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.OverflowMode.Hidden",
+          "Name": "Hidden",
+          "Documentation": {
+            "Summary": "Overflowing contents are hidden at all times."
+          },
+          "DocId": "F:Sandbox.UI.OverflowMode.Hidden"
+        },
+        {
+          "FieldType": "Sandbox.UI.OverflowMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.OverflowMode.Scroll",
+          "Name": "Scroll",
+          "Documentation": {
+            "Summary": "Overflowing contents are hidden, but can be scrolled to."
+          },
+          "DocId": "F:Sandbox.UI.OverflowMode.Scroll"
+        },
+        {
+          "FieldType": "Sandbox.UI.OverflowMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.OverflowMode.Clip",
+          "Name": "Clip",
+          "Documentation": {
+            "Summary": "Overflowing contents are clipped, but unlike <see cref=\"F:Sandbox.UI.OverflowMode.Hidden\" />, does not create a scroll container and does not affect layout."
+          },
+          "DocId": "F:Sandbox.UI.OverflowMode.Clip"
+        },
+        {
+          "FieldType": "Sandbox.UI.OverflowMode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.OverflowMode.ClipWhole",
+          "Name": "ClipWhole",
+          "Documentation": {
+            "Summary": "Child elements that extend outside the panel's bounds are hidden entirely, rather than pixel-clipped.\nDoes not create a scroll container and does not affect layout."
+          },
+          "DocId": "F:Sandbox.UI.OverflowMode.ClipWhole"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.OverflowMode",
+      "Name": "OverflowMode",
+      "Documentation": {
+        "Summary": "Possible values for the \"overflow\" CSS rule, dictating what to do with content that is outside of a panels bounds."
+      },
+      "DocId": "T:Sandbox.UI.OverflowMode"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.UI.Align",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Align.Auto",
+          "Name": "Auto",
+          "DocId": "F:Sandbox.UI.Align.Auto"
+        },
+        {
+          "FieldType": "Sandbox.UI.Align",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Align.FlexStart",
+          "Name": "FlexStart",
+          "DocId": "F:Sandbox.UI.Align.FlexStart"
+        },
+        {
+          "FieldType": "Sandbox.UI.Align",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Align.Center",
+          "Name": "Center",
+          "DocId": "F:Sandbox.UI.Align.Center"
+        },
+        {
+          "FieldType": "Sandbox.UI.Align",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Align.FlexEnd",
+          "Name": "FlexEnd",
+          "DocId": "F:Sandbox.UI.Align.FlexEnd"
+        },
+        {
+          "FieldType": "Sandbox.UI.Align",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Align.Stretch",
+          "Name": "Stretch",
+          "DocId": "F:Sandbox.UI.Align.Stretch"
+        },
+        {
+          "FieldType": "Sandbox.UI.Align",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Align.Baseline",
+          "Name": "Baseline",
+          "DocId": "F:Sandbox.UI.Align.Baseline"
+        },
+        {
+          "FieldType": "Sandbox.UI.Align",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Align.SpaceBetween",
+          "Name": "SpaceBetween",
+          "DocId": "F:Sandbox.UI.Align.SpaceBetween"
+        },
+        {
+          "FieldType": "Sandbox.UI.Align",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Align.SpaceAround",
+          "Name": "SpaceAround",
+          "DocId": "F:Sandbox.UI.Align.SpaceAround"
+        },
+        {
+          "FieldType": "Sandbox.UI.Align",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Align.SpaceEvenly",
+          "Name": "SpaceEvenly",
+          "DocId": "F:Sandbox.UI.Align.SpaceEvenly"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Align",
+      "Name": "Align",
+      "Documentation": {
+        "Summary": "Possible values for <c>align-items</c> CSS property."
+      },
+      "DocId": "T:Sandbox.UI.Align"
+    }
+  ],
+  "_metadata": {
+    "chunk": 25,
+    "items_count": 14
+  }
+}

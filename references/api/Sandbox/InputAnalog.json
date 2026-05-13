@@ -1,0 +1,1810 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.InputAnalog",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.InputAnalog.RightStickX",
+          "Name": "RightStickX",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Right Analog Stick - X Axis"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.InputAnalog.RightStickX"
+        },
+        {
+          "FieldType": "Sandbox.InputAnalog",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.InputAnalog.RightStickY",
+          "Name": "RightStickY",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Right Analog Stick - Y Axis"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.InputAnalog.RightStickY"
+        },
+        {
+          "FieldType": "Sandbox.InputAnalog",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.InputAnalog.LeftStickX",
+          "Name": "LeftStickX",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Left Analog Stick - X Axis"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.InputAnalog.LeftStickX"
+        },
+        {
+          "FieldType": "Sandbox.InputAnalog",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.InputAnalog.LeftStickY",
+          "Name": "LeftStickY",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Left Analog Stick - Y Axis"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.InputAnalog.LeftStickY"
+        },
+        {
+          "FieldType": "Sandbox.InputAnalog",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.InputAnalog.LeftTrigger",
+          "Name": "LeftTrigger",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Left Trigger"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.InputAnalog.LeftTrigger"
+        },
+        {
+          "FieldType": "Sandbox.InputAnalog",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.InputAnalog.RightTrigger",
+          "Name": "RightTrigger",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Right Trigger"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.InputAnalog.RightTrigger"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.InputAnalog",
+      "Name": "InputAnalog",
+      "Documentation": {
+        "Summary": "An analog input, when fetched, is between -1 and 1 (0 being default)"
+      },
+      "DocId": "T:Sandbox.InputAnalog"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Fields": [
+        {
+          "FieldType": "Angles",
+          "IsPublic": true,
+          "FullName": "Sandbox.InputMotionData.Gyroscope",
+          "Name": "Gyroscope",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Controller\\InputMotionData.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The raw value from the input device's gyroscope."
+          },
+          "DocId": "F:Sandbox.InputMotionData.Gyroscope"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.InputMotionData.Accelerometer",
+          "Name": "Accelerometer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Controller\\InputMotionData.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The raw value from the input device's accelerometer."
+          },
+          "DocId": "F:Sandbox.InputMotionData.Accelerometer"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.InputMotionData",
+      "Name": "InputMotionData",
+      "Documentation": {
+        "Summary": "Represents the current state of a device's motion sensor(s)."
+      },
+      "DocId": "T:Sandbox.InputMotionData"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ControlModeSettings..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ControlModeSettings",
+          "DocId": "M:Sandbox.ControlModeSettings.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Input/ControlModeSettings.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ControlModeSettings.Keyboard",
+          "Name": "Keyboard",
+          "Attributes": [
+            {
+              "FullName": "System.ComponentModel.DataAnnotations.DisplayAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\ControlModeSettings.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ControlModeSettings.Keyboard"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Input/ControlModeSettings.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ControlModeSettings.VR",
+          "Name": "VR",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\ControlModeSettings.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ControlModeSettings.VR"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Input/ControlModeSettings.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ControlModeSettings.Gamepad",
+          "Name": "Gamepad",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\ControlModeSettings.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ControlModeSettings.Gamepad"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Input/ControlModeSettings.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ControlModeSettings.IsVROnly",
+          "Name": "IsVROnly",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\ControlModeSettings.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ControlModeSettings.IsVROnly"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ControlModeSettings",
+      "Name": "ControlModeSettings",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Input\\ControlModeSettings.cs",
+            "6"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.ControlModeSettings"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.None",
+          "Name": "None",
+          "DocId": "F:Sandbox.GamepadCode.None"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.A",
+          "Name": "A",
+          "DocId": "F:Sandbox.GamepadCode.A"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.B",
+          "Name": "B",
+          "DocId": "F:Sandbox.GamepadCode.B"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.X",
+          "Name": "X",
+          "DocId": "F:Sandbox.GamepadCode.X"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.Y",
+          "Name": "Y",
+          "DocId": "F:Sandbox.GamepadCode.Y"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.SwitchLeftMenu",
+          "Name": "SwitchLeftMenu",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Back"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Normally the small button on the left side of a gamepad"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Normally the small button on the left side of a gamepad"
+          },
+          "DocId": "F:Sandbox.GamepadCode.SwitchLeftMenu"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.Guide",
+          "Name": "Guide",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The big button in the middle of a gamepad, usually with the logo on it"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The big button in the middle of a gamepad, usually with the logo on it"
+          },
+          "DocId": "F:Sandbox.GamepadCode.Guide"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.SwitchRightMenu",
+          "Name": "SwitchRightMenu",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Start"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This is automatically used as the escape key in all games"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This is automatically used as the escape key in all games"
+          },
+          "DocId": "F:Sandbox.GamepadCode.SwitchRightMenu"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.LeftJoystickButton",
+          "Name": "LeftJoystickButton",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Left Analog Stick"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The button when you press down on the stick"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The button when you press down on the stick"
+          },
+          "DocId": "F:Sandbox.GamepadCode.LeftJoystickButton"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.RightJoystickButton",
+          "Name": "RightJoystickButton",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Right Analog Stick"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The button when you press down on the stick"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The button when you press down on the stick"
+          },
+          "DocId": "F:Sandbox.GamepadCode.RightJoystickButton"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.SwitchLeftBumper",
+          "Name": "SwitchLeftBumper",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Left Shoulder"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Also known as the left bumper, or LB, or L1"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Also known as the left bumper, or LB, or L1"
+          },
+          "DocId": "F:Sandbox.GamepadCode.SwitchLeftBumper"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.SwitchRightBumper",
+          "Name": "SwitchRightBumper",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Right Shoulder"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Also known as the right bumper, or RB, or R1"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Also known as the right bumper, or RB, or R1"
+          },
+          "DocId": "F:Sandbox.GamepadCode.SwitchRightBumper"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.DpadNorth",
+          "Name": "DpadNorth",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "D-Pad Up"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "arrow_circle_up"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.GamepadCode.DpadNorth"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.DpadSouth",
+          "Name": "DpadSouth",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "D-Pad Down"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "arrow_circle_down"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.GamepadCode.DpadSouth"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.DpadWest",
+          "Name": "DpadWest",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "D-Pad Left"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "arrow_circle_left"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.GamepadCode.DpadWest"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.DpadEast",
+          "Name": "DpadEast",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "D-Pad Right"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "arrow_circle_right"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.GamepadCode.DpadEast"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.Misc1",
+          "Name": "Misc1",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Misc"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "This is a button that doesn't have a specific name, like the share button on some controllers"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "This is a button that doesn't have a specific name, like the share button on some controllers"
+          },
+          "DocId": "F:Sandbox.GamepadCode.Misc1"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.Paddle1",
+          "Name": "Paddle1",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Extra button on the back of some gamepads, like the Xbox Elite"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Extra button on the back of some gamepads, like the Xbox Elite"
+          },
+          "DocId": "F:Sandbox.GamepadCode.Paddle1"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.Paddle2",
+          "Name": "Paddle2",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Extra button on the back of some gamepads, like the Xbox Elite"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Extra button on the back of some gamepads, like the Xbox Elite"
+          },
+          "DocId": "F:Sandbox.GamepadCode.Paddle2"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.Paddle3",
+          "Name": "Paddle3",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Extra button on the back of some gamepads, like the Xbox Elite"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Extra button on the back of some gamepads, like the Xbox Elite"
+          },
+          "DocId": "F:Sandbox.GamepadCode.Paddle3"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.Paddle4",
+          "Name": "Paddle4",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Extra button on the back of some gamepads, like the Xbox Elite"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Extra button on the back of some gamepads, like the Xbox Elite"
+          },
+          "DocId": "F:Sandbox.GamepadCode.Paddle4"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.Touchpad",
+          "Name": "Touchpad",
+          "DocId": "F:Sandbox.GamepadCode.Touchpad"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.BUTTONS_MAX",
+          "Name": "BUTTONS_MAX",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.GamepadCode.BUTTONS_MAX"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.LeftTrigger",
+          "Name": "LeftTrigger",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Also known as LT, or L2"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Also known as LT, or L2"
+          },
+          "DocId": "F:Sandbox.GamepadCode.LeftTrigger"
+        },
+        {
+          "FieldType": "Sandbox.GamepadCode",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.GamepadCode.RightTrigger",
+          "Name": "RightTrigger",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Also known as RT, or R2"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Also known as RT, or R2"
+          },
+          "DocId": "F:Sandbox.GamepadCode.RightTrigger"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.GamepadCode",
+      "Name": "GamepadCode",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Game controller codes, driven from SDL."
+      },
+      "DocId": "T:Sandbox.GamepadCode"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.HapticEffect.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Sandbox.HapticEffect",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.HapticEffect.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Sandbox.HapticEffect",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticEffect.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Sandbox.HapticEffect",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.HapticEffect.<Clone>$"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "controllerPattern",
+              "Type": "Sandbox.HapticPattern",
+              "Default": "null"
+            },
+            {
+              "Name": "leftTriggerPattern",
+              "Type": "Sandbox.HapticPattern",
+              "Default": "null"
+            },
+            {
+              "Name": "rightTriggerPattern",
+              "Type": "Sandbox.HapticPattern",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Input/Haptics/HapticEffect.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticEffect..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.HapticEffect",
+          "DocId": "M:Sandbox.HapticEffect.#ctor(Sandbox.HapticPattern,Sandbox.HapticPattern,Sandbox.HapticPattern)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Sandbox.HapticEffect"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Systems/Input/Haptics/HapticEffect.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.HapticEffect..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.HapticEffect",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.HapticEffect.#ctor(Sandbox.HapticEffect)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Sandbox.HapticEffect.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.HapticEffect.EqualityContract"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticEffect.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticEffect.AmplitudeScale",
+          "Name": "AmplitudeScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.HapticEffect.AmplitudeScale"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticEffect.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticEffect.FrequencyScale",
+          "Name": "FrequencyScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.HapticEffect.FrequencyScale"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticEffect.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticEffect.LengthScale",
+          "Name": "LengthScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.HapticEffect.LengthScale"
+        },
+        {
+          "PropertyType": "Sandbox.HapticEffect",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticEffect.Effects.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticEffect.SoftImpact",
+          "Name": "SoftImpact",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A haptic pattern that represents a light, soft impact."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.Effects.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A haptic pattern that represents a light, soft impact."
+          },
+          "DocId": "P:Sandbox.HapticEffect.SoftImpact"
+        },
+        {
+          "PropertyType": "Sandbox.HapticEffect",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticEffect.Effects.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticEffect.HardImpact",
+          "Name": "HardImpact",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A haptic pattern that represents a hard, sudden impact."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.Effects.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A haptic pattern that represents a hard, sudden impact."
+          },
+          "DocId": "P:Sandbox.HapticEffect.HardImpact"
+        },
+        {
+          "PropertyType": "Sandbox.HapticEffect",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticEffect.Effects.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticEffect.Rumble",
+          "Name": "Rumble",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Applies a simple rumble to the controller."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.Effects.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Applies a simple rumble to the controller."
+          },
+          "DocId": "P:Sandbox.HapticEffect.Rumble"
+        },
+        {
+          "PropertyType": "Sandbox.HapticEffect",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticEffect.Effects.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticEffect.RumbleLeftTrigger",
+          "Name": "RumbleLeftTrigger",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Applies a simple rumble to the left trigger."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.Effects.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Applies a simple rumble to the left trigger."
+          },
+          "DocId": "P:Sandbox.HapticEffect.RumbleLeftTrigger"
+        },
+        {
+          "PropertyType": "Sandbox.HapticEffect",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticEffect.Effects.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticEffect.RumbleRightTrigger",
+          "Name": "RumbleRightTrigger",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Applies a simple rumble to the right trigger."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.Effects.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Applies a simple rumble to the right trigger."
+          },
+          "DocId": "P:Sandbox.HapticEffect.RumbleRightTrigger"
+        },
+        {
+          "PropertyType": "Sandbox.HapticEffect",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticEffect.Effects.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticEffect.Heartbeat",
+          "Name": "Heartbeat",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A haptic effect that feels like a heartbeat."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.Effects.cs",
+                "33"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A haptic effect that feels like a heartbeat."
+          },
+          "DocId": "P:Sandbox.HapticEffect.Heartbeat"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.HapticPattern",
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticEffect.ControllerPattern",
+          "Name": "ControllerPattern",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.HapticEffect.ControllerPattern"
+        },
+        {
+          "FieldType": "Sandbox.HapticPattern",
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticEffect.LeftTriggerPattern",
+          "Name": "LeftTriggerPattern",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.HapticEffect.LeftTriggerPattern"
+        },
+        {
+          "FieldType": "Sandbox.HapticPattern",
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticEffect.RightTriggerPattern",
+          "Name": "RightTriggerPattern",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticEffect.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.HapticEffect.RightTriggerPattern"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.HapticEffect",
+      "Name": "HapticEffect",
+      "Documentation": {
+        "Summary": "Contains a haptic effect, which consists of patterns for the controller and triggers."
+      },
+      "DocId": "T:Sandbox.HapticEffect"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "t",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "frequency",
+              "Out": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "amplitude",
+              "Out": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/Input/Haptics/HapticPattern.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern.GetValue",
+          "Name": "GetValue",
+          "DeclaringType": "Sandbox.HapticPattern",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticPattern.cs",
+                "44"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.HapticPattern.GetValue(System.Single,System.Single@,System.Single@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "builder",
+              "Type": "System.Text.StringBuilder"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.HapticPattern.PrintMembers",
+          "Name": "PrintMembers",
+          "DeclaringType": "Sandbox.HapticPattern",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.HapticPattern.PrintMembers(System.Text.StringBuilder)"
+        },
+        {
+          "ReturnType": "Sandbox.HapticPattern",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern.<Clone>$",
+          "Name": "<Clone>$",
+          "DeclaringType": "Sandbox.HapticPattern",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.HapticPattern.<Clone>$"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Length",
+              "Out": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "FrequencyCurve",
+              "Out": true,
+              "Type": "Sandbox.Curve"
+            },
+            {
+              "Name": "AmplitudeCurve",
+              "Out": true,
+              "Type": "Sandbox.Curve"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.HapticPattern",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.HapticPattern.Deconstruct(System.Single@,Sandbox.Curve@,Sandbox.Curve@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Length",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "FrequencyCurve",
+              "Type": "Sandbox.Curve"
+            },
+            {
+              "Name": "AmplitudeCurve",
+              "Type": "Sandbox.Curve"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Systems/Input/Haptics/HapticPattern.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.HapticPattern",
+          "Documentation": {
+            "Summary": "Contains a haptic pattern, which consists of frequency and amplitude values that can change over time."
+          },
+          "DocId": "M:Sandbox.HapticPattern.#ctor(System.Single,Sandbox.Curve,Sandbox.Curve)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "original",
+              "Type": "Sandbox.HapticPattern"
+            }
+          ],
+          "l": {
+            "File": "obj/.generated/Systems/Input/Haptics/HapticPattern.cs",
+            "Line": 16707566
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.HapticPattern..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.HapticPattern",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.HapticPattern.#ctor(Sandbox.HapticPattern)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "IsVirtual": true,
+          "IsProtected": true,
+          "FullName": "Sandbox.HapticPattern.EqualityContract",
+          "Name": "EqualityContract",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.HapticPattern.EqualityContract"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "obj/.generated/Systems/Input/Haptics/HapticPattern.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern.Length",
+          "Name": "Length",
+          "DocId": "P:Sandbox.HapticPattern.Length"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "obj/.generated/Systems/Input/Haptics/HapticPattern.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern.FrequencyCurve",
+          "Name": "FrequencyCurve",
+          "DocId": "P:Sandbox.HapticPattern.FrequencyCurve"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "obj/.generated/Systems/Input/Haptics/HapticPattern.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern.AmplitudeCurve",
+          "Name": "AmplitudeCurve",
+          "DocId": "P:Sandbox.HapticPattern.AmplitudeCurve"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticPattern.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern.Position",
+          "Name": "Position",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticPattern.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.HapticPattern.Position"
+        },
+        {
+          "PropertyType": "Sandbox.HapticPattern",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticPattern.Patterns.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticPattern.SoftImpact",
+          "Name": "SoftImpact",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A haptic pattern that represents a light, soft impact."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticPattern.Patterns.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A haptic pattern that represents a light, soft impact."
+          },
+          "DocId": "P:Sandbox.HapticPattern.SoftImpact"
+        },
+        {
+          "PropertyType": "Sandbox.HapticPattern",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticPattern.Patterns.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticPattern.HardImpact",
+          "Name": "HardImpact",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A haptic pattern that represents a hard, sudden impact."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticPattern.Patterns.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A haptic pattern that represents a hard, sudden impact."
+          },
+          "DocId": "P:Sandbox.HapticPattern.HardImpact"
+        },
+        {
+          "PropertyType": "Sandbox.HapticPattern",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticPattern.Patterns.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticPattern.Rumble",
+          "Name": "Rumble",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A haptic pattern that represents a constant low-frequency rumble."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticPattern.Patterns.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A haptic pattern that represents a constant low-frequency rumble."
+          },
+          "DocId": "P:Sandbox.HapticPattern.Rumble"
+        },
+        {
+          "PropertyType": "Sandbox.HapticPattern",
+          "Loc": {
+            "File": "Systems/Input/Haptics/HapticPattern.Patterns.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticPattern.Heartbeat",
+          "Name": "Heartbeat",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A haptic pattern that feels like a heartbeat."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticPattern.Patterns.cs",
+                "70"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A haptic pattern that feels like a heartbeat."
+          },
+          "DocId": "P:Sandbox.HapticPattern.Heartbeat"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern.LengthScale",
+          "Name": "LengthScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticPattern.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.HapticPattern.LengthScale"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern.FrequencyScale",
+          "Name": "FrequencyScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticPattern.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.HapticPattern.FrequencyScale"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "Sandbox.HapticPattern.AmplitudeScale",
+          "Name": "AmplitudeScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Input\\Haptics\\HapticPattern.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.HapticPattern.AmplitudeScale"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.HapticPattern",
+      "Name": "HapticPattern",
+      "Documentation": {
+        "Summary": "Contains a haptic pattern, which consists of frequency and amplitude values that can change over time."
+      },
+      "DocId": "T:Sandbox.HapticPattern"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.HapticTarget",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticTarget.Controller",
+          "Name": "Controller",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controller"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controller"
+          },
+          "DocId": "F:Sandbox.HapticTarget.Controller"
+        },
+        {
+          "FieldType": "Sandbox.HapticTarget",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticTarget.LeftTrigger",
+          "Name": "LeftTrigger",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Left impulse trigger (Xbox)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Left impulse trigger (Xbox)"
+          },
+          "DocId": "F:Sandbox.HapticTarget.LeftTrigger"
+        },
+        {
+          "FieldType": "Sandbox.HapticTarget",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HapticTarget.RightTrigger",
+          "Name": "RightTrigger",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Right impulse trigger (Xbox)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Right impulse trigger (Xbox)"
+          },
+          "DocId": "F:Sandbox.HapticTarget.RightTrigger"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.HapticTarget",
+      "Name": "HapticTarget",
+      "Documentation": {
+        "Summary": "Places you can trigger haptics on"
+      },
+      "DocId": "T:Sandbox.HapticTarget"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.InputGlyphSize",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.InputGlyphSize.Small",
+          "Name": "Small",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Small 32x32 ( Keyboard glyphs can be wider for long key names )"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Small 32x32 ( Keyboard glyphs can be wider for long key names )"
+          },
+          "DocId": "F:Sandbox.InputGlyphSize.Small"
+        },
+        {
+          "FieldType": "Sandbox.InputGlyphSize",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.InputGlyphSize.Medium",
+          "Name": "Medium",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Medium 128x128 ( Keyboard glyphs can be wider for long key names )"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Medium 128x128 ( Keyboard glyphs can be wider for long key names )"
+          },
+          "DocId": "F:Sandbox.InputGlyphSize.Medium"
+        },
+        {
+          "FieldType": "Sandbox.InputGlyphSize",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.InputGlyphSize.Large",
+          "Name": "Large",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Large 256x256 ( Keyboard glyphs can be wider for long key names )"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Large 256x256 ( Keyboard glyphs can be wider for long key names )"
+          },
+          "DocId": "F:Sandbox.InputGlyphSize.Large"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.InputGlyphSize",
+      "Name": "InputGlyphSize",
+      "DocId": "T:Sandbox.InputGlyphSize"
+    }
+  ],
+  "_metadata": {
+    "chunk": 143,
+    "items_count": 8
+  }
+}

@@ -1,0 +1,2015 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.Rendering.CommandList"
+            },
+            {
+              "Name": "stage",
+              "Type": "Sandbox.Rendering.Stage"
+            },
+            {
+              "Name": "order",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.Commands.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.AddCommandList",
+          "Name": "AddCommandList",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a command list to the render"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.Commands.cs",
+                "17"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a command list to the render"
+          },
+          "DocId": "M:Sandbox.CameraComponent.AddCommandList(Sandbox.Rendering.CommandList,Sandbox.Rendering.Stage,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.Rendering.CommandList"
+            },
+            {
+              "Name": "stage",
+              "Type": "Sandbox.Rendering.Stage"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.Commands.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.RemoveCommandList",
+          "Name": "RemoveCommandList",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove an entry"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.Commands.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Remove an entry"
+          },
+          "DocId": "M:Sandbox.CameraComponent.RemoveCommandList(Sandbox.Rendering.CommandList,Sandbox.Rendering.Stage)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.Rendering.CommandList"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.Commands.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.RemoveCommandList",
+          "Name": "RemoveCommandList",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove an entry"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.Commands.cs",
+                "42"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Remove an entry"
+          },
+          "DocId": "M:Sandbox.CameraComponent.RemoveCommandList(Sandbox.Rendering.CommandList)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "stage",
+              "Type": "Sandbox.Rendering.Stage"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.Commands.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.ClearCommandLists",
+          "Name": "ClearCommandLists",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove all entries in this stage"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.Commands.cs",
+                "53"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Remove all entries in this stage"
+          },
+          "DocId": "M:Sandbox.CameraComponent.ClearCommandLists(Sandbox.Rendering.Stage)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.Commands.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.ClearCommandLists",
+          "Name": "ClearCommandLists",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove all entries in this stage"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.Commands.cs",
+                "61"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Remove all entries in this stage"
+          },
+          "DocId": "M:Sandbox.CameraComponent.ClearCommandLists"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 205
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "203"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.Reset"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "camera",
+              "Type": "Sandbox.SceneCamera"
+            },
+            {
+              "Name": "includeTags",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 290
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.UpdateSceneCamera",
+          "Name": "UpdateSceneCamera",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Update a SceneCamera with the settings from this component"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "287"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update a SceneCamera with the settings from this component"
+          },
+          "DocId": "M:Sandbox.CameraComponent.UpdateSceneCamera(Sandbox.SceneCamera,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "Parameters": [
+            {
+              "Name": "debugName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "order",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "renderEffect",
+              "Type": "System.Action`1<Sandbox.SceneCamera>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 388
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.AddHookAfterOpaque",
+          "Name": "AddHookAfterOpaque",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use CommandList"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "386"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.AddHookAfterOpaque(System.String,System.Int32,System.Action`1{Sandbox.SceneCamera})"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "Parameters": [
+            {
+              "Name": "debugName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "order",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "renderEffect",
+              "Type": "System.Action`1<Sandbox.SceneCamera>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 394
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.AddHookAfterTransparent",
+          "Name": "AddHookAfterTransparent",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use CommandList"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Obsolete 09/06/2025"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "392"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.AddHookAfterTransparent(System.String,System.Int32,System.Action`1{Sandbox.SceneCamera})"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "Parameters": [
+            {
+              "Name": "debugName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "order",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "renderEffect",
+              "Type": "System.Action`1<Sandbox.SceneCamera>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 400
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.AddHookBeforeOverlay",
+          "Name": "AddHookBeforeOverlay",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use CommandList"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Obsolete 09/06/2025"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "398"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.AddHookBeforeOverlay(System.String,System.Int32,System.Action`1{Sandbox.SceneCamera})"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "Parameters": [
+            {
+              "Name": "debugName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "order",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "renderEffect",
+              "Type": "System.Action`1<Sandbox.SceneCamera>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 406
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.AddHookAfterUI",
+          "Name": "AddHookAfterUI",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use CommandList"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Obsolete 02/10/2025"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "404"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.AddHookAfterUI(System.String,System.Int32,System.Action`1{Sandbox.SceneCamera})"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "worldPosition",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 484
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.PointToScreenNormal",
+          "Name": "PointToScreenNormal",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "482"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.PointToScreenNormal(Vector3@)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "worldPosition",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 493
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.PointToScreenPixels",
+          "Name": "PointToScreenPixels",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "490"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.PointToScreenPixels(Vector3@)"
+        },
+        {
+          "ReturnType": "Sandbox.Rect",
+          "Parameters": [
+            {
+              "Name": "bounds",
+              "Type": "BBox"
+            },
+            {
+              "Name": "isBehind",
+              "Out": true,
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 515
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.BBoxToScreenPixels",
+          "Name": "BBoxToScreenPixels",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Given a BBox in world space, will return the screen space rect that totally contains the box."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "512"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Given a BBox in world space, will return the screen space rect that totally contains the box."
+          },
+          "DocId": "M:Sandbox.CameraComponent.BBoxToScreenPixels(BBox,System.Boolean@)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "worldPosition",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "isBehind",
+              "Out": true,
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 551
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.PointToScreenPixels",
+          "Name": "PointToScreenPixels",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "549"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.PointToScreenPixels(Vector3,System.Boolean@)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "worldPosition",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "isBehind",
+              "Out": true,
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 562
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.PointToScreenNormal",
+          "Name": "PointToScreenNormal",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "560"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.PointToScreenNormal(Vector3,System.Boolean@)"
+        },
+        {
+          "ReturnType": "Ray",
+          "Parameters": [
+            {
+              "Name": "pixelPosition",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 572
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.ScreenPixelToRay",
+          "Name": "ScreenPixelToRay",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "570"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.ScreenPixelToRay(Vector2)"
+        },
+        {
+          "ReturnType": "Ray",
+          "Parameters": [
+            {
+              "Name": "normalPosition",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 581
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.ScreenNormalToRay",
+          "Name": "ScreenNormalToRay",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "578"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.CameraComponent.ScreenNormalToRay(Vector3)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "screen",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 593
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.ScreenToWorld",
+          "Name": "ScreenToWorld",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Convert from screen coords to world coords on the near frustum plane."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "591"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Convert from screen coords to world coords on the near frustum plane."
+          },
+          "DocId": "M:Sandbox.CameraComponent.ScreenToWorld(Vector2)"
+        },
+        {
+          "ReturnType": "Sandbox.Frustum",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 624
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.GetFrustum",
+          "Name": "GetFrustum",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the view frustum of the current screen rect."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "622"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the view frustum of the current screen rect."
+          },
+          "DocId": "M:Sandbox.CameraComponent.GetFrustum"
+        },
+        {
+          "ReturnType": "Sandbox.Frustum",
+          "Parameters": [
+            {
+              "Name": "screenRect",
+              "Type": "Sandbox.Rect"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 634
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.GetFrustum",
+          "Name": "GetFrustum",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Given a pixel rect return a frustum on the current camera."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "631"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Given a pixel rect return a frustum on the current camera."
+          },
+          "DocId": "M:Sandbox.CameraComponent.GetFrustum(Sandbox.Rect)"
+        },
+        {
+          "ReturnType": "Sandbox.Frustum",
+          "Parameters": [
+            {
+              "Name": "screenRect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "screenSize",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 644
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.GetFrustum",
+          "Name": "GetFrustum",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Given a pixel rect return a frustum on the current camera. Pass in 1 to ScreenSize to use normalized screen coords."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "641"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Given a pixel rect return a frustum on the current camera. Pass in 1 to ScreenSize to use normalized screen coords."
+          },
+          "DocId": "M:Sandbox.CameraComponent.GetFrustum(Sandbox.Rect,Vector3)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "config",
+              "In": true,
+              "Type": "Sandbox.Rendering.ViewSetup",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 654
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.RenderToTexture",
+          "Name": "RenderToTexture",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Render scene to a texture from this camera's point of view"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "651"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render scene to a texture from this camera's point of view"
+          },
+          "DocId": "M:Sandbox.CameraComponent.RenderToTexture(Sandbox.Texture,Sandbox.Rendering.ViewSetup@)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "clipPlane",
+              "Type": "Sandbox.Plane"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 708
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.CalculateObliqueMatrix",
+          "Name": "CalculateObliqueMatrix",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Calculates a projection matrix with an oblique clip-plane defined in world space."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "705"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Calculates a projection matrix with an oblique clip-plane defined in world space."
+          },
+          "DocId": "M:Sandbox.CameraComponent.CalculateObliqueMatrix(Sandbox.Plane)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "targetBitmap",
+              "Type": "Sandbox.Bitmap"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 752
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.RenderToBitmap",
+          "Name": "RenderToBitmap",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Render this camera to the target bitmap."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "749"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render this camera to the target bitmap."
+          },
+          "DocId": "M:Sandbox.CameraComponent.RenderToBitmap(Sandbox.Bitmap)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Camera/CameraComponent.AutoExposureSetup.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.CameraComponent",
+          "DocId": "M:Sandbox.CameraComponent.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.CameraComponent.AutoExposureSetup",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.AutoExposureSetup.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.AutoExposure",
+          "Name": "AutoExposure",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables and configures auto exposure on the camera. This is usually controlled by the Tonemapping component. But if you're not using that, it can be controlled manually here."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.AutoExposureSetup.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables and configures auto exposure on the camera. This is usually controlled\nby the Tonemapping component. But if you're not using that, it can be controlled manually here."
+          },
+          "DocId": "P:Sandbox.CameraComponent.AutoExposure"
+        },
+        {
+          "PropertyType": "Sandbox.ClearFlags",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.ClearFlags",
+          "Name": "ClearFlags",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The clear flags for this camera."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The clear flags for this camera."
+          },
+          "DocId": "P:Sandbox.CameraComponent.ClearFlags"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.BackgroundColor",
+          "Name": "BackgroundColor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The background color of this camera's view if there's no 2D Sky in the scene."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The background color of this camera's view if there's no 2D Sky in the scene."
+          },
+          "DocId": "P:Sandbox.CameraComponent.BackgroundColor"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.IsMainCamera",
+          "Name": "IsMainCamera",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if this is the main game camera."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if this is the main game camera."
+          },
+          "DocId": "P:Sandbox.CameraComponent.IsMainCamera"
+        },
+        {
+          "PropertyType": "Sandbox.CameraComponent.Axis",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.FovAxis",
+          "Name": "FovAxis",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "FOV Axis"
+              ]
+            },
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "Orthographic",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The axis to use for the field of view."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "55"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The axis to use for the field of view."
+          },
+          "DocId": "P:Sandbox.CameraComponent.FovAxis"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.FieldOfView",
+          "Name": "FieldOfView",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "179"
+              ]
+            },
+            {
+              "FullName": "HideIfAttribute",
+              "ConstructorArguments": [
+                "Orthographic",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The field of view of this camera."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "61"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The field of view of this camera."
+          },
+          "DocId": "P:Sandbox.CameraComponent.FieldOfView"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.ZNear",
+          "Name": "ZNear",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "1000"
+              ]
+            },
+            {
+              "FullName": "Sandbox.StepAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The camera's near clip plane distance. This is the closest distance this camera will be able to render. A good value for this is about 5. Below 5 and particularly below 1 you're going to start to see a lot of artifacts like z-fighting."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "69"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The camera's near clip plane distance. This is the closest distance this camera will be able to render.\nA good value for this is about 5. Below 5 and particularly below 1 you're going to start to see\na lot of artifacts like z-fighting."
+          },
+          "DocId": "P:Sandbox.CameraComponent.ZNear"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.ZFar",
+          "Name": "ZFar",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "100000"
+              ]
+            },
+            {
+              "FullName": "Sandbox.StepAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The camera's far clip plane distance. This is the furthest distance this camera will be able to render. This value totally depends on the game you're making. Shorter the better, sensible ranges would be between about 1000 and 30000, but if you want it to be further out you can balance that out by making ZNear larger."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "78"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The camera's far clip plane distance. This is the furthest distance this camera will be able to render.\nThis value totally depends on the game you're making. Shorter the better, sensible ranges would be\nbetween about 1000 and 30000, but if you want it to be further out you can balance that out by making\nZNear larger."
+          },
+          "DocId": "P:Sandbox.CameraComponent.ZFar"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.Priority",
+          "Name": "Priority",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "16"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The priority of this camera. Dictates which camera gets rendered on top of another. Higher means it'll be rendered on top."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "84"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The priority of this camera. Dictates which camera gets rendered on top of another. Higher means it'll be rendered on top."
+          },
+          "DocId": "P:Sandbox.CameraComponent.Priority"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.Orthographic",
+          "Name": "Orthographic",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether or not to use orthographic projection instead of perspective."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "100"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether or not to use orthographic projection instead of perspective."
+          },
+          "DocId": "P:Sandbox.CameraComponent.Orthographic"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 108
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.OrthographicHeight",
+          "Name": "OrthographicHeight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The orthographic size for this camera while <span style=\"color: #4EC9B0;\">CameraComponent</span>.<span style=\"color: #DCDCDC;\">Orthographic</span> is set to true."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "106"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The orthographic size for this camera while <see cref=\"P:Sandbox.CameraComponent.Orthographic\" /> is set to true."
+          },
+          "DocId": "P:Sandbox.CameraComponent.OrthographicHeight"
+        },
+        {
+          "PropertyType": "Sandbox.StereoTargetEye",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.TargetEye",
+          "Name": "TargetEye",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The HMD eye that this camera is targeting. Use <span style=\"color: #86C691;\">StereoTargetEye</span>.<span style=\"color: #DCDCDC;\">None</span> for the user's monitor (i.e. the companion window)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "113"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The HMD eye that this camera is targeting.\nUse <see cref=\"F:Sandbox.StereoTargetEye.None\" /> for the user's monitor (i.e. the companion window)."
+          },
+          "DocId": "P:Sandbox.CameraComponent.TargetEye"
+        },
+        {
+          "PropertyType": "Sandbox.TagSet",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 122
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.RenderTags",
+          "Name": "RenderTags",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of tags that will be checked to include specific game objects when rendering this camera. If none are set, it will include everything."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "120"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of tags that will be checked to include specific game objects when rendering this camera.\nIf none are set, it will include everything."
+          },
+          "DocId": "P:Sandbox.CameraComponent.RenderTags"
+        },
+        {
+          "PropertyType": "Sandbox.TagSet",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 128
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.RenderExcludeTags",
+          "Name": "RenderExcludeTags",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of tags that will be checked to exclude specific game objects when rendering this camera."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "126"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of tags that will be checked to exclude specific game objects when rendering this camera."
+          },
+          "DocId": "P:Sandbox.CameraComponent.RenderExcludeTags"
+        },
+        {
+          "PropertyType": "Vector4",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 134
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.Viewport",
+          "Name": "Viewport",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1",
+                "True",
+                "False"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The size of the camera represented on the screen. Normalized between 0 and 1."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "132"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The size of the camera represented on the screen. Normalized between 0 and 1."
+          },
+          "DocId": "P:Sandbox.CameraComponent.Viewport"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 171
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.RenderTarget",
+          "Name": "RenderTarget",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "164"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The texture to draw this camera to.\nRequires <see cref=\"M:Sandbox.Texture.CreateRenderTarget\" />"
+          },
+          "DocId": "P:Sandbox.CameraComponent.RenderTarget"
+        },
+        {
+          "PropertyType": "Sandbox.SceneCameraDebugMode",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 188
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.DebugMode",
+          "Name": "DebugMode",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Render this camera using a different render mode"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "186"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render this camera using a different render mode"
+          },
+          "DocId": "P:Sandbox.CameraComponent.DebugMode"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 194
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.WireframeMode",
+          "Name": "WireframeMode",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Render this camera using a wireframe view."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "192"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render this camera using a wireframe view."
+          },
+          "DocId": "P:Sandbox.CameraComponent.WireframeMode"
+        },
+        {
+          "PropertyType": "Sandbox.Rect",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 505
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.ScreenRect",
+          "Name": "ScreenRect",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The size of the viewport, in screen coordinates"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "500"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The size of the viewport, in screen coordinates"
+          },
+          "DocId": "P:Sandbox.CameraComponent.ScreenRect"
+        },
+        {
+          "PropertyType": "System.Nullable`1<Matrix>",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 688
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.CustomProjectionMatrix",
+          "Name": "CustomProjectionMatrix",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows specifying a custom projection matrix for this camera"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "684"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows specifying a custom projection matrix for this camera"
+          },
+          "DocId": "P:Sandbox.CameraComponent.CustomProjectionMatrix"
+        },
+        {
+          "PropertyType": "System.Nullable`1<Vector2>",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 696
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.CustomSize",
+          "Name": "CustomSize",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows specifying a custom aspect ratio for this camera. By default (or when null) the camera size is screen size or render target size."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "694"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows specifying a custom aspect ratio for this camera.\nBy default (or when null) the camera size is screen size or render target size."
+          },
+          "DocId": "P:Sandbox.CameraComponent.CustomSize"
+        },
+        {
+          "PropertyType": "Matrix",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.cs",
+            "Line": 701
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.ProjectionMatrix",
+          "Name": "ProjectionMatrix",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get frustum projection matrix."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "700"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get frustum projection matrix."
+          },
+          "DocId": "P:Sandbox.CameraComponent.ProjectionMatrix"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.HudPainter",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.Hud.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.Hud",
+          "Name": "Hud",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows drawing on the camera. This is drawn before the post processing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.Hud.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows drawing on the camera. This is drawn before the post processing."
+          },
+          "DocId": "P:Sandbox.CameraComponent.Hud"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.HudPainter",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.Hud.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.Overlay",
+          "Name": "Overlay",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Used to draw to the screen. This is drawn on top of everything, so is good for debug overlays etc."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.Hud.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Used to draw to the screen. This is drawn on top of everything, so is good for debug overlays etc."
+          },
+          "DocId": "P:Sandbox.CameraComponent.Overlay"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.PostProcess.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.EnablePostProcessing",
+          "Name": "EnablePostProcessing",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HeaderAttribute",
+              "ConstructorArguments": [
+                "Post Processing"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enable or disable post processing for this camera."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.PostProcess.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enable or disable post processing for this camera."
+          },
+          "DocId": "P:Sandbox.CameraComponent.EnablePostProcessing"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Camera/CameraComponent.PostProcess.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.PostProcessAnchor",
+          "Name": "PostProcessAnchor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If set then we'll trigger post process volumes from this position, instead of the camera's position."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.PostProcess.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If set then we'll trigger post process volumes from this position, instead of the camera's position."
+          },
+          "DocId": "P:Sandbox.CameraComponent.PostProcessAnchor"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.RenderTextureAsset",
+          "IsPublic": true,
+          "FullName": "Sandbox.CameraComponent.RenderTexture",
+          "Name": "RenderTexture",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Camera\\CameraComponent.cs",
+                "139"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If specified, this camera will render to this RenderTexture instead of the screen.\nThis can then be used in other stuff like materials."
+          },
+          "DocId": "F:Sandbox.CameraComponent.RenderTexture"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.CameraComponent",
+      "Name": "CameraComponent",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Every scene should have at least one Camera."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Camera\\CameraComponent.AutoExposureSetup.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Every scene should have at least one Camera."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Camera\\CameraComponent.Commands.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Camera"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Rendering"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "videocam"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/camera.png"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Every scene should have at least one Camera."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Camera\\CameraComponent.cs",
+            "11"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Every scene should have at least one Camera."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Camera\\CameraComponent.Hud.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Every scene should have at least one Camera."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Camera\\CameraComponent.PostProcess.cs",
+            "5"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Every scene should have at least one Camera."
+      },
+      "DocId": "T:Sandbox.CameraComponent"
+    }
+  ],
+  "_metadata": {
+    "chunk": 73,
+    "items_count": 1
+  }
+}

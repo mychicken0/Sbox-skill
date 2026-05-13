@@ -1,0 +1,1801 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Collider",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Collider/HullCollider.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HullCollider..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.HullCollider",
+          "DocId": "M:Sandbox.HullCollider.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.HullCollider.PrimitiveType",
+          "Loc": {
+            "File": "Scene/Components/Collider/HullCollider.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HullCollider.Type",
+          "Name": "Type",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hull"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Collider.ResizeAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The type of primitive."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\HullCollider.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The type of primitive."
+          },
+          "DocId": "P:Sandbox.HullCollider.Type"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Collider/HullCollider.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HullCollider.Center",
+          "Name": "Center",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hull"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Collider.ResizeAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The center of the primitive relative to this GameObject."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\HullCollider.cs",
+                "34"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The center of the primitive relative to this GameObject."
+          },
+          "DocId": "P:Sandbox.HullCollider.Center"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Collider/HullCollider.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HullCollider.BoxSize",
+          "Name": "BoxSize",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Size"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hull"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Collider.ResizeAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Type",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The size of the box, from corner to corner."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\HullCollider.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The size of the box, from corner to corner."
+          },
+          "DocId": "P:Sandbox.HullCollider.BoxSize"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Collider/HullCollider.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HullCollider.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Height"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hull"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Collider.ResizeAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Type",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Type",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\HullCollider.cs",
+                "44"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.HullCollider.Height"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Collider/HullCollider.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HullCollider.Radius",
+          "Name": "Radius",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Radius"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hull"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Collider.ResizeAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Type",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Type",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\HullCollider.cs",
+                "49"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.HullCollider.Radius"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Collider/HullCollider.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HullCollider.Radius2",
+          "Name": "Radius2",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Tip Radius"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hull"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Collider.ResizeAttribute"
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Type",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\HullCollider.cs",
+                "54"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.HullCollider.Radius2"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Collider/HullCollider.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HullCollider.Slices",
+          "Name": "Slices",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Slices"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Hull"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Collider.ResizeAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "4",
+                "32"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Type",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "Type",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\HullCollider.cs",
+                "58"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.HullCollider.Slices"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Vector3>",
+          "Loc": {
+            "File": "Scene/Components/Collider/HullCollider.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.HullCollider.Points",
+          "Name": "Points",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Collider.ResizeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\HullCollider.cs",
+                "63"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.HullCollider.Points"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.HullCollider",
+      "Name": "HullCollider",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Collider - Hull"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Physics"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "grain"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Defines a box, cone, or cylinder hull collider."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Collider\\HullCollider.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Defines a box, cone, or cylinder hull collider."
+      },
+      "DocId": "T:Sandbox.HullCollider"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.HullCollider.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HullCollider.PrimitiveType.Box",
+          "Name": "Box",
+          "DocId": "F:Sandbox.HullCollider.PrimitiveType.Box"
+        },
+        {
+          "FieldType": "Sandbox.HullCollider.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HullCollider.PrimitiveType.Cone",
+          "Name": "Cone",
+          "DocId": "F:Sandbox.HullCollider.PrimitiveType.Cone"
+        },
+        {
+          "FieldType": "Sandbox.HullCollider.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HullCollider.PrimitiveType.Cylinder",
+          "Name": "Cylinder",
+          "DocId": "F:Sandbox.HullCollider.PrimitiveType.Cylinder"
+        },
+        {
+          "FieldType": "Sandbox.HullCollider.PrimitiveType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.HullCollider.PrimitiveType.Points",
+          "Name": "Points",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "F:Sandbox.HullCollider.PrimitiveType.Points"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.HullCollider.PrimitiveType",
+      "Name": "PrimitiveType",
+      "DeclaringType": "Sandbox.HullCollider",
+      "DocId": "T:Sandbox.HullCollider.PrimitiveType"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Collider",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Collider/ModelCollider.cs",
+            "Line": 28
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ModelCollider.OnAwake",
+          "Name": "OnAwake",
+          "DeclaringType": "Sandbox.ModelCollider",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelCollider.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelCollider.OnAwake"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Collider/ModelCollider.cs",
+            "Line": 51
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ModelCollider.DrawGizmos",
+          "Name": "DrawGizmos",
+          "DeclaringType": "Sandbox.ModelCollider",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelCollider.cs",
+                "48"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelCollider.DrawGizmos"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.PhysicsShape>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "targetBody",
+              "Type": "Sandbox.PhysicsBody"
+            },
+            {
+              "Name": "local",
+              "Type": "Transform"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.ModelCollider.CreatePhysicsShapes",
+          "Name": "CreatePhysicsShapes",
+          "DeclaringType": "Sandbox.ModelCollider",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.ModelCollider/<CreatePhysicsShapes>d__7"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelCollider.cs",
+                "86"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ModelCollider.CreatePhysicsShapes(Sandbox.PhysicsBody,Transform)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelCollider..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ModelCollider",
+          "DocId": "M:Sandbox.ModelCollider.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Model",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelCollider.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelCollider.Model",
+          "Name": "Model",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelCollider.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelCollider.Model"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ModelCollider",
+      "Name": "ModelCollider",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Model Collider"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Physics"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "check_box_outline_blank"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Defines a collider based on a model."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Collider\\ModelCollider.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Defines a collider based on a model."
+      },
+      "DocId": "T:Sandbox.ModelCollider"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "source",
+              "Type": "Sandbox.SkinnedModelRenderer"
+            },
+            {
+              "Name": "teleport",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 492
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.CopyBonesFrom",
+          "Name": "CopyBonesFrom",
+          "DeclaringType": "Sandbox.ModelPhysics",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Copy the bone positions and velocities from a different SkinnedModelRenderer"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "489"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Copy the bone positions and velocities from a different SkinnedModelRenderer"
+          },
+          "DocId": "M:Sandbox.ModelPhysics.CopyBonesFrom(Sandbox.SkinnedModelRenderer,System.Boolean)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ModelPhysics",
+          "DocId": "M:Sandbox.ModelPhysics.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.PhysicsGroup",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.PhysicsGroup",
+          "Name": "PhysicsGroup",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "No longer in use"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelPhysics.PhysicsGroup"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.PhysicsWereCreated",
+          "Name": "PhysicsWereCreated",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ModelPhysics.PhysicsWereCreated"
+        },
+        {
+          "PropertyType": "Sandbox.Model",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Model",
+          "Name": "Model",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The model used to generate physics bodies, collision shapes, and joints."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The model used to generate physics bodies, collision shapes, and joints."
+          },
+          "DocId": "P:Sandbox.ModelPhysics.Model"
+        },
+        {
+          "PropertyType": "Sandbox.SkinnedModelRenderer",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Renderer",
+          "Name": "Renderer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The renderer that receives transform updates from physics bodies."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The renderer that receives transform updates from physics bodies."
+          },
+          "DocId": "P:Sandbox.ModelPhysics.Renderer"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.IgnoreRoot",
+          "Name": "IgnoreRoot",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true, the root physics body will not drive this component's transform."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "77"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true, the root physics body will not drive this component's transform."
+          },
+          "DocId": "P:Sandbox.ModelPhysics.IgnoreRoot"
+        },
+        {
+          "PropertyType": "Sandbox.RigidbodyFlags",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 90
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.RigidbodyFlags",
+          "Name": "RigidbodyFlags",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Physics"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Rigidbody flags applied to all bodies."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "83"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Rigidbody flags applied to all bodies."
+          },
+          "DocId": "P:Sandbox.ModelPhysics.RigidbodyFlags"
+        },
+        {
+          "PropertyType": "Sandbox.PhysicsLock",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Locking",
+          "Name": "Locking",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Physics"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Rigidbody locking applied to all bodies."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "107"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Rigidbody locking applied to all bodies."
+          },
+          "DocId": "P:Sandbox.ModelPhysics.Locking"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.StartAsleep",
+          "Name": "StartAsleep",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Physics"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "All bodies will be put to sleep on start."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "128"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "All bodies will be put to sleep on start."
+          },
+          "DocId": "P:Sandbox.ModelPhysics.StartAsleep"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 141
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.MotionEnabled",
+          "Name": "MotionEnabled",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Physics"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enable to drive renderer from physics, disable to drive physics from renderer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "134"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enable to drive renderer from physics, disable to drive physics from renderer."
+          },
+          "DocId": "P:Sandbox.ModelPhysics.MotionEnabled"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 159
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Mass",
+          "Name": "Mass",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the total mass of every <span style=\"color: #4EC9B0;\">Rigidbody</span>"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "158"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the total mass of every <see cref=\"T:Sandbox.Rigidbody\" />"
+          },
+          "DocId": "P:Sandbox.ModelPhysics.Mass"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.cs",
+            "Line": 168
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.MassCenter",
+          "Name": "MassCenter",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the center of mass of every <span style=\"color: #4EC9B0;\">Rigidbody</span> in world-space"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.cs",
+                "163"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the center of mass of every <see cref=\"T:Sandbox.Rigidbody\" /> in world-space"
+          },
+          "DocId": "P:Sandbox.ModelPhysics.MassCenter"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.ModelPhysics.Body>",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.Networking.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Bodies",
+          "Name": "Bodies",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.SyncAttribute"
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Networked list of bodies."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.Networking.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Networked list of bodies."
+          },
+          "DocId": "P:Sandbox.ModelPhysics.Bodies"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.ModelPhysics.Joint>",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.Networking.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Joints",
+          "Name": "Joints",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.SyncAttribute"
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Networked list of joints."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\ModelPhysics.Networking.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Networked list of joints."
+          },
+          "DocId": "P:Sandbox.ModelPhysics.Joints"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ModelPhysics",
+      "Name": "ModelPhysics",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Model Physics"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Physics"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "check_box_outline_blank"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Physics for a model. This is primarily used for ragdolls and other physics driven models, otherwise you should be using a Rigidbody."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Collider\\ModelPhysics.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Physics for a model. This is primarily used for ragdolls and other physics driven models, otherwise you should be using a Rigidbody."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Collider\\ModelPhysics.Networking.cs",
+            "4"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Physics for a model. This is primarily used for ragdolls and other physics driven models, otherwise you should be using a Rigidbody."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Collider\\ModelPhysics.PhysicsCreate.cs",
+            "4"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Physics for a model. This is primarily used for ragdolls and other physics driven models, otherwise you should be using a Rigidbody."
+      },
+      "DocId": "T:Sandbox.ModelPhysics"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Component",
+              "Out": true,
+              "Type": "Sandbox.Rigidbody"
+            },
+            {
+              "Name": "Bone",
+              "Out": true,
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "LocalTransform",
+              "Out": true,
+              "Type": "Transform"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Body.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.ModelPhysics.Body",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ModelPhysics.Body.Deconstruct(Sandbox.Rigidbody@,System.Int32@,Transform@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Component",
+              "Type": "Sandbox.Rigidbody"
+            },
+            {
+              "Name": "Bone",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "LocalTransform",
+              "Type": "Transform"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Body..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ModelPhysics.Body",
+          "Documentation": {
+            "Summary": "Represents a <see cref=\"T:Sandbox.Rigidbody\" /> attached to a specific bone with a local transform."
+          },
+          "DocId": "M:Sandbox.ModelPhysics.Body.#ctor(Sandbox.Rigidbody,System.Int32,Transform)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Rigidbody",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.Networking.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Body.Component",
+          "Name": "Component",
+          "DocId": "P:Sandbox.ModelPhysics.Body.Component"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.Networking.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Body.Bone",
+          "Name": "Bone",
+          "DocId": "P:Sandbox.ModelPhysics.Body.Bone"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.Networking.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Body.LocalTransform",
+          "Name": "LocalTransform",
+          "DocId": "P:Sandbox.ModelPhysics.Body.LocalTransform"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ModelPhysics.Body",
+      "Name": "Body",
+      "DeclaringType": "Sandbox.ModelPhysics",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents a <see cref=\"T:Sandbox.Rigidbody\" /> attached to a specific bone with a local transform."
+      },
+      "DocId": "T:Sandbox.ModelPhysics.Body"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Component",
+              "Out": true,
+              "Type": "Sandbox.Joint"
+            },
+            {
+              "Name": "Body1",
+              "Out": true,
+              "Type": "Sandbox.ModelPhysics.Body"
+            },
+            {
+              "Name": "Body2",
+              "Out": true,
+              "Type": "Sandbox.ModelPhysics.Body"
+            },
+            {
+              "Name": "LocalFrame1",
+              "Out": true,
+              "Type": "Transform"
+            },
+            {
+              "Name": "LocalFrame2",
+              "Out": true,
+              "Type": "Transform"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Joint.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.ModelPhysics.Joint",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.ModelPhysics.Joint.Deconstruct(Sandbox.Joint@,Sandbox.ModelPhysics.Body@,Sandbox.ModelPhysics.Body@,Transform@,Transform@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Component",
+              "Type": "Sandbox.Joint"
+            },
+            {
+              "Name": "Body1",
+              "Type": "Sandbox.ModelPhysics.Body"
+            },
+            {
+              "Name": "Body2",
+              "Type": "Sandbox.ModelPhysics.Body"
+            },
+            {
+              "Name": "LocalFrame1",
+              "Type": "Transform"
+            },
+            {
+              "Name": "LocalFrame2",
+              "Type": "Transform"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Joint..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ModelPhysics.Joint",
+          "Documentation": {
+            "Summary": "Represents a <see cref=\"T:Sandbox.Joint\" /> between two bodies with local frames for each."
+          },
+          "DocId": "M:Sandbox.ModelPhysics.Joint.#ctor(Sandbox.Joint,Sandbox.ModelPhysics.Body,Sandbox.ModelPhysics.Body,Transform,Transform)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Joint",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.Networking.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Joint.Component",
+          "Name": "Component",
+          "DocId": "P:Sandbox.ModelPhysics.Joint.Component"
+        },
+        {
+          "PropertyType": "Sandbox.ModelPhysics.Body",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.Networking.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Joint.Body1",
+          "Name": "Body1",
+          "DocId": "P:Sandbox.ModelPhysics.Joint.Body1"
+        },
+        {
+          "PropertyType": "Sandbox.ModelPhysics.Body",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.Networking.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Joint.Body2",
+          "Name": "Body2",
+          "DocId": "P:Sandbox.ModelPhysics.Joint.Body2"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.Networking.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Joint.LocalFrame1",
+          "Name": "LocalFrame1",
+          "DocId": "P:Sandbox.ModelPhysics.Joint.LocalFrame1"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Scene/Components/Collider/ModelPhysics.Networking.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ModelPhysics.Joint.LocalFrame2",
+          "Name": "LocalFrame2",
+          "DocId": "P:Sandbox.ModelPhysics.Joint.LocalFrame2"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ModelPhysics.Joint",
+      "Name": "Joint",
+      "DeclaringType": "Sandbox.ModelPhysics",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents a <see cref=\"T:Sandbox.Joint\" /> between two bodies with local frames for each."
+      },
+      "DocId": "T:Sandbox.ModelPhysics.Joint"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Collider",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Collider/PlaneCollider.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlaneCollider..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.PlaneCollider",
+          "DocId": "M:Sandbox.PlaneCollider.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Scene/Components/Collider/PlaneCollider.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlaneCollider.Scale",
+          "Name": "Scale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Size"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Plane"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Collider.ResizeAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The size of the plane, from corner to corner."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\PlaneCollider.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The size of the plane, from corner to corner."
+          },
+          "DocId": "P:Sandbox.PlaneCollider.Scale"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Collider/PlaneCollider.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlaneCollider.Center",
+          "Name": "Center",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Plane"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Collider.ResizeAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The center of the plane relative to this GameObject."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\PlaneCollider.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The center of the plane relative to this GameObject."
+          },
+          "DocId": "P:Sandbox.PlaneCollider.Center"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Collider/PlaneCollider.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlaneCollider.Normal",
+          "Name": "Normal",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Normal"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Plane"
+              ]
+            },
+            {
+              "FullName": "Sandbox.NormalAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The normal of the plane, determining its orientation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\PlaneCollider.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The normal of the plane, determining its orientation."
+          },
+          "DocId": "P:Sandbox.PlaneCollider.Normal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Scene/Components/Collider/PlaneCollider.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlaneCollider.IsConcave",
+          "Name": "IsConcave",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Collider\\PlaneCollider.cs",
+                "34"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlaneCollider.IsConcave"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PlaneCollider",
+      "Name": "PlaneCollider",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Collider - Plane"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Physics"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "check_box_outline_blank"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Defines a plane collider."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Collider\\PlaneCollider.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Defines a plane collider."
+      },
+      "DocId": "T:Sandbox.PlaneCollider"
+    }
+  ],
+  "_metadata": {
+    "chunk": 76,
+    "items_count": 7
+  }
+}

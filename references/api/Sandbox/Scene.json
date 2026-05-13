@@ -1,0 +1,2061 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.GameObject",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<T>",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Components.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.GetAllComponents",
+          "Name": "GetAllComponents",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get all components of type. This can include interfaces. This function can only find enabled/active components."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Components.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get all components of type. This can include interfaces.\nThis function can only find enabled/active components."
+          },
+          "DocId": "M:Sandbox.Scene.GetAllComponents``1"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.Component>",
+          "Parameters": [
+            {
+              "Name": "type",
+              "Type": "System.Type"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.GetAllComponents",
+          "Name": "GetAllComponents",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Scene/<GetAllComponents>d__9"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get all components of type. This can include interfaces. This function can only find enabled/active components."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Components.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get all components of type. This can include interfaces.\nThis function can only find enabled/active components."
+          },
+          "DocId": "M:Sandbox.Scene.GetAllComponents(System.Type)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsOverride": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 85
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Scene.Finalize",
+          "Name": "Finalize",
+          "DeclaringType": "Sandbox.Scene",
+          "DocId": "M:Sandbox.Scene.Finalize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Destroy",
+          "Name": "Destroy",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Destroy this scene. After this you should never use it again."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "96"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Destroy this scene. After this you should never use it again."
+          },
+          "DocId": "M:Sandbox.Scene.Destroy"
+        },
+        {
+          "ReturnType": "Sandbox.Scene",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 136
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Scene.CreateEditorScene",
+          "Name": "CreateEditorScene",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "133"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.CreateEditorScene"
+        },
+        {
+          "ReturnType": "Sandbox.GameObject",
+          "Parameters": [
+            {
+              "Name": "enabled",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 144
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.CreateObject",
+          "Name": "CreateObject",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a GameObject on this scene. This doesn't require the scene to be the active scene."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "141"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a GameObject on this scene. This doesn't require the scene to be the active scene."
+          },
+          "DocId": "M:Sandbox.Scene.CreateObject(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 159
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Push",
+          "Name": "Push",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Push this scene as the active scene, for a scope"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "156"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Push this scene as the active scene, for a scope"
+          },
+          "DocId": "M:Sandbox.Scene.Push"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.BatchGroup",
+          "Name": "BatchGroup",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "166"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Collects anything inside into a batch group. A batchgroup is used with GameObject and Components to\nmake sure that their OnEnable/OnDisable and other callbacks are called in a deterministic order,\nand that they can find each other during creation. <see cref=\"M:Sandbox.GameObject.NetworkSpawn\" /> calls will also be batched."
+          },
+          "DocId": "M:Sandbox.Scene.BatchGroup"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 182
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.ClearUnsavedChanges",
+          "Name": "ClearUnsavedChanges",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "178"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.ClearUnsavedChanges"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.GameObject>",
+          "Parameters": [
+            {
+              "Name": "tags",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.String>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.FindAllWithTags",
+          "Name": "FindAllWithTags",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Scene/<FindAllWithTags>d__79"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find objects with all tags"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "318"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.FindAllWithTags(System.Collections.Generic.IEnumerable`1{System.String})"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.GameObject>",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.FindAllWithTag",
+          "Name": "FindAllWithTag",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find objects with tag"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "332"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find objects with tag"
+          },
+          "DocId": "M:Sandbox.Scene.FindAllWithTag(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Deletes.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.ProcessDeletes",
+          "Name": "ProcessDeletes",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Delete any GameObjects waiting to be deleted"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Deletes.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Delete any GameObjects waiting to be deleted"
+          },
+          "DocId": "M:Sandbox.Scene.ProcessDeletes"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "action",
+              "Type": "System.Action`1<T>"
+            },
+            {
+              "Name": "find",
+              "Type": "Sandbox.FindMode",
+              "Default": "69"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Event.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.RunEvent",
+          "Name": "RunEvent",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Run an event on all components. The find argument is unused when calling this on a scene."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Event.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.RunEvent``1(System.Action`1{``0},Sandbox.FindMode)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Loading.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.StartLoading",
+          "Name": "StartLoading",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Loading.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.StartLoading"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "resource",
+              "Type": "Sandbox.GameResource"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.LoadSave.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Load",
+          "Name": "Load",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Load from the provided <span style=\"color: #4EC9B0;\">SceneFile</span>. This will not load the scene for other clients in a multiplayer session, you should instead use <span style=\"color: #4EC9B0;\">Game</span>.<span style=\"color: #DCDCAA;\">ChangeScene</span>(<span style=\"color: #4EC9B0;\">SceneLoadOptions</span>) if you want to bring other clients."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.LoadSave.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Load from the provided <see cref=\"T:Sandbox.SceneFile\" />. This will not load the scene for other clients in a\nmultiplayer session, you should instead use <see cref=\"M:Sandbox.Game.ChangeScene(Sandbox.SceneLoadOptions)\" />\nif you want to bring other clients."
+          },
+          "DocId": "M:Sandbox.Scene.Load(Sandbox.GameResource)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.SceneLoadOptions"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.LoadSave.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Load",
+          "Name": "Load",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Load from the provided <span style=\"color: #4EC9B0;\">SceneLoadOptions</span>. This will not load the scene for other clients in a multiplayer session, you should instead use <span style=\"color: #4EC9B0;\">Game</span>.<span style=\"color: #DCDCAA;\">ChangeScene</span>(<span style=\"color: #4EC9B0;\">SceneLoadOptions</span>) if you want to bring other clients."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.LoadSave.cs",
+                "34"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Load from the provided <see cref=\"T:Sandbox.SceneLoadOptions\" />. This will not load the scene for other clients in a\nmultiplayer session, you should instead use <see cref=\"M:Sandbox.Game.ChangeScene(Sandbox.SceneLoadOptions)\" />\nif you want to bring other clients."
+          },
+          "DocId": "M:Sandbox.Scene.Load(Sandbox.SceneLoadOptions)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "filename",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.LoadSave.cs",
+            "Line": 167
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.LoadFromFile",
+          "Name": "LoadFromFile",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Load from the provided file name. This will not load the scene for other clients in a multiplayer session, you should instead use <span style=\"color: #4EC9B0;\">Game</span>.<span style=\"color: #DCDCAA;\">ChangeScene</span>(<span style=\"color: #4EC9B0;\">SceneLoadOptions</span>) if you want to bring other clients."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.LoadSave.cs",
+                "164"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Load from the provided file name. This will not load the scene for other clients in a\nmultiplayer session, you should instead use <see cref=\"M:Sandbox.Game.ChangeScene(Sandbox.SceneLoadOptions)\" />\nif you want to bring other clients."
+          },
+          "DocId": "M:Sandbox.Scene.LoadFromFile(System.String)"
+        },
+        {
+          "ReturnType": "System.Text.Json.Nodes.JsonObject",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "Sandbox.GameObject.SerializeOptions",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.LoadSave.cs",
+            "Line": 177
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Serialize",
+          "Name": "Serialize",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.LoadSave.cs",
+                "174"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.Serialize(Sandbox.GameObject.SerializeOptions)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "node",
+              "Type": "System.Text.Json.Nodes.JsonObject"
+            },
+            {
+              "Name": "option",
+              "Type": "Sandbox.GameObject.DeserializeOptions"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.LoadSave.cs",
+            "Line": 207
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Deserialize",
+          "Name": "Deserialize",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.LoadSave.cs",
+                "204"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.Deserialize(System.Text.Json.Nodes.JsonObject,Sandbox.GameObject.DeserializeOptions)"
+        },
+        {
+          "ReturnType": "System.Text.Json.Nodes.JsonObject",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.LoadSave.cs",
+            "Line": 241
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.SerializeProperties",
+          "Name": "SerializeProperties",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.LoadSave.cs",
+                "238"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.SerializeProperties"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.Connection"
+            },
+            {
+              "Name": "box",
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Network.cs",
+            "Line": 161
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.IsBBoxVisibleToConnection",
+          "Name": "IsBBoxVisibleToConnection",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Are these bounds visible to the specified <span style=\"color: #4EC9B0;\">Connection</span>?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Network.cs",
+                "158"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Are these bounds visible to the specified <see cref=\"T:Sandbox.Connection\" />?"
+          },
+          "DocId": "M:Sandbox.Scene.IsBBoxVisibleToConnection(Sandbox.Connection,BBox)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.Connection"
+            },
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Network.cs",
+            "Line": 183
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.IsPointVisibleToConnection",
+          "Name": "IsPointVisibleToConnection",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is a position visible to the specified <span style=\"color: #4EC9B0;\">Connection</span>?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Network.cs",
+                "180"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is a position visible to the specified <see cref=\"T:Sandbox.Connection\" />?"
+          },
+          "DocId": "M:Sandbox.Scene.IsPointVisibleToConnection(Sandbox.Connection,Vector3)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<T>",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.GetAll",
+          "Name": "GetAll",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Scene/<GetAll>d__157`1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get all objects of this type. This could be a component or a GameObjectSystem, or other stuff in the future."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.ObjectIndex.cs",
+                "147"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get all objects of this type. This could be a component or a GameObjectSystem, or other stuff in the future."
+          },
+          "DocId": "M:Sandbox.Scene.GetAll``1"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "System.Collections.Generic.List`1<T>"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.ObjectIndex.cs",
+            "Line": 169
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.GetAll",
+          "Name": "GetAll",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get all objects of this type. This could be a component or a GameObjectSystem, or other stuff in the future."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.ObjectIndex.cs",
+                "165"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.GetAll``1(System.Collections.Generic.List`1{``0})"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.ObjectIndex.cs",
+            "Line": 190
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the first object found of this type. This could be a component or a GameObjectSystem, or other stuff in the future."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.ObjectIndex.cs",
+                "186"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the first object found of this type. This could be a component or a GameObjectSystem, or other stuff in the future.",
+            "Return": "",
+            "TypeParams": {
+              "T": ""
+            }
+          },
+          "DocId": "M:Sandbox.Scene.Get``1"
+        },
+        {
+          "ReturnType": "System.IDisposable",
+          "Parameters": [
+            {
+              "Name": "stage",
+              "Type": "Sandbox.GameObjectSystem.Stage"
+            },
+            {
+              "Name": "order",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "action",
+              "Type": "System.Action"
+            },
+            {
+              "Name": "className",
+              "Type": "System.String"
+            },
+            {
+              "Name": "description",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.System.cs",
+            "Line": 195
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.AddHook",
+          "Name": "AddHook",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Call this method on this stage. This returns a disposable that will remove the hook when disposed."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.System.cs",
+                "192"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Call this method on this stage. This returns a disposable that will remove the hook when disposed."
+          },
+          "DocId": "M:Sandbox.Scene.AddHook(Sandbox.GameObjectSystem.Stage,System.Int32,System.Action,System.String,System.String)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.System.cs",
+            "Line": 203
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.GetSystem",
+          "Name": "GetSystem",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a specific system by type."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.System.cs",
+                "200"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a specific system by type."
+          },
+          "DocId": "M:Sandbox.Scene.GetSystem``1"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "val",
+              "Out": true,
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.System.cs",
+            "Line": 210
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.GetSystem",
+          "Name": "GetSystem",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a specific system by type."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.System.cs",
+                "208"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a specific system by type."
+          },
+          "DocId": "M:Sandbox.Scene.GetSystem``1(``0@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "timeNow",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "timeDelta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.EditorTick",
+          "Name": "EditorTick",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "54"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.EditorTick(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.EditorDraw",
+          "Name": "EditorDraw",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "75"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.EditorDraw"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "timeDelta",
+              "Type": "System.Double",
+              "Default": "0.1"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 238
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.GameTick",
+          "Name": "GameTick",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "236"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Scene.GameTick(System.Double)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.GameObject>",
+          "Parameters": [
+            {
+              "Name": "sphere",
+              "Type": "Sandbox.Sphere"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 132
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.FindInPhysics",
+          "Name": "FindInPhysics",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find game objects in a sphere using physics."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "129"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find game objects in a sphere using physics."
+          },
+          "DocId": "M:Sandbox.Scene.FindInPhysics(Sandbox.Sphere)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.GameObject>",
+          "Parameters": [
+            {
+              "Name": "box",
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.FindInPhysics",
+          "Name": "FindInPhysics",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find game objects in a box using physics."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "139"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find game objects in a box using physics."
+          },
+          "DocId": "M:Sandbox.Scene.FindInPhysics(BBox)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.GameObject>",
+          "Parameters": [
+            {
+              "Name": "frustum",
+              "Type": "Sandbox.Frustum"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 152
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.FindInPhysics",
+          "Name": "FindInPhysics",
+          "DeclaringType": "Sandbox.Scene",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find game objects in a frustum using physics."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "149"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find game objects in a frustum using physics."
+          },
+          "DocId": "M:Sandbox.Scene.FindInPhysics(Sandbox.Frustum)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "isEditor",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/Scene/Scene.Components.cs",
+            "Line": 9
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Scene..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Scene",
+          "DocId": "M:Sandbox.Scene.#ctor(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Scene",
+          "DocId": "M:Sandbox.Scene.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.CameraComponent",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Camera.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Camera",
+          "Name": "Camera",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Camera.cs",
+                "5"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.Camera"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.IsEditor",
+          "Name": "IsEditor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.IsEditor"
+        },
+        {
+          "PropertyType": "Sandbox.SceneWorld",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.SceneWorld",
+          "Name": "SceneWorld",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.SceneWorld"
+        },
+        {
+          "PropertyType": "Sandbox.SceneWorld",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.DebugSceneWorld",
+          "Name": "DebugSceneWorld",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.DebugSceneWorld"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.HasUnsavedChanges",
+          "Name": "HasUnsavedChanges",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use Scene.Editor.HasUnsavedChanges"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.HasUnsavedChanges"
+        },
+        {
+          "PropertyType": "Sandbox.GameResource",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Source",
+          "Name": "Source",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.Source"
+        },
+        {
+          "PropertyType": "Sandbox.GameObjectDirectory",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Directory",
+          "Name": "Directory",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.Directory"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Title",
+          "Name": "Title",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "please use the SceneInformation component"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Description",
+          "Name": "Description",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "please use the SceneInformation component"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.Description"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.WantsSystemScene",
+          "Name": "WantsSystemScene",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true we'll additive load the system scene when this scene is loaded. Defaults to true. You might want to disable this for specific scenes, like menu scenes etc."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "41"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true we'll additive load the system scene when this scene is loaded. Defaults\nto true. You might want to disable this for specific scenes, like menu scenes etc."
+          },
+          "DocId": "P:Sandbox.Scene.WantsSystemScene"
+        },
+        {
+          "PropertyType": "Sandbox.RenderAttributes",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.RenderAttributes",
+          "Name": "RenderAttributes",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Global render attributes accessible on any renderable in this Scene."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "47"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Global render attributes accessible on any renderable in this Scene."
+          },
+          "DocId": "P:Sandbox.Scene.RenderAttributes"
+        },
+        {
+          "PropertyType": "Sandbox.PhysicsWorld",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.PhysicsWorld",
+          "Name": "PhysicsWorld",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "51"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.PhysicsWorld"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if this scene has not been destroyed"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "91"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if this scene has not been destroyed"
+          },
+          "DocId": "P:Sandbox.Scene.IsValid"
+        },
+        {
+          "PropertyType": "Sandbox.Volumes.VolumeSystem",
+          "Loc": {
+            "File": "Scene/Scene/Scene.cs",
+            "Line": 293
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Volumes",
+          "Name": "Volumes",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows quickly finding components that have a volume"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.cs",
+                "292"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows quickly finding components that have a volume"
+          },
+          "DocId": "P:Sandbox.Scene.Volumes"
+        },
+        {
+          "PropertyType": "Sandbox.Scene.ISceneEditorSession",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Editor.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Editor",
+          "Name": "Editor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows access to the scene's editor session from the game. This will be null if there is no editor session active on this scene."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Editor.cs",
+                "9"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows access to the scene's editor session from the game. This will be null if there is no\neditor session active on this scene."
+          },
+          "DocId": "P:Sandbox.Scene.Editor"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Loading.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.IsLoading",
+          "Name": "IsLoading",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return true if we're in an initial loading phase"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Loading.cs",
+                "25"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return true if we're in an initial loading phase"
+          },
+          "DocId": "P:Sandbox.Scene.IsLoading"
+        },
+        {
+          "PropertyType": "Sandbox.Navigation.NavMesh",
+          "Loc": {
+            "File": "Scene/Scene/Scene.NavMesh.cs",
+            "Line": 6
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.NavMesh",
+          "Name": "NavMesh",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.NavMesh.cs",
+                "5"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.NavMesh"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Network.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.NetworkFrequency",
+          "Name": "NetworkFrequency",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to ProjectSettings.Networking.UpdateRate"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Network.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.NetworkFrequency"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Network.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.NetworkRate",
+          "Name": "NetworkRate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "One divided by ProjectSettings.Networking.UpdateRate."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Network.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "One divided by ProjectSettings.Networking.UpdateRate."
+          },
+          "DocId": "P:Sandbox.Scene.NetworkRate"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IEnumerable`1<Sandbox.Scene>",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Static.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Scene.All",
+          "Name": "All",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "All active non-editor scenes."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Static.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "All active non-editor scenes."
+          },
+          "DocId": "P:Sandbox.Scene.All"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.IsFixedUpdate",
+          "Name": "IsFixedUpdate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.IsFixedUpdate"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.FixedDelta",
+          "Name": "FixedDelta",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.FixedDelta"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.FixedUpdateFrequency",
+          "Name": "FixedUpdateFrequency",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Sandbox.ProjectSettings.PhysicsSettings"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.FixedUpdateFrequency"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.MaxFixedUpdates",
+          "Name": "MaxFixedUpdates",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Sandbox.ProjectSettings.PhysicsSettings"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.MaxFixedUpdates"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.PhysicsSubSteps",
+          "Name": "PhysicsSubSteps",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Sandbox.ProjectSettings.PhysicsSettings"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.PhysicsSubSteps"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.ThreadedAnimation",
+          "Name": "ThreadedAnimation",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Unused. Animation is always threaded."
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.ThreadedAnimation"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.UseFixedUpdate",
+          "Name": "UseFixedUpdate",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Moved to Sandbox.ProjectSettings.PhysicsSettings"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.UseFixedUpdate"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Tick.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.TimeScale",
+          "Name": "TimeScale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Tick.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.TimeScale"
+        },
+        {
+          "PropertyType": "Sandbox.SceneTrace",
+          "Loc": {
+            "File": "Scene/Scene/Scene.Trace.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Scene.Trace",
+          "Name": "Trace",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Scene\\Scene.Trace.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Scene.Trace"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Scene",
+      "Name": "Scene",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Camera.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Components.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.DebugDraw.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Deletes.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Editor.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Event.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Listener.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Loading.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.LoadSave.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.NavMesh.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Network.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.ObjectIndex.cs",
+            "16"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Static.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.System.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Tick.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Scene\\Scene.Trace.cs",
+            "6"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Scene"
+    }
+  ],
+  "_metadata": {
+    "chunk": 128,
+    "items_count": 1
+  }
+}

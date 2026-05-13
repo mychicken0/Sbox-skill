@@ -1,0 +1,1338 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Linear",
+              "Out": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "Angular",
+              "Out": true,
+              "Type": "Vector3"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.BoneVelocity.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.BoneVelocity",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.BoneVelocity.Deconstruct(Vector3@,Vector3@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Linear",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "Angular",
+              "Type": "Vector3"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.BoneVelocity..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.BoneVelocity",
+          "DocId": "M:Sandbox.SkinnedModelRenderer.BoneVelocity.#ctor(Vector3,Vector3)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Bones.cs",
+            "Line": 196
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.BoneVelocity.Linear",
+          "Name": "Linear",
+          "DocId": "P:Sandbox.SkinnedModelRenderer.BoneVelocity.Linear"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Bones.cs",
+            "Line": 196
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.BoneVelocity.Angular",
+          "Name": "Angular",
+          "DocId": "P:Sandbox.SkinnedModelRenderer.BoneVelocity.Angular"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SkinnedModelRenderer.BoneVelocity",
+      "Name": "BoneVelocity",
+      "DeclaringType": "Sandbox.SkinnedModelRenderer",
+      "DocId": "T:Sandbox.SkinnedModelRenderer.BoneVelocity"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "weight",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Morphs.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.MorphAccessor.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.MorphAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets a morph override value. Uses a default blend time to smoothly transition from the animation-driven morph to this override."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Morphs.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets a morph override value.\nUses a default blend time to smoothly transition from\nthe animation-driven morph to this override."
+          },
+          "DocId": "M:Sandbox.SkinnedModelRenderer.MorphAccessor.Set(System.String,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "weight",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "fadeTime",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Morphs.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.MorphAccessor.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.MorphAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets a morph override value with blending. fadeTime controls how long it takes to blend between the animation-driven morph and this override."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Morphs.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets a morph override value with blending.\nfadeTime controls how long it takes to blend between\nthe animation-driven morph and this override."
+          },
+          "DocId": "M:Sandbox.SkinnedModelRenderer.MorphAccessor.Set(System.String,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Morphs.cs",
+            "Line": 96
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.MorphAccessor.ContainsOverride",
+          "Name": "ContainsOverride",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.MorphAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if we have this value overridden (set). False means its value is likely being driven by animation etc."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Morphs.cs",
+                "93"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if we have this value overridden (set). False means its value is likely\nbeing driven by animation etc."
+          },
+          "DocId": "M:Sandbox.SkinnedModelRenderer.MorphAccessor.ContainsOverride(System.String)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Morphs.cs",
+            "Line": 104
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.MorphAccessor.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.MorphAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get this value"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Morphs.cs",
+                "101"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get this value"
+          },
+          "DocId": "M:Sandbox.SkinnedModelRenderer.MorphAccessor.Get(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Morphs.cs",
+            "Line": 122
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.MorphAccessor.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.MorphAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears the morph override and returns control to the animation. Uses the default blend time to smoothly transition back."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Morphs.cs",
+                "120"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears the morph override and returns control to the animation.\nUses the default blend time to smoothly transition back."
+          },
+          "DocId": "M:Sandbox.SkinnedModelRenderer.MorphAccessor.Clear(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "fadeTime",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Morphs.cs",
+            "Line": 136
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.MorphAccessor.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.MorphAccessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears the morph override and returns control to the animation. fadeTime controls how long it takes to blend back to the animation-driven morph."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Morphs.cs",
+                "134"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears the morph override and returns control to the animation.\nfadeTime controls how long it takes to blend back to the animation-driven morph."
+          },
+          "DocId": "M:Sandbox.SkinnedModelRenderer.MorphAccessor.Clear(System.String,System.Single)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.String[]",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Morphs.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.MorphAccessor.Names",
+          "Name": "Names",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Morphs.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SkinnedModelRenderer.MorphAccessor.Names"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SkinnedModelRenderer.MorphAccessor",
+      "Name": "MorphAccessor",
+      "DeclaringType": "Sandbox.SkinnedModelRenderer",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\SkinnedModelRenderer.Morphs.cs",
+            "35"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.SkinnedModelRenderer.MorphAccessor"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 189
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "187"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.Clear"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 201
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "198"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.Reset(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 233
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "231"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.Clear(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 247
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.Contains",
+          "Name": "Contains",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "244"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.Contains(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 250
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.GetBool",
+          "Name": "GetBool",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "249"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.GetBool(System.String)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 251
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.GetInt",
+          "Name": "GetInt",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "250"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.GetInt(System.String)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 252
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.GetFloat",
+          "Name": "GetFloat",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "251"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.GetFloat(System.String)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 253
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.GetVector",
+          "Name": "GetVector",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "252"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.GetVector(System.String)"
+        },
+        {
+          "ReturnType": "Rotation",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 254
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.GetRotation",
+          "Name": "GetRotation",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "253"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.GetRotation(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 257
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "255"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.Set(System.String,Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 263
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "261"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.Set(System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 269
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "267"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.Set(System.String,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 275
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "273"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.Set(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Rotation"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 281
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "279"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkinnedModelRenderer.ParameterAccessor.Set(System.String,Rotation)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.AnimationGraph",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Parameters.cs",
+            "Line": 173
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor.Graph",
+          "Name": "Graph",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+                "172"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SkinnedModelRenderer.ParameterAccessor.Graph"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SkinnedModelRenderer.ParameterAccessor",
+      "Name": "ParameterAccessor",
+      "DeclaringType": "Sandbox.SkinnedModelRenderer",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\SkinnedModelRenderer.Parameters.cs",
+            "170"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.SkinnedModelRenderer.ParameterAccessor"
+    },
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Sequence.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.SequenceAccessor.Duration",
+          "Name": "Duration",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Sequence.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.SkinnedModelRenderer.SequenceAccessor.Duration"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Sequence.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.SequenceAccessor.IsFinished",
+          "Name": "IsFinished",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Sequence.cs",
+                "48"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.SkinnedModelRenderer.SequenceAccessor.IsFinished"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Sequence.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.SequenceAccessor.TimeNormalized",
+          "Name": "TimeNormalized",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Sequence.cs",
+                "51"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.SkinnedModelRenderer.SequenceAccessor.TimeNormalized"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Sequence.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.SequenceAccessor.Time",
+          "Name": "Time",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Sequence.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.SkinnedModelRenderer.SequenceAccessor.Time"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<System.String>",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Sequence.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.SequenceAccessor.SequenceNames",
+          "Name": "SequenceNames",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Sequence.cs",
+                "57"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.SkinnedModelRenderer.SequenceAccessor.SequenceNames"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Sequence.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.SequenceAccessor.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Sequence"
+              ]
+            },
+            {
+              "FullName": "EditorAttribute",
+              "ConstructorArguments": [
+                "Sequence"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Sequence.cs",
+                "60"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.SkinnedModelRenderer.SequenceAccessor.Name"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Sequence.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.SequenceAccessor.Looping",
+          "Name": "Looping",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Sequence.cs",
+                "74"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.SkinnedModelRenderer.SequenceAccessor.Looping"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Sequence.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.SequenceAccessor.Blending",
+          "Name": "Blending",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Sequence.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.SkinnedModelRenderer.SequenceAccessor.Blending"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Render/SkinnedModelRenderer.Sequence.cs",
+            "Line": 107
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkinnedModelRenderer.SequenceAccessor.PlaybackRate",
+          "Name": "PlaybackRate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Control playback rate of sequence."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkinnedModelRenderer.Sequence.cs",
+                "102"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Control playback rate of sequence."
+          },
+          "DocId": "P:Sandbox.SkinnedModelRenderer.SequenceAccessor.PlaybackRate"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SkinnedModelRenderer.SequenceAccessor",
+      "Name": "SequenceAccessor",
+      "DeclaringType": "Sandbox.SkinnedModelRenderer",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\SkinnedModelRenderer.Sequence.cs",
+            "22"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.SkinnedModelRenderer.SequenceAccessor"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/SkyBox2D.cs",
+            "Line": 67
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.SkyBox2D.OnAwake",
+          "Name": "OnAwake",
+          "DeclaringType": "Sandbox.SkyBox2D",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkyBox2D.cs",
+                "65"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkyBox2D.OnAwake"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/SkyBox2D.cs",
+            "Line": 75
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.SkyBox2D.OnEnabled",
+          "Name": "OnEnabled",
+          "DeclaringType": "Sandbox.SkyBox2D",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkyBox2D.cs",
+                "72"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkyBox2D.OnEnabled"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/SkyBox2D.cs",
+            "Line": 91
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.SkyBox2D.OnDisabled",
+          "Name": "OnDisabled",
+          "DeclaringType": "Sandbox.SkyBox2D",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkyBox2D.cs",
+                "89"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SkyBox2D.OnDisabled"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/SkyBox2D.cs",
+            "Line": 133
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.SkyBox2D.OnTagsChanged",
+          "Name": "OnTagsChanged",
+          "DeclaringType": "Sandbox.SkyBox2D",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Tags have been updated"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkyBox2D.cs",
+                "131"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Tags have been updated"
+          },
+          "DocId": "M:Sandbox.SkyBox2D.OnTagsChanged"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Render/SkyBox2D.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkyBox2D..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SkyBox2D",
+          "DocId": "M:Sandbox.SkyBox2D.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Scene/Components/Render/SkyBox2D.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkyBox2D.Tint",
+          "Name": "Tint",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkyBox2D.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SkyBox2D.Tint"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Render/SkyBox2D.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkyBox2D.SkyIndirectLighting",
+          "Name": "SkyIndirectLighting",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether to use the skybox for lighting as an envmap probe"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkyBox2D.cs",
+                "28"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SkyBox2D.SkyIndirectLighting"
+        },
+        {
+          "PropertyType": "Sandbox.Material",
+          "Loc": {
+            "File": "Scene/Components/Render/SkyBox2D.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkyBox2D.SkyMaterial",
+          "Name": "SkyMaterial",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkyBox2D.cs",
+                "42"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SkyBox2D.SkyMaterial"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/Render/SkyBox2D.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SkyBox2D.SkyTexture",
+          "Name": "SkyTexture",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Render\\SkyBox2D.cs",
+                "61"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SkyBox2D.SkyTexture"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SkyBox2D",
+      "Name": "SkyBox2D",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "2D Skybox"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Rendering"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "visibility"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/2dskybox.png"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Adds a 2D skybox to the world"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Render\\SkyBox2D.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Adds a 2D skybox to the world"
+      },
+      "DocId": "T:Sandbox.SkyBox2D"
+    }
+  ],
+  "_metadata": {
+    "chunk": 112,
+    "items_count": 5
+  }
+}

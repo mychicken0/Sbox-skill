@@ -1,0 +1,1773 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.Panel",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Checkbox.SetProperty",
+          "Name": "SetProperty",
+          "DeclaringType": "Sandbox.UI.Checkbox",
+          "DocId": "M:Sandbox.UI.Checkbox.SetProperty(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Checkbox.SetContent",
+          "Name": "SetContent",
+          "DeclaringType": "Sandbox.UI.Checkbox",
+          "DocId": "M:Sandbox.UI.Checkbox.SetContent(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Checkbox.OnValueChanged",
+          "Name": "OnValueChanged",
+          "DeclaringType": "Sandbox.UI.Checkbox",
+          "DocId": "M:Sandbox.UI.Checkbox.OnValueChanged"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.Checkbox.UpdateState",
+          "Name": "UpdateState",
+          "DeclaringType": "Sandbox.UI.Checkbox",
+          "DocId": "M:Sandbox.UI.Checkbox.UpdateState"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.Checkbox.OnClick",
+          "Name": "OnClick",
+          "DeclaringType": "Sandbox.UI.Checkbox",
+          "DocId": "M:Sandbox.UI.Checkbox.OnClick(Sandbox.UI.MousePanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.Checkbox.OnMouseDown",
+          "Name": "OnMouseDown",
+          "DeclaringType": "Sandbox.UI.Checkbox",
+          "DocId": "M:Sandbox.UI.Checkbox.OnMouseDown(Sandbox.UI.MousePanelEvent)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Checkbox..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.Checkbox",
+          "DocId": "M:Sandbox.UI.Checkbox.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Action`1<System.Boolean>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Checkbox.ValueChanged",
+          "Name": "ValueChanged",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Checkbox.ValueChanged"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Panel",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Checkbox.CheckMark",
+          "Name": "CheckMark",
+          "DocId": "P:Sandbox.UI.Checkbox.CheckMark"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Checkbox.Checked",
+          "Name": "Checked",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Checkbox.Checked"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Checkbox.Value",
+          "Name": "Value",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Checkbox.Value"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Label",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Checkbox.Label",
+          "Name": "Label",
+          "DocId": "P:Sandbox.UI.Checkbox.Label"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Checkbox.LabelText",
+          "Name": "LabelText",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Checkbox.LabelText"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Checkbox",
+      "Name": "Checkbox",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.LibraryAttribute",
+          "ConstructorArguments": [
+            "checkbox"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.Checkbox"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.Panel",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheet.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.UI.ControlSheet",
+          "DocId": "M:Sandbox.UI.ControlSheet.Rebuild"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheet.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.ControlSheet",
+          "DocId": "M:Sandbox.UI.ControlSheet.Tick"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheet..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.ControlSheet",
+          "DocId": "M:Sandbox.UI.ControlSheet.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Object",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheet.Target",
+          "Name": "Target",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.ControlSheet.Target"
+        },
+        {
+          "PropertyType": "System.Func`2<Sandbox.SerializedProperty,System.Boolean>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheet.PropertyFilter",
+          "Name": "PropertyFilter",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.ControlSheet.PropertyFilter"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.ControlSheet",
+      "Name": "ControlSheet",
+      "DocId": "T:Sandbox.UI.ControlSheet"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.Panel",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "toggleGroup",
+              "Type": "Sandbox.SerializedProperty"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroup.SetToggle",
+          "Name": "SetToggle",
+          "DeclaringType": "Sandbox.UI.ControlSheetGroup",
+          "DocId": "M:Sandbox.UI.ControlSheetGroup.SetToggle(Sandbox.SerializedProperty)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroup.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.ControlSheetGroup",
+          "DocId": "M:Sandbox.UI.ControlSheetGroup.Tick"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "inspectorVisibilityAttributes",
+              "Type": "Sandbox.InspectorVisibilityAttribute[]"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroup.SetVisibility",
+          "Name": "SetVisibility",
+          "DeclaringType": "Sandbox.UI.ControlSheetGroup",
+          "DocId": "M:Sandbox.UI.ControlSheetGroup.SetVisibility(Sandbox.InspectorVisibilityAttribute[])"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroup..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.ControlSheetGroup",
+          "DocId": "M:Sandbox.UI.ControlSheetGroup.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.UI.ControlSheetGroupHeader",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroup.Header",
+          "Name": "Header",
+          "DocId": "P:Sandbox.UI.ControlSheetGroup.Header"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Panel",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroup.ToggleContainer",
+          "Name": "ToggleContainer",
+          "DocId": "P:Sandbox.UI.ControlSheetGroup.ToggleContainer"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Panel",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroup.Body",
+          "Name": "Body",
+          "DocId": "P:Sandbox.UI.ControlSheetGroup.Body"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroup.Closed",
+          "Name": "Closed",
+          "DocId": "P:Sandbox.UI.ControlSheetGroup.Closed"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.ControlSheetGroup",
+      "Name": "ControlSheetGroup",
+      "DocId": "T:Sandbox.UI.ControlSheetGroup"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.Panel",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroupHeader.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.ControlSheetGroupHeader",
+          "DocId": "M:Sandbox.UI.ControlSheetGroupHeader.Tick"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.ControlSheetGroupHeader.OnMouseDown",
+          "Name": "OnMouseDown",
+          "DeclaringType": "Sandbox.UI.ControlSheetGroupHeader",
+          "DocId": "M:Sandbox.UI.ControlSheetGroupHeader.OnMouseDown(Sandbox.UI.MousePanelEvent)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroupHeader..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.ControlSheetGroupHeader",
+          "DocId": "M:Sandbox.UI.ControlSheetGroupHeader.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroupHeader.Title",
+          "Name": "Title",
+          "DocId": "P:Sandbox.UI.ControlSheetGroupHeader.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroupHeader.Icon",
+          "Name": "Icon",
+          "DocId": "P:Sandbox.UI.ControlSheetGroupHeader.Icon"
+        },
+        {
+          "PropertyType": "Sandbox.SerializedProperty",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetGroupHeader.ToggleProperty",
+          "Name": "ToggleProperty",
+          "DocId": "P:Sandbox.UI.ControlSheetGroupHeader.ToggleProperty"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.ControlSheetGroupHeader",
+      "Name": "ControlSheetGroupHeader",
+      "DocId": "T:Sandbox.UI.ControlSheetGroupHeader"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.Panel",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.ControlSheetRow.OnParametersSet",
+          "Name": "OnParametersSet",
+          "DeclaringType": "Sandbox.UI.ControlSheetRow",
+          "DocId": "M:Sandbox.UI.ControlSheetRow.OnParametersSet"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetRow.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.ControlSheetRow",
+          "DocId": "M:Sandbox.UI.ControlSheetRow.Tick"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetRow..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.ControlSheetRow",
+          "DocId": "M:Sandbox.UI.ControlSheetRow.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.SerializedProperty",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ControlSheetRow.Property",
+          "Name": "Property",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.ControlSheetRow.Property"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.ControlSheetRow",
+      "Name": "ControlSheetRow",
+      "DocId": "T:Sandbox.UI.ControlSheetRow"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.Panel",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.BaseControl.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.UI.BaseControl",
+          "DocId": "M:Sandbox.UI.BaseControl.Rebuild"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.BaseControl.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.BaseControl",
+          "DocId": "M:Sandbox.UI.BaseControl.Tick"
+        },
+        {
+          "ReturnType": "Sandbox.UI.BaseControl",
+          "Parameters": [
+            {
+              "Name": "property",
+              "Type": "Sandbox.SerializedProperty"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.BaseControl.CreateFor",
+          "Name": "CreateFor",
+          "DeclaringType": "Sandbox.UI.BaseControl",
+          "DocId": "M:Sandbox.UI.BaseControl.CreateFor(Sandbox.SerializedProperty)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.BaseControl..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.BaseControl",
+          "DocId": "M:Sandbox.UI.BaseControl.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.SerializedProperty",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.BaseControl.Property",
+          "Name": "Property",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.BaseControl.Property"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.BaseControl.SupportsMultiEdit",
+          "Name": "SupportsMultiEdit",
+          "DocId": "P:Sandbox.UI.BaseControl.SupportsMultiEdit"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.BaseControl",
+      "Name": "BaseControl",
+      "DocId": "T:Sandbox.UI.BaseControl"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.BaseControl",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorAlphaControl.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.UI.ColorAlphaControl",
+          "DocId": "M:Sandbox.UI.ColorAlphaControl.Rebuild"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorAlphaControl.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.ColorAlphaControl",
+          "DocId": "M:Sandbox.UI.ColorAlphaControl.Tick"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.ColorAlphaControl.OnMouseDown",
+          "Name": "OnMouseDown",
+          "DeclaringType": "Sandbox.UI.ColorAlphaControl",
+          "DocId": "M:Sandbox.UI.ColorAlphaControl.OnMouseDown(Sandbox.UI.MousePanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.ColorAlphaControl.OnMouseMove",
+          "Name": "OnMouseMove",
+          "DeclaringType": "Sandbox.UI.ColorAlphaControl",
+          "DocId": "M:Sandbox.UI.ColorAlphaControl.OnMouseMove(Sandbox.UI.MousePanelEvent)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorAlphaControl..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.ColorAlphaControl",
+          "DocId": "M:Sandbox.UI.ColorAlphaControl.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorAlphaControl.SupportsMultiEdit",
+          "Name": "SupportsMultiEdit",
+          "DocId": "P:Sandbox.UI.ColorAlphaControl.SupportsMultiEdit"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.ColorAlphaControl",
+      "Name": "ColorAlphaControl",
+      "DocId": "T:Sandbox.UI.ColorAlphaControl"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.BaseControl",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorControl.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.UI.ColorControl",
+          "DocId": "M:Sandbox.UI.ColorControl.Rebuild"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorControl.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.ColorControl",
+          "DocId": "M:Sandbox.UI.ColorControl.Tick"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorControl..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.ColorControl",
+          "DocId": "M:Sandbox.UI.ColorControl.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorControl.SupportsMultiEdit",
+          "Name": "SupportsMultiEdit",
+          "DocId": "P:Sandbox.UI.ColorControl.SupportsMultiEdit"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.ColorControl",
+      "Name": "ColorControl",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.CustomEditorAttribute",
+          "ConstructorArguments": [
+            "Color"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.ColorControl"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.BaseControl",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorHueControl.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.UI.ColorHueControl",
+          "DocId": "M:Sandbox.UI.ColorHueControl.Rebuild"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorHueControl.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.ColorHueControl",
+          "DocId": "M:Sandbox.UI.ColorHueControl.Tick"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.ColorHueControl.OnMouseDown",
+          "Name": "OnMouseDown",
+          "DeclaringType": "Sandbox.UI.ColorHueControl",
+          "DocId": "M:Sandbox.UI.ColorHueControl.OnMouseDown(Sandbox.UI.MousePanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.ColorHueControl.OnMouseMove",
+          "Name": "OnMouseMove",
+          "DeclaringType": "Sandbox.UI.ColorHueControl",
+          "DocId": "M:Sandbox.UI.ColorHueControl.OnMouseMove(Sandbox.UI.MousePanelEvent)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorHueControl..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.ColorHueControl",
+          "DocId": "M:Sandbox.UI.ColorHueControl.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorHueControl.SupportsMultiEdit",
+          "Name": "SupportsMultiEdit",
+          "DocId": "P:Sandbox.UI.ColorHueControl.SupportsMultiEdit"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.ColorHueControl",
+      "Name": "ColorHueControl",
+      "DocId": "T:Sandbox.UI.ColorHueControl"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.BaseControl",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorPickerControl.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.UI.ColorPickerControl",
+          "DocId": "M:Sandbox.UI.ColorPickerControl.Rebuild"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorPickerControl.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.ColorPickerControl",
+          "DocId": "M:Sandbox.UI.ColorPickerControl.Tick"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorPickerControl..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.ColorPickerControl",
+          "DocId": "M:Sandbox.UI.ColorPickerControl.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorPickerControl.SupportsMultiEdit",
+          "Name": "SupportsMultiEdit",
+          "DocId": "P:Sandbox.UI.ColorPickerControl.SupportsMultiEdit"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.ColorPickerControl",
+      "Name": "ColorPickerControl",
+      "DocId": "T:Sandbox.UI.ColorPickerControl"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.BaseControl",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorSaturationValueControl.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.UI.ColorSaturationValueControl",
+          "DocId": "M:Sandbox.UI.ColorSaturationValueControl.Rebuild"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorSaturationValueControl.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.ColorSaturationValueControl",
+          "DocId": "M:Sandbox.UI.ColorSaturationValueControl.Tick"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.ColorSaturationValueControl.OnMouseDown",
+          "Name": "OnMouseDown",
+          "DeclaringType": "Sandbox.UI.ColorSaturationValueControl",
+          "DocId": "M:Sandbox.UI.ColorSaturationValueControl.OnMouseDown(Sandbox.UI.MousePanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.ColorSaturationValueControl.OnMouseMove",
+          "Name": "OnMouseMove",
+          "DeclaringType": "Sandbox.UI.ColorSaturationValueControl",
+          "DocId": "M:Sandbox.UI.ColorSaturationValueControl.OnMouseMove(Sandbox.UI.MousePanelEvent)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorSaturationValueControl..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.ColorSaturationValueControl",
+          "DocId": "M:Sandbox.UI.ColorSaturationValueControl.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.ColorSaturationValueControl.SupportsMultiEdit",
+          "Name": "SupportsMultiEdit",
+          "DocId": "P:Sandbox.UI.ColorSaturationValueControl.SupportsMultiEdit"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.ColorSaturationValueControl",
+      "Name": "ColorSaturationValueControl",
+      "DocId": "T:Sandbox.UI.ColorSaturationValueControl"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.BaseControl",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.EnumControl.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.UI.EnumControl",
+          "DocId": "M:Sandbox.UI.EnumControl.Rebuild"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.EnumControl..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.EnumControl",
+          "DocId": "M:Sandbox.UI.EnumControl.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.EnumControl.SupportsMultiEdit",
+          "Name": "SupportsMultiEdit",
+          "DocId": "P:Sandbox.UI.EnumControl.SupportsMultiEdit"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.EnumControl",
+      "Name": "EnumControl",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.CustomEditorAttribute",
+          "ConstructorArguments": [
+            "System.Enum"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.EnumControl"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.TextEntry",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.NumberEntry.Rebuild",
+          "Name": "Rebuild",
+          "DeclaringType": "Sandbox.UI.NumberEntry",
+          "DocId": "M:Sandbox.UI.NumberEntry.Rebuild"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.NumberEntry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.NumberEntry",
+          "DocId": "M:Sandbox.UI.NumberEntry.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.NumberEntry",
+      "Name": "NumberEntry",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.CustomEditorAttribute",
+          "ConstructorArguments": [
+            "System.Single"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.NumberEntry"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.BaseControl",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.UpdateAutoComplete",
+          "Name": "UpdateAutoComplete",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.UpdateAutoComplete"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "options",
+              "Type": "System.Object[]"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.UpdateAutoComplete",
+          "Name": "UpdateAutoComplete",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.UpdateAutoComplete(System.Object[])"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.DestroyAutoComplete",
+          "Name": "DestroyAutoComplete",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.DestroyAutoComplete"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.AutoCompleteSelectionChanged",
+          "Name": "AutoCompleteSelectionChanged",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.AutoCompleteSelectionChanged"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.AutoCompleteCancel",
+          "Name": "AutoCompleteCancel",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.AutoCompleteCancel"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.OnPaste",
+          "Name": "OnPaste",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnPaste(System.String)"
+        },
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "cut",
+              "Type": "System.Boolean"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.GetClipboardValue",
+          "Name": "GetClipboardValue",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.GetClipboardValue(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.ButtonEvent"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.OnButtonEvent",
+          "Name": "OnButtonEvent",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnButtonEvent(Sandbox.UI.ButtonEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.PanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.OnEscape",
+          "Name": "OnEscape",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnEscape(Sandbox.UI.PanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.ButtonEvent"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.OnButtonTyped",
+          "Name": "OnButtonTyped",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnButtonTyped(Sandbox.UI.ButtonEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.OnMouseDown",
+          "Name": "OnMouseDown",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnMouseDown(Sandbox.UI.MousePanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.OnMouseUp",
+          "Name": "OnMouseUp",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnMouseUp(Sandbox.UI.MousePanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.OnMouseMove",
+          "Name": "OnMouseMove",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnMouseMove(Sandbox.UI.MousePanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.PanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.OnFocus",
+          "Name": "OnFocus",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnFocus(Sandbox.UI.PanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.PanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.OnBlur",
+          "Name": "OnBlur",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnBlur(Sandbox.UI.PanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.MousePanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.OnDoubleClick",
+          "Name": "OnDoubleClick",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnDoubleClick(Sandbox.UI.MousePanelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "k",
+              "Type": "System.Char"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.OnKeyTyped",
+          "Name": "OnKeyTyped",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnKeyTyped(System.Char)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.OnDraw",
+          "Name": "OnDraw",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnDraw"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.OnValueChanged",
+          "Name": "OnValueChanged",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnValueChanged"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.Tick",
+          "Name": "Tick",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.Tick"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.SetProperty",
+          "Name": "SetProperty",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.SetProperty(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.String",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.FixNumeric",
+          "Name": "FixNumeric",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.FixNumeric"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.SelectionEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.OnDragSelect",
+          "Name": "OnDragSelect",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnDragSelect(Sandbox.UI.SelectionEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.UI.PanelEvent"
+            }
+          ],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.OnEvent",
+          "Name": "OnEvent",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.OnEvent(Sandbox.UI.PanelEvent)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.IsPanelEmpty",
+          "Name": "IsPanelEmpty",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.IsPanelEmpty"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.AddToHistory",
+          "Name": "AddToHistory",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.AddToHistory(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.ClearHistory",
+          "Name": "ClearHistory",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.ClearHistory"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.UpdateValidation",
+          "Name": "UpdateValidation",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.UpdateValidation"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "c",
+              "Type": "System.Char"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.CanEnterCharacter",
+          "Name": "CanEnterCharacter",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.CanEnterCharacter(System.Char)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.TextEntry",
+          "DocId": "M:Sandbox.UI.TextEntry.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Func`2<System.String,System.Object[]>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.AutoComplete",
+          "Name": "AutoComplete",
+          "DocId": "P:Sandbox.UI.TextEntry.AutoComplete"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.SupportsMultiEdit",
+          "Name": "SupportsMultiEdit",
+          "DocId": "P:Sandbox.UI.TextEntry.SupportsMultiEdit"
+        },
+        {
+          "PropertyType": "System.Action`1<System.String>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.OnTextEdited",
+          "Name": "OnTextEdited",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.OnTextEdited"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Label",
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.Label",
+          "Name": "Label",
+          "DocId": "P:Sandbox.UI.TextEntry.Label"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.Disabled",
+          "Name": "Disabled",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.Disabled"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.Text",
+          "Name": "Text",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.Text"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.Value",
+          "Name": "Value",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.Value"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.TextLength",
+          "Name": "TextLength",
+          "DocId": "P:Sandbox.UI.TextEntry.TextLength"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.CaretPosition",
+          "Name": "CaretPosition",
+          "DocId": "P:Sandbox.UI.TextEntry.CaretPosition"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.AllowEmojiReplace",
+          "Name": "AllowEmojiReplace",
+          "DocId": "P:Sandbox.UI.TextEntry.AllowEmojiReplace"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.AcceptsImeInput",
+          "Name": "AcceptsImeInput",
+          "DocId": "P:Sandbox.UI.TextEntry.AcceptsImeInput"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.NumberFormat",
+          "Name": "NumberFormat",
+          "Attributes": [
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Presentation"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.NumberFormat"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.Multiline",
+          "Name": "Multiline",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.Multiline"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.Single>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.MinValue",
+          "Name": "MinValue",
+          "DocId": "P:Sandbox.UI.TextEntry.MinValue"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.Single>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.MaxValue",
+          "Name": "MaxValue",
+          "DocId": "P:Sandbox.UI.TextEntry.MaxValue"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.Placeholder",
+          "Name": "Placeholder",
+          "Attributes": [
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.Placeholder"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Label",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.PrefixLabel",
+          "Name": "PrefixLabel",
+          "DocId": "P:Sandbox.UI.TextEntry.PrefixLabel"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.Prefix",
+          "Name": "Prefix",
+          "DocId": "P:Sandbox.UI.TextEntry.Prefix"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Label",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.SuffixLabel",
+          "Name": "SuffixLabel",
+          "DocId": "P:Sandbox.UI.TextEntry.SuffixLabel"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.Suffix",
+          "Name": "Suffix",
+          "DocId": "P:Sandbox.UI.TextEntry.Suffix"
+        },
+        {
+          "PropertyType": "Color",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.SelectionColor",
+          "Name": "SelectionColor",
+          "Attributes": [
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Appearance"
+              ]
+            },
+            {
+              "FullName": "Microsoft.AspNetCore.Components.ParameterAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.SelectionColor"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.HistoryMaxItems",
+          "Name": "HistoryMaxItems",
+          "DocId": "P:Sandbox.UI.TextEntry.HistoryMaxItems"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.HistoryCookie",
+          "Name": "HistoryCookie",
+          "DocId": "P:Sandbox.UI.TextEntry.HistoryCookie"
+        },
+        {
+          "PropertyType": "Sandbox.UI.IconPanel",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.IconPanel",
+          "Name": "IconPanel",
+          "DocId": "P:Sandbox.UI.TextEntry.IconPanel"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.Icon",
+          "Name": "Icon",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.Icon"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.HasClearButton",
+          "Name": "HasClearButton",
+          "DocId": "P:Sandbox.UI.TextEntry.HasClearButton"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.Int32>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.MinLength",
+          "Name": "MinLength",
+          "Attributes": [
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Validation"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.MinLength"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.Int32>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.MaxLength",
+          "Name": "MaxLength",
+          "Attributes": [
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Validation"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.MaxLength"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.CharacterRegex",
+          "Name": "CharacterRegex",
+          "Attributes": [
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Validation"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.CharacterRegex"
+        },
+        {
+          "PropertyType": "System.String",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.StringRegex",
+          "Name": "StringRegex",
+          "Attributes": [
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Validation"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.StringRegex"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.Numeric",
+          "Name": "Numeric",
+          "Attributes": [
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Validation"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.TextEntry.Numeric"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.TextEntry.HasValidationErrors",
+          "Name": "HasValidationErrors",
+          "DocId": "P:Sandbox.UI.TextEntry.HasValidationErrors"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Sandbox.RealTimeSince",
+          "IsProtected": true,
+          "FullName": "Sandbox.UI.TextEntry.TimeSinceNotInFocus",
+          "Name": "TimeSinceNotInFocus",
+          "DocId": "F:Sandbox.UI.TextEntry.TimeSinceNotInFocus"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Base Library",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.TextEntry",
+      "Name": "TextEntry",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.LibraryAttribute",
+          "ConstructorArguments": [
+            "TextEntry"
+          ]
+        },
+        {
+          "FullName": "Sandbox.CustomEditorAttribute",
+          "ConstructorArguments": [
+            "System.String"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.TextEntry"
+    }
+  ],
+  "_metadata": {
+    "chunk": 286,
+    "items_count": 14
+  }
+}

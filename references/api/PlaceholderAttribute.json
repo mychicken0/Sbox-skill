@@ -1,0 +1,1306 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 161
+          },
+          "IsPublic": true,
+          "FullName": "PlaceholderAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "PlaceholderAttribute",
+          "DocId": "M:PlaceholderAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 158
+          },
+          "IsPublic": true,
+          "FullName": "PlaceholderAttribute.Value",
+          "Name": "Value",
+          "Documentation": {},
+          "DocId": "P:PlaceholderAttribute.Value"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "PlaceholderAttribute",
+      "Name": "PlaceholderAttribute",
+      "Documentation": {
+        "Summary": "Add placeholder text, typically displayed for string properties when the text entry field is empty.\nThis info can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:PlaceholderAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 177
+          },
+          "IsPublic": true,
+          "FullName": "ClassNameAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "ClassNameAttribute",
+          "DocId": "M:ClassNameAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 174
+          },
+          "IsPublic": true,
+          "FullName": "ClassNameAttribute.Value",
+          "Name": "Value",
+          "Documentation": {},
+          "DocId": "P:ClassNameAttribute.Value"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "ClassNameAttribute",
+      "Name": "ClassNameAttribute",
+      "Documentation": {
+        "Summary": "Set the class name for this type or member.\nThis info can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:ClassNameAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 193
+          },
+          "IsPublic": true,
+          "FullName": "TitleAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "TitleAttribute",
+          "DocId": "M:TitleAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 190
+          },
+          "IsPublic": true,
+          "FullName": "TitleAttribute.Value",
+          "Name": "Value",
+          "Documentation": {},
+          "DocId": "P:TitleAttribute.Value"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "TitleAttribute",
+      "Name": "TitleAttribute",
+      "Documentation": {
+        "Summary": "Sets the title or a \"nice name\" of a type or a type member.\nThis info can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:TitleAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hint",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 210
+          },
+          "IsPublic": true,
+          "FullName": "TypeHintAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "TypeHintAttribute",
+          "DocId": "M:TypeHintAttribute.#ctor(System.Type)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 208
+          },
+          "IsPublic": true,
+          "FullName": "TypeHintAttribute.HintedType",
+          "Name": "HintedType",
+          "Documentation": {
+            "Summary": "The type we're hinting towards"
+          },
+          "DocId": "P:TypeHintAttribute.HintedType"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "TypeHintAttribute",
+      "Name": "TypeHintAttribute",
+      "Documentation": {
+        "Summary": "Hint that this type is expected to be this. This is used internally for\nthe editor UX to hint that a type of a value should be a specific type."
+      },
+      "DocId": "T:TypeHintAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 227
+          },
+          "IsPublic": true,
+          "FullName": "DescriptionAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "DescriptionAttribute",
+          "DocId": "M:DescriptionAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 224
+          },
+          "IsPublic": true,
+          "FullName": "DescriptionAttribute.Value",
+          "Name": "Value",
+          "Documentation": {},
+          "DocId": "P:DescriptionAttribute.Value"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "DescriptionAttribute",
+      "Name": "DescriptionAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Sets the description of a type or a type member. This attribute is usually applied automatically by codegen based on the XML comment of the type or member.\nThis info can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:DescriptionAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 243
+          },
+          "IsPublic": true,
+          "FullName": "CategoryAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "CategoryAttribute",
+          "DocId": "M:CategoryAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 240
+          },
+          "IsPublic": true,
+          "FullName": "CategoryAttribute.Value",
+          "Name": "Value",
+          "Documentation": {},
+          "DocId": "P:CategoryAttribute.Value"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "CategoryAttribute",
+      "Name": "CategoryAttribute",
+      "Documentation": {
+        "Summary": "Sets the category or the group of a type or a type member.\nThis info can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:CategoryAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 267
+          },
+          "IsPublic": true,
+          "FullName": "GroupAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "GroupAttribute",
+          "DocId": "M:GroupAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 256
+          },
+          "IsPublic": true,
+          "FullName": "GroupAttribute.Value",
+          "Name": "Value",
+          "Documentation": {},
+          "DocId": "P:GroupAttribute.Value"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 258
+          },
+          "IsPublic": true,
+          "FullName": "GroupAttribute.Icon",
+          "Name": "Icon",
+          "DocId": "P:GroupAttribute.Icon"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 263
+          },
+          "IsPublic": true,
+          "FullName": "GroupAttribute.StartFolded",
+          "Name": "StartFolded",
+          "Documentation": {
+            "Summary": "If true then the group should start closed"
+          },
+          "DocId": "P:GroupAttribute.StartFolded"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "GroupAttribute",
+      "Name": "GroupAttribute",
+      "Documentation": {
+        "Summary": "Sets the category or the group of a type or a type member.\nThis info can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:GroupAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "GroupAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 280
+          },
+          "IsPublic": true,
+          "FullName": "ToggleGroupAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "ToggleGroupAttribute",
+          "DocId": "M:ToggleGroupAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 278
+          },
+          "IsPublic": true,
+          "FullName": "ToggleGroupAttribute.Label",
+          "Name": "Label",
+          "DocId": "P:ToggleGroupAttribute.Label"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "ToggleGroupAttribute",
+      "Name": "ToggleGroupAttribute",
+      "Documentation": {
+        "Summary": "Very much like a GroupAttribute, except we're indicating that the group can be toggle on and off using the named property"
+      },
+      "DocId": "T:ToggleGroupAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "bgColor",
+              "Type": "System.String"
+            },
+            {
+              "Name": "fgColor",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 305
+          },
+          "IsPublic": true,
+          "FullName": "IconAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "IconAttribute",
+          "DocId": "M:IconAttribute.#ctor(System.String,System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "icon",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 312
+          },
+          "IsPublic": true,
+          "FullName": "IconAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "IconAttribute",
+          "DocId": "M:IconAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 292
+          },
+          "IsPublic": true,
+          "FullName": "IconAttribute.Value",
+          "Name": "Value",
+          "Documentation": {},
+          "DocId": "P:IconAttribute.Value"
+        },
+        {
+          "PropertyType": "System.Nullable`1<Color>",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 298
+          },
+          "IsPublic": true,
+          "FullName": "IconAttribute.BackgroundColor",
+          "Name": "BackgroundColor",
+          "Documentation": {
+            "Summary": "The preferred background color for the icon."
+          },
+          "DocId": "P:IconAttribute.BackgroundColor"
+        },
+        {
+          "PropertyType": "System.Nullable`1<Color>",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 303
+          },
+          "IsPublic": true,
+          "FullName": "IconAttribute.ForegroundColor",
+          "Name": "ForegroundColor",
+          "Documentation": {
+            "Summary": "The preferred color of the icon itself."
+          },
+          "DocId": "P:IconAttribute.ForegroundColor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "IconAttribute",
+      "Name": "IconAttribute",
+      "Documentation": {
+        "Summary": "Sets the icon of a type or a type member. Colors are expected in HTML formats, like \"rgb(255,255,255)\" or \"#FFFFFF\".\nThis info can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:IconAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 329
+          },
+          "IsPublic": true,
+          "FullName": "OrderAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "OrderAttribute",
+          "DocId": "M:OrderAttribute.#ctor(System.Int32)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Attributes/EditorAtributes.cs",
+            "Line": 327
+          },
+          "IsPublic": true,
+          "FullName": "OrderAttribute.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The visual order."
+          },
+          "DocId": "P:OrderAttribute.Value"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "OrderAttribute",
+      "Name": "OrderAttribute",
+      "Documentation": {
+        "Summary": "Visual order of this member for UI purposes.\nThis info can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:OrderAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "start",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "end",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "canModify",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Attributes/Range.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "TimeRangeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "TimeRangeAttribute",
+          "DocId": "M:TimeRangeAttribute.#ctor(System.Single,System.Single,System.Boolean)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Attributes/Range.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "TimeRangeAttribute.Min",
+          "Name": "Min",
+          "DocId": "P:TimeRangeAttribute.Min"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Attributes/Range.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "TimeRangeAttribute.Max",
+          "Name": "Max",
+          "DocId": "P:TimeRangeAttribute.Max"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/Range.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "TimeRangeAttribute.CanModify",
+          "Name": "CanModify",
+          "DocId": "P:TimeRangeAttribute.CanModify"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "TimeRangeAttribute",
+      "Name": "TimeRangeAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "For use with Curves, allows you to define a custom range for the time"
+      },
+      "DocId": "T:TimeRangeAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "start",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "end",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "canModify",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Attributes/Range.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "FullName": "ValueRangeAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "ValueRangeAttribute",
+          "DocId": "M:ValueRangeAttribute.#ctor(System.Single,System.Single,System.Boolean)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Attributes/Range.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "ValueRangeAttribute.Min",
+          "Name": "Min",
+          "DocId": "P:ValueRangeAttribute.Min"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Attributes/Range.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "FullName": "ValueRangeAttribute.Max",
+          "Name": "Max",
+          "DocId": "P:ValueRangeAttribute.Max"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/Range.cs",
+            "Line": 99
+          },
+          "IsPublic": true,
+          "FullName": "ValueRangeAttribute.CanModify",
+          "Name": "CanModify",
+          "DocId": "P:ValueRangeAttribute.CanModify"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "ValueRangeAttribute",
+      "Name": "ValueRangeAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "For use with Curves, allows you to define a custom range for the value"
+      },
+      "DocId": "T:ValueRangeAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<System.String>",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "TagAttribute.EnumerateValues",
+          "Name": "EnumerateValues",
+          "DeclaringType": "TagAttribute",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "TagAttribute/<EnumerateValues>d__5"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns all the tags as an enumerable.",
+            "Return": ""
+          },
+          "DocId": "M:TagAttribute.EnumerateValues"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "TagAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "TagAttribute",
+          "DocId": "M:TagAttribute.#ctor(System.String[])"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String[]",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "TagAttribute.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The tags to add for this type or member."
+          },
+          "DocId": "P:TagAttribute.Value"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "TagAttribute",
+      "Name": "TagAttribute",
+      "Documentation": {
+        "Summary": "Adds a single or multiple tags for this type or member. Tags can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:TagAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String[]"
+            }
+          ],
+          "l": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "AliasAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "AliasAttribute",
+          "DocId": "M:AliasAttribute.#ctor(System.String[])"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String[]",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "AliasAttribute.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The aliases for this class."
+          },
+          "DocId": "P:AliasAttribute.Value"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "AliasAttribute",
+      "Name": "AliasAttribute",
+      "Documentation": {
+        "Summary": "Alternate class name(s) for this type to the one specified via LibraryAttribute. This info can then be retrieved via DisplayInfo library."
+      },
+      "DocId": "T:AliasAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "editorName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "EditorAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "EditorAttribute",
+          "DocId": "M:EditorAttribute.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 54
+          },
+          "IsPublic": true,
+          "FullName": "EditorAttribute.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The editor to use."
+          },
+          "DocId": "P:EditorAttribute.Value"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "EditorAttribute",
+      "Name": "EditorAttribute",
+      "Documentation": {
+        "Summary": "Tell the tools or gameui property editor which editor we should be using for this property or type."
+      },
+      "DocId": "T:EditorAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "TagAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "SpawnableAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "SpawnableAttribute",
+          "DocId": "M:SpawnableAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "SpawnableAttribute",
+      "Name": "SpawnableAttribute",
+      "Documentation": {
+        "Summary": "This entity is expected to be spawnable in-game, like from Sandbox's spawnmenu."
+      },
+      "DocId": "T:SpawnableAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "TagAttribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "HideInEditorAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "HideInEditorAttribute",
+          "DocId": "M:HideInEditorAttribute.#ctor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "HideInEditorAttribute",
+      "Name": "HideInEditorAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute",
+          "ConstructorArguments": [
+            "Moved to [Hide]"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Hide this in tools/editors."
+      },
+      "DocId": "T:HideInEditorAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "max",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 99
+          },
+          "IsPublic": true,
+          "FullName": "MinMaxAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "MinMaxAttribute",
+          "DocId": "M:MinMaxAttribute.#ctor(System.Single,System.Single)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "MinMaxAttribute.MinValue",
+          "Name": "MinValue",
+          "Documentation": {
+            "Summary": "The minimum value for this property."
+          },
+          "DocId": "P:MinMaxAttribute.MinValue"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 97
+          },
+          "IsPublic": true,
+          "FullName": "MinMaxAttribute.MaxValue",
+          "Name": "MaxValue",
+          "Documentation": {
+            "Summary": "The maximum value for this property."
+          },
+          "DocId": "P:MinMaxAttribute.MaxValue"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "MinMaxAttribute",
+      "Name": "MinMaxAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Mark property as having a minimum and maximum value."
+      },
+      "DocId": "T:MinMaxAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "System.String"
+            },
+            {
+              "Name": "staticColor",
+              "Type": "System.String",
+              "Default": "white"
+            },
+            {
+              "Name": "dynamicColor",
+              "Type": "System.String",
+              "Default": "white"
+            }
+          ],
+          "l": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "EditorModelAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "EditorModelAttribute",
+          "DocId": "M:EditorModelAttribute.#ctor(System.String,System.String,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "FullName": "EditorModelAttribute.Model",
+          "Name": "Model",
+          "Documentation": {
+            "Summary": "The model to display in the editor."
+          },
+          "DocId": "P:EditorModelAttribute.Model"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 120
+          },
+          "IsPublic": true,
+          "FullName": "EditorModelAttribute.CastShadows",
+          "Name": "CastShadows",
+          "Documentation": {
+            "Summary": "Whether the model should cast shadows in the editor."
+          },
+          "DocId": "P:EditorModelAttribute.CastShadows"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "EditorModelAttribute.FixedBounds",
+          "Name": "FixedBounds",
+          "Documentation": {
+            "Summary": "Don't reorient bounds. This is used for things that have fixed bounds in the game, like info_player_start."
+          },
+          "DocId": "P:EditorModelAttribute.FixedBounds"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 130
+          },
+          "IsPublic": true,
+          "FullName": "EditorModelAttribute.StaticColor",
+          "Name": "StaticColor",
+          "Documentation": {
+            "Summary": "Tint color for this editor model instance when the entity it represents is static."
+          },
+          "DocId": "P:EditorModelAttribute.StaticColor"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 135
+          },
+          "IsPublic": true,
+          "FullName": "EditorModelAttribute.DynamicColor",
+          "Name": "DynamicColor",
+          "Documentation": {
+            "Summary": "Tint color for this editor model instance when the entity it represents is dynamic."
+          },
+          "DocId": "P:EditorModelAttribute.DynamicColor"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "EditorModelAttribute",
+      "Name": "EditorModelAttribute",
+      "Attributes": [
+        {
+          "FullName": "System.AttributeUsageAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Declare a model to represent this entity in editor. This is a common attribute so it's leaked out of the Editor namespace."
+      },
+      "DocId": "T:EditorModelAttribute"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Attribute",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 161
+          },
+          "IsPublic": true,
+          "FullName": "DefaultValueAttribute..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "DefaultValueAttribute",
+          "DocId": "M:DefaultValueAttribute.#ctor(System.Object)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Object",
+          "Loc": {
+            "File": "Attributes/UtilityAttributes.cs",
+            "Line": 159
+          },
+          "IsPublic": true,
+          "FullName": "DefaultValueAttribute.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "The default value."
+          },
+          "DocId": "P:DefaultValueAttribute.Value"
+        }
+      ],
+      "IsAttribute": true,
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "DefaultValueAttribute",
+      "Name": "DefaultValueAttribute",
+      "Documentation": {
+        "Summary": "Sometimes with CodeGen we want reflection to be able to get the original initial value\nof a property (which is set with {get;set;} = initialvalue;). For this reason sometimes\nwe'll drop this attribute on that property.\nYou might want to use this manually for instances where codegen can't define the default\nvalue. This will usually happen for structs like vector and color.. if the default value isn't\ndefined as a number or string."
+      },
+      "DocId": "T:DefaultValueAttribute"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "assembly",
+              "Type": "System.Reflection.Assembly"
+            }
+          ],
+          "l": {
+            "File": "Extend/AssemblyExtensions.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "IsExtension": true,
+          "FullName": "SandboxSystemExtensions.IsPackage",
+          "Name": "IsPackage",
+          "DeclaringType": "SandboxSystemExtensions",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+            }
+          ],
+          "DocId": "M:SandboxSystemExtensions.IsPackage(System.Reflection.Assembly)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "IsStatic": true,
+      "IsExtension": true,
+      "FullName": "SandboxSystemExtensions",
+      "Name": "SandboxSystemExtensions",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.ExtensionAttribute"
+        }
+      ],
+      "DocId": "T:SandboxSystemExtensions"
+    }
+  ],
+  "_metadata": {
+    "chunk": 0,
+    "items_count": 21
+  }
+}

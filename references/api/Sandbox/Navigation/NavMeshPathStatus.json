@@ -1,0 +1,1146 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Navigation",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.Navigation.NavMeshPathStatus",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Navigation.NavMeshPathStatus.StartNotFound",
+          "Name": "StartNotFound",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Start location was not found on the navmesh."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Start location was not found on the navmesh."
+          },
+          "DocId": "F:Sandbox.Navigation.NavMeshPathStatus.StartNotFound"
+        },
+        {
+          "FieldType": "Sandbox.Navigation.NavMeshPathStatus",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Navigation.NavMeshPathStatus.TargetNotFound",
+          "Name": "TargetNotFound",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Target location was not found on the navmesh."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Target location was not found on the navmesh."
+          },
+          "DocId": "F:Sandbox.Navigation.NavMeshPathStatus.TargetNotFound"
+        },
+        {
+          "FieldType": "Sandbox.Navigation.NavMeshPathStatus",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Navigation.NavMeshPathStatus.PathNotFound",
+          "Name": "PathNotFound",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "No path could be found."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "No path could be found."
+          },
+          "DocId": "F:Sandbox.Navigation.NavMeshPathStatus.PathNotFound"
+        },
+        {
+          "FieldType": "Sandbox.Navigation.NavMeshPathStatus",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Navigation.NavMeshPathStatus.Partial",
+          "Name": "Partial",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Path found, but does not reach the target. The returned path will be to the closest location that can be reached."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Path found, but does not reach the target.\nThe returned path will be to the closest location that can be reached."
+          },
+          "DocId": "F:Sandbox.Navigation.NavMeshPathStatus.Partial"
+        },
+        {
+          "FieldType": "Sandbox.Navigation.NavMeshPathStatus",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Navigation.NavMeshPathStatus.Complete",
+          "Name": "Complete",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Path found from start to target."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Path found from start to target."
+          },
+          "DocId": "F:Sandbox.Navigation.NavMeshPathStatus.Complete"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Navigation.NavMeshPathStatus",
+      "Name": "NavMeshPathStatus",
+      "DocId": "T:Sandbox.Navigation.NavMeshPathStatus"
+    },
+    {
+      "Namespace": "Sandbox.Navigation",
+      "Fields": [
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Sandbox.Navigation.NavMeshPathPoint.Position",
+          "Name": "Position",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Navigation\\NavMesh\\NavMesh.Path.cs",
+                "206"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.Navigation.NavMeshPathPoint.Position"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Navigation.NavMeshPathPoint",
+      "Name": "NavMeshPathPoint",
+      "Documentation": {
+        "Summary": "Represents a point in a navmesh path, including its position in 3D space.\nMay be extended in the future to hold more information about the point."
+      },
+      "DocId": "T:Sandbox.Navigation.NavMeshPathPoint"
+    },
+    {
+      "Namespace": "Sandbox.Mounting",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Mounting.MountInfo[]",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Mount/Directory.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mounting.Directory.GetAll",
+          "Name": "GetAll",
+          "DeclaringType": "Sandbox.Mounting.Directory",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get information about all the current mounts"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\Directory.cs",
+                "53"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get information about all the current mounts"
+          },
+          "DocId": "M:Sandbox.Mounting.Directory.GetAll"
+        },
+        {
+          "ReturnType": "Sandbox.Mounting.BaseGameMount",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Game/Mount/Directory.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mounting.Directory.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.Mounting.Directory",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a specific mount by name"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\Directory.cs",
+                "61"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a specific mount by name"
+          },
+          "DocId": "M:Sandbox.Mounting.Directory.Get(System.String)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task`1<Sandbox.Mounting.BaseGameMount>",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mounting.Directory.Mount",
+          "Name": "Mount",
+          "DeclaringType": "Sandbox.Mounting.Directory",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.Mounting.Directory/<Mount>d__4"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Mount this game if we can. Returns null if it can't be mounted, or the mount object if it can. If we're already mounted, will just return the mount straight away."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\Directory.cs",
+                "70"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Mount this game if we can. Returns null if it can't be mounted, or the mount object if it can.\nIf we're already mounted, will just return the mount straight away."
+          },
+          "DocId": "M:Sandbox.Mounting.Directory.Mount(System.String)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Mounting.Directory",
+      "Name": "Directory",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Mount\\Directory.cs",
+            "6"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Mounting.Directory"
+    },
+    {
+      "Namespace": "Sandbox.Mounting",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Sandbox.Mounting.BaseGameMount"
+            }
+          ],
+          "l": {
+            "File": "Game/Mount/MountInfo.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mounting.MountInfo..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Mounting.MountInfo",
+          "DocId": "M:Sandbox.Mounting.MountInfo.#ctor(Sandbox.Mounting.BaseGameMount)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Game/Mount/MountInfo.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mounting.MountInfo.Ident",
+          "Name": "Ident",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A short, lowercase string that will be used to uniquely identify this asset source"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\MountInfo.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A short, lowercase string that will be used to uniquely identify this asset source"
+          },
+          "DocId": "P:Sandbox.Mounting.MountInfo.Ident"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Game/Mount/MountInfo.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mounting.MountInfo.Title",
+          "Name": "Title",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The display name of this"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\MountInfo.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The display name of this"
+          },
+          "DocId": "P:Sandbox.Mounting.MountInfo.Title"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Mount/MountInfo.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mounting.MountInfo.Available",
+          "Name": "Available",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is this source available, is this game installed? Can we mount it?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\MountInfo.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is this source available, is this game installed? Can we mount it?"
+          },
+          "DocId": "P:Sandbox.Mounting.MountInfo.Available"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Mount/MountInfo.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mounting.MountInfo.Mounted",
+          "Name": "Mounted",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is this active and mounted?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\MountInfo.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is this active and mounted?"
+          },
+          "DocId": "P:Sandbox.Mounting.MountInfo.Mounted"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Mounting.MountInfo",
+      "Name": "MountInfo",
+      "Documentation": {
+        "Summary": "Information about a single mount"
+      },
+      "DocId": "T:Sandbox.Mounting.MountInfo"
+    },
+    {
+      "Namespace": "Sandbox.Mounting",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Mounting.ResourceLoader",
+          "Parameters": [
+            {
+              "Name": "loaderPath",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Game/Mount/MountUtility.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mounting.MountUtility.FindLoader",
+          "Name": "FindLoader",
+          "DeclaringType": "Sandbox.Mounting.MountUtility",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find a ResourceLoader by its mount path."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\MountUtility.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find a ResourceLoader by its mount path."
+          },
+          "DocId": "M:Sandbox.Mounting.MountUtility.FindLoader(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Texture",
+          "Parameters": [
+            {
+              "Name": "loaderPath",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Game/Mount/MountUtility.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mounting.MountUtility.GetPreviewTexture",
+          "Name": "GetPreviewTexture",
+          "DeclaringType": "Sandbox.Mounting.MountUtility",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a preview texture for the given resource loader."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\MountUtility.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a preview texture for the given resource loader."
+          },
+          "DocId": "M:Sandbox.Mounting.MountUtility.GetPreviewTexture(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Texture",
+          "Parameters": [
+            {
+              "Name": "loader",
+              "Type": "Sandbox.Mounting.ResourceLoader"
+            }
+          ],
+          "l": {
+            "File": "Game/Mount/MountUtility.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mounting.MountUtility.GetPreviewTexture",
+          "Name": "GetPreviewTexture",
+          "DeclaringType": "Sandbox.Mounting.MountUtility",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a preview texture for the given resource loader."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\MountUtility.cs",
+                "39"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a preview texture for the given resource loader."
+          },
+          "DocId": "M:Sandbox.Mounting.MountUtility.GetPreviewTexture(Sandbox.Mounting.ResourceLoader)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Mounting.MountUtility",
+      "Name": "MountUtility",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Mount\\MountUtility.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Mounting.MountUtility"
+    },
+    {
+      "Namespace": "Sandbox.Mounting",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Mounting.PrefabBuilder",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Game/Mount/PrefabBuilder.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mounting.PrefabBuilder.WithName",
+          "Name": "WithName",
+          "DeclaringType": "Sandbox.Mounting.PrefabBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the name/resource path of the resulting prefab. The root <span style=\"color: #4EC9B0;\">GameObject</span> name is derived from the filename portion if left unchanged."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\PrefabBuilder.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the name/resource path of the resulting prefab.\nThe root <see cref=\"T:Sandbox.GameObject\" /> name is derived from the filename portion if left unchanged."
+          },
+          "DocId": "M:Sandbox.Mounting.PrefabBuilder.WithName(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Mounting.PrefabBuildScope",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Mount/PrefabBuilder.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mounting.PrefabBuilder.Scope",
+          "Name": "Scope",
+          "DeclaringType": "Sandbox.Mounting.PrefabBuilder",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enter a temporary scene scope. GameObjects created inside will become part of this prefab."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\PrefabBuilder.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enter a temporary scene scope. GameObjects created inside will become part of this prefab."
+          },
+          "DocId": "M:Sandbox.Mounting.PrefabBuilder.Scope"
+        },
+        {
+          "ReturnType": "Sandbox.PrefabFile",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Mount/PrefabBuilder.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mounting.PrefabBuilder.Create",
+          "Name": "Create",
+          "DeclaringType": "Sandbox.Mounting.PrefabBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\PrefabBuilder.cs",
+                "37"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Serialize the scene content into a registered <see cref=\"T:Sandbox.PrefabFile\" />.\nCall after you've created any objects and the <see cref=\"M:Sandbox.Mounting.PrefabBuilder.Scope\" /> has been disposed."
+          },
+          "DocId": "M:Sandbox.Mounting.PrefabBuilder.Create"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "prefab",
+              "Type": "Sandbox.PrefabFile"
+            }
+          ],
+          "l": {
+            "File": "Game/Mount/PrefabBuilder.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mounting.PrefabBuilder.Destroy",
+          "Name": "Destroy",
+          "DeclaringType": "Sandbox.Mounting.PrefabBuilder",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\PrefabBuilder.cs",
+                "90"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Unregister and destroy a <see cref=\"T:Sandbox.PrefabFile\" /> created by <see cref=\"M:Sandbox.Mounting.PrefabBuilder.Create\" />.\nCall from <see cref=\"M:Sandbox.Mounting.ResourceLoader.Shutdown\" /> when a mount is disabled."
+          },
+          "DocId": "M:Sandbox.Mounting.PrefabBuilder.Destroy(Sandbox.PrefabFile)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Mounting.PrefabBuilder..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Mounting.PrefabBuilder",
+          "DocId": "M:Sandbox.Mounting.PrefabBuilder.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Mounting.PrefabBuilder",
+      "Name": "PrefabBuilder",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A scoped builder for creating prefabs within a Mount. Typically used inside a Mounting.ResourceLoader.Load implementation."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Mount\\PrefabBuilder.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A scoped builder for creating prefabs within a Mount.\nTypically used inside a <see cref=\"M:Sandbox.Mounting.ResourceLoader.Load\" /> implementation."
+      },
+      "DocId": "T:Sandbox.Mounting.PrefabBuilder"
+    },
+    {
+      "Namespace": "Sandbox.Mounting",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Game/Mount/PrefabBuilder.cs",
+            "Line": 109
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Mounting.PrefabBuildScope.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.Mounting.PrefabBuildScope",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\PrefabBuilder.cs",
+                "108"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mounting.PrefabBuildScope.Dispose"
+        }
+      ],
+      "Constructors": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Mounting.PrefabBuildScope",
+      "Name": "PrefabBuildScope",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Disposable scope that manages a temporary scene for <see cref=\"T:Sandbox.Mounting.PrefabBuilder\" />."
+      },
+      "DocId": "T:Sandbox.Mounting.PrefabBuildScope"
+    },
+    {
+      "Namespace": "Sandbox.Mounting",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.Texture",
+          "Parameters": [
+            {
+              "Name": "bytes",
+              "Type": "System.ReadOnlySpan`1<System.Byte>"
+            }
+          ],
+          "l": {
+            "File": "Game/Mount/TextureLoader.DDS.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Mounting.TextureLoader.FromDds",
+          "Name": "FromDds",
+          "DeclaringType": "Sandbox.Mounting.TextureLoader",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Creates a <span style=\"color: #4EC9B0;\">Texture</span> from a DDS byte buffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Mount\\TextureLoader.DDS.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Mounting.TextureLoader.FromDds(System.ReadOnlySpan`1{System.Byte})"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.Mounting.TextureLoader",
+      "Name": "TextureLoader",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Mount\\TextureLoader.DDS.cs",
+            "6"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Mounting.TextureLoader"
+    },
+    {
+      "Namespace": "Sandbox.DataModel",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Title",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Group",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Default",
+              "Out": true,
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.DataModel.GameSetting",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.DataModel.GameSetting.Deconstruct(System.String@,System.String@,System.String@,System.String@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Group",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Default",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Game/GameSettings/GameSetting.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.DataModel.GameSetting",
+          "Documentation": {
+            "Summary": "A <see cref=\"T:Sandbox.ConVarAttribute\" /> that has been marked with <see cref=\"F:Sandbox.ConVarFlags.GameSetting\" />\nThis is stored as project metadata so we can set up a game without loading it."
+          },
+          "DocId": "M:Sandbox.DataModel.GameSetting.#ctor(System.String,System.String,System.String,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "obj/.generated/Game/GameSettings/GameSetting.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Name",
+          "Name": "Name",
+          "DocId": "P:Sandbox.DataModel.GameSetting.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "obj/.generated/Game/GameSettings/GameSetting.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Title",
+          "Name": "Title",
+          "DocId": "P:Sandbox.DataModel.GameSetting.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "obj/.generated/Game/GameSettings/GameSetting.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Group",
+          "Name": "Group",
+          "DocId": "P:Sandbox.DataModel.GameSetting.Group"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "obj/.generated/Game/GameSettings/GameSetting.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Default",
+          "Name": "Default",
+          "DocId": "P:Sandbox.DataModel.GameSetting.Default"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.DataModel.GameSetting.Option>",
+          "Loc": {
+            "File": "Game/GameSettings/GameSetting.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Options",
+          "Name": "Options",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameSettings\\GameSetting.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DataModel.GameSetting.Options"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.Single>",
+          "Loc": {
+            "File": "Game/GameSettings/GameSetting.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Min",
+          "Name": "Min",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameSettings\\GameSetting.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DataModel.GameSetting.Min"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.Single>",
+          "Loc": {
+            "File": "Game/GameSettings/GameSetting.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Max",
+          "Name": "Max",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameSettings\\GameSetting.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DataModel.GameSetting.Max"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.Single>",
+          "Loc": {
+            "File": "Game/GameSettings/GameSetting.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Step",
+          "Name": "Step",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameSettings\\GameSetting.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.DataModel.GameSetting.Step"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.DataModel.GameSetting",
+      "Name": "GameSetting",
+      "Documentation": {
+        "Summary": "A <see cref=\"T:Sandbox.ConVarAttribute\" /> that has been marked with <see cref=\"F:Sandbox.ConVarFlags.GameSetting\" />\nThis is stored as project metadata so we can set up a game without loading it."
+      },
+      "DocId": "T:Sandbox.DataModel.GameSetting"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Out": true,
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Option.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.DataModel.GameSetting.Option",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.DataModel.GameSetting.Option.Deconstruct(System.String@,System.String@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Option..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.DataModel.GameSetting.Option",
+          "DocId": "M:Sandbox.DataModel.GameSetting.Option.#ctor(System.String,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "obj/.generated/Game/GameSettings/GameSetting.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Option.Name",
+          "Name": "Name",
+          "DocId": "P:Sandbox.DataModel.GameSetting.Option.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "obj/.generated/Game/GameSettings/GameSetting.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.DataModel.GameSetting.Option.Icon",
+          "Name": "Icon",
+          "DocId": "P:Sandbox.DataModel.GameSetting.Option.Icon"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.DataModel.GameSetting.Option",
+      "Name": "Option",
+      "DeclaringType": "Sandbox.DataModel.GameSetting",
+      "DocId": "T:Sandbox.DataModel.GameSetting.Option"
+    }
+  ],
+  "_metadata": {
+    "chunk": 225,
+    "items_count": 10
+  }
+}

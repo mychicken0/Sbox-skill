@@ -1,0 +1,3301 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.CreateBodyRenderer",
+          "Name": "CreateBodyRenderer",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ButtonAttribute",
+              "ConstructorArguments": [
+                "",
+                "add"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "Sandbox.TintAttribute",
+              "ConstructorArguments": [
+                "2"
+              ]
+            },
+            {
+              "FullName": "ShowIfAttribute",
+              "ConstructorArguments": [
+                "ShowCreateBodyRenderer",
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "36"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PlayerController.CreateBodyRenderer"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "renderer",
+              "Type": "Sandbox.SkinnedModelRenderer"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.UpdateAnimation",
+          "Name": "UpdateAnimation",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Update the animation for this renderer. This will update the body rotation etc too."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "89"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update the animation for this renderer. This will update the body rotation etc too."
+          },
+          "DocId": "M:Sandbox.PlayerController.UpdateAnimation(Sandbox.SkinnedModelRenderer)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "velocity",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 240
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.Jump",
+          "Name": "Jump",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Adds velocity in a special way. First we subtract any opposite velocity (ie, falling) then we add the velocity, but we clamp it to that direction. This means that if you jump when you're running up a platform, you don't get extra jump power."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "238"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Adds velocity in a special way. First we subtract any opposite velocity (ie, falling) then \nwe add the velocity, but we clamp it to that direction. This means that if you jump when you're running\nup a platform, you don't get extra jump power."
+          },
+          "DocId": "M:Sandbox.PlayerController.Jump(Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "worldPosition",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "volume",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "foot",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Footsteps.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.PlayFootstepSound",
+          "Name": "PlayFootstepSound",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Play a footstep sound at the given world position. Will only play if the player has a GroundSurface."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Footsteps.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Play a footstep sound at the given world position. Will only play if the player has a GroundSurface."
+          },
+          "DocId": "M:Sandbox.PlayerController.PlayFootstepSound(Vector3,System.Single,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "seconds",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Ground.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.PreventGrounding",
+          "Name": "PreventGrounding",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Prevent being grounded for a number of seconds"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Ground.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Prevent being grounded for a number of seconds"
+          },
+          "DocId": "M:Sandbox.PlayerController.PreventGrounding(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 108
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.OnJumped",
+          "Name": "OnJumped",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Rpc.BroadcastAttribute",
+              "ConstructorArguments": [
+                "33"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "105"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.PlayerController.OnJumped"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "wantsDuck",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.UpdateDucking",
+          "Name": "UpdateDucking",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called during FixedUpdate when UseInputControls is enabled. Will duck if requested. If not, and we're ducked, will unduck if there is room"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "126"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called during FixedUpdate when UseInputControls is enabled. Will duck if requested.\nIf not, and we're ducked, will unduck if there is room"
+          },
+          "DocId": "M:Sandbox.PlayerController.UpdateDucking(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Pressing.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.UpdateLookAt",
+          "Name": "UpdateLookAt",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called in Update when Using is enabled"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Pressing.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called in Update when Using is enabled"
+          },
+          "DocId": "M:Sandbox.PlayerController.UpdateLookAt"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Pressing.cs",
+            "Line": 123
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.StopPressing",
+          "Name": "StopPressing",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Stop pressing. Pressed will become null."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Pressing.cs",
+                "120"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Stop pressing. Pressed will become null."
+          },
+          "DocId": "M:Sandbox.PlayerController.StopPressing"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "Sandbox.Component"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Pressing.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.StartPressing",
+          "Name": "StartPressing",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Start pressing a target component. This is called automatically when Use is pressed."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Pressing.cs",
+                "138"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Start pressing a target component. This is called automatically when Use is pressed."
+          },
+          "DocId": "M:Sandbox.PlayerController.StartPressing(Sandbox.Component)"
+        },
+        {
+          "ReturnType": "BBox",
+          "Parameters": [
+            {
+              "Name": "scale",
+              "Type": "System.Single",
+              "Default": "1"
+            },
+            {
+              "Name": "heightScale",
+              "Type": "System.Single",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Trace.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.BodyBox",
+          "Name": "BodyBox",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return an aabb representing the body"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Trace.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return an aabb representing the body"
+          },
+          "DocId": "M:Sandbox.PlayerController.BodyBox(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.SceneTraceResult",
+          "Parameters": [
+            {
+              "Name": "from",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "scale",
+              "Type": "System.Single",
+              "Default": "1"
+            },
+            {
+              "Name": "heightScale",
+              "Type": "System.Single",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Trace.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.TraceBody",
+          "Name": "TraceBody",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Trace the aabb body from one position to another and return the result"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Trace.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Trace the aabb body from one position to another and return the result"
+          },
+          "DocId": "M:Sandbox.PlayerController.TraceBody(Vector3,Vector3,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Sandbox.GameObject",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String",
+              "Default": "Ragdoll"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Utility.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.CreateRagdoll",
+          "Name": "CreateRagdoll",
+          "DeclaringType": "Sandbox.PlayerController",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create a ragdoll gameobject version of our render body."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Utility.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create a ragdoll gameobject version of our render body."
+          },
+          "DocId": "M:Sandbox.PlayerController.CreateRagdoll(System.String)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.PlayerController",
+          "DocId": "M:Sandbox.PlayerController.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.UseAnimatorControls",
+          "Name": "UseAnimatorControls",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.UseAnimatorControls"
+        },
+        {
+          "PropertyType": "Sandbox.SkinnedModelRenderer",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.Renderer",
+          "Name": "Renderer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The body will usually be a child object with SkinnedModelRenderer"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "15"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The body will usually be a child object with SkinnedModelRenderer"
+          },
+          "DocId": "P:Sandbox.PlayerController.Renderer"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.ShowCreateBodyRenderer",
+          "Name": "ShowCreateBodyRenderer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true we'll show the \"create body\" button"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "34"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true we'll show the \"create body\" button"
+          },
+          "DocId": "P:Sandbox.PlayerController.ShowCreateBodyRenderer"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.RotationAngleLimit",
+          "Name": "RotationAngleLimit",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "47"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.RotationAngleLimit"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.RotationSpeed",
+          "Name": "RotationSpeed",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "48"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.RotationSpeed"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 51
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.EnableFootstepSounds",
+          "Name": "EnableFootstepSounds",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Footsteps"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "50"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.EnableFootstepSounds"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.FootstepVolume",
+          "Name": "FootstepVolume",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Footsteps"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "51"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.FootstepVolume"
+        },
+        {
+          "PropertyType": "Sandbox.Audio.MixerHandle",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.FootstepMixer",
+          "Name": "FootstepMixer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Footsteps"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "54"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.FootstepMixer"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.AimStrengthEyes",
+          "Name": "AimStrengthEyes",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Aim"
+              ]
+            },
+            {
+              "FullName": "OrderAttribute",
+              "ConstructorArguments": [
+                "1001"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How strongly to look in the eye direction with our eyes"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How strongly to look in the eye direction with our eyes"
+          },
+          "DocId": "P:Sandbox.PlayerController.AimStrengthEyes"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.AimStrengthHead",
+          "Name": "AimStrengthHead",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Aim"
+              ]
+            },
+            {
+              "FullName": "OrderAttribute",
+              "ConstructorArguments": [
+                "1002"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How strongly to turn in the eye direction with our head"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How strongly to turn in the eye direction with our head"
+          },
+          "DocId": "P:Sandbox.PlayerController.AimStrengthHead"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Animation.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.AimStrengthBody",
+          "Name": "AimStrengthBody",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Animator"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Aim"
+              ]
+            },
+            {
+              "FullName": "OrderAttribute",
+              "ConstructorArguments": [
+                "1003"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How strongly to turn in the eye direction with our body"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+                "70"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How strongly to turn in the eye direction with our body"
+          },
+          "DocId": "P:Sandbox.PlayerController.AimStrengthBody"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Camera.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.UseCameraControls",
+          "Name": "UseCameraControls",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "Camera"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Camera.cs",
+                "5"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.UseCameraControls"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Camera.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.EyeDistanceFromTop",
+          "Name": "EyeDistanceFromTop",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Camera"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Camera.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.EyeDistanceFromTop"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Camera.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.ThirdPerson",
+          "Name": "ThirdPerson",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Camera"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Camera.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.ThirdPerson"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Camera.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.HideBodyInFirstPerson",
+          "Name": "HideBodyInFirstPerson",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Camera"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Camera.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.HideBodyInFirstPerson"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Camera.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.UseFovFromPreferences",
+          "Name": "UseFovFromPreferences",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Camera"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Camera.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.UseFovFromPreferences"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Camera.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.CameraOffset",
+          "Name": "CameraOffset",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Camera"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Camera.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.CameraOffset"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Camera.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.ToggleCameraModeButton",
+          "Name": "ToggleCameraModeButton",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Camera"
+              ]
+            },
+            {
+              "FullName": "Sandbox.InputActionAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Camera.cs",
+                "13"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.ToggleCameraModeButton"
+        },
+        {
+          "PropertyType": "Sandbox.Rigidbody",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.Body",
+          "Name": "Body",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.RequireComponentAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.Body"
+        },
+        {
+          "PropertyType": "Sandbox.CapsuleCollider",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.BodyCollider",
+          "Name": "BodyCollider",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.BodyCollider"
+        },
+        {
+          "PropertyType": "Sandbox.BoxCollider",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.FeetCollider",
+          "Name": "FeetCollider",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.FeetCollider"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.ColliderObject",
+          "Name": "ColliderObject",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.ColliderObject"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.BodyRadius",
+          "Name": "BodyRadius",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Body"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "64"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.BodyRadius"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.BodyHeight",
+          "Name": "BodyHeight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Body"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "128"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "30"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.BodyHeight"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.BodyMass",
+          "Name": "BodyMass",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Body"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "1000"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "31"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.BodyMass"
+        },
+        {
+          "PropertyType": "Sandbox.TagSet",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.BodyCollisionTags",
+          "Name": "BodyCollisionTags",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Body"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "32"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.BodyCollisionTags"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.BrakePower",
+          "Name": "BrakePower",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Physics"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "We will apply extra friction when we're on the ground and our desired velocity is lower than our current velocity, so we will slow down."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "We will apply extra friction when we're on the ground and our desired velocity is\nlower than our current velocity, so we will slow down."
+          },
+          "DocId": "P:Sandbox.PlayerController.BrakePower"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.AirFriction",
+          "Name": "AirFriction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Physics"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How much friction to add when we're in the air. This will slow you down unless you have a wish velocity."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How much friction to add when we're in the air. This will slow you down unless you have a wish\nvelocity."
+          },
+          "DocId": "P:Sandbox.PlayerController.AirFriction"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.ShowRigidbodyComponent",
+          "Name": "ShowRigidbodyComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Components"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Show Rigidbody"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "47"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.ShowRigidbodyComponent"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.ShowColliderComponents",
+          "Name": "ShowColliderComponents",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Components"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Show Colliders"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "64"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.ShowColliderComponents"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 94
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.WishVelocity",
+          "Name": "WishVelocity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.SyncAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "89"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.WishVelocity"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IsOnGround",
+          "Name": "IsOnGround",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "92"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.IsOnGround"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IsAirborne",
+          "Name": "IsAirborne",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Not touching the ground, and not swimming or climbing"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "97"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Not touching the ground, and not swimming or climbing"
+          },
+          "DocId": "P:Sandbox.PlayerController.IsAirborne"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 103
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.Velocity",
+          "Name": "Velocity",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Our actual physical velocity minus our ground velocity"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "102"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Our actual physical velocity minus our ground velocity"
+          },
+          "DocId": "P:Sandbox.PlayerController.Velocity"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 108
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.GroundVelocity",
+          "Name": "GroundVelocity",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The velocity that the ground underneath us is moving"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "107"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The velocity that the ground underneath us is moving"
+          },
+          "DocId": "P:Sandbox.PlayerController.GroundVelocity"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IsClimbing",
+          "Name": "IsClimbing",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set to true when entering a climbing <span style=\"color: #4EC9B0;\">MoveMode</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "112"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set to true when entering a climbing <see cref=\"T:Sandbox.Movement.MoveMode\" />."
+          },
+          "DocId": "P:Sandbox.PlayerController.IsClimbing"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IsSwimming",
+          "Name": "IsSwimming",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set to true when entering a swimming <span style=\"color: #4EC9B0;\">MoveMode</span>."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+                "117"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set to true when entering a swimming <see cref=\"T:Sandbox.Movement.MoveMode\" />."
+          },
+          "DocId": "P:Sandbox.PlayerController.IsSwimming"
+        },
+        {
+          "PropertyType": "Angles",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.DefaultControls.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.EyeAngles",
+          "Name": "EyeAngles",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.SyncAttribute",
+              "ConstructorArguments": [
+                "4"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The direction we're looking in input space."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.DefaultControls.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The direction we're looking in input space."
+          },
+          "DocId": "P:Sandbox.PlayerController.EyeAngles"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.DefaultControls.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.EyePosition",
+          "Name": "EyePosition",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The player's eye position, in first person mode"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.DefaultControls.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The player's eye position, in first person mode"
+          },
+          "DocId": "P:Sandbox.PlayerController.EyePosition"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.DefaultControls.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.EyeTransform",
+          "Name": "EyeTransform",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The player's eye transform, in first person mode"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.DefaultControls.cs",
+                "19"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The player's eye transform, in first person mode"
+          },
+          "DocId": "P:Sandbox.PlayerController.EyeTransform"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.DefaultControls.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.IsDucking",
+          "Name": "IsDucking",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.SyncAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "True if this player is ducking"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.DefaultControls.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "True if this player is ducking"
+          },
+          "DocId": "P:Sandbox.PlayerController.IsDucking"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.DefaultControls.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.Headroom",
+          "Name": "Headroom",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The distance from the top of the head to the closest ceiling."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.DefaultControls.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The distance from the top of the head to the closest ceiling."
+          },
+          "DocId": "P:Sandbox.PlayerController.Headroom"
+        },
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Ground.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.GroundObject",
+          "Name": "GroundObject",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The object we're standing on. Null if we're standing on nothing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Ground.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The object we're standing on. Null if we're standing on nothing."
+          },
+          "DocId": "P:Sandbox.PlayerController.GroundObject"
+        },
+        {
+          "PropertyType": "Sandbox.Component",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Ground.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.GroundComponent",
+          "Name": "GroundComponent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The collider component we're standing on. Null if we're standing nothing"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Ground.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The collider component we're standing on. Null if we're standing nothing"
+          },
+          "DocId": "P:Sandbox.PlayerController.GroundComponent"
+        },
+        {
+          "PropertyType": "Sandbox.Surface",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Ground.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.GroundSurface",
+          "Name": "GroundSurface",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If we're stnding on a surface this is it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Ground.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If we're stnding on a surface this is it"
+          },
+          "DocId": "P:Sandbox.PlayerController.GroundSurface"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Ground.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.GroundFriction",
+          "Name": "GroundFriction",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The friction property of the ground we're standing on."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Ground.cs",
+                "23"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The friction property of the ground we're standing on."
+          },
+          "DocId": "P:Sandbox.PlayerController.GroundFriction"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Ground.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.GroundIsDynamic",
+          "Name": "GroundIsDynamic",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Are we standing on a surface that is physically dynamic"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Ground.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Are we standing on a surface that is physically dynamic"
+          },
+          "DocId": "P:Sandbox.PlayerController.GroundIsDynamic"
+        },
+        {
+          "PropertyType": "Sandbox.TimeSince",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Ground.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.TimeSinceGrounded",
+          "Name": "TimeSinceGrounded",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Amount of time since this character was last on the ground"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Ground.cs",
+                "35"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Amount of time since this character was last on the ground"
+          },
+          "DocId": "P:Sandbox.PlayerController.TimeSinceGrounded"
+        },
+        {
+          "PropertyType": "Sandbox.TimeSince",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Ground.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.TimeSinceUngrounded",
+          "Name": "TimeSinceUngrounded",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Amount of time since this character was last not on the ground"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Ground.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Amount of time since this character was last not on the ground"
+          },
+          "DocId": "P:Sandbox.PlayerController.TimeSinceUngrounded"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.UseInputControls",
+          "Name": "UseInputControls",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureEnabledAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "5"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.UseInputControls"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.WalkSpeed",
+          "Name": "WalkSpeed",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.WalkSpeed"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.RunSpeed",
+          "Name": "RunSpeed",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.RunSpeed"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.DuckedSpeed",
+          "Name": "DuckedSpeed",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.DuckedSpeed"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.JumpSpeed",
+          "Name": "JumpSpeed",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "11"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.JumpSpeed"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.DuckedHeight",
+          "Name": "DuckedHeight",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.DuckedHeight"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.AccelerationTime",
+          "Name": "AccelerationTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Amount of seconds it takes to get from your current speed to your requuested speed, if higher"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "17"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Amount of seconds it takes to get from your current speed to your requuested speed, if higher"
+          },
+          "DocId": "P:Sandbox.PlayerController.AccelerationTime"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.DeaccelerationTime",
+          "Name": "DeaccelerationTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Amount of seconds it takes to get from your current speed to your requuested speed, if lower"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "22"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Amount of seconds it takes to get from your current speed to your requuested speed, if lower"
+          },
+          "DocId": "P:Sandbox.PlayerController.DeaccelerationTime"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.AltMoveButton",
+          "Name": "AltMoveButton",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "Sandbox.InputActionAttribute"
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Running"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The button that the player will press to use to run"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The button that the player will press to use to run"
+          },
+          "DocId": "P:Sandbox.PlayerController.AltMoveButton"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.RunByDefault",
+          "Name": "RunByDefault",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Running"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true then the player will run by default, and holding AltMoveButton will switch to walk"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true then the player will run by default, and holding AltMoveButton will switch to walk"
+          },
+          "DocId": "P:Sandbox.PlayerController.RunByDefault"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.EnablePressing",
+          "Name": "EnablePressing",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "ToggleGroupAttribute",
+              "ConstructorArguments": [
+                "EnablePressing"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows to player to interact with things by \"use\"ing them. Usually by pressing the \"use\" button."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows to player to interact with things by \"use\"ing them. \nUsually by pressing the \"use\" button."
+          },
+          "DocId": "P:Sandbox.PlayerController.EnablePressing"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.UseButton",
+          "Name": "UseButton",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "EnablePressing"
+              ]
+            },
+            {
+              "FullName": "Sandbox.InputActionAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The button that the player will press to use things"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "43"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The button that the player will press to use things"
+          },
+          "DocId": "P:Sandbox.PlayerController.UseButton"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.ReachLength",
+          "Name": "ReachLength",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "EnablePressing"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How far from the eye can the player reach to use things"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "48"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How far from the eye can the player reach to use things"
+          },
+          "DocId": "P:Sandbox.PlayerController.ReachLength"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.UseLookControls",
+          "Name": "UseLookControls",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Eye Angles"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "When true we'll move the camera around using the mouse"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "When true we'll move the camera around using the mouse"
+          },
+          "DocId": "P:Sandbox.PlayerController.UseLookControls"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.RotateWithGround",
+          "Name": "RotateWithGround",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Eye Angles"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "55"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.RotateWithGround"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.PitchClamp",
+          "Name": "PitchClamp",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Eye Angles"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "180"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "56"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.PitchClamp"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.LookSensitivity",
+          "Name": "LookSensitivity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.FeatureAttribute",
+              "ConstructorArguments": [
+                "Input"
+              ]
+            },
+            {
+              "FullName": "CategoryAttribute",
+              "ConstructorArguments": [
+                "Eye Angles"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows modifying the eye angle sensitivity. Note that player preference sensitivity is already automatically applied, this is just extra."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "61"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows modifying the eye angle sensitivity. Note that player preference sensitivity is already automatically applied, this is just extra."
+          },
+          "DocId": "P:Sandbox.PlayerController.LookSensitivity"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Input.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.CurrentHeight",
+          "Name": "CurrentHeight",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the current character height from <span style=\"color: #4EC9B0;\">PlayerController</span>.<span style=\"color: #DCDCDC;\">BodyHeight</span> when standing, otherwise uses <span style=\"color: #4EC9B0;\">PlayerController</span>.<span style=\"color: #DCDCDC;\">DuckedHeight</span> when ducking."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+                "120"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the current character height from <see cref=\"P:Sandbox.PlayerController.BodyHeight\" /> when standing,\notherwise uses <see cref=\"P:Sandbox.PlayerController.DuckedHeight\" /> when ducking."
+          },
+          "DocId": "P:Sandbox.PlayerController.CurrentHeight"
+        },
+        {
+          "PropertyType": "Sandbox.Movement.MoveMode",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Mode.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.Mode",
+          "Name": "Mode",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Mode.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.PlayerController.Mode"
+        },
+        {
+          "PropertyType": "Sandbox.Component",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Pressing.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.Hovered",
+          "Name": "Hovered",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The object we're currently looking at"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Pressing.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The object we're currently looking at"
+          },
+          "DocId": "P:Sandbox.PlayerController.Hovered"
+        },
+        {
+          "PropertyType": "Sandbox.Component",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Pressing.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.Pressed",
+          "Name": "Pressed",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The object we're currently using by holding down USE"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Pressing.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The object we're currently using by holding down USE"
+          },
+          "DocId": "P:Sandbox.PlayerController.Pressed"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Component.IPressable.Tooltip>",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Pressing.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.Tooltips",
+          "Name": "Tooltips",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The tooltip of the currently hovered Pressable object"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Pressing.cs",
+                "18"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The tooltip of the currently hovered Pressable object"
+          },
+          "DocId": "P:Sandbox.PlayerController.Tooltips"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Game/PlayerController/PlayerController.Step.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.StepDebug",
+          "Name": "StepDebug",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enable debug overlays for this character"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Step.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enable debug overlays for this character"
+          },
+          "DocId": "P:Sandbox.PlayerController.StepDebug"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.PlayerController.DebugFootsteps",
+          "Name": "DebugFootsteps",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\PlayerController\\PlayerController.Footsteps.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draw debug overlay on footsteps"
+          },
+          "DocId": "F:Sandbox.PlayerController.DebugFootsteps"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.PlayerController",
+      "Name": "PlayerController",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Animation.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Camera.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "directions_walk"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute"
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Player Controller"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Physics"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "Sandbox.HelpUrlAttribute",
+          "ConstructorArguments": [
+            "https://sbox.game/dev/doc/scene/components/reference/player-controller/"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.cs",
+            "4"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.DefaultControls.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Elements.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Events.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Footsteps.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Ground.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Input.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Mode.cs",
+            "5"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Pressing.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Step.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Trace.cs",
+            "3"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\PlayerController\\PlayerController.Utility.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.PlayerController"
+    }
+  ],
+  "_metadata": {
+    "chunk": 85,
+    "items_count": 1
+  }
+}

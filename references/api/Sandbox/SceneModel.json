@@ -1,0 +1,1699 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.SceneObject",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "boneIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "transform",
+              "In": true,
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Bones.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.SetBoneOverride",
+          "Name": "SetBoneOverride",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Manually override the final bone transform."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Bones.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Manually override the final bone transform.",
+            "Params": {
+              "boneIndex": "",
+              "transform": "Local coordinates based on the SceneModel's transform"
+            }
+          },
+          "DocId": "M:Sandbox.SceneModel.SetBoneOverride(System.Int32,Transform@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Bones.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.ClearBoneOverrides",
+          "Name": "ClearBoneOverrides",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears all bone transform overrides."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Bones.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears all bone transform overrides."
+          },
+          "DocId": "M:Sandbox.SceneModel.ClearBoneOverrides"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Bones.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.HasBoneOverrides",
+          "Name": "HasBoneOverrides",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether any bone transforms have been overridden."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Bones.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether any bone transforms have been overridden."
+          },
+          "DocId": "M:Sandbox.SceneModel.HasBoneOverrides"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "boneIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "linear",
+              "Out": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "angular",
+              "Out": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Bones.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetBoneVelocity",
+          "Name": "GetBoneVelocity",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Calculates the velocity from the previous and current bone transforms."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Bones.cs",
+                "40"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Calculates the velocity from the previous and current bone transforms."
+          },
+          "DocId": "M:Sandbox.SceneModel.GetBoneVelocity(System.Int32,Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.SetAnimGraph",
+          "Name": "SetAnimGraph",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Can use AnimationGraph directly"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Override the anim graph this scene model uses"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "77"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Override the anim graph this scene model uses"
+          },
+          "DocId": "M:Sandbox.SceneModel.SetAnimGraph(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "boneIndex",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.SetBoneWorldTransform",
+          "Name": "SetBoneWorldTransform",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the world space bone transform of a bone by its index."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "110"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the world space bone transform of a bone by its index.",
+            "Params": {
+              "boneIndex": "Bone index to set transform of.",
+              "transform": ""
+            }
+          },
+          "DocId": "M:Sandbox.SceneModel.SetBoneWorldTransform(System.Int32,Transform)"
+        },
+        {
+          "ReturnType": "Transform",
+          "Parameters": [
+            {
+              "Name": "boneIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetBoneWorldTransform",
+          "Name": "GetBoneWorldTransform",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the world space transform of a bone by its index."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "121"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the world space transform of a bone by its index.",
+            "Return": "The world space transform, or an identity transform on failure.",
+            "Params": {
+              "boneIndex": "Index of the bone to calculate transform of."
+            }
+          },
+          "DocId": "M:Sandbox.SceneModel.GetBoneWorldTransform(System.Int32)"
+        },
+        {
+          "ReturnType": "Transform",
+          "Parameters": [
+            {
+              "Name": "boneName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetBoneWorldTransform",
+          "Name": "GetBoneWorldTransform",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the world space transform of a bone by its name."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "133"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the world space transform of a bone by its name.",
+            "Return": "The world space transform, or an identity transform on failure.",
+            "Params": {
+              "boneName": "Name of the bone to calculate transform of."
+            }
+          },
+          "DocId": "M:Sandbox.SceneModel.GetBoneWorldTransform(System.String)"
+        },
+        {
+          "ReturnType": "Transform",
+          "Parameters": [
+            {
+              "Name": "boneIndex",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 149
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetBoneLocalTransform",
+          "Name": "GetBoneLocalTransform",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the local space transform of a bone by its index."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "144"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the local space transform of a bone by its index.",
+            "Return": "The local space transform, or an identity transform on failure.",
+            "Params": {
+              "boneIndex": "Index of the bone to calculate transform of."
+            }
+          },
+          "DocId": "M:Sandbox.SceneModel.GetBoneLocalTransform(System.Int32)"
+        },
+        {
+          "ReturnType": "Transform",
+          "Parameters": [
+            {
+              "Name": "boneName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 160
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetBoneLocalTransform",
+          "Name": "GetBoneLocalTransform",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the local space transform of a bone by its name."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "156"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the local space transform of a bone by its name.",
+            "Return": "The local space transform, or an identity transform on failure.",
+            "Params": {
+              "boneName": "Name of the bone to calculate transform of."
+            }
+          },
+          "DocId": "M:Sandbox.SceneModel.GetBoneLocalTransform(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 172
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.SetMaterialGroup",
+          "Name": "SetMaterialGroup",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set material group to replace materials of the model as set up in ModelDoc."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "170"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set material group to replace materials of the model as set up in ModelDoc."
+          },
+          "DocId": "M:Sandbox.SceneModel.SetMaterialGroup(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 180
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.SetBodyGroup",
+          "Name": "SetBodyGroup",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set which body group to use."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "178"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set which body group to use."
+          },
+          "DocId": "M:Sandbox.SceneModel.SetBodyGroup(System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Nullable`1<Transform>",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "worldspace",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 192
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetAttachment",
+          "Name": "GetAttachment",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get attachment transform by name."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "189"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get attachment transform by name.",
+            "Return": "",
+            "Params": {
+              "name": "Name of the attachment to calculate transform of.",
+              "worldspace": "Whether the transform should be in world space (relative to the scene world), or local space (relative to the scene object)"
+            }
+          },
+          "DocId": "M:Sandbox.SceneModel.GetAttachment(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Events.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.RunPendingEvents",
+          "Name": "RunPendingEvents",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Events.cs",
+                "68"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SceneModel.RunPendingEvents"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Events.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.DispatchTagEvents",
+          "Name": "DispatchTagEvents",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Events.cs",
+                "82"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.SceneModel.DispatchTagEvents"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.SetAnimParameter",
+          "Name": "SetAnimParameter",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets a boolean animation graph parameter by name."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets a boolean animation graph parameter by name."
+          },
+          "DocId": "M:Sandbox.SceneModel.SetAnimParameter(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.SetAnimParameter",
+          "Name": "SetAnimParameter",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets a float animation graph parameter by name."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets a float animation graph parameter by name."
+          },
+          "DocId": "M:Sandbox.SceneModel.SetAnimParameter(System.String,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 99
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.SetAnimParameter",
+          "Name": "SetAnimParameter",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets a vector animation graph parameter by name."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "96"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets a vector animation graph parameter by name."
+          },
+          "DocId": "M:Sandbox.SceneModel.SetAnimParameter(System.String,Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.SetAnimParameter",
+          "Name": "SetAnimParameter",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets a integer animation graph parameter by name."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "115"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets a integer animation graph parameter by name."
+          },
+          "DocId": "M:Sandbox.SceneModel.SetAnimParameter(System.String,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "Rotation"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.SetAnimParameter",
+          "Name": "SetAnimParameter",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets a rotation animation graph parameter by name."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "152"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets a rotation animation graph parameter by name."
+          },
+          "DocId": "M:Sandbox.SceneModel.SetAnimParameter(System.String,Rotation)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 173
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.ResetAnimParameters",
+          "Name": "ResetAnimParameters",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Reset all animgraph parameters to their default values."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "171"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Reset all animgraph parameters to their default values."
+          },
+          "DocId": "M:Sandbox.SceneModel.ResetAnimParameters"
+        },
+        {
+          "ReturnType": "Rotation",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 180
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetRotation",
+          "Name": "GetRotation",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get an animated parameter"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "179"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get an animated parameter"
+          },
+          "DocId": "M:Sandbox.SceneModel.GetRotation(System.String)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 185
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetVector3",
+          "Name": "GetVector3",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get an animated parameter"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "184"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get an animated parameter"
+          },
+          "DocId": "M:Sandbox.SceneModel.GetVector3(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 190
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetBool",
+          "Name": "GetBool",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get an animated parameter"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "189"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get an animated parameter"
+          },
+          "DocId": "M:Sandbox.SceneModel.GetBool(System.String)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 195
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetFloat",
+          "Name": "GetFloat",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get an animated parameter"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "194"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get an animated parameter"
+          },
+          "DocId": "M:Sandbox.SceneModel.GetFloat(System.String)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Parameters.cs",
+            "Line": 200
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetInt",
+          "Name": "GetInt",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get an animated parameter"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+                "199"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get an animated parameter"
+          },
+          "DocId": "M:Sandbox.SceneModel.GetInt(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Update.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.Update",
+          "Name": "Update",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Update this animation. Delta is the time you want to advance, usually RealTime.Delta"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Update.cs",
+                "8"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update this animation. Delta is the time you want to advance, usually RealTime.Delta"
+          },
+          "DocId": "M:Sandbox.SceneModel.Update(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Update.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.UpdateToBindPose",
+          "Name": "UpdateToBindPose",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Update all of the bones to the bind pose"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Update.cs",
+                "27"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update all of the bones to the bind pose"
+          },
+          "DocId": "M:Sandbox.SceneModel.UpdateToBindPose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Sandbox.SceneModel"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Update.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.MergeBones",
+          "Name": "MergeBones",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Update our bones to match the target's bones. This is a manual bone merge."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Update.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Update our bones to match the target's bones. This is a manual bone merge."
+          },
+          "DocId": "M:Sandbox.SceneModel.MergeBones(Sandbox.SceneModel)"
+        },
+        {
+          "ReturnType": "Transform",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.Update.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.GetParentSpaceBone",
+          "Name": "GetParentSpaceBone",
+          "DeclaringType": "Sandbox.SceneModel",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns the parent space transform of a bone by its index."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Update.cs",
+                "72"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the parent space transform of a bone by its index.",
+            "Return": "The parent space transform, or an identity transform on failure.",
+            "Params": {
+              "i": "Index of the bone to calculate transform of."
+            }
+          },
+          "DocId": "M:Sandbox.SceneModel.GetParentSpaceBone(System.Int32)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sceneWorld",
+              "Type": "Sandbox.SceneWorld"
+            },
+            {
+              "Name": "model",
+              "Type": "System.String"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SceneModel",
+          "DocId": "M:Sandbox.SceneModel.#ctor(Sandbox.SceneWorld,System.String,Transform)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sceneWorld",
+              "Type": "Sandbox.SceneWorld"
+            },
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SceneModel",
+          "DocId": "M:Sandbox.SceneModel.#ctor(Sandbox.SceneWorld,Sandbox.Model,Transform)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.AnimationGraph",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 90
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.AnimationGraph",
+          "Name": "AnimationGraph",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "85"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SceneModel.AnimationGraph"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.PlaybackRate",
+          "Name": "PlaybackRate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "94"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.SceneModel.PlaybackRate"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 206
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.UseAnimGraph",
+          "Name": "UseAnimGraph",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows the scene model to not use the anim graph so it can play sequences directly"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "200"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows the scene model to not use the anim graph so it can play sequences directly"
+          },
+          "DocId": "P:Sandbox.SceneModel.UseAnimGraph"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 217
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.RootMotion",
+          "Name": "RootMotion",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the calculated motion from animgraph since last frame"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "214"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the calculated motion from animgraph since last frame"
+          },
+          "DocId": "P:Sandbox.SceneModel.RootMotion"
+        },
+        {
+          "PropertyType": "Sandbox.AnimationSequence",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 230
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.CurrentSequence",
+          "Name": "CurrentSequence",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Allows playback of sequences directly, rather than using an animation graph. Requires <span style=\"color: #4EC9B0;\">SceneModel</span>.<span style=\"color: #DCDCDC;\">UseAnimGraph</span> disabled if the scene model has one."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "225"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Allows playback of sequences directly, rather than using an animation graph.\nRequires <see cref=\"P:Sandbox.SceneModel.UseAnimGraph\" /> disabled if the scene model has one."
+          },
+          "DocId": "P:Sandbox.SceneModel.CurrentSequence"
+        },
+        {
+          "PropertyType": "Sandbox.MorphCollection",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 247
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.Morphs",
+          "Name": "Morphs",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access this sceneobject's morph collection. Morphs are generally used in the model to control the face, for things like emotions and lip sync."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "242"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access this sceneobject's morph collection. Morphs are generally used in the model to control\nthe face, for things like emotions and lip sync."
+          },
+          "DocId": "P:Sandbox.SceneModel.Morphs"
+        },
+        {
+          "PropertyType": "Sandbox.AnimGraphDirectPlayback",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.cs",
+            "Line": 264
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.DirectPlayback",
+          "Name": "DirectPlayback",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access this sceneobject's direct playback. Direct playback is used to control the direct playback node in an animgraph to play sequences directly in code"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.cs",
+                "259"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access this sceneobject's direct playback. Direct playback is used to control the direct playback node in an animgraph\nto play sequences directly in code"
+          },
+          "DocId": "P:Sandbox.SceneModel.DirectPlayback"
+        },
+        {
+          "PropertyType": "System.Action`1<Sandbox.SceneModel.FootstepEvent>",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.Events.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.OnFootstepEvent",
+          "Name": "OnFootstepEvent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when a footstep event happens"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Events.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when a footstep event happens"
+          },
+          "DocId": "P:Sandbox.SceneModel.OnFootstepEvent"
+        },
+        {
+          "PropertyType": "System.Action`1<Sandbox.SceneModel.GenericEvent>",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.Events.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.OnGenericEvent",
+          "Name": "OnGenericEvent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when a generic event happens"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Events.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when a generic event happens"
+          },
+          "DocId": "P:Sandbox.SceneModel.OnGenericEvent"
+        },
+        {
+          "PropertyType": "System.Action`1<Sandbox.SceneModel.SoundEvent>",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.Events.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.OnSoundEvent",
+          "Name": "OnSoundEvent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when a sound event happens"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Events.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when a sound event happens"
+          },
+          "DocId": "P:Sandbox.SceneModel.OnSoundEvent"
+        },
+        {
+          "PropertyType": "System.Action`1<Sandbox.SceneModel.AnimTagEvent>",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.Events.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.OnAnimTagEvent",
+          "Name": "OnAnimTagEvent",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when a anim tag event happens"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\SceneSystem\\SceneModel.Events.cs",
+                "36"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when a anim tag event happens"
+          },
+          "DocId": "P:Sandbox.SceneModel.OnAnimTagEvent"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneModel",
+      "Name": "SceneModel",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A model scene object that supports animations and can be rendered within a <span style=\"color: #4EC9B0;\">SceneWorld</span>."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\SceneSystem\\SceneModel.Bones.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A model scene object that supports animations and can be rendered within a <span style=\"color: #4EC9B0;\">SceneWorld</span>."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\SceneSystem\\SceneModel.cs",
+            "9"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A model scene object that supports animations and can be rendered within a <span style=\"color: #4EC9B0;\">SceneWorld</span>."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\SceneSystem\\SceneModel.Events.cs",
+            "8"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A model scene object that supports animations and can be rendered within a <span style=\"color: #4EC9B0;\">SceneWorld</span>."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\SceneSystem\\SceneModel.Parameters.cs",
+            "8"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A model scene object that supports animations and can be rendered within a <span style=\"color: #4EC9B0;\">SceneWorld</span>."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\SceneSystem\\SceneModel.Update.cs",
+            "3"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A model scene object that supports animations and can be rendered within a <see cref=\"T:Sandbox.SceneWorld\" />."
+      },
+      "DocId": "T:Sandbox.SceneModel"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "FootId",
+              "Out": true,
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "Transform",
+              "Out": true,
+              "Type": "Transform"
+            },
+            {
+              "Name": "Volume",
+              "Out": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "AttachmentName",
+              "Out": true,
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.FootstepEvent.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Sandbox.SceneModel.FootstepEvent",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Sandbox.SceneModel.FootstepEvent.Deconstruct(System.Int32@,Transform@,System.Single@,System.String@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "FootId",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "Transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "Volume",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "AttachmentName",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.FootstepEvent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.SceneModel.FootstepEvent",
+          "DocId": "M:Sandbox.SceneModel.FootstepEvent.#ctor(System.Int32,Transform,System.Single,System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.Events.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.FootstepEvent.FootId",
+          "Name": "FootId",
+          "DocId": "P:Sandbox.SceneModel.FootstepEvent.FootId"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.Events.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.FootstepEvent.Transform",
+          "Name": "Transform",
+          "DocId": "P:Sandbox.SceneModel.FootstepEvent.Transform"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.Events.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.FootstepEvent.Volume",
+          "Name": "Volume",
+          "DocId": "P:Sandbox.SceneModel.FootstepEvent.Volume"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/SceneSystem/SceneModel.Events.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.SceneModel.FootstepEvent.AttachmentName",
+          "Name": "AttachmentName",
+          "DocId": "P:Sandbox.SceneModel.FootstepEvent.AttachmentName"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.SceneModel.FootstepEvent",
+      "Name": "FootstepEvent",
+      "DeclaringType": "Sandbox.SceneModel",
+      "DocId": "T:Sandbox.SceneModel.FootstepEvent"
+    }
+  ],
+  "_metadata": {
+    "chunk": 165,
+    "items_count": 2
+  }
+}

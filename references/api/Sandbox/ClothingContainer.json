@@ -1,0 +1,1689 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 96
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Normalize",
+          "Name": "Normalize",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Restrict things like Height to their sensible limits"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "94"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Restrict things like Height to their sensible limits"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.Normalize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "clothing",
+              "Type": "Sandbox.Clothing"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 108
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Toggle",
+          "Name": "Toggle",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a clothing item if we don't already contain it, else remove it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "105"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a clothing item if we don't already contain it, else remove it"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.Toggle(Sandbox.Clothing)"
+        },
+        {
+          "ReturnType": "Sandbox.ClothingContainer.ClothingEntry",
+          "Parameters": [
+            {
+              "Name": "clothing",
+              "Type": "Sandbox.Clothing"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Add",
+          "Name": "Add",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add clothing item"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "114"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add clothing item"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.Add(Sandbox.Clothing)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "clothing",
+              "Type": "Sandbox.ClothingContainer.ClothingEntry"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Add",
+          "Name": "Add",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add clothing item"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "159"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add clothing item"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.Add(Sandbox.ClothingContainer.ClothingEntry)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "clothing",
+              "Type": "System.Collections.Generic.IEnumerable`1<Sandbox.ClothingContainer.ClothingEntry>"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 173
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.AddRange",
+          "Name": "AddRange",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add clothing items"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "170"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ClothingContainer.AddRange(System.Collections.Generic.IEnumerable`1{Sandbox.ClothingContainer.ClothingEntry})"
+        },
+        {
+          "ReturnType": "Sandbox.ClothingContainer.ClothingEntry",
+          "Parameters": [
+            {
+              "Name": "clothing",
+              "Type": "Sandbox.Clothing"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.FindEntry",
+          "Name": "FindEntry",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find a clothing entry matching this clothing item"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "183"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find a clothing entry matching this clothing item"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.FindEntry(Sandbox.Clothing)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "clothing",
+              "Type": "Sandbox.Clothing"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Has",
+          "Name": "Has",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if we have this clothing item"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "199"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if we have this clothing item"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.Has(Sandbox.Clothing)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<System.ValueTuple`2<System.String,System.Int32>>",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 205
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.GetBodyGroups",
+          "Name": "GetBodyGroups",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return a list of bodygroups and what their value should be"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "204"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return a list of bodygroups and what their value should be"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.GetBodyGroups"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<System.ValueTuple`2<System.String,System.Int32>>",
+          "Parameters": [
+            {
+              "Name": "items",
+              "Type": "System.Collections.Generic.IEnumerable`1<Sandbox.Clothing>"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.GetBodyGroups",
+          "Name": "GetBodyGroups",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.ClothingContainer/<GetBodyGroups>d__32"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Return a list of bodygroups and what their value should be"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "209"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ClothingContainer.GetBodyGroups(System.Collections.Generic.IEnumerable`1{Sandbox.Clothing})"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 235
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Serialize",
+          "Name": "Serialize",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Serialize to Json"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "232"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Serialize to Json"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.Serialize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "json",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 253
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Deserialize",
+          "Name": "Deserialize",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Deserialize from Json"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "251"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Deserialize from Json"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.Deserialize(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.ClothingContainer",
+          "Parameters": [
+            {
+              "Name": "json",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 377
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ClothingContainer.CreateFromJson",
+          "Name": "CreateFromJson",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create the container from json definitions"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "374"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create the container from json definitions"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.CreateFromJson(System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.ClothingContainer",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 387
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ClothingContainer.CreateFromLocalUser",
+          "Name": "CreateFromLocalUser",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create the container from the local user's setup, stripped of any unowned items."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "384"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create the container from the local user's setup, stripped of any unowned items."
+          },
+          "DocId": "M:Sandbox.ClothingContainer.CreateFromLocalUser"
+        },
+        {
+          "ReturnType": "Sandbox.ClothingContainer",
+          "Parameters": [
+            {
+              "Name": "connection",
+              "Type": "Sandbox.Connection"
+            },
+            {
+              "Name": "removeUnowned",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 397
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.ClothingContainer.CreateFromConnection",
+          "Name": "CreateFromConnection",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Create the container from a connection's avatar, filtered to only items they are verified to own."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "394"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Create the container from a connection's avatar, filtered to only items they are verified to own."
+          },
+          "DocId": "M:Sandbox.ClothingContainer.CreateFromConnection(Sandbox.Connection,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 410
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.RemoveUnownedItems",
+          "Name": "RemoveUnownedItems",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Removes any clothing items that require Steam inventory ownership but the local user doesn't own."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "407"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Removes any clothing items that require Steam inventory ownership but the local user doesn't own."
+          },
+          "DocId": "M:Sandbox.ClothingContainer.RemoveUnownedItems"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "connection",
+              "Type": "Sandbox.Connection"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.RemoveUnownedItems",
+          "Name": "RemoveUnownedItems",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Removes clothing items that the given connection is not verified to own. Must be called from the host or from the local player, as clients don't have access to other player inventory data."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "428"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Removes clothing items that the given connection is not verified to own.\nMust be called from the host or from the local player, as clients don't have access to other player inventory data."
+          },
+          "DocId": "M:Sandbox.ClothingContainer.RemoveUnownedItems(Sandbox.Connection)"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "body",
+              "Type": "Sandbox.SkinnedModelRenderer"
+            },
+            {
+              "Name": "token",
+              "Type": "System.Threading.CancellationToken"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.ApplyAsync",
+          "Name": "ApplyAsync",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.ClothingContainer/<ApplyAsync>d__44"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Dresses a skinned model with an outfit. Will apply all the clothes it can immediately, then download any missing clothing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.Dressing.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Dresses a skinned model with an outfit. Will apply all the clothes it can immediately, then download any missing clothing."
+          },
+          "DocId": "M:Sandbox.ClothingContainer.ApplyAsync(Sandbox.SkinnedModelRenderer,System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "body",
+              "Type": "Sandbox.SkinnedModelRenderer"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.Dressing.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Apply",
+          "Name": "Apply",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Dress a skinned model renderer with an outfit. Doesn't download missing clothing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.Dressing.cs",
+                "142"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Dress a skinned model renderer with an outfit. Doesn't download missing clothing."
+          },
+          "DocId": "M:Sandbox.ClothingContainer.Apply(Sandbox.SkinnedModelRenderer)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "body",
+              "Type": "Sandbox.SkinnedModelRenderer"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.Dressing.cs",
+            "Line": 273
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clear the outfit from this model, make it named"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.Dressing.cs",
+                "268"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clear the outfit from this model, make it named"
+          },
+          "DocId": "M:Sandbox.ClothingContainer.Reset(Sandbox.SkinnedModelRenderer)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ClothingContainer",
+          "DocId": "M:Sandbox.ClothingContainer.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.DisplayName",
+          "Name": "DisplayName",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A user set name for this setup"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A user set name for this setup"
+          },
+          "DocId": "P:Sandbox.ClothingContainer.DisplayName"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The avatar's height. Default is 0.5f."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "69"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The avatar's height. Default is 0.5f."
+          },
+          "DocId": "P:Sandbox.ClothingContainer.Height"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Age",
+          "Name": "Age",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The avatar's age. Default is 0.0f. We'll pick a skin based on this."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "74"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The avatar's age. Default is 0.0f. We'll pick a skin based on this."
+          },
+          "DocId": "P:Sandbox.ClothingContainer.Age"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Tint",
+          "Name": "Tint",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "For the citizen the skin color is dynamic, based on a gradient. This is 0-1."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "For the citizen the skin color is dynamic, based on a gradient. This is 0-1."
+          },
+          "DocId": "P:Sandbox.ClothingContainer.Tint"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.PrefersHuman",
+          "Name": "PrefersHuman",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If true, this avatar prefers to use a human model when possible"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "84"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If true, this avatar prefers to use a human model when possible"
+          },
+          "DocId": "P:Sandbox.ClothingContainer.PrefersHuman"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Collections.Generic.List`1<Sandbox.ClothingContainer.ClothingEntry>",
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.Clothing",
+          "Name": "Clothing",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "89"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of clothing items the avatar is wearing"
+          },
+          "DocId": "F:Sandbox.ClothingContainer.Clothing"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ClothingContainer",
+      "Name": "ClothingContainer",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Holds a collection of clothing items. Won't let you add items that aren't compatible."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Avatar\\ClothingContainer.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Holds a collection of clothing items. Won't let you add items that aren't compatible."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Avatar\\ClothingContainer.Dressing.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Holds a collection of clothing items. Won't let you add items that aren't compatible."
+      },
+      "DocId": "T:Sandbox.ClothingContainer"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.ClothingEntry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ClothingContainer.ClothingEntry",
+          "DocId": "M:Sandbox.ClothingContainer.ClothingEntry.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "clothing",
+              "Type": "Sandbox.Clothing"
+            }
+          ],
+          "l": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.ClothingEntry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ClothingContainer.ClothingEntry",
+          "DocId": "M:Sandbox.ClothingContainer.ClothingEntry.#ctor(Sandbox.Clothing)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Clothing",
+          "Loc": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.ClothingEntry.Clothing",
+          "Name": "Clothing",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.KeyPropertyAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A direct reference to the clothing item"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A direct reference to the clothing item"
+          },
+          "DocId": "P:Sandbox.ClothingContainer.ClothingEntry.Clothing"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.ClothingEntry.ItemDefinitionId",
+          "Name": "ItemDefinitionId",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonPropertyNameAttribute",
+              "ConstructorArguments": [
+                "item"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If this is a Steam Inventory Item then this is the item definition id. This usually means we'll look up the clothing item from the workshop."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "36"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If this is a Steam Inventory Item then this is the item definition id. This usually means\nwe'll look up the clothing item from the workshop."
+          },
+          "DocId": "P:Sandbox.ClothingContainer.ClothingEntry.ItemDefinitionId"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.Single>",
+          "Loc": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.ClothingEntry.Tint",
+          "Name": "Tint",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Used to select a tint for the item. The gradients are defined in the item."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "43"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Used to select a tint for the item. The gradients are defined in the item."
+          },
+          "DocId": "P:Sandbox.ClothingContainer.ClothingEntry.Tint"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.ClothingEntry.Bone",
+          "Name": "Bone",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonPropertyNameAttribute",
+              "ConstructorArguments": [
+                "bone"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If this item is manually placed, this is the bone we're attached to"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If this item is manually placed, this is the bone we're attached to"
+          },
+          "DocId": "P:Sandbox.ClothingContainer.ClothingEntry.Bone"
+        },
+        {
+          "PropertyType": "System.Nullable`1<Transform>",
+          "Loc": {
+            "File": "Game/Avatar/ClothingContainer.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ClothingContainer.ClothingEntry.Transform",
+          "Name": "Transform",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonPropertyNameAttribute",
+              "ConstructorArguments": [
+                "tx"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If this item is manually placed, this is the offset relative to the bone"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\ClothingContainer.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If this item is manually placed, this is the offset relative to the bone"
+          },
+          "DocId": "P:Sandbox.ClothingContainer.ClothingEntry.Transform"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ClothingContainer.ClothingEntry",
+      "Name": "ClothingEntry",
+      "DeclaringType": "Sandbox.ClothingContainer",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Game\\Avatar\\ClothingContainer.cs",
+            "12"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.ClothingContainer.ClothingEntry"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Game/Avatar/WorkshopItemMetaData.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WorkshopItemMetaData.Title",
+          "Name": "Title",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\WorkshopItemMetaData.cs",
+                "8"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.WorkshopItemMetaData.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Game/Avatar/WorkshopItemMetaData.cs",
+            "Line": 10
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WorkshopItemMetaData.PackageIdent",
+          "Name": "PackageIdent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\WorkshopItemMetaData.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.WorkshopItemMetaData.PackageIdent"
+        },
+        {
+          "PropertyType": "System.UInt64",
+          "Loc": {
+            "File": "Game/Avatar/WorkshopItemMetaData.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.WorkshopItemMetaData.WorkshopId",
+          "Name": "WorkshopId",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\Avatar\\WorkshopItemMetaData.cs",
+                "10"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.WorkshopItemMetaData.WorkshopId"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.WorkshopItemMetaData",
+      "Name": "WorkshopItemMetaData",
+      "Documentation": {
+        "Summary": "Some metadata we'll pack into a workshop submission when publishing."
+      },
+      "DocId": "T:Sandbox.WorkshopItemMetaData"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "key",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.GetRichPresence",
+          "Name": "GetRichPresence",
+          "DeclaringType": "Sandbox.Friend",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns a string that was possibly set by rich presence"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "74"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a string that was possibly set by rich presence"
+          },
+          "DocId": "M:Sandbox.Friend.GetRichPresence(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.OpenInOverlay",
+          "Name": "OpenInOverlay",
+          "DeclaringType": "Sandbox.Friend",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Opens the Steam overlay web browser to their user profile."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "89"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Opens the Steam overlay web browser to their user profile."
+          },
+          "DocId": "M:Sandbox.Friend.OpenInOverlay"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 99
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.OpenAddFriendOverlay",
+          "Name": "OpenAddFriendOverlay",
+          "DeclaringType": "Sandbox.Friend",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Opens the Steam overlay with a popup that allows the local Steam user to confirm whether to add this user to their Steam friends list."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "97"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Opens the Steam overlay with a popup that allows the local Steam user to confirm whether to add this user to their Steam friends list."
+          },
+          "DocId": "M:Sandbox.Friend.OpenAddFriendOverlay"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "steamid",
+              "Type": "System.UInt64"
+            }
+          ],
+          "l": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Friend",
+          "DocId": "M:Sandbox.Friend.#ctor(System.UInt64)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "steamid",
+              "Type": "System.Int64"
+            }
+          ],
+          "l": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Friend",
+          "DocId": "M:Sandbox.Friend.#ctor(System.Int64)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.IsMe",
+          "Name": "IsMe",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if this friend is the local user"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "34"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if this friend is the local user"
+          },
+          "DocId": "P:Sandbox.Friend.IsMe"
+        },
+        {
+          "PropertyType": "System.UInt64",
+          "Loc": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.Id",
+          "Name": "Id",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The friend's Steam Id"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "39"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The friend's Steam Id"
+          },
+          "DocId": "P:Sandbox.Friend.Id"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The friend's name"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The friend's name"
+          },
+          "DocId": "P:Sandbox.Friend.Name"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.IsOnline",
+          "Name": "IsOnline",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if your friend is online"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "49"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if your friend is online"
+          },
+          "DocId": "P:Sandbox.Friend.IsOnline"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.IsFriend",
+          "Name": "IsFriend",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if this user is your friend"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "54"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if this user is your friend"
+          },
+          "DocId": "P:Sandbox.Friend.IsFriend"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.IsAway",
+          "Name": "IsAway",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if your friend is away"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "59"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if your friend is away"
+          },
+          "DocId": "P:Sandbox.Friend.IsAway"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.IsBusy",
+          "Name": "IsBusy",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if this friend is marked as busy"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if this friend is marked as busy"
+          },
+          "DocId": "P:Sandbox.Friend.IsBusy"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.IsSnoozing",
+          "Name": "IsSnoozing",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if this friend is marked as snoozing"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "69"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if this friend is marked as snoozing"
+          },
+          "DocId": "P:Sandbox.Friend.IsSnoozing"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.IsPlayingThisGame",
+          "Name": "IsPlayingThisGame",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if they're playing this game"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if they're playing this game"
+          },
+          "DocId": "P:Sandbox.Friend.IsPlayingThisGame"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Game/GameMenu/Friend.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Friend.IsPlayingAGame",
+          "Name": "IsPlayingAGame",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns true if they're playing any game"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Game\\GameMenu\\Friend.cs",
+                "84"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if they're playing any game"
+          },
+          "DocId": "P:Sandbox.Friend.IsPlayingAGame"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Friend",
+      "Name": "Friend",
+      "DocId": "T:Sandbox.Friend"
+    }
+  ],
+  "_metadata": {
+    "chunk": 41,
+    "items_count": 4
+  }
+}

@@ -1,0 +1,1299 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.Release",
+          "Name": "Release",
+          "DeclaringType": "Sandbox.UI.StyleSheet",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Releases the filesystem watcher so we won't get file changed events."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "34"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Releases the filesystem watcher so we won't get file changed events."
+          },
+          "DocId": "M:Sandbox.UI.StyleSheet.Release"
+        },
+        {
+          "ReturnType": "Sandbox.UI.StyleSheet",
+          "Parameters": [
+            {
+              "Name": "filename",
+              "Type": "System.String"
+            },
+            {
+              "Name": "variables",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.ValueTuple`2<System.String,System.String>>",
+              "Default": "null"
+            },
+            {
+              "Name": "failSilently",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.StyleSheet.FromFile",
+          "Name": "FromFile",
+          "DeclaringType": "Sandbox.UI.StyleSheet",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "40"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.StyleSheet.FromFile(System.String,System.Collections.Generic.IEnumerable`1{System.ValueTuple`2{System.String,System.String}},System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.UI.StyleSheet",
+          "Parameters": [
+            {
+              "Name": "styles",
+              "Type": "System.String"
+            },
+            {
+              "Name": "filename",
+              "Type": "System.String",
+              "Default": "none"
+            },
+            {
+              "Name": "variables",
+              "Type": "System.Collections.Generic.IEnumerable`1<System.ValueTuple`2<System.String,System.String>>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.StyleSheet.FromString",
+          "Name": "FromString",
+          "DeclaringType": "Sandbox.UI.StyleSheet",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "66"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.StyleSheet.FromString(System.String,System.String,System.Collections.Generic.IEnumerable`1{System.ValueTuple`2{System.String,System.String}})"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "defaultValue",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 191
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.GetVariable",
+          "Name": "GetVariable",
+          "DeclaringType": "Sandbox.UI.StyleSheet",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "188"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.StyleSheet.GetVariable(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.ReplaceVariables",
+          "Name": "ReplaceVariables",
+          "DeclaringType": "Sandbox.UI.StyleSheet",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "195"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.StyleSheet.ReplaceVariables(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "frames",
+              "Type": "Sandbox.UI.KeyFrames"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 231
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.AddKeyFrames",
+          "Name": "AddKeyFrames",
+          "DeclaringType": "Sandbox.UI.StyleSheet",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "229"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.StyleSheet.AddKeyFrames(Sandbox.UI.KeyFrames)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "mixin",
+              "Type": "Sandbox.UI.MixinDefinition"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 239
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.SetMixin",
+          "Name": "SetMixin",
+          "DeclaringType": "Sandbox.UI.StyleSheet",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Register a mixin definition."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "237"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Register a mixin definition."
+          },
+          "DocId": "M:Sandbox.UI.StyleSheet.SetMixin(Sandbox.UI.MixinDefinition)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "mixin",
+              "Out": true,
+              "Type": "Sandbox.UI.MixinDefinition"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 248
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.TryGetMixin",
+          "Name": "TryGetMixin",
+          "DeclaringType": "Sandbox.UI.StyleSheet",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Try to get a mixin by name."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "245"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Try to get a mixin by name."
+          },
+          "DocId": "M:Sandbox.UI.StyleSheet.TryGetMixin(System.String,Sandbox.UI.MixinDefinition@)"
+        },
+        {
+          "ReturnType": "Sandbox.UI.MixinDefinition",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 255
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.GetMixin",
+          "Name": "GetMixin",
+          "DeclaringType": "Sandbox.UI.StyleSheet",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a mixin by name or null if not found."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "253"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a mixin by name or null if not found."
+          },
+          "DocId": "M:Sandbox.UI.StyleSheet.GetMixin(System.String)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.StyleSheet",
+          "DocId": "M:Sandbox.UI.StyleSheet.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.UI.StyleSheet>",
+          "Loc": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.StyleSheet.Loaded",
+          "Name": "Loaded",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "7"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.StyleSheet.Loaded"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.UI.StyleBlock>",
+          "Loc": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.Nodes",
+          "Name": "Nodes",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.StyleSheet.Nodes"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.FileName",
+          "Name": "FileName",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "24"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.StyleSheet.FileName"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<System.String>",
+          "Loc": {
+            "File": "Systems/UI/Styles/StyleSheet.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.IncludedFiles",
+          "Name": "IncludedFiles",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.StyleSheet.IncludedFiles"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Collections.Generic.Dictionary`2<System.String,System.String>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.Variables",
+          "Name": "Variables",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "27"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.UI.StyleSheet.Variables"
+        },
+        {
+          "FieldType": "System.Collections.Generic.Dictionary`2<System.String,Sandbox.UI.KeyFrames>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.KeyFrames",
+          "Name": "KeyFrames",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "28"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.UI.StyleSheet.KeyFrames"
+        },
+        {
+          "FieldType": "System.Collections.Generic.Dictionary`2<System.String,Sandbox.UI.MixinDefinition>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheet.Mixins",
+          "Name": "Mixins",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheet.cs",
+                "29"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.UI.StyleSheet.Mixins"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.StyleSheet",
+      "Name": "StyleSheet",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Styles\\StyleSheet.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.StyleSheet"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sheet",
+              "Type": "Sandbox.UI.StyleSheet"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheetCollection.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheetCollection.Add",
+          "Name": "Add",
+          "DeclaringType": "Sandbox.UI.StyleSheetCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a stylesheet directly"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheetCollection.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Add a stylesheet directly"
+          },
+          "DocId": "M:Sandbox.UI.StyleSheetCollection.Add(Sandbox.UI.StyleSheet)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "filename",
+              "Type": "System.String"
+            },
+            {
+              "Name": "inheritVariables",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "failSilently",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheetCollection.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheetCollection.Load",
+          "Name": "Load",
+          "DeclaringType": "Sandbox.UI.StyleSheetCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Load the stylesheet from a file."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheetCollection.cs",
+                "36"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Load the stylesheet from a file."
+          },
+          "DocId": "M:Sandbox.UI.StyleSheetCollection.Load(System.String,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "stylesheet",
+              "Type": "System.String"
+            },
+            {
+              "Name": "inheritVariables",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheetCollection.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheetCollection.Parse",
+          "Name": "Parse",
+          "DeclaringType": "Sandbox.UI.StyleSheetCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Load the stylesheet from a string."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheetCollection.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Load the stylesheet from a string."
+          },
+          "DocId": "M:Sandbox.UI.StyleSheetCollection.Parse(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "sheet",
+              "Type": "Sandbox.UI.StyleSheet"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheetCollection.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheetCollection.Remove",
+          "Name": "Remove",
+          "DeclaringType": "Sandbox.UI.StyleSheetCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove a specific <span style=\"color: #4EC9B0;\">StyleSheet</span> from the collection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheetCollection.cs",
+                "53"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Remove a specific <see cref=\"T:Sandbox.UI.StyleSheet\" /> from the collection."
+          },
+          "DocId": "M:Sandbox.UI.StyleSheetCollection.Remove(Sandbox.UI.StyleSheet)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "wildcardGlob",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/StyleSheetCollection.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheetCollection.Remove",
+          "Name": "Remove",
+          "DeclaringType": "Sandbox.UI.StyleSheetCollection",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Remove all stylesheets whose filename matches this wildcard glob."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheetCollection.cs",
+                "67"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Remove all stylesheets whose filename matches this wildcard glob."
+          },
+          "DocId": "M:Sandbox.UI.StyleSheetCollection.Remove(System.String)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<System.ValueTuple`2<System.String,System.String>>",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.StyleSheetCollection.CollectVariables",
+          "Name": "CollectVariables",
+          "DeclaringType": "Sandbox.UI.StyleSheetCollection",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IteratorStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.UI.StyleSheetCollection/<CollectVariables>d__8"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Returns all CSS variables from the owning panel and its ancestors."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\StyleSheetCollection.cs",
+                "79"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns all CSS variables from the owning panel and its ancestors."
+          },
+          "DocId": "M:Sandbox.UI.StyleSheetCollection.CollectVariables"
+        }
+      ],
+      "Constructors": [],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.StyleSheetCollection",
+      "Name": "StyleSheetCollection",
+      "Documentation": {
+        "Summary": "A collection of <see cref=\"T:Sandbox.UI.StyleSheet\" /> objects applied directly to a panel.\nSee <see cref=\"F:Sandbox.UI.Panel.StyleSheet\" />."
+      },
+      "DocId": "T:Sandbox.UI.StyleSheetCollection"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.HasAny",
+          "Name": "HasAny",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Whether there are any active CSS transitions."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "62"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether there are any active CSS transitions."
+          },
+          "DocId": "P:Sandbox.UI.Transitions.HasAny"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Collections.Generic.List`1<Sandbox.UI.Transitions.Entry>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entries",
+          "Name": "Entries",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "57"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Active CSS transitions."
+          },
+          "DocId": "F:Sandbox.UI.Transitions.Entries"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Transitions",
+      "Name": "Transitions",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Handles the storage, progression and application of CSS transitions for a single <span style=\"color: #4EC9B0;\">Panel</span>."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Styles\\Transitions.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Handles the storage, progression and application of CSS transitions for a single <see cref=\"T:Sandbox.UI.Panel\" />."
+      },
+      "DocId": "T:Sandbox.UI.Transitions"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "style",
+              "Type": "Sandbox.UI.Styles"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.TransitionFunction.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.UI.Transitions.TransitionFunction",
+          "DocId": "M:Sandbox.UI.Transitions.TransitionFunction.Invoke(Sandbox.UI.Styles,System.Single)"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "style",
+              "Type": "Sandbox.UI.Styles"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.TransitionFunction.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Sandbox.UI.Transitions.TransitionFunction",
+          "DocId": "M:Sandbox.UI.Transitions.TransitionFunction.BeginInvoke(Sandbox.UI.Styles,System.Single,System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.TransitionFunction.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Sandbox.UI.Transitions.TransitionFunction",
+          "DocId": "M:Sandbox.UI.Transitions.TransitionFunction.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.TransitionFunction..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.Transitions.TransitionFunction",
+          "DocId": "M:Sandbox.UI.Transitions.TransitionFunction.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Transitions.TransitionFunction",
+      "Name": "TransitionFunction",
+      "DeclaringType": "Sandbox.UI.Transitions",
+      "DocId": "T:Sandbox.UI.Transitions.TransitionFunction"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entry.Ease",
+          "Name": "Ease",
+          "DeclaringType": "Sandbox.UI.Transitions.Entry",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "45"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.Transitions.Entry.Ease(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "style",
+              "Type": "Sandbox.UI.Styles"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entry.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.UI.Transitions.Entry",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.Transitions.Entry.Invoke(Sandbox.UI.Styles,System.Single)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "property",
+              "Type": "System.String"
+            },
+            {
+              "Name": "startTime",
+              "Type": "System.Double"
+            },
+            {
+              "Name": "length",
+              "Type": "System.Double"
+            },
+            {
+              "Name": "target",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "action",
+              "Type": "Sandbox.UI.Transitions.TransitionFunction"
+            },
+            {
+              "Name": "easingFunction",
+              "Type": "Sandbox.Utility.Easing.Function"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entry..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.Transitions.Entry",
+          "DocId": "M:Sandbox.UI.Transitions.Entry.#ctor(System.String,System.Double,System.Double,System.Int32,Sandbox.UI.Transitions.TransitionFunction,Sandbox.Utility.Easing.Function)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entry.Property",
+          "Name": "Property",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "14"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Transitions.Entry.Property"
+        },
+        {
+          "PropertyType": "System.Double",
+          "Loc": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entry.StartTime",
+          "Name": "StartTime",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Transitions.Entry.StartTime"
+        },
+        {
+          "PropertyType": "System.Double",
+          "Loc": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entry.Length",
+          "Name": "Length",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Transitions.Entry.Length"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entry.Target",
+          "Name": "Target",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Transitions.Entry.Target"
+        },
+        {
+          "PropertyType": "Sandbox.Utility.Easing.Function",
+          "Loc": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entry.EasingFunction",
+          "Name": "EasingFunction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Transitions.Entry.EasingFunction"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entry.IsKilled",
+          "Name": "IsKilled",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Transitions.Entry.IsKilled"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Transitions.TransitionFunction",
+          "Loc": {
+            "File": "Systems/UI/Styles/Transitions.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Transitions.Entry.Action",
+          "Name": "Action",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Styles\\Transitions.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.UI.Transitions.Entry.Action"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Transitions.Entry",
+      "Name": "Entry",
+      "DeclaringType": "Sandbox.UI.Transitions",
+      "DocId": "T:Sandbox.UI.Transitions.Entry"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Utility/Clipboard.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Clipboard.SetText",
+          "Name": "SetText",
+          "DeclaringType": "Sandbox.UI.Clipboard",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the clipboard text"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Utility\\Clipboard.cs",
+                "9"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the clipboard text"
+          },
+          "DocId": "M:Sandbox.UI.Clipboard.SetText(System.String)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.UI.Clipboard",
+      "Name": "Clipboard",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Utility\\Clipboard.cs",
+            "4"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.UI.Clipboard"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "lookup",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Utility/Emoji.cs",
+            "Line": 1552
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.Emoji.FindEmoji",
+          "Name": "FindEmoji",
+          "DeclaringType": "Sandbox.UI.Emoji",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Find a Unicode emoji from a <code style=\"color: #DCDCDC; background-color: #111111; padding: 4px;\">:emoji_name:</code> format."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Utility\\Emoji.cs",
+                "1549"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Find a Unicode emoji from a <c>:emoji_name:</c> format.",
+            "Return": "The emoji or <see langword=\"null\" />.",
+            "Params": {
+              "lookup": "Input emoji text in <c>:emoji_name:</c> format."
+            }
+          },
+          "DocId": "M:Sandbox.UI.Emoji.FindEmoji(System.String)"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Sandbox.UI.Emoji",
+      "Name": "Emoji",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Helper class for working with Unicode emoji."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Utility\\Emoji.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Helper class for working with Unicode emoji."
+      },
+      "DocId": "T:Sandbox.UI.Emoji"
+    }
+  ],
+  "_metadata": {
+    "chunk": 186,
+    "items_count": 7
+  }
+}

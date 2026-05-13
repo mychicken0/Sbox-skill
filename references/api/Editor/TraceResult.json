@@ -1,0 +1,1816 @@
+{
+  "Types": [
+    {
+      "Namespace": "Editor",
+      "Methods": [],
+      "Fields": [
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Editor.TraceResult.Hit",
+          "Name": "Hit",
+          "Documentation": {
+            "Summary": "Whether the trace hit something or not"
+          },
+          "DocId": "F:Editor.TraceResult.Hit"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Editor.TraceResult.HitPosition",
+          "Name": "HitPosition",
+          "Documentation": {
+            "Summary": "The hit position of the trace"
+          },
+          "DocId": "F:Editor.TraceResult.HitPosition"
+        },
+        {
+          "FieldType": "Vector3",
+          "IsPublic": true,
+          "FullName": "Editor.TraceResult.Normal",
+          "Name": "Normal",
+          "Documentation": {
+            "Summary": "The hit surface normal (direction vector)"
+          },
+          "DocId": "F:Editor.TraceResult.Normal"
+        },
+        {
+          "FieldType": "Editor.MapDoc.MapNode",
+          "IsPublic": true,
+          "FullName": "Editor.TraceResult.MapNode",
+          "Name": "MapNode",
+          "Documentation": {
+            "Summary": "The map node that was hit, if any"
+          },
+          "DocId": "F:Editor.TraceResult.MapNode"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.TraceResult",
+      "Name": "TraceResult",
+      "DocId": "T:Editor.TraceResult"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "Editor.Trace",
+          "Parameters": [
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/Trace.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Trace.Ray",
+          "Name": "Ray",
+          "DeclaringType": "Editor.Trace",
+          "Documentation": {
+            "Summary": "Create a trace ray.",
+            "Params": {
+              "from": "Start position in world space.",
+              "to": "End position in world space."
+            }
+          },
+          "DocId": "M:Editor.Trace.Ray(Vector3@,Vector3@)"
+        },
+        {
+          "ReturnType": "Editor.Trace",
+          "Parameters": [],
+          "l": {
+            "File": "MapEditor/Trace.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Trace.MeshesOnly",
+          "Name": "MeshesOnly",
+          "DeclaringType": "Editor.Trace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Only trace against hammer mesh geometry ( CMapMesh nodes )"
+          },
+          "DocId": "M:Editor.Trace.MeshesOnly"
+        },
+        {
+          "ReturnType": "Editor.Trace",
+          "Parameters": [],
+          "l": {
+            "File": "MapEditor/Trace.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Trace.SkipToolsMaterials",
+          "Name": "SkipToolsMaterials",
+          "DeclaringType": "Editor.Trace",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Don't hit tools materials (materials with the <c>tools.toolsmaterial</c> attribute)"
+          },
+          "DocId": "M:Editor.Trace.SkipToolsMaterials"
+        },
+        {
+          "ReturnType": "Editor.TraceResult",
+          "Parameters": [
+            {
+              "Name": "world",
+              "Type": "Editor.MapDoc.MapWorld"
+            }
+          ],
+          "l": {
+            "File": "MapEditor/Trace.cs",
+            "Line": 90
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Trace.Run",
+          "Name": "Run",
+          "DeclaringType": "Editor.Trace",
+          "Documentation": {
+            "Summary": "Runs a trace against given world."
+          },
+          "DocId": "M:Editor.Trace.Run(Editor.MapDoc.MapWorld)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Trace",
+      "Name": "Trace",
+      "Documentation": {
+        "Summary": "Trace for tools, not to be confused with <see cref=\"T:Sandbox.SceneTrace\" />"
+      },
+      "DocId": "T:Editor.Trace"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "ProjectList.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ProjectList.Refresh",
+          "Name": "Refresh",
+          "DeclaringType": "Editor.ProjectList",
+          "DocId": "M:Editor.ProjectList.Refresh"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "ProjectList.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ProjectList.SaveList",
+          "Name": "SaveList",
+          "DeclaringType": "Editor.ProjectList",
+          "DocId": "M:Editor.ProjectList.SaveList"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.IEnumerable`1<Sandbox.Project>",
+          "Parameters": [],
+          "l": {
+            "File": "ProjectList.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ProjectList.GetAll",
+          "Name": "GetAll",
+          "DeclaringType": "Editor.ProjectList",
+          "DocId": "M:Editor.ProjectList.GetAll"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "item",
+              "Type": "Sandbox.Project"
+            }
+          ],
+          "l": {
+            "File": "ProjectList.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ProjectList.Remove",
+          "Name": "Remove",
+          "DeclaringType": "Editor.ProjectList",
+          "Documentation": {
+            "Summary": "Remove an item from the list. This doesn't save the changes."
+          },
+          "DocId": "M:Editor.ProjectList.Remove(Sandbox.Project)"
+        },
+        {
+          "ReturnType": "Sandbox.Project",
+          "Parameters": [
+            {
+              "Name": "path",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "ProjectList.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ProjectList.TryAddFromFile",
+          "Name": "TryAddFromFile",
+          "DeclaringType": "Editor.ProjectList",
+          "Documentation": {
+            "Summary": "Tries to add a project from a file. Returns true if it was added, or already existed.\nProject list is saved if it was added."
+          },
+          "DocId": "M:Editor.ProjectList.TryAddFromFile(System.String)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "ProjectList.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ProjectList..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.ProjectList",
+          "DocId": "M:Editor.ProjectList.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ProjectList",
+      "Name": "ProjectList",
+      "DocId": "T:Editor.ProjectList"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "style",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/Application.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.SetStyles",
+          "Name": "SetStyles",
+          "DeclaringType": "Editor.Application",
+          "Documentation": {},
+          "DocId": "M:Editor.Application.SetStyles(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Application.cs",
+            "Line": 40
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.Spin",
+          "Name": "Spin",
+          "DeclaringType": "Editor.Application",
+          "Documentation": {
+            "Summary": "Will process all of the UI events - allowing the UI to stay responsive during a blocking call."
+          },
+          "DocId": "M:Editor.Application.Spin"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "code",
+              "Type": "Editor.KeyCode"
+            }
+          ],
+          "l": {
+            "File": "Qt/Application.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.IsKeyDown",
+          "Name": "IsKeyDown",
+          "DeclaringType": "Editor.Application",
+          "Documentation": {
+            "Summary": "Returns whether or not a key is currently being held down."
+          },
+          "DocId": "M:Editor.Application.IsKeyDown(Editor.KeyCode)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [
+            {
+              "Name": "code",
+              "Type": "Editor.KeyCode"
+            }
+          ],
+          "l": {
+            "File": "Qt/Application.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.KeyCodeToString",
+          "Name": "KeyCodeToString",
+          "DeclaringType": "Editor.Application",
+          "Documentation": {
+            "Summary": "Converts an editor keycode to a string used by the game\nQt::Key -&gt; WindowsVirtualKey -&gt; ButtonCode_t -&gt; string",
+            "Return": "",
+            "Params": {
+              "code": ""
+            }
+          },
+          "DocId": "M:Editor.Application.KeyCodeToString(Editor.KeyCode)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Action`2<Editor.Widget,Editor.MouseEvent>",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.OnWidgetClicked",
+          "Name": "OnWidgetClicked",
+          "Documentation": {
+            "Summary": "Called when any widget is clicked. Can set MouseEvent.Accepted to true to prevent the Widget's OnMouseClick from firing."
+          },
+          "DocId": "P:Editor.Application.OnWidgetClicked"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.DpiScale",
+          "Name": "DpiScale",
+          "DocId": "P:Editor.Application.DpiScale"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.CursorPosition",
+          "Name": "CursorPosition",
+          "Documentation": {
+            "Summary": "Get/Set cursor position."
+          },
+          "DocId": "P:Editor.Application.CursorPosition"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 69
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.UnscaledCursorPosition",
+          "Name": "UnscaledCursorPosition",
+          "Documentation": {
+            "Summary": "The cursor position, not scaled for DPI"
+          },
+          "DocId": "P:Editor.Application.UnscaledCursorPosition"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.CursorDelta",
+          "Name": "CursorDelta",
+          "Documentation": {
+            "Summary": "The cursor delta between this and previous frame."
+          },
+          "DocId": "P:Editor.Application.CursorDelta"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.MouseWheelDelta",
+          "Name": "MouseWheelDelta",
+          "Documentation": {
+            "Summary": "The mouse wheel delta between this and previous frame"
+          },
+          "DocId": "P:Editor.Application.MouseWheelDelta"
+        },
+        {
+          "PropertyType": "Sandbox.KeyboardModifiers",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 110
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.KeyboardModifiers",
+          "Name": "KeyboardModifiers",
+          "Documentation": {
+            "Summary": "Returns which keyboard modified keys are held down right at this point."
+          },
+          "DocId": "P:Editor.Application.KeyboardModifiers"
+        },
+        {
+          "PropertyType": "Sandbox.MouseButtons",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.MouseButtons",
+          "Name": "MouseButtons",
+          "Documentation": {
+            "Summary": "Returns the current state of the mouse buttons."
+          },
+          "DocId": "P:Editor.Application.MouseButtons"
+        },
+        {
+          "PropertyType": "Editor.Widget",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 147
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.FocusWidget",
+          "Name": "FocusWidget",
+          "Documentation": {
+            "Summary": "The <see cref=\"T:Editor.Widget\" /> that has the keyboard input focus, or <c>null</c>if no widget in this application has the focus."
+          },
+          "DocId": "P:Editor.Application.FocusWidget"
+        },
+        {
+          "PropertyType": "Editor.Widget",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 153
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.HoveredWidget",
+          "Name": "HoveredWidget",
+          "Documentation": {
+            "Summary": "The Widget that is currently hovered"
+          },
+          "DocId": "P:Editor.Application.HoveredWidget"
+        },
+        {
+          "PropertyType": "Editor.EditorSystem",
+          "Loc": {
+            "File": "Qt/Application.cs",
+            "Line": 158
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Application.Editor",
+          "Name": "Editor",
+          "Documentation": {
+            "Summary": "Get the current editor if any. Will return null if we're not in the editor, or there is no active editor session."
+          },
+          "DocId": "P:Editor.Application.Editor"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "IsStatic": true,
+      "FullName": "Editor.Application",
+      "Name": "Application",
+      "DocId": "T:Editor.Application"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Menu",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "newPrefix",
+              "Type": "System.String"
+            },
+            {
+              "Name": "screenPosition",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Qt/AutoComplete.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.OnAutoComplete",
+          "Name": "OnAutoComplete",
+          "DeclaringType": "Editor.AutoComplete",
+          "DocId": "M:Editor.AutoComplete.OnAutoComplete(System.String,Vector2)"
+        },
+        {
+          "ReturnType": "Editor.Option",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "action",
+              "Type": "System.Action",
+              "Default": "null"
+            },
+            {
+              "Name": "shortcut",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/AutoComplete.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.AddOption",
+          "Name": "AddOption",
+          "DeclaringType": "Editor.AutoComplete",
+          "Documentation": {
+            "Summary": "Add an option for this autocomplete"
+          },
+          "DocId": "M:Editor.AutoComplete.AddOption(System.String,System.String,System.Action,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Qt/AutoComplete.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.OpenAbove",
+          "Name": "OpenAbove",
+          "DeclaringType": "Editor.AutoComplete",
+          "Documentation": {
+            "Summary": "Open above this position"
+          },
+          "DocId": "M:Editor.AutoComplete.OpenAbove(Vector2)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.KeyEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/AutoComplete.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.OnParentKeyPress",
+          "Name": "OnParentKeyPress",
+          "DeclaringType": "Editor.AutoComplete",
+          "Documentation": {
+            "Summary": "You should call this from the parent when a key is pressed. Will forward\nthe appropriate keys to us and accept the event."
+          },
+          "DocId": "M:Editor.AutoComplete.OnParentKeyPress(Editor.KeyEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/AutoComplete.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.OnParentBlur",
+          "Name": "OnParentBlur",
+          "DeclaringType": "Editor.AutoComplete",
+          "Documentation": {
+            "Summary": "Call this when the widget that spawns this blurs, so we can hide ourself"
+          },
+          "DocId": "M:Editor.AutoComplete.OnParentBlur"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/AutoComplete.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.OnGlobalMousePressed",
+          "Name": "OnGlobalMousePressed",
+          "DeclaringType": "Editor.AutoComplete",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.EventAttribute",
+              "ConstructorArguments": [
+                "qt.mousepressed"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when the mouse is pressed. Will hide this window if we clicked on anything\nexcept ourselves or our parent control."
+          },
+          "DocId": "M:Editor.AutoComplete.OnGlobalMousePressed"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/AutoComplete.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.AutoComplete",
+          "DocId": "M:Editor.AutoComplete.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/AutoComplete.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.HasAutocompleteOptions",
+          "Name": "HasAutocompleteOptions",
+          "DocId": "P:Editor.AutoComplete.HasAutocompleteOptions"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/AutoComplete.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.MinimumLength",
+          "Name": "MinimumLength",
+          "DocId": "P:Editor.AutoComplete.MinimumLength"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Qt/AutoComplete.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.OpenOffset",
+          "Name": "OpenOffset",
+          "DocId": "P:Editor.AutoComplete.OpenOffset"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Action`2<Editor.Menu,System.String>",
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.OnBuildOptions",
+          "Name": "OnBuildOptions",
+          "Documentation": {
+            "Summary": "The text has changed - fill in the options"
+          },
+          "DocId": "F:Editor.AutoComplete.OnBuildOptions"
+        },
+        {
+          "FieldType": "System.Action`1<System.String>",
+          "IsPublic": true,
+          "FullName": "Editor.AutoComplete.OnOptionSelected",
+          "Name": "OnOptionSelected",
+          "Documentation": {
+            "Summary": "You should hook this up to change the text on your control"
+          },
+          "DocId": "F:Editor.AutoComplete.OnOptionSelected"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.AutoComplete",
+      "Name": "AutoComplete",
+      "DocId": "T:Editor.AutoComplete"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Frame",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseScrollWidget.Update",
+          "Name": "Update",
+          "DeclaringType": "Editor.BaseScrollWidget",
+          "DocId": "M:Editor.BaseScrollWidget.Update"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 85
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseScrollWidget.OnScrollChanged",
+          "Name": "OnScrollChanged",
+          "DeclaringType": "Editor.BaseScrollWidget",
+          "Documentation": {
+            "Summary": "Called when the scroll position has changed."
+          },
+          "DocId": "M:Editor.BaseScrollWidget.OnScrollChanged"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.WheelEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 104
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseScrollWidget.OnMouseWheel",
+          "Name": "OnMouseWheel",
+          "DeclaringType": "Editor.BaseScrollWidget",
+          "DocId": "M:Editor.BaseScrollWidget.OnMouseWheel(Editor.WheelEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "e",
+              "Type": "Editor.KeyEvent"
+            }
+          ],
+          "l": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 118
+          },
+          "IsProtected": true,
+          "FullName": "Editor.BaseScrollWidget.OnKeyPress",
+          "Name": "OnKeyPress",
+          "DeclaringType": "Editor.BaseScrollWidget",
+          "DocId": "M:Editor.BaseScrollWidget.OnKeyPress(Editor.KeyEvent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 163
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseScrollWidget.ScrollingFrame",
+          "Name": "ScrollingFrame",
+          "DeclaringType": "Editor.BaseScrollWidget",
+          "Attributes": [
+            {
+              "FullName": "Editor.EditorEvent.FrameAttribute"
+            }
+          ],
+          "DocId": "M:Editor.BaseScrollWidget.ScrollingFrame"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseScrollWidget..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.BaseScrollWidget",
+          "DocId": "M:Editor.BaseScrollWidget.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Editor.ScrollBar",
+          "Loc": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseScrollWidget.VerticalScrollbar",
+          "Name": "VerticalScrollbar",
+          "Documentation": {
+            "Summary": "The vertical scroll bar."
+          },
+          "DocId": "P:Editor.BaseScrollWidget.VerticalScrollbar"
+        },
+        {
+          "PropertyType": "Editor.ScrollBar",
+          "Loc": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseScrollWidget.HorizontalScrollbar",
+          "Name": "HorizontalScrollbar",
+          "Documentation": {
+            "Summary": "The horizontal scroll bar."
+          },
+          "DocId": "P:Editor.BaseScrollWidget.HorizontalScrollbar"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseScrollWidget.SmoothScrolling",
+          "Name": "SmoothScrolling",
+          "DocId": "P:Editor.BaseScrollWidget.SmoothScrolling"
+        },
+        {
+          "PropertyType": "Editor.ScrollbarMode",
+          "Loc": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseScrollWidget.HorizontalScrollbarMode",
+          "Name": "HorizontalScrollbarMode",
+          "Documentation": {
+            "Summary": "<see cref=\"P:Editor.BaseScrollWidget.HorizontalScrollbar\" /> mode."
+          },
+          "DocId": "P:Editor.BaseScrollWidget.HorizontalScrollbarMode"
+        },
+        {
+          "PropertyType": "Editor.ScrollbarMode",
+          "Loc": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseScrollWidget.VerticalScrollbarMode",
+          "Name": "VerticalScrollbarMode",
+          "Documentation": {
+            "Summary": "<see cref=\"P:Editor.BaseScrollWidget.VerticalScrollbar\" /> mode."
+          },
+          "DocId": "P:Editor.BaseScrollWidget.VerticalScrollbarMode"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Qt/BaseScrollWidget.cs",
+            "Line": 94
+          },
+          "IsPublic": true,
+          "FullName": "Editor.BaseScrollWidget.SmoothScrollTarget",
+          "Name": "SmoothScrollTarget",
+          "Documentation": {
+            "Summary": "The smooth scrolling wants to move by this amount"
+          },
+          "DocId": "P:Editor.BaseScrollWidget.SmoothScrollTarget"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.BaseScrollWidget",
+      "Name": "BaseScrollWidget",
+      "DocId": "T:Editor.BaseScrollWidget"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 99
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Button.OnClicked",
+          "Name": "OnClicked",
+          "DeclaringType": "Editor.Button",
+          "DocId": "M:Editor.Button.OnClicked"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 104
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Button.OnPressed",
+          "Name": "OnPressed",
+          "DeclaringType": "Editor.Button",
+          "DocId": "M:Editor.Button.OnPressed"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 109
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Button.OnReleased",
+          "Name": "OnReleased",
+          "DeclaringType": "Editor.Button",
+          "DocId": "M:Editor.Button.OnReleased"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 114
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Button.OnToggled",
+          "Name": "OnToggled",
+          "DeclaringType": "Editor.Button",
+          "DocId": "M:Editor.Button.OnToggled"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pixmap",
+              "Type": "Editor.Pixmap"
+            }
+          ],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 141
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.SetIcon",
+          "Name": "SetIcon",
+          "DeclaringType": "Editor.Button",
+          "Documentation": {
+            "Summary": "Sets an icon for the button via a raw image."
+          },
+          "DocId": "M:Editor.Button.SetIcon(Editor.Pixmap)"
+        },
+        {
+          "ReturnType": "Editor.Pixmap",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 146
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.GetIcon",
+          "Name": "GetIcon",
+          "DeclaringType": "Editor.Button",
+          "DocId": "M:Editor.Button.GetIcon"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 157
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Button.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.Button",
+          "DocId": "M:Editor.Button.OnPaint"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Button",
+          "DocId": "M:Editor.Button.#ctor(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Button",
+          "DocId": "M:Editor.Button.#ctor(System.String,Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Button",
+          "DocId": "M:Editor.Button.#ctor(System.String,System.String,Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Button.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.Text",
+          "Name": "Text",
+          "Documentation": {
+            "Summary": "Text on the button."
+          },
+          "DocId": "P:Editor.Button.Text"
+        },
+        {
+          "PropertyType": "Color",
+          "Loc": {
+            "File": "Qt/Button.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.Tint",
+          "Name": "Tint",
+          "Documentation": {
+            "Summary": "The tint of the button color"
+          },
+          "DocId": "P:Editor.Button.Tint"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Button.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.IsChecked",
+          "Name": "IsChecked",
+          "Documentation": {
+            "Summary": "Whether this button is checked. See <see cref=\"P:Editor.Button.IsToggle\" />."
+          },
+          "DocId": "P:Editor.Button.IsChecked"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Button.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.IsToggle",
+          "Name": "IsToggle",
+          "Documentation": {
+            "Summary": "Whether this button can be toggled on or off. See <see cref=\"P:Editor.Button.IsChecked\" />."
+          },
+          "DocId": "P:Editor.Button.IsToggle"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Button.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.Icon",
+          "Name": "Icon",
+          "Documentation": {
+            "Summary": "Sets an icon for the button via a filepath."
+          },
+          "DocId": "P:Editor.Button.Icon"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Button.Clicked",
+          "Name": "Clicked",
+          "DocId": "F:Editor.Button.Clicked"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Button.Pressed",
+          "Name": "Pressed",
+          "DocId": "F:Editor.Button.Pressed"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Button.Released",
+          "Name": "Released",
+          "DocId": "F:Editor.Button.Released"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Button.Toggled",
+          "Name": "Toggled",
+          "DocId": "F:Editor.Button.Toggled"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Button",
+      "Name": "Button",
+      "Documentation": {
+        "Summary": "A simple button widget."
+      },
+      "DocId": "T:Editor.Button"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Editor.Button",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 232
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.Primary..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Button.Primary",
+          "DocId": "M:Editor.Button.Primary.#ctor(System.String,Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 237
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.Primary..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Button.Primary",
+          "DocId": "M:Editor.Button.Primary.#ctor(System.String,System.String,Editor.Widget)"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Button.Primary",
+      "Name": "Primary",
+      "DeclaringType": "Editor.Button",
+      "Documentation": {
+        "Summary": "A visually distinct button."
+      },
+      "DocId": "T:Editor.Button.Primary"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Editor.Button",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 245
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.Clear..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Button.Clear",
+          "DocId": "M:Editor.Button.Clear.#ctor(System.String,Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 250
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.Clear..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Button.Clear",
+          "DocId": "M:Editor.Button.Clear.#ctor(System.String,System.String,Editor.Widget)"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Button.Clear",
+      "Name": "Clear",
+      "DeclaringType": "Editor.Button",
+      "DocId": "T:Editor.Button.Clear"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Editor.Button",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 258
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.Danger..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Button.Danger",
+          "DocId": "M:Editor.Button.Danger.#ctor(System.String,Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Button.cs",
+            "Line": 263
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Button.Danger..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Button.Danger",
+          "DocId": "M:Editor.Button.Danger.#ctor(System.String,System.String,Editor.Widget)"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Button.Danger",
+      "Name": "Danger",
+      "DeclaringType": "Editor.Button",
+      "DocId": "T:Editor.Button.Danger"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Editor.CheckState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.CheckState.Off",
+          "Name": "Off",
+          "Documentation": {
+            "Summary": "The checkbox is not checked."
+          },
+          "DocId": "F:Editor.CheckState.Off"
+        },
+        {
+          "FieldType": "Editor.CheckState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.CheckState.Partial",
+          "Name": "Partial",
+          "Documentation": {
+            "Summary": "Partial. This is useful in cases when representing multiple objects,\nwith a boolean value where some are set to true, and others to false."
+          },
+          "DocId": "F:Editor.CheckState.Partial"
+        },
+        {
+          "FieldType": "Editor.CheckState",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.CheckState.On",
+          "Name": "On",
+          "Documentation": {
+            "Summary": "The checkbox is checked."
+          },
+          "DocId": "F:Editor.CheckState.On"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.CheckState",
+      "Name": "CheckState",
+      "Documentation": {
+        "Summary": "Check state of a <see cref=\"T:Editor.Checkbox\" />."
+      },
+      "DocId": "T:Editor.CheckState"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 128
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Checkbox.OnClicked",
+          "Name": "OnClicked",
+          "DeclaringType": "Editor.Checkbox",
+          "Documentation": {
+            "Summary": "Called when checkbox was clicked, on release."
+          },
+          "DocId": "M:Editor.Checkbox.OnClicked"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 136
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Checkbox.OnPressed",
+          "Name": "OnPressed",
+          "DeclaringType": "Editor.Checkbox",
+          "Documentation": {
+            "Summary": "Called when checkbox was pressed down."
+          },
+          "DocId": "M:Editor.Checkbox.OnPressed"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 144
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Checkbox.OnReleased",
+          "Name": "OnReleased",
+          "DeclaringType": "Editor.Checkbox",
+          "Documentation": {
+            "Summary": "Called when checkbox was released."
+          },
+          "DocId": "M:Editor.Checkbox.OnReleased"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 152
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Checkbox.OnToggled",
+          "Name": "OnToggled",
+          "DeclaringType": "Editor.Checkbox",
+          "Documentation": {
+            "Summary": "Called when checkbox gets toggled on or off."
+          },
+          "DocId": "M:Editor.Checkbox.OnToggled"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "state",
+              "Type": "Editor.CheckState"
+            }
+          ],
+          "l": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 161
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Checkbox.OnStateChanged",
+          "Name": "OnStateChanged",
+          "DeclaringType": "Editor.Checkbox",
+          "Documentation": {
+            "Summary": "Called when the <see cref=\"P:Editor.Checkbox.State\" /> of the checkbox states."
+          },
+          "DocId": "M:Editor.Checkbox.OnStateChanged(Editor.CheckState)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Checkbox",
+          "DocId": "M:Editor.Checkbox.#ctor(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Checkbox",
+          "DocId": "M:Editor.Checkbox.#ctor(System.String,Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 106
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Checkbox",
+          "DocId": "M:Editor.Checkbox.#ctor(System.String,System.String,Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox.Text",
+          "Name": "Text",
+          "Documentation": {
+            "Summary": "The checkbox label."
+          },
+          "DocId": "P:Editor.Checkbox.Text"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox.Value",
+          "Name": "Value",
+          "Documentation": {
+            "Summary": "Whether the checkbox is checked or not."
+          },
+          "DocId": "P:Editor.Checkbox.Value"
+        },
+        {
+          "PropertyType": "Editor.CheckState",
+          "Loc": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox.State",
+          "Name": "State",
+          "Documentation": {
+            "Summary": "Current state of this checkbox."
+          },
+          "DocId": "P:Editor.Checkbox.State"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox.TriState",
+          "Name": "TriState",
+          "Documentation": {
+            "Summary": "Enable the third state, the half checked half not checked state.\nDisabled by default"
+          },
+          "DocId": "P:Editor.Checkbox.TriState"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/CheckBox.cs",
+            "Line": 169
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox.Icon",
+          "Name": "Icon",
+          "Documentation": {
+            "Summary": "Name of a material icon to be drawn in front of the checkbox label."
+          },
+          "DocId": "P:Editor.Checkbox.Icon"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox.Clicked",
+          "Name": "Clicked",
+          "Documentation": {},
+          "DocId": "F:Editor.Checkbox.Clicked"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox.Pressed",
+          "Name": "Pressed",
+          "Documentation": {},
+          "DocId": "F:Editor.Checkbox.Pressed"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox.Released",
+          "Name": "Released",
+          "Documentation": {},
+          "DocId": "F:Editor.Checkbox.Released"
+        },
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox.Toggled",
+          "Name": "Toggled",
+          "Documentation": {},
+          "DocId": "F:Editor.Checkbox.Toggled"
+        },
+        {
+          "FieldType": "System.Action`1<Editor.CheckState>",
+          "IsPublic": true,
+          "FullName": "Editor.Checkbox.StateChanged",
+          "Name": "StateChanged",
+          "Documentation": {},
+          "DocId": "F:Editor.Checkbox.StateChanged"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Checkbox",
+      "Name": "Checkbox",
+      "Documentation": {
+        "Summary": "A generic checkbox widget."
+      },
+      "DocId": "T:Editor.Checkbox"
+    }
+  ],
+  "_metadata": {
+    "chunk": 249,
+    "items_count": 12
+  }
+}

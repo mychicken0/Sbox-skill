@@ -1,0 +1,2161 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "radians",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 132
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.FromRadians",
+          "Name": "FromRadians",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "vec2.fromrads"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Vector2 From Radians"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry/Vector2"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "architecture"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a point on a circle at given rotation from X axis, counter clockwise."
+          },
+          "DocId": "M:Vector2.FromRadians(System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 138
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.FromDegrees",
+          "Name": "FromDegrees",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "vec2.fromdegs"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Vector2 From Degrees"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry/Vector2"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "architecture"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a point on a circle at given rotation from X axis, counter clockwise."
+          },
+          "DocId": "M:Vector2.FromDegrees(System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 199
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.WithX",
+          "Name": "WithX",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return this vector with given X."
+          },
+          "DocId": "M:Vector2.WithX(System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "y",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 204
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.WithY",
+          "Name": "WithY",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return this vector with given Y."
+          },
+          "DocId": "M:Vector2.WithY(System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "tolerance",
+              "Type": "System.Single",
+              "Default": "0.0001"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 211
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.IsNearlyZero",
+          "Name": "IsNearlyZero",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if value on every axis is less than tolerance away from zero"
+          },
+          "DocId": "M:Vector2.IsNearlyZero(System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "maxLength",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 220
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.ClampLength",
+          "Name": "ClampLength",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector whose length is limited to given maximum"
+          },
+          "DocId": "M:Vector2.ClampLength(System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "minLength",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "maxLength",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 234
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.ClampLength",
+          "Name": "ClampLength",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector whose length is limited between given minimum and maximum"
+          },
+          "DocId": "M:Vector2.ClampLength(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "otherMin",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "otherMax",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 256
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Clamp",
+          "Name": "Clamp",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector each axis of which is clamped to between the 2 given vectors. Basically clamps a point to a square.",
+            "Params": {
+              "otherMin": "The mins vector. Values on each axis should be smaller than those of the maxs vector. See <see cref=\"M:Vector2.Sort(Vector2@,Vector2@)\">Vector2.Sort</see>.",
+              "otherMax": "The maxs vector. Values on each axis should be larger than those of the mins vector. See <see cref=\"M:Vector2.Sort(Vector2@,Vector2@)\">Vector2.Sort</see>."
+            }
+          },
+          "DocId": "M:Vector2.Clamp(Vector2,Vector2)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "max",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 264
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Clamp",
+          "Name": "Clamp",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector each axis of which is clamped to given min and max values.",
+            "Params": {
+              "min": "Minimum value for each axis.",
+              "max": "Maximum value for each axis."
+            }
+          },
+          "DocId": "M:Vector2.Clamp(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "value",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "min",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "max",
+              "In": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 273
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Clamp",
+          "Name": "Clamp",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Restricts a vector between a minimum and maximum value.",
+            "Return": "",
+            "Params": {
+              "value": "The vector to restrict.",
+              "min": "The mins vector. Values on each axis should be smaller than those of the maxs vector. See <see cref=\"M:Vector2.Sort(Vector2@,Vector2@)\">Vector2.Sort</see>.",
+              "max": "The maxs vector. Values on each axis should be larger than those of the mins vector. See <see cref=\"M:Vector2.Sort(Vector2@,Vector2@)\">Vector2.Sort</see>."
+            }
+          },
+          "DocId": "M:Vector2.Clamp(Vector2@,Vector2@,Vector2@)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 280
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.ComponentMin",
+          "Name": "ComponentMin",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector that has the minimum values on each axis between this vector and given vector."
+          },
+          "DocId": "M:Vector2.ComponentMin(Vector2)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 286
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Min",
+          "Name": "Min",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Returns a vector that has the minimum values on each axis between the 2 given vectors."
+          },
+          "DocId": "M:Vector2.Min(Vector2,Vector2)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 293
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.ComponentMax",
+          "Name": "ComponentMax",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector that has the maximum values on each axis between this vector and given vector."
+          },
+          "DocId": "M:Vector2.ComponentMax(Vector2)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 299
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Max",
+          "Name": "Max",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Returns a vector that has the maximum values on each axis between the 2 given vectors."
+          },
+          "DocId": "M:Vector2.Max(Vector2,Vector2)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "frac",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 307
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Lerp",
+          "Name": "Lerp",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "geom.lerp"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "timeline"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Linearly interpolate from point a to point b."
+          },
+          "DocId": "M:Vector2.Lerp(Vector2,Vector2,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "t",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 316
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.LerpTo",
+          "Name": "LerpTo",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Linearly interpolate from this vector to given vector."
+          },
+          "DocId": "M:Vector2.LerpTo(Vector2,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "t",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 324
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Lerp",
+          "Name": "Lerp",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Linearly interpolate from point a to point b with separate fraction for each axis."
+          },
+          "DocId": "M:Vector2.Lerp(Vector2,Vector2,Vector2,System.Boolean)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "t",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 333
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.LerpTo",
+          "Name": "LerpTo",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Linearly interpolate from this vector to given vector with separate fraction for each axis."
+          },
+          "DocId": "M:Vector2.LerpTo(Vector2,Vector2,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 342
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Dot",
+          "Name": "Dot",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "geom.dot"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "fiber_manual_record"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the scalar/dot product between the 2 given vectors."
+          },
+          "DocId": "M:Vector2.Dot(Vector2,Vector2)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 348
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Dot",
+          "Name": "Dot",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the scalar/dot product between this and the given vector."
+          },
+          "DocId": "M:Vector2.Dot(Vector2@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 354
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.DistanceBetween",
+          "Name": "DistanceBetween",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Returns distance between the 2 given vectors."
+          },
+          "DocId": "M:Vector2.DistanceBetween(Vector2,Vector2)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 360
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Distance",
+          "Name": "Distance",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "geom.dist"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Distance"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "straighten"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns distance between the 2 given vectors."
+          },
+          "DocId": "M:Vector2.Distance(Vector2@,Vector2@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 365
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Distance",
+          "Name": "Distance",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns distance between this and given vectors."
+          },
+          "DocId": "M:Vector2.Distance(Vector2)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 373
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.DistanceBetweenSquared",
+          "Name": "DistanceBetweenSquared",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Returns squared distance between the 2 given vectors. This is faster than <see cref=\"M:Vector2.DistanceBetween(Vector2,Vector2)\">DistanceBetween</see>,\nand can be used for things like comparing distances, as long as only squared values are used."
+          },
+          "DocId": "M:Vector2.DistanceBetweenSquared(Vector2,Vector2)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 380
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.DistanceSquared",
+          "Name": "DistanceSquared",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Returns squared distance between the 2 given vectors. This is faster than <see cref=\"M:Vector2.DistanceBetween(Vector2,Vector2)\">DistanceBetween</see>,\nand can be used for things like comparing distances, as long as only squared values are used."
+          },
+          "DocId": "M:Vector2.DistanceSquared(Vector2@,Vector2@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 386
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.DistanceSquared",
+          "Name": "DistanceSquared",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns squared distance between the 2 given vectors. This is faster than <see cref=\"M:Vector2.Distance(Vector2)\">Distance</see>,\nand can be used for things like comparing distances, as long as only squared values are used."
+          },
+          "DocId": "M:Vector2.DistanceSquared(Vector2)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "from",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "to",
+              "In": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 393
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Direction",
+          "Name": "Direction",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Calculates the normalized direction vector from one point to another in 2D space."
+          },
+          "DocId": "M:Vector2.Direction(Vector2@,Vector2@)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "direction",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "strength",
+              "Type": "System.Single",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 406
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.SubtractDirection",
+          "Name": "SubtractDirection",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Given a vector like 1,1,1 and direction 1,0,0, will return 0,1,1.\nThis is useful for velocity collision type events, where you want to\ncancel out velocity based on a normal.\nFor this to work properly, direction should be a normal, but you can scale\nhow much you want to subtract by scaling the direction. Ie, passing in a direction\nwith a length of 0.5 will remove half the direction."
+          },
+          "DocId": "M:Vector2.SubtractDirection(Vector2@,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "length",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "amount",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 415
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Approach",
+          "Name": "Approach",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a new vector whos length is closer to given target length by given amount."
+          },
+          "DocId": "M:Vector2.Approach(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 423
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Abs",
+          "Name": "Abs",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a new vector with all values positive. -5 becomes 5, etc."
+          },
+          "DocId": "M:Vector2.Abs"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "value",
+              "In": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 431
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Abs",
+          "Name": "Abs",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Returns a new vector with all values positive. -5 becomes 5, etc."
+          },
+          "DocId": "M:Vector2.Abs(Vector2@)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "direction",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "normal",
+              "In": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 439
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Reflect",
+          "Name": "Reflect",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Returns a reflected vector based on incoming direction and plane normal. Like a ray reflecting off of a mirror."
+          },
+          "DocId": "M:Vector2.Reflect(Vector2@,Vector2@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Ref": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "max",
+              "Ref": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 448
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Sort",
+          "Name": "Sort",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Sort these two vectors into min and max. This doesn't just swap the vectors, it sorts each component.\nSo that min will come out containing the minimum x and y values."
+          },
+          "DocId": "M:Vector2.Sort(Vector2@,Vector2@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Single",
+              "Default": "0.0001"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 463
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.AlmostEqual",
+          "Name": "AlmostEqual",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if we're nearly equal to the passed vector.",
+            "Return": "True if nearly equal",
+            "Params": {
+              "v": "The value to compare with",
+              "delta": "The max difference between component values"
+            }
+          },
+          "DocId": "M:Vector2.AlmostEqual(Vector2,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "source",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "sourceTangent",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "targetTangent",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "t",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 480
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.CubicBezier",
+          "Name": "CubicBezier",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Calculates position of a point on a cubic bezier curve at given fraction.",
+            "Return": "The point on the curve",
+            "Params": {
+              "source": "Point A of the curve.",
+              "target": "Point B of the curve.",
+              "sourceTangent": "Tangent for the Point A.",
+              "targetTangent": "Tangent for the Point B.",
+              "t": "How far along the path to get a point on. Range is 0 to 1, inclusive."
+            }
+          },
+          "DocId": "M:Vector2.CubicBezier(Vector2@,Vector2@,Vector2@,Vector2@,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "gridSize",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "sx",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "sy",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 494
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.SnapToGrid",
+          "Name": "SnapToGrid",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Snap to grid along all 3 axes."
+          },
+          "DocId": "M:Vector2.SnapToGrid(System.Single,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "v1",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "v2",
+              "In": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 502
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.GetAngle",
+          "Name": "GetAngle",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Returns the distance between two direction vectors in degrees."
+          },
+          "DocId": "M:Vector2.GetAngle(Vector2@,Vector2@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "other",
+              "In": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 510
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Angle",
+          "Name": "Angle",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the distance between this vector and another in degrees."
+          },
+          "DocId": "M:Vector2.Angle(Vector2@)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "toAdd",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "maxLength",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 519
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.AddClamped",
+          "Name": "AddClamped",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Try to add to this vector. If we're already over max then don't add.\nIf we're over max when we add, clamp in that direction so we're not."
+          },
+          "DocId": "M:Vector2.AddClamped(Vector2@,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "center",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "angleDegrees",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 544
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.RotateAround",
+          "Name": "RotateAround",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Rotate this vector around given point by given angle in degrees and\nreturn the result as a new vector.",
+            "Return": "",
+            "Params": {
+              "center": "",
+              "angleDegrees": ""
+            }
+          },
+          "DocId": "M:Vector2.RotateAround(Vector2@,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 623
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Parse",
+          "Name": "Parse",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Given a string, try to convert this into a Vector2. Example formatting is \"x,y\", \"[x,y]\", \"x y\", etc."
+          },
+          "DocId": "M:Vector2.Parse(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            },
+            {
+              "Name": "result",
+              "Out": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 632
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.TryParse",
+          "Name": "TryParse",
+          "DeclaringType": "Vector2",
+          "Documentation": {},
+          "DocId": "M:Vector2.TryParse(System.String,Vector2@)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "IsOverride": true,
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            },
+            {
+              "Name": "provider",
+              "Type": "System.IFormatProvider"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 638
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Parse",
+          "Name": "Parse",
+          "DeclaringType": "Vector2",
+          "Documentation": {},
+          "DocId": "M:Vector2.Parse(System.String,System.IFormatProvider)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsOverride": true,
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            },
+            {
+              "Name": "provider",
+              "Type": "System.IFormatProvider"
+            },
+            {
+              "Name": "result",
+              "Out": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 644
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.TryParse",
+          "Name": "TryParse",
+          "DeclaringType": "Vector2",
+          "Documentation": {},
+          "DocId": "M:Vector2.TryParse(System.String,System.IFormatProvider,Vector2@)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "accelerate",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 671
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.WithAcceleration",
+          "Name": "WithAcceleration",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Move to the target vector, by amount acceleration"
+          },
+          "DocId": "M:Vector2.WithAcceleration(Vector2,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "frictionAmount",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "stopSpeed",
+              "Type": "System.Single",
+              "Default": "140"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 699
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.WithFriction",
+          "Name": "WithFriction",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "DocId": "M:Vector2.WithFriction(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "current",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "velocity",
+              "Ref": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "smoothTime",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "deltaTime",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.Static.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.SmoothDamp",
+          "Name": "SmoothDamp",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Smoothly move towards the target vector"
+          },
+          "DocId": "M:Vector2.SmoothDamp(Vector2@,Vector2@,Vector2@,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "current",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "velocity",
+              "Ref": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "deltaTime",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "frequency",
+              "Type": "System.Single",
+              "Default": "2"
+            },
+            {
+              "Name": "damping",
+              "Type": "System.Single",
+              "Default": "0.5"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.Static.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.SpringDamp",
+          "Name": "SpringDamp",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Springly move towards the target vector"
+          },
+          "DocId": "M:Vector2.SpringDamp(Vector2@,Vector2@,Vector2@,System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "current",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "velocity",
+              "Ref": true,
+              "Type": "Vector2"
+            },
+            {
+              "Name": "smoothTime",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "deltaTime",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "frequency",
+              "Type": "System.Single",
+              "Default": "2"
+            },
+            {
+              "Name": "damping",
+              "Type": "System.Single",
+              "Default": "0.5"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.Static.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.SpringDamp",
+          "Name": "SpringDamp",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use the overload without the 'smoothTime' parameter instead, as it is no longer needed."
+              ]
+            }
+          ],
+          "DocId": "M:Vector2.SpringDamp(Vector2@,Vector2@,Vector2@,System.Single,System.Single,System.Single,System.Single)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "y",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 49
+          },
+          "IsPublic": true,
+          "FullName": "Vector2..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector2",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "vec2.new"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Vector2"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry/Vector2"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Initializes a 2D vector with given components.",
+            "Params": {
+              "x": "The X component.",
+              "y": "The Y component."
+            }
+          },
+          "DocId": "M:Vector2.#ctor(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "other",
+              "In": true,
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Vector2..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Initializes a Vector2 from a given Vector2, i.e. creating a copy."
+          },
+          "DocId": "M:Vector2.#ctor(Vector2@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "all",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Vector2..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Initializes the 2D vector with all components set to the given value."
+          },
+          "DocId": "M:Vector2.#ctor(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Vector2..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Initializes the 2D vector with components from given 3D Vector, discarding the Z component."
+          },
+          "DocId": "M:Vector2.#ctor(Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 81
+          },
+          "IsPublic": true,
+          "FullName": "Vector2..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector2",
+          "Documentation": {
+            "Summary": "Initializes the 2D vector with components from given 4D vector, discarding the Z and W components."
+          },
+          "DocId": "M:Vector2.#ctor(Vector4)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.Numerics.Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector2.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "FullName": "Vector2..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector2",
+          "DocId": "M:Vector2.#ctor(System.Numerics.Vector2)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.x",
+          "Name": "x",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "X component of this vector."
+          },
+          "DocId": "P:Vector2.x"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.y",
+          "Name": "y",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Y component of this vector."
+          },
+          "DocId": "P:Vector2.y"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 95
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.One",
+          "Name": "One",
+          "Documentation": {
+            "Summary": "Returns a 2D vector with every component set to 1"
+          },
+          "DocId": "P:Vector2.One"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Zero",
+          "Name": "Zero",
+          "Documentation": {
+            "Summary": "Returns a 2D vector with every component set to 0"
+          },
+          "DocId": "P:Vector2.Zero"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Up",
+          "Name": "Up",
+          "Documentation": {
+            "Summary": "Returns a 2D vector with Y set to -1. This typically represents up in 2D space."
+          },
+          "DocId": "P:Vector2.Up"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 110
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Down",
+          "Name": "Down",
+          "Documentation": {
+            "Summary": "Returns a 2D vector with Y set to 1. This typically represents down in 2D space."
+          },
+          "DocId": "P:Vector2.Down"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 115
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Left",
+          "Name": "Left",
+          "Documentation": {
+            "Summary": "Returns a 2D vector with X set to -1. This typically represents the left hand direction in 2D space."
+          },
+          "DocId": "P:Vector2.Left"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 120
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Right",
+          "Name": "Right",
+          "Documentation": {
+            "Summary": "Returns a 2D vector with X set to 1. This typically represents the right hand direction in 2D space."
+          },
+          "DocId": "P:Vector2.Right"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector2.Random",
+          "Name": "Random",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "vec2.random"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Random Vector2"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry/Vector2"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "casino"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Uniformly samples a 2D position from all points with distance at most 1 from the origin."
+          },
+          "DocId": "P:Vector2.Random"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 145
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Normal",
+          "Name": "Normal",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return the same vector but with a length of one"
+          },
+          "DocId": "P:Vector2.Normal"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 151
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Length",
+          "Name": "Length",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the magnitude of the vector"
+          },
+          "DocId": "P:Vector2.Length"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 157
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.LengthSquared",
+          "Name": "LengthSquared",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "This is faster than Length, so is better to use in certain circumstances"
+          },
+          "DocId": "P:Vector2.LengthSquared"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 164
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Inverse",
+          "Name": "Inverse",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the inverse of this vector, which is useful for scaling vectors"
+          },
+          "DocId": "P:Vector2.Inverse"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 170
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Degrees",
+          "Name": "Degrees",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Return the angle of this vector in degrees, always between 0 and 360"
+          },
+          "DocId": "P:Vector2.Degrees"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 176
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Perpendicular",
+          "Name": "Perpendicular",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector that runs perpendicular to this one"
+          },
+          "DocId": "P:Vector2.Perpendicular"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 182
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.IsNaN",
+          "Name": "IsNaN",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if x, y, or z are NaN"
+          },
+          "DocId": "P:Vector2.IsNaN"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 188
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.IsInfinity",
+          "Name": "IsInfinity",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if x, y, or z are infinity"
+          },
+          "DocId": "P:Vector2.IsInfinity"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 194
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.IsNearZeroLength",
+          "Name": "IsNearZeroLength",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if the squared length is less than 1e-8 (which is really near zero)"
+          },
+          "DocId": "P:Vector2.IsNearZeroLength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector2.cs",
+            "Line": 560
+          },
+          "IsPublic": true,
+          "FullName": "Vector2.Item",
+          "Name": "Item",
+          "DocId": "P:Vector2.Item"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Vector2",
+      "Name": "Vector2",
+      "Attributes": [
+        {
+          "FullName": "System.Reflection.DefaultMemberAttribute",
+          "ConstructorArguments": [
+            "Item"
+          ]
+        },
+        {
+          "FullName": "System.Text.Json.Serialization.JsonConverterAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Internal.JsonConvert.Vector2Converter"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A 2-dimensional vector. Typically represents a position, size, or direction in 2D space."
+      },
+      "DocId": "T:Vector2"
+    }
+  ],
+  "_metadata": {
+    "chunk": 7,
+    "items_count": 1
+  }
+}

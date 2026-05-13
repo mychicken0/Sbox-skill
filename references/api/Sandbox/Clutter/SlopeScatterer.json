@@ -1,0 +1,1239 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Clutter",
+      "BaseType": "Sandbox.Clutter.Scatterer",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.List`1<Sandbox.Clutter.ClutterInstance>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "bounds",
+              "Type": "BBox"
+            },
+            {
+              "Name": "clutter",
+              "Type": "Sandbox.Clutter.ClutterDefinition"
+            },
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 79
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Clutter.SlopeScatterer.Generate",
+          "Name": "Generate",
+          "DeclaringType": "Sandbox.Clutter.SlopeScatterer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "77"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Clutter.SlopeScatterer.Generate(BBox,Sandbox.Clutter.ClutterDefinition,Sandbox.Scene)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.SlopeScatterer..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Clutter.SlopeScatterer",
+          "DocId": "M:Sandbox.Clutter.SlopeScatterer.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "RangedFloat",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.SlopeScatterer.Scale",
+          "Name": "Scale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Scale range for spawned objects."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "44"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Scale range for spawned objects."
+          },
+          "DocId": "P:Sandbox.Clutter.SlopeScatterer.Scale"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.SlopeScatterer.Density",
+          "Name": "Density",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0.001",
+                "10"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Points per square meter (density)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Points per square meter (density)."
+          },
+          "DocId": "P:Sandbox.Clutter.SlopeScatterer.Density"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.SlopeScatterer.HeightOffset",
+          "Name": "HeightOffset",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Placement"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Offset from ground surface."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Offset from ground surface."
+          },
+          "DocId": "P:Sandbox.Clutter.SlopeScatterer.HeightOffset"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.SlopeScatterer.AlignToNormal",
+          "Name": "AlignToNormal",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Placement"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Align objects to surface normal."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "62"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Align objects to surface normal."
+          },
+          "DocId": "P:Sandbox.Clutter.SlopeScatterer.AlignToNormal"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Clutter.SlopeMapping>",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.SlopeScatterer.Mappings",
+          "Name": "Mappings",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Slope Mappings"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Define which entries spawn at which slope angles."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "68"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Define which entries spawn at which slope angles."
+          },
+          "DocId": "P:Sandbox.Clutter.SlopeScatterer.Mappings"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 76
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.SlopeScatterer.UseFallback",
+          "Name": "UseFallback",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Use random clutter entry if no slope mapping matches."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "74"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Use random clutter entry if no slope mapping matches."
+          },
+          "DocId": "P:Sandbox.Clutter.SlopeScatterer.UseFallback"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Clutter.SlopeScatterer",
+      "Name": "SlopeScatterer",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Scatterer that filters and selects assets based on the slope angle of the surface. Useful for placing different vegetation or rocks on flat vs steep terrain."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+            "38"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Scatterer that filters and selects assets based on the slope angle of the surface.\nUseful for placing different vegetation or rocks on flat vs steep terrain."
+      },
+      "DocId": "T:Sandbox.Clutter.SlopeScatterer"
+    },
+    {
+      "Namespace": "Sandbox.Clutter",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 195
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialMapping..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Clutter.TerrainMaterialMapping",
+          "DocId": "M:Sandbox.Clutter.TerrainMaterialMapping.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.TerrainMaterial",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 188
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialMapping.Material",
+          "Name": "Material",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The terrain material to match."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "186"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The terrain material to match."
+          },
+          "DocId": "P:Sandbox.Clutter.TerrainMaterialMapping.Material"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<System.Int32>",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 195
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialMapping.EntryIndices",
+          "Name": "EntryIndices",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Entry Indices"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Indices of clutter entries that can spawn on this material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "192"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Indices of clutter entries that can spawn on this material."
+          },
+          "DocId": "P:Sandbox.Clutter.TerrainMaterialMapping.EntryIndices"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Clutter.TerrainMaterialMapping",
+      "Name": "TerrainMaterialMapping",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Maps a terrain material to a list of clutter entries that can spawn on it."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+            "180"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Maps a terrain material to a list of clutter entries that can spawn on it."
+      },
+      "DocId": "T:Sandbox.Clutter.TerrainMaterialMapping"
+    },
+    {
+      "Namespace": "Sandbox.Clutter",
+      "BaseType": "Sandbox.Clutter.Scatterer",
+      "Methods": [
+        {
+          "ReturnType": "System.Collections.Generic.List`1<Sandbox.Clutter.ClutterInstance>",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "bounds",
+              "Type": "BBox"
+            },
+            {
+              "Name": "clutter",
+              "Type": "Sandbox.Clutter.ClutterDefinition"
+            },
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 266
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialScatterer.Generate",
+          "Name": "Generate",
+          "DeclaringType": "Sandbox.Clutter.TerrainMaterialScatterer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "264"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Clutter.TerrainMaterialScatterer.Generate(BBox,Sandbox.Clutter.ClutterDefinition,Sandbox.Scene)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 218
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialScatterer..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Clutter.TerrainMaterialScatterer",
+          "DocId": "M:Sandbox.Clutter.TerrainMaterialScatterer.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "RangedFloat",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 218
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialScatterer.Scale",
+          "Name": "Scale",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Scale range for spawned objects."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "216"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Scale range for spawned objects."
+          },
+          "DocId": "P:Sandbox.Clutter.TerrainMaterialScatterer.Scale"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 224
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialScatterer.Density",
+          "Name": "Density",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0.001",
+                "10"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Points per square meter (density)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "222"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Points per square meter (density)."
+          },
+          "DocId": "P:Sandbox.Clutter.TerrainMaterialScatterer.Density"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 230
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialScatterer.HeightOffset",
+          "Name": "HeightOffset",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Placement"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Offset from ground surface."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "228"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Offset from ground surface."
+          },
+          "DocId": "P:Sandbox.Clutter.TerrainMaterialScatterer.HeightOffset"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 236
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialScatterer.AlignToNormal",
+          "Name": "AlignToNormal",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Placement"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Align objects to surface normal."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "234"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Align objects to surface normal."
+          },
+          "DocId": "P:Sandbox.Clutter.TerrainMaterialScatterer.AlignToNormal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 242
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialScatterer.RandomYaw",
+          "Name": "RandomYaw",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Placement"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Apply random rotation around vertical axis."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "240"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Apply random rotation around vertical axis."
+          },
+          "DocId": "P:Sandbox.Clutter.TerrainMaterialScatterer.RandomYaw"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.List`1<Sandbox.Clutter.TerrainMaterialMapping>",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 248
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialScatterer.Mappings",
+          "Name": "Mappings",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Material Mappings"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Define which entries spawn on which terrain materials."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "246"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Define which entries spawn on which terrain materials."
+          },
+          "DocId": "P:Sandbox.Clutter.TerrainMaterialScatterer.Mappings"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/Clutter/TerrainScatterer.cs",
+            "Line": 254
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.TerrainMaterialScatterer.UseFallback",
+          "Name": "UseFallback",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Fallback"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Use random clutter entry if no material mapping matches or no terrain is present."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+                "252"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Use random clutter entry if no material mapping matches or no terrain is present."
+          },
+          "DocId": "P:Sandbox.Clutter.TerrainMaterialScatterer.UseFallback"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Clutter.TerrainMaterialScatterer",
+      "Name": "TerrainMaterialScatterer",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Scatterer that selects assets based on the terrain material at the hit position. Useful for placing different vegetation on different terrain textures (grass, dirt, rock, etc)."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Clutter\\TerrainScatterer.cs",
+            "210"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Scatterer that selects assets based on the terrain material at the hit position.\nUseful for placing different vegetation on different terrain textures (grass, dirt, rock, etc)."
+      },
+      "DocId": "T:Sandbox.Clutter.TerrainMaterialScatterer"
+    },
+    {
+      "Namespace": "Sandbox.Clutter",
+      "BaseType": "Sandbox.GameObjectSystem",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "component",
+              "Type": "Sandbox.Clutter.ClutterComponent"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClearComponent",
+          "Name": "ClearComponent",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears all tiles for a specific component."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.cs",
+                "144"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears all tiles for a specific component."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClearComponent(Sandbox.Clutter.ClutterComponent)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "component",
+              "Type": "Sandbox.Clutter.ClutterComponent"
+            },
+            {
+              "Name": "worldPosition",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.cs",
+            "Line": 161
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.InvalidateTileAt",
+          "Name": "InvalidateTileAt",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Invalidates the tile at the given world position for a component, causing it to regenerate."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.cs",
+                "158"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Invalidates the tile at the given world position for a component, causing it to regenerate."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.InvalidateTileAt(Sandbox.Clutter.ClutterComponent,Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "component",
+              "Type": "Sandbox.Clutter.ClutterComponent"
+            },
+            {
+              "Name": "bounds",
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.cs",
+            "Line": 172
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.InvalidateTilesInBounds",
+          "Name": "InvalidateTilesInBounds",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Invalidates all tiles within the given bounds for a component, causing them to regenerate."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.cs",
+                "169"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Invalidates all tiles within the given bounds for a component, causing them to regenerate."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.InvalidateTilesInBounds(Sandbox.Clutter.ClutterComponent,BBox)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "bounds",
+              "Type": "BBox"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.cs",
+            "Line": 184
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.InvalidateTilesInBounds",
+          "Name": "InvalidateTilesInBounds",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Invalidates all tiles within the given bounds for ALL infinite clutter components. Useful for terrain painting where you want to refresh all clutter layers."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.cs",
+                "181"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Invalidates all tiles within the given bounds for ALL infinite clutter components.\nUseful for terrain painting where you want to refresh all clutter layers."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.InvalidateTilesInBounds(BBox)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "entry",
+              "Type": "Sandbox.Clutter.ClutterEntry"
+            },
+            {
+              "Name": "pos",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "rot",
+              "Type": "Rotation"
+            },
+            {
+              "Name": "scale",
+              "Type": "System.Single",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.cs",
+            "Line": 315
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.Paint",
+          "Name": "Paint",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Paint instance. Rebuilds on next frame update. Models are batched, Prefabs become GameObjects."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.cs",
+                "312"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Paint instance. Rebuilds on next frame update.\nModels are batched, Prefabs become GameObjects."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.Paint(Sandbox.Clutter.ClutterEntry,Vector3,Rotation,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pos",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "radius",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.Erase",
+          "Name": "Erase",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Erase instances. Rebuilds on next frame update. Erases both model batches and prefab GameObjects."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.cs",
+                "334"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Erase instances. Rebuilds on next frame update.\nErases both model batches and prefab GameObjects."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.Erase(Vector3,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.cs",
+            "Line": 359
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.ClearAllPainted",
+          "Name": "ClearAllPainted",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears all painted clutter (both model instances from storage and prefab GameObjects). Does not affect clutter owned by ClutterComponent volumes."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.cs",
+                "357"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears all painted clutter (both model instances from storage and prefab GameObjects).\nDoes not affect clutter owned by ClutterComponent volumes."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.ClearAllPainted"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.cs",
+            "Line": 376
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.Flush",
+          "Name": "Flush",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Flush painted changes and rebuild visual batches immediately."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.cs",
+                "374"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Flush painted changes and rebuild visual batches immediately."
+          },
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.Flush"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scene",
+              "Type": "Sandbox.Scene"
+            }
+          ],
+          "l": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Clutter.ClutterGridSystem",
+          "DocId": "M:Sandbox.Clutter.ClutterGridSystem.#ctor(Sandbox.Scene)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Clutter.ClutterGridSystem.ClutterStorage",
+          "Loc": {
+            "File": "Scene/GameObjectSystems/ClutterGridSystem.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Clutter.ClutterGridSystem.Storage",
+          "Name": "Storage",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Storage for painted clutter model instances. Serialized with the scene - this is the source of truth for painted clutter."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\GameObjectSystems\\ClutterGridSystem.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Storage for painted clutter model instances.\nSerialized with the scene - this is the source of truth for painted clutter."
+          },
+          "DocId": "P:Sandbox.Clutter.ClutterGridSystem.Storage"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Clutter.ClutterGridSystem",
+      "Name": "ClutterGridSystem",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Game object system that manages clutter generation. Handles infinite streaming layers and executes generation jobs."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\ClutterGridSystem.cs",
+            "7"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Game object system that manages clutter generation. Handles infinite streaming layers and executes generation jobs."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\GameObjectSystems\\ClutterGridSystem.Storage.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Game object system that manages clutter generation.\nHandles infinite streaming layers and executes generation jobs."
+      },
+      "DocId": "T:Sandbox.Clutter.ClutterGridSystem"
+    }
+  ],
+  "_metadata": {
+    "chunk": 214,
+    "items_count": 4
+  }
+}

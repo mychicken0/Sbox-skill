@@ -1,0 +1,1333 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "position",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "forward",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "up",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateWorld",
+          "Name": "CreateWorld",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateWorld(Vector3,Vector3,Vector3)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "rot",
+              "Type": "Rotation"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateRotation",
+          "Name": "CreateRotation",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateRotation(Rotation)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "angles",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateRotation",
+          "Name": "CreateRotation",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateRotation(Vector3)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateRotationX",
+          "Name": "CreateRotationX",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateRotationX(System.Single)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "center",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateRotationX",
+          "Name": "CreateRotationX",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateRotationX(System.Single,Vector3)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateRotationY",
+          "Name": "CreateRotationY",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateRotationY(System.Single)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "center",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 19
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateRotationY",
+          "Name": "CreateRotationY",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateRotationY(System.Single,Vector3)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateRotationZ",
+          "Name": "CreateRotationZ",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateRotationZ(System.Single)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "center",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateRotationZ",
+          "Name": "CreateRotationZ",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateRotationZ(System.Single,Vector3)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "vec",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateTranslation",
+          "Name": "CreateTranslation",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateTranslation(Vector3)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "scales",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateScale",
+          "Name": "CreateScale",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateScale(Vector3)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "scales",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "centerPoint",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateScale",
+          "Name": "CreateScale",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateScale(Vector3,Vector3)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "skew",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateSkew",
+          "Name": "CreateSkew",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateSkew(Vector2)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateSkewX",
+          "Name": "CreateSkewX",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateSkewX(System.Single)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "degrees",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateSkewY",
+          "Name": "CreateSkewY",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateSkewY(System.Single)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "matrix",
+              "Type": "System.Single[]"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateMatrix3D",
+          "Name": "CreateMatrix3D",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateMatrix3D(System.Single[])"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "ma",
+              "Type": "Matrix"
+            },
+            {
+              "Name": "mb",
+              "Type": "Matrix"
+            },
+            {
+              "Name": "frac",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.Lerp",
+          "Name": "Lerp",
+          "DeclaringType": "Matrix",
+          "Documentation": {
+            "Summary": "Performs linear interpolation from one matrix to another."
+          },
+          "DocId": "M:Matrix.Lerp(Matrix,Matrix,System.Single)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "ma",
+              "Type": "Matrix"
+            },
+            {
+              "Name": "mb",
+              "Type": "Matrix"
+            },
+            {
+              "Name": "frac",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 67
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.Slerp",
+          "Name": "Slerp",
+          "DeclaringType": "Matrix",
+          "Documentation": {
+            "Summary": "Performs spherical interpolation from one matrix to another."
+          },
+          "DocId": "M:Matrix.Slerp(Matrix,Matrix,System.Single)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 94
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.Transpose",
+          "Name": "Transpose",
+          "DeclaringType": "Matrix",
+          "Documentation": {
+            "Summary": "Returns transposed version of this matrix, meaning columns in this matrix become rows in the returned matrix and rows in this matrix become columns in the returned one.",
+            "Return": ""
+          },
+          "DocId": "M:Matrix.Transpose"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.Transform",
+          "Name": "Transform",
+          "DeclaringType": "Matrix",
+          "Documentation": {
+            "Summary": "Transforms a vector by a 4x4 matrix"
+          },
+          "DocId": "M:Matrix.Transform(Vector4)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 110
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.Transform",
+          "Name": "Transform",
+          "DeclaringType": "Matrix",
+          "Documentation": {
+            "Summary": "Transforms a vector by a 4x4 matrix"
+          },
+          "DocId": "M:Matrix.Transform(Vector3)"
+        },
+        {
+          "ReturnType": "Vector2",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.Transform",
+          "Name": "Transform",
+          "DeclaringType": "Matrix",
+          "Documentation": {
+            "Summary": "Transforms a vector by a 4x4 matrix"
+          },
+          "DocId": "M:Matrix.Transform(Vector2)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.TransformNormal",
+          "Name": "TransformNormal",
+          "DeclaringType": "Matrix",
+          "Documentation": {
+            "Summary": "Transforms a normal vector by a specified 4x4 matrix"
+          },
+          "DocId": "M:Matrix.TransformNormal(Vector3)"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "zNear",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "zFar",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "fovX",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "aspectRatio",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "clipSpace",
+              "Type": "System.Nullable`1<Vector4>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 223
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateProjection",
+          "Name": "CreateProjection",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.CreateProjection(System.Single,System.Single,System.Single,System.Single,System.Nullable`1{Vector4})"
+        },
+        {
+          "ReturnType": "Matrix",
+          "Parameters": [
+            {
+              "Name": "cameraTransform",
+              "In": true,
+              "Type": "Transform"
+            },
+            {
+              "Name": "clipPlane",
+              "In": true,
+              "Type": "Sandbox.Plane"
+            },
+            {
+              "Name": "projectionMatrix",
+              "In": true,
+              "Type": "Matrix"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 268
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.CreateObliqueProjection",
+          "Name": "CreateObliqueProjection",
+          "DeclaringType": "Matrix",
+          "Documentation": {
+            "Summary": "Create a projection matrix. The matrix will be in the correct format for the engine, and will also be reverse z."
+          },
+          "DocId": "M:Matrix.CreateObliqueProjection(Transform@,Sandbox.Plane@,Matrix@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "m11",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m12",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m13",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m14",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m21",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m22",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m23",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m24",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m31",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m32",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m33",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m34",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m41",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m42",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m43",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "m44",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Matrix.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Matrix..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Matrix",
+          "DocId": "M:Matrix.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Matrix",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Matrix.Identity",
+          "Name": "Identity",
+          "Documentation": {
+            "Summary": "Returns the multiplicative identity matrix."
+          },
+          "DocId": "P:Matrix.Identity"
+        },
+        {
+          "PropertyType": "Matrix",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.Inverted",
+          "Name": "Inverted",
+          "Documentation": {
+            "Summary": "Returns inverse of this matrix."
+          },
+          "DocId": "P:Matrix.Inverted"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 179
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M11",
+          "Name": "M11",
+          "DocId": "P:Matrix.M11"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 180
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M12",
+          "Name": "M12",
+          "DocId": "P:Matrix.M12"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 181
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M13",
+          "Name": "M13",
+          "DocId": "P:Matrix.M13"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 182
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M14",
+          "Name": "M14",
+          "DocId": "P:Matrix.M14"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 183
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M21",
+          "Name": "M21",
+          "DocId": "P:Matrix.M21"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 184
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M22",
+          "Name": "M22",
+          "DocId": "P:Matrix.M22"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 185
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M23",
+          "Name": "M23",
+          "DocId": "P:Matrix.M23"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 186
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M24",
+          "Name": "M24",
+          "DocId": "P:Matrix.M24"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 187
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M31",
+          "Name": "M31",
+          "DocId": "P:Matrix.M31"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 188
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M32",
+          "Name": "M32",
+          "DocId": "P:Matrix.M32"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 189
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M33",
+          "Name": "M33",
+          "DocId": "P:Matrix.M33"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 190
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M34",
+          "Name": "M34",
+          "DocId": "P:Matrix.M34"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 191
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M41",
+          "Name": "M41",
+          "DocId": "P:Matrix.M41"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 192
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M42",
+          "Name": "M42",
+          "DocId": "P:Matrix.M42"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 193
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M43",
+          "Name": "M43",
+          "DocId": "P:Matrix.M43"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Matrix.cs",
+            "Line": 194
+          },
+          "IsPublic": true,
+          "FullName": "Matrix.M44",
+          "Name": "M44",
+          "DocId": "P:Matrix.M44"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Matrix",
+      "Name": "Matrix",
+      "Documentation": {
+        "Summary": "Represents a 4x4 matrix."
+      },
+      "DocId": "T:Matrix"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [],
+          "l": {
+            "File": "Math/RangedFloat.cs",
+            "Line": 128
+          },
+          "IsPublic": true,
+          "FullName": "RangedFloat.GetValue",
+          "Name": "GetValue",
+          "DeclaringType": "RangedFloat",
+          "Documentation": {
+            "Summary": "Returns the final value of this ranged float, randomizing between min and max values."
+          },
+          "DocId": "M:RangedFloat.GetValue"
+        },
+        {
+          "ReturnType": "RangedFloat",
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Math/RangedFloat.cs",
+            "Line": 151
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "RangedFloat.Parse",
+          "Name": "Parse",
+          "DeclaringType": "RangedFloat",
+          "Documentation": {
+            "Summary": "Parse a ranged float from a string. Format is <c>\"min[ max]\"</c>."
+          },
+          "DocId": "M:RangedFloat.Parse(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Out": true,
+              "Type": "System.Single"
+            },
+            {
+              "Name": "max",
+              "Out": true,
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/RangedFloat.cs",
+            "Line": 196
+          },
+          "IsPublic": true,
+          "FullName": "RangedFloat.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "RangedFloat",
+          "DocId": "M:RangedFloat.Deconstruct(System.Single@,System.Single@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "fixedValue",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/RangedFloat.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "RangedFloat..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "RangedFloat",
+          "Documentation": {
+            "Summary": "Initialize the float as a fixed value."
+          },
+          "DocId": "M:RangedFloat.#ctor(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "max",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/RangedFloat.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "RangedFloat..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "RangedFloat",
+          "Documentation": {
+            "Summary": "Initialize the float as a random value between given min and max.",
+            "Params": {
+              "min": "The minimum possible value for this float.",
+              "max": "The maximum possible value for this float."
+            }
+          },
+          "DocId": "M:RangedFloat.#ctor(System.Single,System.Single)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/RangedFloat.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "RangedFloat.Min",
+          "Name": "Min",
+          "Documentation": {
+            "Summary": "The minimum value of the float range."
+          },
+          "DocId": "P:RangedFloat.Min"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/RangedFloat.cs",
+            "Line": 45
+          },
+          "IsPublic": true,
+          "FullName": "RangedFloat.Max",
+          "Name": "Max",
+          "Documentation": {
+            "Summary": "The maximum value of the float range. For <see cref=\"F:RangedFloat.RangeType.Fixed\" />,\nthis will be the same as <see cref=\"P:RangedFloat.Min\" />."
+          },
+          "DocId": "P:RangedFloat.Max"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/RangedFloat.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "RangedFloat.FixedValue",
+          "Name": "FixedValue",
+          "Documentation": {
+            "Summary": "The fixed value. Setting this will convert us to a fixed value"
+          },
+          "DocId": "P:RangedFloat.FixedValue"
+        },
+        {
+          "PropertyType": "Vector2",
+          "Loc": {
+            "File": "Math/RangedFloat.cs",
+            "Line": 74
+          },
+          "IsPublic": true,
+          "FullName": "RangedFloat.RangeValue",
+          "Name": "RangeValue",
+          "Documentation": {
+            "Summary": "The range value. Setting this will convert us to a range value"
+          },
+          "DocId": "P:RangedFloat.RangeValue"
+        },
+        {
+          "PropertyType": "RangedFloat.RangeType",
+          "Loc": {
+            "File": "Math/RangedFloat.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "FullName": "RangedFloat.Range",
+          "Name": "Range",
+          "Documentation": {
+            "Summary": "Range type of this float."
+          },
+          "DocId": "P:RangedFloat.Range"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "RangedFloat.x",
+          "Name": "x",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use RangedFloat.Min"
+              ]
+            },
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            }
+          ],
+          "DocId": "F:RangedFloat.x"
+        },
+        {
+          "FieldType": "System.Single",
+          "IsPublic": true,
+          "FullName": "RangedFloat.y",
+          "Name": "y",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use RangedFloat.Max"
+              ]
+            },
+            {
+              "FullName": "System.ComponentModel.EditorBrowsableAttribute"
+            }
+          ],
+          "DocId": "F:RangedFloat.y"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "RangedFloat",
+      "Name": "RangedFloat",
+      "Attributes": [
+        {
+          "FullName": "System.Text.Json.Serialization.JsonConverterAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Internal.JsonConvert.RangedFloatConverter"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A float between two values, which can be randomized or fixed."
+      },
+      "DocId": "T:RangedFloat"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "RangedFloat.RangeType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "RangedFloat.RangeType.Fixed",
+          "Name": "Fixed",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "fiber_manual_record"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Single value, both minimum and maximum value."
+          },
+          "DocId": "F:RangedFloat.RangeType.Fixed"
+        },
+        {
+          "FieldType": "RangedFloat.RangeType",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "RangedFloat.RangeType.Between",
+          "Name": "Between",
+          "Attributes": [
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "join_full"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Random value between given minimum and maximum."
+          },
+          "DocId": "F:RangedFloat.RangeType.Between"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "RangedFloat.RangeType",
+      "Name": "RangeType",
+      "DeclaringType": "RangedFloat",
+      "Documentation": {
+        "Summary": "Range type of <see cref=\"T:RangedFloat\" />."
+      },
+      "DocId": "T:RangedFloat.RangeType"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Ray",
+          "Parameters": [
+            {
+              "Name": "tx",
+              "In": true,
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Math/Ray.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Ray.ToLocal",
+          "Name": "ToLocal",
+          "DeclaringType": "Ray",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Convert a ray to be local to this transform"
+          },
+          "DocId": "M:Ray.ToLocal(Transform@)"
+        },
+        {
+          "ReturnType": "Ray",
+          "Parameters": [
+            {
+              "Name": "tx",
+              "In": true,
+              "Type": "Transform"
+            }
+          ],
+          "l": {
+            "File": "Math/Ray.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Ray.ToWorld",
+          "Name": "ToWorld",
+          "DeclaringType": "Ray",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Convert a ray from being local to this transform"
+          },
+          "DocId": "M:Ray.ToWorld(Transform@)"
+        },
+        {
+          "ReturnType": "Vector3",
+          "Parameters": [
+            {
+              "Name": "distance",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Ray.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Ray.Project",
+          "Name": "Project",
+          "DeclaringType": "Ray",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a point on the ray at given distance.",
+            "Return": "The point at given distance.",
+            "Params": {
+              "distance": "How far from the <see cref=\"P:Ray.Position\" /> the point should be."
+            }
+          },
+          "DocId": "M:Ray.Project(System.Single)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "origin",
+              "Type": "Vector3"
+            },
+            {
+              "Name": "direction",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Math/Ray.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Ray..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Ray",
+          "DocId": "M:Ray.#ctor(Vector3,Vector3)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Math/Ray.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Ray.Position",
+          "Name": "Position",
+          "Documentation": {
+            "Summary": "Origin of the ray."
+          },
+          "DocId": "P:Ray.Position"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Math/Ray.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Ray.Forward",
+          "Name": "Forward",
+          "Documentation": {
+            "Summary": "Direction of the ray."
+          },
+          "DocId": "P:Ray.Forward"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Ray",
+      "Name": "Ray",
+      "Documentation": {
+        "Summary": "A struct describing an origin and direction"
+      },
+      "DocId": "T:Ray"
+    }
+  ],
+  "_metadata": {
+    "chunk": 4,
+    "items_count": 4
+  }
+}

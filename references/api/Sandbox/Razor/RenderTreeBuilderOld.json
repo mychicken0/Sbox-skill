@@ -1,0 +1,565 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Razor",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Razor.RenderTreeBuilderOld..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Razor.RenderTreeBuilderOld",
+          "DocId": "M:Sandbox.Razor.RenderTreeBuilderOld.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Razor.RenderTreeBuilderOld",
+      "Name": "RenderTreeBuilderOld",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Panel\\Panel.Razor.Mocks.cs",
+            "5"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Razor.RenderTreeBuilderOld"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/Animation/KeyFrames.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.KeyFrames..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.KeyFrames",
+          "DocId": "M:Sandbox.UI.KeyFrames.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/UI/Animation/KeyFrames.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.KeyFrames.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Name of the <code style=\"color: #DCDCDC; background-color: #111111; padding: 4px;\">@keyframes</code> rule."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Animation\\KeyFrames.cs",
+                "11"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Name of the <c>@keyframes</c> rule."
+          },
+          "DocId": "P:Sandbox.UI.KeyFrames.Name"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Collections.Generic.List`1<Sandbox.UI.KeyFrames.Block>",
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.KeyFrames.Blocks",
+          "Name": "Blocks",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Animation\\KeyFrames.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "List of keyframes with in the <c>@keyframes</c> rule."
+          },
+          "DocId": "F:Sandbox.UI.KeyFrames.Blocks"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.KeyFrames",
+      "Name": "KeyFrames",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents a CSS <code style=\"color: #DCDCDC; background-color: #111111; padding: 4px;\">@keyframes</code> rule."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Animation\\KeyFrames.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Represents a CSS <code style=\"color: #DCDCDC; background-color: #111111; padding: 4px;\">@keyframes</code> rule."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Animation\\KeyFrames.Parser.cs",
+            "3"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Represents a CSS <c>@keyframes</c> rule."
+      },
+      "DocId": "T:Sandbox.UI.KeyFrames"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.KeyFrames.Block..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.KeyFrames.Block",
+          "DocId": "M:Sandbox.UI.KeyFrames.Block.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/UI/Animation/KeyFrames.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.KeyFrames.Block.Interval",
+          "Name": "Interval",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The position of the keyframe within the overall animation. 0 to 1, where 0 is the start, and 1 is the end of the animation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Animation\\KeyFrames.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The position of the keyframe within the overall animation. 0 to 1, where 0 is the start, and 1 is the end of the animation."
+          },
+          "DocId": "P:Sandbox.UI.KeyFrames.Block.Interval"
+        },
+        {
+          "PropertyType": "Sandbox.UI.Styles",
+          "Loc": {
+            "File": "Systems/UI/Animation/KeyFrames.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.KeyFrames.Block.Styles",
+          "Name": "Styles",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The styles that should be applied at this position in the animation."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Animation\\KeyFrames.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The styles that should be applied at this position in the animation."
+          },
+          "DocId": "P:Sandbox.UI.KeyFrames.Block.Styles"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.KeyFrames.Block",
+      "Name": "Block",
+      "DeclaringType": "Sandbox.UI.KeyFrames",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A keyframe within the animation."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Animation\\KeyFrames.cs",
+            "16"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A keyframe within the animation."
+      },
+      "DocId": "T:Sandbox.UI.KeyFrames.Block"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.Panel",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "exceptThisOne",
+              "Type": "Sandbox.UI.Panel",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Controls/BasePopup.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.UI.BasePopup.CloseAll",
+          "Name": "CloseAll",
+          "DeclaringType": "Sandbox.UI.BasePopup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Controls\\BasePopup.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.BasePopup.CloseAll(Sandbox.UI.Panel)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/Controls/BasePopup.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.BasePopup.OnDeleted",
+          "Name": "OnDeleted",
+          "DeclaringType": "Sandbox.UI.BasePopup",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Controls\\BasePopup.cs",
+                "51"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.BasePopup.OnDeleted"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/Controls/BasePopup.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.BasePopup..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.BasePopup",
+          "DocId": "M:Sandbox.UI.BasePopup.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/UI/Controls/BasePopup.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.BasePopup.StayOpen",
+          "Name": "StayOpen",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Stay open, even when CloseAll popups is called"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Controls\\BasePopup.cs",
+                "13"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Stay open, even when CloseAll popups is called"
+          },
+          "DocId": "P:Sandbox.UI.BasePopup.StayOpen"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.BasePopup",
+      "Name": "BasePopup",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A panel that gets deleted automatically when clicked away from"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Controls\\BasePopup.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A panel that gets deleted automatically when clicked away from"
+      },
+      "DocId": "T:Sandbox.UI.BasePopup"
+    },
+    {
+      "Namespace": "Sandbox.UI",
+      "BaseType": "Sandbox.UI.Panel",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Image.SetTexture",
+          "Name": "SetTexture",
+          "DeclaringType": "Sandbox.UI.Image",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.UI.Image/<SetTexture>d__5"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set <span style=\"color: #4EC9B0;\">Image</span>.<span style=\"color: #DCDCDC;\">Texture</span> from a file path. URLs supported."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Controls\\Image.cs",
+                "24"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set <see cref=\"P:Sandbox.UI.Image.Texture\" /> from a file path. URLs supported."
+          },
+          "DocId": "M:Sandbox.UI.Image.SetTexture(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/Controls/Image.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Image.OnDraw",
+          "Name": "OnDraw",
+          "DeclaringType": "Sandbox.UI.Image",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Controls\\Image.cs",
+                "47"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.Image.OnDraw"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/UI/Controls/Image.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Image.SetProperty",
+          "Name": "SetProperty",
+          "DeclaringType": "Sandbox.UI.Image",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Controls\\Image.cs",
+                "63"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.UI.Image.SetProperty(System.String,System.String)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/UI/Controls/Image.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Image..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.UI.Image",
+          "DocId": "M:Sandbox.UI.Image.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Systems/UI/Controls/Image.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.UI.Image.Texture",
+          "Name": "Texture",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The texture being displayed by this panel."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\UI\\Controls\\Image.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The texture being displayed by this panel."
+          },
+          "DocId": "P:Sandbox.UI.Image.Texture"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.UI.Image",
+      "Name": "Image",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.LibraryAttribute",
+          "ConstructorArguments": [
+            "image"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A generic box that displays a given texture within itself."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\UI\\Controls\\Image.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A generic box that displays a given texture within itself."
+      },
+      "DocId": "T:Sandbox.UI.Image"
+    }
+  ],
+  "_metadata": {
+    "chunk": 176,
+    "items_count": 5
+  }
+}

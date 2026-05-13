@@ -1,0 +1,1366 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 192
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.VerletRope.OnEnabled",
+          "Name": "OnEnabled",
+          "DeclaringType": "Sandbox.VerletRope",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "190"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.VerletRope.OnEnabled"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 209
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.VerletRope.OnUpdate",
+          "Name": "OnUpdate",
+          "DeclaringType": "Sandbox.VerletRope",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "206"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.VerletRope.OnUpdate"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 262
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.VerletRope.OnDestroy",
+          "Name": "OnDestroy",
+          "DeclaringType": "Sandbox.VerletRope",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "260"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.VerletRope.OnDestroy"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VerletRope..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VerletRope",
+          "DocId": "M:Sandbox.VerletRope.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.GameObject",
+          "Loc": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VerletRope.Attachment",
+          "Name": "Attachment",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Attachment"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The GameObject the end of the rope attaches to."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The GameObject the end of the rope attaches to."
+          },
+          "DocId": "P:Sandbox.VerletRope.Attachment"
+        },
+        {
+          "PropertyType": "Sandbox.LineRenderer",
+          "Loc": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VerletRope.LinkedRenderer",
+          "Name": "LinkedRenderer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Attachment"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The LineRenderer used to visualize the rope."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "30"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The LineRenderer used to visualize the rope."
+          },
+          "DocId": "P:Sandbox.VerletRope.LinkedRenderer"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VerletRope.Slack",
+          "Name": "Slack",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Simulation"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Additional slack, added to the rope length."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "36"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Additional slack, added to the rope length."
+          },
+          "DocId": "P:Sandbox.VerletRope.Slack"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 57
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VerletRope.SegmentCount",
+          "Name": "SegmentCount",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Simulation"
+              ]
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "64"
+              ]
+            },
+            {
+              "FullName": "Sandbox.StepAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Number of segments in the rope. Higher values increase visual fidelity and collision accuracy but quickly reduce performance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "50"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of segments in the rope. Higher values increase visual fidelity and collision accuracy but quickly reduce performance."
+          },
+          "DocId": "P:Sandbox.VerletRope.SegmentCount"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VerletRope.Radius",
+          "Name": "Radius",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Simulation"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Radius of the rope for collision detection."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "66"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Radius of the rope for collision detection."
+          },
+          "DocId": "P:Sandbox.VerletRope.Radius"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 79
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VerletRope.LengthOverride",
+          "Name": "LengthOverride",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Advanced"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controls the rope's length directly, will override the initial length and slack will not be applied. When set to 0, the rope's initial length between attachment points is used."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "73"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controls the rope's length directly, will override the initial length and slack will not be applied.\nWhen set to 0, the rope's initial length between attachment points is used."
+          },
+          "DocId": "P:Sandbox.VerletRope.LengthOverride"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 89
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VerletRope.Stiffness",
+          "Name": "Stiffness",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Advanced"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Rope stiffness factor. Higher values make the rope more rigid."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Rope stiffness factor. Higher values make the rope more rigid."
+          },
+          "DocId": "P:Sandbox.VerletRope.Stiffness"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 95
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VerletRope.DampingFactor",
+          "Name": "DampingFactor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Advanced"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Dampens rope movement. Higher values make the rope settle faster."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "93"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Dampens rope movement. Higher values make the rope settle faster."
+          },
+          "DocId": "P:Sandbox.VerletRope.DampingFactor"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/Game/VerletRope.cs",
+            "Line": 101
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VerletRope.SoftBendFactor",
+          "Name": "SoftBendFactor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Advanced"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controls how easily the rope bends. Lower values allow more bending, higher values make it stiffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\Game\\VerletRope.cs",
+                "99"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controls how easily the rope bends. Lower values allow more bending, higher values make it stiffer."
+          },
+          "DocId": "P:Sandbox.VerletRope.SoftBendFactor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VerletRope",
+      "Name": "VerletRope",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Rope"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Game"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "cable"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Verlet integration-based rope physics simulation component."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\Game\\VerletRope.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Verlet integration-based rope physics simulation component."
+      },
+      "DocId": "T:Sandbox.VerletRope"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.Component",
+      "Methods": [
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [
+            {
+              "Name": "ct",
+              "Type": "System.Threading.CancellationToken",
+              "Default": "null"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.BakeProbes",
+          "Name": "BakeProbes",
+          "DeclaringType": "Sandbox.IndirectLightVolume",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.IndirectLightVolume/<BakeProbes>d__40"
+              ]
+            },
+            {
+              "FullName": "Sandbox.ButtonAttribute",
+              "ConstructorArguments": [
+                "Bake",
+                "lightbulb"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Starts the probe baking process to capture lighting into the volume textures."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "190"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Starts the probe baking process to capture lighting into the volume textures."
+          },
+          "DocId": "M:Sandbox.IndirectLightVolume.BakeProbes(System.Threading.CancellationToken)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 240
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.ExtendToSceneBounds",
+          "Name": "ExtendToSceneBounds",
+          "DeclaringType": "Sandbox.IndirectLightVolume",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ButtonAttribute",
+              "ConstructorArguments": [
+                "Fit to Scene Bounds",
+                "fullscreen"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Automatically sizes the volume to encompass all scene geometry."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "236"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Automatically sizes the volume to encompass all scene geometry."
+          },
+          "DocId": "M:Sandbox.IndirectLightVolume.ExtendToSceneBounds"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [],
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.IndirectLightVolume.BakeAll",
+          "Name": "BakeAll",
+          "DeclaringType": "Sandbox.IndirectLightVolume",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.IndirectLightVolume/<BakeAll>d__52"
+              ]
+            },
+            {
+              "FullName": "Editor.MenuAttribute",
+              "ConstructorArguments": [
+                "Editor",
+                "Scene/Bake Indirect Light Volumes",
+                "snowing"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "465"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.IndirectLightVolume.BakeAll"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.Relocation.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.ComputeProbeRelocation",
+          "Name": "ComputeProbeRelocation",
+          "DeclaringType": "Sandbox.IndirectLightVolume",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ButtonAttribute",
+              "ConstructorArguments": [
+                "Compute Relocation",
+                "move"
+              ]
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Probe Relocation"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Computes probe relocation offsets for all probes in the volume. Uses iterative refinement with mesh tracing. All computations are relative to probe spacing for resolution-independent behavior."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.Relocation.cs",
+                "117"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Computes probe relocation offsets for all probes in the volume.\nUses iterative refinement with mesh tracing.\nAll computations are relative to probe spacing for resolution-independent behavior."
+          },
+          "DocId": "M:Sandbox.IndirectLightVolume.ComputeProbeRelocation"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.Relocation.cs",
+            "Line": 368
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.ClearProbeRelocation",
+          "Name": "ClearProbeRelocation",
+          "DeclaringType": "Sandbox.IndirectLightVolume",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ButtonAttribute",
+              "ConstructorArguments": [
+                "Clear Relocation",
+                "clear"
+              ]
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Probe Relocation"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears all probe relocation offsets."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.Relocation.cs",
+                "364"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears all probe relocation offsets."
+          },
+          "DocId": "M:Sandbox.IndirectLightVolume.ClearProbeRelocation"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 72
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.IndirectLightVolume",
+          "DocId": "M:Sandbox.IndirectLightVolume.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "BBox",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.Bounds",
+          "Name": "Bounds",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "World-space bounding box that defines the volume coverage area."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "61"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "World-space bounding box that defines the volume coverage area."
+          },
+          "DocId": "P:Sandbox.IndirectLightVolume.Bounds"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.ProbeDensity",
+          "Name": "ProbeDensity",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "15"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Number of probes per 1024 world units. Higher values increase probe resolution."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "77"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of probes per 1024 world units. Higher values increase probe resolution."
+          },
+          "DocId": "P:Sandbox.IndirectLightVolume.ProbeDensity"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 101
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.NormalBias",
+          "Name": "NormalBias",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.GroupAttribute",
+              "ConstructorArguments": [
+                "Advanced Settings"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "-0",
+                "50"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Bias applied along surface normals to prevent self-occlusion artifacts."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "93"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Bias applied along surface normals to prevent self-occlusion artifacts."
+          },
+          "DocId": "P:Sandbox.IndirectLightVolume.NormalBias"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.Contrast",
+          "Name": "Contrast",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "1",
+                "2"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.GroupAttribute",
+              "ConstructorArguments": [
+                "Advanced Settings"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Controls how much less energy to conserve during probe integration. Higher values give a harsher, more contrasty look."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "111"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Controls how much less energy to conserve during probe integration.\nHigher values give a harsher, more contrasty look."
+          },
+          "DocId": "P:Sandbox.IndirectLightVolume.Contrast"
+        },
+        {
+          "PropertyType": "Vector3Int",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.ProbeCounts",
+          "Name": "ProbeCounts",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Calculated probe count along each axis based on bounds and density."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "128"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Calculated probe count along each axis based on bounds and density."
+          },
+          "DocId": "P:Sandbox.IndirectLightVolume.ProbeCounts"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 135
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.IrradianceTexture",
+          "Name": "IrradianceTexture",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Volume texture storing probe irradiance data (color)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "133"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Volume texture storing probe irradiance data (color)."
+          },
+          "DocId": "P:Sandbox.IndirectLightVolume.IrradianceTexture"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 141
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.DistanceTexture",
+          "Name": "DistanceTexture",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Volume texture storing probe distance/visibility data."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "139"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Volume texture storing probe distance/visibility data."
+          },
+          "DocId": "P:Sandbox.IndirectLightVolume.DistanceTexture"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 147
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.RelocationTexture",
+          "Name": "RelocationTexture",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Volume texture storing probe relocation offsets (XYZ = offset, W = active)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "145"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Volume texture storing probe relocation offsets (XYZ = offset, W = active)."
+          },
+          "DocId": "P:Sandbox.IndirectLightVolume.RelocationTexture"
+        },
+        {
+          "PropertyType": "Sandbox.IndirectLightVolume.InsideGeometryBehavior",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.Relocation.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.InsideGeometry",
+          "Name": "InsideGeometry",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Advanced Settings"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "How to handle probes detected inside geometry."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.Relocation.cs",
+                "45"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "How to handle probes detected inside geometry."
+          },
+          "DocId": "P:Sandbox.IndirectLightVolume.InsideGeometry"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.IndirectLightVolume",
+      "Name": "IndirectLightVolume",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Facepunch.ActionGraphs.TitleAttribute",
+          "ConstructorArguments": [
+            "Indirect Light Volume (DDGI)"
+          ]
+        },
+        {
+          "FullName": "CategoryAttribute",
+          "ConstructorArguments": [
+            "Light"
+          ]
+        },
+        {
+          "FullName": "Facepunch.ActionGraphs.IconAttribute",
+          "ConstructorArguments": [
+            "grid_view"
+          ]
+        },
+        {
+          "FullName": "Sandbox.EditorHandleAttribute",
+          "ConstructorArguments": [
+            "materials/gizmo/lpv.png"
+          ]
+        },
+        {
+          "FullName": "AliasAttribute",
+          "ConstructorArguments": [
+            "Mono.Cecil.CustomAttributeArgument[]"
+          ]
+        },
+        {
+          "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+          "ConstructorArguments": [
+            "Dynamic Diffuse Global Illumination volume that provides indirect lighting using a 3D probe grid. Probes store irradiance and distance data in volume textures that can be sampled by shaders."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+            "13"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Dynamic Diffuse Global Illumination volume that provides indirect lighting using a 3D probe grid. Probes store irradiance and distance data in volume textures that can be sampled by shaders."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\IndirectLighting\\IndirectLightVolume.Relocation.cs",
+            "10"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Dynamic Diffuse Global Illumination volume that provides indirect lighting using a 3D probe grid.\nProbes store irradiance and distance data in volume textures that can be sampled by shaders."
+      },
+      "DocId": "T:Sandbox.IndirectLightVolume"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.IndirectLightVolume.InsideGeometryBehavior",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.IndirectLightVolume.InsideGeometryBehavior.Deactivate",
+          "Name": "Deactivate",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.IconAttribute",
+              "ConstructorArguments": [
+                "block"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Probe is deactivated and won't contribute to lighting."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Probe is deactivated and won't contribute to lighting."
+          },
+          "DocId": "F:Sandbox.IndirectLightVolume.InsideGeometryBehavior.Deactivate"
+        },
+        {
+          "FieldType": "Sandbox.IndirectLightVolume.InsideGeometryBehavior",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.IndirectLightVolume.InsideGeometryBehavior.Relocate",
+          "Name": "Relocate",
+          "Attributes": [
+            {
+              "FullName": "Facepunch.ActionGraphs.IconAttribute",
+              "ConstructorArguments": [
+                "open_with"
+              ]
+            },
+            {
+              "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+              "ConstructorArguments": [
+                "Probe is relocated to escape the geometry."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Probe is relocated to escape the geometry."
+          },
+          "DocId": "F:Sandbox.IndirectLightVolume.InsideGeometryBehavior.Relocate"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.IndirectLightVolume.InsideGeometryBehavior",
+      "Name": "InsideGeometryBehavior",
+      "DeclaringType": "Sandbox.IndirectLightVolume",
+      "Documentation": {
+        "Summary": "Behavior when a probe is detected inside geometry.\nRelocation moves the probe out of geometry to reduce artifacts, while Deactivate simply disables the occluded probe, sealing leaks entirely."
+      },
+      "DocId": "T:Sandbox.IndirectLightVolume.InsideGeometryBehavior"
+    },
+    {
+      "Namespace": "",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.Probe..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.IndirectLightVolume.Probe",
+          "DocId": "M:Sandbox.IndirectLightVolume.Probe.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.Probe.Offset",
+          "Name": "Offset",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "45"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.IndirectLightVolume.Probe.Offset"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Scene/Components/IndirectLighting/IndirectLightVolume.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.IndirectLightVolume.Probe.Active",
+          "Name": "Active",
+          "Attributes": [
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+                "46"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.IndirectLightVolume.Probe.Active"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.IndirectLightVolume.Probe",
+      "Name": "Probe",
+      "DeclaringType": "Sandbox.IndirectLightVolume",
+      "Attributes": [
+        {
+          "FullName": "Facepunch.ActionGraphs.DescriptionAttribute",
+          "ConstructorArguments": [
+            "Per-probe data including position offset and active state."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Scene\\Components\\IndirectLighting\\IndirectLightVolume.cs",
+            "43"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Per-probe data including position offset and active state."
+      },
+      "DocId": "T:Sandbox.IndirectLightVolume.Probe"
+    }
+  ],
+  "_metadata": {
+    "chunk": 87,
+    "items_count": 4
+  }
+}

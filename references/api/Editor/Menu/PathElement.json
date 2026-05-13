@@ -1,0 +1,1948 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Int32",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Editor.Menu.PathElement"
+            }
+          ],
+          "l": {
+            "File": "Qt/Menu.AddOptions.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Menu.PathElement.CompareTo",
+          "Name": "CompareTo",
+          "DeclaringType": "Editor.Menu.PathElement",
+          "DocId": "M:Editor.Menu.PathElement.CompareTo(Editor.Menu.PathElement)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [
+            {
+              "Name": "aPath",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<Editor.Menu.PathElement>"
+            },
+            {
+              "Name": "bPath",
+              "Type": "System.Collections.Generic.IReadOnlyList`1<Editor.Menu.PathElement>"
+            }
+          ],
+          "l": {
+            "File": "Qt/Menu.AddOptions.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.Menu.PathElement.Compare",
+          "Name": "Compare",
+          "DeclaringType": "Editor.Menu.PathElement",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            }
+          ],
+          "DocId": "M:Editor.Menu.PathElement.Compare(System.Collections.Generic.IReadOnlyList`1{Editor.Menu.PathElement},System.Collections.Generic.IReadOnlyList`1{Editor.Menu.PathElement})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Editor.Menu.PathElement"
+            }
+          ],
+          "l": {
+            "File": "Qt/Menu.AddOptions.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Menu.PathElement.Matches",
+          "Name": "Matches",
+          "DeclaringType": "Editor.Menu.PathElement",
+          "DocId": "M:Editor.Menu.PathElement.Matches(Editor.Menu.PathElement)"
+        },
+        {
+          "ReturnType": "Editor.Menu.PathElement",
+          "Parameters": [
+            {
+              "Name": "other",
+              "Type": "Editor.Menu.PathElement"
+            }
+          ],
+          "l": {
+            "File": "Qt/Menu.AddOptions.cs",
+            "Line": 64
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Menu.PathElement.Merge",
+          "Name": "Merge",
+          "DeclaringType": "Editor.Menu.PathElement",
+          "DocId": "M:Editor.Menu.PathElement.Merge(Editor.Menu.PathElement)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Description",
+              "Out": true,
+              "Type": "System.String"
+            },
+            {
+              "Name": "Order",
+              "Out": true,
+              "Type": "System.Nullable`1<System.Int32>"
+            },
+            {
+              "Name": "IsHeading",
+              "Out": true,
+              "Type": "System.Boolean"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Editor.Menu.PathElement.Deconstruct",
+          "Name": "Deconstruct",
+          "DeclaringType": "Editor.Menu.PathElement",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            },
+            {
+              "FullName": "System.Runtime.CompilerServices.CompilerGeneratedAttribute"
+            }
+          ],
+          "DocId": "M:Editor.Menu.PathElement.Deconstruct(System.String@,System.String@,System.String@,System.Nullable`1{System.Int32}@,System.Boolean@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "Name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "Icon",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "Description",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "Order",
+              "Type": "System.Nullable`1<System.Int32>",
+              "Default": "null"
+            },
+            {
+              "Name": "IsHeading",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Editor.Menu.PathElement..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Menu.PathElement",
+          "DocId": "M:Editor.Menu.PathElement.#ctor(System.String,System.String,System.String,System.Nullable`1{System.Int32},System.Boolean)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Menu.AddOptions.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Menu.PathElement.Name",
+          "Name": "Name",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+              "ConstructorArguments": [
+                "1"
+              ]
+            }
+          ],
+          "DocId": "P:Editor.Menu.PathElement.Name"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Menu.AddOptions.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Menu.PathElement.Icon",
+          "Name": "Icon",
+          "DocId": "P:Editor.Menu.PathElement.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Menu.AddOptions.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Menu.PathElement.Description",
+          "Name": "Description",
+          "DocId": "P:Editor.Menu.PathElement.Description"
+        },
+        {
+          "PropertyType": "System.Nullable`1<System.Int32>",
+          "Loc": {
+            "File": "Qt/Menu.AddOptions.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Menu.PathElement.Order",
+          "Name": "Order",
+          "DocId": "P:Editor.Menu.PathElement.Order"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Menu.AddOptions.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Menu.PathElement.IsHeading",
+          "Name": "IsHeading",
+          "DocId": "P:Editor.Menu.PathElement.IsHeading"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Menu.PathElement",
+      "Name": "PathElement",
+      "DeclaringType": "Editor.Menu",
+      "Attributes": [
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableContextAttribute",
+          "ConstructorArguments": [
+            "2"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.CompilerServices.NullableAttribute",
+          "ConstructorArguments": [
+            "0"
+          ]
+        }
+      ],
+      "DocId": "T:Editor.Menu.PathElement"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Menu",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Menu.Searchable.cs",
+            "Line": 40
+          },
+          "IsProtected": true,
+          "FullName": "Editor.ContextMenu.OnAboutToShow",
+          "Name": "OnAboutToShow",
+          "DeclaringType": "Editor.ContextMenu",
+          "DocId": "M:Editor.ContextMenu.OnAboutToShow"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Menu.Searchable.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ContextMenu..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.ContextMenu",
+          "DocId": "M:Editor.ContextMenu.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Menu.Searchable.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ContextMenu.Searchable",
+          "Name": "Searchable",
+          "Documentation": {
+            "Summary": "Adds a search bar in the context menu. Useful for big menus"
+          },
+          "DocId": "P:Editor.ContextMenu.Searchable"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ContextMenu",
+      "Name": "ContextMenu",
+      "Documentation": {
+        "Summary": "Identical to Menu except DeleteOnClose defaults to true.\nCan optionally be made searchable by setting <see cref=\"P:Editor.ContextMenu.Searchable\" /> to true before opening.",
+        "Examples": [
+          "<code>\n            var menu = new ContextMenu { Searchable = true };\n            menu.AddOption( \"Option 1\", action: () =&gt; {} );\n            menu.OpenAtCursor();\n            </code>"
+        ]
+      },
+      "DocId": "T:Editor.ContextMenu"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "Editor.Option",
+          "Parameters": [
+            {
+              "Name": "path",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "action",
+              "Type": "System.Action",
+              "Default": "null"
+            },
+            {
+              "Name": "shortcut",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/MenuBar.cs",
+            "Line": 35
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuBar.AddOption",
+          "Name": "AddOption",
+          "DeclaringType": "Editor.MenuBar",
+          "DocId": "M:Editor.MenuBar.AddOption(System.String,System.String,System.Action,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "path",
+              "Type": "System.String"
+            },
+            {
+              "Name": "option",
+              "Type": "Editor.Option"
+            }
+          ],
+          "l": {
+            "File": "Qt/MenuBar.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuBar.AddOption",
+          "Name": "AddOption",
+          "DeclaringType": "Editor.MenuBar",
+          "DocId": "M:Editor.MenuBar.AddOption(System.String,Editor.Option)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "path",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/MenuBar.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuBar.RemovePath",
+          "Name": "RemovePath",
+          "DeclaringType": "Editor.MenuBar",
+          "DocId": "M:Editor.MenuBar.RemovePath(System.String)"
+        },
+        {
+          "ReturnType": "System.Collections.Generic.List`1<Editor.Menu>",
+          "Parameters": [
+            {
+              "Name": "path",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/MenuBar.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuBar.GetPathTo",
+          "Name": "GetPathTo",
+          "DeclaringType": "Editor.MenuBar",
+          "DocId": "M:Editor.MenuBar.GetPathTo(System.String)"
+        },
+        {
+          "ReturnType": "Editor.Menu",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/MenuBar.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuBar.FindOrCreateMenu",
+          "Name": "FindOrCreateMenu",
+          "DeclaringType": "Editor.MenuBar",
+          "DocId": "M:Editor.MenuBar.FindOrCreateMenu(System.String)"
+        },
+        {
+          "ReturnType": "Editor.Option",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/MenuBar.cs",
+            "Line": 101
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuBar.AddSeparator",
+          "Name": "AddSeparator",
+          "DeclaringType": "Editor.MenuBar",
+          "DocId": "M:Editor.MenuBar.AddSeparator"
+        },
+        {
+          "ReturnType": "Editor.Menu",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/MenuBar.cs",
+            "Line": 106
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuBar.AddMenu",
+          "Name": "AddMenu",
+          "DeclaringType": "Editor.MenuBar",
+          "DocId": "M:Editor.MenuBar.AddMenu(System.String)"
+        },
+        {
+          "ReturnType": "Editor.Menu",
+          "Parameters": [
+            {
+              "Name": "icon",
+              "Type": "System.String"
+            },
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/MenuBar.cs",
+            "Line": 118
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuBar.AddMenu",
+          "Name": "AddMenu",
+          "DeclaringType": "Editor.MenuBar",
+          "DocId": "M:Editor.MenuBar.AddMenu(System.String,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/MenuBar.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuBar.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Editor.MenuBar",
+          "DocId": "M:Editor.MenuBar.Clear"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "b",
+              "Type": "Editor.MenuBar"
+            }
+          ],
+          "l": {
+            "File": "Qt/MenuBar.Registry.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Editor.MenuBar.RegisterNamed",
+          "Name": "RegisterNamed",
+          "DeclaringType": "Editor.MenuBar",
+          "Documentation": {
+            "Summary": "Register a named menubar target. This allows [Menu] to target a specific menubar."
+          },
+          "DocId": "M:Editor.MenuBar.RegisterNamed(System.String,Editor.MenuBar)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/MenuBar.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Editor.MenuBar..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.MenuBar",
+          "DocId": "M:Editor.MenuBar.#ctor(Editor.Widget)"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.MenuBar",
+      "Name": "MenuBar",
+      "DocId": "T:Editor.MenuBar"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.QObject",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Option.cs",
+            "Line": 201
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Option.OnTriggered",
+          "Name": "OnTriggered",
+          "DeclaringType": "Editor.Option",
+          "Documentation": {
+            "Summary": "Called when this option was clicked.."
+          },
+          "DocId": "M:Editor.Option.OnTriggered"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "b",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Qt/Option.cs",
+            "Line": 235
+          },
+          "IsProtected": true,
+          "FullName": "Editor.Option.OnToggled",
+          "Name": "OnToggled",
+          "DeclaringType": "Editor.Option",
+          "Documentation": {
+            "Summary": "Called when this option was toggled."
+          },
+          "DocId": "M:Editor.Option.OnToggled(System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pixmap",
+              "Type": "Editor.Pixmap"
+            }
+          ],
+          "l": {
+            "File": "Qt/Option.cs",
+            "Line": 259
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.SetIcon",
+          "Name": "SetIcon",
+          "DeclaringType": "Editor.Option",
+          "Documentation": {
+            "Summary": "Sets an icon for the option via a raw image."
+          },
+          "DocId": "M:Editor.Option.SetIcon(Editor.Pixmap)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.QObject"
+            },
+            {
+              "Name": "title",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "action",
+              "Type": "System.Action",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Option.cs",
+            "Line": 157
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Option",
+          "DocId": "M:Editor.Option.#ctor(Editor.QObject,System.String,System.String,System.Action)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.QObject"
+            },
+            {
+              "Name": "title",
+              "Type": "System.String"
+            },
+            {
+              "Name": "icon",
+              "Type": "Editor.Pixmap"
+            },
+            {
+              "Name": "action",
+              "Type": "System.Action",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Option.cs",
+            "Line": 167
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Option",
+          "DocId": "M:Editor.Option.#ctor(Editor.QObject,System.String,Editor.Pixmap,System.Action)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "title",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "icon",
+              "Type": "System.String",
+              "Default": "null"
+            },
+            {
+              "Name": "action",
+              "Type": "System.Action",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/Option.cs",
+            "Line": 177
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Option",
+          "DocId": "M:Editor.Option.#ctor(System.String,System.String,System.Action)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 31
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.Text",
+          "Name": "Text",
+          "Documentation": {
+            "Summary": "Text for this option."
+          },
+          "DocId": "P:Editor.Option.Text"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.IconText",
+          "Name": "IconText",
+          "Documentation": {
+            "Summary": "Text to display if <see cref=\"P:Editor.Option.Text\" /> is empty."
+          },
+          "DocId": "P:Editor.Option.IconText"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.Checkable",
+          "Name": "Checkable",
+          "Documentation": {
+            "Summary": "Whether this option is a toggle option. <see cref=\"P:Editor.Option.Checked\" />."
+          },
+          "DocId": "P:Editor.Option.Checkable"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.Checked",
+          "Name": "Checked",
+          "Documentation": {
+            "Summary": "Whether this option is toggled/checked. <see cref=\"P:Editor.Option.Checkable\" />."
+          },
+          "DocId": "P:Editor.Option.Checked"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.Tooltip",
+          "Name": "Tooltip",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use ToolTip"
+              ]
+            }
+          ],
+          "DocId": "P:Editor.Option.Tooltip"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.ToolTip",
+          "Name": "ToolTip",
+          "Documentation": {},
+          "DocId": "P:Editor.Option.ToolTip"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 84
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.StatusText",
+          "Name": "StatusText",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Use StatusTip"
+              ]
+            }
+          ],
+          "DocId": "P:Editor.Option.StatusText"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 91
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.StatusTip",
+          "Name": "StatusTip",
+          "Documentation": {},
+          "DocId": "P:Editor.Option.StatusTip"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.Enabled",
+          "Name": "Enabled",
+          "Documentation": {
+            "Summary": "Whether this option can be clicked. Will also be visually different."
+          },
+          "DocId": "P:Editor.Option.Enabled"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 105
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.Shortcut",
+          "Name": "Shortcut",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "Please use ShortcutName, which takes a shortcut ident (such as editor.save) instead of keys (such as CTRL+S)."
+              ]
+            }
+          ],
+          "DocId": "P:Editor.Option.Shortcut"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 112
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.ShortcutName",
+          "Name": "ShortcutName",
+          "DocId": "P:Editor.Option.ShortcutName"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.Icon",
+          "Name": "Icon",
+          "Documentation": {
+            "Summary": "The icon for this option."
+          },
+          "DocId": "P:Editor.Option.Icon"
+        },
+        {
+          "PropertyType": "Editor.Pixmap",
+          "Loc": {
+            "File": "Qt/Option.cs",
+            "Line": 144
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Option.IconImage",
+          "Name": "IconImage",
+          "Documentation": {
+            "Summary": "The icon for this option."
+          },
+          "DocId": "P:Editor.Option.IconImage"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "System.Action",
+          "IsPublic": true,
+          "FullName": "Editor.Option.Triggered",
+          "Name": "Triggered",
+          "Documentation": {},
+          "DocId": "F:Editor.Option.Triggered"
+        },
+        {
+          "FieldType": "System.Action`1<System.Boolean>",
+          "IsPublic": true,
+          "FullName": "Editor.Option.Toggled",
+          "Name": "Toggled",
+          "Documentation": {},
+          "DocId": "F:Editor.Option.Toggled"
+        },
+        {
+          "FieldType": "System.Func`1<System.Boolean>",
+          "IsPublic": true,
+          "FullName": "Editor.Option.FetchCheckedState",
+          "Name": "FetchCheckedState",
+          "Documentation": {
+            "Summary": "A method to get the checked state. Called periodically to update the status"
+          },
+          "DocId": "F:Editor.Option.FetchCheckedState"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Option",
+      "Name": "Option",
+      "DocId": "T:Editor.Option"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/PopupDialogWidget.cs",
+            "Line": 45
+          },
+          "IsProtected": true,
+          "FullName": "Editor.PopupDialogWidget.OnClose",
+          "Name": "OnClose",
+          "DeclaringType": "Editor.PopupDialogWidget",
+          "DocId": "M:Editor.PopupDialogWidget.OnClose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/PopupDialogWidget.cs",
+            "Line": 50
+          },
+          "IsProtected": true,
+          "FullName": "Editor.PopupDialogWidget.OnPaint",
+          "Name": "OnPaint",
+          "DeclaringType": "Editor.PopupDialogWidget",
+          "DocId": "M:Editor.PopupDialogWidget.OnPaint"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "icon",
+              "Type": "System.String",
+              "Default": "⚠️"
+            }
+          ],
+          "l": {
+            "File": "Qt/PopupDialogWidget.cs",
+            "Line": 9
+          },
+          "IsPublic": true,
+          "FullName": "Editor.PopupDialogWidget..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.PopupDialogWidget",
+          "DocId": "M:Editor.PopupDialogWidget.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Editor.Label",
+          "Loc": {
+            "File": "Qt/PopupDialogWidget.cs",
+            "Line": 5
+          },
+          "IsPublic": true,
+          "FullName": "Editor.PopupDialogWidget.MessageLabel",
+          "Name": "MessageLabel",
+          "DocId": "P:Editor.PopupDialogWidget.MessageLabel"
+        },
+        {
+          "PropertyType": "Editor.Layout",
+          "Loc": {
+            "File": "Qt/PopupDialogWidget.cs",
+            "Line": 7
+          },
+          "IsPublic": true,
+          "FullName": "Editor.PopupDialogWidget.ButtonLayout",
+          "Name": "ButtonLayout",
+          "DocId": "P:Editor.PopupDialogWidget.ButtonLayout"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.PopupDialogWidget",
+      "Name": "PopupDialogWidget",
+      "DocId": "T:Editor.PopupDialogWidget"
+    },
+    {
+      "Namespace": "Editor",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/QObject.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Editor.QObject.OnDestroyed",
+          "Name": "OnDestroyed",
+          "DeclaringType": "Editor.QObject",
+          "DocId": "M:Editor.QObject.OnDestroyed"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/QObject.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Editor.QObject.Destroy",
+          "Name": "Destroy",
+          "DeclaringType": "Editor.QObject",
+          "DocId": "M:Editor.QObject.Destroy"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Qt/QObject.cs",
+            "Line": 160
+          },
+          "IsPublic": true,
+          "FullName": "Editor.QObject.SetProperty",
+          "Name": "SetProperty",
+          "DeclaringType": "Editor.QObject",
+          "DocId": "M:Editor.QObject.SetProperty(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Qt/QObject.cs",
+            "Line": 165
+          },
+          "IsPublic": true,
+          "FullName": "Editor.QObject.SetProperty",
+          "Name": "SetProperty",
+          "DeclaringType": "Editor.QObject",
+          "DocId": "M:Editor.QObject.SetProperty(System.String,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "value",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/QObject.cs",
+            "Line": 170
+          },
+          "IsPublic": true,
+          "FullName": "Editor.QObject.SetProperty",
+          "Name": "SetProperty",
+          "DeclaringType": "Editor.QObject",
+          "DocId": "M:Editor.QObject.SetProperty(System.String,System.String)"
+        },
+        {
+          "ReturnType": "Sandbox.Bind.Builder",
+          "Parameters": [
+            {
+              "Name": "targetName",
+              "Type": "System.String"
+            },
+            {
+              "Name": "onChanged",
+              "Type": "System.Action",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/QObject.cs",
+            "Line": 175
+          },
+          "IsPublic": true,
+          "FullName": "Editor.QObject.Bind",
+          "Name": "Bind",
+          "DeclaringType": "Editor.QObject",
+          "DocId": "M:Editor.QObject.Bind(System.String,System.Action)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/QObject.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Editor.QObject..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.QObject",
+          "DocId": "M:Editor.QObject.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/QObject.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Editor.QObject.IsValid",
+          "Name": "IsValid",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            }
+          ],
+          "DocId": "P:Editor.QObject.IsValid"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.QObject",
+      "Name": "QObject",
+      "DocId": "T:Editor.QObject"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Frame",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.CameraComponent",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/SceneRenderingWidget.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Editor.SceneRenderingWidget.CreateSceneEditorCamera",
+          "Name": "CreateSceneEditorCamera",
+          "DeclaringType": "Editor.SceneRenderingWidget",
+          "Documentation": {
+            "Summary": "Create a hidden scene editor camera, post processing will be copied from a main camera in the scene."
+          },
+          "DocId": "M:Editor.SceneRenderingWidget.CreateSceneEditorCamera"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Qt/SceneRenderingWidget.cs",
+            "Line": 141
+          },
+          "IsProtected": true,
+          "FullName": "Editor.SceneRenderingWidget.PreFrame",
+          "Name": "PreFrame",
+          "DeclaringType": "Editor.SceneRenderingWidget",
+          "Documentation": {
+            "Summary": "Called just before rendering."
+          },
+          "DocId": "M:Editor.SceneRenderingWidget.PreFrame"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "hasMouseFocus",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Qt/SceneRenderingWidget.cs",
+            "Line": 149
+          },
+          "IsPublic": true,
+          "FullName": "Editor.SceneRenderingWidget.UpdateGizmoInputs",
+          "Name": "UpdateGizmoInputs",
+          "DeclaringType": "Editor.SceneRenderingWidget",
+          "Documentation": {
+            "Summary": "Update common inputs for gizmo."
+          },
+          "DocId": "M:Editor.SceneRenderingWidget.UpdateGizmoInputs(System.Boolean)"
+        },
+        {
+          "ReturnType": "Ray",
+          "Parameters": [
+            {
+              "Name": "localPosition",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Qt/SceneRenderingWidget.cs",
+            "Line": 233
+          },
+          "IsPublic": true,
+          "FullName": "Editor.SceneRenderingWidget.GetRay",
+          "Name": "GetRay",
+          "DeclaringType": "Editor.SceneRenderingWidget",
+          "Documentation": {
+            "Summary": "Given a local widget position, return a Ray"
+          },
+          "DocId": "M:Editor.SceneRenderingWidget.GetRay(Vector2)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Qt/SceneRenderingWidget.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Editor.SceneRenderingWidget..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.SceneRenderingWidget",
+          "DocId": "M:Editor.SceneRenderingWidget.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Scene",
+          "Loc": {
+            "File": "Qt/SceneRenderingWidget.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Editor.SceneRenderingWidget.Scene",
+          "Name": "Scene",
+          "Documentation": {
+            "Summary": "The active scene that we're rendering"
+          },
+          "DocId": "P:Editor.SceneRenderingWidget.Scene"
+        },
+        {
+          "PropertyType": "Sandbox.CameraComponent",
+          "Loc": {
+            "File": "Qt/SceneRenderingWidget.cs",
+            "Line": 23
+          },
+          "IsPublic": true,
+          "FullName": "Editor.SceneRenderingWidget.Camera",
+          "Name": "Camera",
+          "Documentation": {
+            "Summary": "The camera to render from. We will fallback to Scene.Camera if this is null"
+          },
+          "DocId": "P:Editor.SceneRenderingWidget.Camera"
+        },
+        {
+          "PropertyType": "Sandbox.Gizmo.Instance",
+          "Loc": {
+            "File": "Qt/SceneRenderingWidget.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Editor.SceneRenderingWidget.GizmoInstance",
+          "Name": "GizmoInstance",
+          "Documentation": {
+            "Summary": "This widget manages it's own gizmo instance."
+          },
+          "DocId": "P:Editor.SceneRenderingWidget.GizmoInstance"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/SceneRenderingWidget.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Editor.SceneRenderingWidget.EnableEngineOverlays",
+          "Name": "EnableEngineOverlays",
+          "DocId": "P:Editor.SceneRenderingWidget.EnableEngineOverlays"
+        },
+        {
+          "PropertyType": "Ray",
+          "Loc": {
+            "File": "Qt/SceneRenderingWidget.cs",
+            "Line": 225
+          },
+          "IsPublic": true,
+          "FullName": "Editor.SceneRenderingWidget.CursorRay",
+          "Name": "CursorRay",
+          "Documentation": {
+            "Summary": "Return a ray for the current cursor position"
+          },
+          "DocId": "P:Editor.SceneRenderingWidget.CursorRay"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.SceneRenderingWidget",
+      "Name": "SceneRenderingWidget",
+      "Documentation": {
+        "Summary": "Render a scene to a native widget. This replaces NativeRenderingWidget."
+      },
+      "DocId": "T:Editor.SceneRenderingWidget"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Frame",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "widget",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/ScrollArea.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollArea.MakeVisible",
+          "Name": "MakeVisible",
+          "DeclaringType": "Editor.ScrollArea",
+          "DocId": "M:Editor.ScrollArea.MakeVisible(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "pos",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Qt/ScrollArea.cs",
+            "Line": 87
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollArea.MakeVisible",
+          "Name": "MakeVisible",
+          "DeclaringType": "Editor.ScrollArea",
+          "DocId": "M:Editor.ScrollArea.MakeVisible(Vector3)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/ScrollArea.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollArea..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.ScrollArea",
+          "DocId": "M:Editor.ScrollArea.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Editor.ScrollBar",
+          "Loc": {
+            "File": "Qt/ScrollArea.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollArea.VerticalScrollbar",
+          "Name": "VerticalScrollbar",
+          "DocId": "P:Editor.ScrollArea.VerticalScrollbar"
+        },
+        {
+          "PropertyType": "Editor.ScrollBar",
+          "Loc": {
+            "File": "Qt/ScrollArea.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollArea.HorizontalScrollbar",
+          "Name": "HorizontalScrollbar",
+          "DocId": "P:Editor.ScrollArea.HorizontalScrollbar"
+        },
+        {
+          "PropertyType": "Editor.Widget",
+          "Loc": {
+            "File": "Qt/ScrollArea.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollArea.Canvas",
+          "Name": "Canvas",
+          "Documentation": {
+            "Summary": "The content widget to scroll."
+          },
+          "DocId": "P:Editor.ScrollArea.Canvas"
+        },
+        {
+          "PropertyType": "Editor.ScrollbarMode",
+          "Loc": {
+            "File": "Qt/ScrollArea.cs",
+            "Line": 71
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollArea.HorizontalScrollbarMode",
+          "Name": "HorizontalScrollbarMode",
+          "DocId": "P:Editor.ScrollArea.HorizontalScrollbarMode"
+        },
+        {
+          "PropertyType": "Editor.ScrollbarMode",
+          "Loc": {
+            "File": "Qt/ScrollArea.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollArea.VerticalScrollbarMode",
+          "Name": "VerticalScrollbarMode",
+          "DocId": "P:Editor.ScrollArea.VerticalScrollbarMode"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ScrollArea",
+      "Name": "ScrollArea",
+      "Documentation": {
+        "Summary": "A widget that can scroll its <see cref=\"P:Editor.ScrollArea.Canvas\" />."
+      },
+      "DocId": "T:Editor.ScrollArea"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "ptr",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "l": {
+            "File": "Qt/ScrollBar.cs",
+            "Line": 46
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollBar..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.ScrollBar",
+          "DocId": "M:Editor.ScrollBar.#ctor(System.IntPtr)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/ScrollBar.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollBar.Minimum",
+          "Name": "Minimum",
+          "DocId": "P:Editor.ScrollBar.Minimum"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/ScrollBar.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollBar.Maximum",
+          "Name": "Maximum",
+          "DocId": "P:Editor.ScrollBar.Maximum"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/ScrollBar.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollBar.Value",
+          "Name": "Value",
+          "DocId": "P:Editor.ScrollBar.Value"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/ScrollBar.cs",
+            "Line": 30
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollBar.SliderPosition",
+          "Name": "SliderPosition",
+          "DocId": "P:Editor.ScrollBar.SliderPosition"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/ScrollBar.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollBar.PageStep",
+          "Name": "PageStep",
+          "DocId": "P:Editor.ScrollBar.PageStep"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/ScrollBar.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Editor.ScrollBar.SingleStep",
+          "Name": "SingleStep",
+          "DocId": "P:Editor.ScrollBar.SingleStep"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.ScrollBar",
+      "Name": "ScrollBar",
+      "DocId": "T:Editor.ScrollBar"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Frame",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "w",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/Splitter.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Splitter.AddWidget",
+          "Name": "AddWidget",
+          "DeclaringType": "Editor.Splitter",
+          "DocId": "M:Editor.Splitter.AddWidget(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.String",
+          "Parameters": [],
+          "l": {
+            "File": "Qt/Splitter.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Splitter.SaveState",
+          "Name": "SaveState",
+          "DeclaringType": "Editor.Splitter",
+          "DocId": "M:Editor.Splitter.SaveState"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "state",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Qt/Splitter.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Splitter.RestoreState",
+          "Name": "RestoreState",
+          "DeclaringType": "Editor.Splitter",
+          "DocId": "M:Editor.Splitter.RestoreState(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "cell",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "stretch",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Qt/Splitter.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Splitter.SetStretch",
+          "Name": "SetStretch",
+          "DeclaringType": "Editor.Splitter",
+          "DocId": "M:Editor.Splitter.SetStretch(System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "index",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "collapsible",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Qt/Splitter.cs",
+            "Line": 75
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Splitter.SetCollapsible",
+          "Name": "SetCollapsible",
+          "DeclaringType": "Editor.Splitter",
+          "DocId": "M:Editor.Splitter.SetCollapsible(System.Int32,System.Boolean)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/Splitter.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Splitter..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.Splitter",
+          "DocId": "M:Editor.Splitter.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Splitter.cs",
+            "Line": 44
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Splitter.IsHorizontal",
+          "Name": "IsHorizontal",
+          "DocId": "P:Editor.Splitter.IsHorizontal"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Splitter.cs",
+            "Line": 50
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Splitter.IsVertical",
+          "Name": "IsVertical",
+          "DocId": "P:Editor.Splitter.IsVertical"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/Splitter.cs",
+            "Line": 56
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Splitter.OpaqueResize",
+          "Name": "OpaqueResize",
+          "DocId": "P:Editor.Splitter.OpaqueResize"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Qt/Splitter.cs",
+            "Line": 62
+          },
+          "IsPublic": true,
+          "FullName": "Editor.Splitter.HandleWidth",
+          "Name": "HandleWidth",
+          "DocId": "P:Editor.Splitter.HandleWidth"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.Splitter",
+      "Name": "Splitter",
+      "Documentation": {
+        "Summary": "Split frame, allows dragging to resize panels"
+      },
+      "DocId": "T:Editor.Splitter"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "w",
+              "Type": "Editor.Widget"
+            },
+            {
+              "Name": "stretch",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Qt/StatusBar.cs",
+            "Line": 37
+          },
+          "IsPublic": true,
+          "FullName": "Editor.StatusBar.AddWidgetLeft",
+          "Name": "AddWidgetLeft",
+          "DeclaringType": "Editor.StatusBar",
+          "DocId": "M:Editor.StatusBar.AddWidgetLeft(Editor.Widget,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "w",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/StatusBar.cs",
+            "Line": 42
+          },
+          "IsPublic": true,
+          "FullName": "Editor.StatusBar.RemoveWidget",
+          "Name": "RemoveWidget",
+          "DeclaringType": "Editor.StatusBar",
+          "DocId": "M:Editor.StatusBar.RemoveWidget(Editor.Widget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "w",
+              "Type": "Editor.Widget"
+            },
+            {
+              "Name": "stretch",
+              "Type": "System.Int32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Qt/StatusBar.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Editor.StatusBar.AddWidgetRight",
+          "Name": "AddWidgetRight",
+          "DeclaringType": "Editor.StatusBar",
+          "DocId": "M:Editor.StatusBar.AddWidgetRight(Editor.Widget,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "seconds",
+              "Type": "System.Single",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Qt/StatusBar.cs",
+            "Line": 52
+          },
+          "IsPublic": true,
+          "FullName": "Editor.StatusBar.ShowMessage",
+          "Name": "ShowMessage",
+          "DeclaringType": "Editor.StatusBar",
+          "DocId": "M:Editor.StatusBar.ShowMessage(System.String,System.Single)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "parent",
+              "Type": "Editor.Widget"
+            }
+          ],
+          "l": {
+            "File": "Qt/StatusBar.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Editor.StatusBar..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Editor.StatusBar",
+          "DocId": "M:Editor.StatusBar.#ctor(Editor.Widget)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Qt/StatusBar.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Editor.StatusBar.SizeGrip",
+          "Name": "SizeGrip",
+          "DocId": "P:Editor.StatusBar.SizeGrip"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.StatusBar",
+      "Name": "StatusBar",
+      "DocId": "T:Editor.StatusBar"
+    },
+    {
+      "Namespace": "Editor",
+      "BaseType": "Editor.Widget",
+      "Methods": [],
+      "Constructors": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Tools",
+      "IsPublic": true,
+      "FullName": "Editor.TabBar",
+      "Name": "TabBar",
+      "DocId": "T:Editor.TabBar"
+    }
+  ],
+  "_metadata": {
+    "chunk": 258,
+    "items_count": 12
+  }
+}

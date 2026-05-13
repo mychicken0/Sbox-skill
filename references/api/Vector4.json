@@ -1,0 +1,1377 @@
+{
+  "Types": [
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 156
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.WithX",
+          "Name": "WithX",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns this vector with given X component.",
+            "Return": "The new vector.",
+            "Params": {
+              "x": "The override for X component."
+            }
+          },
+          "DocId": "M:Vector4.WithX(System.Single)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "y",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 163
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.WithY",
+          "Name": "WithY",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns this vector with given Y component.",
+            "Return": "The new vector.",
+            "Params": {
+              "y": "The override for Y component."
+            }
+          },
+          "DocId": "M:Vector4.WithY(System.Single)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "z",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 170
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.WithZ",
+          "Name": "WithZ",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns this vector with given Z component.",
+            "Return": "The new vector.",
+            "Params": {
+              "z": "The override for Z component."
+            }
+          },
+          "DocId": "M:Vector4.WithZ(System.Single)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "w",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 177
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.WithW",
+          "Name": "WithW",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns this vector with given W component.",
+            "Return": "The new vector.",
+            "Params": {
+              "w": "The override for W component."
+            }
+          },
+          "DocId": "M:Vector4.WithW(System.Single)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "tolerance",
+              "Type": "System.Single",
+              "Default": "0.0001"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 193
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.IsNearlyZero",
+          "Name": "IsNearlyZero",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if value on every axis is less than tolerance away from zero"
+          },
+          "DocId": "M:Vector4.IsNearlyZero(System.Single)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "otherMin",
+              "Type": "Vector4"
+            },
+            {
+              "Name": "otherMax",
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 207
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.Clamp",
+          "Name": "Clamp",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector each axis of which is clamped to between the 2 given vectors.",
+            "Params": {
+              "otherMin": "The mins vector. Values on each axis should be smaller than those of the maxs vector. See <see cref=\"M:Vector4.Sort(Vector4@,Vector4@)\">Vector4.Sort</see>.",
+              "otherMax": "The maxs vector. Values on each axis should be bigger than those of the mins vector. See <see cref=\"M:Vector4.Sort(Vector4@,Vector4@)\">Vector4.Sort</see>."
+            }
+          },
+          "DocId": "M:Vector4.Clamp(Vector4,Vector4)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "max",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 215
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.Clamp",
+          "Name": "Clamp",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector each axis of which is clamped to given min and max values.",
+            "Params": {
+              "min": "Minimum value for each axis.",
+              "max": "Maximum value for each axis."
+            }
+          },
+          "DocId": "M:Vector4.Clamp(System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "value",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "min",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "max",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 223
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.Clamp",
+          "Name": "Clamp",
+          "DeclaringType": "Vector4",
+          "Documentation": {
+            "Summary": "Restricts a vector between a minimum and a maximum value.",
+            "Params": {
+              "value": "The vector to restrict.",
+              "min": "The mins vector. Values on each axis should be smaller than those of the maxs vector. See <see cref=\"M:Vector4.Sort(Vector4@,Vector4@)\">Vector4.Sort</see>.",
+              "max": "The maxs vector. Values on each axis should be bigger than those of the mins vector. See <see cref=\"M:Vector4.Sort(Vector4@,Vector4@)\">Vector4.Sort</see>."
+            }
+          },
+          "DocId": "M:Vector4.Clamp(Vector4@,Vector4@,Vector4@)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "other",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 230
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.ComponentMin",
+          "Name": "ComponentMin",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector that has the minimum values on each axis between this vector and given vector."
+          },
+          "DocId": "M:Vector4.ComponentMin(Vector4@)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 236
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.Min",
+          "Name": "Min",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector that has the minimum values on each axis between the 2 given vectors."
+          },
+          "DocId": "M:Vector4.Min(Vector4@,Vector4@)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "other",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 243
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.ComponentMax",
+          "Name": "ComponentMax",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns a vector that has the maximum values on each axis between this vector and given vector."
+          },
+          "DocId": "M:Vector4.ComponentMax(Vector4@)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 249
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.Max",
+          "Name": "Max",
+          "DeclaringType": "Vector4",
+          "Documentation": {
+            "Summary": "Returns a vector that has the maximum values on each axis between the 2 given vectors."
+          },
+          "DocId": "M:Vector4.Max(Vector4@,Vector4@)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "a",
+              "Type": "Vector4"
+            },
+            {
+              "Name": "b",
+              "Type": "Vector4"
+            },
+            {
+              "Name": "frac",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 262
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.Lerp",
+          "Name": "Lerp",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "geom.lerp"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "timeline"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Performs linear interpolation between 2 given vectors.",
+            "Return": "",
+            "Params": {
+              "a": "Vector A",
+              "b": "Vector B",
+              "frac": "Fraction, where 0 would return Vector A, 0.5 would return a point between the 2 vectors, and 1 would return Vector B.",
+              "clamp": "Whether to clamp the fraction argument between [0,1]"
+            }
+          },
+          "DocId": "M:Vector4.Lerp(Vector4,Vector4,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "frac",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 273
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.LerpTo",
+          "Name": "LerpTo",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Performs linear interpolation between this and given vectors.",
+            "Return": "",
+            "Params": {
+              "target": "Vector B",
+              "frac": "Fraction, where 0 would return Vector A, 0.5 would return a point between the 2 vectors, and 1 would return Vector B.",
+              "clamp": "Whether to clamp the fraction argument between [0,1]"
+            }
+          },
+          "DocId": "M:Vector4.LerpTo(Vector4@,System.Single,System.Boolean)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "frac",
+              "Type": "Vector4"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 285
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.Lerp",
+          "Name": "Lerp",
+          "DeclaringType": "Vector4",
+          "Documentation": {
+            "Summary": "Performs linear interpolation between 2 given vectors, using a vector for the fraction on each axis.",
+            "Return": "",
+            "Params": {
+              "a": "Vector A",
+              "b": "Vector B",
+              "frac": "Fraction for each axis, where 0 would return Vector A, 0.5 would return a point between the 2 vectors, and 1 would return Vector B.",
+              "clamp": "Whether to clamp the fraction argument between [0,1] on each axis"
+            }
+          },
+          "DocId": "M:Vector4.Lerp(Vector4@,Vector4@,Vector4,System.Boolean)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "frac",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "clamp",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 296
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.LerpTo",
+          "Name": "LerpTo",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Performs linear interpolation between this and given vectors, with separate fraction for each vector component.",
+            "Return": "",
+            "Params": {
+              "target": "Vector B",
+              "frac": "Fraction for each axis, where 0 would return this, 0.5 would return a point between this and given vectors, and 1 would return the given vector.",
+              "clamp": "Whether to clamp the fraction argument between [0,1] on each axis"
+            }
+          },
+          "DocId": "M:Vector4.LerpTo(Vector4@,Vector4@,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 303
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.Dot",
+          "Name": "Dot",
+          "DeclaringType": "Vector4",
+          "Documentation": {
+            "Summary": "Returns the scalar/dot product of the 2 given vectors"
+          },
+          "DocId": "M:Vector4.Dot(Vector4@,Vector4@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 309
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.Dot",
+          "Name": "Dot",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns the scalar/dot product of this vector and given vector."
+          },
+          "DocId": "M:Vector4.Dot(Vector4@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 314
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.DistanceBetween",
+          "Name": "DistanceBetween",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "geom.distance"
+              ]
+            },
+            {
+              "FullName": "Sandbox.PureAttribute"
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Distance"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry"
+              ]
+            },
+            {
+              "FullName": "IconAttribute",
+              "ConstructorArguments": [
+                "straighten"
+              ]
+            }
+          ],
+          "DocId": "M:Vector4.DistanceBetween(Vector4@,Vector4@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 320
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.Distance",
+          "Name": "Distance",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns distance between this vector to given vector."
+          },
+          "DocId": "M:Vector4.Distance(Vector4@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "a",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "b",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 328
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.DistanceBetweenSquared",
+          "Name": "DistanceBetweenSquared",
+          "DeclaringType": "Vector4",
+          "Documentation": {
+            "Summary": "Returns squared distance between the 2 given vectors. This is faster than <see cref=\"M:Vector4.DistanceBetween(Vector4@,Vector4@)\">DistanceBetween</see>,\nand can be used for things like comparing distances, as long as only squared values are used."
+          },
+          "DocId": "M:Vector4.DistanceBetweenSquared(Vector4@,Vector4@)"
+        },
+        {
+          "ReturnType": "System.Single",
+          "Parameters": [
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 335
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.DistanceSquared",
+          "Name": "DistanceSquared",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns squared distance between this vector to given vector. This is faster than <see cref=\"M:Vector4.Distance(Vector4@)\">Distance</see>,\nand can be used for things like comparing distances, as long as only squared values are used."
+          },
+          "DocId": "M:Vector4.DistanceSquared(Vector4@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "min",
+              "Ref": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "max",
+              "Ref": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 343
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.Sort",
+          "Name": "Sort",
+          "DeclaringType": "Vector4",
+          "Documentation": {
+            "Summary": "Sort these two vectors into min and max. This doesn't just swap the vectors, it sorts each component.\nSo that min will come out containing the minimum x, y, z and w values."
+          },
+          "DocId": "M:Vector4.Sort(Vector4@,Vector4@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "v",
+              "In": true,
+              "Type": "Vector4"
+            },
+            {
+              "Name": "delta",
+              "Type": "System.Single",
+              "Default": "0.0001"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 366
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.AlmostEqual",
+          "Name": "AlmostEqual",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if we're nearly equal to the passed vector.",
+            "Return": "True if nearly equal",
+            "Params": {
+              "v": "The value to compare with",
+              "delta": "The max difference between component values"
+            }
+          },
+          "DocId": "M:Vector4.AlmostEqual(Vector4@,System.Single)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "gridSize",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "sx",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "sy",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "sz",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "sw",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 379
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.SnapToGrid",
+          "Name": "SnapToGrid",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Snap to grid along any of the 4 axes."
+          },
+          "DocId": "M:Vector4.SnapToGrid(System.Single,System.Boolean,System.Boolean,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 456
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.Parse",
+          "Name": "Parse",
+          "DeclaringType": "Vector4",
+          "Documentation": {
+            "Summary": "Given a string, try to convert this into a vector4. The format is \"x,y,z,w\"."
+          },
+          "DocId": "M:Vector4.Parse(System.String)"
+        },
+        {
+          "ReturnType": "Vector4",
+          "IsOverride": true,
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            },
+            {
+              "Name": "provider",
+              "Type": "System.IFormatProvider"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 465
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.Parse",
+          "Name": "Parse",
+          "DeclaringType": "Vector4",
+          "Documentation": {},
+          "DocId": "M:Vector4.Parse(System.String,System.IFormatProvider)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            },
+            {
+              "Name": "result",
+              "Out": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 471
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.TryParse",
+          "Name": "TryParse",
+          "DeclaringType": "Vector4",
+          "Documentation": {},
+          "DocId": "M:Vector4.TryParse(System.String,Vector4@)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "IsOverride": true,
+          "Parameters": [
+            {
+              "Name": "str",
+              "Type": "System.String"
+            },
+            {
+              "Name": "provider",
+              "Type": "System.IFormatProvider"
+            },
+            {
+              "Name": "result",
+              "Out": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 477
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.TryParse",
+          "Name": "TryParse",
+          "DeclaringType": "Vector4",
+          "Documentation": {},
+          "DocId": "M:Vector4.TryParse(System.String,System.IFormatProvider,Vector4@)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "y",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "z",
+              "Type": "System.Single"
+            },
+            {
+              "Name": "w",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 77
+          },
+          "IsPublic": true,
+          "FullName": "Vector4..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector4",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.ActionGraphNodeAttribute",
+              "ConstructorArguments": [
+                "vec4.new"
+              ]
+            },
+            {
+              "FullName": "TitleAttribute",
+              "ConstructorArguments": [
+                "Vector4"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Math/Geometry/Vector4"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Initializes a vector4 with given components.",
+            "Params": {
+              "x": "The X component.",
+              "y": "The Y component.",
+              "z": "The Z component.",
+              "w": "The W component."
+            }
+          },
+          "DocId": "M:Vector4.#ctor(System.Single,System.Single,System.Single,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "other",
+              "In": true,
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Vector4..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector4",
+          "Documentation": {
+            "Summary": "Initializes a 4D vector from a given Vector4, i.e. creating a copy."
+          },
+          "DocId": "M:Vector4.#ctor(Vector4@)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "v",
+              "In": true,
+              "Type": "Vector3"
+            },
+            {
+              "Name": "w",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Vector4..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector4",
+          "Documentation": {
+            "Summary": "Initializes a 4D vector from given #D vector and the given W component."
+          },
+          "DocId": "M:Vector4.#ctor(Vector3@,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "all",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 101
+          },
+          "IsPublic": true,
+          "FullName": "Vector4..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector4",
+          "Documentation": {
+            "Summary": "Initializes the 4D vector with all components set to given value."
+          },
+          "DocId": "M:Vector4.#ctor(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "v",
+              "Type": "System.Numerics.Vector4"
+            }
+          ],
+          "l": {
+            "File": "Math/Vector4.cs",
+            "Line": 108
+          },
+          "IsPublic": true,
+          "FullName": "Vector4..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Vector4",
+          "DocId": "M:Vector4.#ctor(System.Numerics.Vector4)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector4.cs",
+            "Line": 29
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.x",
+          "Name": "x",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.Serialization.DataMemberAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The X component of this Vector."
+          },
+          "DocId": "P:Vector4.x"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector4.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.y",
+          "Name": "y",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.Serialization.DataMemberAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The Y component of this Vector."
+          },
+          "DocId": "P:Vector4.y"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector4.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.z",
+          "Name": "z",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.Serialization.DataMemberAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The Z component of this Vector."
+          },
+          "DocId": "P:Vector4.z"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector4.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.w",
+          "Name": "w",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.Serialization.DataMemberAttribute"
+            },
+            {
+              "FullName": "Sandbox.ActionGraphIncludeAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The W component of this Vector."
+          },
+          "DocId": "P:Vector4.w"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector4.cs",
+            "Line": 125
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.Length",
+          "Name": "Length",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "The length (or magnitude) of the vector (Distance from 0,0,0)."
+          },
+          "DocId": "P:Vector4.Length"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector4.cs",
+            "Line": 131
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.LengthSquared",
+          "Name": "LengthSquared",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Squared length of the vector. This is faster than <see cref=\"P:Vector4.Length\" />, and can be used for things like comparing distances, as long as only squared values are used."
+          },
+          "DocId": "P:Vector4.LengthSquared"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Math/Vector4.cs",
+            "Line": 137
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.IsNaN",
+          "Name": "IsNaN",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if x, y, z or w are NaN"
+          },
+          "DocId": "P:Vector4.IsNaN"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Math/Vector4.cs",
+            "Line": 143
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.IsInfinity",
+          "Name": "IsInfinity",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Returns true if x, y, z or w are infinity"
+          },
+          "DocId": "P:Vector4.IsInfinity"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Math/Vector4.cs",
+            "Line": 149
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.IsNearZeroLength",
+          "Name": "IsNearZeroLength",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Whether length of this vector is nearly zero."
+          },
+          "DocId": "P:Vector4.IsNearZeroLength"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Math/Vector4.cs",
+            "Line": 185
+          },
+          "IsPublic": true,
+          "FullName": "Vector4.Item",
+          "Name": "Item",
+          "DocId": "P:Vector4.Item"
+        }
+      ],
+      "Fields": [
+        {
+          "FieldType": "Vector4",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.Zero",
+          "Name": "Zero",
+          "Documentation": {
+            "Summary": "A 4D vector with all components set to 0."
+          },
+          "DocId": "F:Vector4.Zero"
+        },
+        {
+          "FieldType": "Vector4",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Vector4.One",
+          "Name": "One",
+          "Documentation": {
+            "Summary": "A 4D vector with all components set to 1."
+          },
+          "DocId": "F:Vector4.One"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.System",
+      "IsPublic": true,
+      "FullName": "Vector4",
+      "Name": "Vector4",
+      "Attributes": [
+        {
+          "FullName": "System.Reflection.DefaultMemberAttribute",
+          "ConstructorArguments": [
+            "Item"
+          ]
+        },
+        {
+          "FullName": "System.Runtime.Serialization.DataContractAttribute"
+        },
+        {
+          "FullName": "System.Text.Json.Serialization.JsonConverterAttribute",
+          "ConstructorArguments": [
+            "Sandbox.Internal.JsonConvert.Vector4Converter"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A 4-dimensional vector/point."
+      },
+      "DocId": "T:Vector4"
+    }
+  ],
+  "_metadata": {
+    "chunk": 11,
+    "items_count": 1
+  }
+}

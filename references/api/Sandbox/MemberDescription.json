@@ -1,0 +1,934 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "Sandbox.DisplayInfo",
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.GetDisplayInfo",
+          "Name": "GetDisplayInfo",
+          "DeclaringType": "Sandbox.MemberDescription",
+          "Documentation": {
+            "Summary": "Access the full DisplayInfo for this type. This is faster than creating the DisplayInfo every time we need it."
+          },
+          "DocId": "M:Sandbox.MemberDescription.GetDisplayInfo"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "System.Reflection.MemberInfo"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 147
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.MemberDescription.Init",
+          "Name": "Init",
+          "DeclaringType": "Sandbox.MemberDescription",
+          "DocId": "M:Sandbox.MemberDescription.Init(System.Reflection.MemberInfo)"
+        },
+        {
+          "ReturnType": "System.Int32",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 168
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.MemberDescription.GetIdentityHash",
+          "Name": "GetIdentityHash",
+          "DeclaringType": "Sandbox.MemberDescription",
+          "Documentation": {
+            "Summary": "Generate a unique hash to identity this member.",
+            "Return": ""
+          },
+          "DocId": "M:Sandbox.MemberDescription.GetIdentityHash"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "member",
+              "Type": "System.Reflection.MemberInfo"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 175
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.MemberDescription.CaptureAttributes",
+          "Name": "CaptureAttributes",
+          "DeclaringType": "Sandbox.MemberDescription",
+          "DocId": "M:Sandbox.MemberDescription.CaptureAttributes(System.Reflection.MemberInfo)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 218
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.IsNamed",
+          "Name": "IsNamed",
+          "DeclaringType": "Sandbox.MemberDescription",
+          "Documentation": {
+            "Summary": "Utility function to check whether this string matches this type. Will search name and classname."
+          },
+          "DocId": "M:Sandbox.MemberDescription.IsNamed(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "tag",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 233
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.HasTag",
+          "Name": "HasTag",
+          "DeclaringType": "Sandbox.MemberDescription",
+          "Documentation": {
+            "Summary": "Returns true if Tags contains this tag"
+          },
+          "DocId": "M:Sandbox.MemberDescription.HasTag(System.String)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 254
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.HasAttribute",
+          "Name": "HasAttribute",
+          "DeclaringType": "Sandbox.MemberDescription",
+          "Documentation": {
+            "Summary": "Whether or not this has at least one of the specified attribute."
+          },
+          "DocId": "M:Sandbox.MemberDescription.HasAttribute``1"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "t",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.HasAttribute",
+          "Name": "HasAttribute",
+          "DeclaringType": "Sandbox.MemberDescription",
+          "Documentation": {
+            "Summary": "Whether or not this has at least one of the specified attribute."
+          },
+          "DocId": "M:Sandbox.MemberDescription.HasAttribute(System.Type)"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 270
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.GetCustomAttribute",
+          "Name": "GetCustomAttribute",
+          "DeclaringType": "Sandbox.MemberDescription",
+          "Documentation": {
+            "Summary": "Returns the first of Attributes of the passed in type. Or null."
+          },
+          "DocId": "M:Sandbox.MemberDescription.GetCustomAttribute``1"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.TypeDescription",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.TypeDescription",
+          "Name": "TypeDescription",
+          "Documentation": {
+            "Summary": "The type that we're a member of"
+          },
+          "DocId": "P:Sandbox.MemberDescription.TypeDescription"
+        },
+        {
+          "PropertyType": "Sandbox.TypeDescription",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.DeclaringType",
+          "Name": "DeclaringType",
+          "Documentation": {
+            "Summary": "The type that actually defined this member. This may be different from <see cref=\"P:Sandbox.MemberDescription.TypeDescription\" /> if this member is inherited from a base class."
+          },
+          "DocId": "P:Sandbox.MemberDescription.DeclaringType"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 38
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.Name",
+          "Name": "Name",
+          "Documentation": {
+            "Summary": "Name of this type member."
+          },
+          "DocId": "P:Sandbox.MemberDescription.Name"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.Identity",
+          "Name": "Identity",
+          "Documentation": {
+            "Summary": "An integer that represents this member. Based off its type and name."
+          },
+          "DocId": "P:Sandbox.MemberDescription.Identity"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 48
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.Title",
+          "Name": "Title",
+          "Documentation": {
+            "Summary": "Display name or title of this type member."
+          },
+          "DocId": "P:Sandbox.MemberDescription.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.Description",
+          "Name": "Description",
+          "Documentation": {
+            "Summary": "Description of this type member. This usually provided from the summary XML comment above the definition."
+          },
+          "DocId": "P:Sandbox.MemberDescription.Description"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.Icon",
+          "Name": "Icon",
+          "Documentation": {
+            "Summary": "The icon for this, if provided via the [Icon] attribute"
+          },
+          "DocId": "P:Sandbox.MemberDescription.Icon"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.Group",
+          "Name": "Group",
+          "Documentation": {
+            "Summary": "The group - usually provided via the [Group] attribute"
+          },
+          "DocId": "P:Sandbox.MemberDescription.Group"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.ReadOnly",
+          "Name": "ReadOnly",
+          "Documentation": {
+            "Summary": "If this is marked as [ReadOnly]"
+          },
+          "DocId": "P:Sandbox.MemberDescription.ReadOnly"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.Order",
+          "Name": "Order",
+          "Documentation": {
+            "Summary": "The display order - usually provided via the [Order] attribute"
+          },
+          "DocId": "P:Sandbox.MemberDescription.Order"
+        },
+        {
+          "PropertyType": "System.String[]",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.Tags",
+          "Name": "Tags",
+          "Documentation": {
+            "Summary": "Tags are usually provided via the [Tags] attribute"
+          },
+          "DocId": "P:Sandbox.MemberDescription.Tags"
+        },
+        {
+          "PropertyType": "System.String[]",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.Aliases",
+          "Name": "Aliases",
+          "Documentation": {
+            "Summary": "Aliases allow this to be found by alternative names."
+          },
+          "DocId": "P:Sandbox.MemberDescription.Aliases"
+        },
+        {
+          "PropertyType": "System.Attribute[]",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.Attributes",
+          "Name": "Attributes",
+          "Documentation": {
+            "Summary": "Attributes on this member"
+          },
+          "DocId": "P:Sandbox.MemberDescription.Attributes"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.IsStatic",
+          "Name": "IsStatic",
+          "Documentation": {
+            "Summary": "True if static"
+          },
+          "DocId": "P:Sandbox.MemberDescription.IsStatic"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 103
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.IsPublic",
+          "Name": "IsPublic",
+          "Documentation": {
+            "Summary": "True if publicly accessible"
+          },
+          "DocId": "P:Sandbox.MemberDescription.IsPublic"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 106
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.IsFamily",
+          "Name": "IsFamily",
+          "Documentation": {},
+          "DocId": "P:Sandbox.MemberDescription.IsFamily"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 111
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.IsMethod",
+          "Name": "IsMethod",
+          "Documentation": {
+            "Summary": "True if we're a method"
+          },
+          "DocId": "P:Sandbox.MemberDescription.IsMethod"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 116
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.IsProperty",
+          "Name": "IsProperty",
+          "Documentation": {
+            "Summary": "True if we're a property"
+          },
+          "DocId": "P:Sandbox.MemberDescription.IsProperty"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.IsField",
+          "Name": "IsField",
+          "Documentation": {
+            "Summary": "True if we're a field"
+          },
+          "DocId": "P:Sandbox.MemberDescription.IsField"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.SourceLine",
+          "Name": "SourceLine",
+          "Documentation": {
+            "Summary": "The line number of this member"
+          },
+          "DocId": "P:Sandbox.MemberDescription.SourceLine"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "TypeLibrary/Members/MemberDescription.cs",
+            "Line": 131
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MemberDescription.SourceFile",
+          "Name": "SourceFile",
+          "Documentation": {
+            "Summary": "The file containing this member"
+          },
+          "DocId": "P:Sandbox.MemberDescription.SourceFile"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Reflection",
+      "IsPublic": true,
+      "FullName": "Sandbox.MemberDescription",
+      "Name": "MemberDescription",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.SkipHotloadAttribute"
+        }
+      ],
+      "Documentation": {
+        "Summary": "Wraps <see cref=\"F:Sandbox.MemberDescription.MemberInfo\">MemberInfo</see> but with caching and sandboxing.\n            \nReturned by <see cref=\"T:Sandbox.Internal.TypeLibrary\" /> and <see cref=\"T:Sandbox.TypeDescription\" />."
+      },
+      "DocId": "T:Sandbox.MemberDescription"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.MemberDescription",
+      "Methods": [
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [
+            {
+              "Name": "targetObject",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "parameters",
+              "Type": "System.Object[]",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 98
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.MethodDescription",
+          "Documentation": {
+            "Summary": "Invokes this method.",
+            "Params": {
+              "targetObject": "Should be null if this is static, otherwise should be the object this is a member of.",
+              "parameters": "An array of parameters to pass. Should be the same length as Parameters"
+            }
+          },
+          "DocId": "M:Sandbox.MethodDescription.Invoke(System.Object,System.Object[])"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "targetObject",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "parameters",
+              "Type": "System.Object[]",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 119
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.InvokeWithReturn",
+          "Name": "InvokeWithReturn",
+          "DeclaringType": "Sandbox.MethodDescription",
+          "Documentation": {
+            "Summary": "Invokes this method and returns a value.",
+            "Params": {
+              "targetObject": "Should be null if this is static, otherwise should be the object this is a member of.",
+              "parameters": "An array of parameters to pass. Should be the same length as Parameters"
+            }
+          },
+          "DocId": "M:Sandbox.MethodDescription.InvokeWithReturn``1(System.Object,System.Object[])"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [],
+          "l": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 129
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.CreateDelegate",
+          "Name": "CreateDelegate",
+          "DeclaringType": "Sandbox.MethodDescription",
+          "Documentation": {
+            "Summary": "Creates a delegate bound to this method.",
+            "TypeParams": {
+              "T": "Delegate type"
+            }
+          },
+          "DocId": "M:Sandbox.MethodDescription.CreateDelegate``1"
+        },
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 140
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.CreateDelegate",
+          "Name": "CreateDelegate",
+          "DeclaringType": "Sandbox.MethodDescription",
+          "Documentation": {
+            "Summary": "Creates a delegate bound to this method.",
+            "Params": {
+              "target": "Value for the first parameter / target object"
+            },
+            "TypeParams": {
+              "T": "Delegate type"
+            }
+          },
+          "DocId": "M:Sandbox.MethodDescription.CreateDelegate``1(System.Object)"
+        },
+        {
+          "ReturnType": "System.Delegate",
+          "Parameters": [
+            {
+              "Name": "delegateType",
+              "Type": "System.Type"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 149
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.CreateDelegate",
+          "Name": "CreateDelegate",
+          "DeclaringType": "Sandbox.MethodDescription",
+          "Documentation": {
+            "Summary": "Creates a delegate bound to this method.",
+            "Params": {
+              "delegateType": "Delegate type to create"
+            }
+          },
+          "DocId": "M:Sandbox.MethodDescription.CreateDelegate(System.Type)"
+        },
+        {
+          "ReturnType": "System.Delegate",
+          "Parameters": [
+            {
+              "Name": "delegateType",
+              "Type": "System.Type"
+            },
+            {
+              "Name": "target",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 159
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.CreateDelegate",
+          "Name": "CreateDelegate",
+          "DeclaringType": "Sandbox.MethodDescription",
+          "Documentation": {
+            "Summary": "Creates a delegate bound to this method.",
+            "Params": {
+              "delegateType": "Delegate type to create",
+              "target": "Value for the first parameter / target object"
+            }
+          },
+          "DocId": "M:Sandbox.MethodDescription.CreateDelegate(System.Type,System.Object)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 15
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.IsMethod",
+          "Name": "IsMethod",
+          "Documentation": {
+            "Summary": "Returns true - because this is a method"
+          },
+          "DocId": "P:Sandbox.MethodDescription.IsMethod"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 18
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.IsSpecialName",
+          "Name": "IsSpecialName",
+          "Documentation": {},
+          "DocId": "P:Sandbox.MethodDescription.IsSpecialName"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.IsVirtual",
+          "Name": "IsVirtual",
+          "Documentation": {},
+          "DocId": "P:Sandbox.MethodDescription.IsVirtual"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 28
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.ReturnType",
+          "Name": "ReturnType",
+          "Documentation": {
+            "Summary": "Gets the return type of this method."
+          },
+          "DocId": "P:Sandbox.MethodDescription.ReturnType"
+        },
+        {
+          "PropertyType": "System.Reflection.ParameterInfo[]& modreq(System.Runtime.InteropServices.InAttribute)",
+          "Loc": {
+            "File": "TypeLibrary/Members/MethodDescription.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.MethodDescription.Parameters",
+          "Name": "Parameters",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.IsReadOnlyAttribute"
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets a list of parameters expected by this method"
+          },
+          "DocId": "P:Sandbox.MethodDescription.Parameters"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Reflection",
+      "IsPublic": true,
+      "FullName": "Sandbox.MethodDescription",
+      "Name": "MethodDescription",
+      "Documentation": {
+        "Summary": "Describes a method. We use this class to wrap and return <see cref=\"T:System.Reflection.MethodInfo\">MethodInfo</see>'s that are safe to interact with.\n            \nReturned by <see cref=\"T:Sandbox.Internal.TypeLibrary\" /> and <see cref=\"T:Sandbox.TypeDescription\" />."
+      },
+      "DocId": "T:Sandbox.MethodDescription"
+    },
+    {
+      "Namespace": "Sandbox",
+      "BaseType": "Sandbox.MemberDescription",
+      "Methods": [
+        {
+          "ReturnType": "System.Object",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/PropertyDescription.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PropertyDescription.GetValue",
+          "Name": "GetValue",
+          "DeclaringType": "Sandbox.PropertyDescription",
+          "Documentation": {
+            "Summary": "Get the value of this property on given object."
+          },
+          "DocId": "M:Sandbox.PropertyDescription.GetValue(System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Object"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/PropertyDescription.cs",
+            "Line": 100
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PropertyDescription.SetValue",
+          "Name": "SetValue",
+          "DeclaringType": "Sandbox.PropertyDescription",
+          "Documentation": {
+            "Summary": "Set the value of this property on given object."
+          },
+          "DocId": "M:Sandbox.PropertyDescription.SetValue(System.Object,System.Object)"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "obj",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "errors",
+              "Out": true,
+              "Type": "System.String[]"
+            },
+            {
+              "Name": "name",
+              "Type": "System.String",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "TypeLibrary/Members/PropertyDescription.cs",
+            "Line": 116
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PropertyDescription.CheckValidationAttributes",
+          "Name": "CheckValidationAttributes",
+          "DeclaringType": "Sandbox.PropertyDescription",
+          "Documentation": {},
+          "DocId": "M:Sandbox.PropertyDescription.CheckValidationAttributes(System.Object,System.String[]@,System.String)"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "IsVirtual": true,
+          "Loc": {
+            "File": "TypeLibrary/Members/PropertyDescription.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PropertyDescription.IsProperty",
+          "Name": "IsProperty",
+          "DocId": "P:Sandbox.PropertyDescription.IsProperty"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/PropertyDescription.cs",
+            "Line": 55
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PropertyDescription.CanWrite",
+          "Name": "CanWrite",
+          "Documentation": {
+            "Summary": "Whether this property can be written to."
+          },
+          "DocId": "P:Sandbox.PropertyDescription.CanWrite"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/PropertyDescription.cs",
+            "Line": 60
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PropertyDescription.CanRead",
+          "Name": "CanRead",
+          "Documentation": {
+            "Summary": "Whether this property can be read."
+          },
+          "DocId": "P:Sandbox.PropertyDescription.CanRead"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/PropertyDescription.cs",
+            "Line": 65
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PropertyDescription.IsGetMethodPublic",
+          "Name": "IsGetMethodPublic",
+          "Documentation": {
+            "Summary": "Whether the getter of this property is public."
+          },
+          "DocId": "P:Sandbox.PropertyDescription.IsGetMethodPublic"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/PropertyDescription.cs",
+            "Line": 70
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PropertyDescription.IsSetMethodPublic",
+          "Name": "IsSetMethodPublic",
+          "Documentation": {
+            "Summary": "Whether the setter of this property is public."
+          },
+          "DocId": "P:Sandbox.PropertyDescription.IsSetMethodPublic"
+        },
+        {
+          "PropertyType": "System.Type",
+          "Loc": {
+            "File": "TypeLibrary/Members/PropertyDescription.cs",
+            "Line": 80
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PropertyDescription.PropertyType",
+          "Name": "PropertyType",
+          "Documentation": {
+            "Summary": "Property type."
+          },
+          "DocId": "P:Sandbox.PropertyDescription.PropertyType"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "TypeLibrary/Members/PropertyDescription.cs",
+            "Line": 85
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.PropertyDescription.IsIndexer",
+          "Name": "IsIndexer",
+          "Documentation": {
+            "Summary": "True if this property has index parameters"
+          },
+          "DocId": "P:Sandbox.PropertyDescription.IsIndexer"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Reflection",
+      "IsPublic": true,
+      "FullName": "Sandbox.PropertyDescription",
+      "Name": "PropertyDescription",
+      "Documentation": {
+        "Summary": "Describes a property. We use this class to wrap and return <see cref=\"P:Sandbox.PropertyDescription.PropertyInfo\">PropertyInfo</see>'s that are safe to interact with.\n            \nReturned by <see cref=\"T:Sandbox.Internal.TypeLibrary\" /> and <see cref=\"T:Sandbox.TypeDescription\" />."
+      },
+      "DocId": "T:Sandbox.PropertyDescription"
+    }
+  ],
+  "_metadata": {
+    "chunk": 238,
+    "items_count": 3
+  }
+}

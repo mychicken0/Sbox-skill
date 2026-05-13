@@ -1,0 +1,1791 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Audio",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "channel",
+              "Type": "Sandbox.Audio.AudioChannel"
+            },
+            {
+              "Name": "input",
+              "Type": "System.Span`1<System.Single>"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 82
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Audio.AudioProcessor.ProcessSingleChannel",
+          "Name": "ProcessSingleChannel",
+          "DeclaringType": "Sandbox.Audio.AudioProcessor",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "For implementations that process each channel individually"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "78"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Audio.AudioProcessor.ProcessSingleChannel(Sandbox.Audio.AudioChannel,System.Span`1{System.Single})"
+        },
+        {
+          "ReturnType": "System.Text.Json.Nodes.JsonObject",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.AudioProcessor.Serialize",
+          "Name": "Serialize",
+          "DeclaringType": "Sandbox.Audio.AudioProcessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "83"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Audio.AudioProcessor.Serialize"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "node",
+              "Type": "System.Text.Json.Nodes.JsonObject"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.AudioProcessor.Deserialize",
+          "Name": "Deserialize",
+          "DeclaringType": "Sandbox.Audio.AudioProcessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "91"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Audio.AudioProcessor.Deserialize(System.Text.Json.Nodes.JsonObject)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 102
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Audio.AudioProcessor.OnDestroy",
+          "Name": "OnDestroy",
+          "DeclaringType": "Sandbox.Audio.AudioProcessor",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "98"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Audio.AudioProcessor.OnDestroy"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 17
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Audio.AudioProcessor..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.AudioProcessor",
+          "DocId": "M:Sandbox.Audio.AudioProcessor.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.AudioProcessor.Enabled",
+          "Name": "Enabled",
+          "Attributes": [
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Processor Settings"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Is this processor active?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "15"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Is this processor active?"
+          },
+          "DocId": "P:Sandbox.Audio.AudioProcessor.Enabled"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 24
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.AudioProcessor.Mix",
+          "Name": "Mix",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "GroupAttribute",
+              "ConstructorArguments": [
+                "Processor Settings"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Should we fade the influence of this processor in?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Should we fade the influence of this processor in?"
+          },
+          "DocId": "P:Sandbox.Audio.AudioProcessor.Mix"
+        },
+        {
+          "PropertyType": "Transform",
+          "Loc": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 34
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Audio.AudioProcessor.Listener",
+          "Name": "Listener",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The listener's position in this frame."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "32"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The listener's position in this frame."
+          },
+          "DocId": "P:Sandbox.Audio.AudioProcessor.Listener"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.AudioProcessor",
+      "Name": "AudioProcessor",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Takes a bunch of samples and processes them. It's common for these to be chained together. It's also common for the processor to store state between calls."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\AudioProcessor.cs",
+            "10"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Takes a bunch of samples and processes them. It's common for these to be chained together. It's also common for the processor to store state between calls."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\AudioProcessor.State.cs",
+            "77"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Takes a bunch of samples and processes them. It's common for these to be chained together.\nIt's also common for the processor to store state between calls."
+      },
+      "DocId": "T:Sandbox.Audio.AudioProcessor"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.State.cs",
+            "Line": 95
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Audio.AudioProcessor.ListenerState.OnDestroy",
+          "Name": "OnDestroy",
+          "DeclaringType": "Sandbox.Audio.AudioProcessor.ListenerState",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Called when audio processor or the listener is removed."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.State.cs",
+                "92"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Called when audio processor or the listener is removed."
+          },
+          "DocId": "M:Sandbox.Audio.AudioProcessor.ListenerState.OnDestroy"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Audio.AudioProcessor.ListenerState..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.AudioProcessor.ListenerState",
+          "DocId": "M:Sandbox.Audio.AudioProcessor.ListenerState.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.AudioProcessor.ListenerState",
+      "Name": "ListenerState",
+      "DeclaringType": "Sandbox.Audio.AudioProcessor",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "One of these is created for every listener that uses an audio processor."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\AudioProcessor.State.cs",
+            "82"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "One of these is created for every listener that uses an audio processor."
+      },
+      "DocId": "T:Sandbox.Audio.AudioProcessor.ListenerState"
+    },
+    {
+      "Namespace": "Sandbox.Audio",
+      "Methods": [
+        {
+          "ReturnType": "System.Int32",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 126
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.AudioChannel.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.Audio.AudioChannel",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "125"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Audio.AudioChannel.Get"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 122
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.AudioChannel..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.AudioChannel",
+          "DocId": "M:Sandbox.Audio.AudioChannel.#ctor(System.Int32)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Audio.AudioChannel",
+          "Loc": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 116
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Audio.AudioChannel.Left",
+          "Name": "Left",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "115"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Audio.AudioChannel.Left"
+        },
+        {
+          "PropertyType": "Sandbox.Audio.AudioChannel",
+          "Loc": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 117
+          },
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.Audio.AudioChannel.Right",
+          "Name": "Right",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "116"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Audio.AudioChannel.Right"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.AudioChannel",
+      "Name": "AudioChannel",
+      "Documentation": {
+        "Summary": "Represents an audio channel, between 0 and 7. This is used to index into buffers.\nThis is used rather than an int to avoid unfortuate bugs."
+      },
+      "DocId": "T:Sandbox.Audio.AudioChannel"
+    },
+    {
+      "Namespace": "Sandbox.Audio",
+      "Methods": [
+        {
+          "ReturnType": "T",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "Sandbox.Audio.AudioChannel"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 164
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.PerChannel<T>.Get",
+          "Name": "Get",
+          "DeclaringType": "Sandbox.Audio.PerChannel<T>",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get the value in a channel"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "163"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get the value in a channel"
+          },
+          "DocId": "M:Sandbox.Audio.PerChannel`1.Get(Sandbox.Audio.AudioChannel)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "i",
+              "Type": "Sandbox.Audio.AudioChannel"
+            },
+            {
+              "Name": "value",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 169
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.PerChannel<T>.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Audio.PerChannel<T>",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the value in a channel"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "168"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Audio.PerChannel`1.Set(Sandbox.Audio.AudioChannel,``0)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 16707566
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.PerChannel<T>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.PerChannel<T>",
+          "DocId": "M:Sandbox.Audio.PerChannel`1.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "T[]",
+          "Loc": {
+            "File": "Systems/Audio/Processors/AudioProcessor.cs",
+            "Line": 142
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.PerChannel<T>.Value",
+          "Name": "Value",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.cs",
+                "140"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Audio.PerChannel`1.Value"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.PerChannel<T>",
+      "Name": "PerChannel<T>",
+      "Documentation": {
+        "Summary": "Stores a variable per channel"
+      },
+      "DocId": "T:Sandbox.Audio.PerChannel`1"
+    },
+    {
+      "Namespace": "Sandbox.Audio",
+      "BaseType": "Sandbox.Audio.AudioProcessor",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.Audio.AudioProcessor<T>..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.AudioProcessor<T>",
+          "DocId": "M:Sandbox.Audio.AudioProcessor`1.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "T",
+          "Loc": {
+            "File": "Systems/Audio/Processors/AudioProcessor.State.cs",
+            "Line": 17
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Audio.AudioProcessor<T>.CurrentState",
+          "Name": "CurrentState",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Current state for listener."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\AudioProcessor.State.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Current state for listener."
+          },
+          "DocId": "P:Sandbox.Audio.AudioProcessor`1.CurrentState"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.AudioProcessor<T>",
+      "Name": "AudioProcessor<T>",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Audio processor that allows per listener state."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\AudioProcessor.State.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Audio processor that allows per listener state."
+      },
+      "DocId": "T:Sandbox.Audio.AudioProcessor`1"
+    },
+    {
+      "Namespace": "Sandbox.Audio",
+      "BaseType": "Sandbox.Audio.AudioProcessor<T>",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.DelayProcessor..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.DelayProcessor",
+          "DocId": "M:Sandbox.Audio.DelayProcessor.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/Processors/DelayProcessor.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.DelayProcessor.Delay",
+          "Name": "Delay",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\DelayProcessor.cs",
+                "6"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Audio.DelayProcessor.Delay"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/Processors/DelayProcessor.cs",
+            "Line": 11
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.DelayProcessor.Volume",
+          "Name": "Volume",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\DelayProcessor.cs",
+                "9"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Audio.DelayProcessor.Volume"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.DelayProcessor",
+      "Name": "DelayProcessor",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\DelayProcessor.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Audio.DelayProcessor"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Audio.AudioProcessor.ListenerState",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/DelayProcessor.cs",
+            "Line": 53
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Audio.DelayProcessor.State.OnDestroy",
+          "Name": "OnDestroy",
+          "DeclaringType": "Sandbox.Audio.DelayProcessor.State",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\DelayProcessor.cs",
+                "51"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Audio.DelayProcessor.State.OnDestroy"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/DelayProcessor.cs",
+            "Line": 43
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.DelayProcessor.State..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.DelayProcessor.State",
+          "DocId": "M:Sandbox.Audio.DelayProcessor.State.#ctor"
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.DelayProcessor.State",
+      "Name": "State",
+      "DeclaringType": "Sandbox.Audio.DelayProcessor",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\DelayProcessor.cs",
+            "12"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Audio.DelayProcessor.State"
+    },
+    {
+      "Namespace": "Sandbox.Audio",
+      "BaseType": "Sandbox.Audio.AudioProcessor<T>",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/HighPassProcessor.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.HighPassProcessor..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.HighPassProcessor",
+          "DocId": "M:Sandbox.Audio.HighPassProcessor.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/Processors/HighPassProcessor.cs",
+            "Line": 14
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.HighPassProcessor.Cutoff",
+          "Name": "Cutoff",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Cutoff frequency of the high-pass filter (0 to 1, where 1 is Nyquist frequency)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\HighPassProcessor.cs",
+                "12"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Cutoff frequency of the high-pass filter (0 to 1, where 1 is Nyquist frequency)."
+          },
+          "DocId": "P:Sandbox.Audio.HighPassProcessor.Cutoff"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.HighPassProcessor",
+      "Name": "HighPassProcessor",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Just a test - don't count on this sticking around"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\HighPassProcessor.cs",
+            "6"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Just a test - don't count on this sticking around"
+      },
+      "DocId": "T:Sandbox.Audio.HighPassProcessor"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Audio.AudioProcessor.ListenerState",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.HighPassProcessor.State..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.HighPassProcessor.State",
+          "DocId": "M:Sandbox.Audio.HighPassProcessor.State.#ctor"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.HighPassProcessor.State",
+      "Name": "State",
+      "DeclaringType": "Sandbox.Audio.HighPassProcessor",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\HighPassProcessor.cs",
+            "15"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Audio.HighPassProcessor.State"
+    },
+    {
+      "Namespace": "Sandbox.Audio",
+      "BaseType": "Sandbox.Audio.AudioProcessor<T>",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/LowPassProcessor.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.LowPassProcessor..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.LowPassProcessor",
+          "DocId": "M:Sandbox.Audio.LowPassProcessor.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/Processors/LowPassProcessor.cs",
+            "Line": 16
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.LowPassProcessor.Cutoff",
+          "Name": "Cutoff",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "FullName": "DefaultValueAttribute",
+              "ConstructorArguments": [
+                "Mono.Cecil.CustomAttributeArgument"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Cutoff frequency for the low-pass filter (normalized 0 to 1)."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\LowPassProcessor.cs",
+                "14"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Cutoff frequency for the low-pass filter (normalized 0 to 1)."
+          },
+          "DocId": "P:Sandbox.Audio.LowPassProcessor.Cutoff"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.LowPassProcessor",
+      "Name": "LowPassProcessor",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Just a test - don't count on this sticking around"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\LowPassProcessor.cs",
+            "8"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Just a test - don't count on this sticking around"
+      },
+      "DocId": "T:Sandbox.Audio.LowPassProcessor"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Audio.AudioProcessor.ListenerState",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.LowPassProcessor.State..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.LowPassProcessor.State",
+          "DocId": "M:Sandbox.Audio.LowPassProcessor.State.#ctor"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.LowPassProcessor.State",
+      "Name": "State",
+      "DeclaringType": "Sandbox.Audio.LowPassProcessor",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\LowPassProcessor.cs",
+            "17"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Audio.LowPassProcessor.State"
+    },
+    {
+      "Namespace": "Sandbox.Audio",
+      "BaseType": "Sandbox.Audio.AudioProcessor<T>",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.PitchProcessor..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.PitchProcessor",
+          "DocId": "M:Sandbox.Audio.PitchProcessor.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Audio/Processors/PitchProcessor.cs",
+            "Line": 8
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.PitchProcessor.Pitch",
+          "Name": "Pitch",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.RangeAttribute",
+              "ConstructorArguments": [
+                "0.5",
+                "2"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\PitchProcessor.cs",
+                "6"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Audio.PitchProcessor.Pitch"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.PitchProcessor",
+      "Name": "PitchProcessor",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\PitchProcessor.cs",
+            "3"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Audio.PitchProcessor"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "Sandbox.Audio.AudioProcessor.ListenerState",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/PitchProcessor.cs",
+            "Line": 35
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.Audio.PitchProcessor.State.OnDestroy",
+          "Name": "OnDestroy",
+          "DeclaringType": "Sandbox.Audio.PitchProcessor.State",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Audio\\Processors\\PitchProcessor.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Audio.PitchProcessor.State.OnDestroy"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Audio/Processors/PitchProcessor.cs",
+            "Line": 21
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Audio.PitchProcessor.State..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Audio.PitchProcessor.State",
+          "DocId": "M:Sandbox.Audio.PitchProcessor.State.#ctor"
+        }
+      ],
+      "Properties": [],
+      "Fields": [],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Audio.PitchProcessor.State",
+      "Name": "State",
+      "DeclaringType": "Sandbox.Audio.PitchProcessor",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Audio\\Processors\\PitchProcessor.cs",
+            "9"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Audio.PitchProcessor.State"
+    },
+    {
+      "Namespace": "Sandbox.ActionGraphs",
+      "BaseType": "Sandbox.GameResource",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphResource..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionGraphResource",
+          "DocId": "M:Sandbox.ActionGraphs.ActionGraphResource.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.DisplayInfo",
+          "Loc": {
+            "File": "Systems/ActionGraphs/ActionGraphResource.cs",
+            "Line": 25
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphResource.DisplayInfo",
+          "Name": "DisplayInfo",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\ActionGraphResource.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionGraphResource.DisplayInfo"
+        },
+        {
+          "PropertyType": "System.Text.Json.Nodes.JsonNode",
+          "Loc": {
+            "File": "Systems/ActionGraphs/ActionGraphResource.cs",
+            "Line": 61
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphResource.SerializedGraph",
+          "Name": "SerializedGraph",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonPropertyNameAttribute",
+              "ConstructorArguments": [
+                "Graph"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\ActionGraphResource.cs",
+                "45"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionGraphResource.SerializedGraph"
+        },
+        {
+          "PropertyType": "Facepunch.ActionGraphs.ActionGraph",
+          "Loc": {
+            "File": "Systems/ActionGraphs/ActionGraphResource.cs",
+            "Line": 82
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphResource.Graph",
+          "Name": "Graph",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.HideAttribute"
+            },
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\ActionGraphResource.cs",
+                "66"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionGraphResource.Graph"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/ActionGraphs/ActionGraphResource.cs",
+            "Line": 92
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphResource.Title",
+          "Name": "Title",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\ActionGraphResource.cs",
+                "87"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionGraphResource.Title"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/ActionGraphs/ActionGraphResource.cs",
+            "Line": 99
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphResource.Description",
+          "Name": "Description",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\ActionGraphResource.cs",
+                "94"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionGraphResource.Description"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/ActionGraphs/ActionGraphResource.cs",
+            "Line": 106
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphResource.Category",
+          "Name": "Category",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\ActionGraphResource.cs",
+                "101"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionGraphResource.Category"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/ActionGraphs/ActionGraphResource.cs",
+            "Line": 113
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionGraphResource.Icon",
+          "Name": "Icon",
+          "Attributes": [
+            {
+              "FullName": "System.Text.Json.Serialization.JsonIgnoreAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\ActionGraphResource.cs",
+                "108"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionGraphResource.Icon"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphs.ActionGraphResource",
+      "Name": "ActionGraphResource",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.AssetTypeAttribute"
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Some game logic implemented using visual scripting"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\ActionGraphs\\ActionGraphResource.cs",
+            "11"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Some game logic implemented using visual scripting"
+      },
+      "DocId": "T:Sandbox.ActionGraphs.ActionGraphResource"
+    },
+    {
+      "Namespace": "Sandbox.ActionGraphs",
+      "BaseType": "Sandbox.Component",
+      "Methods": [],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionsInvoker..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphs.ActionsInvoker",
+          "DocId": "M:Sandbox.ActionGraphs.ActionsInvoker.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/ActionGraphs/Components.cs",
+            "Line": 13
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionsInvoker.OnEnabledAction",
+          "Name": "OnEnabledAction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\Components.cs",
+                "12"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionsInvoker.OnEnabledAction"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/ActionGraphs/Components.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionsInvoker.OnUpdateAction",
+          "Name": "OnUpdateAction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\Components.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionsInvoker.OnUpdateAction"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/ActionGraphs/Components.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionsInvoker.OnFixedUpdateAction",
+          "Name": "OnFixedUpdateAction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\Components.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionsInvoker.OnFixedUpdateAction"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/ActionGraphs/Components.cs",
+            "Line": 34
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionsInvoker.OnDisabledAction",
+          "Name": "OnDisabledAction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\Components.cs",
+                "33"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionsInvoker.OnDisabledAction"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/ActionGraphs/Components.cs",
+            "Line": 41
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.ActionsInvoker.OnDestroyAction",
+          "Name": "OnDestroyAction",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\Components.cs",
+                "40"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.ActionGraphs.ActionsInvoker.OnDestroyAction"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphs.ActionsInvoker",
+      "Name": "ActionsInvoker",
+      "Attributes": [
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Actions Invoker"
+          ]
+        },
+        {
+          "FullName": "GroupAttribute",
+          "ConstructorArguments": [
+            "Actions"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "bolt"
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "A component which allows you to use action in all the usual functions."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\ActionGraphs\\Components.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "A component which allows you to use action in all the usual functions."
+      },
+      "DocId": "T:Sandbox.ActionGraphs.ActionsInvoker"
+    },
+    {
+      "Namespace": "Sandbox.ActionGraphs",
+      "IsInterface": true,
+      "IsAbstract": true,
+      "Group": "interface",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphs.IActionComponent",
+      "Name": "IActionComponent",
+      "Documentation": {
+        "Summary": "A component that only provides actions to implement with an Action Graph."
+      },
+      "DocId": "T:Sandbox.ActionGraphs.IActionComponent"
+    },
+    {
+      "Namespace": "Sandbox.ActionGraphs",
+      "BaseType": "Sandbox.Component",
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsProtected": true,
+          "FullName": "Sandbox.ActionGraphs.SimpleActionComponent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphs.SimpleActionComponent",
+          "DocId": "M:Sandbox.ActionGraphs.SimpleActionComponent.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/ActionGraphs/Components.cs",
+            "Line": 66
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.SimpleActionComponent.Action",
+          "Name": "Action",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.PropertyAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "ActionGraph to run when the relevant event occurs."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\Components.cs",
+                "64"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "ActionGraph to run when the relevant event occurs."
+          },
+          "DocId": "P:Sandbox.ActionGraphs.SimpleActionComponent.Action"
+        }
+      ],
+      "IsClass": true,
+      "IsAbstract": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphs.SimpleActionComponent",
+      "Name": "SimpleActionComponent",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute",
+          "ConstructorArguments": [
+            "Please use the action properties in Component."
+          ]
+        },
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "These should not exist"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\ActionGraphs\\Components.cs",
+            "58"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "These should not exist"
+      },
+      "DocId": "T:Sandbox.ActionGraphs.SimpleActionComponent"
+    },
+    {
+      "Namespace": "Sandbox.ActionGraphs",
+      "BaseType": "Sandbox.ActionGraphs.SimpleActionComponent",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/ActionGraphs/Components.cs",
+            "Line": 75
+          },
+          "IsProtected": true,
+          "FullName": "Sandbox.ActionGraphs.AwakeActionComponent.OnAwake",
+          "Name": "OnAwake",
+          "DeclaringType": "Sandbox.ActionGraphs.AwakeActionComponent",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\ActionGraphs\\Components.cs",
+                "73"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.ActionGraphs.AwakeActionComponent.OnAwake"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.ActionGraphs.AwakeActionComponent..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.ActionGraphs.AwakeActionComponent",
+          "DocId": "M:Sandbox.ActionGraphs.AwakeActionComponent.#ctor"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.ActionGraphs.AwakeActionComponent",
+      "Name": "AwakeActionComponent",
+      "Attributes": [
+        {
+          "FullName": "System.ObsoleteAttribute",
+          "ConstructorArguments": [
+            "Please use \"Component.OnComponentStart\"."
+          ]
+        },
+        {
+          "FullName": "TitleAttribute",
+          "ConstructorArguments": [
+            "Awake"
+          ]
+        },
+        {
+          "FullName": "GroupAttribute",
+          "ConstructorArguments": [
+            "Actions"
+          ]
+        },
+        {
+          "FullName": "IconAttribute",
+          "ConstructorArguments": [
+            "light_mode"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\ActionGraphs\\Components.cs",
+            "69"
+          ]
+        }
+      ],
+      "Documentation": {},
+      "DocId": "T:Sandbox.ActionGraphs.AwakeActionComponent"
+    }
+  ],
+  "_metadata": {
+    "chunk": 201,
+    "items_count": 18
+  }
+}

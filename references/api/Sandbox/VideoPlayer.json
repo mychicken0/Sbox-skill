@@ -1,0 +1,1740 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 368
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.VideoPlayer",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "366"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.VideoPlayer.Dispose"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "url",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 389
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.VideoPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Plays a video file from a URL. If there's already a video playing, it will stop."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "386"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Plays a video file from a URL. If there's already a video playing, it will stop."
+          },
+          "DocId": "M:Sandbox.VideoPlayer.Play(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "filesystem",
+              "Type": "Sandbox.BaseFileSystem"
+            },
+            {
+              "Name": "path",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 417
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Play",
+          "Name": "Play",
+          "DeclaringType": "Sandbox.VideoPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Plays a video file from a relative path. If there's already a video playing, it will stop."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "414"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Plays a video file from a relative path. If there's already a video playing, it will stop."
+          },
+          "DocId": "M:Sandbox.VideoPlayer.Play(Sandbox.BaseFileSystem,System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 443
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Resume",
+          "Name": "Resume",
+          "DeclaringType": "Sandbox.VideoPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Resumes video playback."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "441"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Resumes video playback."
+          },
+          "DocId": "M:Sandbox.VideoPlayer.Resume"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 451
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Stop",
+          "Name": "Stop",
+          "DeclaringType": "Sandbox.VideoPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Stops video playback."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "449"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Stops video playback."
+          },
+          "DocId": "M:Sandbox.VideoPlayer.Stop"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 459
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Pause",
+          "Name": "Pause",
+          "DeclaringType": "Sandbox.VideoPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Pauses video playback."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "457"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Pauses video playback."
+          },
+          "DocId": "M:Sandbox.VideoPlayer.Pause"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 468
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.TogglePause",
+          "Name": "TogglePause",
+          "DeclaringType": "Sandbox.VideoPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Toggle video playback"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "465"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Toggle video playback"
+          },
+          "DocId": "M:Sandbox.VideoPlayer.TogglePause"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "time",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 476
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Seek",
+          "Name": "Seek",
+          "DeclaringType": "Sandbox.VideoPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets the playback position to a specified time in the video, given in seconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "474"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets the playback position to a specified time in the video, given in seconds."
+          },
+          "DocId": "M:Sandbox.VideoPlayer.Seek(System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 484
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Present",
+          "Name": "Present",
+          "DeclaringType": "Sandbox.VideoPlayer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Present a video frame."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "482"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Present a video frame."
+          },
+          "DocId": "M:Sandbox.VideoPlayer.Present"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 263
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VideoPlayer",
+          "DocId": "M:Sandbox.VideoPlayer.#ctor"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 17
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.OnLoaded",
+          "Name": "OnLoaded",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Video successfully loaded."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "16"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Video successfully loaded."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.OnLoaded"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 22
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.OnAudioReady",
+          "Name": "OnAudioReady",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Event that is invoked when the audio stream is created and ready to use."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "21"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Event that is invoked when the audio stream is created and ready to use."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.OnAudioReady"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.OnFinished",
+          "Name": "OnFinished",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Video finished playing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "26"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Video finished playing."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.OnFinished"
+        },
+        {
+          "PropertyType": "System.Action",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.OnRepeated",
+          "Name": "OnRepeated",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Video started playing again after looping."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "31"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Video started playing again after looping."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.OnRepeated"
+        },
+        {
+          "PropertyType": "Sandbox.VideoPlayer.TextureChangedDelegate",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 39
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.OnTextureData",
+          "Name": "OnTextureData",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "If this event is set, texture data will be provided instead of rendering to the texture."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "38"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "If this event is set, texture data will be provided instead of rendering to the texture."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.OnTextureData"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 47
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Repeat",
+          "Name": "Repeat",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Sets whether the video should loop when it reaches the end."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "43"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Sets whether the video should loop when it reaches the end."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.Repeat"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 53
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Duration",
+          "Name": "Duration",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the total duration of the video in seconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "52"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the total duration of the video in seconds."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.Duration"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 58
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.PlaybackTime",
+          "Name": "PlaybackTime",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Gets the current playback time in seconds."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "57"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Gets the current playback time in seconds."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.PlaybackTime"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 63
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.SampleRate",
+          "Name": "SampleRate",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Audio sample rate."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "62"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Audio sample rate."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.SampleRate"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 68
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Channels",
+          "Name": "Channels",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Number of audio channels."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "67"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Number of audio channels."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.Channels"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 73
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.HasAudio",
+          "Name": "HasAudio",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Does the loaded video have audio?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "72"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Does the loaded video have audio?"
+          },
+          "DocId": "P:Sandbox.VideoPlayer.HasAudio"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 78
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.IsPaused",
+          "Name": "IsPaused",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Has the video been paused?"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "77"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Has the video been paused?"
+          },
+          "DocId": "P:Sandbox.VideoPlayer.IsPaused"
+        },
+        {
+          "PropertyType": "Sandbox.Texture",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 83
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Texture",
+          "Name": "Texture",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Texture of the video frame."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "82"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Texture of the video frame."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.Texture"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 88
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Width of the video."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "87"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Width of the video."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.Width"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 93
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Height of the video."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "92"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Height of the video."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.Height"
+        },
+        {
+          "PropertyType": "Sandbox.VideoPlayer.AudioAccessor",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 102
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Audio",
+          "Name": "Audio",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access audio properties for this video playback."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "101"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access audio properties for this video playback."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.Audio"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 494
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.Muted",
+          "Name": "Muted",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "The video is muted"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "490"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "The video is muted"
+          },
+          "DocId": "P:Sandbox.VideoPlayer.Muted"
+        }
+      ],
+      "Fields": [],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VideoPlayer",
+      "Name": "VideoPlayer",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Enables video playback and access to the video texture and audio."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+            "9"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Enables video playback and access to the video texture and audio."
+      },
+      "DocId": "T:Sandbox.VideoPlayer"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.MulticastDelegate",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "span",
+              "Type": "System.ReadOnlySpan`1<System.Byte>"
+            },
+            {
+              "Name": "size",
+              "Type": "Vector2"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.TextureChangedDelegate.Invoke",
+          "Name": "Invoke",
+          "DeclaringType": "Sandbox.VideoPlayer.TextureChangedDelegate",
+          "DocId": "M:Sandbox.VideoPlayer.TextureChangedDelegate.Invoke(System.ReadOnlySpan`1{System.Byte},Vector2)"
+        },
+        {
+          "ReturnType": "System.IAsyncResult",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "span",
+              "Type": "System.ReadOnlySpan`1<System.Byte>"
+            },
+            {
+              "Name": "size",
+              "Type": "Vector2"
+            },
+            {
+              "Name": "callback",
+              "Type": "System.AsyncCallback"
+            },
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.TextureChangedDelegate.BeginInvoke",
+          "Name": "BeginInvoke",
+          "DeclaringType": "Sandbox.VideoPlayer.TextureChangedDelegate",
+          "DocId": "M:Sandbox.VideoPlayer.TextureChangedDelegate.BeginInvoke(System.ReadOnlySpan`1{System.Byte},Vector2,System.AsyncCallback,System.Object)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "Parameters": [
+            {
+              "Name": "result",
+              "Type": "System.IAsyncResult"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.TextureChangedDelegate.EndInvoke",
+          "Name": "EndInvoke",
+          "DeclaringType": "Sandbox.VideoPlayer.TextureChangedDelegate",
+          "DocId": "M:Sandbox.VideoPlayer.TextureChangedDelegate.EndInvoke(System.IAsyncResult)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "object",
+              "Type": "System.Object"
+            },
+            {
+              "Name": "method",
+              "Type": "System.IntPtr"
+            }
+          ],
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.TextureChangedDelegate..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.VideoPlayer.TextureChangedDelegate",
+          "DocId": "M:Sandbox.VideoPlayer.TextureChangedDelegate.#ctor(System.Object,System.IntPtr)"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VideoPlayer.TextureChangedDelegate",
+      "Name": "TextureChangedDelegate",
+      "DeclaringType": "Sandbox.VideoPlayer",
+      "DocId": "T:Sandbox.VideoPlayer.TextureChangedDelegate"
+    },
+    {
+      "Namespace": "",
+      "Methods": [],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 127
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.AudioAccessor.ListenLocal",
+          "Name": "ListenLocal",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Place the listener at 0,0,0 facing 1,0,0."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "122"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Place the listener at 0,0,0 facing 1,0,0."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.AudioAccessor.ListenLocal"
+        },
+        {
+          "PropertyType": "Vector3",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 141
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.AudioAccessor.Position",
+          "Name": "Position",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Position of the sound."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "136"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Position of the sound."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.AudioAccessor.Position"
+        },
+        {
+          "PropertyType": "Sandbox.Audio.Mixer",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 156
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.AudioAccessor.TargetMixer",
+          "Name": "TargetMixer",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Which mixer do we want to write to"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "150"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Which mixer do we want to write to"
+          },
+          "DocId": "P:Sandbox.VideoPlayer.AudioAccessor.TargetMixer"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 173
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.AudioAccessor.Volume",
+          "Name": "Volume",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Volume of the sound."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "167"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Volume of the sound."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.AudioAccessor.Volume"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 190
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.AudioAccessor.LipSync",
+          "Name": "LipSync",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Enables lipsync processing."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "184"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Enables lipsync processing."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.AudioAccessor.LipSync"
+        },
+        {
+          "PropertyType": "System.Single",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 207
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.AudioAccessor.Distance",
+          "Name": "Distance",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "201"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.VideoPlayer.AudioAccessor.Distance"
+        },
+        {
+          "PropertyType": "Sandbox.Curve",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 223
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.AudioAccessor.Falloff",
+          "Name": "Falloff",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "218"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "P:Sandbox.VideoPlayer.AudioAccessor.Falloff"
+        },
+        {
+          "PropertyType": "System.Collections.Generic.IReadOnlyList`1<System.Single>",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoPlayer.cs",
+            "Line": 233
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoPlayer.AudioAccessor.Visemes",
+          "Name": "Visemes",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A list of 15 lipsync viseme weights. Requires Sandbox.VideoPlayer.AudioAccessor.LipSync to be enabled."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+                "232"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A list of 15 lipsync viseme weights. Requires <see cref=\"P:Sandbox.VideoPlayer.AudioAccessor.LipSync\" /> to be enabled."
+          },
+          "DocId": "P:Sandbox.VideoPlayer.AudioAccessor.Visemes"
+        }
+      ],
+      "IsClass": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VideoPlayer.AudioAccessor",
+      "Name": "AudioAccessor",
+      "DeclaringType": "Sandbox.VideoPlayer",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Multimedia\\VideoPlayer.cs",
+            "103"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.VideoPlayer.AudioAccessor"
+    },
+    {
+      "Namespace": "Sandbox",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "IsVirtual": true,
+          "IsSealed": true,
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoWriter.cs",
+            "Line": 194
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Dispose",
+          "Name": "Dispose",
+          "DeclaringType": "Sandbox.VideoWriter",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Dispose this recorder, the encoder will be flushed and video finalized."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "191"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Dispose this recorder, the encoder will be flushed and video finalized."
+          },
+          "DocId": "M:Sandbox.VideoWriter.Dispose"
+        },
+        {
+          "ReturnType": "System.Threading.Tasks.Task",
+          "Parameters": [],
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.FinishAsync",
+          "Name": "FinishAsync",
+          "DeclaringType": "Sandbox.VideoWriter",
+          "Attributes": [
+            {
+              "FullName": "System.Runtime.CompilerServices.AsyncStateMachineAttribute",
+              "ConstructorArguments": [
+                "Sandbox.VideoWriter/<FinishAsync>d__18"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Finish creating this video. The encoder will be flushed and video finalized."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "206"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Finish creating this video. The encoder will be flushed and video finalized."
+          },
+          "DocId": "M:Sandbox.VideoWriter.FinishAsync"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "data",
+              "Type": "System.ReadOnlySpan`1<System.Byte>"
+            },
+            {
+              "Name": "timestamp",
+              "Type": "System.Nullable`1<System.TimeSpan>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoWriter.cs",
+            "Line": 230
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.AddFrame",
+          "Name": "AddFrame",
+          "DeclaringType": "Sandbox.VideoWriter",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a frame of data to be encoded. Timestamp is in microseconds. If a timestamp is not specified, it will use an incremented frame count as the timestamp."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "227"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.VideoWriter.AddFrame(System.ReadOnlySpan`1{System.Byte},System.Nullable`1{System.TimeSpan})"
+        },
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [
+            {
+              "Name": "bitmap",
+              "Type": "Sandbox.Bitmap"
+            },
+            {
+              "Name": "timestamp",
+              "Type": "System.Nullable`1<System.TimeSpan>",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoWriter.cs",
+            "Line": 255
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.AddFrame",
+          "Name": "AddFrame",
+          "DeclaringType": "Sandbox.VideoWriter",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Add a frame of data to be encoded. Timestamp is in microseconds. If a timestamp is not specified, it will use an incremented frame count as the timestamp."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "252"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.VideoWriter.AddFrame(Sandbox.Bitmap,System.Nullable`1{System.TimeSpan})"
+        }
+      ],
+      "Constructors": [],
+      "Properties": [
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoWriter.cs",
+            "Line": 162
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "161"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.VideoWriter.Width"
+        },
+        {
+          "PropertyType": "System.Int32",
+          "Loc": {
+            "File": "Systems/Render/Multimedia/VideoWriter.cs",
+            "Line": 163
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "162"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.VideoWriter.Height"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VideoWriter",
+      "Name": "VideoWriter",
+      "Attributes": [
+        {
+          "FullName": "DescriptionAttribute",
+          "ConstructorArguments": [
+            "Allows the creation of video content by encoding a sequence of frames."
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\Multimedia\\VideoWriter.cs",
+            "7"
+          ]
+        }
+      ],
+      "Documentation": {
+        "Summary": "Allows the creation of video content by encoding a sequence of frames."
+      },
+      "DocId": "T:Sandbox.VideoWriter"
+    },
+    {
+      "Namespace": "",
+      "Methods": [
+        {
+          "ReturnType": "System.Boolean",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/Multimedia/VideoWriter.cs",
+            "Line": 33
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Config.IsCodecSupported",
+          "Name": "IsCodecSupported",
+          "DeclaringType": "Sandbox.VideoWriter.Config",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Can this container support the codec."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "28"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Can this container support the codec."
+          },
+          "DocId": "M:Sandbox.VideoWriter.Config.IsCodecSupported"
+        }
+      ],
+      "Properties": [],
+      "Fields": [
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Config.Width",
+          "Name": "Width",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.VideoWriter.Config.Width"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Config.Height",
+          "Name": "Height",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "16"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.VideoWriter.Config.Height"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Config.FrameRate",
+          "Name": "FrameRate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "17"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.VideoWriter.Config.FrameRate"
+        },
+        {
+          "FieldType": "System.Int32",
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Config.Bitrate",
+          "Name": "Bitrate",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "18"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.VideoWriter.Config.Bitrate"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.Codec",
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Config.Codec",
+          "Name": "Codec",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "19"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.VideoWriter.Config.Codec"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.Container",
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Config.Container",
+          "Name": "Container",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "20"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.VideoWriter.Config.Container"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.EncodingPreset",
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Config.Preset",
+          "Name": "Preset",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "21"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.VideoWriter.Config.Preset"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.AudioCodec",
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Config.AudioCodec",
+          "Name": "AudioCodec",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "22"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.VideoWriter.Config.AudioCodec"
+        },
+        {
+          "FieldType": "System.Boolean",
+          "IsPublic": true,
+          "FullName": "Sandbox.VideoWriter.Config.Transparency",
+          "Name": "Transparency",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\Multimedia\\VideoWriter.cs",
+                "23"
+              ]
+            }
+          ],
+          "DocId": "F:Sandbox.VideoWriter.Config.Transparency"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsValueType": true,
+      "Group": "struct",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VideoWriter.Config",
+      "Name": "Config",
+      "DeclaringType": "Sandbox.VideoWriter",
+      "DocId": "T:Sandbox.VideoWriter.Config"
+    },
+    {
+      "Namespace": "",
+      "BaseType": "System.Enum",
+      "Fields": [
+        {
+          "FieldType": "Sandbox.VideoWriter.Codec",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.Codec.H264",
+          "Name": "H264",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "H.264 is no longer supported, use VP9 instead"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Obsolete: H.264 is no longer supported, if used will map to AV1 instead."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Obsolete: H.264 is no longer supported, if used will map to AV1 instead."
+          },
+          "DocId": "F:Sandbox.VideoWriter.Codec.H264"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.Codec",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.Codec.H265",
+          "Name": "H265",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "H.265 is no longer supported, use VP9 instead"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Obsolete: H.265 is no longer supported, if used will map to AV1 instead."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Obsolete: H.265 is no longer supported, if used will map to AV1 instead."
+          },
+          "DocId": "F:Sandbox.VideoWriter.Codec.H265"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.Codec",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.Codec.VP8",
+          "Name": "VP8",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute",
+              "ConstructorArguments": [
+                "VP8 is no longer supported, use VP9 instead"
+              ]
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Obsolete: VP8 is no longer supported, if used will map to VP9 instead."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Obsolete: VP8 is no longer supported, if used will map to VP9 instead."
+          },
+          "DocId": "F:Sandbox.VideoWriter.Codec.VP8"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.Codec",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.Codec.VP9",
+          "Name": "VP9",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "VP9 codec (supports transparency)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "VP9 codec (supports transparency)"
+          },
+          "DocId": "F:Sandbox.VideoWriter.Codec.VP9"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.Codec",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.Codec.WebP",
+          "Name": "WebP",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "WebP codec (supports transparency)"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "WebP codec (supports transparency)"
+          },
+          "DocId": "F:Sandbox.VideoWriter.Codec.WebP"
+        },
+        {
+          "FieldType": "Sandbox.VideoWriter.Codec",
+          "IsPublic": true,
+          "IsStatic": true,
+          "FullName": "Sandbox.VideoWriter.Codec.AV1",
+          "Name": "AV1",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "AV1 codec — excellent compression, slower encoding."
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "AV1 codec — excellent compression, slower encoding."
+          },
+          "DocId": "F:Sandbox.VideoWriter.Codec.AV1"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "IsEnum": true,
+      "IsValueType": true,
+      "Group": "enum",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.VideoWriter.Codec",
+      "Name": "Codec",
+      "DeclaringType": "Sandbox.VideoWriter",
+      "Attributes": [
+        {
+          "FullName": "ExposeAttribute"
+        }
+      ],
+      "DocId": "T:Sandbox.VideoWriter.Codec"
+    }
+  ],
+  "_metadata": {
+    "chunk": 157,
+    "items_count": 6
+  }
+}

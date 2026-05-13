@@ -1,0 +1,3448 @@
+{
+  "Types": [
+    {
+      "Namespace": "Sandbox.Rendering",
+      "Methods": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 121
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Reset",
+          "Name": "Reset",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "119"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Reset"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 135
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Blit",
+          "Name": "Blit",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "128"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Blit(Sandbox.Material,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 145
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawQuad",
+          "Name": "DrawQuad",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "138"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawQuad(Sandbox.Rect,Sandbox.Material,Color)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "color",
+              "Type": "Color"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 155
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawScreenQuad",
+          "Name": "DrawScreenQuad",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "148"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawScreenQuad(Sandbox.Material,Color)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 165
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "158"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "f",
+              "Type": "System.Double"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 169
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "168"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,System.Double)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "vector2",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 177
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "170"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,Vector2)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "vector3",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 187
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "180"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "vector4",
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 197
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "190"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,Vector4)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 207
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "200"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "b",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 217
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "210"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "matrix",
+              "Type": "Matrix"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 227
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "220"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,Matrix)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 239
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "232"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,Sandbox.GpuBuffer)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 249
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "242"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,Sandbox.Texture)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 259
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetCombo",
+          "Name": "SetCombo",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "252"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetCombo(Sandbox.StringToken,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "value",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 269
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetCombo",
+          "Name": "SetCombo",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "262"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetCombo(Sandbox.StringToken,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "t",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 279
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetCombo",
+          "Name": "SetCombo",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "272"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetCombo``1(Sandbox.StringToken,``0)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "data",
+              "Type": "T"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 296
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetConstantBuffer",
+          "Name": "SetConstantBuffer",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "289"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetConstantBuffer``1(Sandbox.StringToken,``0)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 306
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "299"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,Sandbox.GpuBuffer)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "i",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 316
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "309"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "b",
+              "Type": "System.Boolean"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 326
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "319"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "f",
+              "Type": "System.Single"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 336
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "329"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "f",
+              "Type": "System.Double"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 340
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "339"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,System.Double)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "vector2",
+              "Type": "Vector2"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 348
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "341"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,Vector2)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "vector3",
+              "Type": "Vector3"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 358
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "351"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,Vector3)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "vector4",
+              "Type": "Vector4"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 368
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "361"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,Vector4)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "matrix",
+              "Type": "Matrix"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 378
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "371"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,Matrix)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 390
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "383"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,Sandbox.Texture)"
+        },
+        {
+          "ReturnType": "Sandbox.Rendering.RenderTargetHandle",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "System.String"
+            },
+            {
+              "Name": "withMips",
+              "Type": "System.Boolean",
+              "Default": "False"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 401
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.GrabFrameTexture",
+          "Name": "GrabFrameTexture",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Takes a copy of the framebuffer and returns a handle to it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "399"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Takes a copy of the framebuffer and returns a handle to it",
+            "Return": "",
+            "Params": {
+              "token": "",
+              "withMips": "Generates mipmaps on the grabbed texture filtered with gaussian blur for each mip"
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.GrabFrameTexture(System.String,System.Boolean)"
+        },
+        {
+          "ReturnType": "Sandbox.Rendering.RenderTargetHandle",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 409
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.GrabDepthTexture",
+          "Name": "GrabDepthTexture",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Takes a copy of the depthbuffer and returns a handle to it"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "407"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Takes a copy of the depthbuffer and returns a handle to it",
+            "Return": "",
+            "Params": {
+              "token": ""
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.GrabDepthTexture(System.String)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "otherBuffer",
+              "Type": "Sandbox.Rendering.CommandList"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 416
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.InsertList",
+          "Name": "InsertList",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Run this CommandList here"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "413"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Run this CommandList here"
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.InsertList(Sandbox.Rendering.CommandList)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            },
+            {
+              "Name": "transform",
+              "Type": "Transform"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 522
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawModel",
+          "Name": "DrawModel",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws a single model at the given Transform immediately."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "510"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws a single model at the given Transform immediately.",
+            "Params": {
+              "model": "The model to draw",
+              "transform": "Transform to draw the model at",
+              "attributes": "Optional attributes to apply only for this draw call"
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawModel(Sandbox.Model,Transform,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            },
+            {
+              "Name": "transforms",
+              "Type": "System.Span`1<Transform>"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 551
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawModelInstanced",
+          "Name": "DrawModelInstanced",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws multiple instances of a model using GPU instancing, assuming standard implemented shaders. Use `GetTransformMatrix( int instance )` in shaders to access the instance transform. There is a limit of 1,048,576 transform slots per frame when using this method."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "542"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawModelInstanced(Sandbox.Model,System.Span`1{Transform},Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            },
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "bufferOffset",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 570
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawModelInstancedIndirect",
+          "Name": "DrawModelInstancedIndirect",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws multiple instances of a model using GPU instancing with the number of instances being provided by indirect draw arguments. Use `SV_InstanceID` semantic in shaders to access the rendered instance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "563"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws multiple instances of a model using GPU instancing with the number of instances being provided by indirect draw arguments.\nUse `SV_InstanceID` semantic in shaders to access the rendered instance.",
+            "Params": {
+              "model": "The model to draw",
+              "buffer": "The GPU buffer containing the DrawIndirectArguments",
+              "bufferOffset": "Optional offset in the GPU buffer",
+              "attributes": "Optional attributes to apply only for this draw call"
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawModelInstancedIndirect(Sandbox.Model,Sandbox.GpuBuffer,System.Int32,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "model",
+              "Type": "Sandbox.Model"
+            },
+            {
+              "Name": "count",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 590
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawModelInstanced",
+          "Name": "DrawModelInstanced",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws multiple instances of a model using GPU instancing. This is similar to <span style=\"color: #4EC9B0;\">CommandList</span>.<span style=\"color: #DCDCAA;\">DrawModelInstancedIndirect</span>(<span style=\"color: #4EC9B0;\">Model</span>,<span style=\"color: #4EC9B0;\">GpuBuffer</span>,<span style=\"color: #86C691;\">int</span>,<span style=\"color: #4EC9B0;\">RenderAttributes</span>), except the count is provided from the CPU rather than via a GPU buffer. Use `SV_InstanceID` semantic in shaders to access the rendered instance."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "583"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws multiple instances of a model using GPU instancing.\nThis is similar to <see cref=\"M:Sandbox.Rendering.CommandList.DrawModelInstancedIndirect(Sandbox.Model,Sandbox.GpuBuffer,System.Int32,Sandbox.RenderAttributes)\" />,\nexcept the count is provided from the CPU rather than via a GPU buffer.\n            \nUse `SV_InstanceID` semantic in shaders to access the rendered instance.",
+            "Params": {
+              "model": "The model to draw",
+              "count": "The number of instances to draw",
+              "attributes": "Optional attributes to apply only for this draw call"
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawModelInstanced(Sandbox.Model,System.Int32,Sandbox.RenderAttributes)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertexBuffer",
+              "Type": "Sandbox.GpuBuffer`1<T>"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "startVertex",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "vertexCount",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 610
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Draw",
+          "Name": "Draw",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws geometry using a vertex buffer and material."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "603"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.Draw``1(Sandbox.GpuBuffer`1{``0},Sandbox.Material,System.Int32,System.Int32,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertexBuffer",
+              "Type": "Sandbox.GpuBuffer`1<T>"
+            },
+            {
+              "Name": "indexBuffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "startIndex",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "indexCount",
+              "Type": "System.Int32",
+              "Default": "0"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 631
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawIndexed",
+          "Name": "DrawIndexed",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws indexed geometry using vertex and index buffers."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "624"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawIndexed``1(Sandbox.GpuBuffer`1{``0},Sandbox.GpuBuffer,Sandbox.Material,System.Int32,System.Int32,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertexBuffer",
+              "Type": "Sandbox.GpuBuffer`1<T>"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "indirectBuffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "bufferOffset",
+              "Type": "System.UInt32",
+              "Default": "0"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 651
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawInstancedIndirect",
+          "Name": "DrawInstancedIndirect",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws instanced geometry using a vertex buffer and indirect draw arguments stored in a GPU buffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "644"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawInstancedIndirect``1(Sandbox.GpuBuffer`1{``0},Sandbox.Material,Sandbox.GpuBuffer,System.UInt32,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "indirectBuffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "bufferOffset",
+              "Type": "System.UInt32",
+              "Default": "0"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 672
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawInstancedIndirect",
+          "Name": "DrawInstancedIndirect",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws instanced geometry using a vertex buffer and indirect draw arguments stored in a GPU buffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "665"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws instanced geometry using a vertex buffer and indirect draw arguments stored in a GPU buffer.",
+            "Remarks": "Vertex data is accessed in shader through buffer attribute and SV_VertexID.",
+            "Params": {
+              "material": "The material to use for rendering.",
+              "indirectBuffer": "The GPU buffer containing indirect draw arguments.",
+              "bufferOffset": "Optional byte offset into the indirect buffer.",
+              "attributes": "Optional render attributes to apply only for this draw call.",
+              "primitiveType": "The type of primitives to render. Defaults to triangles."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawInstancedIndirect(Sandbox.Material,Sandbox.GpuBuffer,System.UInt32,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "vertexBuffer",
+              "Type": "Sandbox.GpuBuffer`1<T>"
+            },
+            {
+              "Name": "indexBuffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "indirectBuffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "bufferOffset",
+              "Type": "System.UInt32",
+              "Default": "0"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 693
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawIndexedInstancedIndirect",
+          "Name": "DrawIndexedInstancedIndirect",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws instanced indexed geometry using indirect draw arguments stored in a GPU buffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "686"
+              ]
+            }
+          ],
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawIndexedInstancedIndirect``1(Sandbox.GpuBuffer`1{``0},Sandbox.GpuBuffer,Sandbox.Material,Sandbox.GpuBuffer,System.UInt32,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "indexBuffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "indirectBuffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "bufferOffset",
+              "Type": "System.UInt32",
+              "Default": "0"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 715
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawIndexedInstancedIndirect",
+          "Name": "DrawIndexedInstancedIndirect",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws instanced indexed geometry using indirect draw arguments stored in a GPU buffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "708"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws instanced indexed geometry using indirect draw arguments stored in a GPU buffer.",
+            "Remarks": "Vertex data is accessed in shader through buffer attribute and SV_VertexID.",
+            "Params": {
+              "indexBuffer": "The GPU buffer containing index data.",
+              "material": "The material to use for rendering.",
+              "indirectBuffer": "The GPU buffer containing indirect draw arguments.",
+              "bufferOffset": "Optional byte offset into the indirect buffer.",
+              "attributes": "Optional render attributes to apply only for this draw call.",
+              "primitiveType": "The type of primitives to render. Defaults to triangles."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawIndexedInstancedIndirect(Sandbox.GpuBuffer,Sandbox.Material,Sandbox.GpuBuffer,System.UInt32,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "indexBuffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "material",
+              "Type": "Sandbox.Material"
+            },
+            {
+              "Name": "instanceCount",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "attributes",
+              "Type": "Sandbox.RenderAttributes",
+              "Default": "null"
+            },
+            {
+              "Name": "primitiveType",
+              "Type": "Sandbox.Graphics.PrimitiveType",
+              "Default": "5"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 728
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawIndexedInstanced",
+          "Name": "DrawIndexedInstanced",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws indexed geometry with instancing. Each instance shares the same index buffer."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "721"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws indexed geometry with instancing. Each instance shares the same index buffer."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawIndexedInstanced(Sandbox.GpuBuffer,Sandbox.Material,System.Int32,Sandbox.RenderAttributes,Sandbox.Graphics.PrimitiveType)"
+        },
+        {
+          "ReturnType": "Sandbox.Rendering.RenderTargetHandle",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "format",
+              "Type": "Sandbox.ImageFormat"
+            },
+            {
+              "Name": "numMips",
+              "Type": "System.Int32",
+              "Default": "1"
+            },
+            {
+              "Name": "sizeFactor",
+              "Type": "System.Int32",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 747
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.GetRenderTarget",
+          "Name": "GetRenderTarget",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a screen sized temporary render target. You should release the returned handle when you're done to return the textures to the pool."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "739"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a screen sized temporary render target. You should release the returned handle when you're done to return the textures to the pool.",
+            "Return": "A RenderTarget that is ready to render to.",
+            "Params": {
+              "name": "The name of the render target handle.",
+              "sizeFactor": "Divide the screen size by this factor. 2 would be half screen sized. 1 for full screen sized.",
+              "format": "The format for the color buffer. If set to default we'll use whatever the current pipeline is using.",
+              "numMips": "Number of mips you want in this texture. You probably don't want this unless you want to generate mips in a second pass."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.GetRenderTarget(System.String,Sandbox.ImageFormat,System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Rendering.RenderTargetHandle",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "sizeFactor",
+              "Type": "System.Int32",
+              "Default": "1"
+            },
+            {
+              "Name": "colorFormat",
+              "Type": "Sandbox.ImageFormat",
+              "Default": "-2"
+            },
+            {
+              "Name": "depthFormat",
+              "Type": "Sandbox.ImageFormat",
+              "Default": "-2"
+            },
+            {
+              "Name": "msaa",
+              "Type": "Sandbox.MultisampleAmount",
+              "Default": "6"
+            },
+            {
+              "Name": "numMips",
+              "Type": "System.Int32",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 769
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.GetRenderTarget",
+          "Name": "GetRenderTarget",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a screen sized temporary render target. You should release the returned handle when you're done to return the textures to the pool."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "761"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a screen sized temporary render target. You should release the returned handle when you're done to return the textures to the pool.",
+            "Return": "A RenderTarget that is ready to render to.",
+            "Params": {
+              "name": "The name of the render target handle.",
+              "sizeFactor": "Divide the screen size by this factor. 2 would be half screen sized. 1 for full screen sized.",
+              "colorFormat": "The format for the color buffer. If set to default we'll use whatever the current pipeline is using.",
+              "depthFormat": "The format for the depth buffer.",
+              "msaa": "The number of msaa samples you'd like. Msaa render textures are a pain in the ass so you're probably gonna regret trying to use this.",
+              "numMips": "Number of mips you want in this texture. You probably don't want this unless you want to generate mips in a second pass."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.GetRenderTarget(System.String,System.Int32,Sandbox.ImageFormat,Sandbox.ImageFormat,Sandbox.MultisampleAmount,System.Int32)"
+        },
+        {
+          "ReturnType": "Sandbox.Rendering.RenderTargetHandle",
+          "Parameters": [
+            {
+              "Name": "name",
+              "Type": "System.String"
+            },
+            {
+              "Name": "width",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "height",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "colorFormat",
+              "Type": "Sandbox.ImageFormat",
+              "Default": "-2"
+            },
+            {
+              "Name": "depthFormat",
+              "Type": "Sandbox.ImageFormat",
+              "Default": "-2"
+            },
+            {
+              "Name": "msaa",
+              "Type": "Sandbox.MultisampleAmount",
+              "Default": "6"
+            },
+            {
+              "Name": "numMips",
+              "Type": "System.Int32",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 792
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.GetRenderTarget",
+          "Name": "GetRenderTarget",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Get a temporary render target. You should release the returned handle when you're done to return the textures to the pool."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "784"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Get a temporary render target. You should release the returned handle when you're done to return the textures to the pool.",
+            "Return": "A RenderTarget that is ready to render to.",
+            "Params": {
+              "name": "The name of the render target handle.",
+              "width": "Width of the render target you want.",
+              "height": "Height of the render target you want.",
+              "colorFormat": "The format for the color buffer. If set to default we'll use whatever the current pipeline is using.",
+              "depthFormat": "The format for the depth buffer.",
+              "msaa": "The number of msaa samples you'd like. Msaa render textures are a pain in the ass so you're probably gonna regret trying to use this.",
+              "numMips": "Number of mips you want in this texture. You probably don't want this unless you want to generate mips in a second pass."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.GetRenderTarget(System.String,System.Int32,System.Int32,Sandbox.ImageFormat,Sandbox.ImageFormat,Sandbox.MultisampleAmount,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handle",
+              "Type": "Sandbox.Rendering.RenderTargetHandle"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 809
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.ReleaseRenderTarget",
+          "Name": "ReleaseRenderTarget",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "We're no longer using this RT, return it to the pool"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "799"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "We're no longer using this RT, return it to the pool"
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.ReleaseRenderTarget(Sandbox.Rendering.RenderTargetHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handle",
+              "Type": "Sandbox.Rendering.RenderTargetHandle"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 828
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetRenderTarget",
+          "Name": "SetRenderTarget",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the current render target. Setting this will bind the render target and change the viewport to match it."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "815"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the current render target. Setting this will bind the render target and change the viewport to match it."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.SetRenderTarget(Sandbox.Rendering.RenderTargetHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.RenderTarget"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 841
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetRenderTarget",
+          "Name": "SetRenderTarget",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the current render target. Setting this will bind the render target and change the viewport to match it."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "834"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the current render target. Setting this will bind the render target and change the viewport to match it."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.SetRenderTarget(Sandbox.RenderTarget)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 854
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.ClearRenderTarget",
+          "Name": "ClearRenderTarget",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the current render target. Setting this will bind the render target and change the viewport to match it."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "847"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the current render target. Setting this will bind the render target and change the viewport to match it."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.ClearRenderTarget"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.Rendering.RenderTargetHandle.ColorTextureRef"
+            },
+            {
+              "Name": "mip",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 862
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Set",
+          "Name": "Set",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the color texture from this named render target to this attribute"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "860"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the color texture from this named render target to this attribute"
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.Set(Sandbox.StringToken,Sandbox.Rendering.RenderTargetHandle.ColorTextureRef,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "token",
+              "Type": "Sandbox.StringToken"
+            },
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.Rendering.RenderTargetHandle.ColorIndexRef"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 868
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.SetGlobal",
+          "Name": "SetGlobal",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "System.ObsoleteAttribute"
+            },
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Set the color texture from this named render target to this attribute"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "866"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Set the color texture from this named render target to this attribute"
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.SetGlobal(Sandbox.StringToken,Sandbox.Rendering.RenderTargetHandle.ColorIndexRef)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "compute",
+              "Type": "Sandbox.ComputeShader"
+            },
+            {
+              "Name": "threadsX",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "threadsY",
+              "Type": "System.Int32"
+            },
+            {
+              "Name": "threadsZ",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 878
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DispatchCompute",
+          "Name": "DispatchCompute",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "871"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.Rendering.CommandList.DispatchCompute(Sandbox.ComputeShader,System.Int32,System.Int32,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "compute",
+              "Type": "Sandbox.ComputeShader"
+            },
+            {
+              "Name": "indirectBuffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "indirectElementOffset",
+              "Type": "System.UInt32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 889
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DispatchComputeIndirect",
+          "Name": "DispatchComputeIndirect",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "882"
+              ]
+            }
+          ],
+          "Documentation": {},
+          "DocId": "M:Sandbox.Rendering.CommandList.DispatchComputeIndirect(Sandbox.ComputeShader,Sandbox.GpuBuffer,System.UInt32)"
+        },
+        {
+          "ReturnType": "Sandbox.Rendering.RenderTargetHandle.SizeHandle",
+          "Parameters": [
+            {
+              "Name": "divisor",
+              "Type": "System.Int32"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 923
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.ViewportSizeScaled",
+          "Name": "ViewportSizeScaled",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A handle to the viewport size divided by a factor. Useful for dispatching at half or quarter resolution."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "922"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A handle to the viewport size divided by a factor. Useful for dispatching at half or quarter resolution."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.ViewportSizeScaled(System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "compute",
+              "Type": "Sandbox.ComputeShader"
+            },
+            {
+              "Name": "dimension",
+              "Type": "Sandbox.Rendering.RenderTargetHandle.SizeHandle"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 937
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DispatchCompute",
+          "Name": "DispatchCompute",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Dispatch a compute shader"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "927"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Dispatch a compute shader"
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DispatchCompute(Sandbox.ComputeShader,Sandbox.Rendering.RenderTargetHandle.SizeHandle)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "color",
+              "Type": "Color"
+            },
+            {
+              "Name": "clearColor",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "clearDepth",
+              "Type": "System.Boolean",
+              "Default": "True"
+            },
+            {
+              "Name": "clearStencil",
+              "Type": "System.Boolean",
+              "Default": "True"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1003
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clear the current drawing context to given color."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "991"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clear the current drawing context to given color.",
+            "Params": {
+              "color": "Color to clear to.",
+              "clearColor": "Whether to clear the color buffer at all.",
+              "clearDepth": "Whether to clear the depth buffer.",
+              "clearStencil": "Whether to clear the stencil buffer."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.Clear(Color,System.Boolean,System.Boolean,System.Boolean)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1018
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears the given texture to a solid color."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1011"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears the given texture to a solid color.",
+            "Params": {
+              "texture": "The texture to clear.",
+              "color": "The color to clear to. Defaults to transparent black."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.Clear(Sandbox.Texture,Color)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handle",
+              "Type": "Sandbox.Rendering.RenderTargetHandle"
+            },
+            {
+              "Name": "color",
+              "Type": "Color",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1039
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Clears the color texture of the given render target handle to a solid color."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1026"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Clears the color texture of the given render target handle to a solid color.",
+            "Params": {
+              "handle": "The render target handle whose color texture to clear.",
+              "color": "The color to clear to. Defaults to transparent black."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.Clear(Sandbox.Rendering.RenderTargetHandle,Color)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "value",
+              "Type": "System.UInt32",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1054
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Clear",
+          "Name": "Clear",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Fills the given GPU buffer with a repeated uint32 value."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1047"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Fills the given GPU buffer with a repeated uint32 value.",
+            "Params": {
+              "buffer": "The buffer to clear.",
+              "value": "The uint32 value to fill with. Defaults to zero."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.Clear(Sandbox.GpuBuffer,System.UInt32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "state",
+              "Type": "Sandbox.Rendering.ResourceState"
+            },
+            {
+              "Name": "mip",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1071
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the given GPU Texture Resource. Transitions the texture resource to a new pipeline stage and access state."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1064"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Executes a barrier transition for the given GPU Texture Resource.\nTransitions the texture resource to a new pipeline stage and access state.",
+            "Params": {
+              "texture": "The texture to transition.",
+              "state": "The new resource state for the texture.",
+              "mip": "The mip level to transition (-1 for all mips)."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.ResourceBarrierTransition(Sandbox.Texture,Sandbox.Rendering.ResourceState,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Rendering.RenderTargetHandle.ColorTextureRef"
+            },
+            {
+              "Name": "state",
+              "Type": "Sandbox.Rendering.ResourceState"
+            },
+            {
+              "Name": "mip",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1093
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the color texture of the given render target handle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1080"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Executes a barrier transition for the color texture of the given render target handle.",
+            "Params": {
+              "texture": "The render target color handle.",
+              "state": "The new resource state for the texture.",
+              "mip": "The mip level to transition (-1 for all mips)."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.ResourceBarrierTransition(Sandbox.Rendering.RenderTargetHandle.ColorTextureRef,Sandbox.Rendering.ResourceState,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Rendering.RenderTargetHandle.DepthTextureRef"
+            },
+            {
+              "Name": "state",
+              "Type": "Sandbox.Rendering.ResourceState"
+            },
+            {
+              "Name": "mip",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1115
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the depth texture of the given render target handle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1102"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Executes a barrier transition for the depth texture of the given render target handle.",
+            "Params": {
+              "texture": "The render target depth handle.",
+              "state": "The new resource state for the texture.",
+              "mip": "The mip level to transition (-1 for all mips)."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.ResourceBarrierTransition(Sandbox.Rendering.RenderTargetHandle.DepthTextureRef,Sandbox.Rendering.ResourceState,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handle",
+              "Type": "Sandbox.Rendering.RenderTargetHandle"
+            },
+            {
+              "Name": "state",
+              "Type": "Sandbox.Rendering.ResourceState"
+            },
+            {
+              "Name": "mip",
+              "Type": "System.Int32",
+              "Default": "-1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1126
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the color texture of the given render target handle."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1124"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Executes a barrier transition for the color texture of the given render target handle.",
+            "Params": {
+              "handle": "The render target handle.",
+              "state": "The new resource state for the texture.",
+              "mip": "The mip level to transition (-1 for all mips)."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.ResourceBarrierTransition(Sandbox.Rendering.RenderTargetHandle,Sandbox.Rendering.ResourceState,System.Int32)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "state",
+              "Type": "Sandbox.Rendering.ResourceState"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1142
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the given GPU Buffer Resource. Transitions the buffer resource to a new pipeline stage and access state."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1135"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Executes a barrier transition for the given GPU Buffer Resource.\nTransitions the buffer resource to a new pipeline stage and access state.",
+            "Params": {
+              "buffer": "The GPU buffer to transition.",
+              "state": "The new resource state for the buffer."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.ResourceBarrierTransition(Sandbox.GpuBuffer,Sandbox.Rendering.ResourceState)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            },
+            {
+              "Name": "before",
+              "Type": "Sandbox.Rendering.ResourceState"
+            },
+            {
+              "Name": "after",
+              "Type": "Sandbox.Rendering.ResourceState"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1159
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.ResourceBarrierTransition",
+          "Name": "ResourceBarrierTransition",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Executes a barrier transition for the given GPU Buffer Resource. Transitions the buffer resource from a known source state to a specified destination state."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1152"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Executes a barrier transition for the given GPU Buffer Resource.\nTransitions the buffer resource from a known source state to a specified destination state.",
+            "Params": {
+              "buffer": "The GPU buffer to transition.",
+              "before": "The current resource state of the buffer.",
+              "after": "The desired resource state of the buffer after the transition."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.ResourceBarrierTransition(Sandbox.GpuBuffer,Sandbox.Rendering.ResourceState,Sandbox.Rendering.ResourceState)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1174
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.UavBarrier",
+          "Name": "UavBarrier",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Issues a UAV barrier for the given texture, ensuring writes from prior shader invocations are visible to subsequent ones without changing the resource layout."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1167"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Issues a UAV barrier for the given texture, ensuring writes from prior shader invocations\nare visible to subsequent ones without changing the resource layout.",
+            "Params": {
+              "texture": "The texture to barrier."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.UavBarrier(Sandbox.Texture)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "buffer",
+              "Type": "Sandbox.GpuBuffer"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1189
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.UavBarrier",
+          "Name": "UavBarrier",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Issues a UAV barrier for the given GPU buffer, ensuring writes from prior shader invocations are visible to subsequent ones."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1182"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Issues a UAV barrier for the given GPU buffer, ensuring writes from prior shader invocations\nare visible to subsequent ones.",
+            "Params": {
+              "buffer": "The buffer to barrier."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.UavBarrier(Sandbox.GpuBuffer)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "handle",
+              "Type": "Sandbox.Rendering.RenderTargetHandle"
+            },
+            {
+              "Name": "method",
+              "Type": "Sandbox.Graphics.DownsampleMethod",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1269
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.GenerateMipMaps",
+          "Name": "GenerateMipMaps",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Generates a mip-map chain for the specified render target. This will generate mipmaps for the color texture of the render target."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1256"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Generates a mip-map chain for the specified render target.\nThis will generate mipmaps for the color texture of the render target."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.GenerateMipMaps(Sandbox.Rendering.RenderTargetHandle,Sandbox.Graphics.DownsampleMethod)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "target",
+              "Type": "Sandbox.RenderTarget"
+            },
+            {
+              "Name": "method",
+              "Type": "Sandbox.Graphics.DownsampleMethod",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1283
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.GenerateMipMaps",
+          "Name": "GenerateMipMaps",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Generates a mip-map chain for the specified render target. This will generate mipmaps for the color texture of the render target."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1276"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Generates a mip-map chain for the specified render target.\nThis will generate mipmaps for the color texture of the render target."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.GenerateMipMaps(Sandbox.RenderTarget,Sandbox.Graphics.DownsampleMethod)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "texture",
+              "Type": "Sandbox.Texture"
+            },
+            {
+              "Name": "method",
+              "Type": "Sandbox.Graphics.DownsampleMethod",
+              "Default": "1"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1297
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.GenerateMipMaps",
+          "Name": "GenerateMipMaps",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Generates a mip-map chain for the specified texture. This will generate mipmaps for the color texture of the texture."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1290"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Generates a mip-map chain for the specified texture.\nThis will generate mipmaps for the color texture of the texture."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.GenerateMipMaps(Sandbox.Texture,Sandbox.Graphics.DownsampleMethod)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "scope",
+              "Type": "Sandbox.TextRendering.Scope"
+            },
+            {
+              "Name": "rect",
+              "Type": "Sandbox.Rect"
+            },
+            {
+              "Name": "flags",
+              "Type": "Sandbox.TextFlag",
+              "Default": "33"
+            },
+            {
+              "Name": "angleDegrees",
+              "Type": "System.Single",
+              "Default": "0"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 1312
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawText",
+          "Name": "DrawText",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Draws text within a rectangle using a prepared Sandbox.TextRendering.Scope."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "1307"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Draws text within a rectangle using a prepared <see cref=\"T:Sandbox.TextRendering.Scope\" />.",
+            "Params": {
+              "scope": "The text rendering scope.",
+              "rect": "The rectangle to draw the text in.",
+              "flags": "Text alignment flags (optional).",
+              "angleDegrees": "Rotation angle in degrees (optional)."
+            }
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawText(Sandbox.TextRendering.Scope,Sandbox.Rect,Sandbox.TextFlag,System.Single)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "renderer",
+              "Type": "Sandbox.Renderer"
+            },
+            {
+              "Name": "rendererSetup",
+              "Type": "Sandbox.Rendering.RendererSetup",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.Render.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawRenderer",
+          "Name": "DrawRenderer",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Render a <span style=\"color: #4EC9B0;\">Renderer</span> with the specified overrides."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.Render.cs",
+                "9"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render a <see cref=\"T:Sandbox.Renderer\" /> with the specified overrides."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawRenderer(Sandbox.Renderer,Sandbox.Rendering.RendererSetup)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "camera",
+              "Type": "Sandbox.CameraComponent"
+            },
+            {
+              "Name": "target",
+              "Type": "Sandbox.Rendering.RenderTargetHandle"
+            },
+            {
+              "Name": "viewSetup",
+              "Type": "Sandbox.Rendering.ViewSetup",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.Render.cs",
+            "Line": 32
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawView",
+          "Name": "DrawView",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Renders the view from a camera to the specified render target."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.Render.cs",
+                "29"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Renders the view from a camera to the specified render target."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawView(Sandbox.CameraComponent,Sandbox.Rendering.RenderTargetHandle,Sandbox.Rendering.ViewSetup)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "camera",
+              "Type": "Sandbox.CameraComponent"
+            },
+            {
+              "Name": "plane",
+              "Type": "Sandbox.Plane"
+            },
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Sandbox.Rendering.RenderTargetHandle"
+            },
+            {
+              "Name": "reflectionSetup",
+              "Type": "Sandbox.Rendering.ReflectionSetup",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.Render.cs",
+            "Line": 59
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawReflection",
+          "Name": "DrawReflection",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Render a planar reflection using the specified camera and the specified plane."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.Render.cs",
+                "56"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render a planar reflection using the specified camera and the specified plane."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawReflection(Sandbox.CameraComponent,Sandbox.Plane,Sandbox.Rendering.RenderTargetHandle@,Sandbox.Rendering.ReflectionSetup)"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "camera",
+              "Type": "Sandbox.CameraComponent"
+            },
+            {
+              "Name": "plane",
+              "Type": "Sandbox.Plane"
+            },
+            {
+              "Name": "target",
+              "In": true,
+              "Type": "Sandbox.Rendering.RenderTargetHandle"
+            },
+            {
+              "Name": "refractionSetup",
+              "Type": "Sandbox.Rendering.RefractionSetup",
+              "Default": "null"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.Render.cs",
+            "Line": 117
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DrawRefraction",
+          "Name": "DrawRefraction",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Render a planar refraction using the specified camera and the specified plane. This is for all intents and purposes a regular view with a plane clipping it. Usually used for rendering under water."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.Render.cs",
+                "114"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Render a planar refraction using the specified camera and the specified plane. This is for all intents and purposes a\nregular view with a plane clipping it. Usually used for rendering under water."
+          },
+          "DocId": "M:Sandbox.Rendering.CommandList.DrawRefraction(Sandbox.CameraComponent,Sandbox.Plane,Sandbox.Rendering.RenderTargetHandle@,Sandbox.Rendering.RefractionSetup)"
+        }
+      ],
+      "Constructors": [
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 12
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "DocId": "M:Sandbox.Rendering.CommandList.#ctor"
+        },
+        {
+          "ReturnType": "System.Void",
+          "Parameters": [
+            {
+              "Name": "debugName",
+              "Type": "System.String"
+            }
+          ],
+          "l": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 36
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList..ctor",
+          "Name": ".ctor",
+          "DeclaringType": "Sandbox.Rendering.CommandList",
+          "DocId": "M:Sandbox.Rendering.CommandList.#ctor(System.String)"
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyType": "Sandbox.Rendering.CommandList.AttributeAccess",
+          "Loc": {
+            "File": "Systems/Render/CommandList/CommandList.Attributes.cs",
+            "Line": 383
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.GlobalAttributes",
+          "Name": "GlobalAttributes",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "These are the attributes for the current view. Setting a variable here will let you pass it down to other places in the render pipeline."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.Attributes.cs",
+                "382"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "These are the attributes for the current view. Setting a variable here will let you pass it down to\nother places in the render pipeline."
+          },
+          "DocId": "P:Sandbox.Rendering.CommandList.GlobalAttributes"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.CommandList.AttributeAccess",
+          "Loc": {
+            "File": "Systems/Render/CommandList/CommandList.Attributes.cs",
+            "Line": 389
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Attributes",
+          "Name": "Attributes",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access to the local attributes. What these are depends on where the command list is being called. If we're calling from a renderable, these are the attributes for that renderable."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.Attributes.cs",
+                "388"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access to the local attributes. What these are depends on where the command list is being called.\nIf we're calling from a renderable, these are the attributes for that renderable."
+          },
+          "DocId": "P:Sandbox.Rendering.CommandList.Attributes"
+        },
+        {
+          "PropertyType": "System.String",
+          "Loc": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 20
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.DebugName",
+          "Name": "DebugName",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "15"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Rendering.CommandList.DebugName"
+        },
+        {
+          "PropertyType": "System.Boolean",
+          "Loc": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 26
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Enabled",
+          "Name": "Enabled",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "25"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Rendering.CommandList.Enabled"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.CommandList.Flag",
+          "Loc": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 27
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Flags",
+          "Name": "Flags",
+          "Attributes": [
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "26"
+              ]
+            }
+          ],
+          "DocId": "P:Sandbox.Rendering.CommandList.Flags"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.HudPainter",
+          "Loc": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 86
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.Paint",
+          "Name": "Paint",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "Access to simple 2D painting functions to draw shapes and text."
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "85"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "Access to simple 2D painting functions to draw shapes and text."
+          },
+          "DocId": "P:Sandbox.Rendering.CommandList.Paint"
+        },
+        {
+          "PropertyType": "Sandbox.Rendering.RenderTargetHandle.SizeHandle",
+          "Loc": {
+            "File": "Systems/Render/CommandList/CommandList.cs",
+            "Line": 918
+          },
+          "IsPublic": true,
+          "FullName": "Sandbox.Rendering.CommandList.ViewportSize",
+          "Name": "ViewportSize",
+          "Attributes": [
+            {
+              "FullName": "DescriptionAttribute",
+              "ConstructorArguments": [
+                "A handle to the viewport size"
+              ]
+            },
+            {
+              "FullName": "Sandbox.Internal.SourceLocationAttribute",
+              "ConstructorArguments": [
+                "Systems\\Render\\CommandList\\CommandList.cs",
+                "917"
+              ]
+            }
+          ],
+          "Documentation": {
+            "Summary": "A handle to the viewport size"
+          },
+          "DocId": "P:Sandbox.Rendering.CommandList.ViewportSize"
+        }
+      ],
+      "IsClass": true,
+      "IsSealed": true,
+      "Group": "class",
+      "Assembly": "Sandbox.Engine",
+      "IsPublic": true,
+      "FullName": "Sandbox.Rendering.CommandList",
+      "Name": "CommandList",
+      "Attributes": [
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\CommandList\\CommandList.Attributes.cs",
+            "6"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\CommandList\\CommandList.cs",
+            "8"
+          ]
+        },
+        {
+          "FullName": "Sandbox.Internal.SourceLocationAttribute",
+          "ConstructorArguments": [
+            "Systems\\Render\\CommandList\\CommandList.Render.cs",
+            "4"
+          ]
+        }
+      ],
+      "DocId": "T:Sandbox.Rendering.CommandList"
+    }
+  ],
+  "_metadata": {
+    "chunk": 229,
+    "items_count": 1
+  }
+}
