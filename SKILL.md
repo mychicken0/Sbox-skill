@@ -1,5 +1,5 @@
 ---
-name: sbox-skill
+name: Sbox-skill
 description: Comprehensive expert knowledge and API reference for s&box (Source 2) development.
 author: mychicken
 version: 1.0.0
