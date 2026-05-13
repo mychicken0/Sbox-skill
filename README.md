@@ -6,7 +6,7 @@ This repository contains a comprehensive **Agent Skill** for s&box development. 
 Run this command in your project directory to add the s&box skill:
 
 ```bash
-git clone https://github.com/mychicken0/sbox-skill.git .sbox-skill
+git clone https://github.com/mychicken0/Sbox-skill.git .sbox-skill
 ```
 
 ## Project Structure
