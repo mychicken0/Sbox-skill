@@ -25,14 +25,6 @@ git clone https://github.com/mychicken0/Sbox-skill.git .agents\skills\sbox-skill
 
 Restart CLI/Agent or open a new CLI/Agent thread in that project. The skill should appear as `sbox-skill`.
 
-## Update
-
-Project-local install:
-
-```powershell
-git -C C:\path\to\your\sbox_project\.agents\skills\sbox-skill pull
-```
-
 ## Recommended Project Setup
 
 For best results, keep project guidance in your game repository too:
