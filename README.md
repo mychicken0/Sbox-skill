@@ -38,7 +38,7 @@ The skill tells Codex to inspect those files first, then search local code befor
 
 ## Notes For Shader Work
 
-When asking Codex for shader or post-process work, it can often edit or provide `.shdrgrph` Shader Graph JSON instead of hand-writing shader code. This is usually less error-prone because the s&box Editor can save and generate the compiled outputs.
+When asking CLI/Agent for shader or post-process work, it can often edit or provide `.shdrgrph` Shader Graph JSON instead of hand-writing shader code. This is usually less error-prone because the s&box Editor can save and generate the compiled outputs.
 
 Keep C# attribute names stable when editing shader graphs, for example `DirtStrength`, `TintColor`, `RimThickness`, or any names your components already send through `RenderAttributes`.
 
