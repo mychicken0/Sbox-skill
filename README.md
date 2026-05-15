@@ -13,7 +13,7 @@ This skill helps agents work with:
 - Razor UI and SCSS
 - materials, post-processing, shaders, and `.shdrgrph` Shader Graph files
 
-The goal is practical agent behavior, not a huge documentation archive. The bundled references are curated snippets and patterns that help Codex write correct code faster.
+The goal is practical agent behavior, not a huge documentation archive. The bundled references are curated snippets and patterns that help CLI/Agent write correct code faster.
 
 ## Install Into One s&box Project
 
@@ -34,7 +34,7 @@ For best results, keep project guidance in your game repository too:
 - a clear `.sbproj` at the project root
 - consistent folders for `Code/`, `Assets/`, resources, prefabs, UI, shaders, and materials
 
-The skill tells Codex to inspect those files first, then search local code before inventing new patterns.
+The skill tells CLI/Agent to inspect those files first, then search local code before inventing new patterns.
 
 ## Notes For Shader Work
 
