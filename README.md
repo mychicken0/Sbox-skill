@@ -1,6 +1,6 @@
 # sbox-skill
 
-A lean Codex skill for building modern **s&box** games with the Scene System.
+A lean CLI/Agent skill for building modern **s&box** games
 
 This skill helps agents work with:
 
@@ -20,23 +20,10 @@ The goal is practical agent behavior, not a huge documentation archive. The bund
 Use this when you want the skill to apply to a specific game or gamemode repository.
 
 ```powershell
-cd C:\path\to\your\sbox_project
-New-Item -ItemType Directory -Force .agents\skills
 git clone https://github.com/mychicken0/Sbox-skill.git .agents\skills\sbox-skill
 ```
 
-Restart Codex or open a new Codex thread in that project. The skill should appear as `sbox-skill`.
-
-## Install Globally For Codex
-
-Use this when you want the skill available in all Codex workspaces on your machine.
-
-```powershell
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills"
-git clone https://github.com/mychicken0/Sbox-skill.git "$env:USERPROFILE\.codex\skills\sbox-skill"
-```
-
-Restart Codex after installing.
+Restart CLI/Agent or open a new CLI/Agent thread in that project. The skill should appear as `sbox-skill`.
 
 ## Update
 
@@ -44,12 +31,6 @@ Project-local install:
 
 ```powershell
 git -C C:\path\to\your\sbox_project\.agents\skills\sbox-skill pull
-```
-
-Global install:
-
-```powershell
-git -C "$env:USERPROFILE\.codex\skills\sbox-skill" pull
 ```
 
 ## Recommended Project Setup
