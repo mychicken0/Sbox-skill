@@ -1,22 +1,77 @@
-# s&box Agent Skill
+# sbox-skill
 
-This repository contains a comprehensive **Agent Skill** for s&box development. It is designed to provide AI agents with expert-level knowledge of the engine and its API.
+A lean Codex skill for building modern **s&box** games with the Scene System.
 
-## Quick Install
-Run this command in your project directory to add the s&box skill:
+This skill helps agents work with:
 
-```bash
-git clone https://github.com/mychicken0/Sbox-skill.git .sbox-skill
+- C# `GameObject` / `Component` architecture
+- `GameObjectSystem<T>` services
+- `[Property]` editor configuration
+- `GameResource` data assets
+- prefabs and scene workflows
+- server-authoritative networking with `[Sync]`, `[Rpc.Host]`, and `[Rpc.Broadcast]`
+- Razor UI and SCSS
+- materials, post-processing, shaders, and `.shdrgrph` Shader Graph files
+
+The goal is practical agent behavior, not a huge documentation archive. The bundled references are curated snippets and patterns that help Codex write correct code faster.
+
+## Install Into One s&box Project
+
+Use this when you want the skill to apply to a specific game or gamemode repository.
+
+```powershell
+cd C:\path\to\your\sbox_project
+New-Item -ItemType Directory -Force .agents\skills
+git clone https://github.com/mychicken0/Sbox-skill.git .agents\skills\sbox-skill
 ```
 
-## Project Structure
-- **`SKILL.md`**: Core metadata and instructions that define the agent's behavior and knowledge mapping.
-- **`references/docs/`**: Cleaned and distilled Markdown documentation covering conceptual topics (Networking, UI, Physics, etc.).
-- **`references/api/`**: Full API reference organized by namespace for precise technical lookup.
-- **`references/sbox_full_docs.md`**: A single-file combined documentation for global context searching.
+Restart Codex or open a new Codex thread in that project. The skill should appear as `sbox-skill`.
 
-## Usage
-To use this skill with your AI agent (like Cursor, Windsurf, or Claude Code):
-1. Clone this repository into your project (as shown above).
-2. Point your agent to the `SKILL.md` file to activate the expertise.
-3. The agent will automatically use the `references/` folder to gain deep s&box engine knowledge.
+## Install Globally For Codex
+
+Use this when you want the skill available in all Codex workspaces on your machine.
+
+```powershell
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.codex\skills"
+git clone https://github.com/mychicken0/Sbox-skill.git "$env:USERPROFILE\.codex\skills\sbox-skill"
+```
+
+Restart Codex after installing.
+
+## Update
+
+Project-local install:
+
+```powershell
+git -C C:\path\to\your\sbox_project\.agents\skills\sbox-skill pull
+```
+
+Global install:
+
+```powershell
+git -C "$env:USERPROFILE\.codex\skills\sbox-skill" pull
+```
+
+## Recommended Project Setup
+
+For best results, keep project guidance in your game repository too:
+
+- `AGENTS.md` for repo-specific agent rules
+- `PRODUCT.md` for game direction, tone, and design goals
+- a clear `.sbproj` at the project root
+- consistent folders for `Code/`, `Assets/`, resources, prefabs, UI, shaders, and materials
+
+The skill tells Codex to inspect those files first, then search local code before inventing new patterns.
+
+## Notes For Shader Work
+
+When asking Codex for shader or post-process work, it can often edit or provide `.shdrgrph` Shader Graph JSON instead of hand-writing shader code. This is usually less error-prone because the s&box Editor can save and generate the compiled outputs.
+
+Keep C# attribute names stable when editing shader graphs, for example `DirtStrength`, `TintColor`, `RimThickness`, or any names your components already send through `RenderAttributes`.
+
+## What Is Included
+
+- `SKILL.md` - the main agent instructions
+- `references/` - small curated snippets for coding patterns, networking, UI, resources, physics, shaders, and core API reminders
+
+Large dumped docs are intentionally not included. If the snippets are not enough, the skill instructs agents to inspect local project code first, then use the official s&box docs at `https://wiki.facepunch.com/sbox/`.

@@ -1,39 +1,45 @@
 ---
-name: Sbox-skill
-description: Comprehensive expert knowledge and API reference for s&box (Source 2) development.
-author: mychicken
-version: 1.0.0
-tags: [sbox, gamedev, csharp, source2]
+name: sbox-skill
+description: General s&box game development skill for C#, Scene System GameObject/Component architecture, GameObjectSystem services, networking, RPC, Sync, GameResource data assets, prefabs, Razor UI, SCSS, materials, shaders, .shdrgrph Shader Graph assets, post-processing, and editor tooling. Use when Codex builds, fixes, reviews, or explains any s&box game code or asset workflow.
 ---
 
-# s&box Expert Skill
+# s&box Agent Guide
 
-You are an elite s&box developer. Use the provided references to answer technical questions, write code, and architect systems for the s&box engine.
+Build for modern s&box. Start from the project in front of you, prefer editor-friendly systems, and keep multiplayer authority secure.
 
-## Reference Materials
-- **Documentation**: Located in `references/docs/`. Conceptual guides for Networking, UI, Physics, etc.
-- **API Reference**: Located in `references/api/`. Detailed C# member information organized by namespace.
-- **Full Text**: `references/sbox_full_docs.md` is a combined searchable documentation file.
+## First Moves
 
-## Core Expertise & Rules
+1. Read local rules first: `AGENTS.md`, `PRODUCT.md`, `.sbproj`, and nearby feature files.
+2. Search for similar systems before inventing patterns. Use `rg` in the project's `Code/`, `Assets/`, and `Libraries/` folders for examples of player spawning, UI state, inventory, weapons, resources, shaders, post-processing, save/load, and networking.
+3. Inspect prefabs, resources, materials, shaders, Razor panels, and existing folder naming when relevant.
+4. Reuse local managers, helpers, extension methods, resource types, and naming conventions instead of creating parallel systems.
+5. Keep changes scoped to the requested feature; do not refactor unrelated systems.
 
-### 1. Scene System
-- Architect using `GameObject` and `Component`.
-- Use `[Property]` for editor visibility.
-- Lifecycle: `OnStart`, `OnUpdate`, `OnFixedUpdate`, `OnDestroy`.
+## Core Rules
 
-### 2. Networking
-- Use `[Sync]` for state.
-- Use `[Broadcast]` for RPCs.
-- Always respect `IsProxy` to prevent unauthorized logic on clients.
+- Use Scene System only: `GameObject`, `Component`, `GameObjectSystem<T>`, prefabs, and scene events.
+- Expose tunable data with `[Property]`, `GameResource`, editor ranges, groups, and clear asset names.
+- Never trust clients. Host/server validates client requests and owns meaningful state changes.
+- Use `[Sync]` for replicated state, `[Rpc.Host]` for client-to-host requests, and `[Rpc.Broadcast]` for host-approved fanout.
+- Guard authority with `Networking.IsHost`, `!IsProxy`, `GameObject.IsProxy`, owner checks, or `Rpc.Caller` validation as appropriate.
+- Avoid fragile engine hacks: no private reflection, no internal method invocation, no generated binary hand-edits.
+- Prefer readable, explicit components over clever abstractions.
 
-### 3. UI System
-- Modern Razor-based UI (`.razor`).
-- SCSS/CSS styling.
-- Panel-based architecture.
+## Load References As Needed
 
-## Usage Instructions
-When providing s&box assistance:
-1. Search `references/docs/` for high-level logic.
-2. Verify class members in `references/api/` (e.g., `references/api/Sandbox/GameObject.json`).
-3. Always prefer the modern "Scene System" API over legacy entity code.
+- General C#/architecture: `references/coding-patterns.md`
+- Common API snippets: `references/api-cheatsheet.md`
+- Core class reference: `references/core-api.md`
+- Multiplayer/security: `references/networking-security.md`
+- Data assets/prefabs: `references/resources-and-prefabs.md`
+- Razor UI/SCSS: `references/ui-razor.md`
+- Physics/traces/collisions: `references/physics-and-traces.md`
+- Materials, shaders, Shader Graph, post-processing: `references/shaders-and-postprocess.md`
+- Shader Graph JSON/node snippets: `references/shadergraph-snippets.md`
+
+## Validation Habit
+
+- Build or run targeted tests when available.
+- For asset JSON such as `.shdrgrph`, validate JSON and references after editing.
+- If s&box editor generation is required, say so clearly instead of pretending a CLI compile verified it.
+- If a needed API is missing from these snippets and local code does not answer it, use official docs/search at `https://wiki.facepunch.com/sbox/` before guessing.
